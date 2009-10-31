@@ -12,32 +12,32 @@ body {
 
 #home #top-content h2 {
   height: 123px;
-  background: url(home.png) 0px 0px no-repeat;
+  background: url(/images/home.png) 0px 0px no-repeat;
 }
 
 #about #top-content h2 {
   height: 50px;
-  background: url(about.png) top center no-repeat; 
+  background: url(/images/about.png) top center no-repeat; 
 }
 
 #community #top-content h2 {
   height: 97px;
-  background: url(community.png) 0px 0px no-repeat;
+  background: url(/images/community.png) 0px 0px no-repeat;
 }
 
 #jobs #top-content h2 {
   height: 36px;
-  background: url(jobs.png) 0px 0px no-repeat;
+  background: url(/images/jobs.png) 0px 0px no-repeat;
 }
 
 #jobs #top-content h2#positions {
   height: 36px;
-  background: url(positions.png) 0px 0px no-repeat;
+  background: url(/images/positions.png) 0px 0px no-repeat;
 }
 
 #contact #top-content h2 {
   height: 34px;
-  background: url(contact.png) 0px 0px no-repeat;
+  background: url(/images/contact.png) 0px 0px no-repeat;
 }
 
 #top-content h3 {

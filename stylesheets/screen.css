@@ -1,5 +1,5 @@
 body {
-  background: #181613 url(body.png) repeat-x;
+  background: #181613 url(/images/body.png) repeat-x;
   padding: 5px 0 0 0 ;
 }
 
@@ -30,7 +30,7 @@ h1#logo {
 
 h1#logo a {
   display: block;
-  background: url(thoughtbot-tab-logo.png) 0px 0px no-repeat;
+  background: url(/images/thoughtbot-tab-logo.png) 0px 0px no-repeat;
   width: 263px;
   height: 89px;
   top: 13px;
@@ -39,18 +39,18 @@ h1#logo a {
 
 /*
 h1#logo a:hover {
-  background: url(thoughtbot-tab-logo.png) 0px -89px no-repeat;
+  background: url(/images/thoughtbot-tab-logo.png) 0px -89px no-repeat;
 }
 
 h1#logo a:focus,
 h1#logo a:active {
-  background: url(thoughtbot-tab-logo.png) 0px -178px no-repeat;
+  background: url(/images/thoughtbot-tab-logo.png) 0px -178px no-repeat;
 }
 */
 
 img.framed { /* put a 1px black inside stroke on the image in photoshop */
   padding: 10px;
-  background: url(img-bg.png) 0px 0px repeat-x;
+  background: url(/images/img-bg.png) 0px 0px repeat-x;
   border-bottom: 1px solid #221e1b;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -96,13 +96,13 @@ a#contact-btn {
 #top-content-inner-pages h2 strong {font-weight: 500;}
 
 #main-content {
-  background: url(main-content-top.png) 0px 0px repeat-x;
+  background: url(/images/main-content-top.png) 0px 0px repeat-x;
   padding-top: 49px;
   position: relative;
 }
 
 #content {
-  background: url(main-content.png) 0px -3px;
+  background: url(/images/main-content.png) 0px -3px;
   padding: 0 0 25px 0;
   min-height: 500px;
 }
@@ -110,7 +110,7 @@ a#contact-btn {
 .dark-content {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  background: url(dark-content.png) 0px 0px repeat-x;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
   padding: 25px 25px 25px 25px;
   border-bottom: 1px solid #3d3834;
   margin-bottom: 4px;
@@ -151,7 +151,7 @@ a#contact-btn {
   float: right;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  background: url(dark-content.png) 0px 0px repeat-x;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
   padding: 20px;
   border-bottom: 1px solid #3d3834;  
 }
@@ -201,15 +201,15 @@ h6.featured_proj {
   display: block;
   width: 278px;
   height: 39px;
-  background: transparent url(see-more-oss.png) 0 0 no-repeat;
+  background: transparent url(/images/see-more-oss.png) 0 0 no-repeat;
   text-indent: -5000px;
 }
 
-#see_more_oss:hover {background: transparent url(see-more-oss.png) 0 -39px no-repeat;}
+#see_more_oss:hover {background: transparent url(/images/see-more-oss.png) 0 -39px no-repeat;}
 
-#services-consulting {background: transparent url(services-consulting.png) right center no-repeat;}
-#services-kick-start {background: transparent url(services-kick-start.png) right center no-repeat;}
-#services-training {background: transparent url(services-training.png) right center no-repeat;}
+#services-consulting {background: transparent url(/images/services-consulting.png) right center no-repeat;}
+#services-kick-start {background: transparent url(/images/services-kick-start.png) right center no-repeat;}
+#services-training {background: transparent url(/images/services-training.png) right center no-repeat;}
 
 
 
@@ -219,11 +219,11 @@ h6.featured_proj {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url(main-content-bottom.png) 0px 0px repeat-x;
+  background: url(/images/main-content-bottom.png) 0px 0px repeat-x;
 }
 
 #footer {
-  background: #0b0909 url(footer.png) 0px 0px repeat-x;
+  background: #0b0909 url(/images/footer.png) 0px 0px repeat-x;
   padding: 25px 0 100px 0;
 }
 
@@ -266,14 +266,14 @@ a.source-btn {
   position: absolute;
   top: -10px;
   right: -3px;
-  background: url(source.png) 0px 0px no-repeat;
+  background: url(/images/source.png) 0px 0px no-repeat;
   width: 89px;
   height: 37px;
   text-indent: -9999px;
 }
 
 a.source-btn:hover {
-  background: url(source.png) 0px -37px no-repeat;
+  background: url(/images/source.png) 0px -37px no-repeat;
 }
 
 .project-thumbnail {
@@ -284,35 +284,35 @@ a.source-btn:hover {
 }
 
 .project-thumbnail.paperclip {
-  background: url(paperclip.png) 0px 0px no-repeat;
+  background: url(/images/paperclip.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.shoulda {
-  background: url(shoulda.png) 0px 0px no-repeat;
+  background: url(/images/shoulda.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.factory-girl {
-  background: url(factory-girl.png) 0px 0px no-repeat;
+  background: url(/images/factory-girl.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.clearance {
-  background: url(clearance.png) 0px 0px no-repeat;
+  background: url(/images/clearance.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.squirrel {
-  background: url(squirrel.png) 0px 0px no-repeat;
+  background: url(/images/squirrel.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.jester {
-  background: url(jester.png) 0px 0px no-repeat;
+  background: url(/images/jester.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.mile-marker {
-  background: url(mile-marker.png) 0px 0px no-repeat;
+  background: url(/images/mile-marker.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.pace-car {
-  background: url(pace-car.png) 0px 0px no-repeat;
+  background: url(/images/pace-car.png) 0px 0px no-repeat;
 }
 
 #hackfest {
@@ -358,7 +358,7 @@ a.source-btn:hover {
 .image-switcher {
   width: auto;
   padding: 15px;
-  background: transparent url(image-switcher.png) top left repeat-x;
+  background: transparent url(/images/image-switcher.png) top left repeat-x;
   border-bottom: 1px solid #000;
   text-align: center;
 }
@@ -379,18 +379,18 @@ a.source-btn:hover {
   float: right;
   height: 26px;
   width: 24px;
-  background: transparent url(image-swticher-control.png) 0 -26px;
+  background: transparent url(/images/image-swticher-control.png) 0 -26px;
   overflow: hidden;
   text-indent: -5000px;
   margin: 0 0 0 6px;
 }
 
 .image-switcher-control:hover {
-    background: transparent url(image-swticher-control.png) 0 -52px;
+    background: transparent url(/images/image-swticher-control.png) 0 -52px;
 }
 
 .image-switcher-control#active {
-  background: transparent url(image-swticher-control.png) 0 0px;
+  background: transparent url(/images/image-swticher-control.png) 0 0px;
 }
 
 .next-project {
@@ -398,10 +398,10 @@ a.source-btn:hover {
   width: 139px;
   height: 39px;
   text-indent: -5000px;
-  background: transparent url(next-project.png) 0 0 no-repeat;
+  background: transparent url(/images/next-project.png) 0 0 no-repeat;
 }
 
-.next-project:hover {  background: transparent url(next-project.png) 0 -39px no-repeat;}
+.next-project:hover {  background: transparent url(/images/next-project.png) 0 -39px no-repeat;}
 
 
 /******************************
@@ -448,7 +448,7 @@ a.source-btn:hover {
   width: 190px;
   height: 236px;
   float: left;
-  background: transparent url(photo-border.png) top left no-repeat;
+  background: transparent url(/images/photo-border.png) top left no-repeat;
   position: relative;
   left: -5px;
 }
@@ -499,7 +499,7 @@ a.source-btn:hover {
   width: 100px;
   height: 101px;
   float: left;
-  background: url(sticker-logo.png) 0px 0px no-repeat;
+  background: url(/images/sticker-logo.png) 0px 0px no-repeat;
 }
 
 #addresses {
@@ -508,7 +508,7 @@ a.source-btn:hover {
   top: 137px;
   padding: 30px 0 0 40px;
   height: 550px;
-  background: url(vr.png) 0px 0px repeat-y;
+  background: url(/images/vr.png) 0px 0px repeat-y;
 }
 
 .contact-address {
@@ -555,11 +555,11 @@ a.source-btn:hover {
   width: 332px;
   height: 86px;
   margin: 0 auto;
-  background: transparent url(visit-training.png) 0 0 no-repeat;
+  background: transparent url(/images/visit-training.png) 0 0 no-repeat;
   text-indent: -5000px;
 }
 
-#visit_training a:hover {background: transparent url(visit-training.png) 0 -86px no-repeat;}
+#visit_training a:hover {background: transparent url(/images/visit-training.png) 0 -86px no-repeat;}
 
 
 
