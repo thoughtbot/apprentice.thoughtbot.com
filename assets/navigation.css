@@ -1,0 +1,137 @@
+ul#main-nav {
+  z-index: 2;
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+ul#main-nav li {
+  width: 110px;
+  height: 52px;
+  float: left;
+  text-indent: -9999px;
+  line-height: 0;
+}
+
+ul#main-nav li a {
+  display: block;
+  width: 110px;
+  height: 52px;
+}
+
+ul#main-nav li#nav-ralph {
+
+  width: 220px;
+  background: url(nav.png) -330px 0px no-repeat;
+}
+
+ul#main-nav li#nav-ralph a {
+  width: 220px;
+  height: 118px;
+  margin-top: -13px;
+  background: url(ralph-logo.png) 0px 0px no-repeat;
+}
+
+ul#main-nav li#nav-ralph a:hover {
+  background: url(ralph-logo.png) 0px -118px no-repeat;
+}
+
+
+li#nav-services a {
+  background: url(nav.png) 0px 0px no-repeat;
+}
+
+li#nav-services a:hover {
+  background: url(nav.png) 0px -52px no-repeat;
+}
+
+li#nav-services a:active,
+li#nav-services a:focus {
+  background: url(nav.png) 0px -104px no-repeat;
+}
+
+li#nav-training a {
+  background: url(nav.png) -110px 0px no-repeat;
+}
+
+li#nav-training a:hover {
+  background: url(nav.png) -110px -52px no-repeat;
+}
+
+li#nav-training a:active,
+li#nav-training a:focus {
+  background: url(nav.png) -110px -104px no-repeat;
+}
+
+li#nav-products a {
+  background: url(nav.png) -220px 0px no-repeat;
+}
+
+li#nav-products a:hover {
+  background: url(nav.png) -220px -52px no-repeat;
+}
+
+li#nav-products a:active,
+li#nav-products a:focus {
+  background: url(nav.png) -220px -104px no-repeat;
+}
+
+li#nav-about a {
+  background: url(nav.png) -550px 0px no-repeat;
+}
+
+li#nav-about a:hover {
+  background: url(nav.png) -550px -52px no-repeat;
+}
+
+li#nav-about a:active,
+li#nav-about a:focus {
+  background: url(nav.png) -550px -104px no-repeat;
+}
+
+li#nav-community a {
+  background: url(nav.png) -660px 0px no-repeat;
+}
+
+li#nav-community a:hover {
+  background: url(nav.png) -660px -52px no-repeat;
+}
+
+li#nav-community a:active,
+li#nav-community a:focus {
+  background: url(nav.png) -660px -104px no-repeat;
+}
+
+li#nav-blog a {
+  background: url(nav.png) -770px 0px no-repeat;
+}
+
+li#nav-blog a:hover {
+  background: url(nav.png) -770px -52px no-repeat;
+}
+
+li#nav-blog a:active,
+li#nav-blog a:focus {
+  background: url(nav.png) -770px -104px no-repeat;
+}
+
+body#services li#nav-services a {
+  background: url(nav.png) 0px -104px no-repeat;
+}
+
+body#training li#nav-training a {
+  background: url(nav.png) -110px -104px no-repeat;
+}
+
+body#about li#nav-about a {
+  background: url(nav.png) -550px -104px no-repeat;
+}
+
+body#apps li#nav-products a {
+  background: url(nav.png) -220px -104px no-repeat;
+}
+
+body#community li#nav-community a {
+  background: url(nav.png) -660px -104px no-repeat;
+}
