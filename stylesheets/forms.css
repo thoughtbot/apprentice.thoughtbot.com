@@ -301,7 +301,6 @@ form li.error textarea.textarea:focus {
   border: 1px solid #510002;
 }
 
-
 /* Success stuff */
 .embed .confirm h2 {
   padding: 0;
@@ -310,7 +309,13 @@ form li.error textarea.textarea:focus {
   width: 830px;
   height: 392px;
   display: block;
-  background: url(http://www.thoughtbot.com/images/ralph-contact.jpg) 0px 0px no-repeat;
+  background: url(/images/ralph-contact.jpg) 0px 0px no-repeat;
   -moz-box-shadow: 2px 2px 2px #000;
   -webkit-box-shadow: 2px 2px 2px #000;
+}
+
+#form7 .embed .confirm h2 {
+  width: 600px;
+  height: 283px;
+  background: url(/images/ralph-contact-small.jpg) 0px 0px no-repeat;
 }
