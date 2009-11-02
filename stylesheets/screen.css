@@ -355,7 +355,7 @@ a.source-btn:hover {
   width: 530px;
 }
 
-.image-switcher {
+.image-switcher, .jcarousel-item {
   width: auto;
   padding: 15px;
   background: transparent url(/images/image-switcher.png) top left repeat-x;
@@ -363,6 +363,10 @@ a.source-btn:hover {
   text-align: center;
 }
 
+.homepage-carousel .jcarousel-item {
+  width: 500px;
+  height: 332px;
+}
 
 .image-switcher-tools {
   padding: 15px;
@@ -389,7 +393,7 @@ a.source-btn:hover {
     background: transparent url(/images/image-swticher-control.png) 0 -52px;
 }
 
-.image-switcher-control#active {
+.image-switcher-tools .active {
   background: transparent url(/images/image-swticher-control.png) 0 0px;
 }
 
