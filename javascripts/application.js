@@ -3,7 +3,7 @@ $(document).ready(function() {
     return function(carousel) {
       $(selector).find(".jcarousel-control a").bind("click", function() {
         $(this).siblings().removeClass("active").end().addClass("active");
-        carousel.scroll($.jcarousel.intval($(this).text()));
+        carousel.scroll(parseInt($(this).text()));
         return false;
       });
     };
