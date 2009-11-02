@@ -509,8 +509,8 @@ a.source-btn:hover {
 #addresses {
   position: absolute;
   right: 80px;
-  top: 137px;
-  padding: 30px 0 0 40px;
+  top: 30px;
+  padding: 10px 0 0 40px;
   height: 550px;
   background: url(/images/vr.png) 0px 0px repeat-y;
 }
@@ -530,6 +530,11 @@ a.source-btn:hover {
   margin: 0;
   font-size: 12px;
   line-height: 18px;
+}
+
+#contact_form {
+  position: relative;
+  left: -80px;
 }
 
 /***************************
