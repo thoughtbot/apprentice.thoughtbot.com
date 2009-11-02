@@ -355,7 +355,7 @@ a.source-btn:hover {
   width: 530px;
 }
 
-.image-switcher, .jcarousel-item {
+.image-switcher, .homepage-carousel .jcarousel-item {
   width: auto;
   padding: 15px;
   background: transparent url(/images/image-switcher.png) top left repeat-x;
@@ -366,6 +366,12 @@ a.source-btn:hover {
 .homepage-carousel .jcarousel-item {
   width: 500px;
   height: 332px;
+}
+
+.project-carousel > li.jcarousel-item {
+  display: block;
+  width: 880px;
+  height: 450px;
 }
 
 .image-switcher-tools {
