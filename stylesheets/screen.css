@@ -442,7 +442,15 @@ a.source-btn:hover {
 
 .next-project:hover {  background: transparent url(/images/next-project.png) 0 -39px no-repeat;}
 
+.prev-project {
+  display: block;
+  width: 51px;
+  height: 39px;
+  text-indent: -5000px;
+  background: transparent url(/images/prev-project.png) 0 0 no-repeat;
+}
 
+.prev-project:hover { background: transparent url(/images/prev-project.png) 0 -39px no-repeat;}
 /******************************
 + About Us 
 ******************************/
