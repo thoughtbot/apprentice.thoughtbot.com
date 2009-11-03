@@ -79,7 +79,7 @@ a#contact-btn {
   font-size: 1.8em;
   margin: 0 0 20px 0;
   line-height: 1.3;
-  font-weight: 400;  
+  font-weight: lighter;  
   font-family: "gotham", "helvetica neue", arial, helvetica, sans-serif;  
 }
 
@@ -143,7 +143,12 @@ a#contact-btn {
   float: left;
   width: 510px;
   padding: 20px 0 0 0;
-  color: #98918a;
+  color: #c6bfb9;
+  text-shadow: 0;
+}
+
+.column-left p {
+    text-shadow: 0;
 }
 
 .column-right {
@@ -175,10 +180,8 @@ a#contact-btn {
   border-left: none;
   padding: 15px 0 0 0;
   font-style: normal;
-  color: #fff;
+  color: #d5cfc8;
   margin: 0 0 10px 0;  
-  font-style: italic;
-  font-family: georgia, times, serif;
 }
 
 .column-right blockquote p {
@@ -194,8 +197,13 @@ a#contact-btn {
 .wrapper .thin-title {font-weight: 400;}
 
 #services-projects h6 {
-  color: #d5cec8;
-  margin: 0 0 6px 0;  
+  color: #e6e0db;
+  margin: 0 0 12px 0; 
+  padding: 5px 0 0 0; 
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  text-shadow: 0 1px 1px #000;
 }
 
 h6.featured_proj {
@@ -209,12 +217,13 @@ h6.featured_proj {
 }
 
 #services-projects .oss_section {
-  padding: 0 0 0 0;
+  padding: 0;
   border-bottom: 1px solid #332f29;
   color: #98918a;
 }  
 
-.services-section {padding-right: 128px;}
+.services-section 
+  {padding-right: 118px;}
 
 #see_more_oss {
   margin: 20px 0 0 0;
@@ -232,8 +241,6 @@ h6.featured_proj {
 #services-consulting {background: transparent url(/images/services-consulting.png) right center no-repeat;}
 #services-kick-start {background: transparent url(/images/services-kick-start.png) right center no-repeat;}
 #services-training {background: transparent url(/images/services-training.png) right center no-repeat;}
-
-
 
 #main-content-bottom {
   width: 100%;

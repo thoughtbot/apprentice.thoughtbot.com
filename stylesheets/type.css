@@ -2,8 +2,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #e6e0d9;
-  text-shadow: 1px 1px 1px #000;
+  
 }
+
+body { -webkit-text-stroke: 1px transparent; }
+@media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
 
 #top-content h2 {
   width: 880px;
