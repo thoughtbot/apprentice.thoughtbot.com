@@ -440,6 +440,7 @@ a.source-btn:hover {
   height: 39px;
   text-indent: -5000px;
   background: transparent url(/images/next-project.png) 0 0 no-repeat;
+  float: left;
 }
 
 .next-project:hover {  background: transparent url(/images/next-project.png) 0 -39px no-repeat;}
@@ -450,6 +451,7 @@ a.source-btn:hover {
   height: 39px;
   text-indent: -5000px;
   background: transparent url(/images/prev-project.png) 0 0 no-repeat;
+  float: left;
 }
 
 .prev-project:hover { background: transparent url(/images/prev-project.png) 0 -39px no-repeat;}
