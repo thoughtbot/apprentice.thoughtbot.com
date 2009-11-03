@@ -169,7 +169,6 @@ a#contact-btn {
   font-weight: bold;
 }
 
-
 .column-right {text-shadow: none;}
 
 .column-right blockquote{
@@ -178,7 +177,8 @@ a#contact-btn {
   font-style: normal;
   color: #fff;
   margin: 0 0 10px 0;  
-  
+  font-style: italic;
+  font-family: georgia, times, serif;
 }
 
 .column-right blockquote p {
@@ -190,8 +190,6 @@ a#contact-btn {
   margin: 0 0 15px 0;
   line-height: 1.3;
 }
-
-
 
 .wrapper .thin-title {font-weight: 400;}
 
@@ -211,7 +209,7 @@ h6.featured_proj {
 }
 
 #services-projects .oss_section {
-  padding: 10px 0 0 0;
+  padding: 0 0 0 0;
   border-bottom: 1px solid #332f29;
   color: #98918a;
 }  
