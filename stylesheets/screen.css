@@ -384,7 +384,9 @@ a.source-btn:hover {
   width: 530px;
 }
 
-.image-switcher, .homepage-carousel .jcarousel-item {
+.dark-content-left ul {margin: 0;}
+
+.image-switcher, .homepage-carousel .jcarousel-item, .homepage-carousel ul li img {
   width: auto;
   padding: 15px;
   background: transparent url(/images/image-switcher.png) top left repeat-x;
