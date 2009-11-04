@@ -464,27 +464,49 @@ a.source-btn:hover {
   background: transparent url(/images/image-swticher-control.png) 0 0px;
 }
 
-.next-project {
-  display: block;
-  width: 139px;
+.project-nav {
   height: 39px;
-  text-indent: -5000px;
-  background: transparent url(/images/next-project.png) 0 0 no-repeat;
+  width: 291px;
+}
+
+.project-nav span {
+  display: block;
+  background: transparent url(/images/project-nav.png) -53px 0 no-repeat; 
+  width: 185px;
+  height: 32px;
+  color: #000;
+  text-shadow: 0 1px 1px #a6a6a6;
+  padding: 7px 0 0 0;
+  font-weight: bold;
+  text-align: center;
   float: left;
 }
 
-.next-project:hover {  background: transparent url(/images/next-project.png) 0 -39px no-repeat;}
+
 
 .prev-project {
   display: block;
-  width: 51px;
   height: 39px;
+  width: 53px;  
   text-indent: -5000px;
-  background: transparent url(/images/prev-project.png) 0 0 no-repeat;
+  background: transparent url(/images/project-nav.png) 0 0 no-repeat;
   float: left;
 }
 
-.prev-project:hover { background: transparent url(/images/prev-project.png) 0 -39px no-repeat;}
+.prev-project:hover { background: transparent url(/images/project-nav.png) 0 -39px no-repeat;}
+
+
+.next-project {
+  display: block;
+  height: 39px;
+  width: 53px;
+  text-indent: -5000px;
+  background: transparent url(/images/project-nav.png) -238px 0 no-repeat;
+  float: left;
+}
+
+.next-project:hover {  background: transparent url(/images/project-nav.png)  -238px -39px no-repeat;}
+
 /******************************
 + About Us 
 ******************************/
