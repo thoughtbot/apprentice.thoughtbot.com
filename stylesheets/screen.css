@@ -24,6 +24,7 @@ h1#logo {
   width: 263px;
   height: 90px;
   margin: 0 auto 20px;
+  *margin-bottom: 0;
   position: relative;
 }
 
