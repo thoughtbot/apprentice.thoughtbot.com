@@ -33,6 +33,7 @@ h1#logo a {
   width: 263px;
   height: 89px;
   top: 13px;
+  *top: -8px;
   position: relative;
 }
 
