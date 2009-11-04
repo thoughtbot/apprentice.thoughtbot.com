@@ -363,11 +363,13 @@ a.source-btn:hover {
 #hackfest-address {
   float: left;
   margin-bottom: 8px;
+  width: 350px;
 }
 
 #hackfest-info {
   float: left;
   margin-left: 10px;
+  width: 426px;
 }
 
 /********************************

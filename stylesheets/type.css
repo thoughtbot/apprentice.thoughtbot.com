@@ -122,6 +122,7 @@ body#community h4 {
 
 #hackfest-info p {
   clear: right;
+  display: inline;
   float: left;
   margin-bottom: 7px;
   font-size: 12px;
