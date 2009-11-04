@@ -415,6 +415,14 @@ a.source-btn:hover {
   text-align: center;
 }
 
+.slide-frame{
+  background: transparent url(/images/image-switcher.png) top left repeat-x;  
+  border-bottom: 1px solid #000;  
+  width: 500px;
+  height: 332px;
+  padding: 15px;
+}
+
 .homepage-carousel .jcarousel-item {
   width: 500px;
   height: 332px;
