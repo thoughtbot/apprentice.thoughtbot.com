@@ -29,6 +29,7 @@ li#fo8li31 label.desc {
   color: #bda287;
   margin: 15px 0 10px 0;
   padding: 0;
+  width: 420px;
 }
 
 li#fo8li31 label.desc {
@@ -83,6 +84,7 @@ form li.buttons input {
   text-indent: -9999px;
   cursor: pointer;
   margin-top: 30px;
+  line-height: 300px;
 }
 
 form li.buttons input:hover {
