@@ -8,8 +8,8 @@ $(document).ready(function() {
 
   $(".project-carousel").jcarousel({
     wrap: "last",
-    animation: 500,
-    easing: "easeOutQuad",
+    animation: 600,
+    easing: "easeOutBack",
     initCallback: function(carousel) {
       $(".project-carousel .next-project").bind("click", moveCarousel(carousel, "next"));
       $(".project-carousel .prev-project").bind("click", moveCarousel(carousel, "prev"));
