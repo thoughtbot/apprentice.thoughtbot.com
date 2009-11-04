@@ -125,6 +125,10 @@ a#contact-btn {
   border-bottom: 1px solid #413b36;
 }
 
+.hr.bigspacing {
+  margin: 25px 0;
+}
+
 .dark-content .hr {
   background: #000;
   border-bottom: 1px solid #313131;
