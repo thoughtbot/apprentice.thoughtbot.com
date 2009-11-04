@@ -229,6 +229,11 @@ h6.featured_proj {
   color: #98918a;
 }  
 
+#services-projects .oss_section.last {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
 .services-section 
   {padding-right: 118px;}
 
