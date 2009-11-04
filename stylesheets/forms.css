@@ -309,7 +309,7 @@ form li.error textarea.textarea:focus {
 }
 
 /* Success stuff */
-.embed .confirm h2 {
+iframe#wufooFormx7x1x7 .embed .confirm h2 {
   padding: 0;
   margin: 10px 0 0 -120px;
   text-indent: -9999px;
@@ -321,7 +321,7 @@ form li.error textarea.textarea:focus {
   -webkit-box-shadow: 2px 2px 2px #000;
 }
 
-#form7 .embed .confirm h2 {
+iframe#wufooFormx7x2x7 .embed .confirm h2 {
   width: 600px;
   height: 283px;
   background: url(/images/ralph-contact-small.jpg) 0px 0px no-repeat;
