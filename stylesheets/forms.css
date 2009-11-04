@@ -67,26 +67,26 @@ li#fo8li31 label.desc {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border: 1px solid #12110f;
-  background: #ffeedf url(http://www.thoughtbot.github.com/images/text-field.png) 0px 0px repeat-x;
+  background: #ffeedf url(http://thoughtbot.github.com/images/text-field.png) 0px 0px repeat-x;
   width: 430px;
 }
 
 .wufoo input.text:focus {
-  background: #ffe2ac url(http://www.thoughtbot.github.com/images/text-field.png) 0px -40px repeat-x;
+  background: #ffe2ac url(http://thoughtbot.github.com/images/text-field.png) 0px -40px repeat-x;
 }
 
 form li.buttons input {
   border: 0;
   width: 141px;
   height: 58px;
-  background: url(http://www.thoughtbot.github.com/images/submit.png) 0px 0px no-repeat;
+  background: url(http://thoughtbot.github.com/images/submit.png) 0px 0px no-repeat;
   text-indent: -9999px;
   cursor: pointer;
   margin-top: 30px;
 }
 
 form li.buttons input:hover {
-  background: url(http://www.thoughtbot.github.com/images/submit.png) 0px -58px no-repeat;
+  background: url(http://thoughtbot.github.com/images/submit.png) 0px -58px no-repeat;
 }
 
 form.wufoo li span.req {
@@ -112,7 +112,7 @@ form .hr {
 }
 
 .wufoo textarea.textarea {
-  background: #ffeedf url(http://www.thoughtbot.github.com/images/textarea.png) 0px 0px repeat-x;
+  background: #ffeedf url(http://thoughtbot.github.com/images/textarea.png) 0px 0px repeat-x;
   float: left;
   clear: both;
   width: 430px;
@@ -128,7 +128,7 @@ form .hr {
 }
 
 .wufoo textarea.textarea:focus {
-  background: #ffe2ac url(http://www.thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
+  background: #ffe2ac url(http://thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
 }
 
 .wufoo input#Field31,
@@ -219,7 +219,7 @@ form li {
 #errorLi {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
-  background: #a00c0f url(http://www.thoughtbot.github.com/images/errorli.png) left bottom repeat-x !important;
+  background: #a00c0f url(http://thoughtbot.github.com/images/errorli.png) left bottom repeat-x !important;
   border: 1px solid #560001;
   margin: 0;
   padding: 10px;
@@ -251,7 +251,7 @@ form li {
   font-size: 10px;
   line-height: 27px;
   display: inline-block;
-  background: transparent url(http://www.thoughtbot.github.com/images/errorhighlighted.png) 0px 0px no-repeat !important;
+  background: transparent url(http://thoughtbot.github.com/images/errorhighlighted.png) 0px 0px no-repeat !important;
 }
 
 form li.error {
@@ -274,7 +274,7 @@ form.wufoo li.error span.req {
 
 form li.error input.text,
 form li.error input.text:focus {
-  background: #9d0b0e url(http://www.thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
+  background: #9d0b0e url(http://thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
   color: #fff;
   font-weight: bold;
   border: 1px solid #510002;
@@ -286,12 +286,12 @@ form p.error {
 
 li#fo8li31 p.error {
   text-indent: 33px;
-  background: url(http://www.thoughtbot.github.com/images/input-error-icon.png) 11px 5px no-repeat;
+  background: url(http://thoughtbot.github.com/images/input-error-icon.png) 11px 5px no-repeat;
 }
 
 form p.error {
   text-indent: 24px;
-  background: url(http://www.thoughtbot.github.com/images/input-error-icon.png) 2px 5px no-repeat;
+  background: url(http://thoughtbot.github.com/images/input-error-icon.png) 2px 5px no-repeat;
   height: 20px;
   line-height: 16px !important;
   padding: 4px 0 0 0 !important;
@@ -299,7 +299,7 @@ form p.error {
 
 form li.error textarea.textarea,
 form li.error textarea.textarea:focus {
-  background: #9d0b0e url(http://www.thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
+  background: #9d0b0e url(http://thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
   color: #fff;
   font-weight: bold;
   border: 1px solid #510002;
