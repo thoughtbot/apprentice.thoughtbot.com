@@ -8,9 +8,12 @@ $(document).ready(function() {
 
   $(".project-carousel").jcarousel({
     wrap: "last",
+    animation: 500,
+    easing: "easeOutQuad",
     initCallback: function(carousel) {
       $(".project-carousel .next-project").bind("click", moveCarousel(carousel, "next"));
       $(".project-carousel .prev-project").bind("click", moveCarousel(carousel, "prev"));
     }
   });
+
 });
