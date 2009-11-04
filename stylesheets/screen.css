@@ -93,7 +93,7 @@ a#contact-btn {
   margin-bottom: 3px;
 }
 
-#top-content-inner-pages h2 strong {font-weight: 500;}
+#top-content-inner-pages h2 strong, #top-content h2 strong {font-weight: 500;}
 
 #main-content {
   background: url(/images/main-content-top.png) 0px 0px repeat-x;
@@ -142,7 +142,7 @@ a#contact-btn {
 .column-left {
   float: left;
   width: 510px;
-  padding: 20px 0 0 0;
+  padding: 0 0 0 0;
   color: #c6bfb9;
   text-shadow: 0;
 }
@@ -178,7 +178,7 @@ a#contact-btn {
 
 .column-right blockquote{
   border-left: none;
-  padding: 15px 0 0 0;
+  padding: 5px 0 0 0;
   font-style: normal;
   color: #d5cfc8;
   margin: 0 0 10px 0;  
@@ -217,7 +217,8 @@ h6.featured_proj {
 }
 
 #services-projects .oss_section {
-  padding: 0;
+  padding: 0 0 8px 0;
+  margin: 0 0 8px 0;
   border-bottom: 1px solid #332f29;
   color: #98918a;
 }  
