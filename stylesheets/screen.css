@@ -467,6 +467,8 @@ a.source-btn:hover {
 .project-nav {
   height: 39px;
   width: 291px;
+  position: absolute;
+  top: 360px;
 }
 
 .project-nav span {
