@@ -17,6 +17,7 @@ form.wufoo {
 
 .wufoo li div {
   width: 430px;
+  clear: both;
 }
 
 .wufoo label.desc,
