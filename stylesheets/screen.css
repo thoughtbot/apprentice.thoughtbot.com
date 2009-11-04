@@ -265,7 +265,8 @@ h6.featured_proj {
 
 #footer {
   background: #0b0909 url(/images/footer.png) 0px 0px repeat-x;
-  padding: 25px 0 140px 0;
+  padding: 25px 0 130px 0;
+  *padding-bottom: 100px;
   position: relative;
 }
 
