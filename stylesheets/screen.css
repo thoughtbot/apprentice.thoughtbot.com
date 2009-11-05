@@ -444,9 +444,9 @@ a.source-btn:hover {
   color: #656565;
 }
 
-.image-switcher-control {
+.image-switcher-tools a {
   display: block;
-  float: right;
+  float: left;
   height: 26px;
   width: 24px;
   background: transparent url(/images/image-swticher-control.png) 0 -26px;
@@ -455,11 +455,11 @@ a.source-btn:hover {
   margin: 0 0 0 6px;
 }
 
-.image-switcher-control:hover {
+.image-switcher-tools a:hover {
     background: transparent url(/images/image-swticher-control.png) 0 -52px;
 }
 
-.image-switcher-tools .active {
+.image-switcher-tools a.activeSlide {
   background: transparent url(/images/image-swticher-control.png) 0 0px;
 }
 

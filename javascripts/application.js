@@ -40,7 +40,8 @@ $(document).ready(function() {
   $.each([".homepage-carousel-shortbord", ".homepage-carousel-umbrella-today"], function(idx, selector) {
     $(selector + " .slides").cycle({
       fx: "fade",
-      timeout: 2000
+      timeout: 4000,
+      pager: selector + " .image-switcher-tools"
     });
   });
 
