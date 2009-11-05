@@ -6,14 +6,34 @@ $(document).ready(function() {
     };
   };
 
+  var updateButtonStatus = function(carousel) {
+    current = carousel.first ? carousel.first : 1;
+    $(".project-nav .status").text("Project " + current + " of " + carousel.size());
+  }
+
   $(".project-carousel").jcarousel({
     wrap: "last",
     animation: 600,
     scroll: 1,
     easing: "easeOutBack",
+    buttonNextHTML: null,
+    buttonPrevHTML: null,
+    buttonNextCallback: updateButtonStatus,
+    buttonPrevCallback: updateButtonStatus,
     initCallback: function(carousel) {
-      $(".project-carousel .next-project").bind("click", moveCarousel(carousel, "next"));
-      $(".project-carousel .prev-project").bind("click", moveCarousel(carousel, "prev"));
+      $('.prev-project').bind('click', function() {
+        carousel.prev();
+        updateButtonStatus(carousel);
+        return false;
+      });
+
+      $('.next-project').bind('click', function() {
+        carousel.next();
+        updateButtonStatus(carousel);
+        return false;
+      });
+
+      updateButtonStatus(carousel);
     }
   });
 
