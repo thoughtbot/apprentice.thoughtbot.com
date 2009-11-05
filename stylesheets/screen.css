@@ -476,6 +476,10 @@ a.source-btn:hover {
   z-index: 99;
 }
 
+.project-nav a.active {
+  background-color: red;
+}
+
 .project-nav span {
   display: block;
   background: transparent url(/images/project-nav.png) -52px 0 no-repeat; 

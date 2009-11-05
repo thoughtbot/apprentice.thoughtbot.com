@@ -2,6 +2,8 @@ $(document).ready(function() {
 
   var updateButtonStatus = function(carousel) {
     current = carousel.first ? carousel.first : 1;
+    $('.project-nav a').removeClass("active");
+    $('.project-nav a').eq(current-1).addClass("active");
   }
 
   $(".project-carousel").jcarousel({
@@ -14,8 +16,8 @@ $(document).ready(function() {
     buttonNextCallback: updateButtonStatus,
     buttonPrevCallback: updateButtonStatus,
     initCallback: function(carousel) {
-      jQuery('.project-nav a').bind('click', function() {
-        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+      $('.project-nav a').bind('click', function() {
+        carousel.scroll($.jcarousel.intval($(this).text()));
         updateButtonStatus(carousel);
         return false;
       });
