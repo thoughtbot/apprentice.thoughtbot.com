@@ -419,7 +419,7 @@ a.source-btn:hover {
   background: transparent url(/images/image-switcher.png) top left repeat-x;  
   border-bottom: 1px solid #000;  
   width: 500px;
-  height: 332px;
+  height: 372px;
   padding: 15px;
 }
 
@@ -432,7 +432,7 @@ a.source-btn:hover {
   display: block;
   width: 830px;
   height: 405px;
-  
+
 }
 
 .image-switcher-tools {
@@ -490,7 +490,7 @@ a.source-btn:hover {
   display: block;
   height: 39px;
   width: 52px;  
-  text-indent: -5000px;
+  text-indent: -9999px;
   background: transparent url(/images/project-nav.png) 0 0 no-repeat;
   float: left;
 }
@@ -502,7 +502,7 @@ a.source-btn:hover {
   display: block;
   height: 39px;
   width: 53px;
-  text-indent: -5000px;
+  text-indent: -9999px;
   background: transparent url(/images/project-nav.png) -238px 0 no-repeat;
   float: left;
 }
