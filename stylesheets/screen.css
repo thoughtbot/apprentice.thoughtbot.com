@@ -435,7 +435,7 @@ a.source-btn:hover {
 }
 
 .image-switcher-tools {
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .image-switcher-tools span {
@@ -452,7 +452,7 @@ a.source-btn:hover {
   background: transparent url(/images/image-swticher-control.png) 0 -26px;
   overflow: hidden;
   text-indent: -5000px;
-  margin: 0 0 0 6px;
+  margin: 0 6px 0 0px;
 }
 
 .image-switcher-tools a:hover {
