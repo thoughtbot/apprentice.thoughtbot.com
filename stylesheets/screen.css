@@ -434,6 +434,10 @@ a.source-btn:hover {
   height: 405px;
 }
 
+.jcarousel-clip-vertical {
+  height: 405px;
+}
+
 .image-switcher-tools {
   padding: 15px 0;
 }

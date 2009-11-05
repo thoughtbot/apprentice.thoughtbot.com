@@ -1,34 +1,21 @@
 $(document).ready(function() {
-  var moveCarousel = function(carousel, direction) {
-    return function() {
-      carousel[direction]();
-      return false;
-    };
-  };
 
   var updateButtonStatus = function(carousel) {
     current = carousel.first ? carousel.first : 1;
-    $(".project-nav .status").text("Project " + current + " of " + carousel.size());
   }
 
   $(".project-carousel").jcarousel({
+    vertical: true,
     wrap: "both",
     animation: 600,
     scroll: 1,
-    easing: "easeOutBack",
     buttonNextHTML: null,
     buttonPrevHTML: null,
     buttonNextCallback: updateButtonStatus,
     buttonPrevCallback: updateButtonStatus,
     initCallback: function(carousel) {
-      $('.prev-project').bind('click', function() {
-        carousel.prev();
-        updateButtonStatus(carousel);
-        return false;
-      });
-
-      $('.next-project').bind('click', function() {
-        carousel.next();
+      jQuery('.project-nav a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
         updateButtonStatus(carousel);
         return false;
       });
