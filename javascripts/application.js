@@ -12,7 +12,7 @@ $(document).ready(function() {
   }
 
   $(".project-carousel").jcarousel({
-    wrap: "last",
+    wrap: "both",
     animation: 600,
     scroll: 1,
     easing: "easeOutBack",
