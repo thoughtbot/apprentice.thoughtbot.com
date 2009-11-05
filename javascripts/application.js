@@ -9,6 +9,7 @@ $(document).ready(function() {
   $(".project-carousel").jcarousel({
     wrap: "last",
     animation: 600,
+    scroll: 1,
     easing: "easeOutBack",
     initCallback: function(carousel) {
       $(".project-carousel .next-project").bind("click", moveCarousel(carousel, "next"));
