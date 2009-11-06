@@ -396,7 +396,8 @@ a.source-btn:hover {
 .dark-content p {color: #cacaca;}
 
 .dark-content-right {
-  width: 285px;
+  width: 240px;
+  padding-right: 45px;
   float: right;
 }
 
@@ -468,55 +469,43 @@ a.source-btn:hover {
 }
 
 .project-nav {
-  height: 39px;
-  width: 291px;
+  height: 455px;
+  width: 41px;
   position: absolute;
-  top: 385px;
-  right: 20px;
+  background: transparent url(/images/project-nav.png) 0 0 no-repeat;
+  top: 1px;
+  right: 1px;
   z-index: 99;
+  padding: 8px 0 0 13px;
+}
+
+
+.project-nav a {
+  display: block;
+  width: 32px;
+  height: 26px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  background: transparent url(/images/project-nav-button.png) 0 0 no-repeat;
+  margin: 0 0 5px 0;
+  color: #232323;
+  text-decoration: none;
+  padding: 8px 0 0 0;
+}
+
+.project-nav a:hover {
+ background: transparent url(/images/project-nav-button.png) -64px 0 no-repeat;  
 }
 
 .project-nav a.active {
-  background-color: red;
-}
-
-.project-nav span {
-  display: block;
-  background: transparent url(/images/project-nav.png) -52px 0 no-repeat; 
-  width: 186px;
-  height: 32px;
-  color: #000;
-  text-shadow: 0 1px 1px #a6a6a6;
-  padding: 7px 0 0 0;
-  font-weight: bold;
-  text-align: center;
-  float: left;
+  background: transparent url(/images/project-nav-button.png) -32px 0 no-repeat;
+  color: #d4d4d4;
+  text-shadow: 0px -1px #000;
 }
 
 
 
-.prev-project {
-  display: block;
-  height: 39px;
-  width: 52px;  
-  text-indent: -9999px;
-  background: transparent url(/images/project-nav.png) 0 0 no-repeat;
-  float: left;
-}
-
-.prev-project:hover { background: transparent url(/images/project-nav.png) 0 -39px no-repeat;}
-
-
-.next-project {
-  display: block;
-  height: 39px;
-  width: 53px;
-  text-indent: -9999px;
-  background: transparent url(/images/project-nav.png) -238px 0 no-repeat;
-  float: left;
-}
-
-.next-project:hover {  background: transparent url(/images/project-nav.png)  -238px -39px no-repeat;}
 
 /******************************
 + About Us 
