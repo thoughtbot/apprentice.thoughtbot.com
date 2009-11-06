@@ -680,10 +680,30 @@ a.source-btn:hover {
 
 #visit_training a:hover {background: transparent url(/images/visit-training.png) 0 -86px no-repeat;}
 
+.training-testimonial {
+  background: url(/images/quote.png) 60px 5px no-repeat;
+  padding: 10px 75px;
+  margin: 20px 0;
+  position: relative;
+  line-height: 22px;
+  font-size: 13px;
+  float: left;
+  width: 285px;
+}
 
+.training-testimonial .author {
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+  width: 300px;
+  text-align: right;
+  color: #c8a872;
+}
 
-
-
-
-
-
+.training-testimonial .author a {
+  font-style: italic;
+  font-weight: normal;
+  color: #c8a872;
+  font-size: 14px;
+  font-family: Georgia, serif;
+}
