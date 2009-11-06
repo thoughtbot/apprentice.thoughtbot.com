@@ -407,7 +407,7 @@ a.source-btn:hover {
 }
 
 .dark-content-left ul {margin: 0;}
-
+.dark-content-right p {line-height: 1.4;}
 .image-switcher, .homepage-carousel .jcarousel-item, .homepage-carousel ul li img {
   width: auto;
   padding: 15px;
