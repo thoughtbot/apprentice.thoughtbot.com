@@ -118,6 +118,13 @@ a#contact-btn {
   margin-bottom: 4px;
 }
 
+#homepage-dark-content {
+  height: 404px;
+  overflow: hidden;
+}
+
+#homepage-dark-content ul {list-style: none;}
+
 .hr {
   height: 1px;
   line-height: 1px;
