@@ -703,3 +703,16 @@ a.source-btn:hover {
   font-size: 14px;
   font-family: Georgia, serif;
 }
+
+.photo_credit {
+  margin: 20px 0 0 0;
+  padding: 5px 10px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  font-size: .9em;
+  background:transparent url(/images/dark-content.png) repeat-x scroll 0 0;
+  color: #7A7168;
+}
+
+.photo_credit a {color: #7A7168;}
+.photo_credit a:hover {color: #a1988e;}
