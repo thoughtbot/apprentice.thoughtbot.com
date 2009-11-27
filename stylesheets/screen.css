@@ -615,7 +615,7 @@ a.source-btn:hover {
 #addresses {
   position: relative;
   float: right;
-  padding: 10px 0 0 40px;
+  padding: 10px 0 0 30px;
   height: 550px;
   margin-bottom: -550px;
   background: url(/images/vr.png) 0px 0px repeat-y;
