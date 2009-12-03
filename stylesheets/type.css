@@ -43,6 +43,15 @@ body { -webkit-text-stroke: 1px transparent; }
   background: url(/images/contact.png) 0px 0px no-repeat;
 }
 
+h3#clients-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  height: 36px;
+  width: 140px;
+  padding: 0 0 5px 5px;
+}
+
 #top-content h3 {
   color: #a1a1a1;
   text-align: center;
