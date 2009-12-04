@@ -19,6 +19,7 @@ $(document).ready(function() {
       $('.project-nav a').bind('click', function() {
         carousel.scroll($.jcarousel.intval($(this).text()));
         updateButtonStatus(carousel);
+        pageTracker._trackPageview('/homepage/projects/'+$(this).text());
         return false;
       });
 
