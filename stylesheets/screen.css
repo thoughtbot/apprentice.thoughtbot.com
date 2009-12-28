@@ -18,26 +18,6 @@ body {
   float: right;
 }
 
-h1#logo {
-  clear: both;
-  text-indent: -9999px;
-  width: 263px;
-  height: 90px;
-  margin: 0 auto 20px;
-  *margin-bottom: 0;
-  position: relative;
-}
-
-h1#logo a {
-  display: block;
-  background: url(/images/thoughtbot-tab-logo.png) 0px 0px no-repeat;
-  width: 263px;
-  height: 89px;
-  top: 13px;
-  *top: -8px;
-  position: relative;
-}
-
 /*
 h1#logo a:hover {
   background: url(/images/thoughtbot-tab-logo.png) 0px -89px no-repeat;
@@ -55,21 +35,6 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   border-bottom: 1px solid #221e1b;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-}
-
-img#eyes {
-  position: absolute;
-  left: 431px;
-  top: 9px;
-  *top: 30px;
-  z-index: 3;
-}
-
-a#contact-btn {
-  position: absolute;
-  right: 7px;
-  top: 78px;
-  *top: 99px;
 }
 
 #top-content {
