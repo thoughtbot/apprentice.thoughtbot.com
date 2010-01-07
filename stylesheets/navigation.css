@@ -152,21 +152,21 @@ li#nav-blog a:focus {
 }
 
 body#services li#nav-services a {
-  background: url(/images/nav.png) 0px -104px no-repeat;
+  background: url(/images/nav.png) 0px -158px no-repeat;
 }
 
 body#training li#nav-training a {
-  background: url(/images/nav.png) -110px -104px no-repeat;
+  background: url(/images/nav.png) -110px -158px no-repeat;
 }
 
 body#about li#nav-about a {
-  background: url(/images/nav.png) -550px -104px no-repeat;
+  background: url(/images/nav.png) -550px -158px no-repeat;
 }
 
 body#products li#nav-products a {
-  background: url(/images/nav.png) -220px -104px no-repeat;
+  background: url(/images/nav.png) -220px -158px no-repeat;
 }
 
 body#community li#nav-community a {
-  background: url(/images/nav.png) -660px -104px no-repeat;
+  background: url(/images/nav.png) -660px -158px no-repeat;
 }
