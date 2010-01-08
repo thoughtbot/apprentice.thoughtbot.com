@@ -681,3 +681,167 @@ a.source-btn:hover {
 
 .photo_credit a {color: #7A7168;}
 .photo_credit a:hover {color: #a1988e;}
+
+
+/***************************
++ Clients Page
+***************************/
+
+#clients .dark-content {
+  margin-bottom: 25px;
+}
+
+#endorsements {
+  float: left;
+  width: 510px;
+  padding: 20px 0 0 0;
+  text-shadow: 0;
+  position: relative;
+}
+
+#clients .column-right h3,
+#clients #endorsements h3 {
+  color: #7A7168;
+  font-size: 1.3em;
+  font-family: Gotham, Helvetica, Arial, sans-serf;
+}
+
+.endorsement {
+  float: left;
+  clear: both;
+  padding-bottom: 20px;
+}
+
+.endorsement.last {
+}
+
+#clients blockquote{
+  border-left: none;
+  padding: 5px 0 0 0;
+  font-style: normal;
+  color: #cacaca;
+  margin: 0 0 10px 0;  
+}
+
+#clients blockquote p {
+  margin: 0;
+}
+
+#clients .credit {
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  line-height: 1.3;
+  color: #fff;
+}
+
+ul#client-list li {
+  float: left;
+  width: 255px;
+  padding-right: 20px;
+  text-indent: 17px;
+  background: url(/images/bullet.png) 0px 9px no-repeat;
+  list-style-type: none;
+  height: 25px;
+  line-height: 25px;
+  color: #d5cfc8;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+/***************************
++ Portfolio Page
+***************************/
+
+.portfolio-thumb-content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
+  padding: 20px;
+  width: 230px;
+  height: 230px;
+  float: left;
+  border-bottom: 1px solid #3d3834;
+  margin: 0 5px 20px 5px;
+  position: relative;
+}
+
+.portfolio-thumb-content.middle {
+  margin: 0 20px 20px 20px;
+}
+
+.portfolio-thumb-content h3 {
+  text-shadow: #000 0 1px 1px;
+  position: absolute;
+  width: 250px;
+  left: 10px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #948a84;
+  font-family: Gotham, Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.portfolio-thumb-frame {
+  background: transparent url(/images/image-switcher.png) top left repeat-x;  
+  border-bottom: 1px solid #000;  
+  width: 210px;
+  height: 180px;
+  padding: 10px;
+}
+
+.portfolio-thumb {
+  width: 210px;
+  height: 180px;
+  float: left;
+  position: relative;
+}
+
+.portfolio-thumb a {
+  text-decoration: none;
+  display: block;
+  width: 210px;
+  height: 180px;
+  position: absolute;
+  background: url(/images/portfolio-thumb-hover.png) -210px 0px no-repeat;
+}
+
+.portfolio-thumb a:hover {
+  background: url(/images/portfolio-thumb-hover.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.shortbord {
+  background: url(/images/portfolio-thumb-shortbord.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.gemcutter {
+  background: url(/images/portfolio-thumb-gemcutter.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.carbonrally {
+  background: url(/images/portfolio-thumb-carbonrally.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.orangepatrol {
+  background: url(/images/portfolio-thumb-orangepatrol.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.upturn {
+  background: url(/images/portfolio-thumb-upturn.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.teal {
+  background: url(/images/portfolio-thumb-teal.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.hoptoad {
+  background: url(/images/portfolio-thumb-hoptoad.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.umbrellatoday {
+  background: url(/images/portfolio-thumb-umbrellatoday.png) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.trainingapp {
+  background: url(/images/portfolio-thumb-trainingapp.png) 0px 0px no-repeat;
+}

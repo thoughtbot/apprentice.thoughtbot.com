@@ -86,29 +86,29 @@ li#nav-services a:focus {
   background: url(/images/nav.png) 0px -104px no-repeat;
 }
 
-li#nav-training a {
+li#nav-portfolio a {
   background: url(/images/nav.png) -110px 0px no-repeat;
 }
 
-li#nav-training a:hover {
+li#nav-portfolio a:hover {
   background: url(/images/nav.png) -110px -52px no-repeat;
 }
 
-li#nav-training a:active,
-li#nav-training a:focus {
+li#nav-portfolio a:active,
+li#nav-portfolio a:focus {
   background: url(/images/nav.png) -110px -104px no-repeat;
 }
 
-li#nav-products a {
+li#nav-clients a {
   background: url(/images/nav.png) -220px 0px no-repeat;
 }
 
-li#nav-products a:hover {
+li#nav-clients a:hover {
   background: url(/images/nav.png) -220px -52px no-repeat;
 }
 
-li#nav-products a:active,
-li#nav-products a:focus {
+li#nav-clients a:active,
+li#nav-clients a:focus {
   background: url(/images/nav.png) -220px -104px no-repeat;
 }
 
@@ -155,7 +155,7 @@ body#services li#nav-services a {
   background: url(/images/nav.png) 0px -156px no-repeat;
 }
 
-body#training li#nav-training a {
+body#portfolio li#nav-portfolio a {
   background: url(/images/nav.png) -110px -156px no-repeat;
 }
 
@@ -163,7 +163,7 @@ body#about li#nav-about a {
   background: url(/images/nav.png) -550px -156px no-repeat;
 }
 
-body#products li#nav-products a {
+body#clients li#nav-clients a {
   background: url(/images/nav.png) -220px -156px no-repeat;
 }
 
