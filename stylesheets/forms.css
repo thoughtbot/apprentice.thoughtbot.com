@@ -73,11 +73,11 @@ li#fo8li31 label.desc {
   width: 430px;
 }
 
-.wufoo li span {
+.wufoo li > span {
   display: block;
 }
 
-.wufoo li span input.text {
+.wufoo li > span input.text {
   width: 230px;
 }
 
