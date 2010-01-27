@@ -73,14 +73,6 @@ li#fo8li31 label.desc {
   width: 430px;
 }
 
-.wufoo li > span {
-  display: block;
-}
-
-.wufoo li > span input.text {
-  width: 230px;
-}
-
 .wufoo input.text:focus {
   background: #ffe2ac url(http://thoughtbot.github.com/images/text-field.png) 0px -40px repeat-x;
 }
