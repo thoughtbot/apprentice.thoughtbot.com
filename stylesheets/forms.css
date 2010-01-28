@@ -34,7 +34,8 @@ li#fo7li24 label.desc {
   width: 420px;
 }
 
-li#fo8li31 label.desc {
+li#fo8li31 label.desc,
+li#fo7li24 label.desc {
   width: 500px;
   text-indent: 9px;
 }
