@@ -135,19 +135,24 @@ form .hr {
 }
 
 .wufoo input#Field31,
-.wufoo input#Field32 {
+.wufoo input#Field32,
+.wufoo input#field24,
+.wufoo input#field25 {
   width: 203px;
 }
 
-.wufoo input#Field31 {
+.wufoo input#Field31,
+.wufoo input#field24 {
   clear: left;
 }
 
-.wufoo input#Field32 {
+.wufoo input#Field32,
+.wufoo input#field25 {
   clear: none;
 }
 
-li#fo8li31 label {
+li#fo8li31 label,
+li#fo7li24 label {
   float: left;
   width: 196px;
   padding: 3px;
