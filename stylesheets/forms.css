@@ -21,7 +21,8 @@ form.wufoo {
 }
 
 .wufoo label.desc,
-li#fo8li31 label.desc {
+li#fo8li31 label.desc,
+li#fo7li24 label.desc {
   float: left;
   clear: both;
   font-size: 18px;
