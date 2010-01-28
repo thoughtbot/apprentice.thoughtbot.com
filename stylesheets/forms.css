@@ -136,18 +136,18 @@ form .hr {
 
 .wufoo input#Field31,
 .wufoo input#Field32,
-.wufoo input#field24,
-.wufoo input#field25 {
+.wufoo input#Field24,
+.wufoo input#Field25 {
   width: 203px;
 }
 
 .wufoo input#Field31,
-.wufoo input#field24 {
+.wufoo input#Field24 {
   clear: left;
 }
 
 .wufoo input#Field32,
-.wufoo input#field25 {
+.wufoo input#Field25 {
   clear: none;
 }
 
