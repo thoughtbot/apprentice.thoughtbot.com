@@ -175,7 +175,7 @@ li#fo7li24 span.red {
 li#fo8li31,
 li#fo7li24  {
   margin-left: -8px;
-  width: 500px;
+  width: 500px !important;
 }
 
 #first-name {
