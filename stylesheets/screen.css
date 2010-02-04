@@ -860,3 +860,22 @@ ul#client-list li {
 .portfolio-thumb.trainingapp {
   background: url(/images/portfolio-thumb-trainingapp.png) 0px 0px no-repeat;
 }
+
+
+
+
+/***************************
++ Design Page
+***************************/
+
+.design-mock-content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
+  padding: 20px;
+  width: 830px;
+  float: left;
+  border-bottom: 1px solid #3d3834;
+  margin: 0 5px 20px 5px;
+  position: relative;
+}
