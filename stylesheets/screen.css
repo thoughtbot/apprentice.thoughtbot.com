@@ -821,6 +821,46 @@ ul#client-list li {
   background: url(/images/portfolio-thumb-hover.png) -210px 0px no-repeat;
 }
 
+.portfolio-page-content {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
+  padding: 20px;
+  width: 830px;
+  float: left;
+  border-bottom: 1px solid #3d3834;
+  margin: 0 5px 20px 5px;
+  position: relative;
+}
+
+.return {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background: url(/images/dark-content.png) 0px 0px repeat-x;
+	float:right;
+	width:150px;
+	height:30px;
+	margin:0 5px 30px 0;
+}
+
+.return a {
+	  padding-left: 17px;
+	  line-height: 28px;
+	  color: #d5cfc8;
+	  font-weight: bold;
+	  font-size: 1em;
+	text-decoration:none;
+}
+
+.return a:hover {
+	  padding-left: 17px;
+	  line-height: 28px;
+	  color: #d5cfc8;
+	  font-weight: bold;
+	  font-size: 1em;
+	text-decoration:underline;
+}
+
 .portfolio-thumb a:hover {
   background: url(/images/portfolio-thumb-hover.png) 0px 0px no-repeat;
 }
