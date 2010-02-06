@@ -98,10 +98,6 @@ form li.buttons input {
   line-height: 300px;
 }
 
-form#form5 li.buttons input {
-  margin-top: 10px;
-}
-
 form li.buttons input:hover {
   background: url(http://thoughtbot.github.com/images/submit.png) 0px -58px no-repeat;
 }
