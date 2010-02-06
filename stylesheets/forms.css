@@ -141,7 +141,7 @@ form .hr {
 }
 
 .wufoo li.phone input {
-  width: 106px;
+  width: 113px;
 }
 
 .wufoo li.phone span.symbol {
@@ -225,6 +225,16 @@ li#fo7li24  {
   color: #BDA287;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+.wufoo h3 {
+  color: rgb(230, 224, 219);
+  font-family: gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0px 0px 12px 0px;
+  padding: 5px 0px 0px 0px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
 }
 
 form li {
