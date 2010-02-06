@@ -231,6 +231,10 @@ li#fo7li24  {
   margin-bottom: 25px;
 }
 
+.wufoo label.choice {
+  float: left;
+}
+
 .wufoo .section h3 {
   color: rgb(230, 224, 219);
   font-family: gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
