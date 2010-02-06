@@ -138,6 +138,20 @@ form .hr {
   background: #ffe2ac url(http://thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
 }
 
+.wufoo li.phone input {
+  width: 130px;
+}
+
+.wufoo li.phone label {
+  float: left;
+  width: 123px;
+  padding: 3px;
+  font-style: italic;
+  color: #cacaca;
+  font-size: 12px;
+  text-align: left;
+}
+
 .wufoo li.name input,
 .wufoo input#Field31,
 .wufoo input#Field32,
@@ -167,20 +181,24 @@ li#fo7li24 label {
   font-style: italic;
   color: #cacaca;
   font-size: 12px;
+  text-align: left;
 }
 
+.wufoo li.phone span,
 .wufoo li.name span,
 li#fo8li31 span,
 li#fo7li24 span {
   margin-left: 8px;
 }
 
+.wufoo li.phone span.req,
 .wufoo li.name span.req,
 li#fo8li31 span.req,
 li#fo7li24 span.red {
   margin: 0;
 }
 
+.wufoo li.phone,
 .wufoo li.name,
 li#fo8li31,
 li#fo7li24  {
