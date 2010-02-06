@@ -138,7 +138,7 @@ form .hr {
   background: #ffe2ac url(http://thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
 }
 
-li.name input,
+li.name span input,
 .wufoo input#Field31,
 .wufoo input#Field32,
 .wufoo input#Field24,
