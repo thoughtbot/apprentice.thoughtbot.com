@@ -37,7 +37,7 @@ li#fo7li24 label.desc {
 }
 
 #form5.wufoo label.desc {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .wufoo li.name label.desc,
@@ -145,7 +145,7 @@ form .hr {
 }
 
 #form5.wufoo textarea.textarea {
-  height: 75px;
+  height: 65px;
 }
 
 .wufoo textarea.textarea:focus {
