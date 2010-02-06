@@ -21,7 +21,7 @@ form.wufoo {
 }
 
 .wufoo label.desc,
-li.name label.desc,
+.wufoo li.name label.desc,
 li#fo8li31 label.desc,
 li#fo7li24 label.desc {
   float: left;
@@ -35,7 +35,7 @@ li#fo7li24 label.desc {
   width: 420px;
 }
 
-li.name label.desc,
+.wufoo li.name label.desc,
 li#fo8li31 label.desc,
 li#fo7li24 label.desc {
   width: 500px;
@@ -158,7 +158,7 @@ form .hr {
   clear: none;
 }
 
-li.name label,
+.wufoo li.name label,
 li#fo8li31 label,
 li#fo7li24 label {
   float: left;
@@ -169,19 +169,19 @@ li#fo7li24 label {
   font-size: 12px;
 }
 
-li.name span,
+.wufoo li.name span,
 li#fo8li31 span,
 li#fo7li24 span {
   margin-left: 8px;
 }
 
-li.name span.req,
+.wufoo li.name span.req,
 li#fo8li31 span.req,
 li#fo7li24 span.red {
   margin: 0;
 }
 
-li.name,
+.wufoo li.name,
 li#fo8li31,
 li#fo7li24  {
   margin-left: -8px;
