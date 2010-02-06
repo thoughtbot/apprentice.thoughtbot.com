@@ -22,6 +22,7 @@ form.wufoo {
 
 .wufoo label.desc,
 .wufoo li.name label.desc,
+.wufoo li.phone label.desc,
 li#fo8li31 label.desc,
 li#fo7li24 label.desc {
   float: left;
@@ -36,6 +37,7 @@ li#fo7li24 label.desc {
 }
 
 .wufoo li.name label.desc,
+.wufoo li.phone label.desc,
 li#fo8li31 label.desc,
 li#fo7li24 label.desc {
   width: 500px;
