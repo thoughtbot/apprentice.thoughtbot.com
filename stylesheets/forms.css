@@ -227,7 +227,7 @@ li#fo7li24  {
   -webkit-box-shadow: none;
 }
 
-.wufoo h3 {
+.wufoo .section h3 {
   color: rgb(230, 224, 219);
   font-family: gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
