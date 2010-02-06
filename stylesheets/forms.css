@@ -36,6 +36,10 @@ li#fo7li24 label.desc {
   width: 420px;
 }
 
+#planning .wufoo label.desc {
+  font-size: 14px;
+}
+
 .wufoo li.name label.desc,
 .wufoo li.phone label.desc,
 li#fo8li31 label.desc,
