@@ -227,12 +227,9 @@ li#fo7li24  {
   -webkit-box-shadow: none;
 }
 
-.wufoo .section {
-  margin-bottom: 25px;
-}
-
 .wufoo label.choice {
   float: left;
+  color: #cacaca;
 }
 
 .wufoo .section h3 {
@@ -253,7 +250,7 @@ form li {
   border: 0;
   float: left;
   width: 450px !important;
-  margin: 25px 0 10px 0;
+  margin: 25px 0 25px 0;
   clear: both;
   height: 1px;
   line-height: 1px;
