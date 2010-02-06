@@ -21,7 +21,8 @@ form.wufoo {
 }
 
 .wufoo label.desc,
-li#fo8li31 label.desc {
+li#fo8li31 label.desc,
+li#fo7li24 label.desc {
   float: left;
   clear: both;
   font-size: 18px;
@@ -33,7 +34,8 @@ li#fo8li31 label.desc {
   width: 420px;
 }
 
-li#fo8li31 label.desc {
+li#fo8li31 label.desc,
+li#fo7li24 label.desc {
   width: 500px;
   text-indent: 9px;
 }
@@ -135,19 +137,24 @@ form .hr {
 }
 
 .wufoo input#Field31,
-.wufoo input#Field32 {
+.wufoo input#Field32,
+.wufoo input#Field24,
+.wufoo input#Field25 {
   width: 203px;
 }
 
-.wufoo input#Field31 {
+.wufoo input#Field31,
+.wufoo input#Field24 {
   clear: left;
 }
 
-.wufoo input#Field32 {
+.wufoo input#Field32,
+.wufoo input#Field25 {
   clear: none;
 }
 
-li#fo8li31 label {
+li#fo8li31 label,
+li#fo7li24 label {
   float: left;
   width: 196px;
   padding: 3px;
@@ -156,17 +163,20 @@ li#fo8li31 label {
   font-size: 12px;
 }
 
-li#fo8li31 span {
+li#fo8li31 span,
+li#fo7li24 span {
   margin-left: 8px;
 }
 
-li#fo8li31 span.req {
+li#fo8li31 span.req,
+li#fo7li24 span.red {
   margin: 0;
 }
 
-li#fo8li31 {
+li#fo8li31,
+li#fo7li24  {
   margin-left: -8px;
-  width: 500px;
+  width: 500px !important;
 }
 
 #first-name {
