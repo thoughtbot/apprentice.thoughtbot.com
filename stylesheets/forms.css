@@ -141,12 +141,16 @@ form .hr {
 }
 
 .wufoo li.phone input {
-  width: 130px;
+  width: 106px;
+}
+
+.wufoo li.phone span.symbol {
+  padding-top: 10px;
 }
 
 .wufoo li.phone label {
   float: left;
-  width: 123px;
+  width: 100px;
   padding: 3px;
   font-style: italic;
   color: #cacaca;
