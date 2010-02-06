@@ -140,6 +140,10 @@ form .hr {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+#form5.wufoo textarea.textarea {
+  height: 100px;
+}
+
 .wufoo textarea.textarea:focus {
   background: #ffe2ac url(http://thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
 }
