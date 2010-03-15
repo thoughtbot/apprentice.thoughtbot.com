@@ -350,8 +350,34 @@ a.source-btn:hover {
   background: url(/images/pace-car.png) 0px 0px no-repeat;
 }
 
-#hackfest {
+#hackfest,
+#ipad-showcase {
   padding: 20px 0;
+}
+
+#ipad-showcase {
+  text-align: center;
+}
+
+body#community #ipad-showcase h4 {
+  padding-bottom: 5px;
+}
+
+body#community #ipad-showcase h3 a {
+  color: #D5CEC8;
+  text-transform: uppercase;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+body#community #ipad-showcase h2 a {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+#ipad-showcase a {
+  display: block;
 }
 
 #hackfest img {
