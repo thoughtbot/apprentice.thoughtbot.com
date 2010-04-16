@@ -899,6 +899,14 @@ ul#client-list li {
   background: url(/images/portfolio-thumb-hover.png) 0px 0px no-repeat;
 }
 
+.portfolio-thumb.pozit {
+  background: url(/images/portfolio-thumb-pozit.jpg) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.safetystream {
+  background: url(/images/portfolio-thumb-safetystream.jpg) 0px 0px no-repeat;
+}
+
 .portfolio-thumb.shortbord {
   background: url(/images/portfolio-thumb-shortbord.png) 0px 0px no-repeat;
 }
