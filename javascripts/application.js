@@ -27,7 +27,7 @@ $(document).ready(function() {
     }
   });
 
-  $.each([".homepage-carousel-shortbord", ".homepage-carousel-umbrella-today", ".homepage-carousel-carbonrally", ".homepage-carousel-buywithme", ".homepage-carousel-teal"], function(idx, selector) {
+  $.each([".homepage-carousel-pozit", ".homepage-carousel-safetystream", ".homepage-carousel-shortbord", ".homepage-carousel-gemcutter"], function(idx, selector) {
     $(selector + " .slides").cycle({
       fx: "fade",
       timeout: 0,
