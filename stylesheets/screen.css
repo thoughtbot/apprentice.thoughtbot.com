@@ -907,6 +907,10 @@ ul#client-list li {
   background: url(/images/portfolio-thumb-safetystream.jpg) 0px 0px no-repeat;
 }
 
+.portfolio-thumb.landingpad {
+  background: url(/images/portfolio-thumb-landingpad.jpg) 0px 0px no-repeat;
+}
+
 .portfolio-thumb.shortbord {
   background: url(/images/portfolio-thumb-shortbord.jpg) 0px 0px no-repeat;
 }
