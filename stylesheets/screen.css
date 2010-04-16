@@ -266,6 +266,13 @@ h6.featured_proj {
   float: left;
 }
 
+#footer-left ul li {
+  float: left;
+  display: inline;
+  list-style-type: none;
+  margin: 0 5px 0 0;
+}
+
 #footer-left a {
   float: left;
   text-decoration: none;
