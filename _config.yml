@@ -1,2 +1,4 @@
 auto: true
 permalink: "pretty"
+exclude:
+- README

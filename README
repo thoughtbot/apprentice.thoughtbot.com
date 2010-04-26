@@ -1,0 +1,11 @@
+This is the source of thoughtbot.com, which is a jekyll site.
+
+To run locally:
+
+  $ jekyll --server
+
+Files will be auto-regenerated.  You can run:
+
+  $ jekyll --server --no-auto
+
+...if your changes arent showing up correctly.  This will flag parse errors.
