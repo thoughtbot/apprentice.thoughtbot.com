@@ -337,20 +337,16 @@ a.source-btn:hover {
   background: url(/images/factory-girl.png) 0px 0px no-repeat;
 }
 
+.project-thumbnail.high-voltage {
+  background: url(/images/high-voltage.png) 0px 0px no-repeat;
+}
+
 .project-thumbnail.clearance {
   background: url(/images/clearance.png) 0px 0px no-repeat;
 }
 
-.project-thumbnail.squirrel {
-  background: url(/images/squirrel.png) 0px 0px no-repeat;
-}
-
 .project-thumbnail.jester {
   background: url(/images/jester.png) 0px 0px no-repeat;
-}
-
-.project-thumbnail.mile-marker {
-  background: url(/images/mile-marker.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.pace-car {
