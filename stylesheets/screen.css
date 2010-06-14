@@ -353,6 +353,10 @@ a.source-btn:hover {
   background: url(/images/pace-car.png) 0px 0px no-repeat;
 }
 
+.project-thumbnail.suspenders {
+  background: url(/images/suspenders.png) 0px 0px no-repeat;
+}
+
 #hackfest,
 #ipad-showcase {
   padding: 20px 0;
