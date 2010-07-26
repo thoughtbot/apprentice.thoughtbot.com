@@ -90,6 +90,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
 
 #homepage-dark-content ul {list-style: none;}
 
+hr,
 .hr {
   height: 1px;
   line-height: 1px;
@@ -241,6 +242,10 @@ h6.featured_proj {
 #services-kick-start {background: transparent url(/images/services-kick-start.png) right center no-repeat;}
 #services-training {background: transparent url(/images/services-training.png) right center no-repeat;}
 
+#services-hoptoad {
+  background: transparent url(/images/services-hoptoad.png) right center no-repeat;
+  margin-bottom: 36px;
+}
 #main-content-bottom {
   width: 100%;
   height: 20px;
