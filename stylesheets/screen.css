@@ -362,6 +362,10 @@ a.source-btn:hover {
   background: url(/images/suspenders.png) 0px 0px no-repeat;
 }
 
+.project-thumbnail.flutie {
+  background: url(/images/flutie.png) 0px 0px no-repeat;
+}
+
 #hackfest,
 #ipad-showcase {
   padding: 20px 0;
