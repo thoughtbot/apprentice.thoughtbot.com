@@ -1,14 +1,12 @@
-
 body {
   background: url(http://thoughtbot.com/assets/giantrobots/images/body.png);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a { color: #bf1711; }
+a, a:link { color: #bf1711; }
 a:visited { color: #bf1711; }
 a:hover { color: #d71b14; }
 a:active, a:focus { color: #8d221e; }
-
 
 #header {
   width: 100%;
