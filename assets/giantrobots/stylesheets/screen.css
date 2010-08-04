@@ -414,6 +414,8 @@ code, pre {
   overflow-x: auto;
 }
 
+pre code { font-size: 11px; }
+
 #content .announcement {
   background-color: #FEFFE1 !important;
   border: 2px solid #d8d8d8;
