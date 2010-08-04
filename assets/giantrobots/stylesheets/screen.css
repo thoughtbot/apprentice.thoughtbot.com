@@ -1,6 +1,6 @@
 
 body {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/body.png);
+  background: url(http://thoughtbot.com/assets/giantrobots/images/body.png);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -13,7 +13,7 @@ a:active, a:focus { color: #8d221e; }
 #header {
   width: 100%;
   height: 275px;
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/header.png) top left repeat-x;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/header.png) top left repeat-x;
 }
 
 #header #title {
@@ -27,7 +27,7 @@ a:active, a:focus { color: #8d221e; }
   display: block;
   width: 1008px;
   height: 222px;  
-  background: transparent url(http://ui.thoughtbot.com/assets/_newblog/images/title.jpg) top left no-repeat;
+  background: transparent url(http://thoughtbot.com/assets/giantrobots/images/title.jpg) top left no-repeat;
   text-indent: -5000px;
 }
 
@@ -89,7 +89,7 @@ a:active, a:focus { color: #8d221e; }
 .post-info {
   height: 27px;
   width: 668px;
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/stripey.png);
+  background: url(http://thoughtbot.com/assets/giantrobots/images/stripey.png);
   margin: 15px 0;
 }
 
@@ -183,7 +183,7 @@ input#search {
   -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
   -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
   -box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  background: rgba(0,0,0,.32) url(http://ui.thoughtbot.com/assets/_newblog/images/search.png) 10px 8px no-repeat;
+  background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
 }
 
 
@@ -237,23 +237,23 @@ ul#products li a:hover {
 }
 
 #products li#products-thoughtbot {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/product-favicons.png) 0 0 no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/product-favicons.png) 0 0 no-repeat;
 }
 
 #products li#products-hoptoad {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/product-favicons.png) 0 -20px no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/product-favicons.png) 0 -20px no-repeat;
 }
 
 #products li#products-training {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/product-favicons.png) 0 -40px no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/product-favicons.png) 0 -40px no-repeat;
 }
 
 #products li#products-umbrella-today {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/product-favicons.png) 0 -60px no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/product-favicons.png) 0 -60px no-repeat;
 }
 
 #products li#products-landing-pad {
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/product-favicons.png) 0 -80px no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/product-favicons.png) 0 -80px no-repeat;
 }
 
 a#archive-link {
@@ -324,7 +324,7 @@ a#twitter-link {
 .ralph-separator {
   padding: 85px 0 0 0;
   margin: 10px 0 0 0;
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/ralph-separator.png) center 5px no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/ralph-separator.png) center 5px no-repeat;
 }
 
 .ralph-separator:first-child {
@@ -342,7 +342,7 @@ h2#search-title {
   width: 310px;
   padding: 0 0 0 45px;
   margin: 0 auto;
-  background: url(http://ui.thoughtbot.com/assets/_newblog/images/search-title.png) 0 center no-repeat;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/search-title.png) 0 center no-repeat;
 }
 
 #pagination {
