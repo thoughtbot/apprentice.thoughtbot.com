@@ -1,0 +1,190 @@
+/* POST SPECIFIC STYLES GO IN HERE.  REFERENCE THE POST YOU ARE STYLING IN COMMENTS. */
+
+/* FRED - Twitter post */
+#twitter_mock {
+	width:560px;
+	height: 110px;
+}
+
+#twitter_mock a {
+	width: 560px;
+	height: 110px;
+	float: left;
+	background: url(http://ui.thoughtbot.com/assets/2009-7-31-redesign_thumb.jpg) 0px 0px no-repeat;
+}
+
+#twitter_mock a:hover {
+	width: 560px;
+	height: 110px;
+	float: left;
+	background: url(http://ui.thoughtbot.com/assets/2009-7-31-redesign_thumb.jpg) 0px -110px no-repeat;
+}
+
+/* FRED - IE6 alternate layout post */
+ul.ie-layout-post-list {
+	list-style-type: none;
+}
+
+ul.ie-layout-post-list li {
+	line-height: 18px;
+	padding: 10px 10px 10px 44px;
+	margin-bottom: 10px;
+	background: #eee url(http://ui.thoughtbot.com/assets/ralph-bullet.png) 10px 15px no-repeat;
+}
+
+/* FRED - thoughtbot.com redesign post */
+a#first-two-thumbs {
+	display: block;
+	width: 550px;
+	height: 200px;
+	margin: 10px 0 25px;
+	background: url(http://ui.thoughtbot.com/assets/clickme.jpg) 0px 0px no-repeat;
+}
+
+a#first-two-thumbs:hover {
+	background: url(http://ui.thoughtbot.com/assets/clickme.jpg) 0px -200px no-repeat;
+}
+
+#redesign-post ul li {
+	margin-bottom: 7px;
+}
+
+#redesign-post ul {
+	padding-left: 10px;
+}
+
+
+/* FRED - Getting a job as a web designer post */
+
+#web-designer-job blockquote {
+	float: right;
+	line-height: 1.4;
+	font-size: 10px;
+	width: 245px;
+	height: 122px;
+	margin: 0 0 5px 20px;
+	padding: 8px 28px 0 12px;
+	font-style: normal;
+	background: #fff url(http://ui.thoughtbot.com/assets/bq.jpg) 0px 0px no-repeat;
+}
+
+#img-right {
+	float: right;
+	margin: 0 20px 5px;
+	padding: 0;
+}
+
+#web-designer-job blockquote h3 {
+	margin: 0;
+	color: #B72025;
+}
+
+.post #web-designer-job img#title-image {
+	margin: 0 0 10px -13px;
+}
+
+#web-designer-job li {
+	list-style: none;
+	float: left;
+	width: 150px;
+	padding: 5px 25px;
+	margin-left: 10px;
+}
+
+#web-designer-job ul {
+	width: 550px;
+	clear: both;
+	float: left;
+}
+
+#web-designer-job li#aj {
+	background: url(http://ui.thoughtbot.com/assets/aj-favicon.jpg) 0px 5px no-repeat;
+}
+
+#web-designer-job li#smashing {
+	background: url(http://ui.thoughtbot.com/assets/smashing-favicon.jpg) 0px 5px no-repeat;
+}
+
+#web-designer-job li#krop {
+	background: url(http://ui.thoughtbot.com/assets/krop-favicon.jpg) 0px 5px no-repeat;
+}
+
+#web-designer-job li#haystack {
+	background: url(http://ui.thoughtbot.com/assets/haystack-favicon.jpg) 0px 5px no-repeat;
+}
+
+/* FRED - Favicon post */
+
+ul#favicon-list li {
+	position: relative;
+	list-style-type: none;
+	padding: 0 0 0 25px;
+	min-height: 22px;
+	margin: 0 0 10px 0;
+}
+
+ul#favicon-list li a img {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	padding: 0;
+}
+
+/* FRED - Dribbble post */
+
+#airball {
+	margin: 15px 0 30px 0;
+	float: left;
+}
+
+#airball div {
+	float: left;
+	width: 320px;
+	margin: 0 0 10px 10px;
+	min-height: 170px;
+}
+
+#airball div h3 {
+	margin: 0;
+}
+
+#airball div h3 a {
+	color: #e94882;
+	text-decoration: none;
+}
+
+#airball a.airball-sprite {
+	float: left;
+	display: block;
+	width: 220px;
+	height: 170px;
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 0 no-repeat;
+}
+
+#airball a#empty {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 0 no-repeat;
+}
+
+#airball a#irrelevant {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 -170px no-repeat;
+}
+
+#airball a#bad {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 -340px no-repeat;
+}
+
+#airball a#naked {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 -510px no-repeat;
+}
+
+#airball a#code {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 -680px no-repeat;
+}
+
+#airball a#empty:hover,
+#airball a#irrelevant:hover,
+#airball a#bad:hover,
+#airball a#naked:hover,
+#airball a#code:hover {
+	background: url(http://ui.thoughtbot.com/assets/dribbble-post-sprite.jpg) 0 -850px no-repeat;
+}
