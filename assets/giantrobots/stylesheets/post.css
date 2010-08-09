@@ -45,6 +45,7 @@ blockquote {
 }
 
 li {
+  font-size: 13px;
   list-style: outside;
   margin: 0 0 7px 0;
 }
