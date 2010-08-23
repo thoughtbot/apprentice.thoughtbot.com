@@ -24,7 +24,7 @@ a:active, a:focus { color: #8d221e; }
 #header #title a{
   display: block;
   width: 1008px;
-  height: 222px;  
+  height: 222px;
   background: transparent url(http://thoughtbot.com/assets/giantrobots/images/title.jpg) top left no-repeat;
   text-indent: -5000px;
 }
@@ -173,7 +173,7 @@ input#search {
   height: 16px;
   padding: 7px 10px 7px 30px;
   font-size: 12px;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -184,13 +184,24 @@ input#search {
   background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
 }
 
+div#hoptoad-promo {
+  background: rgba(0,0,0,.32);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  margin: 12px 0;
+  padding: 4px 0 2px 8px;
+}
 
 ul#products {
   margin: 0;
   padding: 8px 10px 7px;
   width: 130px;
   font-size: 12px;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   float: left;
   -moz-border-radius: 5px;
@@ -204,7 +215,7 @@ ul#products {
 
 ul#products li {
   height: 20px;
-  margin: 0;
+  margin: 0 0 3px 0;
   line-height: 20px;
   list-style-type: none;
 }
@@ -362,7 +373,7 @@ h2#search-title {
   font-weight: normal;
   font-style: italic;
   font-family: Georgia;
-  background-image: -moz-linear-gradient(top, #c40000, #8c0000); 
+  background-image: -moz-linear-gradient(top, #c40000, #8c0000);
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #c40000),color-stop(1, #8c0000));
 }
 
@@ -423,7 +434,7 @@ pre code { font-size: 11px; }
   font-size: 1.3em;
   font-weight: bold;
   margin: 10px 10px 0px -45px;
-  -moz-border-radius: 10px; 
+  -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
 
