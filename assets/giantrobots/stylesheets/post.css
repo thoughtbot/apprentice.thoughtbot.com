@@ -57,8 +57,9 @@ blockquote {
   margin: 15px 0;
   font-family: Georgia, serif;
   font-style: italic;
-  line-height: 14px;
-  font-size: 12px;
+  line-height: 16px;
+  font-size: 11px;
+  border: 0;
 }
 
 
