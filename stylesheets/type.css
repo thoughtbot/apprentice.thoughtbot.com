@@ -7,13 +7,34 @@ body {
 
 body { -webkit-text-stroke: 1px transparent; }
 @media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
+@font-face {
+	font-family: 'Museo Sans';
+	src: url('../MuseoSans_500.eot');
+	src: local('☺'), url('../MuseoSans_500.woff') format('woff'), url('../MuseoSans_500.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 #top-content h2 {
   width: 880px;
-  text-indent: -9999px;
+  font: 56px/60px 'Museo Sans', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  text-shadow: 0 2px 0 #000;
 }
 
-#home #top-content h2 {
+#top-content h2 strong {
+  display: block;
+  font-weight: bold;
+}
+
+#community #top-content h2 {
+  font-size: 44px;
+  line-height: 50px;
+}
+
+/*#home #top-content h2 {
   height: 123px;
   background: url(/images/home.png) 0px 0px no-repeat;
 }
@@ -28,6 +49,7 @@ body { -webkit-text-stroke: 1px transparent; }
   background: url(/images/community.png) 0px 0px no-repeat;
 }
 
+
 #jobs #top-content h2 {
   height: 36px;
   background: url(/images/jobs.png) 0px 0px no-repeat;
@@ -41,7 +63,7 @@ body { -webkit-text-stroke: 1px transparent; }
 #contact #top-content h2 {
   height: 34px;
   background: url(/images/contact.png) 0px 0px no-repeat;
-}
+}*/
 
 h3#clients-text {
   color: #fff;
