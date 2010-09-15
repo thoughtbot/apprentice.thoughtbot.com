@@ -10,7 +10,7 @@ body { -webkit-text-stroke: 1px transparent; }
 @font-face {
 	font-family: 'Museo Sans';
 	src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
-	src: local('☺'), url('../assets/MuseoSans_500.woff') format('woff'), url('../assets/MuseoSans_500.ttf') format('truetype');
+	src: local('☺'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.woff') format('woff'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
