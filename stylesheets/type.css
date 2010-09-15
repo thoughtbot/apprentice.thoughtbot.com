@@ -9,7 +9,7 @@ body { -webkit-text-stroke: 1px transparent; }
 @media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
 @font-face {
 	font-family: 'Museo Sans';
-	src: url('../assets/MuseoSans_500.eot');
+	src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
 	src: local('☺'), url('../assets/MuseoSans_500.woff') format('woff'), url('../assets/MuseoSans_500.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
