@@ -1,12 +1,3 @@
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #e6e0d9;
-  
-}
-
-body { -webkit-text-stroke: 1px transparent; }
-@media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
 @font-face {
 	font-family: 'Museo Sans';
 	src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
@@ -14,6 +5,15 @@ body { -webkit-text-stroke: 1px transparent; }
 	font-weight: normal;
 	font-style: normal;
 }
+
+body {
+  color: #e6e0d9;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  -webkit-text-stroke: 1px transparent;
+}
+
+@media only screen and (max-device-width:480px) {body{-webkit-text-stroke:0 black;}}
 
 #top-content h2 {
   width: 880px;
@@ -33,37 +33,6 @@ body { -webkit-text-stroke: 1px transparent; }
   font-size: 44px;
   line-height: 50px;
 }
-
-/*#home #top-content h2 {
-  height: 123px;
-  background: url(/images/home.png) 0px 0px no-repeat;
-}
-
-#about #top-content h2 {
-  height: 50px;
-  background: url(/images/about.png) top center no-repeat; 
-}
-
-#community #top-content h2 {
-  height: 97px;
-  background: url(/images/community.png) 0px 0px no-repeat;
-}
-
-
-#jobs #top-content h2 {
-  height: 36px;
-  background: url(/images/jobs.png) 0px 0px no-repeat;
-}
-
-#jobs #top-content h2#positions {
-  height: 36px;
-  background: url(/images/positions.png) 0px 0px no-repeat;
-}
-
-#contact #top-content h2 {
-  height: 34px;
-  background: url(/images/contact.png) 0px 0px no-repeat;
-}*/
 
 h3#clients-text {
   color: #fff;
@@ -185,4 +154,3 @@ body#community h4 {
 #jobs #top-content .position p strong {
   color: #ccc;
 }
-

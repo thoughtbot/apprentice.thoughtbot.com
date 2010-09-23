@@ -18,17 +18,6 @@ body {
   float: right;
 }
 
-/*
-h1#logo a:hover {
-  background: url(/images/thoughtbot-tab-logo.png) 0px -89px no-repeat;
-}
-
-h1#logo a:focus,
-h1#logo a:active {
-  background: url(/images/thoughtbot-tab-logo.png) 0px -178px no-repeat;
-}
-*/
-
 img.framed { /* put a 1px black inside stroke on the image in photoshop */
   padding: 10px;
   background: url(/images/img-bg.png) 0px 0px repeat-x;
@@ -47,14 +36,13 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 1.8em;
   margin: 0 0 20px 0;
   line-height: 1.3;
-  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;  
+  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
 }
-
 
 #top-content-inner-pages h2{
   font-size: 2.4em;
   text-shadow: #000 0 1px 1px;
-  font-weight: lighter;  
+  font-weight: lighter;
   font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
   color: #fff;
   margin-bottom: 3px;
@@ -144,7 +132,7 @@ hr,
   -webkit-border-radius: 10px;
   background: url(/images/dark-content.png) 0px 0px repeat-x;
   padding: 20px;
-  border-bottom: 1px solid #3d3834;  
+  border-bottom: 1px solid #3d3834;
 }
 
 #services-projects {
@@ -167,7 +155,7 @@ hr,
   padding: 5px 0 0 0;
   font-style: normal;
   color: #d5cfc8;
-  margin: 0 0 10px 0;  
+  margin: 0 0 10px 0;
 }
 
 .column-right blockquote p {
@@ -182,21 +170,20 @@ hr,
 
 #services .column-right img {
   margin-bottom: 10px;
-  background: transparent url(/images/image-switcher.png) top left repeat-x;  
-  border-bottom: 1px solid #000;  
+  background: transparent url(/images/image-switcher.png) top left repeat-x;
+  border-bottom: 1px solid #000;
   padding: 10px;
 }
-
 
 .wrapper .thin-title {font-weight: 400;}
 
 #services-projects h6 {
   color: #e6e0db;
-  margin: 0 0 12px 0; 
-  padding: 5px 0 0 0; 
+  margin: 0 0 12px 0;
+  padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -215,15 +202,16 @@ h6.featured_proj {
   margin: 0 0 8px 0;
   border-bottom: 1px solid #332f29;
   color: #98918a;
-}  
+}
 
 #services-projects .oss_section.last {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-.services-section 
-  {padding-right: 118px;}
+.services-section {
+  padding-right: 118px;
+}
 
 #see_more_oss {
   margin: 20px 0 0 0;
@@ -236,11 +224,21 @@ h6.featured_proj {
   text-indent: -5000px;
 }
 
-#see_more_oss:hover {background: transparent url(/images/see-more-oss.png) 0 -39px no-repeat;}
+#see_more_oss:hover {
+  background: transparent url(/images/see-more-oss.png) 0 -39px no-repeat;
+}
 
-#services-consulting {background: transparent url(/images/services-consulting.png) right center no-repeat;}
-#services-kick-start {background: transparent url(/images/services-kick-start.png) right center no-repeat;}
-#services-training {background: transparent url(/images/services-training.png) right center no-repeat;}
+#services-consulting {
+  background: transparent url(/images/services-consulting.png) right center no-repeat;
+}
+
+#services-kick-start {
+  background: transparent url(/images/services-kick-start.png) right center no-repeat;
+}
+
+#services-training {
+  background: transparent url(/images/services-training.png) right center no-repeat;
+}
 
 #services-hoptoad {
   background: transparent url(/images/services-hoptoad.png) right center no-repeat;
@@ -446,8 +444,8 @@ body#community #ipad-showcase h2 a {
 }
 
 .slide-frame{
-  background: transparent url(/images/image-switcher.png) top left repeat-x;  
-  border-bottom: 1px solid #000;  
+  background: transparent url(/images/image-switcher.png) top left repeat-x;
+  border-bottom: 1px solid #000;
   width: 500px;
   height: 372px;
   padding: 15px;
@@ -508,7 +506,6 @@ body#community #ipad-showcase h2 a {
   padding: 8px 0 0 13px;
 }
 
-
 .project-nav a {
   display: block;
   width: 32px;
@@ -524,7 +521,7 @@ body#community #ipad-showcase h2 a {
 }
 
 .project-nav a:hover {
- background: transparent url(/images/project-nav-button.png) -64px 0 no-repeat;  
+ background: transparent url(/images/project-nav-button.png) -64px 0 no-repeat;
 }
 
 .project-nav a.active {
@@ -533,11 +530,8 @@ body#community #ipad-showcase h2 a {
   text-shadow: 0px -1px #000;
 }
 
-
-
-
 /******************************
-+ About Us 
++ About Us
 ******************************/
 
 #three_columns {
@@ -566,15 +560,15 @@ body#community #ipad-showcase h2 a {
   padding: 30px 0 0 0;
 }
 
-
 .person {
   width: 860px;
   padding: 20px 0 0 0;
   margin: 0 0 5px 0;
 }
 
-
-.person .hr {margin: 6px 0;}
+.person .hr {
+  margin: 6px 0;
+}
 
 .person-photo {
   width: 190px;
@@ -584,6 +578,7 @@ body#community #ipad-showcase h2 a {
   position: relative;
   left: -5px;
 }
+
 .person-photo img {
   position: relative;
   left: 16px;
@@ -609,7 +604,9 @@ body#community #ipad-showcase h2 a {
   text-transform: none;
 }
 
-.person-info p {color: #e6e0d9;}
+.person-info p {
+  color: #e6e0d9;
+}
 
 #positions-cont {
   clear: both;
@@ -648,13 +645,11 @@ body#community #ipad-showcase h2 a {
 }
 
 .contact-address h4 {
-
   font-size: 14px;
   margin: 0;
 }
 
 .contact-address p {
-
   margin: 0;
   font-size: 12px;
   line-height: 18px;
@@ -697,7 +692,9 @@ body#community #ipad-showcase h2 a {
   text-indent: -5000px;
 }
 
-#visit_training a:hover {background: transparent url(/images/visit-training.png) 0 -86px no-repeat;}
+#visit_training a:hover {
+  background: transparent url(/images/visit-training.png) 0 -86px no-repeat;
+}
 
 .training-testimonial {
   background: url(/images/quote.png) 60px 5px no-repeat;
@@ -737,14 +734,17 @@ body#community #ipad-showcase h2 a {
   color: #7A7168;
 }
 
-.photo_credit a {color: #7A7168;}
-.photo_credit a:hover {color: #a1988e;}
+.photo_credit a {
+  color: #7A7168;
+}
 
+.photo_credit a:hover {
+  color: #a1988e;
+}
 
 /***************************
 + Clients Page
 ***************************/
-
 #clients .dark-content {
   margin-bottom: 25px;
 }
@@ -778,7 +778,7 @@ body#community #ipad-showcase h2 a {
   padding: 5px 0 0 0;
   font-style: normal;
   color: #cacaca;
-  margin: 0 0 10px 0;  
+  margin: 0 0 10px 0;
 }
 
 #clients blockquote p {
@@ -841,8 +841,8 @@ ul#client-list li {
 }
 
 .portfolio-thumb-frame {
-  background: transparent url(/images/image-switcher.png) top left repeat-x;  
-  border-bottom: 1px solid #000;  
+  background: transparent url(/images/image-switcher.png) top left repeat-x;
+  border-bottom: 1px solid #000;
   width: 210px;
   height: 180px;
   padding: 10px;
@@ -887,20 +887,20 @@ ul#client-list li {
 }
 
 .return a {
-	  padding-left: 17px;
-	  line-height: 28px;
-	  color: #d5cfc8;
-	  font-weight: bold;
-	  font-size: 1em;
+  padding-left: 17px;
+  line-height: 28px;
+  color: #d5cfc8;
+  font-weight: bold;
+  font-size: 1em;
 	text-decoration:none;
 }
 
 .return a:hover {
-	  padding-left: 17px;
-	  line-height: 28px;
-	  color: #d5cfc8;
-	  font-weight: bold;
-	  font-size: 1em;
+  padding-left: 17px;
+  line-height: 28px;
+  color: #d5cfc8;
+  font-weight: bold;
+  font-size: 1em;
 	text-decoration:underline;
 }
 
@@ -956,13 +956,9 @@ ul#client-list li {
   background: url(/images/portfolio-thumb-trainingapp.jpg) 0px 0px no-repeat;
 }
 
-
-
-
 /***************************
 + Design Page
 ***************************/
-
 .design-mock-content {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
