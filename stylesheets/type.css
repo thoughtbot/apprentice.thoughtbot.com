@@ -24,6 +24,13 @@ body {
   text-shadow: 0 2px 0 #000;
 }
 
+#portfolio h2 {
+  margin: 0 0 0 0;
+  color: #fff;
+  font: 56px/60px 'Museo Sans', Helvetica, Arial, sans-serif;
+  text-indent: -3px;
+}
+
 #top-content h2 strong {
   display: block;
   font-weight: bold;

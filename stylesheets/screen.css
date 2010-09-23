@@ -957,6 +957,212 @@ ul#client-list li {
 }
 
 /***************************
++ Individual Work Page
+***************************/
+#portfolio-top {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+#portfolio-top.hoptoad {
+}
+
+.portfolio-carousel {
+  padding: 9px;
+  background: rgba(255,255,255,.1);
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 1px solid rgba(255,255,255,.05);
+  border-right: 1px solid rgba(255,255,255,.05);
+  width: 830px;
+  margin: 0 auto 15px;
+  list-style-type: none;
+}
+
+.portfolio-carousel img {
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.7);
+  -moz-box-shadow: 0 0 10px rgba(0,0,0,.7);
+}
+
+.portfolio-left {
+  float: left;
+  width: 530px;
+}
+
+.portfolio-left h4 {
+  font-weight: 18px;
+}
+
+.portfolio-left p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.portfolio-body-image {
+  background: rgba(0,0,0,.4);
+  /*border: 1px solid #222;*/
+  margin: 0 0 15px -60px;
+  padding: 10px;
+}
+
+.portfolio-right {
+  float: right;
+  width: 260px;
+  -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+	-webkit-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+	background: rgba(0,0,0,.4);
+	padding: 15px 25px;
+}
+
+.portfolio-right blockquote {
+  border: 0;
+  margin: 0 0 24px 0;
+  position: relative;
+}
+
+.portfolio-right blockquote:before {
+  content: '\201C';
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+  top: -6px;
+  left: -12px;
+}
+
+.portfolio-right blockquote p {
+  color: #eee;
+  font-family: georgia;
+  font-style: italic;
+}
+
+.portfolio-right blockquote p.source {
+  font-style: normal;
+  font-weight: bold;
+  margin: -10px 0 0 0;
+  text-align: left;
+}
+
+.portfolio-right blockquote p.source:before {
+  content: '\2014 ';
+}
+
+.portfolio-right .stat {
+  margin: 9px 0 18px 0;
+  text-align: center;
+}
+
+.portfolio-right .stat .number {
+  font-family: 'helvetica neue', arial, sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0 0 3px 0;
+}
+
+.portfolio-right .stat .metric {
+  font-weight: bold;
+}
+
+
+.portfolio-left p:last-child,
+.portfolio-right p:last-child {
+  margin-bottom: 0;
+}
+
+#project-navigation {
+  border-top: 1px solid rgba(0,0,0,1);
+  border-bottom: 1px solid rgba(0,0,0,1);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.1), inset 0 1px 0 rgba(255,255,255,.1);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1), inset 0 1px 0 rgba(255,255,255,.1);
+  clear: both;
+  float: left;
+  margin: 50px 0 0 0;
+  position: relative;
+  width: 880px;
+}
+
+#project-navigation a {
+  display: block;
+  padding: 16px 0 20px;
+  text-decoration: none;
+}
+
+a#next-project {
+  background: url(/images/project-arrows.png) right -45px no-repeat;
+  float: right;
+  margin-right: -40px;
+  padding-right: 40px;
+  text-align: right;
+}
+
+a#next-project:active {
+  background: rgba(255,255,255,.04) url(/images/project-arrows.png) right -46px no-repeat;
+}
+
+a#previous-project {
+  background: url(/images/project-arrows.png) left 12px no-repeat;
+  float: left;
+  margin-left: -40px;
+  padding-left: 40px;
+}
+
+a#previous-project:hover {
+}
+
+a#previous-project:active {
+  background: rgba(255,255,255,.04) url(/images/project-arrows.png) left 3px no-repeat;
+}
+
+a#next-project strong {
+  float: right;
+}
+
+#project-navigation a img {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 7px;
+  padding: 3px;
+  background: rgba(255,255,255,.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 rgba(0,0,0,1);
+}
+
+#project-navigation a:active img {
+  top: 9px;
+}
+
+a#next-project img {
+  right: 37px;
+}
+
+a#previous-project img {
+  left: 37px;
+}
+
+a#previous-project strong {
+  float: left;
+}
+
+#project-navigation a:active {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+#project-navigation a strong {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+#project-navigation a h4 {
+  margin: 0 0 2px 0;
+  text-transform: none;
+}
+
+/***************************
 + Design Page
 ***************************/
 .design-mock-content {
