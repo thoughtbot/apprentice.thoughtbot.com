@@ -30,16 +30,16 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   margin-bottom: 10px;
 }
 
-#top-content-inner-pages h3{
+#top-content-inner-pages h3 {
   color: #948a84;
   font-weight: normal;
   font-size: 1.8em;
   margin: 0 0 20px 0;
-  line-height: 1.3;
+  line-height: 1.1;
   font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
 }
 
-#top-content-inner-pages h2{
+#top-content-inner-pages h2 {
   font-size: 2.4em;
   text-shadow: #000 0 1px 1px;
   font-weight: lighter;
@@ -329,39 +329,39 @@ a.source-btn:hover {
 }
 
 .project-thumbnail.paperclip {
-  background: url(/images/paperclip.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/paperclip.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.shoulda {
-  background: url(/images/shoulda.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/shoulda.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.factory-girl {
-  background: url(/images/factory-girl.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/factory-girl.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.high-voltage {
-  background: url(/images/high-voltage.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/high-voltage.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.clearance {
-  background: url(/images/clearance.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/clearance.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.jester {
-  background: url(/images/jester.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/jester.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.pace-car {
-  background: url(/images/pace-car.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/pace-car.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.suspenders {
-  background: url(/images/suspenders.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/suspenders.png) 0px 0px no-repeat;
 }
 
 .project-thumbnail.flutie {
-  background: url(/images/flutie.png) 0px 0px no-repeat;
+  background: url(/images/oss-logos/flutie.png) 0px 0px no-repeat;
 }
 
 #hackfest,
@@ -828,7 +828,7 @@ ul#client-list li {
   margin: 0 20px 20px 20px;
 }
 
-.portfolio-thumb-content h3 {
+#portfolio .portfolio-thumb-content h3 {
   text-shadow: #000 0 1px 1px;
   position: absolute;
   width: 250px;
@@ -905,55 +905,55 @@ ul#client-list li {
 }
 
 .portfolio-thumb a:hover {
-  background: url(/images/portfolio-thumb-hover.png) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-hover.png) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.pozit {
-  background: url(/images/portfolio-thumb-pozit.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-pozit.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.safetystream {
-  background: url(/images/portfolio-thumb-safetystream.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-safetystream.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.landingpad {
-  background: url(/images/portfolio-thumb-landingpad.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-landingpad.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.shortbord {
-  background: url(/images/portfolio-thumb-shortbord.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-shortbord.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.gemcutter {
-  background: url(/images/portfolio-thumb-gemcutter.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-gemcutter.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.carbonrally {
-  background: url(/images/portfolio-thumb-carbonrally.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-carbonrally.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.orangepatrol {
-  background: url(/images/portfolio-thumb-orangepatrol.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-orangepatrol.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.upturn {
-  background: url(/images/portfolio-thumb-upturn.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-upturn.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.teal {
-  background: url(/images/portfolio-thumb-teal.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-teal.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.hoptoad {
-  background: url(/images/portfolio-thumb-hoptoad.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-hoptoad.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.umbrellatoday {
-  background: url(/images/portfolio-thumb-umbrellatoday.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-umbrellatoday.jpg) 0px 0px no-repeat;
 }
 
 .portfolio-thumb.trainingapp {
-  background: url(/images/portfolio-thumb-trainingapp.jpg) 0px 0px no-repeat;
+  background: url(/images/portfolio/portfolio-thumb-trainingapp.jpg) 0px 0px no-repeat;
 }
 
 /***************************
@@ -1001,8 +1001,8 @@ ul#client-list li {
 .portfolio-body-image {
   background: rgba(0,0,0,.4);
   /*border: 1px solid #222;*/
-  margin: 0 0 15px -60px;
-  padding: 10px;
+  margin: 0 0 15px 0;
+  padding: 15px;
 }
 
 .portfolio-right {
