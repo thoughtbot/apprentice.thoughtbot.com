@@ -47,7 +47,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 1.8em;
   margin: 0 0 20px 0;
   line-height: 1.3;
-  font-family: "gotham", "helvetica neue", arial, helvetica, sans-serif;  
+  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;  
 }
 
 
@@ -55,7 +55,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 2.4em;
   text-shadow: #000 0 1px 1px;
   font-weight: lighter;  
-  font-family: "gotham", "helvetica neue", arial, helvetica, sans-serif;
+  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
   color: #fff;
   margin-bottom: 3px;
 }
@@ -90,6 +90,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
 
 #homepage-dark-content ul {list-style: none;}
 
+hr,
 .hr {
   height: 1px;
   line-height: 1px;
@@ -155,7 +156,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 1.3em;
   text-transform: uppercase;
   text-shadow: 0 2px 1px #000;
-  font-family: "gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -195,7 +196,7 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   padding: 5px 0 0 0; 
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
   text-shadow: 0 1px 1px #000;
 }
 
@@ -241,6 +242,10 @@ h6.featured_proj {
 #services-kick-start {background: transparent url(/images/services-kick-start.png) right center no-repeat;}
 #services-training {background: transparent url(/images/services-training.png) right center no-repeat;}
 
+#services-hoptoad {
+  background: transparent url(/images/services-hoptoad.png) right center no-repeat;
+  margin-bottom: 36px;
+}
 #main-content-bottom {
   width: 100%;
   height: 20px;
@@ -355,6 +360,10 @@ a.source-btn:hover {
 
 .project-thumbnail.suspenders {
   background: url(/images/suspenders.png) 0px 0px no-repeat;
+}
+
+.project-thumbnail.flutie {
+  background: url(/images/flutie.png) 0px 0px no-repeat;
 }
 
 #hackfest,
@@ -752,7 +761,7 @@ body#community #ipad-showcase h2 a {
 #clients #endorsements h3 {
   color: #7A7168;
   font-size: 1.3em;
-  font-family: Gotham, Helvetica, Arial, sans-serf;
+  font-family: museo sans, Helvetica, Arial, sans-serf;
 }
 
 .endorsement {
@@ -828,7 +837,7 @@ ul#client-list li {
   text-align: center;
   font-size: 22px;
   color: #948a84;
-  font-family: Gotham, Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: museo sans, Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .portfolio-thumb-frame {
