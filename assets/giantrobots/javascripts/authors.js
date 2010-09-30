@@ -25,7 +25,8 @@ jQuery(document).ready(function() {
 		ubuwaits: "Chad Mazzola",
 		kylehasmanypixels: "Kyle Fiedler",
 		hgimenez: "Harold Giménez",
-		elindsay: "Emma Lindsay"
+		elindsay: "Emma Lindsay",
+    mmongeau: "Matt Mongeau"
 	};
 
 	jQuery(".author").each(function(i) { 
