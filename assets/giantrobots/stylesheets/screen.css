@@ -277,11 +277,11 @@ a#archive-link {
 }
 
 a#archive-link:hover,
-a#twitter-link:hover {
+a.offsite-link:hover {
   text-decoration: underline;
 }
 
-a#twitter-link {
+a.offsite-link {
   color: #cabfab;
   font-size: 11px;
   font-weight: normal;
