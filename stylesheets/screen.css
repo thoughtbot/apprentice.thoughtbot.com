@@ -1130,6 +1130,25 @@ a#previous-project strong {
   text-transform: none;
 }
 
+
+#download_nda {
+  display: block;
+  background: transparent url(/images/download_nda.png) 0 0 no-repeat;
+  text-indent: -5000px;
+  width: 301px;
+  height: 54px;
+  position: relative;
+  left: -6px;
+}
+
+#download_nda:hover {
+  background: transparent url(/images/download_nda.png) 0 -54px no-repeat;  
+}
+
+#download_nda:active {
+  background: transparent url(/images/download_nda.png) 0 -53px no-repeat;    
+}
+
 /***************************
 + Design Page
 ***************************/
