@@ -465,6 +465,23 @@ pre code { font-size: 11px; }
   padding: 0 0 6px 0;
 }
 
+#tumblr_notes li blockquote {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  -box-shadow:        none;
+  background:transparent;
+  border: 0;
+  font-family: inherit;
+  font-size:inherit;
+  font-style:inherit;
+  line-height:inherit;
+  margin: 0;
+  padding:0;
+  display: inline;
+}
+
+#tumblr_notes li div.clear {display: none;}
+
 #tumblr_notes li:last-child {border-bottom: none;}
 #tumblr_notes ol li.like   {background:url("http://static.tumblr.com/snnreod/2shl8fjr0/heart_for_notes.png") no-repeat scroll right center transparent;}
 #tumblr_notes ol li.reblog {background:url("http://static.tumblr.com/snnreod/YOPl8fjss/reblog.png") no-repeat scroll right center transparent;}
