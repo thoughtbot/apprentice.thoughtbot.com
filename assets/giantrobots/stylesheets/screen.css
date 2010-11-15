@@ -446,3 +446,42 @@ pre code { font-size: 11px; }
   float: none;
   clear: both;
 }
+
+ /* Notes */
+
+#tumblr_notes {
+  padding: 30px 0 0 0;
+  background: transparent url(http://thoughtbot.com/assets/giantrobots/images/stripey.png) top center no-repeat;
+}
+
+#tumblr_notes h6 {
+  color: #BF1711;
+  margin: 0 0 10px 0;
+}
+
+#tumblr_notes li {
+  list-style: none;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 0 6px 0;
+}
+
+#tumblr_notes li:last-child {border-bottom: none;}
+#tumblr_notes ol li.like   {background:url("http://static.tumblr.com/snnreod/2shl8fjr0/heart_for_notes.png") no-repeat scroll right center transparent;}
+#tumblr_notes ol li.reblog {background:url("http://static.tumblr.com/snnreod/YOPl8fjss/reblog.png") no-repeat scroll right center transparent;}
+#tumblr_notes ol li.reply  {background:url("http://static.tumblr.com/snnreod/YxIlbxv7a/reply.png") no-repeat scroll right center transparent;}
+#tumblr_notes li a {color: #232323; text-decoration: none;}
+#tumblr_notes li a:hover {text-decoration: underline;}
+
+#tumblr_notes li img {
+  margin: 0;
+  position: relative;
+  top: 4px;
+  margin: 0 3px 0 0;
+  }
+
+#tumblr_notes ol {margin: 0;}
+.dsq-brlink {display: none;}
+
+
+
+
