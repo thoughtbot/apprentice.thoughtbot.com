@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
 	authors = {
 		dancroak: "Dan Croak",
 		qrush: "Nick Quaranto",
-		chadpytel: "Chad Pytel",
+		cpytel: "Chad Pytel",
 		lolconomy: "Mike Burns",
 		asimeoni: "Angelo Simeoni",
 		emill: "Eric Mill",
@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
     mmongeau: "Matt Mongeau"
 	};
 
-	jQuery(".author").each(function(i) { 
+	jQuery(".author").each(function(i) {
 		author = this.innerHTML;
 		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
 	});
