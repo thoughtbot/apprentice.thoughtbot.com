@@ -31,8 +31,9 @@ h2 a:hover {
 }
 
 h3 {
-  color: #bf1711;
+  color: #222;
   font-size: 16px;
+  margin: 18px 0 4px 0;
 }
 
 h4 {
@@ -59,7 +60,7 @@ li {
 }
 
 blockquote {
-  border-left: 3px solid #eee;
+  border-left: 3px solid #ddd;
   font-family: Georgia, serif;
   font-style: italic;
   line-height: 18px;
