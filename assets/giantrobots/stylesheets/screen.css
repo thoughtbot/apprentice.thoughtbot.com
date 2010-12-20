@@ -157,8 +157,7 @@ a:active, a:focus { color: #8d221e; }
 }
 
 #footer {
-  width: 590px;
-  padding: 10px 100px;
+  padding: 10px 50px;
   text-align: center;
   color: #cabfab;
   font-size: 12px;
