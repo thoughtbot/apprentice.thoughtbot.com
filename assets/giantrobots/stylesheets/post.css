@@ -68,3 +68,7 @@ blockquote {
   margin: 10px 0 20px;
   padding-left: 10px;
 }
+
+.page-top img {
+  max-width: 600px;
+}

@@ -37,12 +37,22 @@ a:active, a:focus { color: #8d221e; }
 
 #content {
   float: left;
-  width: 790px;
+  width: 720px;
 }
 
 #sidebar {
   float: right;
-  width: 150px;
+  margin: 0 0 0 10px;
+  width: 210px;
+}
+
+#sidebar p {
+  color: #eee;
+  /*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);*/
+}
+
+#sidebar p a {
+  color: #CABFAB;
 }
 
 #content a {
@@ -75,31 +85,27 @@ a:active, a:focus { color: #8d221e; }
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #fff;
-  padding: 30px 60px;
+  padding: 30px 59px 45px;
   z-index: 0;
   position: relative;
 }
 
-.page-top:last-child {
-  padding: 30px 60px 45px;
-}
-
 .post-info {
   height: 27px;
-  width: 668px;
-  background: url(http://thoughtbot.com/assets/giantrobots/images/stripey.png);
+  width: 600px;
+  background: url(http://thoughtbot.com/assets/giantrobots/images/stripey.png) -33px 0 no-repeat;
   margin: 15px 0;
 }
 
 .post-info-left {
   float: left;
-  width: 320px;
+  width: 286px;
   padding: 0 14px 0 0;
 }
 
 .post-info-right {
   float: right;
-  width: 320px;
+  width: 286px;
   padding: 0 0 0 14px;
 }
 
@@ -165,23 +171,22 @@ a:active, a:focus { color: #8d221e; }
   font-weight: normal;
 }
 
-
 input#search {
-  margin: 10px 0 0 0;
+  background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
   border: 0;
-  width: 110px;
-  height: 16px;
-  padding: 7px 10px 7px 30px;
-  font-size: 12px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
   -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
   -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  -box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
+  box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 16px;
+  margin: 10px 0 0 0;
+  padding: 7px 10px 7px 30px;
+  width: 150px;
 }
 
 div#hoptoad-promo {
@@ -192,8 +197,22 @@ div#hoptoad-promo {
   box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
   -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
   -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  margin: 12px 0;
-  padding: 4px 0 2px 8px;
+  margin: 18px 20px 18px 0;
+  padding: 8px 0 6px;
+  text-align: center;
+}
+
+div#workshops {
+  background: rgba(0,0,0,.32);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  margin: 18px 20px 24px 0;
+  padding: 2px 0 6px;
+  text-align: center;
 }
 
 ul#products {
@@ -228,18 +247,6 @@ ul#products li a {
 ul#products li a:hover {
   text-decoration: underline;
 }
-
-/*
-#categories li em {
-  float: left;
-  padding: 0 10px 0 0;
-  min-width: 15px;
-  text-align: center;
-  font-style: normal;
-  font-weight: bold;
-  color: #cabfab;
-}*/
-
 
 #products li {
   padding: 0 0 0 30px;
@@ -359,7 +366,7 @@ h2#search-title {
   margin: -40px 0 40px;
   z-index: 9999;
   position: relative;
-  width: 788px;
+  width: 718px;
 }
 
 #pagination a {
@@ -494,11 +501,7 @@ pre code { font-size: 11px; }
   position: relative;
   top: 4px;
   margin: 0 3px 0 0;
-  }
+}
 
 #tumblr_notes ol {margin: 0;}
 .dsq-brlink {display: none;}
-
-
-
-
