@@ -63,8 +63,9 @@ li {
 blockquote {
   border-left: 3px solid #ddd;
   font-family: Georgia, serif;
+  font-size: 14px;
   font-style: italic;
-  line-height: 18px;
+  line-height: 150%;
   margin: 10px 0 20px;
   padding-left: 10px;
 }
