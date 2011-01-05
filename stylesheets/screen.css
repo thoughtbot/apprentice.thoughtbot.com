@@ -364,7 +364,7 @@ a.source-btn:hover {
   background: url(/images/oss-logos/flutie.png) 0px 0px no-repeat;
 }
 
-#hackfest,
+.hackfest,
 #ipad-showcase {
   padding: 20px 0;
 }
@@ -394,18 +394,18 @@ body#community #ipad-showcase h2 a {
   display: block;
 }
 
-#hackfest img {
+.hackfest img {
   float: left;
   margin-left: 40px;
 }
 
-#hackfest-address {
+.hackfest-address {
   float: left;
   margin-bottom: 8px;
   width: 350px;
 }
 
-#hackfest-info {
+.hackfest-info {
   float: left;
   margin-left: 10px;
   width: 426px;

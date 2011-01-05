@@ -106,7 +106,7 @@ body#community h4 {
   padding-bottom: 15px;
 }
 
-#hackfest-info h5 {
+.hackfest-info h5 {
   text-align: right;
   float: left;
   clear: left;
@@ -115,7 +115,7 @@ body#community h4 {
   padding: 0 8px 0 0;
 }
 
-#hackfest-info p {
+.hackfest-info p {
   clear: right;
   display: inline;
   float: left;
@@ -125,7 +125,7 @@ body#community h4 {
   width: 350px;
 }
 
-#hackfest-address span {
+.hackfest-address span {
   clear: both;
   float: left;
   margin-bottom: 7px;
