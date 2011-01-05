@@ -399,6 +399,10 @@ body#community #ipad-showcase h2 a {
   margin-left: 40px;
 }
 
+.hackfest.android img {
+  margin-right: 100px;
+
+
 .hackfest-address {
   float: left;
   margin-bottom: 8px;
@@ -1143,11 +1147,11 @@ a#previous-project strong {
 }
 
 #download_nda:hover {
-  background: transparent url(/images/download_nda.png) 0 -54px no-repeat;  
+  background: transparent url(/images/download_nda.png) 0 -54px no-repeat;
 }
 
 #download_nda:active {
-  background: transparent url(/images/download_nda.png) 0 -53px no-repeat;    
+  background: transparent url(/images/download_nda.png) 0 -53px no-repeat;
 }
 
 /***************************
