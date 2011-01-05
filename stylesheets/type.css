@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Museo Sans';
-	src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
-	src: local('☺'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.woff') format('woff'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Museo Sans';
+  src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
+  src: local('☺'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.woff') format('woff'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -17,28 +17,16 @@ body {
 
 #top-content h2 {
   width: 880px;
-  font: 56px/60px 'Museo Sans', Helvetica, Arial, sans-serif;
+  font: 44px/50px 'Museo Sans', Helvetica, Arial, sans-serif;
   text-align: center;
   color: #fff;
   font-weight: 100;
   text-shadow: 0 2px 0 #000;
 }
 
-#portfolio-top h2 {
-  margin: 0 0 0 0;
-  color: #fff;
-  font: 56px/60px 'Museo Sans', Helvetica, Arial, sans-serif;
-  text-indent: -3px;
-}
-
 #top-content h2 strong {
   display: block;
   font-weight: bold;
-}
-
-#community #top-content h2 {
-  font-size: 44px;
-  line-height: 50px;
 }
 
 h3#clients-text {
