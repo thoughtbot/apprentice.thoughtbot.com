@@ -1125,11 +1125,12 @@ a#previous-project strong {
   margin-top: 0px;
 }
 
-#project-navigation a h4 {
-  margin: 0 0 2px 0;
-  text-transform: none;
+#project-navigation a span.project-name {
+	margin: 0 0 2px 0;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: bold;
 }
-
 
 #download_nda {
   display: block;
