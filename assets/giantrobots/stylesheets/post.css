@@ -74,3 +74,22 @@ blockquote {
 .page-top img {
   max-width: 600px;
 }
+
+dl {
+  margin: 10px 0 14px 0;
+}
+
+dl dt {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+dl dt code {
+  color: #000;
+}
+
+dl dd {
+  font-size: 13px;
+  margin-left: 20px;
+}

@@ -40,23 +40,6 @@ a:active, a:focus { color: #8d221e; }
   width: 720px;
 }
 
-#sidebar {
-  float: right;
-  margin: 0 0 0 10px;
-  width: 210px;
-}
-
-#sidebar p {
-  color: #eee;
-  font-size: 13px;
-  line-height: 150%;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
-}
-
-#sidebar p a {
-  color: #CABFAB;
-}
-
 #content a {
   font-weight: bold;
 }
@@ -172,23 +155,7 @@ a:active, a:focus { color: #8d221e; }
   font-weight: normal;
 }
 
-input#search {
-  background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
-  border: 0;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
-  color: #fff;
-  font-size: 12px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 16px;
-  margin: 10px 0 0 0;
-  padding: 7px 10px 7px 30px;
-  width: 150px;
-}
+
 
 div#hoptoad-promo {
   background: rgba(0,0,0,.32);
@@ -453,6 +420,94 @@ pre code { font-size: 11px; }
 .sink {
   float: none;
   clear: both;
+}
+
+/* sidebar */
+/******************************************************************************/
+#sidebar {
+  float: right;
+  margin: 0 0 0 10px;
+  width: 210px;
+}
+
+#sidebar p {
+  color: #eee;
+  font-size: 13px;
+  line-height: 150%;
+  margin: 0 0 8px 0;
+}
+
+#sidebar p a {
+  color: #CABFAB;
+}
+
+#sidebar .sidebar-box {
+  margin: 0 10px 12px 0;
+}
+
+#sidebar .sidebar-box a {
+  background: -moz-linear-gradient(0% 100% 90deg, #377ad0, #52a8e8);
+  /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3f3b38), to(#48433f));*/
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(63, 59, 56, 0.7)), to(rgba(72, 67, 63, 0.7)));
+  -webkit-box-shadow: inset 0 1px 0 0 #4c4743, 0 1px 3px 0 #151311;
+  border-radius: 4px;
+  display: block;
+  padding: 10px 10px 13px 10px;
+}
+
+#sidebar .sidebar-box a:hover {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(51, 48, 45, 0.7)), to(rgba(59, 55, 52, 0.7)));
+  /*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#33302d), to(#3b3734));*/
+  -webkit-box-shadow: inset 0 1px 0 0 #403c38, 0 1px 1px 0 #151311;
+}
+
+#sidebar #search-form {
+  margin-bottom: 23px;
+  margin-top: 0px;
+}
+
+input#search {
+  background: rgba(0,0,0,.32) url(http://thoughtbot.com/assets/giantrobots/images/search.png) 10px 8px no-repeat;
+  border: 0;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  -moz-box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  box-shadow: inset 0px 3px 3px 1px #120a02, 0px 1px 1px #423c38;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 16px;
+  margin: 10px 0 0 0;
+  padding: 7px 10px 7px 30px;
+  width: 160px;
+}
+
+#sidebar .sidebar-box img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+#sidebar .sidebar-box .small-title {
+  color: #cabf9a;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 10px;
+  margin: 0 0 2px 0;
+  padding: 0;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+#sidebar .sidebar-box .main-text {
+  color: #fff;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 1px #403b38;
 }
 
  /* Notes */
