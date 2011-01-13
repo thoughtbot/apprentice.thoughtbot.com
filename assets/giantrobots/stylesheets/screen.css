@@ -422,7 +422,7 @@ h2#search-title {
 }
 
 pre {
-  border: 3px solid #ddd;
+  /*border: 3px solid #ddd;*/
   -moz-box-shadow: 0 2px 4px #555;
   -webkit-box-shadow: 0 2px 4px #555;
   box-shadow: 0 2px 4px #555;
