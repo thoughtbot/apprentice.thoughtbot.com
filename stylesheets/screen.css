@@ -252,8 +252,13 @@ h6.featured_proj {
 
 #services-hoptoad {
   background: transparent url(/images/services-hoptoad.png) right center no-repeat;
+}
+
+#services-copycopter {
+  background: transparent url(/images/services-copycopter.png) right center no-repeat;
   margin-bottom: 36px;
 }
+
 #main-content-bottom {
   width: 100%;
   height: 20px;
