@@ -26,7 +26,8 @@ jQuery(document).ready(function() {
 		kylehasmanypixels: "Kyle Fiedler",
 		hgimenez: "Harold Giménez",
 		elindsay: "Emma Lindsay",
-    mmongeau: "Matt Mongeau"
+    mmongeau: "Matt Mongeau",
+    plapier: "Phil LaPier"
 	};
 
 	jQuery(".author").each(function(i) {
