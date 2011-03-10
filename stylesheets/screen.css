@@ -896,13 +896,13 @@ ul#client-list li {
 }
 
 .return {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	background: url(/images/dark-content.png) 0px 0px repeat-x;
-	float:right;
-	width:150px;
-	height:30px;
-	margin:0 5px 30px 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
+  float:right;
+  width:150px;
+  height:30px;
+  margin:0 5px 30px 0;
 }
 
 .return a {
@@ -911,7 +911,7 @@ ul#client-list li {
   color: #d5cfc8;
   font-weight: bold;
   font-size: 1em;
-	text-decoration:none;
+  text-decoration:none;
 }
 
 .return a:hover {
@@ -920,7 +920,7 @@ ul#client-list li {
   color: #d5cfc8;
   font-weight: bold;
   font-size: 1em;
-	text-decoration:underline;
+  text-decoration:underline;
 }
 
 .portfolio-thumb a:hover {
@@ -975,6 +975,14 @@ ul#client-list li {
   background: url(/images/portfolio/portfolio-thumb-trainingapp.jpg) 0px 0px no-repeat;
 }
 
+.portfolio-thumb.copycopter {
+  background: url(/images/portfolio/portfolio-thumb-copycopter.jpg) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.gulfcoastgives {
+  background: url(/images/portfolio/portfolio-thumb-gulfcoast.jpg) 0px 0px no-repeat;
+}
+
 /***************************
 + Individual Work Page
 ***************************/
@@ -1027,11 +1035,11 @@ ul#client-list li {
   float: right;
   width: 260px;
   -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
-	-webkit-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
-	background: rgba(0,0,0,.4);
-	padding: 15px 25px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+  -webkit-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+  background: rgba(0,0,0,.4);
+  padding: 15px 25px;
 }
 
 .portfolio-right blockquote {
@@ -1145,10 +1153,10 @@ a#previous-project strong {
 }
 
 #project-navigation a span.project-name {
-	margin: 0 0 2px 0;
-	text-transform: none;
-	font-size: 16px;
-	font-weight: bold;
+  margin: 0 0 2px 0;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #download_nda {
