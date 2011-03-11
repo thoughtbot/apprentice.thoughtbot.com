@@ -36,19 +36,17 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 1.8em;
   margin: 0 0 20px 0;
   line-height: 1.1;
-  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "helvetica neue", arial, helvetica, sans-serif;
 }
 
 #top-content-inner-pages h2 {
   font-size: 2.4em;
   text-shadow: #000 0 1px 1px;
   font-weight: lighter;
-  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "helvetica neue", arial, helvetica, sans-serif;
   color: #fff;
   margin-bottom: 3px;
 }
-
-#top-content-inner-pages h2 strong, #top-content h2 strong {font-weight: 500;}
 
 #main-content {
   background: url(/images/main-content-top.png) 0px 0px repeat-x;
@@ -120,7 +118,7 @@ hr,
   padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -154,7 +152,7 @@ hr,
   font-size: 1.3em;
   text-transform: uppercase;
   text-shadow: 0 2px 1px #000;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -193,7 +191,7 @@ hr,
   padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -780,7 +778,8 @@ body#community #ipad-showcase h2 a {
 #clients #endorsements h3 {
   color: #7A7168;
   font-size: 1.3em;
-  font-family: museo sans, Helvetica, Arial, sans-serf;
+  font-family: "museo-sans-1","museo-sans-2", Helvetica, Arial, sans-serf;
+margin-bottom: 8px;
 }
 
 .endorsement {
@@ -856,7 +855,7 @@ ul#client-list li {
   text-align: center;
   font-size: 22px;
   color: #948a84;
-  font-family: museo sans, Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .portfolio-thumb-frame {
@@ -1149,7 +1148,7 @@ a#previous-project strong {
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
-  margin-top: 0px;
+  margin-top: 8px;
 }
 
 #project-navigation a span.project-name {

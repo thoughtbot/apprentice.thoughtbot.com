@@ -225,10 +225,10 @@ li#fo7li24  {
 }
 
 .wufoo li.focused,
-.wufoo li.focused label.desc, 
-.wufoo li.focused div, 
-.wufoo li.focused span, 
-.wufoo li.focused div label, 
+.wufoo li.focused label.desc,
+.wufoo li.focused div,
+.wufoo li.focused span,
+.wufoo li.focused div label,
 .wufoo li.focused span label {
   color: #BDA287;
   -moz-box-shadow: none;
@@ -242,7 +242,7 @@ li#fo7li24  {
 
 .wufoo .section h3 {
   color: rgb(230, 224, 219);
-  font-family: museo sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.3em;
   font-weight: bold;
   margin: 0px 0px 12px 0px;
