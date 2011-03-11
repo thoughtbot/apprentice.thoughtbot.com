@@ -273,8 +273,13 @@ h6.featured_proj {
   background: transparent url(/images/services-kick-start.png) right center no-repeat;
 }
 
-#services-training {
-  background: transparent url(/images/services-training.png) right center no-repeat;
+#services-workshops #attend a {
+  margin-top: 24px;
+  width: 167px;
+  height: 43px;
+  background: url('/images/attend-a-workshop.png') 0 0 no-repeat;
+  display: block;
+  text-indent: -9999px;
 }
 
 #main-content-bottom {
