@@ -36,19 +36,17 @@ img.framed { /* put a 1px black inside stroke on the image in photoshop */
   font-size: 1.8em;
   margin: 0 0 20px 0;
   line-height: 1.1;
-  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "helvetica neue", arial, helvetica, sans-serif;
 }
 
 #top-content-inner-pages h2 {
   font-size: 2.4em;
   text-shadow: #000 0 1px 1px;
   font-weight: lighter;
-  font-family: "Museo Sans", "helvetica neue", arial, helvetica, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "helvetica neue", arial, helvetica, sans-serif;
   color: #fff;
   margin-bottom: 3px;
 }
-
-#top-content-inner-pages h2 strong, #top-content h2 strong {font-weight: 500;}
 
 #main-content {
   background: url(/images/main-content-top.png) 0px 0px repeat-x;
@@ -120,7 +118,7 @@ hr,
   padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -149,13 +147,14 @@ hr,
   padding: 20px 0 0 0px;
 }
 
-#services-projects h5,  .wrapper .thin-title {
+#services-projects h5,
+.wrapper .thin-title {
   color: #7a7168;
   font-size: 1.3em;
-  text-transform: uppercase;
   text-shadow: 0 2px 1px #000;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .column-right {text-shadow: none;}
@@ -172,17 +171,25 @@ hr,
   margin: 0;
 }
 
+.column-right .services-section {
+  padding-right: 0;
+}
+
+.column-right .services-section img {
+  background: 0;
+  border-bottom: 0;
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+.column-right .services-section h6 a {
+  text-decoration: none;
+}
+
 .credit {
   font-weight: bold;
   margin: 0 0 15px 0;
   line-height: 1.3;
-}
-
-#services .column-right img {
-  margin-bottom: 10px;
-  background: transparent url(/images/image-switcher.png) top left repeat-x;
-  border-bottom: 1px solid #000;
-  padding: 10px;
 }
 
 .wrapper .thin-title {font-weight: 400;}
@@ -193,7 +200,7 @@ hr,
   padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
-  font-family: "museo sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -220,7 +227,23 @@ h6.featured_proj {
 }
 
 .services-section {
-  padding-right: 118px;
+  padding: 0 118px 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #0B0906;
+
+  box-shadow: 0 1px 0 #413B36;
+  -moz-box-shadow: 0 1px 0 #413B36;
+  -webkit-box-shadow: 0 1px 0 #413B36;
+}
+
+.services-section:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 #see_more_oss {
@@ -242,21 +265,21 @@ h6.featured_proj {
   background: transparent url(/images/services-consulting.png) right center no-repeat;
 }
 
+#services-workshops {
+  background: transparent url(/images/services-workshops.png) right center no-repeat;
+}
+
 #services-kick-start {
   background: transparent url(/images/services-kick-start.png) right center no-repeat;
 }
 
-#services-training {
-  background: transparent url(/images/services-training.png) right center no-repeat;
-}
-
-#services-hoptoad {
-  background: transparent url(/images/services-hoptoad.png) right center no-repeat;
-}
-
-#services-copycopter {
-  background: transparent url(/images/services-copycopter.png) right center no-repeat;
-  margin-bottom: 36px;
+#services-workshops #attend a {
+  margin-top: 24px;
+  width: 167px;
+  height: 43px;
+  background: url('/images/attend-a-workshop.png') 0 0 no-repeat;
+  display: block;
+  text-indent: -9999px;
 }
 
 #main-content-bottom {
@@ -780,7 +803,8 @@ body#community #ipad-showcase h2 a {
 #clients #endorsements h3 {
   color: #7A7168;
   font-size: 1.3em;
-  font-family: museo sans, Helvetica, Arial, sans-serf;
+  font-family: "museo-sans-1","museo-sans-2", Helvetica, Arial, sans-serf;
+margin-bottom: 8px;
 }
 
 .endorsement {
@@ -856,7 +880,7 @@ ul#client-list li {
   text-align: center;
   font-size: 22px;
   color: #948a84;
-  font-family: museo sans, Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-sans-1","museo-sans-2", Etica, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .portfolio-thumb-frame {
@@ -896,13 +920,13 @@ ul#client-list li {
 }
 
 .return {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	background: url(/images/dark-content.png) 0px 0px repeat-x;
-	float:right;
-	width:150px;
-	height:30px;
-	margin:0 5px 30px 0;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: url(/images/dark-content.png) 0px 0px repeat-x;
+  float:right;
+  width:150px;
+  height:30px;
+  margin:0 5px 30px 0;
 }
 
 .return a {
@@ -911,7 +935,7 @@ ul#client-list li {
   color: #d5cfc8;
   font-weight: bold;
   font-size: 1em;
-	text-decoration:none;
+  text-decoration:none;
 }
 
 .return a:hover {
@@ -920,7 +944,7 @@ ul#client-list li {
   color: #d5cfc8;
   font-weight: bold;
   font-size: 1em;
-	text-decoration:underline;
+  text-decoration:underline;
 }
 
 .portfolio-thumb a:hover {
@@ -975,6 +999,14 @@ ul#client-list li {
   background: url(/images/portfolio/portfolio-thumb-trainingapp.jpg) 0px 0px no-repeat;
 }
 
+.portfolio-thumb.copycopter {
+  background: url(/images/portfolio/portfolio-thumb-copycopter.jpg) 0px 0px no-repeat;
+}
+
+.portfolio-thumb.gulfcoastgives {
+  background: url(/images/portfolio/portfolio-thumb-gulfcoast.jpg) 0px 0px no-repeat;
+}
+
 /***************************
 + Individual Work Page
 ***************************/
@@ -1027,11 +1059,11 @@ ul#client-list li {
   float: right;
   width: 260px;
   -moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
-	-webkit-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
-	background: rgba(0,0,0,.4);
-	padding: 15px 25px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+  -webkit-box-shadow: inset 0 2px 5px #000, 0 1px 0 rgba(255,255,255,.1);
+  background: rgba(0,0,0,.4);
+  padding: 15px 25px;
 }
 
 .portfolio-right blockquote {
@@ -1141,14 +1173,14 @@ a#previous-project strong {
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
-  margin-top: 0px;
+  margin-top: 8px;
 }
 
 #project-navigation a span.project-name {
-	margin: 0 0 2px 0;
-	text-transform: none;
-	font-size: 16px;
-	font-weight: bold;
+  margin: 0 0 2px 0;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #download_nda {

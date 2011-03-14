@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Museo Sans';
-  src: url('http://ui.thoughtbot.com/assets/MuseoSans_500.eot');
-  src: local('☺'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.woff') format('woff'), url('http://ui.thoughtbot.com/assets/MuseoSans_500.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   color: #e6e0d9;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -17,7 +9,7 @@ body {
 
 #top-content h2 {
   width: 880px;
-  font: 44px/50px 'Museo Sans', Helvetica, Arial, sans-serif;
+  font: 44px/50px "museo-sans-1","museo-sans-2", Helvetica, Arial, sans-serif;
   text-align: center;
   color: #fff;
   font-weight: 100;
@@ -26,7 +18,7 @@ body {
 
 #top-content h2 strong {
   display: block;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h3#clients-text {
@@ -41,9 +33,9 @@ h3#clients-text {
 #top-content h3 {
   color: #a1a1a1;
   text-align: center;
-  line-height: 26px;
+  line-height: 20px;
   font-size: 14px;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 0 2px 2px #000;
 }
 
 #jobs #top-content p,
