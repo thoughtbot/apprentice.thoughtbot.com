@@ -179,12 +179,13 @@ hr,
   background: 0;
   border-bottom: 0;
   float: right;
-  margin: 0 0 10px 10px;
+  margin: 0 0 8px 8px;
 }
 
 .column-right .services-section h6 a {
   text-decoration: none;
 }
+
 
 .credit {
   font-weight: bold;
@@ -196,7 +197,7 @@ hr,
 
 #services-projects h6 {
   color: #e6e0db;
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   padding: 5px 0 0 0;
   font-size: 1.3em;
   font-weight: bold;
