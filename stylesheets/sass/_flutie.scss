@@ -577,33 +577,3 @@ li {
 
 ol ol, ol ul, ul ul, ul ol {
   margin-left: 1em; }
-
-/* Mixins
----------------------------------------- */
-/* this hack is courtesy of gbbowers on github
-   https://gist.github.com/601810 */
-/* Variables
----------------------------------------- */
-/* Clear Floated Elements
-------------------------------------------------------------------------------*/
-.clearfix:after {
-  clear: both;
-  content: ' ';
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-
-/* basic site styles
----------------------------------------- */
-body {
-  background-color: #F0F0F0;
-  color: #2B2B2B;
-  text-align: center; }
-
-.wrapper {
-  width: 995px;
-  text-align: left;
-  margin: 0 auto; }
