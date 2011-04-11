@@ -1,0 +1,69 @@
+#main-footer {
+  @extend .wrapper;
+  @extend .clearfix;
+  padding-top: $lh*4;
+
+  opacity: .5;
+  -webkit-transition: opacity .5s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  h3 {
+    color: #545454;
+  }
+
+  a {
+    color: #7a7a7a;
+
+    &:link {
+      color: #7a7a7a;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  nav {
+    @extend .clearfix;
+    section {
+      width: ($unit*2)+($gutter);
+      float: left;
+      margin-right: $gutter;
+
+      &#thoughtbot-footer {
+        width: ($unit*4)+($gutter*3);
+
+        ul {
+          li {
+            width: ($unit*2)+($gutter);
+            float: left;
+            margin-right: $gutter;
+
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      &#blog-footer {
+        width: ($unit*4)+($gutter*3);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+  }
+  #copyright {
+    margin-top: $lh*2;
+    color: #7a7a7a;
+  }
+}

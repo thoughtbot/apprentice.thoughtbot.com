@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .clearfix:after {
+.clearfix:before, section.primary:before, section.open-source:before, section.secondary:before, section#events:before, #main-header:before, #main-header ul:before, #main-footer:before, #main-footer nav:before, #portfolio:before, #portfolio ul:before, #services:before, #services #clients ul:before, #products ul:before, #workshops:before, #workshops #current-worshops ul:before, .clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after {
+.clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix {
+.clearfix, section.primary, section.open-source, section.secondary, section#events, #main-header, #main-header ul, #main-footer, #main-footer nav, #portfolio, #portfolio ul, #services, #services #clients ul, #products ul, #workshops, #workshops #current-worshops ul {
   zoom: 1; }
 
 .ie7 img {
@@ -586,7 +586,7 @@ ol ol, ol ul, ul ul, ul ol {
 ---------------------------------------- */
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after {
+.clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
   clear: both;
   content: ' ';
   display: block;
@@ -599,11 +599,234 @@ ol ol, ol ul, ul ul, ul ol {
 /* basic site styles
 ---------------------------------------- */
 body {
-  background-color: #F0F0F0;
+  background-color: #fff;
+  /*  background: url('/images/grid.png') 10px -4px;*/
+  border-top: 4px solid #ad141e;
   color: #2B2B2B;
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
 
-.wrapper {
+.wrapper, section.primary, section.open-source, section.secondary, section#events, #main-header, #main-footer {
   width: 995px;
   text-align: left;
   margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #2b2b2b;
+  margin-bottom: 20px; }
+
+h2 {
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 40px;
+  color: #2b2b2b;
+  margin-bottom: 40px; }
+
+h3 {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+p {
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+ul {
+  margin-bottom: 20px; }
+  ul li {
+    line-height: 20px; }
+
+img {
+  display: block;
+  vertical-align: bottom; }
+
+blockquote {
+  border: 0;
+  font: 100 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 25px 0 0;
+  padding-left: 25px;
+  background: url("/images/quote.png") no-repeat; }
+  blockquote p {
+    line-height: 30px; }
+  blockquote p.author {
+    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 20px;
+    color: #868686;
+    margin: 0; }
+
+a:link, a:active {
+  color: #ad141e;
+  text-decoration: none; }
+a:visited {
+  color: #96111a; }
+a:hover {
+  text-decoration: none;
+  color: #c41722; }
+
+img {
+  margin-bottom: 0; }
+
+#page-header {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 100px;
+  text-align: center; }
+  #page-header h1 {
+    line-height: 60px; }
+  #page-header h2 {
+    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
+    color: #736B6C;
+    line-height: 20px;
+    margin-bottom: 0; }
+
+.secondary-wrapper {
+  background: rgba(228, 228, 228, 0.6);
+  padding-bottom: 40px; }
+
+#main-header {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #DCDCDC; }
+  #main-header h1 {
+    float: left;
+    margin: 42px 0 24px; }
+    #main-header h1 a {
+      text-indent: -9999px;
+      display: block;
+      width: 242px;
+      height: 65px;
+      background: url("/images/thoughtbot-logo.png") 0 0 no-repeat; }
+  #main-header ul {
+    float: right;
+    display: block;
+    margin-top: 72px; }
+    #main-header ul li {
+      float: left; }
+      #main-header ul li a {
+        display: block;
+        margin: 0 20px;
+        font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+        color: #2b2b2b;
+        line-height: 20px; }
+        #main-header ul li a:hover {
+          color: #ad141e;
+          text-decoration: none; }
+
+#main-footer {
+  padding-top: 80px;
+  opacity: .5;
+  -webkit-transition: opacity .5s; }
+  #main-footer:hover {
+    opacity: 1; }
+  #main-footer h3 {
+    color: #545454; }
+  #main-footer a {
+    color: #7a7a7a; }
+    #main-footer a:link {
+      color: #7a7a7a; }
+    #main-footer a:hover {
+      color: #ad141e; }
+  #main-footer nav section {
+    width: 145px;
+    float: left;
+    margin-right: 25px; }
+    #main-footer nav section#thoughtbot-footer {
+      width: 315px; }
+      #main-footer nav section#thoughtbot-footer ul li {
+        width: 145px;
+        float: left;
+        margin-right: 25px; }
+        #main-footer nav section#thoughtbot-footer ul li:nth-child(2n) {
+          margin-right: 0; }
+    #main-footer nav section#blog-footer {
+      width: 315px; }
+    #main-footer nav section:last-child {
+      margin-right: 0; }
+    #main-footer nav section ul {
+      list-style: none; }
+  #main-footer #copyright {
+    margin-top: 40px;
+    color: #7a7a7a; }
+
+#portfolio {
+  margin: 80px 0 40px; }
+  #portfolio ul li {
+    background: #ccc;
+    border: 1px solid #BDBDBD;
+    padding: 4px;
+    display: block;
+    float: left;
+    height: 190px;
+    margin: 0 25px 20px 0;
+    width: 220px; }
+    #portfolio ul li:nth-child(4n) {
+      margin-right: 0; }
+
+#services {
+  margin-bottom: 40px; }
+  #services #about-services {
+    float: left;
+    margin-right: 25px;
+    width: 315px; }
+    #services #about-services #get-started {
+      font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      line-height: 20px; }
+  #services blockquote {
+    float: left;
+    width: 290px; }
+  #services #clients {
+    float: left;
+    width: 275px;
+    padding: 20px;
+    background: #e3e3e3; }
+    #services #clients ul {
+      list-style: none; }
+      #services #clients ul li {
+        float: left;
+        margin-right: 25px;
+        width: 125px; }
+        #services #clients ul li:nth-child(2n) {
+          margin-right: 0; }
+    #services #clients p {
+      margin-bottom: 0; }
+
+#products {
+  margin-bottom: 60px;
+  padding-top: 40px;
+  background: url("/images/shadowing-lite.png") center -1px no-repeat; }
+  #products ul {
+    list-style: none; }
+    #products ul li {
+      width: 230px;
+      float: left;
+      margin-right: 25px; }
+      #products ul li img {
+        height: 100px;
+        margin-bottom: 0; }
+      #products ul li:last-child {
+        margin-right: 0; }
+
+#workshops {
+  border-top: 1px solid #DCDCDC;
+  padding-top: 59px;
+  background: url("/images/shadowing-lite.png") center top no-repeat; }
+  #workshops #about-workshops {
+    float: left;
+    margin-right: 25px;
+    width: 315px; }
+  #workshops blockquote {
+    float: left;
+    width: 290px; }
+  #workshops #current-worshops {
+    float: left;
+    width: 275px;
+    padding: 20px;
+    background: #e3e3e3; }
+    #workshops #current-worshops ul {
+      list-style: none; }
+    #workshops #current-worshops p {
+      margin-bottom: 0; }

@@ -1,0 +1,130 @@
+#portfolio {
+  margin: 80px 0 40px;
+  @extend .clearfix;
+
+  ul {
+    @extend .clearfix;
+
+    li {
+      background: #ccc;
+      border: 1px solid #BDBDBD;
+      padding: 4px;
+      display: block;
+      float: left;
+      height: ($lh*9)+10px;
+      margin: 0 $gutter $lh 0;
+      width: ($unit*3)+($gutter*2)-(10px);
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+#services {
+  @extend .clearfix;
+  margin-bottom: $lh*2;
+
+  #about-services {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*4)+($gutter*3);
+
+    #get-started {
+      font: 500 18px $header;
+      line-height: $lh;
+    }
+  }
+
+  blockquote {
+    float: left;
+    width: ($unit*4)+($gutter*2);
+  }
+
+  #clients {
+    float: left;
+    width: ($unit*4)+($gutter*3)-(40px);
+    padding: $lh;
+    background: #e3e3e3;
+
+    ul {
+      list-style: none;
+      @extend .clearfix;
+
+      li {
+        float: left;
+        margin-right: $gutter;
+        width: ($unit*2)+($gutter)-(20px);
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#products {
+  margin-bottom: $lh*3;
+  padding-top: $lh*2;
+  background: url('/images/shadowing-lite.png') center -1px no-repeat;
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      width: ($unit*3)+($gutter*2);
+      float: left;
+      margin-right: $gutter;
+
+      img {
+        height: $lh*5;
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+#workshops {
+  border-top: 1px solid #DCDCDC;
+  padding-top: ($lh*3)-(1);
+  background: url('/images/shadowing-lite.png') center top no-repeat;
+  @extend .clearfix;
+
+  #about-workshops {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*4)+($gutter*3);
+
+  }
+
+  blockquote {
+    float: left;
+    width: ($unit*4)+($gutter*2);
+  }
+
+  #current-worshops {
+    float: left;
+    width: ($unit*4)+($gutter*3)-(40px);
+    padding: $lh;
+    background: #e3e3e3;
+
+    ul {
+      list-style: none;
+      @extend .clearfix;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
