@@ -1,0 +1,35 @@
+#contact-content {
+  @extend .primary;
+  background: url('/images/shadowing.png') center top no-repeat;
+  padding-top: ($lh*3)-(1);
+  margin-top: $lh*3;
+  border-top: 1px solid #dcdcdc;
+
+  #contact_form {
+    width: ($unit*8)+($gutter*7);
+    float: left;
+    margin-right: $gutter;
+
+    form.wufoo {
+      margin-left: 0;
+
+      label {
+        font: bold 14px $body;
+      }
+    }
+  }
+
+  #contact-info {
+    width: ($unit*4)+($gutter*3);
+    float: left;
+
+    .contact-address {
+      margin-bottom: $lh;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+

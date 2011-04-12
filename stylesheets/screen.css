@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, section.primary:before, section.open-source:before, section.secondary:before, section#events:before, #main-header:before, #main-header ul:before, #main-footer:before, #main-footer nav:before, #portfolio:before, #portfolio ul:before, #services:before, #services #clients ul:before, #products ul:before, #workshops:before, #workshops #current-worshops ul:before, .clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
+.clearfix:before, .primary:before, #contact-content:before, #people:before, .secondary:before, #events:before, #main-header:before, #main-header ul:before, #main-footer:before, #main-footer nav:before, #portfolio:before, #portfolio ul:before, #services:before, #services #clients ul:before, #products ul:before, #workshops:before, #workshops #current-worshops ul:before, #open-source ul:before, #events ul:before, #people ul:before, #people ul li:before, .clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
+.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, section.primary, section.open-source, section.secondary, section#events, #main-header, #main-header ul, #main-footer, #main-footer nav, #portfolio, #portfolio ul, #services, #services #clients ul, #products ul, #workshops, #workshops #current-worshops ul {
+.clearfix, .primary, #contact-content, #people, .secondary, #events, #main-header, #main-header ul, #main-footer, #main-footer nav, #portfolio, #portfolio ul, #services, #services #clients ul, #products ul, #workshops, #workshops #current-worshops ul, #open-source ul, #events ul, #people ul, #people ul li {
   zoom: 1; }
 
 .ie7 img {
@@ -586,7 +586,7 @@ ol ol, ol ul, ul ul, ul ol {
 ---------------------------------------- */
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, section.primary:after, section.open-source:after, section.secondary:after, section#events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after {
+.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
   clear: both;
   content: ' ';
   display: block;
@@ -606,7 +606,7 @@ body {
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
 
-.wrapper, section.primary, section.open-source, section.secondary, section#events, #main-header, #main-footer {
+.wrapper, .primary, #contact-content, #people, .secondary, #events, #main-header, #main-footer {
   width: 995px;
   text-align: left;
   margin: 0 auto; }
@@ -674,7 +674,7 @@ img {
 
 #page-header {
   background: url("/images/shadowing.png") center top no-repeat;
-  padding-top: 100px;
+  padding-top: 80px;
   text-align: center; }
   #page-header h1 {
     line-height: 60px; }
@@ -687,6 +687,20 @@ img {
 .secondary-wrapper {
   background: rgba(228, 228, 228, 0.6);
   padding-bottom: 40px; }
+
+/* Selection styles
+---------------------------------------- */
+::selection {
+  background: #ad141e;
+  color: #000; }
+
+::-moz-selection {
+  background: #ad141e;
+  color: #000; }
+
+::-webkit-selection {
+  background: #ad141e;
+  color: #000; }
 
 #main-header {
   padding-bottom: 40px;
@@ -830,3 +844,123 @@ img {
       list-style: none; }
     #workshops #current-worshops p {
       margin-bottom: 0; }
+
+#open-source {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 59px;
+  margin-top: 60px;
+  border-top: 1px solid #dcdcdc; }
+  #open-source ul {
+    list-style: none;
+    margin-bottom: 60px; }
+    #open-source ul li {
+      width: 230px;
+      margin: 40px 25px 0 0;
+      float: left;
+      padding-left: 85px;
+      background: url("/images/shoulda.png") no-repeat 0 0; }
+      #open-source ul li:nth-child(3n) {
+        margin-right: 0; }
+      #open-source ul li:nth-child(3n+1) {
+        clear: both; }
+
+#events {
+  padding-top: 60px;
+  background: url("/images/shadowing-lite.png") center -1px no-repeat; }
+  #events p.events-intro {
+    width: 230px;
+    float: left;
+    margin-right: 25px; }
+  #events ul {
+    list-style: none; }
+    #events ul li {
+      width: 190px;
+      float: left;
+      margin-right: 25px;
+      padding: 20px;
+      background: #ccc;
+      display: block;
+      overflow: hidden; }
+      #events ul li:last-child {
+        margin-right: 0; }
+
+#contact-content {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 59px;
+  margin-top: 60px;
+  border-top: 1px solid #dcdcdc; }
+  #contact-content #contact_form {
+    width: 655px;
+    float: left;
+    margin-right: 25px; }
+    #contact-content #contact_form form.wufoo {
+      margin-left: 0; }
+      #contact-content #contact_form form.wufoo label {
+        font: bold 14px "skolar-1", "skolar-2", Georgia, serif; }
+  #contact-content #contact-info {
+    width: 315px;
+    float: left; }
+    #contact-content #contact-info .contact-address {
+      margin-bottom: 20px; }
+      #contact-content #contact-info .contact-address p {
+        margin-bottom: 0; }
+
+#contact-content {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 59px;
+  margin-top: 60px;
+  border-top: 1px solid #dcdcdc; }
+  #contact-content #contact_form {
+    width: 655px;
+    float: left;
+    margin-right: 25px; }
+    #contact-content #contact_form form.wufoo {
+      margin-left: 0; }
+      #contact-content #contact_form form.wufoo label {
+        font: bold 14px "skolar-1", "skolar-2", Georgia, serif; }
+  #contact-content #contact-info {
+    width: 315px;
+    float: left; }
+    #contact-content #contact-info .contact-address {
+      margin-bottom: 20px; }
+      #contact-content #contact-info .contact-address p {
+        margin-bottom: 0; }
+
+#people {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 59px;
+  margin-top: 60px;
+  border-top: 1px solid #dcdcdc; }
+  #people ul {
+    list-style: none; }
+    #people ul li {
+      width: 485px;
+      margin: 0 25px 40px 0;
+      float: left; }
+      #people ul li:nth-child(2n) {
+        margin-right: 0; }
+      #people ul li:nth-child(2n+1) {
+        clear: left; }
+      #people ul li.owner {
+        background: rgba(228, 228, 228, 0.6);
+        padding: 20px;
+        width: 445px; }
+        #people ul li.owner .person-info {
+          width: 275px;
+          float: left; }
+      #people ul li .person-photo {
+        float: left;
+        margin-right: 25px;
+        width: 145px; }
+      #people ul li .person-info {
+        width: 315px;
+        float: left; }
+        #people ul li .person-info h2 {
+          font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+          line-height: 40px;
+          margin-bottom: 0; }
+        #people ul li .person-info h3 {
+          font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
+          line-height: 20px;
+          margin-bottom: 20px;
+          color: #aaa; }

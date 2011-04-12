@@ -56,9 +56,7 @@ $body: "skolar-1","skolar-2", Georgia, serif;
 $red: #AD141E;
 
 $lh: 20px;
-
 $unit: 60px;
-
 $gutter: 25px;
 
 
@@ -177,7 +175,7 @@ img {
 
 #page-header {
   background: url('/images/shadowing.png') center top no-repeat;
-  padding-top: 100px;
+  padding-top: $lh*4;
   text-align: center;
 
   h1 {
@@ -192,7 +190,7 @@ img {
   }
 }
 
-section.primary, section.secondary {
+.primary, .secondary {
   @extend .clearfix;
   @extend .wrapper;
 }
@@ -200,4 +198,22 @@ section.primary, section.secondary {
 .secondary-wrapper {
   background: rgba(#E4E4E4, .6);
   padding-bottom: $lh*2;
+}
+
+/* Selection styles
+---------------------------------------- */
+
+::selection {
+  background: $red;
+  color: #000;
+}
+
+::-moz-selection {
+  background: $red;
+  color: #000;
+}
+
+::-webkit-selection {
+  background: $red;
+  color: #000;
 }

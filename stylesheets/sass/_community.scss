@@ -1,7 +1,59 @@
-.open-source {
-  @extend .primary;
+#open-source {
+  background: url('/images/shadowing.png') center top no-repeat;
+  padding-top: ($lh*3)-(1);
+  margin-top: $lh*3;
+  border-top: 1px solid #dcdcdc;
+
+  ul {
+    list-style: none;
+    margin-bottom: $lh*3;
+    @extend .clearfix;
+    li {
+      width: ($unit*3)+($gutter*2);
+      margin: ($lh*2) $gutter 0 0;
+      float: left;
+
+      padding-left: $unit+$gutter;
+      background: url('/images/shoulda.png') no-repeat 0 0;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n+1) {
+        clear: both;
+      }
+    }
+  }
 }
 
 #events {
   @extend .secondary;
+  padding-top: $lh*3;
+  background: url('/images/shadowing-lite.png') center -1px no-repeat;
+
+  p.events-intro {
+    width: ($unit*3)+($gutter*2);
+    float: left;
+    margin-right: $gutter;
+  }
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      width: ($unit*3)+($gutter*2)-($lh*2);
+      float: left;
+      margin-right: $gutter;
+      padding: $lh;
+      background: #ccc;
+      display: block;
+      overflow: hidden;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }

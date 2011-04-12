@@ -1,0 +1,63 @@
+#people {
+  @extend .primary;
+
+  background: url('/images/shadowing.png') center top no-repeat;
+  padding-top: ($lh*3)-(1);
+  margin-top: $lh*3;
+  border-top: 1px solid #dcdcdc;
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      width: ($unit*6)+($gutter*5);
+      margin: 0 $gutter ($lh*2) 0;
+      float: left;
+      @extend .clearfix;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+
+      &.owner {
+        background: rgba(#E4E4E4, .6);
+        padding: $lh;
+        width: ($unit*6)+($gutter*5)-($lh*2);
+
+        .person-info {
+          width: ($unit*4)+($gutter*3)-($lh*2);
+          float: left;
+        }
+      }
+
+      .person-photo {
+        float: left;
+        margin-right: $gutter;
+        width: ($unit*2)+($gutter);
+      }
+
+      .person-info {
+        width: ($unit*4)+($gutter*3);
+        float: left;
+
+        h2 {
+          font: 700 24px $header;
+          line-height: $lh*2;
+          margin-bottom: 0;
+        }
+
+        h3 {
+          font: italic 14px $body;
+          line-height: $lh;
+          margin-bottom: $lh;
+          color: #aaa;
+        }
+      }
+    }
+  }
+}
