@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, #contact-content:before, #people:before, .secondary:before, #events:before, #main-header:before, #main-header ul:before, #main-footer:before, #main-footer nav:before, #portfolio:before, #portfolio ul:before, #services:before, #services #clients ul:before, #products ul:before, #workshops:before, #workshops #current-worshops ul:before, #open-source ul:before, #events ul:before, #people ul:before, #people ul li:before, .clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
+.clearfix:before, .primary:before, #contact-content:before, #people:before, .secondary:before, #events:before, #main-header:before, #main-header ul:before, #main-footer:before, #main-footer nav:before, #portfolio:before, #portfolio ul:before, #services:before, #services #clients ul:before, #products ul:before, #workshops:before, #workshops #current-worshops ul:before, #open-source ul:before, #events ul:before, #contact-content #contact_form form.wufoo ul li.name:before, #people ul:before, #people ul li:before, .clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #contact-content #contact_form form.wufoo ul li.name:after, #people ul:after, #people ul li:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
+.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #contact-content #contact_form form.wufoo ul li.name:after, #people ul:after, #people ul li:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, #contact-content, #people, .secondary, #events, #main-header, #main-header ul, #main-footer, #main-footer nav, #portfolio, #portfolio ul, #services, #services #clients ul, #products ul, #workshops, #workshops #current-worshops ul, #open-source ul, #events ul, #people ul, #people ul li {
+.clearfix, .primary, #contact-content, #people, .secondary, #events, #main-header, #main-header ul, #main-footer, #main-footer nav, #portfolio, #portfolio ul, #services, #services #clients ul, #products ul, #workshops, #workshops #current-worshops ul, #open-source ul, #events ul, #contact-content #contact_form form.wufoo ul li.name, #people ul, #people ul li {
   zoom: 1; }
 
 .ie7 img {
@@ -584,9 +584,13 @@ ol ol, ol ul, ul ul, ul ol {
    https://gist.github.com/601810 */
 /* Variables
 ---------------------------------------- */
+/*thoughtbot red*/
+/*line-hieght of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #people ul:after, #people ul li:after {
+.clearfix:after, .primary:after, #contact-content:after, #people:after, .secondary:after, #events:after, #main-header:after, #main-header ul:after, #main-footer:after, #main-footer nav:after, #portfolio:after, #portfolio ul:after, #services:after, #services #clients ul:after, #products ul:after, #workshops:after, #workshops #current-worshops ul:after, #open-source ul:after, #events ul:after, #contact-content #contact_form form.wufoo ul li.name:after, #people ul:after, #people ul li:after {
   clear: both;
   content: ' ';
   display: block;
@@ -600,7 +604,7 @@ ol ol, ol ul, ul ul, ul ol {
 ---------------------------------------- */
 body {
   background-color: #fff;
-  /*  background: url('/images/grid.png') 10px -4px;*/
+  /*background: url('/images/grid.png') 10px -4px;*/
   border-top: 4px solid #ad141e;
   color: #2B2B2B;
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
@@ -632,6 +636,10 @@ h3 {
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 20px; }
+
+h4 {
+  line-height: 20px;
+  margin: 0; }
 
 p {
   line-height: 20px;
@@ -725,7 +733,8 @@ img {
         margin: 0 20px;
         font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         color: #2b2b2b;
-        line-height: 20px; }
+        line-height: 20px;
+        -webkit-transition: color .2s; }
         #main-header ul li a:hover {
           color: #ad141e;
           text-decoration: none; }
@@ -890,18 +899,89 @@ img {
   margin-top: 60px;
   border-top: 1px solid #dcdcdc; }
   #contact-content #contact_form {
-    width: 655px;
+    width: 485px;
     float: left;
     margin-right: 25px; }
+    #contact-content #contact_form h1#logo, #contact-content #contact_form #bottom {
+      display: none; }
     #contact-content #contact_form form.wufoo {
       margin-left: 0; }
-      #contact-content #contact_form form.wufoo label {
-        font: bold 14px "skolar-1", "skolar-2", Georgia, serif; }
+      #contact-content #contact_form form.wufoo ul {
+        list-style: none; }
+        #contact-content #contact_form form.wufoo ul li {
+          width: 485px;
+          margin-bottom: 20px; }
+          #contact-content #contact_form form.wufoo ul li label {
+            font: bold 16px "skolar-1", "skolar-2", Georgia, serif;
+            line-height: 20px;
+            margin: 0 0 10px; }
+          #contact-content #contact_form form.wufoo ul li input[type="text"], #contact-content #contact_form form.wufoo ul li input[type="email"], #contact-content #contact_form form.wufoo ul li textarea {
+            line-height: 20px;
+            padding: 9px 10px;
+            font: 14px "skolar-1", "skolar-2", Georgia, serif;
+            width: 463px;
+            border: 1px solid #999;
+            margin: 0;
+            -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+            -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+            -o-box-shadow: inset 0 1px 2px #aaaaaa;
+            box-shadow: inset 0 1px 2px #aaaaaa; }
+            #contact-content #contact_form form.wufoo ul li input[type="text"]:focus, #contact-content #contact_form form.wufoo ul li input[type="email"]:focus, #contact-content #contact_form form.wufoo ul li textarea:focus {
+              outline-color: #ad141e; }
+          #contact-content #contact_form form.wufoo ul li #saveForm {
+            display: block;
+            font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+            border: 1px solid #52090e;
+            margin: 0;
+            padding: 8px 40px;
+            color: #fff;
+            background: #ad141e;
+            text-shadow: 0 -1px 0 #7f0f16;
+            -moz-box-shadow: inset 0 1px 0 #e93e49;
+            -webkit-box-shadow: inset 0 1px 0 #e93e49;
+            -o-box-shadow: inset 0 1px 0 #e93e49;
+            box-shadow: inset 0 1px 0 #e93e49; }
+            #contact-content #contact_form form.wufoo ul li #saveForm:hover {
+              cursor: pointer;
+              background: #c41722; }
+            #contact-content #contact_form form.wufoo ul li #saveForm:active {
+              background: #96111a; }
+          #contact-content #contact_form form.wufoo ul li.name {
+            width: 510px;
+            float: none; }
+            #contact-content #contact_form form.wufoo ul li.name span {
+              width: 230px;
+              float: left;
+              display: block;
+              margin-right: 25px; }
+              #contact-content #contact_form form.wufoo ul li.name span.req {
+                float: none;
+                width: auto;
+                display: inline;
+                margin: 0; }
+              #contact-content #contact_form form.wufoo ul li.name span label {
+                font-size: 14px;
+                color: #aaa;
+                font-weight: normal;
+                font-style: italic; }
+              #contact-content #contact_form form.wufoo ul li.name span input {
+                width: 208px; }
+          #contact-content #contact_form form.wufoo ul li#fo7li3 {
+            width: 655px;
+            clear: both; }
   #contact-content #contact-info {
-    width: 315px;
+    width: 485px;
     float: left; }
+    #contact-content #contact-info #contact-other {
+      width: 315px;
+      margin-right: 25px;
+      float: left; }
     #contact-content #contact-info .contact-address {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      float: left;
+      width: 145px; }
+      #contact-content #contact-info .contact-address div {
+        margin-bottom: 20px; }
       #contact-content #contact-info .contact-address p {
         margin-bottom: 0; }
 
@@ -911,18 +991,89 @@ img {
   margin-top: 60px;
   border-top: 1px solid #dcdcdc; }
   #contact-content #contact_form {
-    width: 655px;
+    width: 485px;
     float: left;
     margin-right: 25px; }
+    #contact-content #contact_form h1#logo, #contact-content #contact_form #bottom {
+      display: none; }
     #contact-content #contact_form form.wufoo {
       margin-left: 0; }
-      #contact-content #contact_form form.wufoo label {
-        font: bold 14px "skolar-1", "skolar-2", Georgia, serif; }
+      #contact-content #contact_form form.wufoo ul {
+        list-style: none; }
+        #contact-content #contact_form form.wufoo ul li {
+          width: 485px;
+          margin-bottom: 20px; }
+          #contact-content #contact_form form.wufoo ul li label {
+            font: bold 16px "skolar-1", "skolar-2", Georgia, serif;
+            line-height: 20px;
+            margin: 0 0 10px; }
+          #contact-content #contact_form form.wufoo ul li input[type="text"], #contact-content #contact_form form.wufoo ul li input[type="email"], #contact-content #contact_form form.wufoo ul li textarea {
+            line-height: 20px;
+            padding: 9px 10px;
+            font: 14px "skolar-1", "skolar-2", Georgia, serif;
+            width: 463px;
+            border: 1px solid #999;
+            margin: 0;
+            -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+            -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+            -o-box-shadow: inset 0 1px 2px #aaaaaa;
+            box-shadow: inset 0 1px 2px #aaaaaa; }
+            #contact-content #contact_form form.wufoo ul li input[type="text"]:focus, #contact-content #contact_form form.wufoo ul li input[type="email"]:focus, #contact-content #contact_form form.wufoo ul li textarea:focus {
+              outline-color: #ad141e; }
+          #contact-content #contact_form form.wufoo ul li #saveForm {
+            display: block;
+            font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+            border: 1px solid #52090e;
+            margin: 0;
+            padding: 8px 40px;
+            color: #fff;
+            background: #ad141e;
+            text-shadow: 0 -1px 0 #7f0f16;
+            -moz-box-shadow: inset 0 1px 0 #e93e49;
+            -webkit-box-shadow: inset 0 1px 0 #e93e49;
+            -o-box-shadow: inset 0 1px 0 #e93e49;
+            box-shadow: inset 0 1px 0 #e93e49; }
+            #contact-content #contact_form form.wufoo ul li #saveForm:hover {
+              cursor: pointer;
+              background: #c41722; }
+            #contact-content #contact_form form.wufoo ul li #saveForm:active {
+              background: #96111a; }
+          #contact-content #contact_form form.wufoo ul li.name {
+            width: 510px;
+            float: none; }
+            #contact-content #contact_form form.wufoo ul li.name span {
+              width: 230px;
+              float: left;
+              display: block;
+              margin-right: 25px; }
+              #contact-content #contact_form form.wufoo ul li.name span.req {
+                float: none;
+                width: auto;
+                display: inline;
+                margin: 0; }
+              #contact-content #contact_form form.wufoo ul li.name span label {
+                font-size: 14px;
+                color: #aaa;
+                font-weight: normal;
+                font-style: italic; }
+              #contact-content #contact_form form.wufoo ul li.name span input {
+                width: 208px; }
+          #contact-content #contact_form form.wufoo ul li#fo7li3 {
+            width: 655px;
+            clear: both; }
   #contact-content #contact-info {
-    width: 315px;
+    width: 485px;
     float: left; }
+    #contact-content #contact-info #contact-other {
+      width: 315px;
+      margin-right: 25px;
+      float: left; }
     #contact-content #contact-info .contact-address {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      float: left;
+      width: 145px; }
+      #contact-content #contact-info .contact-address div {
+        margin-bottom: 20px; }
       #contact-content #contact-info .contact-address p {
         margin-bottom: 0; }
 

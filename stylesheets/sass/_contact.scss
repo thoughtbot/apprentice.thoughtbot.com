@@ -6,25 +6,129 @@
   border-top: 1px solid #dcdcdc;
 
   #contact_form {
-    width: ($unit*8)+($gutter*7);
+    width: ($unit*6)+($gutter*5);
     float: left;
     margin-right: $gutter;
+
+    h1#logo, #bottom{
+      display: none;
+    }
 
     form.wufoo {
       margin-left: 0;
 
-      label {
-        font: bold 14px $body;
+      ul {
+        list-style: none;
+
+        li {
+          width: ($unit*6)+($gutter*5);
+          margin-bottom: $lh;
+
+          label {
+            font: bold 16px $body;
+            line-height: $lh;
+            margin: 0 0 ($lh/2);
+
+          }
+
+          input[type="text"], input[type="email"],textarea {
+            line-height: $lh;
+            padding: ($lh/2)-(1) ($lh/2);
+            font: 14px $body;
+            width: ($unit*6)+($gutter*5)-($lh)-(2);
+            border: 1px solid #999;
+            margin: 0;
+
+            &:focus {
+              outline-color: $red;
+            }
+
+            @include box-shadow( inset 0 1px 2px #aaa);
+          }
+
+          #saveForm {
+            display: block;
+            font:700 24px $header;
+            border: 1px solid darken($red, 20%);
+            margin: 0;
+            padding: ($lh/2)-(2) ($lh*2);
+            color: #fff;
+            background: $red;
+            text-shadow: 0 -1px 0 darken($red, 10%);
+
+            @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+
+            &:hover {
+              cursor: pointer;
+              background: lighten($red, 5%);
+            }
+
+            &:active {
+              background: darken($red, 5%);
+            }
+          }
+
+          &.name {
+            width: ($unit*6)+($gutter*6);
+            float: none;
+            @extend .clearfix;
+
+            span {
+              width: ($unit*3)+($gutter*2);
+              float: left;
+              display: block;
+              margin-right: $gutter;
+
+              &.req {
+                float: none;
+                width: auto;
+                display: inline;
+                margin: 0;
+              }
+
+              label {
+                font-size: 14px;
+                color: #aaa;
+                font-weight: normal;
+                font-style: italic;
+              }
+
+              input {
+                width: ($unit*3)+($gutter*2)-($lh)-(2);
+              }
+            }
+          }
+
+          &#fo7li3 {
+            width: ($unit*8)+($gutter*7);
+            clear: both;
+          }
+        }
       }
+
+
     }
   }
 
   #contact-info {
-    width: ($unit*4)+($gutter*3);
+    width: ($unit*6)+($gutter*5);
     float: left;
+
+    #contact-other {
+      width: ($unit*4)+($gutter*3);
+      margin-right: $gutter;
+      float: left;
+    }
 
     .contact-address {
       margin-bottom: $lh;
+      float: left;
+      width: ($unit*2)+$gutter;
+
+      div {
+        margin-bottom: $lh;
+      }
+
       p {
         margin-bottom: 0;
       }

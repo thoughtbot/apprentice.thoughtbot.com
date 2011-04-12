@@ -53,11 +53,11 @@
 $header: "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;
 $body: "skolar-1","skolar-2", Georgia, serif;
 
-$red: #AD141E;
+$red: #AD141E; /*thoughtbot red*/
 
-$lh: 20px;
-$unit: 60px;
-$gutter: 25px;
+$lh: 20px; /*line-hieght of all the type on the site*/
+$unit: 60px; /*one grid column*/
+$gutter: 25px; /*size of one gutter*/
 
 
 /* Clear Floated Elements
@@ -78,7 +78,7 @@ $gutter: 25px;
 
 body {
   background-color: #fff;
-/*  background: url('/images/grid.png') 10px -4px;*/
+  /*background: url('/images/grid.png') 10px -4px;*/
   border-top: 4px solid $red;
   color: #2B2B2B;
   font: 14px $body;
@@ -118,12 +118,18 @@ h3 {
   margin-bottom: $lh;
 }
 
+h4 {
+  line-height: $lh;
+  margin: 0;
+}
+
 p {
   line-height: $lh;
   margin-bottom: $lh;
 }
 ul {
   margin-bottom: $lh;
+
   li {
     line-height: $lh;
   }

@@ -33,6 +33,7 @@
         font: 500 16px $header;
         color: #2b2b2b;
         line-height: 20px;
+        -webkit-transition: color .2s;
 
         &:hover {
           color: $red;
