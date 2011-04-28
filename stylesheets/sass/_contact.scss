@@ -36,14 +36,14 @@ div#contact-content {
           &#fo5li12, &#fo5li123 {
 
             div {
-              padding-top: $lh;
               display: block;
               margin-left: 30px;
+              padding-top: $lh;
 
               span {
+                color: #666;
                 display: block;
                 margin-bottom: $lh/2;
-                color: #666;
 
                 input {
                   margin: -2px 3px 0 -20px;

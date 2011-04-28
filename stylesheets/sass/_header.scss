@@ -34,6 +34,7 @@ header#main-header {
         font: 500 16px $header;
         line-height: 20px;
         margin: 0 20px;
+
         @include transition(color .2s);
 
         &:hover {

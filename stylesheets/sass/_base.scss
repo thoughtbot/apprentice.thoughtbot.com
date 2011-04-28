@@ -83,19 +83,18 @@ $gutter: 25px; /*size of one gutter*/
 ---------------------------------------- */
 
 body {
-  background-color: #FCFCFC;
+	background-color: #FCFCFC;
   /*background: url('/images/grid.png') 10px -4px;*/
   border-top: 4px solid $red;
   color: #2B2B2B;
   font: 14px $body;
   text-align: center;
-
 }
 
 .wrapper {
-  width: ($unit*12)+($gutter*11);
-  text-align: left;
   margin: 0 auto;
+  text-align: left;
+  width: ($unit*12)+($gutter*11);
 }
 
 h1, h2, h3, h4, h5, h5, h6 {
@@ -104,17 +103,17 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 
 h1 {
+  color: #2b2b2b;
   font-size: $lh*3;
   font-weight: 900;
-  color: #2b2b2b;
   margin-bottom: $lh;
 }
 
 h2 {
-  font-weight: 200;
-  font-size: 36px;
-  line-height: $lh*2;
   color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: $lh*2;
   margin-bottom: $lh*2;
 }
 
@@ -130,13 +129,13 @@ h4 {
 }
 
 p {
+  color: #555;
   line-height: $lh;
   margin-bottom: $lh;
-  color: #555;
 }
 ul {
-  margin-bottom: $lh;
   list-style-position: outside;
+  margin-bottom: $lh;
 
   li {
     line-height: $lh;
@@ -149,20 +148,20 @@ img {
 }
 
 blockquote {
+  background: url('/images/quote.png') no-repeat;
   border: 0;
   font: 200 18px $header;
   margin: 0 $gutter 0 0;
   padding-left: $gutter;
-  background: url('/images/quote.png') no-repeat;
 
   p {
     line-height: $lh*1.5;
   }
 
   p.author {
+    color: #bbb;
     font: italic 14px $body;
     line-height: $lh;
-    color: #bbb;
     margin: 0;
   }
 }
@@ -178,8 +177,8 @@ a {
   }
 
   &:hover {
-    text-decoration: none;
     color: lighten($red, 5%);
+    text-decoration: none;
   }
 }
 
@@ -197,17 +196,17 @@ img {
   }
 
   h2 {
-    font: normal 14px $body;
     color: #736B6C;
+    font: normal 14px $body;
     line-height: $lh;
     margin-bottom: 0;
   }
 }
 
 .secondary-header {
-  padding-top: ($lh*3)-(1);
-  margin-top: $lh*3;
   border-top: 1px solid #dcdcdc;
+  margin-top: $lh*3;
+  padding-top: ($lh*3)-(1);
 }
 
 .primary, .secondary {
@@ -248,12 +247,12 @@ form.wufoo {
     list-style: none;
 
     li {
-      width: ($unit*6)+($gutter*5);
       margin-bottom: $lh;
+      width: ($unit*6)+($gutter*5);
 
       h3 {
-        margin-top: $lh*2;
         color: $red;
+        margin-top: $lh*2;
       }
 
       fieldset {
@@ -273,12 +272,12 @@ form.wufoo {
       }
 
       input[type="text"], input[type="email"], input.text, textarea {
-        line-height: $lh;
-        padding: ($lh/2)-(1) ($lh/2);
-        font: 14px $body;
-        width: ($unit*6)+($gutter*5)-($lh)-(2);
         border: 1px solid #999;
+        font: 14px $body;
+        line-height: $lh;
         margin: 0;
+        padding: ($lh/2)-(1) ($lh/2);
+        width: ($unit*6)+($gutter*5)-($lh)-(2);
 
         &:focus {
           outline-color: $red;
@@ -288,21 +287,21 @@ form.wufoo {
       }
 
       input#saveForm {
+        background: $red;
+        border: 1px solid darken($red, 20%);
+        color: #fff;
         display: block;
         font:700 24px $header;
-        border: 1px solid darken($red, 20%);
         margin: 0;
         padding: ($lh/2)-(2) ($lh*2);
-        color: #fff;
-        background: $red;
         text-shadow: 0 -1px 0 darken($red, 10%);
 
         @include box-shadow(inset 0 1px 0 lighten($red, 20%));
         @include border-radius(3px);
 
         &:hover {
-          cursor: pointer;
           background: lighten($red, 5%);
+          cursor: pointer;
         }
 
         &:active {
@@ -311,36 +310,36 @@ form.wufoo {
       }
 
       .instruct {
-        margin: $lh 0 $lh*2;
-        font-size: 14px;
         color: #aaa;
-        font-weight: normal;
+        font-size: 14px;
         font-style: italic;
+        font-weight: normal;
+        margin: $lh 0 $lh*2;
       }
 
       &.name, &#fo8li31 {
-        width: ($unit*6)+($gutter*6);
         float: none;
+        width: ($unit*6)+($gutter*6);
         @extend .clearfix;
 
         span {
-          width: ($unit*3)+($gutter*2);
-          float: left;
           display: block;
+          float: left;
           margin-right: $gutter;
+          width: ($unit*3)+($gutter*2);
 
           &.req {
-            float: none;
-            width: auto;
             display: inline;
+            float: none;
             margin: 0;
+            width: auto;
           }
 
           label {
-            font-size: 14px;
             color: #aaa;
-            font-weight: normal;
+            font-size: 14px;
             font-style: italic;
+            font-weight: normal;
           }
 
           input {

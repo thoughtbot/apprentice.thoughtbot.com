@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, #events:before, form.wufoo ul li.name:before, form.wufoo ul li#fo8li31:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-worshops ul:before, #open-source ul:before, #events ul:before, section#people ul:before, section#people ul li:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, #open-source ul:after, #events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, section#events:before, form.wufoo ul li.name:before, form.wufoo ul li#fo8li31:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-worshops ul:before, section#open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, #open-source ul:after, #events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, #events, form.wufoo ul li.name, form.wufoo ul li#fo8li31, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-worshops ul, #open-source ul, #events ul, section#people ul, section#people ul li {
+.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, section#events, form.wufoo ul li.name, form.wufoo ul li#fo8li31, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-worshops ul, section#open-source ul, section#events ul, section#people ul, section#people ul li {
   zoom: 1; }
 
 .ie7 img {
@@ -590,7 +590,7 @@ ol ol, ol ul, ul ul, ul ol {
 /*size of one gutter*/
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, #open-source ul:after, #events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   clear: both;
   content: ' ';
   display: block;
@@ -610,26 +610,26 @@ body {
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
 
-.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, #events, header#main-header, footer#main-footer {
-  width: 995px;
+.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, section#events, header#main-header, footer#main-footer {
+  margin: 0 auto;
   text-align: left;
-  margin: 0 auto; }
+  width: 995px; }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   text-rendering: optimizeLegibility; }
 
 h1 {
+  color: #2b2b2b;
   font-size: 60px;
   font-weight: 900;
-  color: #2b2b2b;
   margin-bottom: 20px; }
 
 h2 {
-  font-weight: 200;
-  font-size: 36px;
-  line-height: 40px;
   color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 40px;
   margin-bottom: 40px; }
 
 h3 {
@@ -642,13 +642,13 @@ h4 {
   margin: 0; }
 
 p {
+  color: #555;
   line-height: 20px;
-  margin-bottom: 20px;
-  color: #555; }
+  margin-bottom: 20px; }
 
 ul {
-  margin-bottom: 20px;
-  list-style-position: outside; }
+  list-style-position: outside;
+  margin-bottom: 20px; }
   ul li {
     line-height: 20px; }
 
@@ -657,17 +657,17 @@ img {
   vertical-align: bottom; }
 
 blockquote {
+  background: url("/images/quote.png") no-repeat;
   border: 0;
   font: 200 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   margin: 0 25px 0 0;
-  padding-left: 25px;
-  background: url("/images/quote.png") no-repeat; }
+  padding-left: 25px; }
   blockquote p {
     line-height: 30px; }
   blockquote p.author {
+    color: #bbb;
     font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
     line-height: 20px;
-    color: #bbb;
     margin: 0; }
 
 a:link, a:active {
@@ -676,8 +676,8 @@ a:link, a:active {
 a:visited {
   color: #96111a; }
 a:hover {
-  text-decoration: none;
-  color: #c41722; }
+  color: #c41722;
+  text-decoration: none; }
 
 img {
   margin-bottom: 0; }
@@ -689,15 +689,15 @@ img {
   #page-header h1 {
     line-height: 60px; }
   #page-header h2 {
-    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
     color: #736B6C;
+    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
     line-height: 20px;
     margin-bottom: 0; }
 
-.secondary-header, #open-source, div#contact-content, section#people, div#jobs-wrapper {
-  padding-top: 59px;
+.secondary-header, section#open-source, div#contact-content, section#people, div#jobs-wrapper {
+  border-top: 1px solid #dcdcdc;
   margin-top: 60px;
-  border-top: 1px solid #dcdcdc; }
+  padding-top: 59px; }
 
 .secondary-wrapper {
   background: rgba(228, 228, 228, 0.7);
@@ -724,11 +724,11 @@ form.wufoo {
   form.wufoo ul {
     list-style: none; }
     form.wufoo ul li {
-      width: 485px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      width: 485px; }
       form.wufoo ul li h3 {
-        margin-top: 40px;
-        color: #ad141e; }
+        color: #ad141e;
+        margin-top: 40px; }
       form.wufoo ul li fieldset {
         background: none;
         border: 0;
@@ -740,12 +740,12 @@ form.wufoo {
         form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
           display: inline; }
       form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
-        line-height: 20px;
-        padding: 9px 10px;
-        font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        width: 463px;
         border: 1px solid #999;
+        font: 14px "skolar-1", "skolar-2", Georgia, serif;
+        line-height: 20px;
         margin: 0;
+        padding: 9px 10px;
+        width: 463px;
         -moz-box-shadow: inset 0 1px 2px #aaaaaa;
         -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
         -o-box-shadow: inset 0 1px 2px #aaaaaa;
@@ -753,13 +753,13 @@ form.wufoo {
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
+        background: #ad141e;
+        border: 1px solid #52090e;
+        color: #fff;
         display: block;
         font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
-        border: 1px solid #52090e;
         margin: 0;
         padding: 8px 40px;
-        color: #fff;
-        background: #ad141e;
         text-shadow: 0 -1px 0 #7f0f16;
         -moz-box-shadow: inset 0 1px 0 #e93e49;
         -webkit-box-shadow: inset 0 1px 0 #e93e49;
@@ -769,34 +769,34 @@ form.wufoo {
         -webkit-border-radius: 3px;
         border-radius: 3px; }
         form.wufoo ul li input#saveForm:hover {
-          cursor: pointer;
-          background: #c41722; }
+          background: #c41722;
+          cursor: pointer; }
         form.wufoo ul li input#saveForm:active {
           background: #96111a; }
       form.wufoo ul li .instruct {
-        margin: 20px 0 40px;
-        font-size: 14px;
         color: #aaa;
+        font-size: 14px;
+        font-style: italic;
         font-weight: normal;
-        font-style: italic; }
+        margin: 20px 0 40px; }
       form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
-        width: 510px;
-        float: none; }
+        float: none;
+        width: 510px; }
         form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
-          width: 230px;
-          float: left;
           display: block;
-          margin-right: 25px; }
+          float: left;
+          margin-right: 25px;
+          width: 230px; }
           form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
-            float: none;
-            width: auto;
             display: inline;
-            margin: 0; }
+            float: none;
+            margin: 0;
+            width: auto; }
           form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
-            font-size: 14px;
             color: #aaa;
-            font-weight: normal;
-            font-style: italic; }
+            font-size: 14px;
+            font-style: italic;
+            font-weight: normal; }
           form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
             width: 208px; }
 
@@ -904,11 +904,11 @@ section#services {
     section#services section#clients ul {
       list-style: none; }
       section#services section#clients ul li {
-        float: left;
-        margin-right: 25px;
-        width: 145px;
         color: #ABABAB;
-        font-style: italic; }
+        float: left;
+        font-style: italic;
+        margin-right: 25px;
+        width: 145px; }
         section#services section#clients ul li:nth-child(2n) {
           margin-right: 0; }
     section#services section#clients p {
@@ -925,10 +925,10 @@ section#services {
   padding: 20px 0 40px; }
   #get-started a {
     background: #2B2B2B;
-    padding: 30px;
+    display: block;
     font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
     line-height: 20px;
-    display: block;
+    padding: 30px;
     -webkit-font-smoothing: antialiased;
     -webkit-transition: background 0.3s;
     -moz-transitition: background 0.3s;
@@ -938,39 +938,39 @@ section#services {
       margin-bottom: 0;
       float: left; }
     #get-started a p {
-      margin-bottom: 0;
       color: rgba(255, 255, 255, 0.6);
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       float: right;
-      margin-top: 4px;
-      line-height: 20px -4; }
+      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      line-height: 20px -4;
+      margin-bottom: 0;
+      margin-top: 4px; }
     #get-started a:hover {
       background: #ad141e; }
 
 section#products {
+  background: url("/images/shadowing-lite.png") center -1px no-repeat;
   margin-bottom: 60px;
-  padding-top: 40px;
-  background: url("/images/shadowing-lite.png") center -1px no-repeat; }
+  padding-top: 40px; }
   section#products h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#products ul {
     list-style: none; }
     section#products ul li {
-      width: 230px;
       float: left;
-      margin-right: 25px; }
+      margin-right: 25px;
+      width: 230px; }
       section#products ul li a {
         display: block; }
         section#products ul li a .check-out {
-          font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
-          color: #ad141e; }
+          color: #ad141e;
+          font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#products ul li:last-child {
         margin-right: 0; }
 
 section#workshops {
+  background: url("/images/shadowing-lite.png") center top no-repeat;
   border-top: 1px solid #DCDCDC;
-  padding-top: 59px;
-  background: url("/images/shadowing-lite.png") center top no-repeat; }
+  padding-top: 59px; }
   section#workshops h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#workshops section#about-workshops {
@@ -983,11 +983,11 @@ section#workshops {
     section#workshops blockquote .author {
       color: #999; }
   section#workshops section#current-worshops {
-    float: left;
-    width: 275px;
-    padding: 35px 20px 20px;
-    border-top: 5px solid #292929;
     background: #F2F2F2;
+    border-top: 5px solid #292929;
+    float: left;
+    padding: 35px 20px 20px;
+    width: 275px;
     -moz-box-shadow: 0 1px 0 white;
     -webkit-box-shadow: 0 1px 0 white;
     -o-box-shadow: 0 1px 0 white;
@@ -1002,34 +1002,46 @@ section#workshops {
     section#workshops section#current-worshops p {
       margin-bottom: 0; }
 
-#open-source ul {
+section#open-source ul {
   list-style: none;
   margin-bottom: 60px; }
-  #open-source ul li {
-    background: url("/images/shoulda.png") no-repeat 0 0;
+  section#open-source ul li {
     float: left;
     margin: 40px 25px 0 0;
     padding-left: 85px;
-    width: 230px;
-    /*
-      TODO add in oss logos for each project
-    */ }
-    #open-source ul li:nth-child(3n) {
+    width: 230px; }
+    section#open-source ul li#paperclip {
+      background: url("/images/oss/paperclip.png") no-repeat 0 0; }
+    section#open-source ul li#factory-girl {
+      background: url("/images/oss/factory-girl.png") no-repeat 0 0; }
+    section#open-source ul li#high-voltage {
+      background: url("/images/oss/highvoltage.png") no-repeat 0 0; }
+    section#open-source ul li#suspenders {
+      background: url("/images/oss/suspenders.png") no-repeat 0 0; }
+    section#open-source ul li#shoulda {
+      background: url("/images/oss/shoulda.png") no-repeat 0 0; }
+    section#open-source ul li#clearance {
+      background: url("/images/oss/clearance.png") no-repeat 0 0; }
+    section#open-source ul li#pacecar {
+      background: url("/images/oss/pacecar.png") no-repeat 0 0; }
+    section#open-source ul li#flutie {
+      background: url("/images/oss/flutie.png") no-repeat 0 0; }
+    section#open-source ul li:nth-child(3n) {
       margin-right: 0; }
-    #open-source ul li:nth-child(3n+1) {
+    section#open-source ul li:nth-child(3n+1) {
       clear: both; }
 
-#events {
+section#events {
   background: url("/images/shadowing-lite.png") center -1px no-repeat;
   padding-top: 60px;
   text-shadow: 0 1px 0 #fcfcfc; }
-  #events p.events-intro {
+  section#events p.events-intro {
     float: left;
     margin-right: 25px;
     width: 230px; }
-  #events ul {
+  section#events ul {
     list-style: none; }
-    #events ul li {
+    section#events ul li {
       background: #F2F2F2;
       border-top: 5px solid #292929;
       display: block;
@@ -1038,7 +1050,7 @@ section#workshops {
       overflow: hidden;
       padding: 35px 20px 20px;
       width: 190px; }
-      #events ul li:last-child {
+      section#events ul li:last-child {
         margin-right: 0; }
 
 div#contact-content div#contact_form {
@@ -1059,13 +1071,13 @@ div#contact-content div#contact_form {
         color: #666;
         margin-right: 10px; }
     div#contact-content div#contact_form form.wufoo ul li#fo5li12 div, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div {
-      padding-top: 20px;
       display: block;
-      margin-left: 30px; }
+      margin-left: 30px;
+      padding-top: 20px; }
       div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span {
+        color: #666;
         display: block;
-        margin-bottom: 10px;
-        color: #666; }
+        margin-bottom: 10px; }
         div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span input, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span input {
           margin: -2px 3px 0 -20px;
           top: 0; }
@@ -1125,13 +1137,13 @@ div#contact-content div#contact_form {
         color: #666;
         margin-right: 10px; }
     div#contact-content div#contact_form form.wufoo ul li#fo5li12 div, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div {
-      padding-top: 20px;
       display: block;
-      margin-left: 30px; }
+      margin-left: 30px;
+      padding-top: 20px; }
       div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span {
+        color: #666;
         display: block;
-        margin-bottom: 10px;
-        color: #666; }
+        margin-bottom: 10px; }
         div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span input, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span input {
           margin: -2px 3px 0 -20px;
           top: 0; }

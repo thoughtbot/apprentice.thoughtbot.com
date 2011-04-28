@@ -1,4 +1,4 @@
-#open-source {
+section#open-source {
   @extend .secondary-header;
 
   ul {
@@ -8,17 +8,34 @@
     @extend .clearfix;
 
     li {
-      background: url('/images/shoulda.png') no-repeat 0 0;
       float: left;
       margin: ($lh*2) $gutter 0 0;
       padding-left: $unit+$gutter;
       width: ($unit*3)+($gutter*2);
 
-      /*
-        TODO add in oss logos for each project
-      */
-      &.shoulda {
-
+      &#paperclip {
+        background: url('/images/oss/paperclip.png') no-repeat 0 0;
+      }
+      &#factory-girl {
+        background: url('/images/oss/factory-girl.png') no-repeat 0 0;
+      }
+      &#high-voltage {
+        background: url('/images/oss/highvoltage.png') no-repeat 0 0;
+      }
+      &#suspenders {
+        background: url('/images/oss/suspenders.png') no-repeat 0 0;
+      }
+      &#shoulda {
+        background: url('/images/oss/shoulda.png') no-repeat 0 0;
+      }
+      &#clearance {
+        background: url('/images/oss/clearance.png') no-repeat 0 0;
+      }
+      &#pacecar {
+        background: url('/images/oss/pacecar.png') no-repeat 0 0;
+      }
+      &#flutie {
+        background: url('/images/oss/flutie.png') no-repeat 0 0;
       }
 
       &:nth-child(3n) {
@@ -32,8 +49,9 @@
   }
 }
 
-#events {
+section#events {
   @extend .secondary;
+
   background: url('/images/shadowing-lite.png') center -1px no-repeat;
   padding-top: $lh*3;
   text-shadow:  0 1px 0 #fcfcfc;
