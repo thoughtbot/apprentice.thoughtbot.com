@@ -1,8 +1,8 @@
-#main-header {
+header#main-header {
   @extend .wrapper;
   @extend .clearfix;
 
-  padding-bottom: 40px;
+  padding-bottom: $lh;
   border-bottom: 1px solid #DCDCDC;
 
   h1 {

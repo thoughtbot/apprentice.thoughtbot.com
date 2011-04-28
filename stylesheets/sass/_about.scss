@@ -14,6 +14,7 @@
       width: ($unit*6)+($gutter*5);
       margin: 0 $gutter ($lh*2) 0;
       float: left;
+      min-height: $lh*12;
       @extend .clearfix;
 
       &:nth-child(2n) {
@@ -22,17 +23,6 @@
 
       &:nth-child(2n+1) {
         clear: left;
-      }
-
-      &.owner {
-        background: rgba(#E4E4E4, .6);
-        padding: $lh;
-        width: ($unit*6)+($gutter*5)-($lh*2);
-
-        .person-info {
-          width: ($unit*4)+($gutter*3)-($lh*2);
-          float: left;
-        }
       }
 
       .person-photo {

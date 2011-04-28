@@ -12,9 +12,12 @@
       width: ($unit*3)+($gutter*2);
       margin: ($lh*2) $gutter 0 0;
       float: left;
-
-      padding-left: $unit+$gutter;
       background: url('/images/shoulda.png') no-repeat 0 0;
+      padding-left: $unit+$gutter;
+
+      &.shoulda {
+
+      }
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -31,6 +34,7 @@
   @extend .secondary;
   padding-top: $lh*3;
   background: url('/images/shadowing-lite.png') center -1px no-repeat;
+  text-shadow:  0 1px 0 #fcfcfc;
 
   p.events-intro {
     width: ($unit*3)+($gutter*2);
@@ -46,10 +50,11 @@
       width: ($unit*3)+($gutter*2)-($lh*2);
       float: left;
       margin-right: $gutter;
-      padding: $lh;
-      background: #ccc;
       display: block;
       overflow: hidden;
+      padding: ($lh*2)-(5px) $lh $lh;
+      border-top: 5px solid #292929;
+      background: #F2F2F2;
 
       &:last-child {
         margin-right: 0;

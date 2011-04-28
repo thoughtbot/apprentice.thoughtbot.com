@@ -1,4 +1,34 @@
-#postitions {
-  float: left;
-  width: ($unit*6)+($gutter*5);
+#jobs-wrapper {
+  background: url('/images/shadowing.png') center top no-repeat;
+  padding-top: ($lh*3)-(1);
+  margin-top: $lh*3;
+  border-top: 1px solid #dcdcdc;
+  @extend .primary;
+
+  #positions {
+    float: left;
+    width: ($unit*6)+($gutter*5);
+
+    ul {
+      list-style: none;
+      li {
+
+      }
+    }
+  }
+
+  #job-form {
+    float: left;
+    width: ($unit*6)+($gutter*5);
+    margin-right: $gutter;
+
+    h1#logo, #bottom{
+      display: none;
+    }
+
+    .info {
+      display: none;
+    }
+  }
 }
+
