@@ -67,6 +67,7 @@ section#services {
         }
       }
     }
+
     p {
       margin-bottom: 0;
 
@@ -96,7 +97,7 @@ section#services {
     line-height: $lh;
     display: block;
     -webkit-font-smoothing: antialiased;
-    -webkit-transition: background .3s;
+    @include transition(background .3s);
     @extend .clearfix;
 
     h3 {
@@ -120,7 +121,7 @@ section#services {
   }
 }
 
-#products {
+section#products {
   margin-bottom: $lh*3;
   padding-top: $lh*2;
   background: url('/images/shadowing-lite.png') center -1px no-repeat;
@@ -153,7 +154,7 @@ section#services {
   }
 }
 
-#workshops {
+section#workshops {
   border-top: 1px solid #DCDCDC;
   padding-top: ($lh*3)-(1);
   background: url('/images/shadowing-lite.png') center top no-repeat;
@@ -163,7 +164,7 @@ section#services {
     text-shadow:  0 1px 0 #fcfcfc;
   }
 
-  #about-workshops {
+  section#about-workshops {
     float: left;
     margin-right: $gutter;
     width: ($unit*4)+($gutter*3);
@@ -179,7 +180,7 @@ section#services {
     }
   }
 
-  #current-worshops {
+  section#current-worshops {
     float: left;
     width: ($unit*4)+($gutter*3)-(40px);
     padding: ($lh*2)-(5px) $lh $lh;

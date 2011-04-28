@@ -2,9 +2,8 @@
   @extend .wrapper;
   @extend .clearfix;
   padding-top: $lh*4;
-
   opacity: .5;
-  -webkit-transition: opacity .5s;
+  @include transition(opacity .5s);
 
   &:hover {
     opacity: 1;

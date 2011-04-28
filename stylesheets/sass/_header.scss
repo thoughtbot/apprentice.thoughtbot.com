@@ -2,24 +2,25 @@ header#main-header {
   @extend .wrapper;
   @extend .clearfix;
 
-  padding-bottom: $lh;
   border-bottom: 1px solid #DCDCDC;
+  padding-bottom: $lh;
 
   h1 {
     float: left;
     margin: 42px 0 24px;
+
     a {
-      text-indent: -9999px;
-      display: block;
-      width: 242px;
-      height: 65px;
       background: url('/images/thoughtbot-logo.png') 0 0 no-repeat;
+      display: block;
+      height: 65px;
+      text-indent: -9999px;
+      width: 242px;
     }
   }
 
   ul {
-    float: right;
     display: block;
+    float: right;
     margin-top: 72px;
 
     @extend .clearfix;
@@ -28,12 +29,12 @@ header#main-header {
       float: left;
 
       a {
-        display: block;
-        margin: 0 20px;
-        font: 500 16px $header;
         color: #2b2b2b;
+        display: block;
+        font: 500 16px $header;
         line-height: 20px;
-        -webkit-transition: color .2s;
+        margin: 0 20px;
+        @include transition(color .2s);
 
         &:hover {
           color: $red;

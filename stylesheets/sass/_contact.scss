@@ -1,11 +1,11 @@
-#contact-content {
+div#contact-content {
   @extend .primary;
   background: url('/images/shadowing.png') center top no-repeat;
   padding-top: ($lh*3)-(1);
   margin-top: $lh*3;
   border-top: 1px solid #dcdcdc;
 
-  #contact_form {
+  div#contact_form {
     width: ($unit*6)+($gutter*5);
     float: left;
     margin-right: $gutter;
@@ -74,7 +74,7 @@
         margin: $lh 0 $lh*2;
         display: block;
         -webkit-font-smoothing: antialiased;
-        -webkit-transition: background .3s;
+        @include transition(background .3s);
 
         h3 {
           color: #fff;
@@ -83,17 +83,12 @@
 
         p {
           margin-bottom: 0;
-          color: $red;
+          color: rgba(#fff, .6);
           font: 16px $header;
-          color: $red;
         }
 
         &:hover {
           background: $red;
-
-          p {
-            color: #2b2b2b;
-          }
         }
       }
     }

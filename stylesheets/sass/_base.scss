@@ -48,6 +48,12 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
 }
 
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transitition: $transition;
+  transitition: $transition;
+}
+
 /* Variables
 ---------------------------------------- */
 $header: "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;
@@ -275,7 +281,7 @@ form.wufoo {
         @include box-shadow( inset 0 1px 2px #aaa);
       }
 
-      #saveForm {
+      input#saveForm {
         display: block;
         font:700 24px $header;
         border: 1px solid darken($red, 20%);
@@ -286,6 +292,7 @@ form.wufoo {
         text-shadow: 0 -1px 0 darken($red, 10%);
 
         @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+        @include border-radius(3px);
 
         &:hover {
           cursor: pointer;
