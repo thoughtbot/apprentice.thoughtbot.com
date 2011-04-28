@@ -1,20 +1,22 @@
 #open-source {
-  background: url('/images/shadowing.png') center top no-repeat;
-  padding-top: ($lh*3)-(1);
-  margin-top: $lh*3;
-  border-top: 1px solid #dcdcdc;
+  @extend .secondary-header;
 
   ul {
     list-style: none;
     margin-bottom: $lh*3;
-    @extend .clearfix;
-    li {
-      width: ($unit*3)+($gutter*2);
-      margin: ($lh*2) $gutter 0 0;
-      float: left;
-      background: url('/images/shoulda.png') no-repeat 0 0;
-      padding-left: $unit+$gutter;
 
+    @extend .clearfix;
+
+    li {
+      background: url('/images/shoulda.png') no-repeat 0 0;
+      float: left;
+      margin: ($lh*2) $gutter 0 0;
+      padding-left: $unit+$gutter;
+      width: ($unit*3)+($gutter*2);
+
+      /*
+        TODO add in oss logos for each project
+      */
       &.shoulda {
 
       }
@@ -32,14 +34,14 @@
 
 #events {
   @extend .secondary;
-  padding-top: $lh*3;
   background: url('/images/shadowing-lite.png') center -1px no-repeat;
+  padding-top: $lh*3;
   text-shadow:  0 1px 0 #fcfcfc;
 
   p.events-intro {
-    width: ($unit*3)+($gutter*2);
     float: left;
     margin-right: $gutter;
+    width: ($unit*3)+($gutter*2);
   }
 
   ul {
@@ -47,14 +49,14 @@
     @extend .clearfix;
 
     li {
-      width: ($unit*3)+($gutter*2)-($lh*2);
+      background: #F2F2F2;
+      border-top: 5px solid #292929;
+      display: block;
       float: left;
       margin-right: $gutter;
-      display: block;
       overflow: hidden;
       padding: ($lh*2)-(5px) $lh $lh;
-      border-top: 5px solid #292929;
-      background: #F2F2F2;
+      width: ($unit*3)+($gutter*2)-($lh*2);
 
       &:last-child {
         margin-right: 0;

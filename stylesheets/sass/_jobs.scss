@@ -1,32 +1,26 @@
-#jobs-wrapper {
-  background: url('/images/shadowing.png') center top no-repeat;
-  padding-top: ($lh*3)-(1);
-  margin-top: $lh*3;
-  border-top: 1px solid #dcdcdc;
+div#jobs-wrapper {
+  @extend .secondary-header;
   @extend .primary;
 
-  #positions {
+  section#positions {
     float: left;
     width: ($unit*6)+($gutter*5);
 
     ul {
       list-style: none;
-      li {
-
-      }
     }
   }
 
-  #job-form {
+  section#job-form {
     float: left;
-    width: ($unit*6)+($gutter*5);
     margin-right: $gutter;
+    width: ($unit*6)+($gutter*5);
 
     h1#logo, #bottom{
       display: none;
     }
 
-    .info {
+    header.info {
       display: none;
     }
   }

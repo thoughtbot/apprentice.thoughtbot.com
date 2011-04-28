@@ -204,6 +204,12 @@ img {
   }
 }
 
+.secondary-header {
+  padding-top: ($lh*3)-(1);
+  margin-top: $lh*3;
+  border-top: 1px solid #dcdcdc;
+}
+
 .primary, .secondary {
   @extend .clearfix;
   @extend .wrapper;

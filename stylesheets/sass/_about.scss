@@ -1,20 +1,16 @@
-#people {
+section#people {
   @extend .primary;
-
-  background: url('/images/shadowing.png') center top no-repeat;
-  padding-top: ($lh*3)-(1);
-  margin-top: $lh*3;
-  border-top: 1px solid #dcdcdc;
+  @extend .secondary-header;
 
   ul {
     list-style: none;
     @extend .clearfix;
 
     li {
-      width: ($unit*6)+($gutter*5);
-      margin: 0 $gutter ($lh*2) 0;
       float: left;
+      margin: 0 $gutter ($lh*2) 0;
       min-height: $lh*12;
+      width: ($unit*6)+($gutter*5);
       @extend .clearfix;
 
       &:nth-child(2n) {
@@ -25,15 +21,15 @@
         clear: left;
       }
 
-      .person-photo {
+      div.person-photo {
         float: left;
         margin-right: $gutter;
         width: ($unit*2)+($gutter);
       }
 
-      .person-info {
-        width: ($unit*4)+($gutter*3);
+      div.person-info {
         float: left;
+        width: ($unit*4)+($gutter*3);
 
         h2 {
           font: 700 24px $header;
@@ -42,10 +38,10 @@
         }
 
         h3 {
+          color: #aaa;
           font: italic 14px $body;
           line-height: $lh;
           margin-bottom: $lh;
-          color: #aaa;
         }
       }
     }

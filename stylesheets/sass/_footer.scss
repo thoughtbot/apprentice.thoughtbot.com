@@ -1,8 +1,10 @@
-#main-footer {
+footer#main-footer {
   @extend .wrapper;
   @extend .clearfix;
-  padding-top: $lh*4;
+
   opacity: .5;
+  padding-top: $lh*4;
+
   @include transition(opacity .5s);
 
   &:hover {
@@ -28,18 +30,18 @@
   nav {
     @extend .clearfix;
     section {
-      width: ($unit*2)+($gutter);
       float: left;
       margin-right: $gutter;
+      width: ($unit*2)+($gutter);
 
       &#thoughtbot-footer {
         width: ($unit*4)+($gutter*3);
 
         ul {
           li {
-            width: ($unit*2)+($gutter);
             float: left;
             margin-right: $gutter;
+            width: ($unit*2)+($gutter);
 
             &:nth-child(2n) {
               margin-right: 0;
@@ -61,8 +63,8 @@
       }
     }
   }
-  #copyright {
-    margin-top: $lh*2;
+  p#copyright {
     color: #7a7a7a;
+    margin-top: $lh*2;
   }
 }
