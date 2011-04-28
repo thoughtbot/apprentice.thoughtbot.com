@@ -695,8 +695,8 @@ img {
     margin-bottom: 0; }
 
 .secondary-header, section#open-source, div#contact-content, section#people, div#jobs-wrapper {
-  border-top: 1px solid #dcdcdc;
-  margin-top: 60px;
+  /*  border-top: 1px solid #dcdcdc;
+    margin-top: $lh*3;*/
   padding-top: 59px; }
 
 .secondary-wrapper {
@@ -959,11 +959,19 @@ section#products {
       float: left;
       margin-right: 25px;
       width: 230px; }
+      section#products ul li#hoptoad a {
+        background: url("/images/products/hoptoad.png") 0 0 no-repeat; }
+      section#products ul li#copycopter a {
+        background: url("/images/products/copycopter.png") 0 0 no-repeat; }
+      section#products ul li#trajectory a {
+        background: url("/images/products/trajectory.png") 0 0 no-repeat; }
+      section#products ul li#radish a {
+        background: url("/images/products/radish.png") 0 0 no-repeat; }
       section#products ul li a {
-        display: block; }
+        display: block;
+        padding-top: 180px; }
         section#products ul li a .check-out {
-          color: #ad141e;
-          font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+          color: #ad141e; }
       section#products ul li:last-child {
         margin-right: 0; }
 
@@ -983,15 +991,11 @@ section#workshops {
     section#workshops blockquote .author {
       color: #999; }
   section#workshops section#current-worshops {
-    background: #F2F2F2;
+    background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
     padding: 35px 20px 20px;
-    width: 275px;
-    -moz-box-shadow: 0 1px 0 white;
-    -webkit-box-shadow: 0 1px 0 white;
-    -o-box-shadow: 0 1px 0 white;
-    box-shadow: 0 1px 0 white; }
+    width: 275px; }
     section#workshops section#current-worshops ul {
       list-style: none; }
       section#workshops section#current-worshops ul li a {
@@ -1042,7 +1046,7 @@ section#events {
   section#events ul {
     list-style: none; }
     section#events ul li {
-      background: #F2F2F2;
+      background: #F9F9F9;
       border-top: 5px solid #292929;
       display: block;
       float: left;

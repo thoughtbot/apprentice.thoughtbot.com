@@ -139,12 +139,34 @@ section#products {
       margin-right: $gutter;
       width: ($unit*3)+($gutter*2);
 
+      &#hoptoad {
+        a {
+          background: url('/images/products/hoptoad.png') 0 0 no-repeat;
+        }
+      }
+      &#copycopter {
+        a {
+          background: url('/images/products/copycopter.png') 0 0 no-repeat;
+        }
+      }
+      &#trajectory {
+        a {
+          background: url('/images/products/trajectory.png') 0 0 no-repeat;
+        }
+      }
+      &#radish {
+        a {
+          background: url('/images/products/radish.png') 0 0 no-repeat;
+        }
+      }
+
+
       a {
         display: block;
+        padding-top: $lh*9;
 
         .check-out {
           color: $red;
-          font: 16px $header;
         }
       }
 
@@ -181,13 +203,11 @@ section#workshops {
   }
 
   section#current-worshops {
-    background: #F2F2F2;
+    background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
     padding: ($lh*2)-(5px) $lh $lh;
     width: ($unit*4)+($gutter*3)-(40px);
-
-    @include box-shadow(0 1px 0 #fff);
 
     ul {
       list-style: none;
