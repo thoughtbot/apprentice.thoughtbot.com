@@ -697,11 +697,13 @@ img {
 .secondary-header, section#open-source, div#contact-content, section#people, div#jobs-wrapper {
   /*  border-top: 1px solid #dcdcdc;
     margin-top: $lh*3;*/
-  padding-top: 59px; }
+  padding-top: 60px; }
 
 .secondary-wrapper {
-  background: rgba(228, 228, 228, 0.7);
-  padding-bottom: 40px; }
+  background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 39px 0 39px; }
 
 /* Selection styles
 ---------------------------------------- */
@@ -948,9 +950,7 @@ section#services {
       background: #ad141e; }
 
 section#products {
-  background: url("/images/shadowing-lite.png") center -1px no-repeat;
-  margin-bottom: 60px;
-  padding-top: 40px; }
+  margin-bottom: 60px; }
   section#products h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#products ul {

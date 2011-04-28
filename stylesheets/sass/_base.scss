@@ -83,7 +83,7 @@ $gutter: 25px; /*size of one gutter*/
 ---------------------------------------- */
 
 body {
-	background-color: #FCFCFC;
+  background-color: #FCFCFC;
   /*background: url('/images/grid.png') 10px -4px;*/
   border-top: 4px solid $red;
   color: #2B2B2B;
@@ -206,7 +206,7 @@ img {
 .secondary-header {
 /*  border-top: 1px solid #dcdcdc;
   margin-top: $lh*3;*/
-  padding-top: ($lh*3)-(1);
+  padding-top: ($lh*3);
 }
 
 .primary, .secondary {
@@ -215,8 +215,10 @@ img {
 }
 
 .secondary-wrapper {
-  background: rgba(#E4E4E4, .7);
-  padding-bottom: $lh*2;
+  background: rgba(#E4E4E4, .7) url('/images/shadowing.png') center 0 no-repeat;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: ($lh*2)-(1) 0 ($lh*2)-(1);
 }
 
 /* Selection styles
