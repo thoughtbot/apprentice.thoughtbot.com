@@ -6,7 +6,7 @@ section#portfolio {
     @extend .clearfix;
 
     li {
-      background: #ccc;
+      background: #fff;
       border: 1px solid #BDBDBD;
       padding: 4px;
       display: block;
@@ -14,9 +14,35 @@ section#portfolio {
       height: ($lh*9)+10px;
       margin: 0 $gutter $lh 0;
       width: ($unit*3)+($gutter*2)-(10px);
+      text-indent: -9999px;
 
       &:nth-child(4n) {
         margin-right: 0;
+      }
+      
+      &#pozit {
+        background: url('/images/portfolio/thumb/pozit.png') 4px 4px no-repeat;
+      }
+      &#gulfcoast {
+        background: url('/images/portfolio/thumb/gulfcoast.png') 4px 4px no-repeat;
+      }
+      &#coupondudes {
+        background: url('/images/portfolio/thumb/coupondudes.png') 4px 4px no-repeat;
+      }
+      &#gnite {
+        background: url('/images/portfolio/thumb/gnite.png') 4px 4px no-repeat;
+      }
+      &#carbonrally {
+        background: url('/images/portfolio/thumb/carbonrally.png') 4px 4px no-repeat;
+      }
+      &#saftystream {
+        background: url('/images/portfolio/thumb/saftystream.png') 4px 4px no-repeat;
+      }
+      &#shortboard {
+        background: url('/images/portfolio/thumb/shortboard.png') 4px 4px no-repeat;
+      }
+      &#umbrellatoday {
+        background: url('/images/portfolio/thumb/umbrellatoday.png') 4px 4px no-repeat;
       }
     }
   }
