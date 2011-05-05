@@ -9,7 +9,7 @@ section#portfolio {
     li {
       float: left;
       margin: 0 $gutter $lh 0;
-     
+
       a {
         border: 1px solid #BDBDBD;
         display: block;
@@ -17,7 +17,7 @@ section#portfolio {
         padding: 4px;
         text-indent: -9999px;
         width: ($unit*3)+($gutter*2)-(10px);
-        
+
         &:hover {
           border-color: #999;
           @include transform(scale(1.01));
@@ -28,7 +28,7 @@ section#portfolio {
       &:nth-child(4n) {
         margin-right: 0;
       }
-      
+
       &#pozit a {
         background: url('/images/portfolio/thumb/pozit.png') 4px 4px no-repeat;
       }
@@ -59,7 +59,7 @@ section#portfolio {
 
 section#services {
   @extend .clearfix;
-  
+
   margin-bottom: $lh*2;
 
   #about-services {
