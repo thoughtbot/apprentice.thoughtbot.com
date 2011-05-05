@@ -54,6 +54,12 @@
   transitition: $transition;
 }
 
+@mixin transform ($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
 /* Variables
 ---------------------------------------- */
 $header: "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;

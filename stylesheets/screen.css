@@ -873,34 +873,45 @@ footer#main-footer {
 
 section#portfolio {
   margin: 80px 0 40px; }
-  section#portfolio ul li {
-    background: #fff;
-    border: 1px solid #BDBDBD;
-    padding: 4px;
-    display: block;
-    float: left;
-    height: 190px;
-    margin: 0 25px 20px 0;
-    width: 220px;
-    text-indent: -9999px; }
-    section#portfolio ul li:nth-child(4n) {
-      margin-right: 0; }
-    section#portfolio ul li#pozit {
-      background: url("/images/portfolio/thumb/pozit.png") 4px 4px no-repeat; }
-    section#portfolio ul li#gulfcoast {
-      background: url("/images/portfolio/thumb/gulfcoast.png") 4px 4px no-repeat; }
-    section#portfolio ul li#coupondudes {
-      background: url("/images/portfolio/thumb/coupondudes.png") 4px 4px no-repeat; }
-    section#portfolio ul li#gnite {
-      background: url("/images/portfolio/thumb/gnite.png") 4px 4px no-repeat; }
-    section#portfolio ul li#carbonrally {
-      background: url("/images/portfolio/thumb/carbonrally.png") 4px 4px no-repeat; }
-    section#portfolio ul li#saftystream {
-      background: url("/images/portfolio/thumb/saftystream.png") 4px 4px no-repeat; }
-    section#portfolio ul li#shortboard {
-      background: url("/images/portfolio/thumb/shortboard.png") 4px 4px no-repeat; }
-    section#portfolio ul li#umbrellatoday {
-      background: url("/images/portfolio/thumb/umbrellatoday.png") 4px 4px no-repeat; }
+  section#portfolio ul {
+    list-style: none; }
+    section#portfolio ul li {
+      float: left;
+      margin: 0 25px 20px 0; }
+      section#portfolio ul li a {
+        border: 1px solid #BDBDBD;
+        display: block;
+        height: 190px;
+        padding: 4px;
+        text-indent: -9999px;
+        width: 220px; }
+        section#portfolio ul li a:hover {
+          border-color: #999;
+          -webkit-transform: scale(1.01);
+          -moz-transform: scale(1.01);
+          transform: scale(1.01);
+          -moz-box-shadow: 0 0 3px #999999;
+          -webkit-box-shadow: 0 0 3px #999999;
+          -o-box-shadow: 0 0 3px #999999;
+          box-shadow: 0 0 3px #999999; }
+      section#portfolio ul li:nth-child(4n) {
+        margin-right: 0; }
+      section#portfolio ul li#pozit a {
+        background: url("/images/portfolio/thumb/pozit.png") 4px 4px no-repeat; }
+      section#portfolio ul li#gulfcoast a {
+        background: url("/images/portfolio/thumb/gulfcoast.png") 4px 4px no-repeat; }
+      section#portfolio ul li#coupondudes a {
+        background: url("/images/portfolio/thumb/coupondudes.png") 4px 4px no-repeat; }
+      section#portfolio ul li#gnite a {
+        background: url("/images/portfolio/thumb/gnite.png") 4px 4px no-repeat; }
+      section#portfolio ul li#carbonrally a {
+        background: url("/images/portfolio/thumb/carbonrally.png") 4px 4px no-repeat; }
+      section#portfolio ul li#saftystream a {
+        background: url("/images/portfolio/thumb/saftystream.png") 4px 4px no-repeat; }
+      section#portfolio ul li#shortboard a {
+        background: url("/images/portfolio/thumb/shortboard.png") 4px 4px no-repeat; }
+      section#portfolio ul li#umbrellatoday a {
+        background: url("/images/portfolio/thumb/umbrellatoday.png") 4px 4px no-repeat; }
 
 section#services {
   margin-bottom: 40px; }
