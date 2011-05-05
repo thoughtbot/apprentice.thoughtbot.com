@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, section#events:before, form.wufoo ul li.name:before, form.wufoo ul li#fo8li31:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-worshops ul:before, section#open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:before, .primary:before, #design-portfolio:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, form.wufoo ul li#fo8li31:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-worshops ul:before, section#open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, .clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, section#events, form.wufoo ul li.name, form.wufoo ul li#fo8li31, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-worshops ul, section#open-source ul, section#events ul, section#people ul, section#people ul li {
+.clearfix, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, form.wufoo ul li#fo8li31, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-worshops ul, section#open-source ul, section#events ul, section#people ul, section#people ul li {
   zoom: 1; }
 
 .ie7 img {
@@ -590,7 +590,7 @@ ol ol, ol ul, ul ul, ul ol {
 /*size of one gutter*/
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
+.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-worshops ul:after, section#open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after {
   clear: both;
   content: ' ';
   display: block;
@@ -610,7 +610,7 @@ body {
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
 
-.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, .secondary, section#events, header#main-header, footer#main-footer {
+.wrapper, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
   margin: 0 auto;
   text-align: left;
   width: 995px; }
@@ -699,7 +699,7 @@ img {
     margin-top: $lh*3;*/
   padding-top: 60px; }
 
-.secondary-wrapper {
+.secondary-wrapper, #portfolio-slider {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-top: 1px solid #DCDCDC;
   border-bottom: 1px solid #DCDCDC;
@@ -802,6 +802,24 @@ form.wufoo {
           form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
             width: 208px; }
 
+/* Design page
+---------------------------------------- */
+#design-portfolio ul {
+  list-style: none; }
+  #design-portfolio ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 830px;
+    margin: 0 auto; }
+    #design-portfolio ul li img {
+      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
+    #design-portfolio ul li:last-child {
+      border-bottom: 0; }
+
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
   padding-bottom: 20px; }
@@ -870,6 +888,56 @@ footer#main-footer {
   footer#main-footer p#copyright {
     color: #7a7a7a;
     margin-top: 40px; }
+
+#portfolio-slider {
+  margin-top: 60px;
+  height: 520px;
+  overflow: hidden;
+  position: relative; }
+  #portfolio-slider div h2 {
+    text-shadow: 0 1px 0 #fcfcfc; }
+  #portfolio-slider div ul.slider {
+    position: relative;
+    width: 315px;
+    height: 420px;
+    /* Change this to your images height */
+    background: url(images/loading.gif) no-repeat 50% 50%;
+    list-style: none;
+    border: 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15); }
+    #portfolio-slider div ul.slider img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: none; }
+    #portfolio-slider div ul.slider a {
+      display: block; }
+    #portfolio-slider div ul.slider .nivo-controlNav {
+      position: absolute;
+      left: 260px;
+      bottom: -42px; }
+    #portfolio-slider div ul.slider div.nivo-directionNav a {
+      display: block;
+      position: absolute;
+      text-indent: -9999px;
+      width: 21px;
+      height: 40px;
+      background: url("/images/portfolio/arrows.png") 0 0 no-repeat; }
+      #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-prevNav {
+        left: -60px;
+        top: 44%;
+        background-position: 0 0; }
+        #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-prevNav:hover {
+          background-position: 0 -40px; }
+      #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav {
+        right: -60px;
+        top: 44%;
+        background-position: -21px 0; }
+        #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav:hover {
+          background-position: -21px -40px; }
 
 section#portfolio {
   margin: 80px 0 40px; }

@@ -1,3 +1,77 @@
+#portfolio-slider {
+  @extend .secondary-wrapper;
+  margin-top: $lh*3;
+  height: $lh*26;
+  overflow: hidden;
+  position: relative;
+
+  div {
+    @extend .secondary;
+    h2 {
+      text-shadow: 0 1px 0 #fcfcfc;
+    }
+
+    ul.slider {
+      position: relative;
+      width: ($unit*4)+($gutter*3);
+      height: ($lh*21); /* Change this to your images height */
+      background:url(images/loading.gif) no-repeat 50% 50%;
+      list-style: none;
+      border: 1px rgba(#000, .2);
+
+      @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
+
+      img {
+          position:absolute;
+          top:0px;
+          left:0px;
+          display:none;
+      }
+
+      a {
+        display: block;
+      }
+
+      .nivo-controlNav {
+        position:absolute;
+        left:260px;
+        bottom:-42px;
+      }
+
+      div.nivo-directionNav  {
+        a {
+          display: block;
+          position: absolute;
+          text-indent: -9999px;
+          width: 21px;
+          height: 40px;
+          background: url('/images/portfolio/arrows.png') 0 0 no-repeat;
+
+          &.nivo-prevNav {
+           left: -60px;
+           top: 44%;
+           background-position: 0 0;
+
+           &:hover {
+            background-position: 0 -40px;
+           }
+          }
+
+          &.nivo-nextNav {
+           right: -60px;
+           top: 44%;
+           background-position: -21px 0;
+
+           &:hover {
+            background-position: -21px -40px;
+           }
+          }
+        }
+      }
+    }
+  }
+}
+
 section#portfolio {
   margin: 80px 0 40px;
   @extend .clearfix;

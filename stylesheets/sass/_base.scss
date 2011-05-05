@@ -358,3 +358,28 @@ form.wufoo {
     }
   }
 }
+
+/* Design page
+---------------------------------------- */
+#design-portfolio {
+  @extend .primary;
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: $lh 0;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      width: 830px;
+      margin: 0 auto;
+      img {
+        @include box-shadow(0 0 0 1px rgba(#000, .1));
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
