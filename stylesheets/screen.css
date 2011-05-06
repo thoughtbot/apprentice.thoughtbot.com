@@ -604,7 +604,7 @@ ol ol, ol ul, ul ul, ul ol {
 ---------------------------------------- */
 body {
   background-color: #FCFCFC;
-  /*background: url('/images/grid.png') 10px -4px;*/
+  background: url("/images/grid.png") 10px -4px;
   border-top: 4px solid #ad141e;
   color: #2B2B2B;
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
@@ -891,23 +891,24 @@ footer#main-footer {
 
 #portfolio-slider {
   margin-top: 60px;
-  height: 520px;
-  overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 520px; }
   #portfolio-slider div h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
+  #portfolio-slider div #slider-wrapper {
+    height: 420px; }
   #portfolio-slider div ul.slider {
     position: relative;
-    width: 315px;
-    height: 420px;
-    /* Change this to your images height */
+    width: 995px;
+    height: 418px;
     background: url(images/loading.gif) no-repeat 50% 50%;
     list-style: none;
-    border: 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15); }
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    border: 1px rgba(0, 0, 0, 0.2) !important;
+    overflow: hidden; }
     #portfolio-slider div ul.slider img {
       position: absolute;
       top: 0px;

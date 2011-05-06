@@ -1,25 +1,28 @@
 #portfolio-slider {
   @extend .secondary-wrapper;
   margin-top: $lh*3;
-  height: $lh*26;
-  overflow: hidden;
   position: relative;
+  height: $lh*26;
 
   div {
     @extend .secondary;
     h2 {
       text-shadow: 0 1px 0 #fcfcfc;
     }
+    #slider-wrapper {
+
+      height: $lh*21;
+    }
 
     ul.slider {
       position: relative;
-      width: ($unit*4)+($gutter*3);
-      height: ($lh*21); /* Change this to your images height */
+      width: ($unit*12)+($gutter*11);
+      height: ($lh*21)-(2);
       background:url(images/loading.gif) no-repeat 50% 50%;
       list-style: none;
-      border: 1px rgba(#000, .2);
-
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
+      border: 1px rgba(#000, .2) !important;
+      overflow: hidden;
 
       img {
           position:absolute;
