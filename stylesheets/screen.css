@@ -1219,29 +1219,36 @@ section#open-source ul {
   margin-bottom: 60px; }
   section#open-source ul li {
     float: left;
-    margin: 40px 25px 0 0;
-    padding-left: 85px;
-    width: 230px; }
-    section#open-source ul li#paperclip {
+    margin: 40px 25px 0 0; }
+    section#open-source ul li#paperclip a {
       background: url("/images/oss/paperclip.png") no-repeat 0 0; }
-    section#open-source ul li#factory-girl {
+    section#open-source ul li#factory-girl a {
       background: url("/images/oss/factory-girl.png") no-repeat 0 0; }
-    section#open-source ul li#high-voltage {
+    section#open-source ul li#high-voltage a {
       background: url("/images/oss/highvoltage.png") no-repeat 0 0; }
-    section#open-source ul li#suspenders {
+    section#open-source ul li#suspenders a {
       background: url("/images/oss/suspenders.png") no-repeat 0 0; }
-    section#open-source ul li#shoulda {
+    section#open-source ul li#shoulda a {
       background: url("/images/oss/shoulda.png") no-repeat 0 0; }
-    section#open-source ul li#clearance {
+    section#open-source ul li#clearance a {
       background: url("/images/oss/clearance.png") no-repeat 0 0; }
-    section#open-source ul li#pacecar {
+    section#open-source ul li#pacecar a {
       background: url("/images/oss/pacecar.png") no-repeat 0 0; }
-    section#open-source ul li#flutie {
+    section#open-source ul li#flutie a {
       background: url("/images/oss/flutie.png") no-repeat 0 0; }
     section#open-source ul li:nth-child(3n) {
       margin-right: 0; }
     section#open-source ul li:nth-child(3n+1) {
       clear: both; }
+    section#open-source ul li a {
+      display: block;
+      padding-left: 85px;
+      width: 230px; }
+      section#open-source ul li a .source-btn {
+        color: #ad141e;
+        font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+      section#open-source ul li a:hover .source-btn {
+        color: #000; }
 
 section#events {
   text-shadow: 0 1px 0 #fcfcfc; }

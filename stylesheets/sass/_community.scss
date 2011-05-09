@@ -10,39 +10,53 @@ section#open-source {
     li {
       float: left;
       margin: ($lh*2) $gutter 0 0;
-      padding-left: $unit+$gutter;
-      width: ($unit*3)+($gutter*2);
 
       &#paperclip {
-        background: url('/images/oss/paperclip.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/paperclip.png') no-repeat 0 0;
+        }
       }
 
       &#factory-girl {
-        background: url('/images/oss/factory-girl.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/factory-girl.png') no-repeat 0 0;
+        }
       }
 
       &#high-voltage {
-        background: url('/images/oss/highvoltage.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/highvoltage.png') no-repeat 0 0;
+        }
       }
 
       &#suspenders {
-        background: url('/images/oss/suspenders.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/suspenders.png') no-repeat 0 0;
+        }
       }
 
       &#shoulda {
-        background: url('/images/oss/shoulda.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/shoulda.png') no-repeat 0 0;
+        }
       }
 
       &#clearance {
-        background: url('/images/oss/clearance.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/clearance.png') no-repeat 0 0;
+        }
       }
 
       &#pacecar {
-        background: url('/images/oss/pacecar.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/pacecar.png') no-repeat 0 0;
+        }
       }
 
       &#flutie {
-        background: url('/images/oss/flutie.png') no-repeat 0 0;
+        a {
+          background: url('/images/oss/flutie.png') no-repeat 0 0;
+        }
       }
 
       &:nth-child(3n) {
@@ -51,6 +65,23 @@ section#open-source {
 
       &:nth-child(3n+1) {
         clear: both;
+      }
+
+      a {
+        display: block;
+        padding-left: $unit+$gutter;
+        width: ($unit*3)+($gutter*2);
+
+        .source-btn {
+          color: $red;
+          font: 16px $header;
+        }
+
+        &:hover {
+          .source-btn {
+            color: #000;
+          }
+        }
       }
     }
   }
