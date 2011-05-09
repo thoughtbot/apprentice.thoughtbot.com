@@ -11,18 +11,21 @@ $(document).ready(function() {
     var divname = this.title
 
     if ($('#portfolio-slider:hidden').length) {
-      $('#portfolio-slider').show();
+      $('#portfolio-slider').slideDown();
       $("#"+divname+"-project").slideDown();
       return false;
     } else {
       $("#"+divname+"-project").slideDown().siblings().slideUp();
       return false;
-    }
+    };
   });
+});
 
-  $('#portfolio-slider div ul.slider').nivoSlider({
-    effect:'fade',
-    directionNavHide:false,
-    controlNav:false
-  });
+$(window).load(function() {
+    $('#portfolio-slider div ul.slider').nivoSlider({
+      effect:'sliceDown',
+      manualAdvance:true,
+      directionNavHide:false,
+      controlNav:false
+    });
 });

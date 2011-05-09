@@ -22,7 +22,6 @@
       list-style: none;
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
       border: 1px rgba(#000, .2) !important;
-      overflow: hidden;
 
       img {
           position:absolute;
@@ -107,28 +106,28 @@ section#portfolio {
       }
 
       &#pozit a {
-        background: url('/images/portfolio/thumb/pozit.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/pozit.png') center center no-repeat;
       }
       &#gulfcoast a {
-        background: url('/images/portfolio/thumb/gulfcoast.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/gulfcoast.png') center center no-repeat;
       }
       &#coupondudes a {
-        background: url('/images/portfolio/thumb/coupondudes.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/coupondudes.png') center center no-repeat;
       }
       &#gnite a {
-        background: url('/images/portfolio/thumb/gnite.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/gnite.png') center center no-repeat;
       }
       &#carbonrally a {
-        background: url('/images/portfolio/thumb/carbonrally.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/carbonrally.png') center center no-repeat;
       }
       &#saftystream a {
-        background: url('/images/portfolio/thumb/saftystream.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/saftystream.png') center center no-repeat;
       }
       &#shortboard a {
-        background: url('/images/portfolio/thumb/shortboard.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/shortboard.png') center center no-repeat;
       }
       &#umbrellatoday a {
-        background: url('/images/portfolio/thumb/umbrellatoday.png') 4px 4px no-repeat;
+        background: url('/images/portfolio/thumb/umbrellatoday.png') center center no-repeat;
       }
     }
   }
