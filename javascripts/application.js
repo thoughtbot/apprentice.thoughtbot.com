@@ -7,8 +7,11 @@ $(document).ready(function() {
   // slider stuff
   $('#portfolio-slider, #portfolio-slider div').hide();
 
+  $('#portfolio').localScroll();
+
   $('#portfolio a').click(function(){
     var divname = this.title
+
 
     if ($('#portfolio-slider:hidden').length) {
       $('#portfolio-slider').slideDown();
@@ -19,13 +22,11 @@ $(document).ready(function() {
       return false;
     };
   });
-});
 
-$(window).load(function() {
-    $('#portfolio-slider div ul.slider').nivoSlider({
-      effect:'sliceDown',
-      manualAdvance:true,
-      directionNavHide:false,
-      controlNav:false
-    });
+  $('#portfolio-slider div ul.slider').nivoSlider({
+    effect:'sliceDown',
+    manualAdvance:true,
+    directionNavHide:false,
+    controlNav:false
+  });
 });

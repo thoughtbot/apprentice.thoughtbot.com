@@ -1103,7 +1103,10 @@ section#services {
         font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-top: 40px; }
         section#services section#clients p.video a {
-          color: #ccc; }
+          color: #ccc;
+          -webkit-transition: color 0.5s;
+          -moz-transitition: color 0.5s;
+          transitition: color 0.5s; }
           section#services section#clients p.video a:hover {
             color: #ad141e; }
 
@@ -1143,19 +1146,40 @@ section#products {
       float: left;
       margin-right: 25px;
       width: 230px; }
-      section#products ul li#hoptoad a {
-        background: url("/images/products/hoptoad.png") 0 0 no-repeat; }
-      section#products ul li#copycopter a {
-        background: url("/images/products/copycopter.png") 0 0 no-repeat; }
-      section#products ul li#trajectory a {
-        background: url("/images/products/trajectory.png") 0 0 no-repeat; }
-      section#products ul li#radish a {
-        background: url("/images/products/radish.png") 0 0 no-repeat; }
+      section#products ul li#hoptoad a div#product-logo img {
+        padding-top: 24px; }
+      section#products ul li#copycopter a div#product-logo img {
+        padding-top: 28px; }
+      section#products ul li#trajectory a div#product-logo img {
+        padding-top: 40px; }
+      section#products ul li#radish a div#product-logo img {
+        padding-top: 21px; }
       section#products ul li a {
         display: block;
-        padding-top: 180px; }
+        -webkit-transition: all 0.5s;
+        -moz-transitition: all 0.5s;
+        transitition: all 0.5s; }
+        section#products ul li a div#product-logo {
+          background: url("/images/products/products_bg.png") 0 0 no-repeat;
+          height: 140px;
+          margin-bottom: 40px; }
+          section#products ul li a div#product-logo img {
+            display: block;
+            margin: 0 auto; }
         section#products ul li a .check-out {
           color: #ad141e; }
+        section#products ul li a:hover {
+          background: rgba(0, 0, 0, 0.04);
+          -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
+          -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
+          -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
+          section#products ul li a:hover div#product-logo {
+            background: url("/images/products/products_bg_hover.png") 0 0 no-repeat; }
+          section#products ul li a:hover h3, section#products ul li a:hover p {
+            color: #000; }
+          section#products ul li a:hover .check-out {
+            color: #7f0f16; }
       section#products ul li:last-child {
         margin-right: 0; }
 
@@ -1220,8 +1244,6 @@ section#open-source ul {
       clear: both; }
 
 section#events {
-  background: url("/images/shadowing-lite.png") center -1px no-repeat;
-  padding-top: 60px;
   text-shadow: 0 1px 0 #fcfcfc; }
   section#events p.events-intro {
     float: left;

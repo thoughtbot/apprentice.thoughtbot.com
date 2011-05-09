@@ -189,6 +189,7 @@ section#services {
 
         a {
           color: #ccc;
+          @include transition(color .5s);
 
           &:hover {
             color: $red;
@@ -251,32 +252,74 @@ section#products {
 
       &#hoptoad {
         a {
-          background: url('/images/products/hoptoad.png') 0 0 no-repeat;
+          div#product-logo {
+            img {
+              padding-top: 24px;
+            }
+          }
         }
       }
       &#copycopter {
         a {
-          background: url('/images/products/copycopter.png') 0 0 no-repeat;
+          div#product-logo {
+            img {
+              padding-top: 28px;
+            }
+          }
         }
       }
       &#trajectory {
         a {
-          background: url('/images/products/trajectory.png') 0 0 no-repeat;
+          div#product-logo {
+            img {
+              padding-top: 40px;
+            }
+          }
         }
       }
       &#radish {
         a {
-          background: url('/images/products/radish.png') 0 0 no-repeat;
+          div#product-logo {
+            img {
+              padding-top: 21px;
+            }
+          }
         }
       }
 
-
       a {
         display: block;
-        padding-top: $lh*9;
+        @include transition(all .5s);
+
+        div#product-logo {
+          background: url('/images/products/products_bg.png') 0 0 no-repeat;
+          height: $lh*7;
+          margin-bottom:  $lh*2;
+
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
 
         .check-out {
           color: $red;
+        }
+
+        &:hover {
+          background: rgba(#000, .04);
+          @include box-shadow(0 0 0 8px rgba(#000, .04));
+          div#product-logo {
+            background: url('/images/products/products_bg_hover.png') 0 0 no-repeat;
+          }
+
+          h3, p {
+            color: #000;
+          }
+
+          .check-out {
+            color: darken($red, 10%);
+          }
         }
       }
 

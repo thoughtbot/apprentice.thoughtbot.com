@@ -58,9 +58,6 @@ section#open-source {
 
 section#events {
   @extend .secondary;
-
-  background: url('/images/shadowing-lite.png') center -1px no-repeat;
-  padding-top: $lh*3;
   text-shadow:  0 1px 0 #fcfcfc;
 
   p.events-intro {
