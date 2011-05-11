@@ -1146,24 +1146,24 @@ section#products {
       float: left;
       margin-right: 25px;
       width: 230px; }
-      section#products ul li#hoptoad a div#product-logo img {
+      section#products ul li#hoptoad a div.product-logo img {
         padding-top: 24px; }
-      section#products ul li#copycopter a div#product-logo img {
+      section#products ul li#copycopter a div.product-logo img {
         padding-top: 28px; }
-      section#products ul li#trajectory a div#product-logo img {
+      section#products ul li#trajectory a div.product-logo img {
         padding-top: 40px; }
-      section#products ul li#radish a div#product-logo img {
+      section#products ul li#radish a div.product-logo img {
         padding-top: 21px; }
       section#products ul li a {
         display: block;
         -webkit-transition: all 0.5s;
         -moz-transitition: all 0.5s;
         transitition: all 0.5s; }
-        section#products ul li a div#product-logo {
+        section#products ul li a div.product-logo {
           background: url("/images/products/products_bg.png") 0 0 no-repeat;
           height: 140px;
           margin-bottom: 40px; }
-          section#products ul li a div#product-logo img {
+          section#products ul li a div.product-logo img {
             display: block;
             margin: 0 auto; }
         section#products ul li a .check-out {
@@ -1174,7 +1174,7 @@ section#products {
           -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
-          section#products ul li a:hover div#product-logo {
+          section#products ul li a:hover div.product-logo {
             background: url("/images/products/products_bg_hover.png") 0 0 no-repeat; }
           section#products ul li a:hover h3, section#products ul li a:hover p {
             color: #000; }
