@@ -766,6 +766,42 @@ a:hover {
   color: #db1926;
   text-decoration: none; }
 
+.button, form.wufoo ul li input#saveForm, #get-started a, div#contact-content section#contact-info section#hire-thoughtbot a {
+  background: #ad141e;
+  border: 1px solid #52090e;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  padding: 30px;
+  font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 -1px 0 #7f0f16;
+  -moz-box-shadow: inset 0 1px 0 #e93e49;
+  -webkit-box-shadow: inset 0 1px 0 #e93e49;
+  -o-box-shadow: inset 0 1px 0 #e93e49;
+  box-shadow: inset 0 1px 0 #e93e49;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transitition: all 0.3s;
+  transitition: all 0.3s; }
+  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover {
+    background: #c41722;
+    border: 1px solid #7f0f16;
+    text-shadow: 0 -1px 0 #96111a;
+    -moz-box-shadow: inset 0 1px 0 #ee6c74;
+    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
+    -o-box-shadow: inset 0 1px 0 #ee6c74;
+    box-shadow: inset 0 1px 0 #ee6c74; }
+  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active {
+    background: #96111a;
+    text-shadow: none;
+    -moz-box-shadow: inset 0 -1px 3px #680c12;
+    -webkit-box-shadow: inset 0 -1px 3px #680c12;
+    -o-box-shadow: inset 0 -1px 3px #680c12;
+    box-shadow: inset 0 -1px 3px #680c12; }
+
 img {
   margin-bottom: 0; }
 
@@ -861,23 +897,10 @@ form.wufoo {
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
-        background: #ad141e;
-        border: 1px solid #52090e;
-        color: #fff;
         display: block;
-        font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0;
-        padding: 8px 40px;
-        text-shadow: 0 -1px 0 #7f0f16;
-        -moz-box-shadow: inset 0 1px 0 #e93e49;
-        -webkit-box-shadow: inset 0 1px 0 #e93e49;
-        -o-box-shadow: inset 0 1px 0 #e93e49;
-        box-shadow: inset 0 1px 0 #e93e49;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px; }
+        padding: 8px 40px; }
         form.wufoo ul li input#saveForm:hover {
-          background: #c41722;
           cursor: pointer; }
         form.wufoo ul li input#saveForm:active {
           background: #96111a; }
@@ -1125,35 +1148,18 @@ section#services {
         font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-top: 40px; }
         section#services section#clients p.video a {
-          background: url("/images/film-strip.png") 0 3px no-repeat;
+          background: url("/images/film-strip.png") 0 2px no-repeat;
           padding-left: 20px;
           -webkit-transition: color 0.5s;
           -moz-transitition: color 0.5s;
           transitition: color 0.5s; }
           section#services section#clients p.video a:hover {
-            background-position: 0 -16px; }
+            background-position: 0 -17px; }
 
 #get-started {
   padding: 20px 0 40px; }
   #get-started a {
-    background: #ad141e;
-    display: block;
-    border: 1px solid #52090e;
-    font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
-    line-height: 20px;
-    padding: 30px;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 0 -1px 0 #7f0f16;
-    -moz-box-shadow: inset 0 1px 0 #e93e49;
-    -webkit-box-shadow: inset 0 1px 0 #e93e49;
-    -o-box-shadow: inset 0 1px 0 #e93e49;
-    box-shadow: inset 0 1px 0 #e93e49;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-transition: all 0.3s;
-    -moz-transitition: all 0.3s;
-    transitition: all 0.3s; }
+    font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
     #get-started a h3 {
       color: #fff;
       margin-bottom: 0;
@@ -1165,14 +1171,6 @@ section#services {
       line-height: 20px -4;
       margin-bottom: 0;
       margin-top: 4px; }
-    #get-started a:hover {
-      background: #2B2B2B;
-      border: 1px solid black;
-      text-shadow: 0 -1px 0 #121212;
-      -moz-box-shadow: inset 0 1px 0 #5e5e5e;
-      -webkit-box-shadow: inset 0 1px 0 #5e5e5e;
-      -o-box-shadow: inset 0 1px 0 #5e5e5e;
-      box-shadow: inset 0 1px 0 #5e5e5e; }
 
 section#products {
   margin-bottom: 60px; }
@@ -1317,17 +1315,12 @@ div#contact-content section#contact-info {
   float: left;
   width: 485px; }
   div#contact-content section#contact-info section#hire-thoughtbot a {
-    background: #2B2B2B;
-    display: block;
     margin: 20px 0 40px;
-    padding: 30px;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: background 0.3s;
-    -moz-transitition: background 0.3s;
-    transitition: background 0.3s; }
+    padding: 30px; }
     div#contact-content section#contact-info section#hire-thoughtbot a h3 {
       color: #fff;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 18px; }
     div#contact-content section#contact-info section#hire-thoughtbot a p {
       color: rgba(255, 255, 255, 0.6);
       font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -1359,17 +1352,12 @@ div#contact-content section#contact-info {
   float: left;
   width: 485px; }
   div#contact-content section#contact-info section#hire-thoughtbot a {
-    background: #2B2B2B;
-    display: block;
     margin: 20px 0 40px;
-    padding: 30px;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: background 0.3s;
-    -moz-transitition: background 0.3s;
-    transitition: background 0.3s; }
+    padding: 30px; }
     div#contact-content section#contact-info section#hire-thoughtbot a h3 {
       color: #fff;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 18px; }
     div#contact-content section#contact-info section#hire-thoughtbot a p {
       color: rgba(255, 255, 255, 0.6);
       font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;

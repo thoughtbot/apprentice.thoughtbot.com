@@ -19,17 +19,14 @@ div#contact-content {
     section#hire-thoughtbot {
 
       a {
-        background: #2B2B2B;
-        display: block;
+        @extend .button;
         margin: $lh 0 $lh*2;
         padding: $lh*1.5;
-
-        -webkit-font-smoothing: antialiased;
-        @include transition(background .3s);
 
         h3 {
           color: #fff;
           margin-bottom: 0;
+          font-size: 18px;
         }
 
         p {

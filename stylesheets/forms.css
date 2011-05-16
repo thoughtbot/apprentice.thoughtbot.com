@@ -96,8 +96,44 @@ a:link, a:active {
 a:visited {
   color: #96111a; }
 a:hover {
-  color: #c41722;
+  color: #db1926;
   text-decoration: none; }
+
+.button, form.wufoo ul li input#saveForm {
+  background: #ad141e;
+  border: 1px solid #52090e;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  padding: 30px;
+  font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 -1px 0 #7f0f16;
+  -moz-box-shadow: inset 0 1px 0 #e93e49;
+  -webkit-box-shadow: inset 0 1px 0 #e93e49;
+  -o-box-shadow: inset 0 1px 0 #e93e49;
+  box-shadow: inset 0 1px 0 #e93e49;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transitition: all 0.3s;
+  transitition: all 0.3s; }
+  .button:hover, form.wufoo ul li input#saveForm:hover {
+    background: #c41722;
+    border: 1px solid #7f0f16;
+    text-shadow: 0 -1px 0 #96111a;
+    -moz-box-shadow: inset 0 1px 0 #ee6c74;
+    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
+    -o-box-shadow: inset 0 1px 0 #ee6c74;
+    box-shadow: inset 0 1px 0 #ee6c74; }
+  .button:active, form.wufoo ul li input#saveForm:active {
+    background: #96111a;
+    text-shadow: none;
+    -moz-box-shadow: inset 0 -1px 3px #680c12;
+    -webkit-box-shadow: inset 0 -1px 3px #680c12;
+    -o-box-shadow: inset 0 -1px 3px #680c12;
+    box-shadow: inset 0 -1px 3px #680c12; }
 
 img {
   margin-bottom: 0; }
@@ -194,23 +230,10 @@ form.wufoo {
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
-        background: #ad141e;
-        border: 1px solid #52090e;
-        color: #fff;
         display: block;
-        font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0;
-        padding: 8px 40px;
-        text-shadow: 0 -1px 0 #7f0f16;
-        -moz-box-shadow: inset 0 1px 0 #e93e49;
-        -webkit-box-shadow: inset 0 1px 0 #e93e49;
-        -o-box-shadow: inset 0 1px 0 #e93e49;
-        box-shadow: inset 0 1px 0 #e93e49;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        border-radius: 3px; }
+        padding: 8px 40px; }
         form.wufoo ul li input#saveForm:hover {
-          background: #c41722;
           cursor: pointer; }
         form.wufoo ul li input#saveForm:active {
           background: #96111a; }

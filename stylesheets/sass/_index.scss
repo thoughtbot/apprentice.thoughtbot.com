@@ -188,12 +188,12 @@ section#services {
         margin-top: $lh*2;
 
         a {
-          background: url('/images/film-strip.png') 0 3px no-repeat;
+          background: url('/images/film-strip.png') 0 2px no-repeat;
           padding-left: 20px;
           @include transition(color .5s);
 
           &:hover {
-            background-position:0 -16px;
+            background-position:0 -17px;
           }
         }
       }
@@ -205,19 +205,9 @@ section#services {
   padding: $lh 0 $lh*2;
 
   a {
-    background: $red;
-    display: block;
-    border: 1px solid darken($red, 20%);
-    font: 500 18px $header;
-    line-height: $lh;
-    padding: $lh*1.5;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 0 -1px 0 darken($red, 10%);
-
-    @include box-shadow(inset 0 1px 0 lighten($red, 20%));
-    @include border-radius(3px);
-    @include transition(all .3s);
+    @extend .button;
     @extend .clearfix;
+    font: 500 18px $header;
 
     h3 {
       color: #fff;
@@ -232,13 +222,6 @@ section#services {
       line-height: ($lh)-4;
       margin-bottom: 0;
       margin-top: 4px;
-    }
-
-    &:hover {
-      background: #2B2B2B;
-      border: 1px solid darken(#2B2B2B, 20%);
-      text-shadow: 0 -1px 0 darken(#2b2b2b, 10%);
-      @include box-shadow(inset 0 1px 0 lighten(#2B2B2B, 20%));
     }
   }
 }

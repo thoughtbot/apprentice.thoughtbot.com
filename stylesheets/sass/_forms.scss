@@ -48,20 +48,12 @@ form.wufoo {
       }
 
       input#saveForm {
-        background: $red;
-        border: 1px solid darken($red, 20%);
-        color: #fff;
+        @extend .button;
         display: block;
-        font:700 24px $header;
         margin: 0;
         padding: ($lh/2)-(2) ($lh*2);
-        text-shadow: 0 -1px 0 darken($red, 10%);
-
-        @include box-shadow(inset 0 1px 0 lighten($red, 20%));
-        @include border-radius(3px);
 
         &:hover {
-          background: lighten($red, 5%);
           cursor: pointer;
         }
 

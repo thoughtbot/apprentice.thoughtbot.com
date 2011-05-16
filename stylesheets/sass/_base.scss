@@ -189,6 +189,34 @@ a {
   }
 }
 
+.button {
+  background: $red;
+   border: 1px solid darken($red, 20%);
+   color: #fff;
+   display: block;
+   line-height: $lh;
+   padding: $lh*1.5;
+   font:700 24px $header;
+   -webkit-font-smoothing: antialiased;
+   text-shadow: 0 -1px 0 darken($red, 10%);
+   @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+   @include border-radius(3px);
+   @include transition(all .3s);
+
+   &:hover {
+     background: lighten($red, 5%);
+     border: 1px solid darken($red, 10%);
+     text-shadow: 0 -1px 0 darken($red, 5%);
+     @include box-shadow(inset 0 1px 0 lighten($red, 30%));
+   }
+
+   &:active {
+     background: darken($red, 5%);
+     text-shadow: none;
+     @include box-shadow(inset 0 -1px 3px darken($red, 15%));
+   }
+}
+
 img {
   margin-bottom: 0;
 }
