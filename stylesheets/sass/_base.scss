@@ -139,6 +139,7 @@ p {
   line-height: $lh;
   margin-bottom: $lh;
 }
+
 ul {
   list-style-position: outside;
   margin-bottom: $lh;
@@ -183,7 +184,7 @@ a {
   }
 
   &:hover {
-    color: lighten($red, 5%);
+    color: lighten($red, 10%);
     text-decoration: none;
   }
 }

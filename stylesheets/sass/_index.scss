@@ -189,12 +189,10 @@ section#services {
 
         a {
           background: url('/images/film-strip.png') 0 3px no-repeat;
-          color: $red;
           padding-left: 20px;
           @include transition(color .5s);
 
           &:hover {
-            color:#ccc;
             background-position:0 -16px;
           }
         }
@@ -320,6 +318,7 @@ section#products {
 
         .check-out {
           color: $red;
+          display: inline-block;
         }
 
         &:hover {
@@ -376,23 +375,13 @@ section#workshops {
     background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
-    padding: ($lh*2)-(5px) $lh $lh;
+    margin-top: 10px;
+    padding: ($lh*2)-(15) $lh $lh;
     width: ($unit*4)+($gutter*3)-(40px);
 
     ul {
-      list-style: none;
       @extend .clearfix;
-
-      li {
-        a {
-          color: #888;
-          font-style: italic;
-
-          &:hover {
-            color: $red;
-          }
-        }
-      }
+      list-style: none;
     }
 
     p {

@@ -763,7 +763,7 @@ a:link, a:active {
 a:visited {
   color: #96111a; }
 a:hover {
-  color: #c41722;
+  color: #db1926;
   text-decoration: none; }
 
 img {
@@ -1126,13 +1126,11 @@ section#services {
         margin-top: 40px; }
         section#services section#clients p.video a {
           background: url("/images/film-strip.png") 0 3px no-repeat;
-          color: #ad141e;
           padding-left: 20px;
           -webkit-transition: color 0.5s;
           -moz-transitition: color 0.5s;
           transitition: color 0.5s; }
           section#services section#clients p.video a:hover {
-            color: #ccc;
             background-position: 0 -16px; }
 
 #get-started {
@@ -1209,7 +1207,8 @@ section#products {
             display: block;
             margin: 0 auto; }
         section#products ul li a .check-out {
-          color: #ad141e; }
+          color: #ad141e;
+          display: inline-block; }
         section#products ul li a:hover {
           background: rgba(0, 0, 0, 0.04);
           -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
@@ -1244,15 +1243,11 @@ section#workshops {
     background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
-    padding: 35px 20px 20px;
+    margin-top: 10px;
+    padding: 25px 20px 20px;
     width: 275px; }
     section#workshops section#current-worshops ul {
       list-style: none; }
-      section#workshops section#current-worshops ul li a {
-        color: #888;
-        font-style: italic; }
-        section#workshops section#current-worshops ul li a:hover {
-          color: #ad141e; }
     section#workshops section#current-worshops p {
       margin-bottom: 0; }
 
