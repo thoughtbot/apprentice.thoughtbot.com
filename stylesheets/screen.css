@@ -1167,7 +1167,8 @@ section#products {
     section#products ul li {
       float: left;
       margin-right: 25px;
-      width: 230px; }
+      width: 315px;
+      /*change when radish is added*/ }
       section#products ul li#hoptoad a div.product-logo img {
         padding-top: 24px; }
       section#products ul li#copycopter a div.product-logo img {
@@ -1182,9 +1183,10 @@ section#products {
         -moz-transitition: all 0.5s;
         transitition: all 0.5s; }
         section#products ul li a div.product-logo {
-          background: url("/images/products/products_bg.png") 0 0 no-repeat;
-          height: 140px;
-          margin-bottom: 40px; }
+          /*background: url('/images/products/products_bg.png') 0 0 no-repeat;*/
+          background: url("/images/products/products_bg_three.png") 0 0 no-repeat;
+          height: 137px;
+          margin-bottom: 43px; }
           section#products ul li a div.product-logo img {
             display: block;
             margin: 0 auto; }
@@ -1197,7 +1199,7 @@ section#products {
           -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
           section#products ul li a:hover div.product-logo {
-            background: url("/images/products/products_bg_hover.png") 0 0 no-repeat; }
+            background-position: 0 100%; }
           section#products ul li a:hover h3, section#products ul li a:hover p {
             color: #000; }
           section#products ul li a:hover .check-out {

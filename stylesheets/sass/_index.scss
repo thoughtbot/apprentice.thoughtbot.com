@@ -248,9 +248,10 @@ section#products {
     li {
       float: left;
       margin-right: $gutter;
-      width: ($unit*3)+($gutter*2);
+      width: ($unit*4)+($gutter*3); /*change when radish is added*/
 
       &#hoptoad {
+
         a {
           div.product-logo {
             img {
@@ -295,9 +296,10 @@ section#products {
         @include transition(all .5s);
 
         div.product-logo {
-          background: url('/images/products/products_bg.png') 0 0 no-repeat;
-          height: $lh*7;
-          margin-bottom:  $lh*2;
+          /*background: url('/images/products/products_bg.png') 0 0 no-repeat;*/
+          background: url('/images/products/products_bg_three.png') 0 0 no-repeat;
+          height: ($lh*7)-(3);
+          margin-bottom:  ($lh*2)+(3);
 
           img {
             display: block;
@@ -312,8 +314,9 @@ section#products {
         &:hover {
           background: rgba(#000, .04);
           @include box-shadow(0 0 0 8px rgba(#000, .04));
+
           div.product-logo {
-            background: url('/images/products/products_bg_hover.png') 0 0 no-repeat;
+            background-position: 0 100%;
           }
 
           h3, p {
