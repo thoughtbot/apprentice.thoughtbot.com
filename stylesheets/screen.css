@@ -1125,38 +1125,56 @@ section#services {
         font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-top: 40px; }
         section#services section#clients p.video a {
-          color: #ccc;
+          background: url("/images/film-strip.png") 0 3px no-repeat;
+          color: #ad141e;
+          padding-left: 20px;
           -webkit-transition: color 0.5s;
           -moz-transitition: color 0.5s;
           transitition: color 0.5s; }
           section#services section#clients p.video a:hover {
-            color: #ad141e; }
+            color: #ccc;
+            background-position: 0 -16px; }
 
 #get-started {
   padding: 20px 0 40px; }
   #get-started a {
-    background: #2B2B2B;
+    background: #ad141e;
     display: block;
+    border: 1px solid #52090e;
     font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
     line-height: 20px;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
-    -webkit-transition: background 0.3s;
-    -moz-transitition: background 0.3s;
-    transitition: background 0.3s; }
+    text-shadow: 0 -1px 0 #7f0f16;
+    -moz-box-shadow: inset 0 1px 0 #e93e49;
+    -webkit-box-shadow: inset 0 1px 0 #e93e49;
+    -o-box-shadow: inset 0 1px 0 #e93e49;
+    box-shadow: inset 0 1px 0 #e93e49;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transitition: all 0.3s;
+    transitition: all 0.3s; }
     #get-started a h3 {
       color: #fff;
       margin-bottom: 0;
       float: left; }
     #get-started a p {
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.8);
       float: right;
       font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       line-height: 20px -4;
       margin-bottom: 0;
       margin-top: 4px; }
     #get-started a:hover {
-      background: #ad141e; }
+      background: #2B2B2B;
+      border: 1px solid black;
+      text-shadow: 0 -1px 0 #121212;
+      -moz-box-shadow: inset 0 1px 0 #5e5e5e;
+      -webkit-box-shadow: inset 0 1px 0 #5e5e5e;
+      -o-box-shadow: inset 0 1px 0 #5e5e5e;
+      box-shadow: inset 0 1px 0 #5e5e5e; }
 
 section#products {
   margin-bottom: 60px; }
