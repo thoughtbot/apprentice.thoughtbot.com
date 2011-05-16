@@ -1,86 +1,264 @@
-/*
-Syntax error: Undefined variable: "$lh".
-        on line 11 of stylesheets/sass/./_forms.scss
-        from line 1 of stylesheets/sass/forms.scss
+/* Mixins
+---------------------------------------- */
+/* this hack is courtesy of gbbowers on github
+   https://gist.github.com/601810 */
+/* Variables
+---------------------------------------- */
+/*thoughtbot red*/
+/*line-hieght of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .primary:after, #design-portfolio:after, .secondary:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
 
-Backtrace:
-stylesheets/sass/./_forms.scss:11
-stylesheets/sass/forms.scss:1
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/script/variable.rb:39:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/script/node.rb:61:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/prop_node.rb:132:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `map'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:317:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/rule_node.rb:191:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `map'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:317:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/rule_node.rb:191:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `map'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:317:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/rule_node.rb:191:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `map'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/import_node.rb:78:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/import_node.rb:64:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/root_node.rb:37:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `map'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:327:in `perform_children'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:317:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/root_node.rb:59:in `perform!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:305:in `_perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/node.rb:213:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/root_node.rb:37:in `perform'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/tree/root_node.rb:29:in `render'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:223:in `update_stylesheet'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:88:in `update_stylesheets'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:81:in `each'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:81:in `update_stylesheets'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:79:in `each'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:79:in `update_stylesheets'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:174:in `watch'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `call'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:71:in `run_callback'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:54:in `callback_action'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/path.rb:34:in `update'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:32:in `modified'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `each'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:31:in `modified'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/state/directory.rb:16:in `refresh'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:17:in `run'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm/monitor.rb:24:in `run'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/vendor/fssm/lib/fssm.rb:17:in `monitor'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/sass/plugin.rb:167:in `watch'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/haml/exec.rb:457:in `watch_or_update'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/haml/exec.rb:360:in `process_result'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/haml/exec.rb:41:in `parse'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/../lib/haml/exec.rb:21:in `parse!'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/gems/haml-3.0.25/bin/sass:8
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/bin/sass:19:in `load'
-/Users/mjankowski/.rvm/gems/ruby-1.8.7-p334/bin/sass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$lh\".\A         on line 11 of stylesheets/sass/./_forms.scss\A         from line 1 of stylesheets/sass/forms.scss"; }
+/* basic site styles
+---------------------------------------- */
+body {
+  background-color: #FCFCFC;
+  /*background: url('/images/grid.png') 10px -4px;*/
+  border-top: 4px solid #ad141e;
+  color: #2B2B2B;
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
+  text-align: center; }
+
+.wrapper, .primary, #design-portfolio, .secondary {
+  margin: 0 auto;
+  text-align: left;
+  width: 995px; }
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  color: #2b2b2b;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px; }
+
+h2 {
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 40px;
+  margin-bottom: 40px; }
+
+h3 {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+h4 {
+  line-height: 20px;
+  margin: 0; }
+
+p {
+  color: #555;
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+ul {
+  list-style-position: outside;
+  margin-bottom: 20px; }
+  ul li {
+    line-height: 20px; }
+
+img {
+  display: block;
+  vertical-align: bottom; }
+
+blockquote {
+  background: url("/images/quote.png") no-repeat;
+  border: 0;
+  font: 200 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 25px 0 0;
+  padding-left: 25px; }
+  blockquote p {
+    line-height: 30px; }
+  blockquote p.author {
+    color: #bbb;
+    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 20px;
+    margin: 0; }
+
+a:link, a:active {
+  color: #ad141e;
+  text-decoration: none; }
+a:visited {
+  color: #96111a; }
+a:hover {
+  color: #c41722;
+  text-decoration: none; }
+
+img {
+  margin-bottom: 0; }
+
+#page-header {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 60px;
+  text-align: center; }
+  #page-header h1 {
+    line-height: 60px; }
+  #page-header h2 {
+    color: #736B6C;
+    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 20px;
+    margin-bottom: 0; }
+
+.secondary-header {
+  /*  border-top: 1px solid #dcdcdc;
+    margin-top: $lh*3;*/
+  padding-top: 60px; }
+
+.secondary-wrapper {
+  background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 39px 0 39px; }
+
+/* Selection styles
+---------------------------------------- */
+::selection {
+  background: #ad141e;
+  color: #000; }
+
+::-moz-selection {
+  background: #ad141e;
+  color: #000; }
+
+::-webkit-selection {
+  background: #ad141e;
+  color: #000; }
+
+/* Design page
+---------------------------------------- */
+#design-portfolio ul {
+  list-style: none; }
+  #design-portfolio ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 830px;
+    margin: 0 auto; }
+    #design-portfolio ul li img {
+      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
+    #design-portfolio ul li:last-child {
+      border-bottom: 0; }
+
+/* Forms
+---------------------------------------- */
+form.wufoo {
+  margin-left: 0; }
+  form.wufoo ul {
+    list-style: none; }
+    form.wufoo ul li {
+      margin-bottom: 20px;
+      width: 485px;
+      /*inputs for project planning form*/ }
+      form.wufoo ul li h3 {
+        color: #ad141e;
+        margin-top: 40px; }
+      form.wufoo ul li fieldset {
+        background: none;
+        border: 0;
+        padding: 0; }
+      form.wufoo ul li label, form.wufoo ul li legend {
+        font: 16px "skolar-1", "skolar-2", Georgia, serif;
+        line-height: 20px;
+        margin: 0 0 10px; }
+        form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
+          display: inline; }
+      form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
+        border: 1px solid #999;
+        font: 14px "skolar-1", "skolar-2", Georgia, serif;
+        line-height: 20px;
+        margin: 0;
+        padding: 9px 10px;
+        width: 463px;
+        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+        -o-box-shadow: inset 0 1px 2px #aaaaaa;
+        box-shadow: inset 0 1px 2px #aaaaaa; }
+        form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
+          outline-color: #ad141e; }
+      form.wufoo ul li input#saveForm {
+        background: #ad141e;
+        border: 1px solid #52090e;
+        color: #fff;
+        display: block;
+        font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 0;
+        padding: 8px 40px;
+        text-shadow: 0 -1px 0 #7f0f16;
+        -moz-box-shadow: inset 0 1px 0 #e93e49;
+        -webkit-box-shadow: inset 0 1px 0 #e93e49;
+        -o-box-shadow: inset 0 1px 0 #e93e49;
+        box-shadow: inset 0 1px 0 #e93e49;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px; }
+        form.wufoo ul li input#saveForm:hover {
+          background: #c41722;
+          cursor: pointer; }
+        form.wufoo ul li input#saveForm:active {
+          background: #96111a; }
+      form.wufoo ul li .instruct {
+        color: #aaa;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+        margin: 20px 0 40px; }
+      form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
+        float: none;
+        width: 510px; }
+        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+          display: block;
+          float: left;
+          margin-right: 25px;
+          width: 230px; }
+          form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
+            display: inline;
+            float: none;
+            margin: 0;
+            width: auto; }
+          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
+            color: #aaa;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: normal; }
+          form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
+            width: 208px; }
+      form.wufoo ul li#fo7li3 {
+        clear: both;
+        width: 655px; }
+      form.wufoo ul li#fo5li136 div {
+        margin-left: 10px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li136 div span {
+          color: #666;
+          margin-right: 10px; }
+      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
+        display: block;
+        margin-left: 30px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
+          color: #666;
+          display: block;
+          margin-bottom: 10px; }
+          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
+            margin: -2px 3px 0 -20px;
+            top: 0; }
+          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
+            display: inline; }

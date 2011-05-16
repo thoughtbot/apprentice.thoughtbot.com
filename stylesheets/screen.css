@@ -232,7 +232,6 @@ hr.space {
 
   h2, h3 {
     page-break-after: avoid; } }
-
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -833,7 +832,8 @@ form.wufoo {
     list-style: none; }
     form.wufoo ul li {
       margin-bottom: 20px;
-      width: 485px; }
+      width: 485px;
+      /*inputs for project planning form*/ }
       form.wufoo ul li h3 {
         color: #ad141e;
         margin-top: 40px; }
@@ -907,6 +907,28 @@ form.wufoo {
             font-weight: normal; }
           form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
             width: 208px; }
+      form.wufoo ul li#fo7li3 {
+        clear: both;
+        width: 655px; }
+      form.wufoo ul li#fo5li136 div {
+        margin-left: 10px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li136 div span {
+          color: #666;
+          margin-right: 10px; }
+      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
+        display: block;
+        margin-left: 30px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
+          color: #666;
+          display: block;
+          margin-bottom: 10px; }
+          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
+            margin: -2px 3px 0 -20px;
+            top: 0; }
+          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
+            display: inline; }
 
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
@@ -991,10 +1013,10 @@ footer#main-footer {
     height: 418px;
     background: url(images/loading.gif) no-repeat 50% 50%;
     list-style: none;
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
+    -webkit-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
+    -o-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
+    box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
     border: 1px rgba(0, 0, 0, 0.2) !important; }
     #portfolio-slider div ul.slider img {
       position: absolute;
@@ -1276,30 +1298,6 @@ div#contact-content div#contact_form {
   width: 485px; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
-  div#contact-content div#contact_form form.wufoo ul li {
-    /*inputs for project planning form*/ }
-    div#contact-content div#contact_form form.wufoo ul li#fo7li3 {
-      clear: both;
-      width: 655px; }
-    div#contact-content div#contact_form form.wufoo ul li#fo5li136 div {
-      margin-left: 10px;
-      padding-top: 20px; }
-      div#contact-content div#contact_form form.wufoo ul li#fo5li136 div span {
-        color: #666;
-        margin-right: 10px; }
-    div#contact-content div#contact_form form.wufoo ul li#fo5li12 div, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div {
-      display: block;
-      margin-left: 30px;
-      padding-top: 20px; }
-      div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span {
-        color: #666;
-        display: block;
-        margin-bottom: 10px; }
-        div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span input, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span input {
-          margin: -2px 3px 0 -20px;
-          top: 0; }
-        div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span.req, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span.req {
-          display: inline; }
 div#contact-content section#contact-info {
   float: left;
   width: 485px; }
@@ -1342,30 +1340,6 @@ div#contact-content div#contact_form {
   width: 485px; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
-  div#contact-content div#contact_form form.wufoo ul li {
-    /*inputs for project planning form*/ }
-    div#contact-content div#contact_form form.wufoo ul li#fo7li3 {
-      clear: both;
-      width: 655px; }
-    div#contact-content div#contact_form form.wufoo ul li#fo5li136 div {
-      margin-left: 10px;
-      padding-top: 20px; }
-      div#contact-content div#contact_form form.wufoo ul li#fo5li136 div span {
-        color: #666;
-        margin-right: 10px; }
-    div#contact-content div#contact_form form.wufoo ul li#fo5li12 div, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div {
-      display: block;
-      margin-left: 30px;
-      padding-top: 20px; }
-      div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span {
-        color: #666;
-        display: block;
-        margin-bottom: 10px; }
-        div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span input, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span input {
-          margin: -2px 3px 0 -20px;
-          top: 0; }
-        div#contact-content div#contact_form form.wufoo ul li#fo5li12 div span.req, div#contact-content div#contact_form form.wufoo ul li#fo5li123 div span.req {
-          display: inline; }
 div#contact-content section#contact-info {
   float: left;
   width: 485px; }

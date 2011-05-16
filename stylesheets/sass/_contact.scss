@@ -10,55 +10,6 @@ div#contact-content {
     h1#logo, #bottom{
       display: none;
     }
-
-    form.wufoo {
-
-      ul {
-        li {
-          &#fo7li3 {
-            clear: both;
-            width: ($unit*8)+($gutter*7);
-          }
-
-          /*inputs for project planning form*/
-          &#fo5li136 {
-            div {
-              margin-left: 10px;
-              padding-top: $lh;
-
-              span {
-                color: #666;
-                margin-right: 10px;
-              }
-            }
-          }
-
-          &#fo5li12, &#fo5li123 {
-
-            div {
-              display: block;
-              margin-left: 30px;
-              padding-top: $lh;
-
-              span {
-                color: #666;
-                display: block;
-                margin-bottom: $lh/2;
-
-                input {
-                  margin: -2px 3px 0 -20px;
-                  top: 0;
-                }
-
-                &.req {
-                  display: inline;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 
   section#contact-info {
@@ -66,7 +17,7 @@ div#contact-content {
     width: ($unit*6)+($gutter*5);
 
     section#hire-thoughtbot {
-      
+
       a {
         background: #2B2B2B;
         display: block;
