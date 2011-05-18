@@ -89,7 +89,7 @@ form.wufoo {
           margin-right: $gutter;
           width: ($unit*3)+($gutter*2);
 
-          &:nth-child(even) {
+          &:nth-child(odd) {
             margin-right: 0;
           }
 
@@ -107,7 +107,7 @@ form.wufoo {
             font-weight: normal;
           }
 
-          input {
+          input[type="text"] {
             width: ($unit*3)+($gutter*2)-($lh)-(2);
             max-width: ($unit*3)+($gutter*2)-($lh)-(2);
             min-width: ($unit*3)+($gutter*2)-($lh)-(2);

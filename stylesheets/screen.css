@@ -929,7 +929,7 @@ form.wufoo {
           float: left;
           margin-right: 25px;
           width: 230px; }
-          form.wufoo ul li.name span:nth-child(even), form.wufoo ul li#fo8li31 span:nth-child(even) {
+          form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
             margin-right: 0; }
           form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
             display: inline;
@@ -941,7 +941,7 @@ form.wufoo {
             font-size: 14px;
             font-style: italic;
             font-weight: normal; }
-          form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
+          form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
             width: 208px;
             max-width: 208px;
             min-width: 208px; }
