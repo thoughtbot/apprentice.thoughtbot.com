@@ -38,6 +38,10 @@ form.wufoo {
         }
       }
 
+      input.checkbox, input.radio {
+        display: inline-block;
+      }
+
       input[type="text"], input[type="email"], input.text, textarea {
         border: 1px solid #999;
         font: 14px $body;
