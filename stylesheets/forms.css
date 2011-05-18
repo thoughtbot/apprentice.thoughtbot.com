@@ -202,7 +202,7 @@ img {
 ---------------------------------------- */
 form.wufoo {
   margin-left: 0; }
-  form.wufoo h2 {
+  form.wufoo header#header {
     display: none; }
   form.wufoo ul {
     list-style: none; }
