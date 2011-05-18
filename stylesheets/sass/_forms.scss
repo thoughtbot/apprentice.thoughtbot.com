@@ -38,7 +38,7 @@ form.wufoo {
         line-height: $lh;
         margin: 0;
         padding: ($lh/2)-(1) ($lh/2);
-        width: ($unit*6)+($gutter*5)-($lh)-(2);
+        width: 450px;
 
         &:focus {
           outline-color: $red;
