@@ -28,9 +28,8 @@ form.wufoo {
         padding: 0;
       }
 
-      label, legend, .desc {
-        font-size: 14px;
-        font-family: $body !important;
+      label.desc, legend.desc, {
+        font: 14px $body;
         line-height: $lh;
         margin: 0 0 ($lh/2);
 
