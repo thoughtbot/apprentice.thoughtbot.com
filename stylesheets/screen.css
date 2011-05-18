@@ -878,7 +878,8 @@ form.wufoo {
       margin-bottom: 20px;
       width: 485px;
       padding: 0;
-      /*inputs for project planning form*/ }
+      /*inputs for project planning form*/
+      /*margin on the first header on the planning form*/ }
       form.wufoo ul li h3 {
         color: #ad141e;
         margin-top: 40px; }
@@ -969,6 +970,8 @@ form.wufoo {
             top: 0; }
           form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
             display: inline; }
+      form.wufoo ul li#fo5li130 h3 {
+        margin-top: 0; }
 
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
