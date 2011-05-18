@@ -29,7 +29,7 @@ form.wufoo {
       }
 
       label, legend {
-        font: 16px $body;
+        font: 16px $body !important;
         line-height: $lh;
         margin: 0 0 ($lh/2);
 
@@ -160,10 +160,10 @@ form.wufoo {
           }
         }
       }
-      
+
       /*margin on the first header on the planning form*/
       &#fo5li130 {
-        h3 {
+        h3#title130 {
           margin-top: 0;
         }
       }

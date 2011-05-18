@@ -888,7 +888,7 @@ form.wufoo {
         border: 0;
         padding: 0; }
       form.wufoo ul li label, form.wufoo ul li legend {
-        font: 16px "skolar-1", "skolar-2", Georgia, serif;
+        font: 16px "skolar-1", "skolar-2", Georgia, serif !important;
         line-height: 20px;
         margin: 0 0 10px; }
         form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
@@ -970,7 +970,7 @@ form.wufoo {
             top: 0; }
           form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
             display: inline; }
-      form.wufoo ul li#fo5li130 h3 {
+      form.wufoo ul li#fo5li130 h3#title130 {
         margin-top: 0; }
 
 header#main-header {
