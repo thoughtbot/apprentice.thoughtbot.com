@@ -10,6 +10,7 @@ form.wufoo {
 
   ul {
     list-style: none;
+    margin-top: $lh;
 
     li {
       margin-bottom: $lh;
@@ -108,6 +109,8 @@ form.wufoo {
 
           input {
             width: ($unit*3)+($gutter*2)-($lh)-(2);
+            max-width: ($unit*3)+($gutter*2)-($lh)-(2);
+            min-width: ($unit*3)+($gutter*2)-($lh)-(2);
           }
         }
       }

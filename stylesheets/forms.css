@@ -205,7 +205,8 @@ form.wufoo {
   form.wufoo header#header {
     display: none; }
   form.wufoo ul {
-    list-style: none; }
+    list-style: none;
+    margin-top: 20px; }
     form.wufoo ul li {
       margin-bottom: 20px;
       width: 485px;
@@ -274,7 +275,9 @@ form.wufoo {
             font-style: italic;
             font-weight: normal; }
           form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
-            width: 208px; }
+            width: 208px;
+            max-width: 208px;
+            min-width: 208px; }
       form.wufoo ul li#fo7li3 {
         clear: both;
         width: 655px; }
