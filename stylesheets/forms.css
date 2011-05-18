@@ -220,11 +220,11 @@ form.wufoo {
         background: none;
         border: 0;
         padding: 0; }
-      form.wufoo ul li label, form.wufoo ul li legend {
-        font: 16px "skolar-1", "skolar-2", Georgia, serif !important;
+      form.wufoo ul li label, form.wufoo ul li legend, form.wufoo ul li .desc {
+        font: 14px "skolar-1", "skolar-2", Georgia, serif !important;
         line-height: 20px;
         margin: 0 0 10px; }
-        form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
+        form.wufoo ul li label.choice, form.wufoo ul li legend.choice, form.wufoo ul li .desc.choice {
           display: inline; }
       form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
         display: inline-block; }
