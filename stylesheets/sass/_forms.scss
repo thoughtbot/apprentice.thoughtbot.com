@@ -44,8 +44,8 @@ form.wufoo {
         margin: 0;
         padding: ($lh/2)-(1) ($lh/2);
         width: ($unit*6)+($gutter*5)-($lh)-(2);
-        max-width: auto;
-        min-width: auto;
+        max-width: none;
+        min-width: none;
 
         &:focus {
           outline-color: $red;
