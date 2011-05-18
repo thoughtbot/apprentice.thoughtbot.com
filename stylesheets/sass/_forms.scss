@@ -29,7 +29,8 @@ form.wufoo {
       }
 
       label, legend, .desc {
-        font: 14px $body !important;
+        font-size: 14px;
+        font-family: $body !important;
         line-height: $lh;
         margin: 0 0 ($lh/2);
 

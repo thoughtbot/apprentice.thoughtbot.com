@@ -221,7 +221,8 @@ form.wufoo {
         border: 0;
         padding: 0; }
       form.wufoo ul li label, form.wufoo ul li legend, form.wufoo ul li .desc {
-        font: 14px "skolar-1", "skolar-2", Georgia, serif !important;
+        font-size: 14px;
+        font-family: "skolar-1", "skolar-2", Georgia, serif !important;
         line-height: 20px;
         margin: 0 0 10px; }
         form.wufoo ul li label.choice, form.wufoo ul li legend.choice, form.wufoo ul li .desc.choice {
