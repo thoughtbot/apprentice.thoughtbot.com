@@ -32,16 +32,16 @@ footer#main-footer {
     section {
       float: left;
       margin-right: $gutter;
-      width: ($unit*2)+($gutter);
+      width: grid-width(2);
 
       &#thoughtbot-footer {
-        width: ($unit*4)+($gutter*3);
+        width: grid-width(4);
 
         ul {
           li {
             float: left;
             margin-right: $gutter;
-            width: ($unit*2)+($gutter);
+            width: grid-width(2);
 
             &:nth-child(2n) {
               margin-right: 0;
@@ -59,7 +59,7 @@ footer#main-footer {
       }
 
       &#blog-footer {
-        width: ($unit*4)+($gutter*3);
+        width: grid-width(4);
       }
 
       &:last-child {
@@ -73,6 +73,6 @@ footer#main-footer {
   }
   p#copyright {
     color: #7a7a7a;
-    margin-top: $lh*2;
+    margin-top: $lh*2; /*line-height to maintain baseline grid*/
   }
 }

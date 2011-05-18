@@ -8,9 +8,9 @@ section#people {
 
     li {
       float: left;
-      margin: 0 $gutter ($lh*2) 0;
-      min-height: $lh*12;
-      width: ($unit*6)+($gutter*5);
+      margin: 0 $gutter ($lh*2) 0; /*line height on the bottom to maintain baseline grid*/
+      min-height: $lh*12; /*specify line-height height so each perosn has a proper amount of space for their bio*/
+      width: grid-width(6);
       @extend .clearfix;
 
       &:nth-child(2n) {
@@ -24,16 +24,16 @@ section#people {
       div.person-photo {
         float: left;
         margin-right: $gutter;
-        width: ($unit*2)+($gutter);
+        width: grid-width(2);
       }
 
       div.person-info {
         float: left;
-        width: ($unit*4)+($gutter*3);
+        width: grid-width(4);
 
         h2 {
           font: 700 24px $header;
-          line-height: $lh*2;
+          line-height: $lh*2; /*double line-hieght for bigger type*/
           margin-bottom: 0;
         }
 
@@ -41,7 +41,7 @@ section#people {
           color: #aaa;
           font: italic 14px $body;
           line-height: $lh;
-          margin-bottom: $lh;
+          margin-bottom: $lh; 
         }
       }
     }

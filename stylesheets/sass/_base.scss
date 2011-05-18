@@ -71,6 +71,10 @@ $lh: 20px; /*line-hieght of all the type on the site*/
 $unit: 60px; /*one grid column*/
 $gutter: 25px; /*size of one gutter*/
 
+@function grid-width($n) {
+  @return $n * $unit + ($n - 1) * $gutter;
+}
+
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
@@ -100,7 +104,7 @@ body {
 .wrapper {
   margin: 0 auto;
   text-align: left;
-  width: ($unit*12)+($gutter*11);
+  width: grid-width(12);
 }
 
 h1, h2, h3, h4, h5, h5, h6 {

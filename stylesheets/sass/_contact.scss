@@ -14,7 +14,7 @@ div#contact-content {
 
   section#contact-info {
     float: left;
-    width: ($unit*6)+($gutter*5);
+    width: grid-width(6);
 
     section#hire-thoughtbot {
 
@@ -44,7 +44,7 @@ div#contact-content {
     section#contact-other {
       float: left;
       margin-right: $gutter;
-      width: ($unit*4)+($gutter*3);
+      width: grid-width(4);
 
       ul {
         margin-left: $gutter;
@@ -54,7 +54,7 @@ div#contact-content {
     section.contact-address {
       float: left;
       margin-bottom: $lh;
-      width: ($unit*2)+$gutter;
+      width: grid-width(2);
 
       div {
         margin-bottom: $lh;

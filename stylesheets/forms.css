@@ -226,6 +226,8 @@ form.wufoo {
         margin: 0 0 10px; }
         form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
           display: inline; }
+      form.wufoo ul li .req {
+        color: #ad141e; }
       form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
         display: inline-block; }
       form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
@@ -257,6 +259,10 @@ form.wufoo {
         font-style: italic;
         font-weight: normal;
         margin: 20px 0 40px; }
+      form.wufoo ul li.focused {
+        background: none; }
+        form.wufoo ul li.focused label {
+          color: #000; }
       form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
         float: none;
         width: 510px; }

@@ -4,7 +4,7 @@ div#jobs-wrapper {
 
   section#positions {
     float: left;
-    width: ($unit*6)+($gutter*5);
+    width: grid-width(6);
 
     ul {
       list-style: none;
@@ -14,7 +14,7 @@ div#jobs-wrapper {
   section#job-form {
     float: left;
     margin-right: $gutter;
-    width: ($unit*6)+($gutter*5);
+    width: grid-width(6);
 
     h1#logo, #bottom{
       display: none;

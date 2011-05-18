@@ -3,13 +3,13 @@ section#open-source {
 
   ul {
     list-style: none;
-    margin-bottom: $lh*3;
+    margin-bottom: $lh*3; /*line hight to maintain baseline grid*/
 
     @extend .clearfix;
 
     li {
       float: left;
-      margin: ($lh*2) $gutter 0 0;
+      margin: ($lh*2) $gutter 0 0; /*line hight top bottom to maintain baseline grid*/
 
       &#paperclip {
         a {
@@ -70,7 +70,7 @@ section#open-source {
       a {
         display: block;
         padding-left: $unit+$gutter;
-        width: ($unit*3)+($gutter*2);
+        width: grid-width(3);
 
         .source-btn {
           color: $red;
@@ -94,7 +94,7 @@ section#events {
   p.events-intro {
     float: left;
     margin-right: $gutter;
-    width: ($unit*3)+($gutter*2);
+    width: grid-width(3);
   }
 
   ul {
@@ -108,8 +108,8 @@ section#events {
       float: left;
       margin-right: $gutter;
       overflow: hidden;
-      padding: ($lh*2)-(5px) $lh $lh;
-      width: ($unit*3)+($gutter*2)-($lh*2);
+      padding: ($lh*2)-(5px) $lh $lh; /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
+      width: grid-width(3)-($lh*2); /*grid width minus padding*/
 
       &:last-child {
         margin-right: 0;
