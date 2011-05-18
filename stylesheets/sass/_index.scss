@@ -150,7 +150,7 @@ section#services {
 
   blockquote {
     float: left;
-    width: grid-width(4);
+    width: grid-width(4)-$gutter;
   }
 
   section#clients {
