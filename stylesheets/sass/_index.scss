@@ -349,7 +349,7 @@ section#workshops {
 
   blockquote {
     float: left;
-    width: grid-width(4);
+    width: grid-width(4)-$gutter;
 
     .author {
       color: #999;
