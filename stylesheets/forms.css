@@ -235,10 +235,14 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
         margin: 0;
-        padding: 9px 10px;
-        width: 463px;
         max-width: 463px;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
         min-width: 463px;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
+        padding: 9px 10px;
+        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        width: 463px;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
         -moz-box-shadow: inset 0 1px 2px #aaaaaa;
         -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
         -o-box-shadow: inset 0 1px 2px #aaaaaa;
@@ -248,7 +252,8 @@ form.wufoo {
       form.wufoo ul li input#saveForm {
         display: block;
         margin: 0;
-        padding: 8px 40px; }
+        padding: 8px 40px;
+        /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
         form.wufoo ul li input#saveForm:hover {
           cursor: pointer; }
         form.wufoo ul li input#saveForm:active {
@@ -284,9 +289,12 @@ form.wufoo {
             font-style: italic;
             font-weight: normal; }
           form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
-            width: 208px;
             max-width: 208px;
-            min-width: 208px; }
+            /*3 columns minus line-heigh for the padding and 2px for the border*/
+            min-width: 208px;
+            /*3 columns minus line-heigh for the padding and 2px for the border*/
+            width: 208px;
+            /*3 columns minus line-heigh for the padding and 2px for the border*/ }
       form.wufoo ul li#fo7li3 {
         clear: both;
         width: 655px; }

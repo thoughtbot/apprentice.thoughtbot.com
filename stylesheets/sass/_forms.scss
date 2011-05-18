@@ -51,10 +51,10 @@ form.wufoo {
         font: 14px $body;
         line-height: $lh;
         margin: 0;
-        padding: ($lh/2)-(1) ($lh/2);
-        width: ($unit*6)+($gutter*5)-($lh)-(2);
-        max-width: ($unit*6)+($gutter*5)-($lh)-(2);
-        min-width: ($unit*6)+($gutter*5)-($lh)-(2);
+        max-width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
+        min-width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
+        padding: ($lh/2)-(1) ($lh/2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
 
         &:focus {
           outline-color: $red;
@@ -67,7 +67,7 @@ form.wufoo {
         @extend .button;
         display: block;
         margin: 0;
-        padding: ($lh/2)-(2) ($lh*2);
+        padding: ($lh/2)-(2) ($lh*2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
 
         &:hover {
           cursor: pointer;
@@ -95,14 +95,14 @@ form.wufoo {
 
       &.name, &#fo8li31 {
         float: none;
-        width: ($unit*6)+($gutter*6);
+        width: grid-width(6)+$gutter;
         @extend .clearfix;
 
         span {
           display: block;
           float: left;
           margin-right: $gutter;
-          width: ($unit*3)+($gutter*2);
+          width: grid-width(3);
 
           &:nth-child(odd) {
             margin-right: 0;
@@ -123,16 +123,16 @@ form.wufoo {
           }
 
           input[type="text"] {
-            width: ($unit*3)+($gutter*2)-($lh)-(2);
-            max-width: ($unit*3)+($gutter*2)-($lh)-(2);
-            min-width: ($unit*3)+($gutter*2)-($lh)-(2);
+            max-width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
+            min-width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
+            width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
           }
         }
       }
 
       &#fo7li3 {
         clear: both;
-        width: ($unit*8)+($gutter*7);
+        width: grid-width(8);
       }
 
       /*inputs for project planning form*/

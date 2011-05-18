@@ -172,7 +172,7 @@ section#services {
         float: left;
         font-style: italic;
         margin-right: $gutter;
-        width: grid-width()2;
+        width: grid-width(2);
 
         &:nth-child(2n) {
           margin-right: 0;
