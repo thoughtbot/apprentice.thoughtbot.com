@@ -217,6 +217,14 @@ a {
    }
 }
 
+.external {
+  padding-right:13px;
+
+  &:hover {
+    background: url('/images/external.png') right 6px no-repeat;
+  }
+}
+
 img {
   margin-bottom: 0;
 }

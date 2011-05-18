@@ -50,6 +50,14 @@ footer#main-footer {
         }
       }
 
+      &#products {
+        li {
+          a {
+            @extend .external;
+          }
+        }
+      }
+
       &#blog-footer {
         width: ($unit*4)+($gutter*3);
       }

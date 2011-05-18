@@ -300,8 +300,10 @@ section#products {
         }
 
         .check-out {
+          @extend .external;
           color: $red;
           display: inline-block;
+          font: 500 14px $header;
         }
 
         &:hover {
@@ -365,6 +367,12 @@ section#workshops {
     ul {
       @extend .clearfix;
       list-style: none;
+
+      li {
+        a {
+          @extend .external;
+        }
+      }
     }
 
     p {

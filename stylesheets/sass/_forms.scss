@@ -4,12 +4,17 @@
 form.wufoo {
   margin-left: 0;
 
+  h2 {
+    display: none;
+  }
+
   ul {
     list-style: none;
 
     li {
       margin-bottom: $lh;
       width: ($unit*6)+($gutter*5);
+      padding: 0;
 
       h3 {
         color: $red;
@@ -38,7 +43,9 @@ form.wufoo {
         line-height: $lh;
         margin: 0;
         padding: ($lh/2)-(1) ($lh/2);
-        width: 455px;
+        width: ($unit*6)+($gutter*5)-($lh)-(2);
+        max-width: auto;
+        min-width: auto;
 
         &:focus {
           outline-color: $red;
