@@ -667,8 +667,6 @@ ol ol, ol ul, ul ul, ul ol {
 
 /* Mixins
 ---------------------------------------- */
-/* this hack is courtesy of gbbowers on github
-   https://gist.github.com/601810 */
 /* Variables
 ---------------------------------------- */
 /*thoughtbot red*/
@@ -776,8 +774,8 @@ a:hover {
   font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-shadow: 0 -1px 0 #7f0f16;
-  -moz-box-shadow: inset 0 1px 0 #e93e49;
   -webkit-box-shadow: inset 0 1px 0 #e93e49;
+  -moz-box-shadow: inset 0 1px 0 #e93e49;
   -o-box-shadow: inset 0 1px 0 #e93e49;
   box-shadow: inset 0 1px 0 #e93e49;
   -moz-border-radius: 3px;
@@ -790,15 +788,15 @@ a:hover {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a;
-    -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
+    -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -o-box-shadow: inset 0 1px 0 #ee6c74;
     box-shadow: inset 0 1px 0 #ee6c74; }
   .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active {
     background: #96111a;
     text-shadow: none;
-    -moz-box-shadow: inset 0 -1px 3px #680c12;
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
+    -moz-box-shadow: inset 0 -1px 3px #680c12;
     -o-box-shadow: inset 0 -1px 3px #680c12;
     box-shadow: inset 0 -1px 3px #680c12; }
 
@@ -858,8 +856,8 @@ img {
     width: 830px;
     margin: 0 auto; }
     #design-portfolio ul li img {
-      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
     #design-portfolio ul li:last-child {
@@ -910,8 +908,8 @@ form.wufoo {
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: 463px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/
-        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
         -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
         -o-box-shadow: inset 0 1px 2px #aaaaaa;
         box-shadow: inset 0 1px 2px #aaaaaa; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
@@ -1068,16 +1066,16 @@ footer#main-footer {
     /*makes sure the slider maintains line-height grid*/ }
   #portfolio-slider div ul.slider {
     background: url(images/loading.gif) no-repeat 50% 50%;
-    border: 1px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     height: 418px;
     /*line-height minus 2 for the border to maintain baseline grid*/
     list-style: none;
     position: relative;
     width: 995px;
-    -moz-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
-    -webkit-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
-    -o-box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)";
-    box-shadow: "inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15)"; }
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15); }
     #portfolio-slider div ul.slider img {
       display: none;
       left: 0px;
@@ -1130,8 +1128,8 @@ section#portfolio {
           -webkit-transform: scale(1.01);
           -moz-transform: scale(1.01);
           transform: scale(1.01);
-          -moz-box-shadow: 0 0 3px #999999;
           -webkit-box-shadow: 0 0 3px #999999;
+          -moz-box-shadow: 0 0 3px #999999;
           -o-box-shadow: 0 0 3px #999999;
           box-shadow: 0 0 3px #999999; }
       section#portfolio ul li:nth-child(4n) {
@@ -1251,8 +1249,8 @@ section#products {
           font: 500 14px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
         section#products ul li a:hover {
           background: rgba(0, 0, 0, 0.04);
-          -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
+          -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
           section#products ul li a:hover div.product-logo {
