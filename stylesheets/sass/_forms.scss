@@ -44,8 +44,8 @@ form.wufoo {
         margin: 0;
         padding: ($lh/2)-(1) ($lh/2);
         width: ($unit*6)+($gutter*5)-($lh)-(2);
-        max-width: none;
-        min-width: none;
+        max-width: none !important;
+        min-width: none !important;
 
         &:focus {
           outline-color: $red;
@@ -87,6 +87,10 @@ form.wufoo {
           float: left;
           margin-right: $gutter;
           width: ($unit*3)+($gutter*2);
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
 
           &.req {
             display: inline;
