@@ -1,0 +1,374 @@
+#portfolio-slider {
+  @extend .secondary-wrapper;
+  margin-top: $lh*3;
+  position: relative;
+  height: $lh*26;
+
+  div {
+    @extend .secondary;
+    h2 {
+      text-shadow: 0 1px 0 #fcfcfc;
+    }
+    #slider-wrapper {
+
+      height: $lh*21;
+    }
+
+    ul.slider {
+      position: relative;
+      width: ($unit*12)+($gutter*11);
+      height: ($lh*21)-(2);
+      background:url(images/loading.gif) no-repeat 50% 50%;
+      list-style: none;
+      @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
+      border: 1px rgba(#000, .2) !important;
+
+      img {
+          position:absolute;
+          top:0px;
+          left:0px;
+          display:none;
+      }
+
+      a {
+        display: block;
+      }
+
+      .nivo-controlNav {
+        position:absolute;
+        left:260px;
+        bottom:-42px;
+      }
+
+      div.nivo-directionNav  {
+        a {
+          display: block;
+          position: absolute;
+          text-indent: -9999px;
+          width: 21px;
+          height: 40px;
+          background: url('/images/portfolio/arrows.png') 0 0 no-repeat;
+
+          &.nivo-prevNav {
+           left: -60px;
+           top: 44%;
+           background-position: 0 0;
+
+           &:hover {
+            background-position: 0 -40px;
+           }
+          }
+
+          &.nivo-nextNav {
+           right: -60px;
+           top: 44%;
+           background-position: -21px 0;
+
+           &:hover {
+            background-position: -21px -40px;
+           }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#portfolio {
+  margin: 80px 0 40px;
+  @extend .clearfix;
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      float: left;
+      margin: 0 $gutter $lh 0;
+
+      a {
+        border: 1px solid #BDBDBD;
+        display: block;
+        height: ($lh*9)+10px;
+        padding: 4px;
+        text-indent: -9999px;
+        width: ($unit*3)+($gutter*2)-(10px);
+
+        &:hover {
+          border-color: #999;
+          @include transform(scale(1.01));
+          @include box-shadow(0 0 3px #999);
+        }
+      }
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      &#pozit a {
+        background: url('/images/portfolio/thumb/pozit.png') center center no-repeat;
+      }
+      &#gulfcoast a {
+        background: url('/images/portfolio/thumb/gulfcoast.png') center center no-repeat;
+      }
+      &#coupondudes a {
+        background: url('/images/portfolio/thumb/coupondudes.png') center center no-repeat;
+      }
+      &#gnite a {
+        background: url('/images/portfolio/thumb/gnite.png') center center no-repeat;
+      }
+      &#carbonrally a {
+        background: url('/images/portfolio/thumb/carbonrally.png') center center no-repeat;
+      }
+      &#saftystream a {
+        background: url('/images/portfolio/thumb/saftystream.png') center center no-repeat;
+      }
+      &#shortboard a {
+        background: url('/images/portfolio/thumb/shortboard.png') center center no-repeat;
+      }
+      &#umbrellatoday a {
+        background: url('/images/portfolio/thumb/umbrellatoday.png') center center no-repeat;
+      }
+    }
+  }
+}
+
+section#services {
+  @extend .clearfix;
+
+  margin-bottom: $lh*2;
+
+  #about-services {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*4)+($gutter*3);
+
+    .learn-more {
+      font: 16px $header;
+    }
+  }
+
+  blockquote {
+    float: left;
+    width: ($unit*4)+($gutter*2);
+  }
+
+  section#clients {
+    float: left;
+    width: ($unit*4)+($gutter*3);
+    border-top: 5px solid $red;
+    padding-top: ($lh*2)-(5px);
+
+    h3 {
+      color: rgba(#2b2b2b, .8);
+    }
+
+    ul {
+      list-style: none;
+      @extend .clearfix;
+
+      li {
+        color: #ABABAB;
+        float: left;
+        font-style: italic;
+        margin-right: $gutter;
+        width: ($unit*2)+($gutter);
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+
+      &.video {
+        font: 16px $header;
+        margin-top: $lh*2;
+
+        a {
+          background: url('/images/film-strip.png') 0 2px no-repeat;
+          padding-left: 20px;
+          @include transition(color .5s);
+
+          &:hover {
+            background-position:0 -17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#get-started {
+  padding: $lh 0 $lh*2;
+
+  a {
+    @extend .button;
+    @extend .clearfix;
+    font: 500 18px $header;
+
+    h3 {
+      color: #fff;
+      margin-bottom: 0;
+      float: left;
+    }
+
+    p {
+      color: rgba(#fff, .8);
+      float: right;
+      font: 16px $header;
+      line-height: ($lh)-4;
+      margin-bottom: 0;
+      margin-top: 4px;
+    }
+  }
+}
+
+section#products {
+  margin-bottom: $lh*3;
+
+  h2 {
+    text-shadow:  0 1px 0 #fcfcfc;
+  }
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      float: left;
+      margin-right: $gutter;
+      width: ($unit*4)+($gutter*3); /*change when radish is added*/
+
+      &#hoptoad {
+
+        a {
+          div.product-logo {
+            img {
+              padding-top: 24px;
+            }
+          }
+        }
+      }
+
+      &#copycopter {
+        a {
+          div.product-logo {
+            img {
+              padding-top: 28px;
+            }
+          }
+        }
+      }
+
+      &#trajectory {
+        a {
+          div.product-logo {
+            img {
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+
+      &#radish {
+        a {
+          div.product-logo {
+            img {
+              padding-top: 21px;
+            }
+          }
+        }
+      }
+
+      a {
+        display: block;
+        @include transition(all .5s);
+
+        div.product-logo {
+          /*background: url('/images/products/products_bg.png') 0 0 no-repeat;*/
+          background: url('/images/products/products_bg_three.png') 0 0 no-repeat;
+          height: ($lh*7)-(3);
+          margin-bottom:  ($lh*2)+(3);
+
+          img {
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        .check-out {
+          color: $red;
+          display: inline-block;
+        }
+
+        &:hover {
+          background: rgba(#000, .04);
+          @include box-shadow(0 0 0 8px rgba(#000, .04));
+
+          div.product-logo {
+            background-position: 0 100%;
+          }
+
+          h3, p {
+            color: #000;
+          }
+
+          .check-out {
+            color: darken($red, 10%);
+          }
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+section#workshops {
+  background: url('/images/shadowing-lite.png') center top no-repeat;
+  border-top: 1px solid #DCDCDC;
+  padding-top: ($lh*3)-(1);
+  @extend .clearfix;
+
+  h2 {
+    text-shadow:  0 1px 0 #fcfcfc;
+  }
+
+  section#about-workshops {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*4)+($gutter*3);
+  }
+
+  blockquote {
+    float: left;
+    width: ($unit*4)+($gutter*2);
+
+    .author {
+      color: #999;
+    }
+  }
+
+  section#current-worshops {
+    background: #F9F9F9;
+    border-top: 5px solid #292929;
+    float: left;
+    margin-top: 10px;
+    padding: ($lh*2)-(15) $lh $lh;
+    width: ($unit*4)+($gutter*3)-(40px);
+
+    ul {
+      @extend .clearfix;
+      list-style: none;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

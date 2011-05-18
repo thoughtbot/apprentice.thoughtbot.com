@@ -1,0 +1,119 @@
+section#open-source {
+  @extend .secondary-header;
+
+  ul {
+    list-style: none;
+    margin-bottom: $lh*3;
+
+    @extend .clearfix;
+
+    li {
+      float: left;
+      margin: ($lh*2) $gutter 0 0;
+
+      &#paperclip {
+        a {
+          background: url('/images/oss/paperclip.png') no-repeat 0 0;
+        }
+      }
+
+      &#factory-girl {
+        a {
+          background: url('/images/oss/factory-girl.png') no-repeat 0 0;
+        }
+      }
+
+      &#high-voltage {
+        a {
+          background: url('/images/oss/highvoltage.png') no-repeat 0 0;
+        }
+      }
+
+      &#suspenders {
+        a {
+          background: url('/images/oss/suspenders.png') no-repeat 0 0;
+        }
+      }
+
+      &#shoulda {
+        a {
+          background: url('/images/oss/shoulda.png') no-repeat 0 0;
+        }
+      }
+
+      &#clearance {
+        a {
+          background: url('/images/oss/clearance.png') no-repeat 0 0;
+        }
+      }
+
+      &#pacecar {
+        a {
+          background: url('/images/oss/pacecar.png') no-repeat 0 0;
+        }
+      }
+
+      &#flutie {
+        a {
+          background: url('/images/oss/flutie.png') no-repeat 0 0;
+        }
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(3n+1) {
+        clear: both;
+      }
+
+      a {
+        display: block;
+        padding-left: $unit+$gutter;
+        width: ($unit*3)+($gutter*2);
+
+        .source-btn {
+          color: $red;
+          font: 16px $header;
+        }
+
+        &:hover {
+          .source-btn {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+section#events {
+  @extend .secondary;
+  text-shadow:  0 1px 0 #fcfcfc;
+
+  p.events-intro {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*3)+($gutter*2);
+  }
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      background: #F9F9F9;
+      border-top: 5px solid #292929;
+      display: block;
+      float: left;
+      margin-right: $gutter;
+      overflow: hidden;
+      padding: ($lh*2)-(5px) $lh $lh;
+      width: ($unit*3)+($gutter*2)-($lh*2);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

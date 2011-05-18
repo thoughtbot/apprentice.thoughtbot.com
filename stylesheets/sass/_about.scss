@@ -1,0 +1,49 @@
+section#people {
+  @extend .primary;
+  @extend .secondary-header;
+
+  ul {
+    list-style: none;
+    @extend .clearfix;
+
+    li {
+      float: left;
+      margin: 0 $gutter ($lh*2) 0;
+      min-height: $lh*12;
+      width: ($unit*6)+($gutter*5);
+      @extend .clearfix;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+
+      div.person-photo {
+        float: left;
+        margin-right: $gutter;
+        width: ($unit*2)+($gutter);
+      }
+
+      div.person-info {
+        float: left;
+        width: ($unit*4)+($gutter*3);
+
+        h2 {
+          font: 700 24px $header;
+          line-height: $lh*2;
+          margin-bottom: 0;
+        }
+
+        h3 {
+          color: #aaa;
+          font: italic 14px $body;
+          line-height: $lh;
+          margin-bottom: $lh;
+        }
+      }
+    }
+  }
+}

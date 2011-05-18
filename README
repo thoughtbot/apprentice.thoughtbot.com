@@ -9,3 +9,10 @@ Files will be auto-regenerated.  You can run:
   $ jekyll --server --no-auto
 
 ...if your changes arent showing up correctly.  This will flag parse errors.
+
+
+CSS files are generated using SASS. Run:
+
+  $ sass --watch stylesheets/sass:stylesheets/
+
+So that the css files will be generated automatically.

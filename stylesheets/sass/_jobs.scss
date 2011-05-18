@@ -1,0 +1,28 @@
+div#jobs-wrapper {
+  @extend .secondary-header;
+  @extend .primary;
+
+  section#positions {
+    float: left;
+    width: ($unit*6)+($gutter*5);
+
+    ul {
+      list-style: none;
+    }
+  }
+
+  section#job-form {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*6)+($gutter*5);
+
+    h1#logo, #bottom{
+      display: none;
+    }
+
+    header.info {
+      display: none;
+    }
+  }
+}
+

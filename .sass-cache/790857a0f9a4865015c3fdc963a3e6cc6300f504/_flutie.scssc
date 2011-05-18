@@ -1,0 +1,730 @@
+3.0.25 (Classy Cassidy)
+6ee39ce59a652365ddedbaf24c971a32550eb301
+o:Sass::Tree::RootNode
+:@options{:full_exceptionT:css_location"./public/stylesheets:always_updateF:template_location[["stylesheets/sass"stylesheets/screen.css:
+style:nested:always_checkT:load_paths[".@
+:cache_location"./.sass-cache:line_comments0:
+cacheT:syntax:	scss:property_syntax0:filename"N/Users/kfiedler/Sites/thoughtbot.github.com/stylesheets/sass/_flutie.scss:@template"O(/*
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #222;
+  font-size: 13px;
+  font-family: arial, "helvetica neue", helvetica, "lucida grande", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-family: "helvetica neue", Helvetica, arial, sans-serif; }
+
+/* Success, error & notice boxes for messages and errors. */
+div.error, div.notice, div.success,
+#flash_failure, #flash_success, #flash_notice {
+  border: 1px solid #ddd;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  margin-bottom: 1em;
+  padding: 0.8em; }
+
+div.error,
+#flash_failure {
+  background: #FBE3E4;
+  border-color: #FBC2C4;
+  color: #D12F19; }
+
+div.error a,
+#flash_failure a {
+  color: #D12F19; }
+
+div.notice,
+#flash_notice {
+  background: #FFF6BF;
+  border-color: #FFD324;
+  color: #817134; }
+
+div.notice a,
+#flash_notice a {
+  color: #817134; }
+
+div.success,
+#flash_success {
+  background: #E6EFC2;
+  border-color: #C6D880;
+  color: #529214; }
+
+div.success a,
+#flash_success a {
+  color: #529214; }
+
+/* Misc classes and elements */
+/* Use a .box to create a padded box inside a column.  */
+.box {
+  background: #eee;
+  margin-bottom: 1.5em;
+  padding: 1.5em; }
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd;
+  border: none;
+  clear: both;
+  color: #ddd;
+  float: none;
+  height: 1px;
+  margin: 0 0 1.4em;
+  width: 100%; }
+
+hr.space {
+  background: #fff;
+  color: #fff; }
+
+/* for image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix {
+  zoom: 1; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important; }
+
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  a:after {
+    content: " (" attr(href) ")"; }
+
+  abbr:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after {
+    content: ""; }
+
+  /* Don't show links for images */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img {
+    page-break-inside: avoid; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin-bottom: 0.25em; }
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1;
+  margin-bottom: 0.25em; }
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.25;
+  margin-bottom: 0.25em; }
+
+h5 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+h6 {
+  font-size: 1em;
+  margin-bottom: 0.25em; }
+
+/* Text elements */
+p {
+  margin-bottom: 0.5em; }
+
+p.last {
+  margin-bottom: 0; }
+
+p img {
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0; }
+
+/* Use this if the image is at the top of the <p>. */
+p img.top {
+  margin-top: 0; }
+
+img {
+  margin: 0 0 1.5em; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+address {
+  font-style: italic;
+  margin-top: 1.5em; }
+
+del {
+  color: #666; }
+
+a, a:link {
+  color: #1a4882;
+  text-decoration: underline; }
+
+a:visited {
+  color: #1a4882; }
+
+a:hover {
+  color: #052246; }
+
+a:active,
+a:focus {
+  color: #1a4882; }
+
+blockquote {
+  border-left: 4px solid #d1d1d1;
+  color: #666;
+  font-style: italic;
+  margin: 1.5em 0;
+  padding-left: 1em; }
+
+strong {
+  font-weight: bold; }
+
+em,
+dfn {
+  font-style: italic; }
+
+dfn {
+  font-weight: bold; }
+
+pre, code {
+  margin: 1.5em 0;
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+pre, code, tt {
+  font: 1em 'andale mono', 'monotype.com', 'lucida console', monospace;
+  line-height: 1.5; }
+
+pre.code {
+  background: #000;
+  color: #fff;
+  padding: 20px; }
+
+tt {
+  display: block;
+  line-height: 1.5;
+  margin: 1.5em 0; }
+
+/* Forms */
+/*removes dotted outline on submit buttons when clicking in firefox */
+input[type="submit"]::-moz-focus-inner {
+  border: none; }
+
+form ol {
+  list-style: none;
+  margin: 0 0 1em 0; }
+
+form ol ol {
+  margin-left: 0; }
+
+form ol li {
+  list-style-position: outside;
+  margin: 0 0 1em 0; }
+
+/*list-style-position fixes IE label margin bug*/
+form ol ol li {
+  list-style-position: outside;
+  margin: 0 0 .25em 0; }
+
+form ol li.error input {
+  background: #FBE3E4; }
+
+p.inline-errors {
+  color: #D12F19; }
+
+form ol li.file {
+  background: #e1e1e1;
+  border: 1px solid #c8c8c8;
+  padding: 10px; }
+
+form abbr {
+  border-bottom: 0; }
+
+label {
+  display: block; }
+
+.required label {
+  font-weight: bold; }
+
+.checkbox_field label,
+.radio_field label {
+  font-weight: normal; }
+
+a.cancel {
+  color: #7d0d0d; }
+
+.inline-hints {
+  color: #666;
+  font-size: 0.8em;
+  margin-bottom: 0.25em; }
+
+/* Fieldsets */
+fieldset {
+  background: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 1.5em 0;
+  padding: 1.5em 1.5em 1em 1.5em; }
+
+fieldset fieldset,
+fieldset fieldset fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  font-weight: bold; }
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+fieldset.buttons {
+  background: inherit;
+  border: 0;
+  padding: 0; }
+
+fieldset.buttons li {
+  display: inline; }
+
+.radio fieldset {
+  margin: 0;
+  padding: 0; }
+
+/* Text fields */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  font-size: inherit;
+  padding: 3px 2px;
+  width: 300px; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+input[disabled='disabled'] {
+  background-color: #fcfcfc;
+  cursor: default; }
+
+input[type="checkbox"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+input[type="radio"] {
+  margin: 0 3px 0 0;
+  position: relative;
+  top: -2px;
+  vertical-align: middle; }
+
+.check_boxes label {
+  display: inline;
+  padding: 0;
+  vertical-align: middle; }
+
+.radio label {
+  padding: 0; }
+
+/* Textareas */
+textarea {
+  font-size: inherit;
+  height: 200px;
+  margin: 0 0.5em 0.5em 0;
+  padding: 5px;
+  width: 440px;
+  overflow: auto; }
+
+/* Select fields */
+fieldset .select select {
+  width: 200px;
+  font-size: 0.9em; }
+
+optgroup {
+  margin: 0 0 .5em 0; }
+
+/* Date & Time */
+form ol li.date ol li,
+form ol li.time ol li {
+  display: inline; }
+
+form ol li.datetime ol li {
+  display: inline-block; }
+
+form ol li.datetime select,
+form ol li.date select,
+form ol li.time select {
+  display: inline;
+  width: auto; }
+
+form ol li.date label,
+form ol li.time label {
+  display: none; }
+
+/* Tables */
+table {
+  margin-bottom: 2em;
+  width: 100%; }
+
+th {
+  border-bottom: 2px solid #ccc;
+  font-weight: bold;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd; }
+
+caption, th, td {
+  padding: 4px 10px 4px 0; }
+
+caption {
+  background: #f1f1f1;
+  margin-bottom: 1em;
+  padding: 10px 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+/* Use this if you use span-x classes on th/td. */
+table .last {
+  padding-right: 0; }
+
+/* Lists */
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: 1.5em; }
+
+ul {
+  list-style-type: disc; }
+
+ol {
+  list-style-type: decimal; }
+
+dl {
+  line-height: 1.4;
+  margin-bottom: 1.5em; }
+
+dl dt {
+  font-weight: bold;
+  margin-top: 0.5em; }
+
+dl dd {
+  margin-bottom: 0em; }
+
+dd {
+  margin-left: 0.5em; }
+
+li {
+  line-height: 1.4; }
+
+ol ol, ol ul, ul ul, ul ol {
+  margin-left: 1em; }
+:@children[‹o:Sass::Tree::CommentNode;@;[ :@lines[ :
+@linei:@silent0:@value"º/*
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/o:Sass::Tree::RuleNode;@:
+@rule["¢html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video;[o:Sass::Tree::PropNode:@prop_syntax:new;@;[ ;i:
+@name["margin:
+@tabsi ;o:Sass::Script::String:
+@type:identifier:@context:default;"0o;; ;!;@;[ ;i;"["padding;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i;"["border;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i;"["outline;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i;"["font-size;#i ;o;$;%;&;';(;"	100%o;; ;!;@;[ ;i;"["vertical-align;#i ;o;$;%;&;';(;"baselineo;; ;!;@;[ ;i;"["background;#i ;o;$;%;&;';(;"transparent:@has_childrenT;i;#i o;;@;["\article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section;[o;; ;!;@;[ ;i!;"["display;#i ;o;$;%;&;';(;"
+block;)T;i ;#i o;;@;["nav ul;[o;; ;!;@;[ ;i$;"["list-style;#i ;o;$;%;&;';(;"	none;)T;i#;#i o;;@;["blockquote, q;[o;; ;!;@;[ ;i';"["quotes;#i ;o;$;%;&;';(;"	none;)T;i&;#i o;;@;[";blockquote:before, blockquote:after,
+q:before, q:after;[o;; ;!;@;[ ;i+;"["content;#i ;o;$;%;&;';(;"''o;; ;!;@;[ ;i,;"["content;#i ;o;$;%;&;';(;"	none;)T;i*;#i o;;@;["a;[
+o;; ;!;@;[ ;i/;"["margin;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i0;"["padding;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i1;"["font-size;#i ;o;$;%;&;';(;"	100%o;; ;!;@;[ ;i2;"["vertical-align;#i ;o;$;%;&;';(;"baselineo;; ;!;@;[ ;i3;"["background;#i ;o;$;%;&;';(;"transparent;)T;i.;#i o;;@;["ins;[o;; ;!;@;[ ;i6;"["background-color;#i ;o;$;%;&;';(;"	#ff9o;; ;!;@;[ ;i7;"["
+color;#i ;o;$;%;&;';(;"	#000o;; ;!;@;[ ;i8;"["text-decoration;#i ;o;$;%;&;';(;"	none;)T;i5;#i o;;@;["	mark;[	o;; ;!;@;[ ;i;;"["background-color;#i ;o;$;%;&;';(;"	#ff9o;; ;!;@;[ ;i<;"["
+color;#i ;o;$;%;&;';(;"	#000o;; ;!;@;[ ;i=;"["font-style;#i ;o;$;%;&;';(;"italico;; ;!;@;[ ;i>;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;i:;#i o;;@;["del;[o;; ;!;@;[ ;iA;"["text-decoration;#i ;o;$;%;&;';(;"line-through;)T;i@;#i o;;@;["abbr[title], dfn[title];[o;; ;!;@;[ ;iD;"["cursor;#i ;o;$;%;&;';(;"	help;)T;iC;#i o;;@;[ ;[ ;iF;0;":/* tables still need cellspacing="0" in the markup */o;;@;["
+table;[o;; ;!;@;[ ;iH;"["border-collapse;#i ;o;$;%;&;';(;"collapseo;; ;!;@;[ ;iI;"["border-spacing;#i ;o;$;%;&;';(;"0;)T;iG;#i o;;@;["hr;[o;; ;!;@;[ ;iL;"["display;#i ;o;$;%;&;';(;"
+blocko;; ;!;@;[ ;iM;"["height;#i ;o;$;%;&;';(;"1pxo;; ;!;@;[ ;iN;"["border;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;iO;"["border-top;#i ;o;$;%;&;';(;"1px solid #ccco;; ;!;@;[ ;iP;"["margin;#i ;o;$;%;&;';(;"
+1em 0o;; ;!;@;[ ;iQ;"["padding;#i ;o;$;%;&;';(;"0;)T;iK;#i o;;@;["input, select;[o;; ;!;@;[ ;iT;"["vertical-align;#i ;o;$;%;&;';(;"middle;)T;iS;#i o;;@;["	body;[o;; ;!;@;[ ;iW;"["
+color;#i ;o;$;%;&;';(;"	#222o;; ;!;@;[ ;iX;"["font-size;#i ;o;$;%;&;';(;"	13pxo;; ;!;@;[ ;iY;"["font-family;#i ;o;$;%;&;';(;"Darial, "helvetica neue", helvetica, "lucida grande", sans-serif;)T;iV;#i o;;@;["h1, h2, h3, h4, h5, h6;[o;; ;!;@;[ ;i\;"["
+color;#i ;o;$;%;&;';(;"	#111o;; ;!;@;[ ;i];"["font-family;#i ;o;$;%;&;';(;"3"helvetica neue", Helvetica, arial, sans-serif;)T;i[;#i o;;@;[ ;[ ;i_;0;"A/* Success, error & notice boxes for messages and errors. */o;;@;["Vdiv.error, div.notice, div.success,
+#flash_failure, #flash_success, #flash_notice;[
+o;; ;!;@;[ ;ib;"["border;#i ;o;$;%;&;';(;"1px solid #dddo;; ;!;@;[ ;ic;"["-moz-border-radius;#i ;o;$;%;&;';(;"8pxo;; ;!;@;[ ;id;"["-webkit-border-radius;#i ;o;$;%;&;';(;"8pxo;; ;!;@;[ ;ie;"["margin-bottom;#i ;o;$;%;&;';(;"1emo;; ;!;@;[ ;if;"["padding;#i ;o;$;%;&;';(;"
+0.8em;)T;ia;#i o;;@;["div.error,
+#flash_failure;[o;; ;!;@;[ ;ij;"["background;#i ;o;$;%;&;';(;"#FBE3E4o;; ;!;@;[ ;ik;"["border-color;#i ;o;$;%;&;';(;"#FBC2C4o;; ;!;@;[ ;il;"["
+color;#i ;o;$;%;&;';(;"#D12F19;)T;ii;#i o;;@;[""div.error a,
+#flash_failure a;[o;; ;!;@;[ ;ip;"["
+color;#i ;o;$;%;&;';(;"#D12F19;)T;io;#i o;;@;["div.notice,
+#flash_notice;[o;; ;!;@;[ ;it;"["background;#i ;o;$;%;&;';(;"#FFF6BFo;; ;!;@;[ ;iu;"["border-color;#i ;o;$;%;&;';(;"#FFD324o;; ;!;@;[ ;iv;"["
+color;#i ;o;$;%;&;';(;"#817134;)T;is;#i o;;@;[""div.notice a,
+#flash_notice a;[o;; ;!;@;[ ;iz;"["
+color;#i ;o;$;%;&;';(;"#817134;)T;iy;#i o;;@;[" div.success,
+#flash_success;[o;; ;!;@;[ ;i~;"["background;#i ;o;$;%;&;';(;"#E6EFC2o;; ;!;@;[ ;i;"["border-color;#i ;o;$;%;&;';(;"#C6D880o;; ;!;@;[ ;i{;"["
+color;#i ;o;$;%;&;';(;"#529214;)T;i};#i o;;@;["$div.success a,
+#flash_success a;[o;; ;!;@;[ ;i;"["
+color;#i ;o;$;%;&;';(;"#529214;)T;i~;#i o;;@;[ ;[ ;i;0;"$/* Misc classes and elements */o;;@;[ ;[ ;i‚;0;">/* Use a .box to create a padded box inside a column.  */o;;@;["	.box;[o;; ;!;@;[ ;i„;"["background;#i ;o;$;%;&;';(;"	#eeeo;; ;!;@;[ ;i…;"["margin-bottom;#i ;o;$;%;&;';(;"
+1.5emo;; ;!;@;[ ;i†;"["padding;#i ;o;$;%;&;';(;"
+1.5em;)T;iƒ;#i o;;@;[ ;[ ;iˆ;0;"A/* Use this to create a horizontal ruler across a column. */o;;@;["hr;[o;; ;!;@;[ ;iŠ;"["background;#i ;o;$;%;&;';(;"	#dddo;; ;!;@;[ ;i‹;"["border;#i ;o;$;%;&;';(;"	noneo;; ;!;@;[ ;iŒ;"["
+clear;#i ;o;$;%;&;';(;"	botho;; ;!;@;[ ;i;"["
+color;#i ;o;$;%;&;';(;"	#dddo;; ;!;@;[ ;iŽ;"["
+float;#i ;o;$;%;&;';(;"	noneo;; ;!;@;[ ;i;"["height;#i ;o;$;%;&;';(;"1pxo;; ;!;@;[ ;i;"["margin;#i ;o;$;%;&;';(;"0 0 1.4emo;; ;!;@;[ ;i‘;"["
+width;#i ;o;$;%;&;';(;"	100%;)T;i‰;#i o;;@;["hr.space;[o;; ;!;@;[ ;i”;"["background;#i ;o;$;%;&;';(;"	#fffo;; ;!;@;[ ;i•;"["
+color;#i ;o;$;%;&;';(;"	#fff;)T;i“;#i o;;@;[ ;[ ;i—;0;" /* for image replacement */o;;@;[".ir;[o;; ;!;@;[ ;i™;"["display;#i ;o;$;%;&;';(;"
+blocko;; ;!;@;[ ;iš;"["text-indent;#i ;o:Sass::Script::Number;{ :@denominator_units[ :@numerator_units["em;iš:@original"-999em;';(;iþüo;; ;!;@;[ ;i›;"["overflow;#i ;o;$;%;&;';(;"hiddeno;; ;!;@;[ ;iœ;"["background-repeat;#i ;o;$;%;&;';(;"no-repeato;; ;!;@;[ ;i;"["text-align;#i ;o;$;%;&;';(;"	lefto;; ;!;@;[ ;iž;"["direction;#i ;o;$;%;&;';(;"ltr;)T;i˜;#i o;;@;[ ;[ ;i ;0;"k/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */o;;@;[".hidden;[o;; ;!;@;[ ;i£;"["display;#i ;o;$;%;&;';(;"	noneo;; ;!;@;[ ;i¤;"["visibility;#i ;o;$;%;&;';(;"hidden;)T;i¢;#i o;;@;[ ;[ ;i¦;0;"/* Hide only visually, but have it available for screenreaders
+   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */o;;@;[".visuallyhidden;[	o;; ;!;@;[ ;i©;"["position;#i ;o;$;%;&;';(;"absolute !importanto;; ;!;@;[ ;iª;"["	clip;#i ;o:Sass::Script::Funcall
+;{ :
+@args[o:Sass::Script::Operation;@„:@operand1o;0;@„;1o;0;@„;1o;*;@„;+[ ;,["px;iª;-"1px;';(;i;iª:@operator:concat;';(:@operand2o;*;@„;+[ ;,["px;iª;-"1px;';(;i;iª;2;3;';(;4o;*;@„;+[ ;,["px;iª;-"1px;';(;i;iª;2;3;';(;4o;*;@„;+[ ;,["px;iª;-"1px;';(;i;iª;""	rect;';(o;;@;[ ;[ ;i«;0;"/* IE6, IE7 */o;; ;!;@;[ ;i¬;"["	clip;#i ;o;.
+;{ ;/[	o;*;@§;+[ ;,["px;i¬;-"1px;';(;io;*;@§;+[ ;,["px;i¬;-"1px;';(;io;*;@§;+[ ;,["px;i¬;-"1px;';(;io;*;@§;+[ ;,["px;i¬;-"1px;';(;i;i¬;""	rect;';(;)T;i¨;#i o;;@;[ ;[ ;i®;0;"D/* Hide visually and from screenreaders, but maintain layout */o;;@;[".invisible;[o;; ;!;@;[ ;i°;"["visibility;#i ;o;$;%;&;';(;"hidden;)T;i¯;#i o;;@;[ ;[ ;i²;0;"s/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */o;;@;["&.clearfix:before, .clearfix:after;[	o;; ;!;@;[ ;i´;"["content;#i ;o;$;%;&;';(;""\0020"o;; ;!;@;[ ;iµ;"["display;#i ;o;$;%;&;';(;"
+blocko;; ;!;@;[ ;i¶;"["height;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i·;"["visibility;#i ;o;$;%;&;';(;"hidden;)T;i³;#i o;;@;[".clearfix:after;[o;; ;!;@;[ ;iº;"["
+clear;#i ;o;$;%;&;';(;"	both;)T;i¹;#i o;;@;[ ;[ ;i¼;0;"t/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */o;;@;[".clearfix;[o;; ;!;@;[ ;i¾;"["	zoom;#i ;o;$;%;&;';(;"1;)T;i½;#i o;;@;[".ie7 img;[o;; ;!;@;[ ;iÁ;"["-ms-interpolation-mode;#i ;o;$;%;&;';(;"bicubic;)T;iÀ;#i o:Sass::Tree::DirectiveNode
+;@;[o;;@;["*;[o;; ;!;@;[ ;iÅ;"["background;#i ;o;$;%;&;';(;"transparent !importanto;; ;!;@;[ ;iÆ;"["
+color;#i ;o;$;%;&;';(;"#444 !importanto;; ;!;@;[ ;iÇ;"["text-shadow;#i ;o;$;%;&;';(;"none !important;)T;iÄ;#i o;;@;["a, a:visited;[o;; ;!;@;[ ;iÊ;"["
+color;#i ;o;$;%;&;';(;"#444 !importanto;; ;!;@;[ ;iË;"["text-decoration;#i ;o;$;%;&;';(;"underline;)T;iÉ;#i o;;@;["a:after;[o;; ;!;@;[ ;iÎ;"["content;#i ;o;0;{ ;1o;0;@?;1o;$
+;@?;%:string;iÎ;';(;" (;iÎ;2;3;';(;4o;.
+;@?;/[o;$
+;@?;%;&;iÎ;';(;"	href;iÎ;""	attr;';(;iÎ;2;3;';(;4o;$
+;@?;%;6;iÎ;';(;");)T;iÍ;#i o;;@;["abbr:after;[o;; ;!;@;[ ;iÑ;"["content;#i ;o;0;{ ;1o;0;@S;1o;$
+;@S;%;6;iÑ;';(;" (;iÑ;2;3;';(;4o;.
+;@S;/[o;$
+;@S;%;&;iÑ;';(;"
+title;iÑ;""	attr;';(;iÑ;2;3;';(;4o;$
+;@S;%;6;iÑ;';(;");)T;iÐ;#i o;;@;[".ir a:after;[o;; ;!;@;[ ;iÔ;"["content;#i ;o;$;%;&;';(;""";)T;iÓ;#i o;;@;[ ;[ ;iÖ;0;"&/* Don't show links for images */o;;@;["pre, blockquote;[o;; ;!;@;[ ;iØ;"["border;#i ;o;$;%;&;';(;"1px solid #999o;; ;!;@;[ ;iÙ;"["page-break-inside;#i ;o;$;%;&;';(;"
+avoid;)T;i×;#i o;;@;["
+thead;[o;; ;!;@;[ ;iÜ;"["display;#i ;o;$;%;&;';(;"table-header-group;)T;iÛ;#i o;;@;[ ;[ ;iÞ;0;"7/* css-discuss.incutio.com/wiki/Printing_Tables */o;;@;["tr, img;[o;; ;!;@;[ ;ià;"["page-break-inside;#i ;o;$;%;&;';(;"
+avoid;)T;iß;#i o;5
+;@;[o;; ;!;@;[ ;iã;"["margin;#i ;o;$;%;&;';(;"
+0.5cm;)T;iâ;"
+@pageo;;@;["p, h2, h3;[o;; ;!;@;[ ;iæ;"["orphans;#i ;o;$;%;&;';(;"3o;; ;!;@;[ ;iç;"["widows;#i ;o;$;%;&;';(;"3;)T;iå;#i o;;@;["h2, h3;[o;; ;!;@;[ ;iê;"["page-break-after;#i ;o;$;%;&;';(;"
+avoid;)T;ié;#i ;)T;iÃ;"@media printo;;@;[ ;[ ;iì;0;"/* Headings */o;;@;["h1, h2, h3, h4, h5, h6;[o;; ;!;@;[ ;iî;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;ií;#i o;;@;["h1;[o;; ;!;@;[ ;iñ;"["font-size;#i ;o;$;%;&;';(;"
+2.2emo;; ;!;@;[ ;iò;"["line-height;#i ;o;$;%;&;';(;"1o;; ;!;@;[ ;ió;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;ið;#i o;;@;["h2;[o;; ;!;@;[ ;iö;"["font-size;#i ;o;$;%;&;';(;"
+1.6emo;; ;!;@;[ ;i÷;"["line-height;#i ;o;$;%;&;';(;"1.1o;; ;!;@;[ ;iø;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;iõ;#i o;;@;["h3;[o;; ;!;@;[ ;iû;"["font-size;#i ;o;$;%;&;';(;"
+1.3emo;; ;!;@;[ ;iü;"["line-height;#i ;o;$;%;&;';(;"1o;; ;!;@;[ ;iý;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;iú;#i o;;@;["h4;[o;; ;!;@;[ ;i ;"["font-size;#i ;o;$;%;&;';(;"
+1.1emo;; ;!;@;[ ;i;"["line-height;#i ;o;$;%;&;';(;"	1.25o;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;iÿ;#i o;;@;["h5;[o;; ;!;@;[ ;i;"["font-size;#i ;o;$;%;&;';(;"1emo;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;i;#i o;;@;["h6;[o;; ;!;@;[ ;i	;"["font-size;#i ;o;$;%;&;';(;"1emo;; ;!;@;[ ;i
+;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;i;#i o;;@;[ ;[ ;i;0;"/* Text elements */o;;@;["p;[o;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"
+0.5em;)T;i;#i o;;@;["p.last;[o;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"0;)T;i;#i o;;@;["
+p img;[o;; ;!;@;[ ;i;"["
+float;#i ;o;$;%;&;';(;"	lefto;; ;!;@;[ ;i;"["margin;#i ;o;$;%;&;';(;"1.5em 1.5em 1.5em 0o;; ;!;@;[ ;i;"["padding;#i ;o;$;%;&;';(;"0;)T;i;#i o;;@;[ ;[ ;i;0;":/* Use this if the image is at the top of the <p>. */o;;@;["p img.top;[o;; ;!;@;[ ;i;"["margin-top;#i ;o;$;%;&;';(;"0;)T;i;#i o;;@;["img;[o;; ;!;@;[ ;i;"["margin;#i ;o;$;%;&;';(;"0 0 1.5em;)T;i;#i o;;@;["abbr, acronym;[o;; ;!;@;[ ;i ;"["border-bottom;#i ;o;$;%;&;';(;"1px dotted #666o;; ;!;@;[ ;i!;"["cursor;#i ;o;$;%;&;';(;"	help;)T;i;#i o;;@;["address;[o;; ;!;@;[ ;i$;"["font-style;#i ;o;$;%;&;';(;"italico;; ;!;@;[ ;i%;"["margin-top;#i ;o;$;%;&;';(;"
+1.5em;)T;i#;#i o;;@;["del;[o;; ;!;@;[ ;i(;"["
+color;#i ;o;$;%;&;';(;"	#666;)T;i';#i o;;@;["a, a:link;[o;; ;!;@;[ ;i+;"["
+color;#i ;o;$;%;&;';(;"#1a4882o;; ;!;@;[ ;i,;"["text-decoration;#i ;o;$;%;&;';(;"underline;)T;i*;#i o;;@;["a:visited;[o;; ;!;@;[ ;i/;"["
+color;#i ;o;$;%;&;';(;"#1a4882;)T;i.;#i o;;@;["a:hover;[o;; ;!;@;[ ;i2;"["
+color;#i ;o;$;%;&;';(;"#052246;)T;i1;#i o;;@;["a:active,
+a:focus;[o;; ;!;@;[ ;i6;"["
+color;#i ;o;$;%;&;';(;"#1a4882;)T;i5;#i o;;@;["blockquote;[
+o;; ;!;@;[ ;i9;"["border-left;#i ;o;$;%;&;';(;"4px solid #d1d1d1o;; ;!;@;[ ;i:;"["
+color;#i ;o;$;%;&;';(;"	#666o;; ;!;@;[ ;i;;"["font-style;#i ;o;$;%;&;';(;"italico;; ;!;@;[ ;i<;"["margin;#i ;o;$;%;&;';(;"1.5em 0o;; ;!;@;[ ;i=;"["padding-left;#i ;o;$;%;&;';(;"1em;)T;i8;#i o;;@;["strong;[o;; ;!;@;[ ;i@;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;i?;#i o;;@;["em,
+dfn;[o;; ;!;@;[ ;iD;"["font-style;#i ;o;$;%;&;';(;"italic;)T;iC;#i o;;@;["dfn;[o;; ;!;@;[ ;iG;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;iF;#i o;;@;["pre, code;[o;; ;!;@;[ ;iJ;"["margin;#i ;o;$;%;&;';(;"1.5em 0o;; ;!;@;[ ;iK;"["white-space;#i ;o;$;%;&;';(;"preo;;@;[ ;[ ;iL;0;"/* CSS2 */o;; ;!;@;[ ;iM;"["white-space;#i ;o;$;%;&;';(;"pre-wrapo;;@;[ ;[ ;iN;0;"/* CSS 2.1 */o;; ;!;@;[ ;iO;"["white-space;#i ;o;$;%;&;';(;"pre-lineo;;@;[ ;[ ;iP;0;",/* CSS 3 (and 2.1 as well, actually) */o;; ;!;@;[ ;iQ;"["word-wrap;#i ;o;$;%;&;';(;"break-wordo;;@;[ ;[ ;iR;0;"/* IE */;)T;iI;#i o;;@;["pre, code, tt;[o;; ;!;@;[ ;iU;"["	font;#i ;o;$;%;&;';(;"C1em 'andale mono', 'monotype.com', 'lucida console', monospaceo;; ;!;@;[ ;iV;"["line-height;#i ;o;$;%;&;';(;"1.5;)T;iT;#i o;;@;["pre.code;[o;; ;!;@;[ ;iY;"["background;#i ;o;$;%;&;';(;"	#000o;; ;!;@;[ ;iZ;"["
+color;#i ;o;$;%;&;';(;"	#fffo;; ;!;@;[ ;i[;"["padding;#i ;o;$;%;&;';(;"	20px;)T;iX;#i o;;@;["tt;[o;; ;!;@;[ ;i^;"["display;#i ;o;$;%;&;';(;"
+blocko;; ;!;@;[ ;i_;"["line-height;#i ;o;$;%;&;';(;"1.5o;; ;!;@;[ ;i`;"["margin;#i ;o;$;%;&;';(;"1.5em 0;)T;i];#i o;;@;[ ;[ ;ib;0;"/* Forms */o;;@;[ ;[ ;ic;0;"K/*removes dotted outline on submit buttons when clicking in firefox */o;;@;["+input[type="submit"]::-moz-focus-inner;[o;; ;!;@;[ ;ie;"["border;#i ;o;$;%;&;';(;"	none;)T;id;#i o;;@;["form ol;[o;; ;!;@;[ ;ih;"["list-style;#i ;o;$;%;&;';(;"	noneo;; ;!;@;[ ;ii;"["margin;#i ;o;$;%;&;';(;"0 0 1em 0;)T;ig;#i o;;@;["form ol ol;[o;; ;!;@;[ ;il;"["margin-left;#i ;o;$;%;&;';(;"0;)T;ik;#i o;;@;["form ol li;[o;; ;!;@;[ ;io;"["list-style-position;#i ;o;$;%;&;';(;"outsideo;; ;!;@;[ ;ip;"["margin;#i ;o;$;%;&;';(;"0 0 1em 0;)T;in;#i o;;@;[ ;[ ;ir;0;"6/*list-style-position fixes IE label margin bug*/o;;@;["form ol ol li;[o;; ;!;@;[ ;it;"["list-style-position;#i ;o;$;%;&;';(;"outsideo;; ;!;@;[ ;iu;"["margin;#i ;o;$;%;&;';(;"0 0 .25em 0;)T;is;#i o;;@;["form ol li.error input;[o;; ;!;@;[ ;ix;"["background;#i ;o;$;%;&;';(;"#FBE3E4;)T;iw;#i o;;@;["p.inline-errors;[o;; ;!;@;[ ;i{;"["
+color;#i ;o;$;%;&;';(;"#D12F19;)T;iz;#i o;;@;["form ol li.file;[o;; ;!;@;[ ;i~;"["background;#i ;o;$;%;&;';(;"#e1e1e1o;; ;!;@;[ ;i;"["border;#i ;o;$;%;&;';(;"1px solid #c8c8c8o;; ;!;@;[ ;i€;"["padding;#i ;o;$;%;&;';(;"	10px;)T;i};#i o;;@;["form abbr;[o;; ;!;@;[ ;iƒ;"["border-bottom;#i ;o;$;%;&;';(;"0;)T;i‚;#i o;;@;["
+label;[o;; ;!;@;[ ;i†;"["display;#i ;o;$;%;&;';(;"
+block;)T;i…;#i o;;@;[".required label;[o;; ;!;@;[ ;i‰;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;iˆ;#i o;;@;["..checkbox_field label,
+.radio_field label;[o;; ;!;@;[ ;i;"["font-weight;#i ;o;$;%;&;';(;"normal;)T;iŒ;#i o;;@;["a.cancel;[o;; ;!;@;[ ;i;"["
+color;#i ;o;$;%;&;';(;"#7d0d0d;)T;i;#i o;;@;[".inline-hints;[o;; ;!;@;[ ;i“;"["
+color;#i ;o;$;%;&;';(;"	#666o;; ;!;@;[ ;i”;"["font-size;#i ;o;$;%;&;';(;"
+0.8emo;; ;!;@;[ ;i•;"["margin-bottom;#i ;o;$;%;&;';(;"0.25em;)T;i’;#i o;;@;[ ;[ ;i—;0;"/* Fieldsets */o;;@;["fieldset;[	o;; ;!;@;[ ;i™;"["background;#i ;o;$;%;&;';(;"#f1f1f1o;; ;!;@;[ ;iš;"["border;#i ;o;$;%;&;';(;"1px solid #e3e3e3o;; ;!;@;[ ;i›;"["margin;#i ;o;$;%;&;';(;"0 0 1.5em 0o;; ;!;@;[ ;iœ;"["padding;#i ;o;$;%;&;';(;"1.5em 1.5em 1em 1.5em;)T;i˜;#i o;;@;["2fieldset fieldset,
+fieldset fieldset fieldset;[o;; ;!;@;[ ;i ;"["border;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i¡;"["padding;#i ;o;$;%;&;';(;"0;)T;iŸ;#i o;;@;["legend;[o;; ;!;@;[ ;i¤;"["font-weight;#i ;o;$;%;&;';(;"	bold;)T;i£;#i o;;@;[".ie6 legend, .ie7 legend;[o;; ;!;@;[ ;i§;"["margin-left;#i ;o;*;{ ;+[ ;,["px;i§;-"	-7px;';(;iô;)T;i¦;#i o;;@;["fieldset.buttons;[o;; ;!;@;[ ;iª;"["background;#i ;o;$;%;&;';(;"inherito;; ;!;@;[ ;i«;"["border;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i¬;"["padding;#i ;o;$;%;&;';(;"0;)T;i©;#i o;;@;["fieldset.buttons li;[o;; ;!;@;[ ;i¯;"["display;#i ;o;$;%;&;';(;"inline;)T;i®;#i o;;@;[".radio fieldset;[o;; ;!;@;[ ;i²;"["margin;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;i³;"["padding;#i ;o;$;%;&;';(;"0;)T;i±;#i o;;@;[ ;[ ;iµ;0;"/* Text fields */o;;@;["Binput[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"];[o;; ;!;@;[ ;iÅ;"["font-size;#i ;o;$;%;&;';(;"inherito;; ;!;@;[ ;iÆ;"["padding;#i ;o;$;%;&;';(;"3px 2pxo;; ;!;@;[ ;iÇ;"["
+width;#i ;o;$;%;&;';(;"
+300px;)T;iÄ;#i o;;@;[".ie6 input;[o;; ;!;@;[ ;iÊ;"["vertical-align;#i ;o;$;%;&;';(;"text-bottom;)T;iÉ;#i o;;@;["input[disabled='disabled'];[o;; ;!;@;[ ;iÍ;"["background-color;#i ;o;$;%;&;';(;"#fcfcfco;; ;!;@;[ ;iÎ;"["cursor;#i ;o;$;%;&;';(;"default;)T;iÌ;#i o;;@;["input[type="checkbox"];[	o;; ;!;@;[ ;iÑ;"["margin;#i ;o;$;%;&;';(;"0 3px 0 0o;; ;!;@;[ ;iÒ;"["position;#i ;o;$;%;&;';(;"relativeo;; ;!;@;[ ;iÓ;"["top;#i ;o;*;{ ;+[ ;,["px;iÓ;-"	-2px;';(;iùo;; ;!;@;[ ;iÔ;"["vertical-align;#i ;o;$;%;&;';(;"middle;)T;iÐ;#i o;;@;[" .ie7 input[type="checkbox"];[o;; ;!;@;[ ;i×;"["vertical-align;#i ;o;$;%;&;';(;"baseline;)T;iÖ;#i o;;@;["input[type="radio"];[	o;; ;!;@;[ ;iÚ;"["margin;#i ;o;$;%;&;';(;"0 3px 0 0o;; ;!;@;[ ;iÛ;"["position;#i ;o;$;%;&;';(;"relativeo;; ;!;@;[ ;iÜ;"["top;#i ;o;*;{ ;+[ ;,["px;iÜ;-"	-2px;';(;iùo;; ;!;@;[ ;iÝ;"["vertical-align;#i ;o;$;%;&;';(;"middle;)T;iÙ;#i o;;@;[".check_boxes label;[o;; ;!;@;[ ;ià;"["display;#i ;o;$;%;&;';(;"inlineo;; ;!;@;[ ;iá;"["padding;#i ;o;$;%;&;';(;"0o;; ;!;@;[ ;iâ;"["vertical-align;#i ;o;$;%;&;';(;"middle;)T;iß;#i o;;@;[".radio label;[o;; ;!;@;[ ;iå;"["padding;#i ;o;$;%;&;';(;"0;)T;iä;#i o;;@;[ ;[ ;iç;0;"/* Textareas */o;;@;["textarea;[o;; ;!;@;[ ;ié;"["font-size;#i ;o;$;%;&;';(;"inherito;; ;!;@;[ ;iê;"["height;#i ;o;$;%;&;';(;"
+200pxo;; ;!;@;[ ;ië;"["margin;#i ;o;$;%;&;';(;"0 0.5em 0.5em 0o;; ;!;@;[ ;iì;"["padding;#i ;o;$;%;&;';(;"5pxo;; ;!;@;[ ;ií;"["
+width;#i ;o;$;%;&;';(;"
+440pxo;; ;!;@;[ ;iî;"["overflow;#i ;o;$;%;&;';(;"	auto;)T;iè;#i o;;@;[ ;[ ;ið;0;"/* Select fields */o;;@;["fieldset .select select;[o;; ;!;@;[ ;iò;"["
+width;#i ;o;$;%;&;';(;"
+200pxo;; ;!;@;[ ;ió;"["font-size;#i ;o;$;%;&;';(;"
+0.9em;)T;iñ;#i o;;@;["optgroup;[o;; ;!;@;[ ;iö;"["margin;#i ;o;$;%;&;';(;"0 0 .5em 0;)T;iõ;#i o;;@;[ ;[ ;iø;0;"/* Date & Time */o;;@;["1form ol li.date ol li,
+form ol li.time ol li;[o;; ;!;@;[ ;iû;"["display;#i ;o;$;%;&;';(;"inline;)T;iú;#i o;;@;["form ol li.datetime ol li;[o;; ;!;@;[ ;iþ;"["display;#i ;o;$;%;&;';(;"inline-block;)T;iý;#i o;;@;["Oform ol li.datetime select,
+form ol li.date select,
+form ol li.time select;[o;; ;!;@;[ ;i;"["display;#i ;o;$;%;&;';(;"inlineo;; ;!;@;[ ;i;"["
+width;#i ;o;$;%;&;';(;"	auto;)T;i;#i o;;@;["1form ol li.date label,
+form ol li.time label;[o;; ;!;@;[ ;i;"["display;#i ;o;$;%;&;';(;"	none;)T;i;#i o;;@;[ ;[ ;i
+;0;"/* Tables */o;;@;["
+table;[o;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"2emo;; ;!;@;[ ;i;"["
+width;#i ;o;$;%;&;';(;"	100%;)T;i;#i o;;@;["th;[o;; ;!;@;[ ;i;"["border-bottom;#i ;o;$;%;&;';(;"2px solid #ccco;; ;!;@;[ ;i;"["font-weight;#i ;o;$;%;&;';(;"	boldo;; ;!;@;[ ;i;"["text-align;#i ;o;$;%;&;';(;"	left;)T;i;#i o;;@;["td;[o;; ;!;@;[ ;i;"["border-bottom;#i ;o;$;%;&;';(;"1px solid #ddd;)T;i;#i o;;@;["caption, th, td;[o;; ;!;@;[ ;i;"["padding;#i ;o;$;%;&;';(;"4px 10px 4px 0;)T;i;#i o;;@;["caption;[o;; ;!;@;[ ;i;"["background;#i ;o;$;%;&;';(;"#f1f1f1o;; ;!;@;[ ;i;"["margin-bottom;#i ;o;$;%;&;';(;"1emo;; ;!;@;[ ;i;"["padding;#i ;o;$;%;&;';(;"10px 0;)T;i;#i o;;@;["tr, td, th;[o;; ;!;@;[ ;i ;"["vertical-align;#i ;o;$;%;&;';(;"middle;)T;i;#i o;;@;[ ;[ ;i";0;"7/* Use this if you use span-x classes on th/td. */o;;@;["table .last;[o;; ;!;@;[ ;i$;"["padding-right;#i ;o;$;%;&;';(;"0;)T;i#;#i o;;@;[ ;[ ;i&;0;"/* Lists */o;;@;["ul, ol;[o;; ;!;@;[ ;i(;"["list-style-position;#i ;o;$;%;&;';(;"insideo;; ;!;@;[ ;i);"["margin-bottom;#i ;o;$;%;&;';(;"
+1.5em;)T;i';#i o;;@;["ul;[o;; ;!;@;[ ;i,;"["list-style-type;#i ;o;$;%;&;';(;"	disc;)T;i+;#i o;;@;["ol;[o;; ;!;@;[ ;i/;"["list-style-type;#i ;o;$;%;&;';(;"decimal;)T;i.;#i o;;@;["dl;[o;; ;!;@;[ ;i2;"["line-height;#i ;o;$;%;&;';(;"1.4o;; ;!;@;[ ;i3;"["margin-bottom;#i ;o;$;%;&;';(;"
+1.5em;)T;i1;#i o;;@;["
+dl dt;[o;; ;!;@;[ ;i6;"["font-weight;#i ;o;$;%;&;';(;"	boldo;; ;!;@;[ ;i7;"["margin-top;#i ;o;$;%;&;';(;"
+0.5em;)T;i5;#i o;;@;["
+dl dd;[o;; ;!;@;[ ;i:;"["margin-bottom;#i ;o;$;%;&;';(;"0em;)T;i9;#i o;;@;["dd;[o;; ;!;@;[ ;i=;"["margin-left;#i ;o;$;%;&;';(;"
+0.5em;)T;i<;#i o;;@;["li;[o;; ;!;@;[ ;i@;"["line-height;#i ;o;$;%;&;';(;"1.4;)T;i?;#i o;;@;["ol ol, ol ul, ul ul, ul ol;[o;; ;!;@;[ ;iC;"["margin-left;#i ;o;$;%;&;';(;"1em;)T;iB;#i ;)T;i

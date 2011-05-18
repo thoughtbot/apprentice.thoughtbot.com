@@ -1,0 +1,70 @@
+div#contact-content {
+  @extend .primary;
+  @extend .secondary-header;
+
+  div#contact_form {
+    float: left;
+    margin-right: $gutter;
+    width: ($unit*6)+($gutter*5);
+
+    h1#logo, #bottom{
+      display: none;
+    }
+  }
+
+  section#contact-info {
+    float: left;
+    width: ($unit*6)+($gutter*5);
+
+    section#hire-thoughtbot {
+
+      a {
+        @extend .button;
+        margin: $lh 0 $lh*2;
+        padding: $lh*1.5;
+
+        h3 {
+          color: #fff;
+          margin-bottom: 0;
+          font-size: 18px;
+        }
+
+        p {
+          color: rgba(#fff, .6);
+          font: 16px $header;
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background: $red;
+        }
+      }
+    }
+
+    section#contact-other {
+      float: left;
+      margin-right: $gutter;
+      width: ($unit*4)+($gutter*3);
+
+      ul {
+        margin-left: $gutter;
+      }
+    }
+
+    section.contact-address {
+      float: left;
+      margin-bottom: $lh;
+      width: ($unit*2)+$gutter;
+
+      div {
+        margin-bottom: $lh;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+

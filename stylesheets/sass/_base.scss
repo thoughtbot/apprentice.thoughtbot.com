@@ -1,0 +1,300 @@
+/* Mixins
+---------------------------------------- */
+@mixin border-radius ($radii) {
+  -moz-border-radius: $radii;
+  -webkit-border-radius: $radii;
+  border-radius: $radii;
+}
+
+/* this hack is courtesy of gbbowers on github
+   https://gist.github.com/601810 */
+@mixin box-shadow ($shadow-1, $shadow-2: false, $shadow-3: false, $shadow-4: false, $shadow-5: false, $shadow-6: false, $shadow-7: false, $shadow-8: false, $shadow-9: false) {
+  $full: $shadow-1;
+
+  @if $shadow-2 {
+    $full: $full + ", " + $shadow-2;
+  }
+  @if $shadow-3 {
+    $full: $full + ", " + $shadow-3;
+  }
+  @if $shadow-4 {
+    $full: $full + ", " + $shadow-4;
+  }
+  @if $shadow-5 {
+    $full: $full + ", " + $shadow-5;
+  }
+  @if $shadow-6 {
+    $full: $full + ", " + $shadow-6;
+  }
+  @if $shadow-7 {
+    $full: $full + ", " + $shadow-7;
+  }
+  @if $shadow-8 {
+    $full: $full + ", " + $shadow-8;
+  }
+  @if $shadow-9 {
+    $full: $full + ", " + $shadow-9;
+  }
+
+  -moz-box-shadow: $full;
+  -webkit-box-shadow: $full;
+  -o-box-shadow: $full;
+  box-shadow: $full;
+}
+
+@mixin linear-gradient ($from, $to) {
+  background: $from;
+  background: -moz-linear-gradient(top, $from, $to);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+}
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transitition: $transition;
+  transitition: $transition;
+}
+
+@mixin transform ($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  transform: $transform;
+}
+
+/* Variables
+---------------------------------------- */
+$header: "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;
+$body: "skolar-1","skolar-2", Georgia, serif;
+
+$red: #AD141E; /*thoughtbot red*/
+
+$lh: 20px; /*line-hieght of all the type on the site*/
+$unit: 60px; /*one grid column*/
+$gutter: 25px; /*size of one gutter*/
+
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* basic site styles
+---------------------------------------- */
+
+body {
+  background-color: #FCFCFC;
+  /*background: url('/images/grid.png') 10px -4px;*/
+  border-top: 4px solid $red;
+  color: #2B2B2B;
+  font: 14px $body;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: left;
+  width: ($unit*12)+($gutter*11);
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: $header;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  color: #2b2b2b;
+  font-size: $lh*3;
+  font-weight: 900;
+  margin-bottom: $lh;
+}
+
+h2 {
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: $lh*2;
+  margin-bottom: $lh*2;
+}
+
+h3 {
+  font-weight: 500;
+  line-height: $lh;
+  margin-bottom: $lh;
+}
+
+h4 {
+  line-height: $lh;
+  margin: 0;
+}
+
+p {
+  color: #555;
+  line-height: $lh;
+  margin-bottom: $lh;
+}
+
+ul {
+  list-style-position: outside;
+  margin-bottom: $lh;
+
+  li {
+    line-height: $lh;
+  }
+}
+
+img {
+  display: block;
+  vertical-align: bottom;
+}
+
+blockquote {
+  background: url('/images/quote.png') no-repeat;
+  border: 0;
+  font: 200 18px $header;
+  margin: 0 $gutter 0 0;
+  padding-left: $gutter;
+
+  p {
+    line-height: $lh*1.5;
+  }
+
+  p.author {
+    color: #bbb;
+    font: italic 14px $body;
+    line-height: $lh;
+    margin: 0;
+  }
+}
+
+a {
+  &:link, &:active {
+    color: $red;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: darken($red, 5%);
+  }
+
+  &:hover {
+    color: lighten($red, 10%);
+    text-decoration: none;
+  }
+}
+
+.button {
+  background: $red;
+   border: 1px solid darken($red, 20%);
+   color: #fff;
+   display: block;
+   line-height: $lh;
+   padding: $lh*1.5;
+   font:700 24px $header;
+   -webkit-font-smoothing: antialiased;
+   text-shadow: 0 -1px 0 darken($red, 10%);
+   @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+   @include border-radius(3px);
+   @include transition(all .3s);
+
+   &:hover {
+     background: lighten($red, 5%);
+     border: 1px solid darken($red, 10%);
+     text-shadow: 0 -1px 0 darken($red, 5%);
+     @include box-shadow(inset 0 1px 0 lighten($red, 30%));
+   }
+
+   &:active {
+     background: darken($red, 5%);
+     text-shadow: none;
+     @include box-shadow(inset 0 -1px 3px darken($red, 15%));
+   }
+}
+
+img {
+  margin-bottom: 0;
+}
+
+#page-header {
+  background: url('/images/shadowing.png') center top no-repeat;
+  padding-top: $lh*3;
+  text-align: center;
+
+  h1 {
+    line-height: $lh*3;
+  }
+
+  h2 {
+    color: #736B6C;
+    font: normal 14px $body;
+    line-height: $lh;
+    margin-bottom: 0;
+  }
+}
+
+.secondary-header {
+/*  border-top: 1px solid #dcdcdc;
+  margin-top: $lh*3;*/
+  padding-top: ($lh*3);
+}
+
+.primary, .secondary {
+  @extend .clearfix;
+  @extend .wrapper;
+}
+
+.secondary-wrapper {
+  background: rgba(#E4E4E4, .7) url('/images/shadowing.png') center 0 no-repeat;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: ($lh*2)-(1) 0 ($lh*2)-(1);
+}
+
+/* Selection styles
+---------------------------------------- */
+
+::selection {
+  background: $red;
+  color: #000;
+}
+
+::-moz-selection {
+  background: $red;
+  color: #000;
+}
+
+::-webkit-selection {
+  background: $red;
+  color: #000;
+}
+
+/* Design page
+---------------------------------------- */
+#design-portfolio {
+  @extend .primary;
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: $lh 0;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      width: 830px;
+      margin: 0 auto;
+      img {
+        @include box-shadow(0 0 0 1px rgba(#000, .1));
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

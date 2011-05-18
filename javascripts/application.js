@@ -1,38 +1,32 @@
+var auto = $.jqwidont.auto(); // is automatic initialisation enabled?
+$.jqwidont.auto(false);       // disable it
+
 $(document).ready(function() {
+  $('p').widont();
 
-  var updateButtonStatus = function(carousel) {
-    current = carousel.first ? carousel.first : 1;
-    $('.project-nav a').removeClass("active");
-    $('.project-nav a').eq(current-1).addClass("active");
-  }
+  // slider stuff
+  $('#portfolio-slider, #portfolio-slider div').hide();
 
-  $(".project-carousel").jcarousel({
-    vertical: true,
-    wrap: "both",
-    animation: 600,
-    scroll: 1,
-    buttonNextHTML: null,
-    buttonPrevHTML: null,
-    buttonNextCallback: updateButtonStatus,
-    buttonPrevCallback: updateButtonStatus,
-    initCallback: function(carousel) {
-      $('.project-nav a').bind('click', function() {
-        carousel.scroll($.jcarousel.intval($(this).text()));
-        updateButtonStatus(carousel);
-        pageTracker._trackEvent('Homepage', 'Carousel', $(this).text());
-        return false;
-      });
+  $('#portfolio').localScroll();
 
-      updateButtonStatus(carousel);
-    }
+  $('#portfolio a').click(function(){
+    var divname = this.title
+
+
+    if ($('#portfolio-slider:hidden').length) {
+      $('#portfolio-slider').slideDown();
+      $("#"+divname+"-project").slideDown();
+      return false;
+    } else {
+      $("#"+divname+"-project").slideDown().siblings().slideUp();
+      return false;
+    };
   });
 
-  $.each([".homepage-carousel-pozit", ".homepage-carousel-safetystream", ".homepage-carousel-shortbord", ".homepage-carousel-gemcutter"], function(idx, selector) {
-    $(selector + " .slides").cycle({
-      fx: "fade",
-      timeout: 0,
-      pager: selector + " .image-switcher-tools"
-    });
+  $('#portfolio-slider div ul.slider').nivoSlider({
+    effect:'sliceDown',
+    manualAdvance:true,
+    directionNavHide:false,
+    controlNav:false
   });
-
 });

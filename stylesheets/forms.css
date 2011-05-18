@@ -1,385 +1,287 @@
-#container, html.embed {
-  background: none;
-}
-
-form.wufoo {
-  padding-left: 120px;
-  padding-top: 0;
-}
-
-.wufoo .info {
-  display: none;
-}
-
-.wufoo li.focused {
-  background: none;
-}
-
-.wufoo li div {
-  width: 430px;
+/* Mixins
+---------------------------------------- */
+/* this hack is courtesy of gbbowers on github
+   https://gist.github.com/601810 */
+/* Variables
+---------------------------------------- */
+/*thoughtbot red*/
+/*line-hieght of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .primary:after, #design-portfolio:after, .secondary:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after {
   clear: both;
-}
-
-.wufoo label.desc,
-.wufoo li.name label.desc,
-.wufoo li.phone label.desc,
-li#fo8li31 label.desc,
-li#fo7li24 label.desc {
-  float: left;
-  clear: both;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: bold;
-  color: #bda287;
-  margin: 15px 0 10px 0;
-  padding: 0;
-  width: 420px;
-}
-
-#form5.wufoo label.desc {
-  font-size: 12px;
-}
-
-.wufoo li.name label.desc,
-.wufoo li.phone label.desc,
-li#fo8li31 label.desc,
-li#fo7li24 label.desc {
-  width: 500px;
-  text-indent: 9px;
-}
-
-.wufoo select.select {
-  float: left;
-  clear: both;
-  width: 300px !important;
-  font-weight: bold;
-  color: #222;
-  font-size: 14px;
-  padding: 5px 0;
-}
-
-.wufoo input.file,
-.safari .wufoo input.file {
-  color: #222;
-  background: #ffeedf;
-  border: 1px solid #12110f;
-  padding: 5px;
-}
-
-.safari .wufoo input.file {
-  width: 430px;
-  -webkit-border-radius: 5px;
-}
-
-.wufoo input.text {
-  padding: 11px 5px 7px 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #222;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border: 1px solid #12110f;
-  background: #ffeedf url(http://thoughtbot.github.com/images/text-field.png) 0px 0px repeat-x;
-  width: 430px;
-}
-
-.wufoo input.text:focus {
-  background: #ffe2ac url(http://thoughtbot.github.com/images/text-field.png) 0px -40px repeat-x;
-}
-
-form li.buttons input {
-  border: 0;
-  width: 141px;
-  height: 58px;
-  background: url(http://thoughtbot.github.com/images/submit.png) 0px 0px no-repeat;
-  text-indent: -9999px;
-  cursor: pointer;
-  margin-top: 30px;
-  line-height: 300px;
-}
-
-form li.buttons input:hover {
-  background: url(http://thoughtbot.github.com/images/submit.png) 0px -58px no-repeat;
-}
-
-form.wufoo li span.req {
-  color: #cb342e !important;
-  padding: 0;
-}
-
-form.wufoo .section h4 {
-  float: left;
-  clear: both;
-  margin-bottom: -5px;
-}
-
-form.wufoo input {
-  float: left;
-  clear: both;
-}
-
-form .hr {
-  float: left;
-  width: 450px;
-  margin: 25px 0 10px 0;
-}
-
-.wufoo textarea.textarea {
-  background: #ffeedf url(http://thoughtbot.github.com/images/textarea.png) 0px 0px repeat-x;
-  float: left;
-  clear: both;
-  width: 430px;
-  padding: 5px;
-  height: 190px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #222;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border: 1px solid #12110f;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-#form5.wufoo textarea.textarea {
-  height: 65px;
-}
-
-.wufoo textarea.textarea:focus {
-  background: #ffe2ac url(http://thoughtbot.github.com/images/textarea-focus.png) 0px 0px repeat-x;
-}
-
-.wufoo li.phone input {
-  width: 113px;
-}
-
-.wufoo li.phone span.symbol {
-  padding-top: 10px;
-}
-
-.wufoo li.phone label {
-  float: left;
-  width: 100px;
-  padding: 3px;
-  font-style: italic;
-  color: #cacaca;
-  font-size: 12px;
-  text-align: left;
-}
-
-.wufoo li.name input,
-.wufoo input#Field31,
-.wufoo input#Field32,
-.wufoo input#Field24,
-.wufoo input#Field25 {
-  width: 203px;
-}
-
-.wufoo input#Field125,
-.wufoo input#Field31,
-.wufoo input#Field24 {
-  clear: left;
-}
-
-.wufoo input#Field126,
-.wufoo input#Field32,
-.wufoo input#Field25 {
-  clear: none;
-}
-
-.wufoo li.name label,
-li#fo8li31 label,
-li#fo7li24 label {
-  float: left;
-  width: 196px;
-  padding: 3px;
-  font-style: italic;
-  color: #cacaca;
-  font-size: 12px;
-  text-align: left;
-}
-
-.wufoo li.phone span,
-.wufoo li.name span,
-li#fo8li31 span,
-li#fo7li24 span {
-  margin-left: 8px;
-}
-
-.wufoo li.phone span.req,
-.wufoo li.name span.req,
-li#fo8li31 span.req,
-li#fo7li24 span.red {
-  margin: 0;
-}
-
-.wufoo li.phone,
-.wufoo li.name,
-li#fo8li31,
-li#fo7li24  {
-  margin-left: -8px;
-  width: 500px !important;
-}
-
-#first-name {
-  clear: both;
-}
-
-.wufoo li.focused,
-.wufoo li.focused label.desc,
-.wufoo li.focused div,
-.wufoo li.focused span,
-.wufoo li.focused div label,
-.wufoo li.focused span label {
-  color: #BDA287;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-}
-
-.wufoo label.choice {
-  float: left;
-  color: #cacaca;
-}
-
-.wufoo .section h3 {
-  color: rgb(230, 224, 219);
-  font-family: "museo-sans-1","museo-sans-2", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin: 0px 0px 12px 0px;
-  padding: 5px 0px 0px 0px;
-  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
-}
-
-form li {
-  padding: 0;
-}
-
-.wufoo .section {
-  border: 0;
-  float: left;
-  width: 450px !important;
-  margin: 25px 0 25px 0;
-  clear: both;
-  height: 1px;
-  line-height: 1px;
-  background: #000;
-  border-bottom:1px solid #313131;
-  padding: 0;
-}
-
-.wufoo p.instruct {
-  background: #fff;
-  font-style: italic;
-  font-family: Georgia, sans-serif;
-  margin-top: 52px;
-  margin-right: 225px;
-  border: 1px solid #322d27;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-box-shadow: 3px 3px 3px #000;
-  -webkit-box-shadow: 3px 3px 3px #000;
-}
-
-.wufoo p.instruct small {
-  line-height: 135%;
-}
-
-/* Error stuff */
-#errorLi {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  background: #a00c0f url(http://thoughtbot.github.com/images/errorli.png) left bottom repeat-x !important;
-  border: 1px solid #560001;
-  margin: 0;
-  padding: 10px;
-  text-align: left;
-  width: 420px !important;
-  float: left;
-  -moz-box-shadow: 3px 3px 3px #000;
-  -webkit-box-shadow: 3px 3px 3px #000;
-}
-
-#errorMsgLbl {
-  color: #fff !important;
-  font-size: 125%;
-  margin: 0;
-  padding: 0;
-}
-
-#errorMsg {
-  color: #cacaca !important;
-  margin: 3px 0 0 0;
-  font-size: 12px;
-}
-
-#errorMsg strong {
-  color: #FF4448 !important;
-  padding: 0 0 0 30px;
-  width: 70px;
-  height: 24px;
-  font-size: 10px;
-  line-height: 27px;
-  display: inline-block;
-  background: transparent url(http://thoughtbot.github.com/images/errorhighlighted.png) 0px 0px no-repeat !important;
-}
-
-form li.error {
-  background: none !important;
-  display:block !important;
-  margin-bottom: 0px !important;
-}
-
-form li.error label, form li.error span.symbol {
-  color: #cacaca !important;
-}
-
-form li.error label.desc {
-  color: #BDA287 !important;
-}
-
-form.wufoo li.error span.req {
-  color: #cb342e !important;
-}
-
-form li.error input.text,
-form li.error input.text:focus {
-  background: #9d0b0e url(http://thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
-  color: #fff;
-  font-weight: bold;
-  border: 1px solid #510002;
-}
-
-form p.error {
-  color: #ff4448 !important;
-}
-
-li#fo8li31 p.error {
-  text-indent: 33px;
-  background: url(http://thoughtbot.github.com/images/input-error-icon.png) 11px 5px no-repeat;
-}
-
-form p.error {
-  text-indent: 24px;
-  background: url(http://thoughtbot.github.com/images/input-error-icon.png) 2px 5px no-repeat;
-  height: 20px;
-  line-height: 16px !important;
-  padding: 4px 0 0 0 !important;
-}
-
-form li.error textarea.textarea,
-form li.error textarea.textarea:focus {
-  background: #9d0b0e url(http://thoughtbot.github.com/images/error-textfield.png) 0px 0px repeat-x;
-  color: #fff;
-  font-weight: bold;
-  border: 1px solid #510002;
-}
-
-/* Success stuff */
-#success-ralph {
-  width: 830px;
-  height: 392px;
+  content: ' ';
   display: block;
-  background: url(/images/ralph-contact.jpg) 0px 0px no-repeat;
-  -moz-box-shadow: 2px 2px 2px #000;
-  -webkit-box-shadow: 2px 2px 2px #000;
-}
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* basic site styles
+---------------------------------------- */
+body {
+  background-color: #FCFCFC;
+  /*background: url('/images/grid.png') 10px -4px;*/
+  border-top: 4px solid #ad141e;
+  color: #2B2B2B;
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
+  text-align: center; }
+
+.wrapper, .primary, #design-portfolio, .secondary {
+  margin: 0 auto;
+  text-align: left;
+  width: 995px; }
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  color: #2b2b2b;
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 20px; }
+
+h2 {
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 40px;
+  margin-bottom: 40px; }
+
+h3 {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+h4 {
+  line-height: 20px;
+  margin: 0; }
+
+p {
+  color: #555;
+  line-height: 20px;
+  margin-bottom: 20px; }
+
+ul {
+  list-style-position: outside;
+  margin-bottom: 20px; }
+  ul li {
+    line-height: 20px; }
+
+img {
+  display: block;
+  vertical-align: bottom; }
+
+blockquote {
+  background: url("/images/quote.png") no-repeat;
+  border: 0;
+  font: 200 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0 25px 0 0;
+  padding-left: 25px; }
+  blockquote p {
+    line-height: 30px; }
+  blockquote p.author {
+    color: #bbb;
+    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 20px;
+    margin: 0; }
+
+a:link, a:active {
+  color: #ad141e;
+  text-decoration: none; }
+a:visited {
+  color: #96111a; }
+a:hover {
+  color: #db1926;
+  text-decoration: none; }
+
+.button, form.wufoo ul li input#saveForm {
+  background: #ad141e;
+  border: 1px solid #52090e;
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  padding: 30px;
+  font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 -1px 0 #7f0f16;
+  -moz-box-shadow: inset 0 1px 0 #e93e49;
+  -webkit-box-shadow: inset 0 1px 0 #e93e49;
+  -o-box-shadow: inset 0 1px 0 #e93e49;
+  box-shadow: inset 0 1px 0 #e93e49;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transitition: all 0.3s;
+  transitition: all 0.3s; }
+  .button:hover, form.wufoo ul li input#saveForm:hover {
+    background: #c41722;
+    border: 1px solid #7f0f16;
+    text-shadow: 0 -1px 0 #96111a;
+    -moz-box-shadow: inset 0 1px 0 #ee6c74;
+    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
+    -o-box-shadow: inset 0 1px 0 #ee6c74;
+    box-shadow: inset 0 1px 0 #ee6c74; }
+  .button:active, form.wufoo ul li input#saveForm:active {
+    background: #96111a;
+    text-shadow: none;
+    -moz-box-shadow: inset 0 -1px 3px #680c12;
+    -webkit-box-shadow: inset 0 -1px 3px #680c12;
+    -o-box-shadow: inset 0 -1px 3px #680c12;
+    box-shadow: inset 0 -1px 3px #680c12; }
+
+img {
+  margin-bottom: 0; }
+
+#page-header {
+  background: url("/images/shadowing.png") center top no-repeat;
+  padding-top: 60px;
+  text-align: center; }
+  #page-header h1 {
+    line-height: 60px; }
+  #page-header h2 {
+    color: #736B6C;
+    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 20px;
+    margin-bottom: 0; }
+
+.secondary-header {
+  /*  border-top: 1px solid #dcdcdc;
+    margin-top: $lh*3;*/
+  padding-top: 60px; }
+
+.secondary-wrapper {
+  background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 39px 0 39px; }
+
+/* Selection styles
+---------------------------------------- */
+::selection {
+  background: #ad141e;
+  color: #000; }
+
+::-moz-selection {
+  background: #ad141e;
+  color: #000; }
+
+::-webkit-selection {
+  background: #ad141e;
+  color: #000; }
+
+/* Design page
+---------------------------------------- */
+#design-portfolio ul {
+  list-style: none; }
+  #design-portfolio ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    width: 830px;
+    margin: 0 auto; }
+    #design-portfolio ul li img {
+      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
+    #design-portfolio ul li:last-child {
+      border-bottom: 0; }
+
+/* Forms
+---------------------------------------- */
+form.wufoo {
+  margin-left: 0; }
+  form.wufoo ul {
+    list-style: none; }
+    form.wufoo ul li {
+      margin-bottom: 20px;
+      width: 485px;
+      /*inputs for project planning form*/ }
+      form.wufoo ul li h3 {
+        color: #ad141e;
+        margin-top: 40px; }
+      form.wufoo ul li fieldset {
+        background: none;
+        border: 0;
+        padding: 0; }
+      form.wufoo ul li label, form.wufoo ul li legend {
+        font: 16px "skolar-1", "skolar-2", Georgia, serif;
+        line-height: 20px;
+        margin: 0 0 10px; }
+        form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
+          display: inline; }
+      form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
+        border: 1px solid #999;
+        font: 14px "skolar-1", "skolar-2", Georgia, serif;
+        line-height: 20px;
+        margin: 0;
+        padding: 9px 10px;
+        width: 463px;
+        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+        -o-box-shadow: inset 0 1px 2px #aaaaaa;
+        box-shadow: inset 0 1px 2px #aaaaaa; }
+        form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
+          outline-color: #ad141e; }
+      form.wufoo ul li input#saveForm {
+        display: block;
+        margin: 0;
+        padding: 8px 40px; }
+        form.wufoo ul li input#saveForm:hover {
+          cursor: pointer; }
+        form.wufoo ul li input#saveForm:active {
+          background: #96111a; }
+      form.wufoo ul li .instruct {
+        color: #aaa;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+        margin: 20px 0 40px; }
+      form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
+        float: none;
+        width: 510px; }
+        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+          display: block;
+          float: left;
+          margin-right: 25px;
+          width: 230px; }
+          form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
+            display: inline;
+            float: none;
+            margin: 0;
+            width: auto; }
+          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
+            color: #aaa;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: normal; }
+          form.wufoo ul li.name span input, form.wufoo ul li#fo8li31 span input {
+            width: 208px; }
+      form.wufoo ul li#fo7li3 {
+        clear: both;
+        width: 655px; }
+      form.wufoo ul li#fo5li136 div {
+        margin-left: 10px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li136 div span {
+          color: #666;
+          margin-right: 10px; }
+      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
+        display: block;
+        margin-left: 30px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
+          color: #666;
+          display: block;
+          margin-bottom: 10px; }
+          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
+            margin: -2px 3px 0 -20px;
+            top: 0; }
+          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
+            display: inline; }
