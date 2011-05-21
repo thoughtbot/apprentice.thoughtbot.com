@@ -29,7 +29,7 @@ $(document).ready(function() {
       slider.slideDown().siblings().slideUp();
     }
 
-    if (slider.find("li").size() == 1) {
+    if (slider.find("li").size() == 0) {
       var list = slider.find("ul");
       list.empty();
 
