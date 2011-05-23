@@ -1071,7 +1071,7 @@ footer#main-footer {
     /*line-height minus 2 for the border to maintain baseline grid*/
     list-style: none;
     position: relative;
-    width: 995px;
+    width: 995px -2;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
@@ -1083,10 +1083,21 @@ footer#main-footer {
       top: 0px; }
     #portfolio-slider div ul.slider a {
       display: block; }
-    #portfolio-slider div ul.slider .nivo-controlNav {
-      bottom: -42px;
-      left: 260px;
-      position: absolute; }
+    #portfolio-slider div ul.slider div.nivo-controlNav {
+      position: absolute;
+      top: -52px;
+      right: 1px;
+      width: auto; }
+      #portfolio-slider div ul.slider div.nivo-controlNav a {
+        text-indent: -9999px;
+        display: block;
+        width: 8px;
+        height: 9px;
+        background: url("/images/portfolio/slider-control.png") -11px 0 no-repeat;
+        float: left;
+        margin-right: 6px; }
+        #portfolio-slider div ul.slider div.nivo-controlNav a.active {
+          background: url("/images/portfolio/slider-control.png") 0 0 no-repeat; }
     #portfolio-slider div ul.slider div.nivo-directionNav a {
       background: url("/images/portfolio/arrows.png") 0 0 no-repeat;
       display: block;
@@ -1186,13 +1197,13 @@ section#services {
         font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-top: 40px; }
         section#services section#clients p.video a {
-          background: url("/images/film-strip.png") 0 2px no-repeat;
+          background: url("/images/film-strip.png") 0 1px no-repeat;
           padding-left: 20px;
           -webkit-transition: color 0.5s;
           -moz-transitition: color 0.5s;
           transitition: color 0.5s; }
           section#services section#clients p.video a:hover {
-            background-position: 0 -17px; }
+            background-position: 0 -18px; }
 
 #get-started {
   padding: 20px 0 40px; }

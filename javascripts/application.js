@@ -40,8 +40,7 @@ $(document).ready(function() {
       list.nivoSlider({
         effect:'sliceDown',
         manualAdvance:true,
-        directionNavHide:false,
-        controlNav:false
+        directionNavHide:false
       });
     }
 

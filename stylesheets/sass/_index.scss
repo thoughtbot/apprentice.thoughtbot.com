@@ -21,7 +21,7 @@
       height: ($lh*21)-(2); /*line-height minus 2 for the border to maintain baseline grid*/
       list-style: none;
       position: relative;
-      width: grid-width(12);
+      width: grid-width(12)-2;
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
 
       img {
@@ -35,10 +35,25 @@
         display: block;
       }
 
-      .nivo-controlNav {
-        bottom: -42px;
-        left: 260px;
+      div.nivo-controlNav {
         position: absolute;
+        top: -52px;
+        right: 1px;
+        width: auto;
+        
+        a {
+          text-indent: -9999px;
+          display:block;
+          width: 8px;
+          height: 9px;
+          background: url('/images/portfolio/slider-control.png') -11px 0 no-repeat;
+          float: left;
+          margin-right: 6px;
+
+          &.active {
+            background: url('/images/portfolio/slider-control.png') 0 0 no-repeat;
+          }
+        }
       }
 
       div.nivo-directionNav  {
@@ -189,12 +204,12 @@ section#services {
         margin-top: $lh*2;
 
         a {
-          background: url('/images/film-strip.png') 0 2px no-repeat;
+          background: url('/images/film-strip.png') 0 1px no-repeat;
           padding-left: 20px;
           @include transition(color .5s);
 
           &:hover {
-            background-position:0 -17px;
+            background-position:0 -18px;
           }
         }
       }
