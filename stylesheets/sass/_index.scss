@@ -243,7 +243,7 @@ section#services {
 }
 
 section#products {
-  margin-bottom: $lh*3;
+  margin-bottom: $lh*4;
 
   h2 {
     text-shadow:  0 1px 0 #fcfcfc;
@@ -256,7 +256,7 @@ section#products {
     li {
       float: left;
       margin-right: $gutter;
-      width: grid-width(4); /*change when radish is added*/
+      width: grid-width(3); /*change when radish is added*/
 
       &#hoptoad {
 
