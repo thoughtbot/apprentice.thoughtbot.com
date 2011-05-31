@@ -4,6 +4,7 @@ title: Jobs
 keyword: jobs
 meta_keywords: web designer, web developer, ruby, rails, javascript, html, css, boston
 meta_description: Work at thoughtbot.
+position: Web Developer
 ---
 <header id="page-header" class="primary">
   <h1>Jobs at thoughtbot</h1>
@@ -13,7 +14,7 @@ meta_description: Work at thoughtbot.
   {% include job_form.html %}
 
   <section id="positions">
-    <h3>Web Developer</h3>
+    <h3>{{ page.position }}</h3>
     <ul>
       <li>
         <p>We are looking for web developers to join our team full-time. Very well-qualified candidates will have been using Ruby on Rails extensively, have an excellent knowledge of Javascript, HTML, and CSS, and experience in TDD.</p>
@@ -22,7 +23,7 @@ meta_description: Work at thoughtbot.
         <p>We believe that all members of the product team are responsible for design. As a developer you will participate in conceptualization and wireframing of projects, provide design feedback, and be responsible for the user experience and usability of the applications we build.</p>
         <p>While most developers here use Macs, OS X, and Vi, we believe that each person chooses the tools that work best for them. We ask you what you want and we get that for you.</p>
         <p>If all this is interesting to you, you might be interested in reading more about our <a href="http://handbook.thoughtbot.com">philosophy in our Client Handbook</a>.</p>
-        <p>Compensation will depend on Experience, and includes medical benefits, 401k eligibility and other excellent benefits.</p>
+        <p>Compensation for the {{ page.position }} position depend on Experience, and includes medical benefits, 401k eligibility and other excellent benefits.</p>
       </li>
     </ul>
   </section>
