@@ -1469,16 +1469,20 @@ section#people ul {
         margin-bottom: 20px; }
 
 div#jobs-wrapper section#current-openings {
-  border-top: 5px solid #ad141e;
   float: left;
-  margin-top: 10px;
   margin-right: 25px;
-  padding: 25px 20px 20px 0;
+  padding: 0;
   /*top padding makes up for 5px border and 10px margin*/
-  width: 275px;
+  width: 315px;
   /*4 units minus left and right padding*/ }
   div#jobs-wrapper section#current-openings ul {
+    border-top: 5px solid #ad141e;
+    padding-top: 20px;
     list-style: none; }
+    div#jobs-wrapper section#current-openings ul li {
+      margin: 5px 0; }
+      div#jobs-wrapper section#current-openings ul li a {
+        font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
 div#jobs-wrapper section#more-about-us {
   float: left;
   width: 655px; }

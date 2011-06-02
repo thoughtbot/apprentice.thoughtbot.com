@@ -3,19 +3,22 @@ div#jobs-wrapper {
   @extend .primary;
 
   section#current-openings {
-    border-top: 5px solid $red;
     float: left;
-    margin-top: 10px;
     margin-right: $gutter;
-    padding: ($lh*2)-(15) $lh $lh 0; /*top padding makes up for 5px border and 10px margin*/
-    width: grid-width(4)-($lh*2); /*4 units minus left and right padding*/
+    padding: 0; /*top padding makes up for 5px border and 10px margin*/
+    width: grid-width(4); /*4 units minus left and right padding*/
 
     ul {
       @extend .clearfix;
+      border-top: 5px solid $red;
+      padding-top: $lh;
       list-style: none;
 
       li {
+        margin: 5px 0;
+
         a {
+          font: 500 16px $header;
           @extend .external;
         }
       }
