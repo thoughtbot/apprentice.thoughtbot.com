@@ -2,6 +2,35 @@ div#jobs-wrapper {
   @extend .secondary-header;
   @extend .primary;
 
+  section#current-openings {
+    border-top: 5px solid $red;
+    float: left;
+    margin-top: 10px;
+    margin-right: $gutter;
+    padding: ($lh*2)-(15) $lh $lh 0; /*top padding makes up for 5px border and 10px margin*/
+    width: grid-width(4)-($lh*2); /*4 units minus left and right padding*/
+
+    ul {
+      @extend .clearfix;
+      list-style: none;
+
+      li {
+        a {
+          @extend .external;
+        }
+      }
+    }
+  }
+
+  section#more-about-us {
+    float: left;
+    width: grid-width(8);
+    > ul {
+      > li {
+        list-style: none;
+      }
+    }
+  }
   section#positions {
     float: left;
     width: grid-width(6);
