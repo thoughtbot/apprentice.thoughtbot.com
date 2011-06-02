@@ -10,8 +10,7 @@ position: Web Designer
   <h1>Jobs at thoughtbot</h1>
 </header>
 
-<div id="jobs-wrapper">
-  {% include job_form.html %}
+<div id="jobs-wrapper" class="job-description">
 
   <section id="positions">
     <h2>{{ page.position }}</h2>
@@ -27,5 +26,15 @@ position: Web Designer
         <p>The competitive salary for the {{ page.position }} position will depend on experience, and includes medical benefits, 401k eligibility and other excellent benefits.</p>
       </li>
     </ul>
+
+    <section id="apply-to-thoughtbot">
+    <a href="/apply/">
+      <h3>Apply for the {{ page.position }} position</h3>
+    </a>
+    </section>
+
   </section>
+
+  {% include jobs_about_us.html %}
+
 </div>

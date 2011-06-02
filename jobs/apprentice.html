@@ -10,9 +10,7 @@ position: Apprentice
   <h1>Always two there are,<br/>a master and an apprentice.</h1>
 </header>
 
-<div id="jobs-wrapper">
-  {% include job_form.html %}
-
+<div id="jobs-wrapper" class="job-description">
   <section id="positions">
     <h2>{{ page.position }}</h2>
     <ul>
@@ -22,5 +20,15 @@ position: Apprentice
         <p>This paid apprenticeship is ideal for students, recent graduates, or more experienced candidates making a techology or career change, and is a great opportunity to work with a forward-thinking company and one of the best Ruby on Rails firms out there to grow your skills.</p>
       </li>
     </ul>
+
+    <section id="apply-to-thoughtbot">
+    <a href="/apply/">
+      <h3>Apply for the {{ page.position }} position</h3>
+    </a>
+    </section>
+
   </section>
+
+  {% include jobs_about_us.html %}
+
 </div>

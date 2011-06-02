@@ -764,7 +764,7 @@ a:hover {
   color: #db1926;
   text-decoration: none; }
 
-.button, form.wufoo ul li input#saveForm, #get-started a, div#contact-content section#contact-info section#hire-thoughtbot a {
+.button, form.wufoo ul li input#saveForm, #get-started a, div#contact-content section#contact-info section#hire-thoughtbot a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
   background: #ad141e;
   border: 1px solid #52090e;
   color: #fff;
@@ -784,7 +784,7 @@ a:hover {
   -webkit-transition: all 0.3s;
   -moz-transitition: all 0.3s;
   transitition: all 0.3s; }
-  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover {
+  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a;
@@ -792,7 +792,7 @@ a:hover {
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -o-box-shadow: inset 0 1px 0 #ee6c74;
     box-shadow: inset 0 1px 0 #ee6c74; }
-  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active {
+  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active {
     background: #96111a;
     text-shadow: none;
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
@@ -1490,7 +1490,8 @@ div#jobs-wrapper section#more-about-us {
     list-style: none; }
 div#jobs-wrapper section#positions {
   float: left;
-  width: 485px; }
+  width: 485px;
+  margin-right: 25px; }
   div#jobs-wrapper section#positions ul {
     list-style: none; }
 div#jobs-wrapper section#job-form {
@@ -1501,3 +1502,20 @@ div#jobs-wrapper section#job-form {
     display: none; }
   div#jobs-wrapper section#job-form header.info {
     display: none; }
+
+div#jobs-wrapper.job-description section#more-about-us {
+  float: left;
+  width: 485px; }
+div#jobs-wrapper.job-description section#apply-to-thoughtbot {
+  margin-top: 30px; }
+  div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
+    margin: 20px 0 40px;
+    padding: 30px; }
+    div#jobs-wrapper.job-description section#apply-to-thoughtbot a h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 0; }
+    div#jobs-wrapper.job-description section#apply-to-thoughtbot a p {
+      color: rgba(255, 255, 255, 0.6);
+      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin-bottom: 0; }

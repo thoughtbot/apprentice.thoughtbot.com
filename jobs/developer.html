@@ -10,11 +10,9 @@ position: Web Developer
   <h1>Jobs at thoughtbot</h1>
 </header>
 
-<div id="jobs-wrapper">
-  {% include job_form.html %}
-
+<div id="jobs-wrapper" class="job-description">
   <section id="positions">
-    <h3>{{ page.position }}</h3>
+    <h2>{{ page.position }}</h2>
     <ul>
       <li>
         <p>We are looking for web developers to join our team full-time. Very well-qualified candidates will have been using Ruby on Rails extensively, have an excellent knowledge of Javascript, HTML, and CSS, and experience in TDD.</p>
@@ -26,5 +24,15 @@ position: Web Developer
         <p>Compensation for the {{ page.position }} position depend on Experience, and includes medical benefits, 401k eligibility and other excellent benefits.</p>
       </li>
     </ul>
+
+    <section id="apply-to-thoughtbot">
+    <a href="/apply/">
+      <h3>Apply for the {{ page.position }} position</h3>
+    </a>
+    </section>
+
   </section>
+
+  {% include jobs_about_us.html %}
+
 </div>
