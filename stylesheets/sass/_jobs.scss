@@ -95,10 +95,6 @@ div#jobs-wrapper.job-description {
 
 div#jobs-wrapper {
   section#job-form {
-    float: left;
-    margin-right: $gutter;
-    width: grid-width(8);
-
     h1#logo, #bottom{
       display: none;
     }

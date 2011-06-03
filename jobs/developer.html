@@ -7,7 +7,7 @@ meta_description: Work at thoughtbot.
 position: Web Developer
 ---
 <header id="page-header" class="primary">
-  <h1>Jobs at thoughtbot</h1>
+  <h1>Happy developers make more successful products</h1>
 </header>
 
 <div id="jobs-wrapper" class="job-description">
@@ -25,12 +25,7 @@ position: Web Developer
       </li>
     </ul>
 
-    <section id="apply-to-thoughtbot">
-    <a href="/jobs/apply/">
-      <h3>Apply for the {{ page.position }} position</h3>
-    </a>
-    </section>
-
+    {% include jobs_apply_button.html %}
   </section>
 
   {% include jobs_about_us.html %}

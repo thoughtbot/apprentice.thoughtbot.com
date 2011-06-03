@@ -1488,21 +1488,13 @@ div#jobs-wrapper section#more-about-us {
   width: 655px; }
   div#jobs-wrapper section#more-about-us > ul > li {
     list-style: none; }
-div#jobs-wrapper section#positions {
+
+div#jobs-wrapper.job-description section#positions {
   float: left;
   width: 570px;
   margin-right: 25px; }
-  div#jobs-wrapper section#positions ul {
+  div#jobs-wrapper.job-description section#positions ul {
     list-style: none; }
-div#jobs-wrapper section#job-form {
-  float: left;
-  margin-right: 25px;
-  width: 485px; }
-  div#jobs-wrapper section#job-form h1#logo, div#jobs-wrapper section#job-form #bottom {
-    display: none; }
-  div#jobs-wrapper section#job-form header.info {
-    display: none; }
-
 div#jobs-wrapper.job-description section#more-about-us {
   float: left;
   width: 400px; }
@@ -1523,3 +1515,8 @@ div#jobs-wrapper.job-description section#apply-to-thoughtbot {
       color: rgba(255, 255, 255, 0.6);
       font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       margin-bottom: 0; }
+
+div#jobs-wrapper section#job-form h1#logo, div#jobs-wrapper section#job-form #bottom {
+  display: none; }
+div#jobs-wrapper section#job-form header.info {
+  display: none; }
