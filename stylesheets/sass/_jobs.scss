@@ -35,7 +35,14 @@ div#jobs-wrapper {
       }
     }
   }
+}
 
+
+//************************************************************************//
+// Job Description page. Designer / Developer / Apprentice
+//************************************************************************//
+
+div#jobs-wrapper.job-description {
   section#positions {
     float: left;
     width: grid-width(7);
@@ -46,22 +53,6 @@ div#jobs-wrapper {
     }
   }
 
-  section#job-form {
-    float: left;
-    margin-right: $gutter;
-    width: grid-width(6);
-
-    h1#logo, #bottom{
-      display: none;
-    }
-
-    header.info {
-      display: none;
-    }
-  }
-}
-
-div#jobs-wrapper.job-description {
   section#more-about-us {
     float: left;
     width: grid-width(5);
@@ -74,6 +65,7 @@ div#jobs-wrapper.job-description {
     }
   }
 
+  // Big Red Button
   section#apply-to-thoughtbot {
     margin-top: $lh*1.5;
 
@@ -97,3 +89,22 @@ div#jobs-wrapper.job-description {
   }
 }
 
+//************************************************************************//
+// Job Form
+//************************************************************************//
+
+div#jobs-wrapper {
+  section#job-form {
+    float: left;
+    margin-right: $gutter;
+    width: grid-width(8);
+
+    h1#logo, #bottom{
+      display: none;
+    }
+
+    header.info {
+      display: none;
+    }
+  }
+}
