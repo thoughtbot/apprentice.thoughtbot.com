@@ -800,9 +800,9 @@ a:hover {
     -o-box-shadow: inset 0 -1px 3px #680c12;
     box-shadow: inset 0 -1px 3px #680c12; }
 
-.external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a, div#jobs-wrapper section#current-openings ul li a {
+.external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a {
   padding-right: 13px; }
-  .external:hover, footer#main-footer nav section#products li a:hover, section#products ul li a .check-out:hover, section#workshops section#current-workshops ul li a:hover, div#jobs-wrapper section#current-openings ul li a:hover {
+  .external:hover, footer#main-footer nav section#products li a:hover, section#products ul li a .check-out:hover, section#workshops section#current-workshops ul li a:hover {
     background: url("/images/external.png") right 6px no-repeat; }
 
 img {
