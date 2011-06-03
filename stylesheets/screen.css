@@ -1223,7 +1223,7 @@ section#services {
       margin-top: 4px; }
 
 section#products {
-  margin-bottom: 60px; }
+  margin-bottom: 80px; }
   section#products h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#products ul {
@@ -1231,7 +1231,7 @@ section#products {
     section#products ul li {
       float: left;
       margin-right: 25px;
-      width: 315px;
+      width: 230px;
       /*change when radish is added*/ }
       section#products ul li#hoptoad a div.product-logo img {
         padding-top: 24px; }
