@@ -1490,7 +1490,7 @@ div#jobs-wrapper section#more-about-us {
     list-style: none; }
 div#jobs-wrapper section#positions {
   float: left;
-  width: 485px;
+  width: 570px;
   margin-right: 25px; }
   div#jobs-wrapper section#positions ul {
     list-style: none; }
@@ -1505,7 +1505,11 @@ div#jobs-wrapper section#job-form {
 
 div#jobs-wrapper.job-description section#more-about-us {
   float: left;
-  width: 485px; }
+  width: 400px; }
+  div#jobs-wrapper.job-description section#more-about-us > h2, div#jobs-wrapper.job-description section#more-about-us h4 {
+    color: #6f6f6f; }
+  div#jobs-wrapper.job-description section#more-about-us p {
+    color: #8f8f8f; }
 div#jobs-wrapper.job-description section#apply-to-thoughtbot {
   margin-top: 30px; }
   div#jobs-wrapper.job-description section#apply-to-thoughtbot a {

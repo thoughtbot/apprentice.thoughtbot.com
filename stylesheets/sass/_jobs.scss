@@ -38,7 +38,7 @@ div#jobs-wrapper {
 
   section#positions {
     float: left;
-    width: grid-width(6);
+    width: grid-width(7);
     margin-right: $gutter;
 
     ul {
@@ -64,7 +64,14 @@ div#jobs-wrapper {
 div#jobs-wrapper.job-description {
   section#more-about-us {
     float: left;
-    width: grid-width(6);
+    width: grid-width(5);
+
+    > h2, h4 {
+      color: #6f6f6f;
+    }
+    p {
+      color: #8f8f8f;
+    }
   }
 
   section#apply-to-thoughtbot {
