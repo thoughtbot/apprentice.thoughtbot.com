@@ -163,13 +163,67 @@
           <p>Friendly Identifier adds a human-readable identifier to ActiveRecord objects so they can be used in URLs. The original still exists on <a href="http://code.google.com/p/friendly-identifier/">Google Code</a>. We added a minor feature to it but now recommend <a href="http://github.com/norman/friendly_id">norman/friendly_id</a> instead.</p>
 
           <p><a href="https://github.com/tra/spawn">Spawn</a> provides a &#8216;spawn&#8217; method to easily fork or thread long-running sections of code. This plugin works by creating new database connections in ActiveRecord::Base for the spawned block. We forked it to make it Rails 2.2 compatible. It is still an active project at tra/spawn, however we now typically use DelayedJob or Resque for background processing (DJ by default, Resque if we need multiple queues).</p>
-
         </section>
 
-
+        <section id="pagination">
+          <div id="older-link"><a href="/page/2">&larr; Older</a></div>
+          <div id="newer-link"></div>
+        </section>
 
       </section>
     </section>
+
+    <footer>
+      <section id="footer-container">
+        <nav>
+          <h6>more from thoughtbot</h6>
+
+          <ul id="main-links">
+            <li><a href="#">thoughtbot.com</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Client Handbook</a></li>
+          </ul>
+
+          <ul id="secondary-links">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </nav>
+
+        <section id="products">
+          <section id="hoptoad" class="product">
+            <h6>hoptoad</h6>
+            <a href="#" class="logo">
+              <img src="http://thoughtbot.com/images/products/hoptoad.png" alt="Hoptoad logo">
+            </a>
+          </section>
+
+          <section id="copycopter" class="product">
+            <h6>copycopter</h6>
+            <a href="#" class="logo">
+              <img src="http://thoughtbot.com/images/products/copycopter.png" alt="Hoptoad logo">
+            </a>
+          </section>
+
+          <section id="trajectory" class="product">
+            <h6>trajectory</h6>
+            <a href="#" class="logo">
+              <img src="http://thoughtbot.com/images/products/trajectory.png" alt="Hoptoad logo">
+            </a>
+          </section>
+
+          <section id="radish" class="product">
+            <h6>radish</h6>
+            <a href="#" class="logo">
+              <img src="http://thoughtbot.com/images/products/radish.png" alt="Hoptoad logo">
+            </a>
+          </section>
+        </section>
+      </section>
+    </footer>
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>

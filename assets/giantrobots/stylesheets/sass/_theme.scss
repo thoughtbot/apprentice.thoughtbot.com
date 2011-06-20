@@ -5,7 +5,7 @@ body {
 section#container {
   /*background: url(../images/995-grid.png) repeat-y;*/
   margin: 0 auto;
-  padding: 40px 0;
+  padding: $lh*2 0 $lh*4;
   width: grid-width(12);
 
   header {
@@ -116,6 +116,132 @@ section#container {
         font: 300 36px/38px $sans-serif;
         margin: 0 0 30px 0;
         text-transform: none;
+      }
+    }
+  }
+}
+
+/* Pagination
+------------------------------------------------------------------------------*/
+#pagination {
+  padding: 0 0 $lh*3 (grid-width(2) + $gutter);
+  width: grid-width(7);
+}
+
+#pagination a {
+  color: #444;
+  font: 700 13px/13px $sans-serif;
+  padding: 6px 9px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#pagination a:hover {
+  color: #000;
+}
+
+#pagination #older-link {
+  float: left;
+  padding: 15px 0 0 0;
+  width: grid-width(2);
+}
+
+#pagination #older-link a {
+  margin: 0 0 0 -3px;
+}
+
+#pagination #newer-link {
+  float: left;
+  padding: 15px 0 0 0;
+  text-align: right;
+  width: grid-width(2);
+}
+
+#pagination #newer-link a {
+  margin: 0 -3px 0 0;
+}
+
+/* Footer
+------------------------------------------------------------------------------*/
+footer {
+  background: #efefef;
+  border-top: 1px solid #e0e0e0;
+  padding: $lh*3 0 $lh*6;
+
+  section#footer-container {
+    @extend .clearfix;
+    margin: 0 auto;
+    width: grid-width(12);
+
+    h6 {
+      color: #4a4a4a;
+      font: 300 18px/18px $sans-serif;
+      margin: 0 0 $lh 0;
+    }
+
+    nav {
+      float: left;
+      width: grid-width(4);
+
+      ul {
+        float: left;
+        width: grid-width(2);
+
+        &#secondary-links {
+          margin-left: $gutter;
+        }
+
+        li {
+          color: #7a7a7a;
+          font: 400 14px/18px $serif;
+          margin: 0 0 6px 0;
+
+          a {
+            color: #7a7a7a;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    section#products {
+      @extend .clearfix;
+
+      section.product {
+        float: left;
+        margin-left: $gutter;
+        width: grid-width(2);
+
+        a.logo {
+          background: #e9e9e9;
+          border: 1px solid #dedede;
+          @include border-radius(3px);
+          display: block;
+          height: 100px;
+          padding: 15px 0;
+          text-align: center;
+        }
+
+        &#hoptoad a.logo {
+          padding: 18px 0 14px 0;
+        }
+
+        &#copycopter a.logo {
+          padding: 25px 0 5px 0;
+
+          img {
+            width: 110px;
+          }
+        }
+
+        &#trajectory a.logo {
+          height: 90px;
+          padding: 40px 0 0px 0;
+
+          img {
+            width: 110px;
+          }
+        }
       }
     }
   }
