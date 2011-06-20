@@ -1,3 +1,10 @@
+/* modifications */
+pre {
+  margin: 0 0 12px 0;
+  padding: 10px;
+}
+
+
 /* Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net> */
 
 pre code {
@@ -6,7 +13,7 @@ pre code {
 }
 
 pre {
-  background: #d9d9d9;
+  background: #000;
 }
 
 .comment, .template_comment, .javadoc {

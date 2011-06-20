@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <title>untitled</title>
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
+    <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+    <section id="container">
+      <header>
+        <hgroup>
+          <h1>giant robots smashing into other giant robots</h1>
+          <h2>We are thoughtbot, a web design and development agency in Boston, MA.</h2>
+        </hgroup>
+      </header>
+
+      <section id="posts">
+
+        <section class="post text">
+          <h2 class="title">Copycopter: introducing a simpler way to edit copy</h2>
+
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+          </section>
+
+          <p>Around four months ago we <a href="http://robots.thoughtbot.com/post/3201164937/introducing-copycopter">launched</a> our service for managing copy text in web applications: <a href="https://copycopter.com">Copycopter</a>. If you&#8217;re already riding the choppa, you&#8217;ve probably noticed steady improvements in the user interface. Today, we rolled out another change to make things nicer for non-technical users that want to edit copy text: a simpler editor.</p>
+
+          <h2>What you see is what you get</h2>
+
+          <p>We&#8217;ve done a lot to keep Copycopter simple to use. However, we also didn&#8217;t want to limit developers and designers by enforcing a limited language like textile, so we stuck to good old HTML. The draw back of this approach is that nontechnical users were occasionally confused by the markup in the copy text they wanted to edit. Worse, it was easy for such a user to break the page by accidentally changing the HTML to be invalid. We didn&#8217;t think it was acceptable for every user to be one &#8220;&lt;&#8221; away from a broken page, so we changed this:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/edit_html.png" alt="HTML editor"/></p>
+
+          <p>To this:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/edit_simple.png" alt="Simple editor"/></p>
+
+          <p>If you&#8217;d rather see HTML, don&#8217;t worry - we&#8217;re not leaving anyone out in the cold. One click will bring you back to the HTML editor you know and love:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/switch_editor.png" alt="Switch editor mode"/></p>
+
+          <div style="clear:both"></div>
+
+          <p>We used the excellent <a href="https://github.com/akzhan/jwysiwyg/wiki">jwysiwyg</a> library to create our simple editor. Getting the editor up and running was easy, but making our integration tests work with the editor to ensure that it continued to work was a bit of a challenge.</p>
+
+          <h2>TDDWYSIWYG</h2>
+
+          <p>We used Cucumber to make sure that users could apply formatting to blurbs:</p>
+
+          <pre><code>@javascript
+          Scenario: Apply formatting to blurbs
+            Given the following blurb exists:
+              | project         | key      | draft content |
+              | name: Breakfast | test.key | &lt;p&gt;hello&lt;/p&gt;  |
+            When I go to the edit blurb page for "test.key" on "Breakfast"
+            And I apply the "bold" editor function to "ell"
+            And I apply the "italic" editor function to "el"
+            And I press "Save Blurb"
+            And I go to the blurbs index for the "Breakfast" project
+            Then I should see "&lt;p&gt;h&lt;b&gt;&lt;i&gt;el&lt;/i&gt;l&lt;/b&gt;o&lt;/p&gt;"
+          </code></pre>
+
+          <p>To apply editor functions, we use this step:</p>
+
+          <pre><code>When /^I apply the "([^"]+)" editor function to "([^"]+)"$/ do |function, selection|
+            steps %{
+              When I select "#{selection}" from the editor
+              And I click the "#{function}" editor button
+              And I unfocus the editor
+            }
+          end
+          </code></pre>
+
+          <p>The secret sauce there is being able to select text. We used <a href="https://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> to run Javascript scenarios in Copycopter, so we can use the DOM range and selection API:</p>
+
+          <pre><code>When /^I select "([^"]+)" from the editor$/ do |text|
+            within_editor do
+              page.execute_script(&lt;&lt;-JS)
+                var xpath = "//*/child::text()[contains(., '#{text}')]";
+                var node = document.evaluate(xpath, document, null, XPathResult. ANY_UNORDERED_NODE_TYPE, null).singleNodeValue;
+                if (!node)
+                  throw("Couldn't find text to select");
+                var start = node.data.indexOf('#{text}');
+                var end = start + #{text.size};
+                var selection = window.getSelection();
+                var range = window.document.createRange();
+                range.setStart(node, start);
+                range.setEnd(node, end);
+                selection.removeAllRanges();
+                selection.addRange(range);
+              JS
+            end
+          end
+          </code></pre>
+
+          <p>The &#8220;within_editor&#8221; method selects the iframe created by jwysiwyg, which is possible because of Aaron Gibralter&#8217;s contributions to capybara-webkit. We have several other scenarios for switching modes, handling newlines, and so on.</p>
+
+          <p>If you want to see our new editor in action, you should <a href="https://copycopter.com">check out Copycopter</a>!</p>
+        </section>
+
+
+        <section class="post text">
+          <h2 class="title">github.com/thoughtbot cleanup</h2>
+
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">open source</a></li>
+            </ul>
+          </section>
+
+          <p>Like many of you, we&#8217;ve had a lot of code pass through our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects.</p>
+
+          <h2>Looking for a new home</h2>
+
+          <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+
+          <p><a href="http://github.com/thoughtbot/sortable_table">thoughtbot/sortable_table</a> allows you to click the header rows of HTML tables to sort the contents. We were never quite happy with the implementation and we typically question the need for the feature when a client requests it. We tend to find there&#8217;s a better UI we can provide to solve the need they&#8217;re trying to solve with sortable tables. We haven&#8217;t made a substantial commit to it in about 2.5 years. People may be using it: there are 160 watchers.</p>
+
+          <h2>New home</h2>
+
+          <p><a href="http://github.com/tsaleh/ldap-activerecord-gateway">tsaleh/ldap-activerecord-gateway</a> is an implementation of an LDAP server which uses ActiveRecord as a data store. Tammer &#8220;Shoulda&#8221; Saleh is the new maintainer.</p>
+
+          <h2>Deprecations</h2>
+
+          <p>Some of our projects have been replaced by better libraries or their functionality was added by Rails. We&#8217;re deprecating them, which entails this announcement, updating the READMEs, and turning off Github Issues and Wikis for these projects.</p>
+
+          <p><a href="http://github.com/thoughtbot/what">thoughtbot/what</a> provided boolean query methods on Mime::Type instances for the native Rails mime-types. We now use the #respond_to method or the mobile_fu plugin and we recommend you do, too.</p>
+
+          <p><a href="http://github.com/thoughtbot/when">thoughtbot/when</a> added :if and :unless conditions to ActiveRecord callbacks and validations and ActionController filters. It can still be used on Rails apps pre-2.1, but it has been built into Rails since the 2.1 release.</p>
+
+          <p><a href="http://github.com/thoughtbot/capybara-envjs-fixes">thoughtbot/capybara-envjs-fixes</a> was a set of fixes to the capybara-envjs library during one of our earlier attempts at integration testing Javascript (the search for the Holy Grail). It was always intended as a temporary library. The Cucumber-Capybara-Env.js stack was full of code that was hacks piled on hacks piled on hacks.</p>
+
+          <p>Instead of capybara-envjs-fixes, we now use <a href="http://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> on almost all our projects. It&#8217;s receiving a lot of interest from the community, with lots of good patches coming in. We&#8217;re actively maintaining it and recommend you give it a try for your integration testing stack.</p>
+
+          <p><a href="http://github.com/thoughtbot/mile_marker">thoughtbot/mile_marker</a> was a project for visually setting expectations to clients during development, particularly for the staging environment. We haven&#8217;t used it since Rails 2.x and now simply use a &#8220;wip&#8221; CSS class when we need to accomplish the same goal.</p>
+
+          <p><a href="http://github.com/thoughtbot/squirrel">thoughtbot/squirrel</a> was a a Ruby-esque way of querying SQL. ActiveRelation, named scopes, and projects like Searchlogic have since been released and are much nicer and more powerful.</p>
+
+          <p><a href="http://github.com/thoughtbot/report_card">thoughtbot/report_card</a> generated a CI metrics report using metric_fu and notified Campfire. It was deeply tied to Integrity, which we no longer use. We must not have cared too much about the metrics, either, because we haven&#8217;t bothered to set up metric_fu again with Hudson. If you&#8217;d like to, check out the Hudson metric_fu plugin.</p>
+
+          <p><a href="http://github.com/thoughtbot/quietbacktrace">thoughtbot/quietbacktrace</a> was a filtering mechanism for deleting extra line noise in Test::Unit backtraces. It was added to Rails 2.3.</p>
+
+          <p><a href="http://github.com/thoughtbot/clearance-twitter">thoughtbot/clearance-twitter</a> was a Twitter OAuth library that played nicely with Clearance. Omniauth is the bomb and should be used instead.</p>
+
+          <h2>Deleting forks</h2>
+
+          <p>Some projects were forks where we needed to add additional functionality or fix bugs. We&#8217;re deleting those repos and mentioning them here with alternatives in case you were ever using one of our forks.</p>
+
+          <p><a href="https://github.com/stefankroes/ancestry">Ancestry</a> allows the records of a Ruby on Rails ActiveRecord model to be organised as a tree structure (or hierarchy). It uses a single, intuitively formatted database column, using a variation on the materialised path pattern. We forked it to add Rails 3 functionality, which is now included in Ancestry. We still turn to this library when we need this functionality and recommend to others.</p>
+
+          <p>Friendly Identifier adds a human-readable identifier to ActiveRecord objects so they can be used in URLs. The original still exists on <a href="http://code.google.com/p/friendly-identifier/">Google Code</a>. We added a minor feature to it but now recommend <a href="http://github.com/norman/friendly_id">norman/friendly_id</a> instead.</p>
+
+          <p><a href="https://github.com/tra/spawn">Spawn</a> provides a &#8216;spawn&#8217; method to easily fork or thread long-running sections of code. This plugin works by creating new database connections in ActiveRecord::Base for the spawned block. We forked it to make it Rails 2.2 compatible. It is still an active project at tra/spawn, however we now typically use DelayedJob or Resque for background processing (DJ by default, Resque if we need multiple queues).</p>
+
+        </section>
+
+
+
+      </section>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

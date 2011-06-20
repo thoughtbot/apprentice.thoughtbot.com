@@ -1,0 +1,122 @@
+body {
+  color: #333;
+}
+
+section#container {
+  /*background: url(../images/995-grid.png) repeat-y;*/
+  margin: 0 auto;
+  padding: 40px 0;
+  width: grid-width(12);
+
+  header {
+    background: url(/assets/giantrobots/images/logo.png) 33px 18px no-repeat;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 $lh*2 0;
+    padding: 40px 0 $lh*3 0;
+
+    hgroup {
+      padding: 0 0 0 grid-width(2) + $gutter;
+
+      h1 {
+        font: 700 12px/14px $sans-serif;
+        /*font-style: italic;*/
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        color: #777;
+        font: 400 13px/16px $serif;
+        font-style: italic;
+      }
+    }
+  }
+
+  section#posts {
+    width: grid-width(9);
+
+    .post {
+      border-bottom: 3px solid #dddddd;
+      margin: 0 0 $lh*3 0;
+      padding: 0 0 $lh*1 grid-width(2) +  $gutter;
+      position: relative;
+
+      .meta-info {
+        left: 0;
+        position: absolute;
+        top: 16px;
+        width: grid-width(2);
+
+        p.post-date {
+          font: 400 14px/14px $serif;
+          margin: 0 0 $lh*2 0;
+        }
+
+        p.tagged {
+          font: 600 12px/12px $serif;
+          margin: 0 0 10px 0;
+          text-transform: uppercase;
+        }
+
+        ul.tags {
+          color: #777;
+          font: 400 13px/13px $serif;
+          font-style: italic;
+
+          li {
+            margin: 0 0 10px 0;
+            left: -14px;
+            position: relative;
+
+            a {
+              color: #777;
+              font-weight: normal;
+              text-decoration: none;
+            }
+
+            &:before {
+              content: "\2014";
+            }
+          }
+        }
+      }
+
+      h2, h3 {
+        font: 700 14px/21px $sans-serif;
+        margin: 20px 0 0px 0;
+        text-transform: uppercase;
+      }
+
+      p {
+        font: 400 14px/22px $sans-serif;
+        margin: 0 0 12px 0;
+      }
+
+      img {
+        max-width: grid-width(7);
+      }
+
+      a {
+        color: $red;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+         text-decoration: underline
+        }
+      }
+
+      pre, code {
+        overflow-x: auto;
+        white-space: pre;
+      }
+
+      /* text posts */
+      h2.title {
+        font: 300 36px/38px $sans-serif;
+        margin: 0 0 30px 0;
+        text-transform: none;
+      }
+    }
+  }
+}
