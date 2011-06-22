@@ -310,51 +310,40 @@
 
           <p>We used Cucumber to make sure that users could apply formatting to blurbs:</p>
 
-          <pre><code>@javascript
-          Scenario: Apply formatting to blurbs
-            Given the following blurb exists:
-              | project         | key      | draft content |
-              | name: Breakfast | test.key | &lt;p&gt;hello&lt;/p&gt;  |
-            When I go to the edit blurb page for "test.key" on "Breakfast"
-            And I apply the "bold" editor function to "ell"
-            And I apply the "italic" editor function to "el"
-            And I press "Save Blurb"
-            And I go to the blurbs index for the "Breakfast" project
-            Then I should see "&lt;p&gt;h&lt;b&gt;&lt;i&gt;el&lt;/i&gt;l&lt;/b&gt;o&lt;/p&gt;"
-          </code></pre>
+<pre><code>require 'rubygems'
+require 'redis'
+require 'json'
 
-          <p>To apply editor functions, we use this step:</p>
+$redis = Redis.new(:timeout =&gt; 0)
 
-          <pre><code>When /^I apply the "([^"]+)" editor function to "([^"]+)"$/ do |function, selection|
-            steps %{
-              When I select "#{selection}" from the editor
-              And I click the "#{function}" editor button
-              And I unfocus the editor
-            }
-          end
-          </code></pre>
+$redis.subscribe('rubyonrails', 'ruby-lang') do |on|
+  on.message do |channel, msg|
+    data = JSON.parse(msg)
+    puts "##{channel} - [#{data['user']}]: #{data['msg']}"
+  end
+end</code></pre>
 
           <p>The secret sauce there is being able to select text. We used <a href="https://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> to run Javascript scenarios in Copycopter, so we can use the DOM range and selection API:</p>
 
-          <pre><code>When /^I select "([^"]+)" from the editor$/ do |text|
-            within_editor do
-              page.execute_script(&lt;&lt;-JS)
-                var xpath = "//*/child::text()[contains(., '#{text}')]";
-                var node = document.evaluate(xpath, document, null, XPathResult. ANY_UNORDERED_NODE_TYPE, null).singleNodeValue;
-                if (!node)
-                  throw("Couldn't find text to select");
-                var start = node.data.indexOf('#{text}');
-                var end = start + #{text.size};
-                var selection = window.getSelection();
-                var range = window.document.createRange();
-                range.setStart(node, start);
-                range.setEnd(node, end);
-                selection.removeAllRanges();
-                selection.addRange(range);
-              JS
-            end
-          end
-          </code></pre>
+<pre><code>When /^I select "([^"]+)" from the editor$/ do |text|
+  within_editor do
+    page.execute_script(&lt;&lt;-JS)
+      var xpath = "//*/child::text()[contains(., '#{text}')]";
+      var node = document.evaluate(xpath, document, null, XPathResult. ANY_UNORDERED_NODE_TYPE, null).singleNodeValue;
+      if (!node)
+        throw("Couldn't find text to select");
+      var start = node.data.indexOf('#{text}');
+      var end = start + #{text.size};
+      var selection = window.getSelection();
+      var range = window.document.createRange();
+      range.setStart(node, start);
+      range.setEnd(node, end);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    JS
+  end
+end
+</code></pre>
 
           <p>The &#8220;within_editor&#8221; method selects the iframe created by jwysiwyg, which is possible because of Aaron Gibralter&#8217;s contributions to capybara-webkit. We have several other scenarios for switching modes, handling newlines, and so on.</p>
 

@@ -89,7 +89,7 @@ code {
   padding: 15px; }
 
 pre, code {
-  font: 12px/18px monaco, "inconsolata-1", "inconsolata-2";
+  font: 12px/18px monaco, monospace;
   overflow-x: auto;
   white-space: pre; }
 
