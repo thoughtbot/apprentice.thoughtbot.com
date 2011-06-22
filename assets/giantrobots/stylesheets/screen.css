@@ -210,6 +210,12 @@ section#container {
         font: 700 12px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 6px 0;
         text-transform: uppercase; }
+        section#container header hgroup h1 a {
+          color: #333;
+          font-weight: 700;
+          text-decoration: none; }
+          section#container header hgroup h1 a:hover {
+            color: #ad141e; }
       section#container header hgroup h2 {
         color: #777;
         font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif;
@@ -223,7 +229,8 @@ section#container {
         margin: 0 15px 0 0; }
         section#container header nav ul li {
           float: right;
-          width: 40px; }
+          margin-left: 15px;
+          width: 42px; }
           section#container header nav ul li a {
             display: block;
             height: 41px; }
@@ -235,6 +242,14 @@ section#container {
             transitition: 0.5s; }
             section#container header nav ul li#twitter a:hover {
               background: url("../images/twitter.png") -8px -48px no-repeat; }
+          section#container header nav ul li#contact a {
+            background: url("../images/contact.png") 0 -1px no-repeat;
+            text-indent: -9999px;
+            -webkit-transition: 0.5s;
+            -moz-transitition: 0.5s;
+            transitition: 0.5s; }
+            section#container header nav ul li#contact a:hover {
+              background: url("../images/contact.png") 0 -47px no-repeat; }
   section#container aside {
     float: left;
     margin: 10px 0 0 25px;
@@ -282,6 +297,8 @@ section#container {
       padding: 0 0 20px 170px;
       position: relative;
       /* text posts */
+      /*photo and video posts */
+      /* link posts */
       /* quote posts */ }
       section#container section#posts .post .meta-info {
         left: 10px;
@@ -291,12 +308,16 @@ section#container {
         section#container section#posts .post .meta-info p.post-date {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 40px 0; }
+          section#container section#posts .post .meta-info p.post-date a {
+            color: #333;
+            font-weight: 400; }
         section#container section#posts .post .meta-info p.tagged {
           font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 10px 0;
           text-transform: uppercase; }
         section#container section#posts .post .meta-info ul.tags {
-          color: #777; }
+          color: #777;
+          margin: 0 0 30px 0; }
           section#container section#posts .post .meta-info ul.tags li {
             font: 400 13px/13px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
@@ -312,6 +333,12 @@ section#container {
               left: -14px;
               position: absolute;
               top: 0; }
+        section#container section#posts .post .meta-info p.comments {
+          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
+          width: 145px; }
+          section#container section#posts .post .meta-info p.comments a {
+            color: #333;
+            font-weight: 400; }
       section#container section#posts .post h2, section#container section#posts .post h3 {
         color: #111;
         font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -348,27 +375,34 @@ section#container {
           text-decoration: underline; }
       section#container section#posts .post em {
         font-style: italic; }
-      section#container section#posts .post section.post-footer p.author {
-        font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-        font-style: italic;
-        left: -12px;
-        position: relative;
-        /*top: 26px;*/ }
-        section#container section#posts .post section.post-footer p.author:before {
-          content: "\2014"; }
-      section#container section#posts .post section.post-footer p.comments {
-        font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-        left: -160px;
-        position: relative;
-        top: 26px;
-        width: 145px; }
-        section#container section#posts .post section.post-footer p.comments a {
-          color: #333;
-          font-weight: 400; }
+      section#container section#posts .post section.post-footer {
+        margin: 20px 0 0 0; }
+        section#container section#posts .post section.post-footer p.author {
+          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
+          font-style: italic;
+          left: -12px;
+          position: relative; }
+          section#container section#posts .post section.post-footer p.author:before {
+            content: "\2014"; }
       section#container section#posts .post h2.title {
         font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 30px 0;
         text-transform: none; }
+      section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
+        top: 0px; }
+      section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
+        margin-top: 8px; }
+      section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
+        padding-bottom: 0px;
+        position: relative;
+        top: -30px; }
+      section#container section#posts .post.link .meta-info {
+        top: 10px; }
+      section#container section#posts .post.link h2.title {
+        font-size: 24px;
+        line-height: 30px; }
+        section#container section#posts .post.link h2.title a {
+          font-weight: 400; }
       section#container section#posts .post.quote .meta-info {
         top: 8px; }
       section#container section#posts .post.quote q {
@@ -392,7 +426,9 @@ section#container {
       section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
         font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#container section#posts .post.quote .post-footer p.comments {
-        padding-bottom: 20px; }
+        padding-bottom: 0px;
+        position: relative;
+        top: -18px; }
 
 /* Pagination
 ------------------------------------------------------------------------------*/
@@ -461,6 +497,8 @@ footer {
           footer section#footer-container nav ul li a {
             color: #7a7a7a;
             text-decoration: none; }
+            footer section#footer-container nav ul li a:hover {
+              color: #3a3a3a; }
     footer section#footer-container section#products {
       float: left;
       width: 655px; }
