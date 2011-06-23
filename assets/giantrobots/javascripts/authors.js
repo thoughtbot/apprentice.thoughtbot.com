@@ -1,5 +1,4 @@
 jQuery(document).ready(function() {
-	$('a.zoom').fancyZoom();
 	authors = {
 		dancroak: "Dan Croak",
 		qrush: "Nick Quaranto",
@@ -33,17 +32,5 @@ jQuery(document).ready(function() {
 	jQuery(".author").each(function(i) {
 		author = this.innerHTML;
 		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
-	});
-
-	jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
-
-
-	hljs.initHighlightingOnLoad();
-
-	jQuery(".page-top").each(function(i) {
-		var post = jQuery(this);
-		if(parseInt(post.attr('id')) <= 722112946) {
-			post.addClass("old");
-		}
 	});
 });

@@ -5,7 +5,7 @@
     <title>{block:PostSummary}{PostSummary} &mdash; {/block:PostSummary}{Title}</title>
     {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
     <meta name="keywords" content="{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}" />
-    <link rel="stylesheet" href="http://dl.dropbox.com/u/5393210/gr/css/screen.css" media="screen">
+    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/screen.css" media="screen">
     <link rel="shortcut icon" href="http://thoughtbot.com/favicon.ico">
     <link rel="alternate" type="application/rss+xml" href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" >
     <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
@@ -267,53 +267,19 @@
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" charset="utf-8"></script>
+    <script src="http://thoughtbot.com/assets/giantrobots/javascripts/authors.js" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   	<script>
-  	jQuery(document).ready(function() {
-  	authors = {
-    		dancroak: "Dan Croak",
-    		qrush: "Nick Quaranto",
-    		cpytel: "Chad Pytel",
-    		lolconomy: "Mike Burns",
-    		asimeoni: "Angelo Simeoni",
-    		emill: "Eric Mill",
-    		fyates: "Fred Yates",
-    		jankowski: "Matt Jankowski",
-    		jferris: "Joe Ferris",
-    		jyurek: "Jon Yurek",
-    		kevin: "Kevin Burg",
-    		possibilist: "Floyd Wright",
-    		tsaleh: "Tammer Saleh",
-    		thoughtbotjc: "Jared Carroll",
-    		thoughtbotet: "Eric Torrey",
-    		thoughtbotjm: "Jason Martinez",
-    		thoughtbotmmk: "Mike McKenna",
-    		thoughtbotmr: "Micah Rich",
-    		jasonmorrisontb: "Jason Morrison",
-    		jdclayton: "Josh Clayton",
-    		tristandunn: "Tristan Dunn",
-    		ubuwaits: "Chad Mazzola",
-    		kylehasmanypixels: "Kyle Fiedler",
-    		hgimenez: "Harold Giménez",
-    		elindsay: "Emma Lindsay",
-        mmongeau: "Matt Mongeau",
-        plapier: "Phil LaPier"
-    	};
+      jQuery(document).ready(function() {
+      	jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
 
-    	jQuery(".author").each(function(i) {
-    		author = this.innerHTML;
-    		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
-    	});
-
-    	jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
-
-    	jQuery(".page-top").each(function(i) {
-    		var post = jQuery(this);
-    		if(parseInt(post.attr('id')) <= 722112946) {
-    			post.addClass("old");
-    		}
-    	});
-    });
+      	jQuery(".page-top").each(function(i) {
+      		var post = jQuery(this);
+      		if(parseInt(post.attr('id')) <= 722112946) {
+      			post.addClass("old");
+      		}
+      	});
+      });
     </script>
 
     <script type="text/javascript">
