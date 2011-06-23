@@ -489,6 +489,15 @@ section#container section#posts .post #disqus_thread {
     font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
   section#container section#posts .post #disqus_thread div.dsq-comment-text {
     font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
+  section#container section#posts .post #disqus_thread .dsq-comment-footer a {
+    color: #777;
+    font-weight: 400; }
+  section#container section#posts .post #disqus_thread #dsq-footer li {
+    margin-right: 12px; }
+    section#container section#posts .post #disqus_thread #dsq-footer li a {
+      color: #333;
+      text-decoration: none;
+      font-style: normal; }
 
 /* Pagination
 ------------------------------------------------------------------------------*/

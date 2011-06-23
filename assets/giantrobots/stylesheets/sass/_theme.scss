@@ -479,6 +479,25 @@ section#container section#posts .post #disqus_thread {
   div.dsq-comment-text {
     font: 400 14px/22px $sans-serif;
   }
+
+  .dsq-comment-footer {
+    a {
+      color: #777;
+      font-weight: 400;
+    }
+  }
+
+  #dsq-footer {
+    li {
+      margin-right: 12px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        font-style: normal;
+      }
+    }
+  }
 }
 
 /* Pagination
