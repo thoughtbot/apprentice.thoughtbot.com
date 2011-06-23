@@ -451,15 +451,28 @@ section#container {
   float: none !important;
 }
 
+// disqus styles
 section#container section#posts .post #disqus_thread {
   border-top: 1px solid #ddd;
   margin-top: 60px;
 
   ul {
     li {
+      margin: 0 3px 5px 0;
+
       &:after {
         content: none;
       }
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  #dsq-account-dropdown {
+    a {
+      font-family: $sans-serif;
     }
   }
 

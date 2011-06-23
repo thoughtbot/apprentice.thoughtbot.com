@@ -479,8 +479,14 @@ section#container {
 section#container section#posts .post #disqus_thread {
   border-top: 1px solid #ddd;
   margin-top: 60px; }
-  section#container section#posts .post #disqus_thread ul li:after {
-    content: none; }
+  section#container section#posts .post #disqus_thread ul li {
+    margin: 0 3px 5px 0; }
+    section#container section#posts .post #disqus_thread ul li:after {
+      content: none; }
+  section#container section#posts .post #disqus_thread h3 {
+    margin-bottom: 10px; }
+  section#container section#posts .post #disqus_thread #dsq-account-dropdown a {
+    font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
   section#container section#posts .post #disqus_thread div.dsq-comment-text {
     font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
 
