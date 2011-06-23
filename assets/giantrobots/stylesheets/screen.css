@@ -479,9 +479,10 @@ section#container {
 section#container section#posts .post #disqus_thread {
   border-top: 1px solid #ddd;
   margin-top: 60px; }
-  section#container section#posts .post #disqus_thread ul li {
-    margin: 0 3px 5px 0;
+  section#container section#posts .post #disqus_thread ul li.dsq-post-as {
     position: static; }
+  section#container section#posts .post #disqus_thread ul li {
+    margin: 0 3px 5px 0; }
     section#container section#posts .post #disqus_thread ul li:after {
       content: none; }
   section#container section#posts .post #disqus_thread h3 {

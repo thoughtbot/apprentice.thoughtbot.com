@@ -457,9 +457,14 @@ section#container section#posts .post #disqus_thread {
   margin-top: 60px;
 
   ul {
+    li.dsq-post-as {
+      position: static;
+    }
+  }
+
+  ul {
     li {
       margin: 0 3px 5px 0;
-      position: static;
 
       &:after {
         content: none;
