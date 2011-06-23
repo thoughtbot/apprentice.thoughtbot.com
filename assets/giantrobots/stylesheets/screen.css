@@ -83,21 +83,19 @@ table {
 
 /* modifications */
 pre {
-  margin: 0 0 12px 0; }
-
-code {
+  background: #ececec;
+  margin: 0 0 12px 0;
   padding: 15px; }
 
 pre, code {
-  font: 12px/18px monaco, monospace;
+  font: 13px/18px monaco, monospace;
   overflow-x: auto;
   white-space: pre; }
 
 /* Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net> */
 pre code {
   display: block;
-  color: #000;
-  background: #e9e9e9; }
+  color: #000; }
 
 pre .subst,
 pre .title {
@@ -189,6 +187,7 @@ pre .diff .change {
   background: #bccff9; }
 
 body {
+  background: #fff;
   border-top: 4px solid #ad141e;
   color: #333; }
 
@@ -198,7 +197,7 @@ section#container {
   padding: 30px 0 100px;
   width: 995px; }
   section#container header {
-    background: url("/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
+    background: url("http://dl.dropbox.com/u/5393210/gr/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 40px 0;
     padding: 0 0 60px 0; }
@@ -235,27 +234,27 @@ section#container {
             display: block;
             height: 41px; }
           section#container header nav ul li#twitter a {
-            background: url("../images/twitter.png") -8px -1px no-repeat;
+            background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -1px no-repeat;
             text-indent: -9999px;
             -webkit-transition: 0.5s;
             -moz-transitition: 0.5s;
             transitition: 0.5s; }
             section#container header nav ul li#twitter a:hover {
-              background: url("../images/twitter.png") -8px -48px no-repeat; }
+              background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -48px no-repeat; }
           section#container header nav ul li#contact a {
-            background: url("../images/contact.png") 0 -1px no-repeat;
+            background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -1px no-repeat;
             text-indent: -9999px;
             -webkit-transition: 0.5s;
             -moz-transitition: 0.5s;
             transitition: 0.5s; }
             section#container header nav ul li#contact a:hover {
-              background: url("../images/contact.png") 0 -47px no-repeat; }
+              background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -47px no-repeat; }
   section#container aside {
     float: left;
     margin: 10px 0 0 25px;
     width: 230px; }
     section#container aside .message a {
-      background: #e9e9e9;
+      background: #eaeaea;
       border: 1px solid #dedede;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
@@ -277,7 +276,7 @@ section#container {
         margin: 0 0 4px 0;
         text-decoration: none; }
       section#container aside .message a h4 {
-        color: #333;
+        color: #444;
         font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-decoration: none; }
       section#container aside .message a:hover {
@@ -307,7 +306,7 @@ section#container {
         width: 145px; }
         section#container section#posts .post .meta-info p.post-date {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 40px 0; }
+          margin: 0 0 44px 0; }
           section#container section#posts .post .meta-info p.post-date a {
             color: #333;
             font-weight: 400; }
@@ -317,9 +316,9 @@ section#container {
           text-transform: uppercase; }
         section#container section#posts .post .meta-info ul.tags {
           color: #777;
-          margin: 0 0 30px 0; }
+          margin: 0 0 33px 0; }
           section#container section#posts .post .meta-info ul.tags li {
-            font: 400 13px/13px "skolar-1", "skolar-2", Georgia, serif;
+            font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
             margin: 0 0 10px 0;
             position: relative; }
@@ -344,10 +343,18 @@ section#container {
         font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 20px 0 0px 0;
         text-transform: uppercase; }
+      section#container section#posts .post h4 {
+        color: #333;
+        font: 700 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 20px 0 0px 0; }
       section#container section#posts .post p {
-        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 12px 0; }
       section#container section#posts .post blockquote {
+        color: #555;
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        font-style: italic;
+        margin: 0 0 12px 0;
         padding: 0 30px 0 30px; }
         section#container section#posts .post blockquote p {
           color: #555;
@@ -355,7 +362,7 @@ section#container {
       section#container section#posts .post ul {
         margin: 0 0 16px 0; }
         section#container section#posts .post ul li {
-          font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           margin: 0 0 4px 0;
           position: relative; }
           section#container section#posts .post ul li:after {
@@ -365,16 +372,42 @@ section#container {
             left: -12px;
             position: absolute;
             top: -2px; }
+      section#container section#posts .post ol {
+        margin: 0 0 16px 0; }
+        section#container section#posts .post ol li {
+          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+          list-style: outside;
+          list-style-type: decimal;
+          margin: 0 0 4px 0;
+          position: relative; }
       section#container section#posts .post img {
-        max-width: 570px; }
+        max-width: 570px;
+        margin-bottom: 10px; }
       section#container section#posts .post a {
         color: #ad141e;
-        font-weight: bold;
+        font-weight: 700;
         text-decoration: none; }
         section#container section#posts .post a:hover {
           text-decoration: underline; }
       section#container section#posts .post em {
         font-style: italic; }
+      section#container section#posts .post table {
+        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        width: 570px; }
+        section#container section#posts .post table tr {
+          border-bottom: 1px solid #ddd; }
+        section#container section#posts .post table td,
+        section#container section#posts .post table th {
+          padding: 4px;
+          width: 50%; }
+        section#container section#posts .post table th {
+          font-weight: 700;
+          text-align: left; }
+      section#container section#posts .post dl {
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 10px 0 20px; }
+        section#container section#posts .post dl dd {
+          margin: 0 0 8px 20px; }
       section#container section#posts .post section.post-footer {
         margin: 20px 0 0 0; }
         section#container section#posts .post section.post-footer p.author {
@@ -424,16 +457,22 @@ section#container {
         margin: 10px 0 0 0;
         position: relative; }
       section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
-        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#container section#posts .post.quote .post-footer p.comments {
         padding-bottom: 0px;
         position: relative;
         top: -18px; }
 
+.old img {
+  float: none !important; }
+
+section#container section#posts .post #disqus_thread ul li:after {
+  content: none; }
+
 /* Pagination
 ------------------------------------------------------------------------------*/
 #pagination {
-  padding: 0 0 60px 170px;
+  padding: 0 0 20px 170px;
   width: 570px; }
 
 #pagination a {
@@ -453,7 +492,7 @@ section#container {
   width: 145px; }
 
 #pagination #older-link a {
-  background: url("../images/arrows.png") 0 10px no-repeat;
+  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px; }
 
 #pagination #newer-link {
@@ -464,7 +503,7 @@ section#container {
   width: 145px; }
 
 #pagination #newer-link a {
-  background: url("../images/arrows.png") right -18px no-repeat;
+  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
 /* Footer

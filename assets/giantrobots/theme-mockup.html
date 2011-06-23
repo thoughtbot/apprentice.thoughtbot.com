@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
+    <meta name="keywords" content="copycopter, open source, github, redis, pubsub, nosql, json, radish, key-value store, object-oriented programming, rails, rails recipe, rails tutorial, tdd, test-driven development, ">
     <title>giant robots smashing into other giant robots</title>
     <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
     <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
@@ -28,23 +29,53 @@
       <section id="posts">
 
          <section class="post text">
-            <h2 class="title">github.com/thoughtbot cleanup</h2>
-
             <section class="meta-info">
               <p class="post-date"><a href="#">June 14, 2011</a></p>
               <p class="tagged">Tagged:</p>
               <ul class="tags">
                 <li><a href="#">open source</a></li>
+                <li><a href="#">open source</a></li>
+                <li><a href="#">open source</a></li>
+                <li><a href="#">open source</a></li>
               </ul>
+              <p class="comments"><a href="#">25 comments</a></p>
             </section>
 
-            <p>Like many of you, we&#8217;ve had a lot of code pass through our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects.</p>
+            <h2 class="title">github.com/thoughtbot cleanup</h2>
 
-            <h2>Looking for a new home</h2>
+            <p>Like many of you, we&#8217;ve had a lot of code pass through our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects. We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
 
             <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
 
+
+            <ol>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+            </ol>
+
+
+            <h2>Looking for a new home</h2>
+
+            <dl><dt><code>tmux new -s session_name</code></dt>
+              <dd>creates a new tmux session named session_name</dd>
+              <dt><code>tmux attach -t session_name</code></dt>
+              <dd>attaches to an existing tmux session named session_name</dd>
+              <dt><code>tmux switch -t session_name</code></dt>
+              <dd>switches to an existing session named session_name</dd>
+              <dt><code>tmux list-sessions</code></dt>
+              <dd>lists existing tmux sessions</dd>
+              <dt><code>tmux detach (prefix + d)</code></dt>
+              <dd>detach the currently attached session</dd>
+            </dl>
+
+            <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+
+            <h4>This is an h4 title right here</h4>
+
             <p><a href="http://github.com/thoughtbot/sortable_table">thoughtbot/sortable_table</a> allows you to click the header rows of HTML tables to sort the contents. We were never quite happy with the implementation and we typically question the need for the feature when a client requests it. We tend to find there&#8217;s a better UI we can provide to solve the need they&#8217;re trying to solve with sortable tables. We haven&#8217;t made a substantial commit to it in about 2.5 years. People may be using it: there are 160 watchers.</p>
+
+<table><tr><th>Egg (Free plan)</th><th>   5 days</th></tr><tr><td>Tadpole</td><td>          14 days</td></tr><tr><td>Heroku Basic</td><td>     14 days</td></tr><tr><td>Toad</td><td>             21 days</td></tr><tr><td>Heroku Plus</td><td>      21 days</td></tr><tr><td>Bullfrog</td><td>         30 days</td></tr><tr><td>Bossfrog</td><td>         60 days</td></tr></table>
 
             <h2>New home</h2>
 
@@ -52,9 +83,13 @@
 
             <h2>Deprecations</h2>
 
-            <p>Some of our projects have been replaced by better libraries or their functionality was added by Rails. We&#8217;re deprecating them, which entails this announcement, updating the READMEs, and turning off Github Issues and Wikis for these projects.</p>
+            <p>Some of our <code>projects have been replaced by better</code> libraries or their functionality was added by Rails. We&#8217;re deprecating them, which entails this announcement, updating the READMEs, and turning off Github Issues and Wikis for these projects.</p>
+
+            <blockquote>Instead of capybara-envjs-fixes, we now use <a href="http://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> on almost all our projects. It&#8217;s receiving a lot of interest from the community, with lots of good patches coming in. We&#8217;re actively maintaining it and recommend you give it a try for your integration testing stack.</blockquote>
 
             <p><a href="http://github.com/thoughtbot/what">thoughtbot/what</a> provided boolean query methods on Mime::Type instances for the native Rails mime-types. We now use the #respond_to method or the mobile_fu plugin and we recommend you do, too.</p>
+
+<img src="http://ui.thoughtbot.com/assets/2011LamborghiniAventador.jpg">
 
             <p><a href="http://github.com/thoughtbot/when">thoughtbot/when</a> added :if and :unless conditions to ActiveRecord callbacks and validations and ActionController filters. It can still be used on Rails apps pre-2.1, but it has been built into Rails since the 2.1 release.</p>
 
@@ -350,7 +385,7 @@ end
           <p>If you want to see our new editor in action, you should <a href="https://copycopter.com">check out Copycopter</a>!</p>
 
           <section class="post-footer">
-            <p class="author">Joe Ferris</p>
+            <p class="author">ubuwaits</p>
           </section>
         </section>
 
@@ -365,11 +400,10 @@ end
       </section>
 
       <aside>
-        <section class="message">
+        <section id="addled" class="message" style="display:none;">
           <a href="#">
-            <img src="http://thoughtbot.com/assets/giantrobots/images/sidebar-workshops.png">
-            <h3>Test-Driven Rails</h3>
-            <h4>Code Confidently</h4>
+            <h3 class="addled-name"></h3>
+            <h4 class="addled-value-prop"></h4>
           </a>
         </section>
       </aside>
@@ -426,5 +460,69 @@ end
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+  	<script>
+  	jQuery(document).ready(function() {
+  	authors = {
+    		dancroak: "Dan Croak",
+    		qrush: "Nick Quaranto",
+    		cpytel: "Chad Pytel",
+    		lolconomy: "Mike Burns",
+    		asimeoni: "Angelo Simeoni",
+    		emill: "Eric Mill",
+    		fyates: "Fred Yates",
+    		jankowski: "Matt Jankowski",
+    		jferris: "Joe Ferris",
+    		jyurek: "Jon Yurek",
+    		kevin: "Kevin Burg",
+    		possibilist: "Floyd Wright",
+    		tsaleh: "Tammer Saleh",
+    		thoughtbotjc: "Jared Carroll",
+    		thoughtbotet: "Eric Torrey",
+    		thoughtbotjm: "Jason Martinez",
+    		thoughtbotmmk: "Mike McKenna",
+    		thoughtbotmr: "Micah Rich",
+    		jasonmorrisontb: "Jason Morrison",
+    		jdclayton: "Josh Clayton",
+    		tristandunn: "Tristan Dunn",
+    		ubuwaits: "Chad Mazzola",
+    		kylehasmanypixels: "Kyle Fiedler",
+    		hgimenez: "Harold Giménez",
+    		elindsay: "Emma Lindsay",
+        mmongeau: "Matt Mongeau",
+        plapier: "Phil LaPier"
+    	};
+
+    	jQuery(".author").each(function(i) {
+    		author = this.innerHTML;
+    		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
+    	});
+
+    	jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
+
+    	jQuery(".page-top").each(function(i) {
+    		var post = jQuery(this);
+    		if(parseInt(post.attr('id')) <= 722112946) {
+    			post.addClass("old");
+    		}
+    	});
+    });
+    </script>
+
+    <script type="text/javascript">
+    (function() {
+      $(function() {
+        var keywords = encodeURIComponent($("meta[name='keywords']").attr("content").split(','));
+        $.getJSON("http://addled.heroku.com/ad/" + keywords, function(data) {
+          $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
+          $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
+          $('.addled-name').html(data.name);
+          $('.addled-value-prop').html(data.value_prop);
+        }).done(function() {
+          $('#addled').fadeIn('slow');
+        });
+      });
+    }).call(this);
+    </script>
   </body>
 </html>

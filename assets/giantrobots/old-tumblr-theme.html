@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!-- DEFAULT COLORS -->
+<meta name="color:Background" content="#3b627e" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{block:PostSummary}{PostSummary} - {/block:PostSummary} {Title}{block:SearchPage}, Search results for: {SearchQuery}{/block:SearchPage}</title>
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<meta name="keywords" content="{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}" />
+<link rel="shortcut icon" href="http://thoughtbot.com/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/flutie-merged.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/screen.css?new" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/specials.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/post.css?new" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/slider.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/sunburst.css?new" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body>
+	<div id="header">
+		<div class="wrapper">
+			<h1 id="title"><a href="/">{Title}</a></h1>
+		</div><!-- end .wrapper -->
+	</div><!-- end #header -->
+
+	<div id="body">
+		<div class="wrapper">
+			<div id="content">
+				{block:SearchPage}
+				<div class="page-back">
+					<div class="page-middle">
+						<div class="page-top">
+							<h2 id="search-title">Search Results</h2>
+							<div class="post-info">
+								<div class="post-info-left">
+									<span>{SearchResultCount} Results</span>
+								</div>
+								<div class="post-info-right">
+									<span><a href="#">for "{SearchQuery}"</a></span>
+								</div>
+							</div><!-- end .post-info -->
+						</div><!-- end #page-top -->
+					</div><!-- end #page-middle -->
+				</div><!-- end #page-back -->
+				{/block:SearchPage}
+
+				{block:Posts}
+				{block:Text}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div id="{PostID}" class="page-top">
+								<h2 class="title"><a href="{Permalink}">{Title}</a></h2>
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										<span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									{Body}
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									<div class="post-info-right">
+  										{block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+  									</div>
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+							  				<div id="disqus_thread">
+
+        								</div>
+        								{block:PostNotes}
+        									<div id="tumblr_notes">
+        									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                            {PostNotes}
+          								</div>
+        								{/block:PostNotes}
+
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Text}
+
+				{block:Photo}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									<img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+									{block:Caption}<p>{Caption}</p>{/block:Caption}
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Photo}
+
+				{block:Video}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									{Video-500}
+									{block:Caption}<p>{Caption}</p>{/block:Caption}
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Video}
+
+				{block:Audio}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									<div class="audio">
+										<div class="player">{AudioPlayerWhite}</div>
+										<div class="meta">{PlayCountWithLabel}{block:ExternalAudio} &bull; <a href="{ExternalAudioURL}">download</a>{/block:ExternalAudio}</div>
+									</div>
+									{block:Caption}<p>{Caption}</p>{/block:Caption}
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Audio}
+
+				{block:Quote}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									<div class="quote {Length}">{Quote}</div>
+									<div class="copy">
+										<div class="quotebg">“</div>
+										{block:Source}
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td valign="top" style="width: 20px">&mdash;</td>
+												<td valign="top" class="quote_source">
+													{Source}
+												</td>
+											</tr>
+										</table>
+										{/block:Source}
+									</div>
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Quote}
+
+				{block:Chat}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<h2 class="title"><a href="{Permalink}">{Title}</a></h2>
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									<div class="chat">
+										<div class="lines">
+											{block:Lines}
+											<div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
+											{/block:Lines}
+										</div>
+									</div>
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Chat}
+
+				{block:Link}
+				<div class="ralph-separator">
+					<div class="page-back">
+						<div class="page-middle">
+							<div class="page-top">
+								<h2 class="title"><a href="{Permalink}">{Title}</a></h2>
+								<div class="post-info">
+									<div class="post-info-left">
+										<span>{Month} {DayOfMonth}, {Year}</span>
+									</div>
+									<div class="post-info-right">
+										 <span class="author">{PostAuthorName}</span>
+									</div>
+								</div><!-- end .post-info -->
+								<div class="post-content clearfix">
+									<div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a></div>
+									{block:Description}<div class="copy">{Description}</div>{/block:Description}
+								</div><!-- end .post-content -->
+								<div class="post-info">
+								  {block:IndexPage}
+  									<div class="post-info-left">
+  										<span><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></span>
+  									</div>
+  									 {block:NoteCount}  <span><a href="{Permalink}#tumblr_notes">{NoteCountWithLabel}</a></span>{/block:NoteCount}
+								  {/block:IndexPage}
+								</div><!-- end .post-info -->
+                {block:PermalinkPage}
+										<div id="disqus_thread">
+
+								</div>
+								{block:PostNotes}
+									<div id="tumblr_notes">
+									  {block:NoteCount}<h6>{NoteCountWithLabel}</h6>{/block:NoteCount}
+                    {PostNotes}
+  								</div>
+								{/block:PostNotes}
+                {/block:PermalinkPage}
+							</div><!-- end #page-top -->
+						</div><!-- end #page-middle -->
+					</div><!-- end #page-back -->
+				</div>
+				{/block:Link}
+
+				{/block:Posts}
+				<script type="text/javascript">
+				//<![CDATA[
+				(function() {
+					var links = document.getElementsByTagName('a');
+					var query = '?';
+					for(var i = 0; i < links.length; i++) {
+						if(links[i].href.indexOf('#disqus_thread') >= 0) {
+							query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+						}
+					}
+					document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/giantrobots/get_num_replies.js' + query + '"></' + 'script>');
+				})();
+				//]]>
+				</script>
+
+				{block:Permalink}
+				<script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>
+				<div id="disqus_thread"></div><script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/giantrobots/embed.js"></script>
+				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+				{/block:Permalink}
+
+
+				{block:Pagination}
+				<div id="pagination">
+					{block:PreviousPage}<a class="previous_page" href="{PreviousPage}">Newer Posts</a>{/block:PreviousPage}
+					{block:NextPage}<a class="next_page" href="{NextPage}">Older Posts</a>{/block:NextPage}
+				</div>
+				{/block:Pagination}
+
+				<div id="footer">
+					GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS is the blog of <a href="http://thoughtbot.com">thoughtbot</a>, a web design and development agency in Boston. For updates, <a href="http://twitter.com/thoughtbot">follow us on Twitter</a> or <a href="http://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots">subscribe via RSS</a>.
+				</div><!-- end #footer -->
+			</div><!-- end #content -->
+
+			<div id="sidebar">
+        <p>GIANT ROBOTS is the blog of <a href="http://thoughtbot.com">thoughtbot</a>, a web design and development agency in Boston.</p>
+        <p>For updates, <a href="http://twitter.com/thoughtbot">follow us on Twitter</a> or <a href="http://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots">subscribe via RSS</a>.</p>
+
+        <!--
+				<form action="/search" method="get" id="search-form">
+					<input type="hidden" name="t" value="{Name}" />
+					<input type="hidden" name="scope" value="all_of_tumblr" />
+					<input type="text" id="search" name="q" class="query" value="{SearchQuery}" />
+				</form>
+				-->
+
+				<!-- Google -->
+        <form id="search-form" method="GET" action="http://www.google.com/search">
+        <input type="hidden" name="ie" value="UTF-8" />
+        <input type="hidden" name="oe" value="UTF-8" />
+        <input type="hidden" name="domains" value="robots.thoughtbot.com" />
+        <input type="hidden" name="sitesearch" value="robots.thoughtbot.com" />
+        <input type="text" id="search" name="q" value="" class="query" />
+        </form>
+        <!-- Google -->
+
+        <div class="sidebar-box" id="addled" style="display:none;">
+          <a href="#">
+            <p class="small-title addled-name"></p>
+            <p class="main-text addled-value-prop"></p>
+          </a>
+        </div>
+
+			</div><!-- end #sidebar -->
+		</div><!-- end .wrapper -->
+	</div><!-- end #body -->
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1485842-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	<script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://thoughtbot.com/assets/giantrobots/javascripts/fancyzoom.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://thoughtbot.com/assets/giantrobots/javascripts/easySlider1.7.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://thoughtbot.com/assets/giantrobots/javascripts/authors.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+(function() {
+  $(function() {
+    var keywords = encodeURIComponent($("meta[name='keywords']").attr("content").split(','));
+    $.getJSON("http://addled.heroku.com/ad/" + keywords, function(data) {
+      $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
+      $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
+      $('.addled-name').html(data.name);
+      $('.addled-value-prop').html(data.value_prop);
+    }).done(function() {
+      $('#addled').fadeIn('slow');
+    });
+  });
+}).call(this);
+</script>
+</body>
+</html>

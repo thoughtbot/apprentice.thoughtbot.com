@@ -1,4 +1,5 @@
 body {
+  background: #fff;
   border-top: 4px solid #ad141e;
   color: #333;
 }
@@ -12,7 +13,7 @@ section#container {
 
   header {
     @extend .clearfix;
-    background: url("/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
+    background: url("http://dl.dropbox.com/u/5393210/gr/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 $lh*2 0;
     padding: 0 0 $lh*3 0;
@@ -68,24 +69,24 @@ section#container {
 
           &#twitter {
             a {
-              background: url("../images/twitter.png") -8px -1px no-repeat;
+              background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -1px no-repeat;
               text-indent: -9999px;
               @include transition(0.5s);
 
               &:hover {
-                background: url("../images/twitter.png") -8px -48px no-repeat;
+                background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -48px no-repeat;
               }
             }
           }
 
           &#contact {
             a {
-              background: url("../images/contact.png") 0 -1px no-repeat;
+              background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -1px no-repeat;
               text-indent: -9999px;
               @include transition(0.5s);
 
               &:hover {
-                background: url("../images/contact.png") 0 -47px no-repeat;
+                background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -47px no-repeat;
               }
             }
           }
@@ -101,7 +102,7 @@ section#container {
 
     .message {
       a {
-        background: #e9e9e9;
+        background: #eaeaea;
         border: 1px solid #dedede;
         @include border-radius(3px);
         color: #333;
@@ -124,7 +125,7 @@ section#container {
         }
 
         h4 {
-          color: #333;
+          color: #444;
           font: 700 16px/16px $sans-serif;
           text-decoration: none;
         }
@@ -155,7 +156,7 @@ section#container {
 
         p.post-date {
           font: 400 14px/14px $serif;
-          margin: 0 0 $lh*2 0;
+          margin: 0 0 44px 0;
 
           a {
             color: #333;
@@ -171,10 +172,10 @@ section#container {
 
         ul.tags {
           color: #777;
-          margin: 0 0 30px 0;
+          margin: 0 0 33px 0;
 
           li {
-            font: 400 13px/13px $serif;
+            font: 400 13px/14px $serif;
             font-style: italic;
             margin: 0 0 10px 0;
             position: relative;
@@ -213,12 +214,22 @@ section#container {
         text-transform: uppercase;
       }
 
+      h4 {
+        color: #333;
+        font: 700 15px/24px $sans-serif;
+        margin: 20px 0 0px 0;
+      }
+
       p {
-        font: 400 14px/22px $sans-serif;
+        font: 400 15px/24px $sans-serif;
         margin: 0 0 12px 0;
       }
 
       blockquote {
+        color: #555;
+        font: 400 15px/24px $sans-serif;
+        font-style: italic;
+        margin: 0 0 12px 0;
         padding: 0 30px 0 30px;
 
         p {
@@ -228,10 +239,10 @@ section#container {
       }
 
       ul {
-        margin: 0 0 ($lh - 4) 0 ;
+        margin: 0 0 ($lh - 4) 0;
 
         li {
-          font: 400 14px/22px $sans-serif;
+          font: 400 15px/24px $sans-serif;
           margin: 0 0 4px 0;
           position: relative;
 
@@ -246,13 +257,26 @@ section#container {
         }
       }
 
+      ol {
+        margin: 0 0 ($lh - 4) 0;
+
+        li {
+          font: 400 15px/24px $sans-serif;
+          list-style: outside;
+          list-style-type: decimal;
+          margin: 0 0 4px 0;
+          position: relative;
+        }
+      }
+
       img {
         max-width: grid-width(7);
+        margin-bottom: 10px;
       }
 
       a {
         color: $red;
-        font-weight: bold;
+        font-weight: 700;
         text-decoration: none;
 
         &:hover {
@@ -262,6 +286,38 @@ section#container {
 
       em {
         font-style: italic;
+      }
+
+      table {
+        font: 400 14px/22px $sans-serif;
+        width: grid-width(7);
+
+        tr {
+          border-bottom: 1px solid #ddd;
+        }
+
+        td,
+        th {
+          padding: 4px;
+          width: 50%;
+        }
+
+        th {
+          font-weight: 700;
+          text-align: left;
+        }
+      }
+
+      dl {
+        font: 400 15px/24px $sans-serif;
+        margin: 10px 0 20px;
+
+        dt {
+        }
+
+        dd {
+          margin: 0 0 8px 20px;
+        }
       }
 
       section.post-footer {
@@ -360,7 +416,7 @@ section#container {
         &.medium,
         &.long {
           q {
-            font: 400 14px/22px $sans-serif;
+            font: 400 15px/24px $sans-serif;
           }
         }
 
@@ -376,10 +432,24 @@ section#container {
   }
 }
 
+.old img {
+  float: none !important;
+}
+
+section#container section#posts .post #disqus_thread {
+  ul {
+    li {
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
 /* Pagination
 ------------------------------------------------------------------------------*/
 #pagination {
-  padding: 0 0 $lh*3 (grid-width(2) + $gutter);
+  padding: 0 0 $lh (grid-width(2) + $gutter);
   width: grid-width(7);
 }
 
@@ -403,7 +473,7 @@ section#container {
 }
 
 #pagination #older-link a {
-  background: url("../images/arrows.png") 0 10px no-repeat;
+  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px;
 }
 
@@ -416,7 +486,7 @@ section#container {
 }
 
 #pagination #newer-link a {
-  background: url("../images/arrows.png") right -18px no-repeat;
+  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0;
 }
 
