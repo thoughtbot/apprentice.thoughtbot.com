@@ -28,7 +28,7 @@
       <header>
         <hgroup>
           <h1><a href="http://robots.thoughtbot.com">{Title}</a></h1>
-          <h2>We are thoughtbot, a web design and development agency in Boston, MA.</h2>
+          <h2>We are <a href="http://thoughtbot.com/">thoughtbot</a>, a web design and development agency in Boston, MA.</h2>
         </hgroup>
 
         <nav>
@@ -57,7 +57,7 @@
                 <p class="comments"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></p>
               </section>
 
-              {block:Title}<h2 class="title">{Title}</h2>{/block:Title}
+              {block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
               {Body}
 
               <section class="post-footer">

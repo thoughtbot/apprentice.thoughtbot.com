@@ -43,6 +43,16 @@ section#container {
         color: #777;
         font: 400 13px/16px $serif;
         font-style: italic;
+
+        a {
+          color: #777;
+          font-weight: 400;
+          text-decoration: none;
+
+          &:hover {
+           text-decoration: underline;
+          }
+        }
       }
     }
 
@@ -341,6 +351,12 @@ section#container {
         font: 300 36px/38px $sans-serif;
         margin: 0 0 30px 0;
         text-transform: none;
+
+        a {
+          color: #111;
+          font-weight: 300;
+          text-decoration: none;
+        }
       }
 
       /*photo and video posts */

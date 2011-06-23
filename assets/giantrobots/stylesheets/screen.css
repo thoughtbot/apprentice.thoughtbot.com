@@ -219,6 +219,12 @@ section#container {
         color: #777;
         font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic; }
+        section#container header hgroup h2 a {
+          color: #777;
+          font-weight: 400;
+          text-decoration: none; }
+          section#container header hgroup h2 a:hover {
+            text-decoration: underline; }
     section#container header nav {
       float: left;
       margin: 0 0 0 25px;
@@ -421,6 +427,10 @@ section#container {
         font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 30px 0;
         text-transform: none; }
+        section#container section#posts .post h2.title a {
+          color: #111;
+          font-weight: 300;
+          text-decoration: none; }
       section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
         top: 0px; }
       section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
