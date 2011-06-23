@@ -459,6 +459,7 @@ section#container section#posts .post #disqus_thread {
   ul {
     li {
       margin: 0 3px 5px 0;
+      position: static;
 
       &:after {
         content: none;
@@ -483,8 +484,14 @@ section#container section#posts .post #disqus_thread {
   .dsq-comment-footer {
     a {
       color: #777;
+      font-size: 13px;
       font-weight: 400;
     }
+  }
+
+  .dsq-comment-meta a,
+  .dsq-comment-actions a {
+    opacity: 1;
   }
 
   #dsq-footer {
@@ -495,6 +502,9 @@ section#container section#posts .post #disqus_thread {
         color: #333;
         text-decoration: none;
         font-style: normal;
+
+        em {
+          font-style: normal;
       }
     }
   }
