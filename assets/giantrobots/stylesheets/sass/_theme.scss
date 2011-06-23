@@ -13,7 +13,7 @@ section#container {
 
   header {
     @extend .clearfix;
-    background: url("http://dl.dropbox.com/u/5393210/gr/images/logo.png") 31px 16px no-repeat;
+    background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 $lh*2 0;
     padding: 0 0 $lh*3 0;
@@ -79,24 +79,24 @@ section#container {
 
           &#twitter {
             a {
-              background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -1px no-repeat;
+              background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
               text-indent: -9999px;
               @include transition(0.5s);
 
               &:hover {
-                background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -48px no-repeat;
+                background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -48px no-repeat;
               }
             }
           }
 
           &#contact {
             a {
-              background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -1px no-repeat;
+              background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
               text-indent: -9999px;
               @include transition(0.5s);
 
               &:hover {
-                background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -47px no-repeat;
+                background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -47px no-repeat;
               }
             }
           }
@@ -343,7 +343,6 @@ section#container {
             content: "\2014";
           }
         }
-
       }
 
       /* text posts */
@@ -496,7 +495,7 @@ section#container section#posts .post #disqus_thread {
 }
 
 #pagination #older-link a {
-  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") 0 10px no-repeat;
+  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px;
 }
 
@@ -509,7 +508,7 @@ section#container section#posts .post #disqus_thread {
 }
 
 #pagination #newer-link a {
-  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") right -18px no-repeat;
+  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0;
 }
 
@@ -522,7 +521,6 @@ footer {
 
   section#footer-container {
     @extend .clearfix;
-/*    background: url(../images/995-grid.png) repeat-y;*/
     margin: 0 auto;
     width: grid-width(12);
 

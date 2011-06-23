@@ -197,7 +197,7 @@ section#container {
   padding: 30px 0 100px;
   width: 995px; }
   section#container header {
-    background: url("http://dl.dropbox.com/u/5393210/gr/images/logo.png") 31px 16px no-repeat;
+    background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 40px 0;
     padding: 0 0 60px 0; }
@@ -240,21 +240,21 @@ section#container {
             display: block;
             height: 41px; }
           section#container header nav ul li#twitter a {
-            background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -1px no-repeat;
+            background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
             text-indent: -9999px;
             -webkit-transition: 0.5s;
             -moz-transitition: 0.5s;
             transitition: 0.5s; }
             section#container header nav ul li#twitter a:hover {
-              background: url("http://dl.dropbox.com/u/5393210/gr/images/twitter.png") -8px -48px no-repeat; }
+              background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -48px no-repeat; }
           section#container header nav ul li#contact a {
-            background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -1px no-repeat;
+            background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
             text-indent: -9999px;
             -webkit-transition: 0.5s;
             -moz-transitition: 0.5s;
             transitition: 0.5s; }
             section#container header nav ul li#contact a:hover {
-              background: url("http://dl.dropbox.com/u/5393210/gr/images/contact.png") 0 -47px no-repeat; }
+              background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -47px no-repeat; }
   section#container aside {
     float: left;
     margin: 10px 0 0 25px;
@@ -507,7 +507,7 @@ section#container section#posts .post #disqus_thread {
   width: 145px; }
 
 #pagination #older-link a {
-  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") 0 10px no-repeat;
+  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px; }
 
 #pagination #newer-link {
@@ -518,7 +518,7 @@ section#container section#posts .post #disqus_thread {
   width: 145px; }
 
 #pagination #newer-link a {
-  background: url("http://dl.dropbox.com/u/5393210/gr/images/arrows.png") right -18px no-repeat;
+  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
 /* Footer
@@ -528,7 +528,6 @@ footer {
   border-top: 1px solid #e0e0e0;
   padding: 60px 0 120px; }
   footer section#footer-container {
-    /*    background: url(../images/995-grid.png) repeat-y;*/
     margin: 0 auto;
     width: 995px; }
     footer section#footer-container h6 {
