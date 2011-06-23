@@ -49,19 +49,18 @@
 
 /* Variables
 ---------------------------------------- */
-$header: "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;
+$header: proxima-nova-1, proxima-nova-2, "museo-sans-1","museo-sans-2","Helvetica Neue", Helvetica, sans-serif;
 $body: "skolar-1","skolar-2", Georgia, serif;
 
 $red: #AD141E; /*thoughtbot red*/
 
-$lh: 20px; /*line-hieght of all the type on the site*/
+$lh: 20px; /*line-height of all the type on the site*/
 $unit: 60px; /*one grid column*/
 $gutter: 25px; /*size of one gutter*/
 
 @function grid-width($n) {
   @return $n * $unit + ($n - 1) * $gutter;
 }
-
 
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
@@ -78,7 +77,6 @@ $gutter: 25px; /*size of one gutter*/
 
 /* basic site styles
 ---------------------------------------- */
-
 body {
   background-color: #FCFCFC;
   /*background: url('/images/grid.png') 10px -4px;*/
@@ -148,7 +146,7 @@ img {
 blockquote {
   background: url('/images/quote.png') no-repeat;
   border: 0;
-  font: 200 18px $header;
+  font: 300 18px $header;
   margin: 0 $gutter 0 0;
   padding-left: $gutter;
 
@@ -182,37 +180,37 @@ a {
 
 .button {
   background: $red;
-   border: 1px solid darken($red, 20%);
-   color: #fff;
-   display: block;
-   line-height: $lh;
-   padding: $lh*1.5;
-   font:700 24px $header;
-   -webkit-font-smoothing: antialiased;
-   text-shadow: 0 -1px 0 darken($red, 10%);
-   @include box-shadow(inset 0 1px 0 lighten($red, 20%));
-   @include border-radius(3px);
-   @include transition(all .3s);
+  border: 1px solid darken($red, 20%);
+  color: #fff;
+  display: block;
+  line-height: $lh;
+  padding: $lh*1.5;
+  font:700 24px $header;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 -1px 0 darken($red, 10%);
+  @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+  @include border-radius(3px);
+  @include transition(all .3s);
 
-   &:hover {
-     background: lighten($red, 5%);
-     border: 1px solid darken($red, 10%);
-     text-shadow: 0 -1px 0 darken($red, 5%);
-     @include box-shadow(inset 0 1px 0 lighten($red, 30%));
-   }
+  &:hover {
+    background: lighten($red, 5%);
+    border: 1px solid darken($red, 10%);
+    text-shadow: 0 -1px 0 darken($red, 5%);
+    @include box-shadow(inset 0 1px 0 lighten($red, 30%));
+  }
 
-   &:active {
-     background: darken($red, 5%);
-     text-shadow: none;
-     @include box-shadow(inset 0 -1px 3px darken($red, 15%));
-   }
+  &:active {
+    background: darken($red, 5%);
+    text-shadow: none;
+    @include box-shadow(inset 0 -1px 3px darken($red, 15%));
+  }
 }
 
 .external {
   padding-right:13px;
 
   &:hover {
-    background: url('/images/external.png') right 6px no-repeat;
+    background: url('/images/external.png') right 4px no-repeat;
   }
 }
 
@@ -238,8 +236,6 @@ img {
 }
 
 .secondary-header {
-/*  border-top: 1px solid #dcdcdc;
-  margin-top: $lh*3;*/
   padding-top: ($lh*3);
 }
 
@@ -257,7 +253,6 @@ img {
 
 /* Selection styles
 ---------------------------------------- */
-
 ::selection {
   background: $red;
   color: #000;

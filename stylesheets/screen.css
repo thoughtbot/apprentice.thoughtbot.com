@@ -670,7 +670,7 @@ ol ol, ol ul, ul ul, ul ol {
 /* Variables
 ---------------------------------------- */
 /*thoughtbot red*/
-/*line-hieght of all the type on the site*/
+/*line-height of all the type on the site*/
 /*one grid column*/
 /*size of one gutter*/
 /* Clear Floated Elements
@@ -701,7 +701,7 @@ body {
   width: 995px; }
 
 h1, h2, h3, h4, h5, h5, h6 {
-  font-family: "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   text-rendering: optimizeLegibility; }
 
 h1 {
@@ -744,7 +744,7 @@ img {
 blockquote {
   background: url("/images/quote.png") no-repeat;
   border: 0;
-  font: 200 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  font: 300 18px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   margin: 0 25px 0 0;
   padding-left: 25px; }
   blockquote p {
@@ -771,7 +771,7 @@ a:hover {
   display: block;
   line-height: 20px;
   padding: 30px;
-  font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+  font: 700 24px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-shadow: 0 -1px 0 #7f0f16;
   -webkit-box-shadow: inset 0 1px 0 #e93e49;
@@ -803,7 +803,7 @@ a:hover {
 .external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a {
   padding-right: 13px; }
   .external:hover, footer#main-footer nav section#products li a:hover, section#products ul li a .check-out:hover, section#workshops section#current-workshops ul li a:hover {
-    background: url("/images/external.png") right 6px no-repeat; }
+    background: url("/images/external.png") right 4px no-repeat; }
 
 img {
   margin-bottom: 0; }
@@ -821,8 +821,6 @@ img {
     margin-bottom: 0; }
 
 .secondary-header, section#open-source, div#contact-content, section#people, div#jobs-wrapper {
-  /*  border-top: 1px solid #dcdcdc;
-    margin-top: $lh*3;*/
   padding-top: 60px; }
 
 .secondary-wrapper, #portfolio-slider {
@@ -1006,7 +1004,7 @@ header#main-header {
       header#main-header ul li a {
         color: #2b2b2b;
         display: block;
-        font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+        font: 500 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         line-height: 20px;
         margin: 0 20px;
         -webkit-transition: color 0.2s;
@@ -1155,8 +1153,8 @@ section#portfolio {
         background: url("/images/portfolio/thumb/gnite.png") center center no-repeat; }
       section#portfolio ul li#carbonrally a {
         background: url("/images/portfolio/thumb/carbonrally.png") center center no-repeat; }
-      section#portfolio ul li#saftystream a {
-        background: url("/images/portfolio/thumb/saftystream.png") center center no-repeat; }
+      section#portfolio ul li#safetystream a {
+        background: url("/images/portfolio/thumb/safetystream.png") center center no-repeat; }
       section#portfolio ul li#shortboard a {
         background: url("/images/portfolio/thumb/shortboard.png") center center no-repeat; }
       section#portfolio ul li#umbrellatoday a {
@@ -1169,7 +1167,7 @@ section#services {
     margin-right: 25px;
     width: 315px; }
     section#services #about-services .learn-more {
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+      font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
   section#services blockquote {
     float: left;
     width: 290px; }
@@ -1194,7 +1192,7 @@ section#services {
     section#services section#clients p {
       margin-bottom: 0; }
       section#services section#clients p.video {
-        font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+        font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-top: 40px; }
         section#services section#clients p.video a {
           background: url("/images/film-strip.png") 0 1px no-repeat;
@@ -1208,7 +1206,7 @@ section#services {
 #get-started {
   padding: 20px 0 40px; }
   #get-started a {
-    font: 500 18px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+    font: 500 18px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
     #get-started a h3 {
       color: #fff;
       float: left;
@@ -1216,7 +1214,7 @@ section#services {
     #get-started a p {
       color: rgba(255, 255, 255, 0.8);
       float: right;
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       line-height: 20px -4;
       /*line-height minus the 4px margin*/
       margin-bottom: 0;
@@ -1257,7 +1255,7 @@ section#products {
         section#products ul li a .check-out {
           color: #ad141e;
           display: inline-block;
-          font: 500 14px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+          font: 500 14px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
         section#products ul li a:hover {
           background: rgba(0, 0, 0, 0.04);
           -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
@@ -1337,7 +1335,7 @@ section#open-source ul {
       width: 230px; }
       section#open-source ul li a .source-btn {
         color: #ad141e;
-        font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+        font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#open-source ul li a:hover .source-btn {
         color: #000; }
 
@@ -1381,7 +1379,7 @@ div#contact-content section#contact-info {
       font-size: 18px; }
     div#contact-content section#contact-info section#hire-thoughtbot a p {
       color: rgba(255, 255, 255, 0.6);
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       margin-bottom: 0; }
     div#contact-content section#contact-info section#hire-thoughtbot a:hover {
       background: #ad141e; }
@@ -1418,7 +1416,7 @@ div#contact-content section#contact-info {
       font-size: 18px; }
     div#contact-content section#contact-info section#hire-thoughtbot a p {
       color: rgba(255, 255, 255, 0.6);
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       margin-bottom: 0; }
     div#contact-content section#contact-info section#hire-thoughtbot a:hover {
       background: #ad141e; }
@@ -1458,7 +1456,7 @@ section#people ul {
       float: left;
       width: 315px; }
       section#people ul li div.person-info h2 {
-        font: 700 24px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+        font: 700 24px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
         line-height: 40px;
         /*double line-hieght for bigger type*/
         margin-bottom: 0; }
@@ -1482,7 +1480,7 @@ div#jobs-wrapper section#current-openings {
     div#jobs-wrapper section#current-openings ul li {
       margin: 5px 0; }
       div#jobs-wrapper section#current-openings ul li a {
-        font: 500 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
+        font: 500 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif; }
 div#jobs-wrapper section#more-about-us {
   float: left;
   width: 655px; }
@@ -1513,7 +1511,7 @@ div#jobs-wrapper.job-description section#apply-to-thoughtbot {
       margin-bottom: 0; }
     div#jobs-wrapper.job-description section#apply-to-thoughtbot a p {
       color: rgba(255, 255, 255, 0.6);
-      font: 16px "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
+      font: 16px proxima-nova-1, proxima-nova-2, "museo-sans-1", "museo-sans-2", "Helvetica Neue", Helvetica, sans-serif;
       margin-bottom: 0; }
 
 div#jobs-wrapper section#job-form h1#logo, div#jobs-wrapper section#job-form #bottom {

@@ -14,7 +14,7 @@ $(document).ready(function() {
     "gnite": 2,
     "umbrellatoday": 2,
     "carbonrally": 2,
-    "saftystream": 4,
+    "safetystream": 4,
     "shortboard": 4
   };
 
