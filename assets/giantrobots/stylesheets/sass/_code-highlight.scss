@@ -1,27 +1,35 @@
 /* modifications */
 pre {
-  background: #ececec;
+  background: #f7f7f7;
+  border: 1px solid #f0f0f0;
   margin: 0 0 12px 0;
+  overflow-x: auto;
   padding: 15px;
 }
 
-pre, code {
-  font: 13px/18px $monospace;
-  overflow-x: auto;
+code {
+}
+
+pre,
+code {
+  font: 12px/18px $monospace;
   white-space: pre;
+
+  a {
+    font-weight: 400;
+  }
 }
 
 /* Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net> */
-
 pre code {
   display: block;
-  color: #000;
+  color: #333;
 }
 
 pre .subst,
 pre .title {
   font-weight: normal;
-  color: #000;
+  color: #333;
 }
 
 pre .comment,
@@ -92,8 +100,7 @@ pre .ruby .symbol .keyword,
 pre .ruby .symbol .keymethods,
 pre .char,
 pre .tex .formula {
-  color: #000;
-  background: #d0eded;
+  color: #dc322f;
 }
 
 pre .phpdoc,
@@ -106,7 +113,7 @@ pre .variable,
 pre .envvar,
 pre .apache .sqbracket,
 pre .nginx .built_in {
-  color: #660e7a;
+  color: #cb4b16;
 }
 
 pre .addition {

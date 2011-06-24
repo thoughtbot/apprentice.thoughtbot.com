@@ -1,0 +1,64 @@
+// disqus styles
+section#container section#posts .post #disqus_thread {
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+
+  ul {
+    li.dsq-post-as {
+      position: static;
+    }
+  }
+
+  ul {
+    li {
+      margin: 0 3px 5px 0;
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  #dsq-account-dropdown {
+    a {
+      font-family: $sans-serif;
+    }
+  }
+
+  div.dsq-comment-text {
+    font: 400 14px/22px $sans-serif;
+  }
+
+  .dsq-comment-footer {
+    a {
+      color: #777;
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+
+  .dsq-comment-meta a,
+  .dsq-comment-actions a {
+    opacity: 1;
+  }
+
+  #dsq-footer {
+    li {
+      margin-right: 12px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        font-style: normal;
+
+        em {
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
