@@ -198,7 +198,7 @@ section#container section#posts .post #disqus_thread {
   section#container section#posts .post #disqus_thread ul li {
     margin: 0 3px 5px 0; }
     section#container section#posts .post #disqus_thread ul li:after {
-      content: none; }
+      content: ''; }
   section#container section#posts .post #disqus_thread h3 {
     margin-bottom: 10px; }
   section#container section#posts .post #disqus_thread #dsq-account-dropdown a {
