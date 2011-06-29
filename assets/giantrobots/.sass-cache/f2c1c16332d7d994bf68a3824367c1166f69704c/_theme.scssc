@@ -1,5 +1,5 @@
 3.1.1 (Brainy Betty)
-cad656b7b794370e5db57626dac5f372c498ba6c
+513cb2270801a162dc2945a6f82766f1e58c859b
 o:Sass::Tree::RootNode
 :@template"s-body {
   background: #fff;
@@ -63,7 +63,7 @@ section#container {
       @extend .clearfix;
       float: left;
       margin: 0 0 0 $gutter;
-      padding: 40px 0 0 0;
+      padding: 35px 0 0 0;
       width: grid-width(3);
 
       ul {
@@ -648,7 +648,7 @@ color;i5;	[ ;i ;@;o;;;;"	#777;;o;;["font-weight;i6;	[ ;i ;@
 ;@©;["
 hover;;>;i9;?0;i9;T;	[o;;["text-decoration;i:;	[ ;i ;@;o;;;;"underline;;;i ;@; ["&:hover;i ;@; ["a;i ;@; ["h2;i ;@; ["hgroupo;
 ;o;;" ;i@;[o;;[o;;@Ä;i@;[o;	;0;@Ä;["nav;i@;i@;T;	[o;&	;iA;	[ ;@;'["."clearfixo;;["
-float;iB;	[ ;i ;@;o;;;;"	left;;o;;["margin;iC;	[ ;i ;@;o;/	;iC;{ ;[	o;*;+"0;,@W;-[ ;iC;@Þ;i o;*;+"0;,@W;-[ ;iC;@Þ;i o;*;+"0;,@W;-[ ;iC;@Þ;i o;6	;"gutter;iC;7"gutter;@Þ;1;2;;o;;["padding;iD;	[ ;i ;@;o;;;;"40px 0 0 0;;o;;["
+float;iB;	[ ;i ;@;o;;;;"	left;;o;;["margin;iC;	[ ;i ;@;o;/	;iC;{ ;[	o;*;+"0;,@W;-[ ;iC;@Þ;i o;*;+"0;,@W;-[ ;iC;@Þ;i o;*;+"0;,@W;-[ ;iC;@Þ;i o;6	;"gutter;iC;7"gutter;@Þ;1;2;;o;;["padding;iD;	[ ;i ;@;o;;;;"35px 0 0 0;;o;;["
 width;iE;	[ ;i ;@;o;(
 ;)[o;*;+"3;,@W;-[ ;iE;{ ;i;"grid-width;iE;.{ ;@û;;o;
 ;o;;" ;iG;[o;;[o;;@ ;iG;[o;	;0;@ ;["ul;iG;iG;T;	[o;&	;iH;	[ ;@;'["."clearfixo;;["margin;iI;	[ ;i ;@;o;;;;"0 15px 0 0;;o;
