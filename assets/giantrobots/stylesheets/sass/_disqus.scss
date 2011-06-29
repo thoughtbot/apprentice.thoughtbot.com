@@ -14,7 +14,7 @@ section#container section#posts .post #disqus_thread {
       margin: 0 3px 5px 0;
 
       &:after {
-        content: none;
+        content: '';
       }
     }
   }
