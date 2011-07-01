@@ -61,15 +61,9 @@
 <!--
   TODO import new workshops
 -->
-      <section>
+      <section id="current-workshops-footer">
         <h3>Workshops</h3>
-        <ul>
-          <li><a href="http://workshops.thoughtbot.com/sections/15">Intro to Ruby and Rails</a></li>
-          <li><a href="http://workshops.thoughtbot.com/sections/16">Test-Driven Rails</a></li>
-          <li><a href="http://workshops.thoughtbot.com/sections/14">Scaling Rails</a></li>
-          <li><a href="http://workshops.thoughtbot.com/courses/5">Rails Antipatterns</a></li>
-          <li><a href="http://workshops.thoughtbot.com/courses/2">Design for Developers</a></li>
-        </ul>
+        <span class="loading">Loading...</span>
       </section>
 
       <section id="blog-footer">
@@ -98,6 +92,24 @@
 
     <script src="/javascripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
+    <script type="text/javascript">
+      function workshops(resp) {
+        var courses = resp;
+        $('#current-workshops .loading').replaceWith('<ul/>');
+        $('#current-workshops-footer .loading').replaceWith('<ul/>');
+        $ul = $('#current-workshops ul');
+        $footer_ul = $('#current-workshops-footer ul');
+        for (var i=0; i<courses.length; i++) {
+          var c = courses[i]['course'];
+          var name = c['name'] || null;
+          if (name) {
+            $ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
+            $footer_ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
+          }
+        }
+      }
+    </script>
+    <script src="http://workshops.thoughtbot.com/courses.json?callback=workshops" type="text/javascript"></script>
     <script type="text/javascript" src="/javascripts/application.js"></script>
     <script type="text/javascript">
       function tumblr(resp) {
