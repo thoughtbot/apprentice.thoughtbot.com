@@ -8,7 +8,7 @@ section#container {
   /*background: url(../images/995-grid.png) repeat-y;*/
   @extend .clearfix;
   margin: 0 auto;
-  padding: 20px 0 100px;
+  padding: 20px 0 80px;
   width: grid-width(12);
 
   header {
@@ -112,7 +112,7 @@ section#container {
 
     .message {
       a {
-        background: #eaeaea;
+        background: #f7f7f7;
         border: 1px solid #dedede;
         @include border-radius(3px);
         color: #333;
@@ -142,7 +142,7 @@ section#container {
 
         &:hover {
           @include border-radius(0);
-          @include box-shadow(0 0 0 8px rgba(0, 0, 0, 0.07));
+          @include box-shadow(0 0 0 8px rgba(0, 0, 0, 0.05));
         }
       }
     }

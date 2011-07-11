@@ -229,7 +229,7 @@ body {
 section#container {
   /*background: url(../images/995-grid.png) repeat-y;*/
   margin: 0 auto;
-  padding: 20px 0 100px;
+  padding: 20px 0 80px;
   width: 995px; }
   section#container header {
     background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
@@ -295,7 +295,7 @@ section#container {
     margin: 10px 0 0 25px;
     width: 230px; }
     section#container aside .message a {
-      background: #eaeaea;
+      background: #f7f7f7;
       border: 1px solid #dedede;
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
@@ -324,10 +324,10 @@ section#container {
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0;
-        -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
-        -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
-        -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07);
-        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.07); }
+        -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
+        -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); }
   section#container section#posts {
     float: left;
     width: 740px; }
