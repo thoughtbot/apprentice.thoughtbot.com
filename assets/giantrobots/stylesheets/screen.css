@@ -229,7 +229,7 @@ body {
 section#container {
   /*background: url(../images/995-grid.png) repeat-y;*/
   margin: 0 auto;
-  padding: 30px 0 100px;
+  padding: 20px 0 100px;
   width: 995px; }
   section#container header {
     background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
@@ -357,7 +357,7 @@ section#container {
           text-transform: uppercase; }
         section#container section#posts .post .meta-info ul.tags {
           color: #777;
-          margin: 0 0 33px 0; }
+          margin: 0 0 36px 0; }
           section#container section#posts .post .meta-info ul.tags li {
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
@@ -375,6 +375,7 @@ section#container {
               top: 0; }
         section#container section#posts .post .meta-info p.comments {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
+          margin-top: -3px;
           width: 145px; }
           section#container section#posts .post .meta-info p.comments a {
             color: #333;

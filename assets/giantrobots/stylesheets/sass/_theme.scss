@@ -8,7 +8,7 @@ section#container {
   /*background: url(../images/995-grid.png) repeat-y;*/
   @extend .clearfix;
   margin: 0 auto;
-  padding: 30px 0 100px;
+  padding: 20px 0 100px;
   width: grid-width(12);
 
   header {
@@ -182,7 +182,7 @@ section#container {
 
         ul.tags {
           color: #777;
-          margin: 0 0 33px 0;
+          margin: 0 0 36px 0;
 
           li {
             font: 400 13px/14px $serif;
@@ -208,6 +208,7 @@ section#container {
 
         p.comments {
           font: 400 14px/14px $serif;
+          margin-top: -3px;
           width: grid-width(2);
 
           a {
