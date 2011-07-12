@@ -126,16 +126,18 @@ section#container {
           margin: 0 15px 0 0;
         }
 
-        h3 {
+        span.addled-name {
           color: #777;
+          display: block;
           font: 400 14px/14px $serif;
           font-style: italic;
           margin: 0 0 4px 0;
           text-decoration: none;
         }
 
-        h4 {
+        span.addled-value-prop {
           color: #444;
+          display: block;
           font: 700 16px/16px $sans-serif;
           text-decoration: none;
         }

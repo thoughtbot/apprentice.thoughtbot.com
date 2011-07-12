@@ -310,14 +310,16 @@ section#container {
       section#container aside .message a img {
         float: left;
         margin: 0 15px 0 0; }
-      section#container aside .message a h3 {
+      section#container aside .message a span.addled-name {
         color: #777;
+        display: block;
         font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic;
         margin: 0 0 4px 0;
         text-decoration: none; }
-      section#container aside .message a h4 {
+      section#container aside .message a span.addled-value-prop {
         color: #444;
+        display: block;
         font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-decoration: none; }
       section#container aside .message a:hover {
