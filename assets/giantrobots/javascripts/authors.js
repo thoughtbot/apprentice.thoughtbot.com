@@ -24,9 +24,10 @@ jQuery(document).ready(function() {
 		ubuwaits: "Chad Mazzola",
 		kylehasmanypixels: "Kyle Fiedler",
 		hgimenez: "Harold Giménez",
+		hyperbuddha: "Alex Godin",
 		elindsay: "Emma Lindsay",
-    mmongeau: "Matt Mongeau",
-    plapier: "Phil LaPier"
+                mmongeau: "Matt Mongeau",
+                plapier: "Phil LaPier"
 	};
 
 	jQuery(".author").each(function(i) {
