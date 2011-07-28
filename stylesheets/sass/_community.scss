@@ -1,4 +1,4 @@
-section#open-source {
+section.open-source {
   @extend .secondary-header;
 
   ul {
@@ -10,11 +10,11 @@ section#open-source {
       float: left;
       margin: ($lh*2) $gutter 0 0; /*line hight top bottom to maintain baseline grid*/
 
-      &:nth-child(4n) {
+      &:nth-child(4n+2) {
         margin-right: 0;
       }
 
-      &:nth-child(4n+1) {
+      &:nth-child(2+4n+1) {
         clear: both;
       }
 
@@ -28,41 +28,48 @@ section#open-source {
           @include box-shadow(0 0 0 10px #efefef);
         }
       }
-    }
+      
+      &.highlighted {
+        border-bottom: 1px solid #dcdcdc;
+        margin: ($lh*2) 0 0 0; /*line hight top bottom to maintain baseline grid*/
+        padding-right: $gutter;
 
-    &#highlights {
-      margin: 0 0 $lh (-($lh)); /*line-hight to maintain baseline grid on bottom, line high on sides to accomodeate for the padding on the links inside*/
-      background: $red;
-      width: grid-width(12)+($lh*2);
+        &:nth-child(4n+2) {
+          padding-right: 0;
+        }
+        
+        &.paperclip {
+          a {
+             background: transparent url('/images/oss/paperclip.png') left top no-repeat;
 
-      li {
-        margin-top: 0;
+             &:hover {
+               background: #efefef url('/images/oss/paperclip.png') left top no-repeat; 
+             }
+          }
+        }
+        
+        &.factory-girl {
+          a {
+             background: transparent url('/images/oss/factory-girl.png') left top no-repeat;
 
+             &:hover {
+               background: #efefef url('/images/oss/factory-girl.png') left top no-repeat; 
+             }
+          }
+        }
+        
         a {
-          width: grid-width(4)-($lh*2);
-          color: #fff;
-          padding: $lh;
-          min-height: $lh*6;
+          padding-left: grid-width(3);
+          min-height: 170px;
 
           h3 {
-            color: #fff;
-            -webkit-font-smoothing: antialiased;
+            color: $red;
+            font-size: 24px;
+            padding-top: $lh*2;
           }
-
-          p {
-            color: rgba(#fff, .6);
-          }
-
-          &:hover {
-            background: darken($red, 5%);
-            @include box-shadow(none);
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
         }
       }
+
     }
   }
 }
@@ -90,6 +97,7 @@ section#events {
       overflow: hidden;
       padding: ($lh*2)-(5px) $lh $lh; /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
       width: grid-width(3)-($lh*2); /*grid width minus padding*/
+
 
       &:last-child {
         margin-right: 0;
