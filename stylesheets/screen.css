@@ -694,6 +694,9 @@ body {
   color: #2B2B2B;
   font: 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
+  @media screen and (max-device-width: 480px) {
+    body {
+      min-width: 1190px; } }
 
 .wrapper, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
   margin: 0 auto;

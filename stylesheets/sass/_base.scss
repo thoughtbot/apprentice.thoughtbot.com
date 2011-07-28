@@ -84,6 +84,10 @@ body {
   color: #2B2B2B;
   font: 14px $body;
   text-align: center;
+  
+  @media screen and (max-device-width: 480px) {
+    min-width: grid-width(14)+($gutter);
+  }
 }
 
 .wrapper {
