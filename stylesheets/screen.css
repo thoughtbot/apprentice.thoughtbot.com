@@ -698,7 +698,8 @@ body {
 .wrapper, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
   margin: 0 auto;
   text-align: left;
-  width: 995px; }
+  width: 995px;
+  padding: 0 25px; }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
