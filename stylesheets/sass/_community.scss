@@ -31,7 +31,8 @@ section.open-source {
       
       &.highlighted {
         border-bottom: 1px solid #dcdcdc;
-        margin: ($lh*2) 0 0 0; /*line hight top bottom to maintain baseline grid*/
+        padding-bottom: $lh;
+        margin: 0; /*line hight top bottom to maintain baseline grid*/
         padding-right: $gutter;
 
         &:nth-child(4n+2) {
@@ -40,20 +41,20 @@ section.open-source {
         
         &.paperclip {
           a {
-             background: transparent url('/images/oss/paperclip.png') left top no-repeat;
+             background: transparent url('/images/oss/paperclip.png') 22px 2px no-repeat;
 
              &:hover {
-               background: #efefef url('/images/oss/paperclip.png') left top no-repeat; 
+               background-color: #efefef; 
              }
           }
         }
         
         &.factory-girl {
           a {
-             background: transparent url('/images/oss/factory-girl.png') left top no-repeat;
+             background: transparent url('/images/oss/factory-girl.png') 18px 2px no-repeat;
 
              &:hover {
-               background: #efefef url('/images/oss/factory-girl.png') left top no-repeat; 
+               background-color: #efefef; 
              }
           }
         }

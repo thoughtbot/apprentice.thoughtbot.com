@@ -1331,19 +1331,20 @@ section.open-source ul {
         box-shadow: 0 0 0 10px #efefef; }
     section.open-source ul li.highlighted {
       border-bottom: 1px solid #dcdcdc;
-      margin: 40px 0 0 0;
+      padding-bottom: 20px;
+      margin: 0;
       /*line hight top bottom to maintain baseline grid*/
       padding-right: 25px; }
       section.open-source ul li.highlighted:nth-child(4n+2) {
         padding-right: 0; }
       section.open-source ul li.highlighted.paperclip a {
-        background: transparent url("/images/oss/paperclip.png") left top no-repeat; }
+        background: transparent url("/images/oss/paperclip.png") 22px 2px no-repeat; }
         section.open-source ul li.highlighted.paperclip a:hover {
-          background: #efefef url("/images/oss/paperclip.png") left top no-repeat; }
+          background-color: #efefef; }
       section.open-source ul li.highlighted.factory-girl a {
-        background: transparent url("/images/oss/factory-girl.png") left top no-repeat; }
+        background: transparent url("/images/oss/factory-girl.png") 18px 2px no-repeat; }
         section.open-source ul li.highlighted.factory-girl a:hover {
-          background: #efefef url("/images/oss/factory-girl.png") left top no-repeat; }
+          background-color: #efefef; }
       section.open-source ul li.highlighted a {
         padding-left: 230px;
         min-height: 170px; }
