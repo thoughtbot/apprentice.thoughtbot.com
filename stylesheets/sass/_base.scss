@@ -129,9 +129,11 @@ h4 {
 }
 
 p {
+  font-weight: 400;
   color: #555;
   line-height: $lh;
   margin-bottom: $lh;
+  text-rendering: optimizeSpeed;
 }
 
 ul {

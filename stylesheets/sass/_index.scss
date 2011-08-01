@@ -159,6 +159,9 @@ section#services {
     margin-right: $gutter;
     width: grid-width(4);
 
+    p {
+      font-weight: 400;
+    }
     .learn-more {
       font: 16px $header;
     }

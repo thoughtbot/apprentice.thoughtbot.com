@@ -731,9 +731,11 @@ h4 {
   margin: 0; }
 
 p {
+  font-weight: 400;
   color: #555;
   line-height: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-rendering: optimizeSpeed; }
 
 ul {
   list-style-position: outside;
@@ -1170,6 +1172,8 @@ section#services {
     float: left;
     margin-right: 25px;
     width: 315px; }
+    section#services #about-services p {
+      font-weight: 400; }
     section#services #about-services .learn-more {
       font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
   section#services blockquote {
