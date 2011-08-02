@@ -27,7 +27,8 @@ jQuery(document).ready(function() {
 		hyperbuddha: "Alex Godin",
 		elindsay: "Emma Lindsay",
                 mmongeau: "Matt Mongeau",
-                plapier: "Phil LaPier"
+                plapier: "Phil LaPier",
+                gabebw: "Gabe Berke-Williams"
 	};
 
 	jQuery(".author").each(function(i) {
