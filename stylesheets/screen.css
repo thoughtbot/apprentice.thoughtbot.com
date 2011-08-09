@@ -835,20 +835,6 @@ img {
   border-bottom: 1px solid #DCDCDC;
   padding: 39px 0 39px; }
 
-/* Selection styles
----------------------------------------- */
-::selection {
-  background: #ad141e;
-  color: #000; }
-
-::-moz-selection {
-  background: #ad141e;
-  color: #000; }
-
-::-webkit-selection {
-  background: #ad141e;
-  color: #000; }
-
 /* Design page
 ---------------------------------------- */
 #design-portfolio ul {

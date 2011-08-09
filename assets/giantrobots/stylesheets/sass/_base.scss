@@ -63,23 +63,6 @@ $gutter: 25px; /*size of one gutter*/
   @return $n * $unit + ($n - 1) * $gutter;
 }
 
-/* Selection styles
----------------------------------------- */
-::selection {
-  background: $red;
-  color: #000;
-}
-
-::-moz-selection {
-  background: $red;
-  color: #000;
-}
-
-::-webkit-selection {
-  background: $red;
-  color: #000;
-}
-
 /* Global Reset
 ------------------------------------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/

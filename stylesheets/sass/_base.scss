@@ -258,23 +258,6 @@ img {
   padding: ($lh*2)-(1) 0 ($lh*2)-(1);
 }
 
-/* Selection styles
----------------------------------------- */
-::selection {
-  background: $red;
-  color: #000;
-}
-
-::-moz-selection {
-  background: $red;
-  color: #000;
-}
-
-::-webkit-selection {
-  background: $red;
-  color: #000;
-}
-
 /* Design page
 ---------------------------------------- */
 #design-portfolio {

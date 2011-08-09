@@ -6,20 +6,6 @@
 /*line-height of all the type on the site*/
 /*one grid column*/
 /*size of one gutter*/
-/* Selection styles
----------------------------------------- */
-::selection {
-  background: #ad141e;
-  color: #000; }
-
-::-moz-selection {
-  background: #ad141e;
-  color: #000; }
-
-::-webkit-selection {
-  background: #ad141e;
-  color: #000; }
-
 /* Global Reset
 ------------------------------------------------------------------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
