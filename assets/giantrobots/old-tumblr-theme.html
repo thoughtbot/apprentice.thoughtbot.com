@@ -425,7 +425,7 @@
         <div class="sidebar-box" id="addled" style="display:none;">
           <a href="#">
             <p class="small-title addled-name"></p>
-            <p class="main-text addled-value-prop"></p>
+            <p class="main-text addled-creative"></p>
           </a>
         </div>
 
@@ -454,14 +454,16 @@ _gaq.push(['_trackPageview']);
 <script type="text/javascript">
 (function() {
   $(function() {
-    var keywords = encodeURIComponent($("meta[name='keywords']").attr("content").split(','));
-    $.getJSON("http://addled.heroku.com/ad/" + keywords, function(data) {
+    var commaKeywords, keywords;
+    keywords = encodeURIComponent($("meta[name='keywords']").attr("content"));
+    commaKeywords = keywords ? keywords.split(',') : "";
+    return $.getJSON("http://ads.thoughtbot.com/ad?keywords=" + commaKeywords, function(data) {
       $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
       $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
       $('.addled-name').html(data.name);
-      $('.addled-value-prop').html(data.value_prop);
+      return $('.addled-creative').html(data.creative);
     }).done(function() {
-      $('#addled').fadeIn('slow');
+      return $('#addled').fadeIn('slow');
     });
   });
 }).call(this);

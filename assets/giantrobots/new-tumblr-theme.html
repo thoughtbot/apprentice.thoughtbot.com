@@ -211,7 +211,7 @@
         <section id="addled" class="message" style="display:none;">
           <a href="#">
             <span class="addled-name"></span>
-            <span class="addled-value-prop"></span>
+            <span class="addled-creative"></span>
           </a>
         </section>
       </aside>
@@ -283,19 +283,23 @@
     </script>
 
     <script type="text/javascript">
-    (function() {
-      $(function() {
-        var keywords = encodeURIComponent($("meta[name='keywords']").attr("content").split(','));
-        $.getJSON("http://addled.heroku.com/ad/" + keywords, function(data) {
-          $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
-          $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
-          $('.addled-name').html(data.name);
-          $('.addled-value-prop').html(data.value_prop);
-        }).done(function() {
-          $('#addled').fadeIn('slow');
-        });
-      });
-    }).call(this);
+
+(function() {
+  $(function() {
+    var commaKeywords, keywords;
+    keywords = encodeURIComponent($("meta[name='keywords']").attr("content"));
+    commaKeywords = keywords ? keywords.split(',') : "";
+    return $.getJSON("http://ads.thoughtbot.com/ad?keywords=" + commaKeywords, function(data) {
+      $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
+      $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
+      $('.addled-name').html(data.name);
+      return $('.addled-creative').html(data.creative);
+    }).done(function() {
+      return $('#addled').fadeIn('slow');
+    });
+  });
+}).call(this);
+
     </script>
   </body>
 </html>
