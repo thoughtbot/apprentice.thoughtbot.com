@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+/* Mixins
+---------------------------------------- */
+>>>>>>> Percentage grid
 /* Variables
 ---------------------------------------- */
 /*thoughtbot red*/
@@ -27,13 +32,22 @@ body {
   text-align: center; }
   @media screen and (max-device-width: 480px) {
     body {
+<<<<<<< HEAD
       min-width: 1190px; } }
+=======
+      min-width: 120.96%; } }
+>>>>>>> Percentage grid
 
 .wrapper, .primary, #design-portfolio, .secondary {
   margin: 0 auto;
   text-align: left;
+<<<<<<< HEAD
   width: 995px;
   padding: 0 25px; }
+=======
+  width: 101.07%;
+  padding: 0 2.61%; }
+>>>>>>> Percentage grid
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -82,8 +96,13 @@ blockquote {
   background: url("/images/quote.png") no-repeat;
   border: 0;
   font: 300 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+<<<<<<< HEAD
   margin: 0 25px 0 0;
   padding-left: 25px; }
+=======
+  margin: 0 2.61% 0 0;
+  padding-left: 2.61%; }
+>>>>>>> Percentage grid
   blockquote p {
     line-height: 30px; }
   blockquote p.author {
@@ -113,7 +132,10 @@ a:hover {
   text-shadow: 0 -1px 0 #7f0f16;
   -webkit-box-shadow: inset 0 1px 0 #e93e49;
   -moz-box-shadow: inset 0 1px 0 #e93e49;
+<<<<<<< HEAD
   -ms-box-shadow: inset 0 1px 0 #e93e49;
+=======
+>>>>>>> Percentage grid
   -o-box-shadow: inset 0 1px 0 #e93e49;
   box-shadow: inset 0 1px 0 #e93e49;
   -webkit-border-radius: 3px;
@@ -147,7 +169,10 @@ a:hover {
     text-shadow: 0 -1px 0 #96111a;
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
+<<<<<<< HEAD
     -ms-box-shadow: inset 0 1px 0 #ee6c74;
+=======
+>>>>>>> Percentage grid
     -o-box-shadow: inset 0 1px 0 #ee6c74;
     box-shadow: inset 0 1px 0 #ee6c74; }
   .button:active, form.wufoo ul li input#saveForm:active {
@@ -155,7 +180,10 @@ a:hover {
     text-shadow: none;
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
+<<<<<<< HEAD
     -ms-box-shadow: inset 0 -1px 3px #680c12;
+=======
+>>>>>>> Percentage grid
     -o-box-shadow: inset 0 -1px 3px #680c12;
     box-shadow: inset 0 -1px 3px #680c12; }
 
@@ -201,7 +229,10 @@ img {
     #design-portfolio ul li img {
       -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
       -ms-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+=======
+>>>>>>> Percentage grid
       -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
     #design-portfolio ul li:last-child {
@@ -226,8 +257,13 @@ form.wufoo {
     margin-top: 20px;
     padding: 4px; }
     form.wufoo ul li {
+<<<<<<< HEAD
       margin-bottom: 30px;
       width: 655px;
+=======
+      margin-bottom: 20px;
+      width: 49.23%;
+>>>>>>> Percentage grid
       padding: 0;
       margin-right: 25px; }
       form.wufoo ul li.section {
@@ -272,10 +308,29 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
         margin: 0;
+<<<<<<< HEAD
         max-width: 595px;
         padding: 9px 10px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: 595px; }
+=======
+        max-width: 49.23%;
+        /*6 columns minus line-height for the padding and 2px for the border*/
+        min-width: 49.23%;
+        /*6 columns minus line-height for the padding and 2px for the border*/
+        padding: 9px 10px;
+        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        width: 49.23%;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+        -o-box-shadow: inset 0 1px 2px #aaaaaa;
+        box-shadow: inset 0 1px 2px #aaaaaa; }
+>>>>>>> Percentage grid
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
@@ -307,6 +362,7 @@ form.wufoo {
           width: 272.5px; }
       form.wufoo ul li.name {
         float: none;
+<<<<<<< HEAD
         margin-bottom: 10px;
         width: 510px; }
         form.wufoo ul li.name span {
@@ -315,6 +371,15 @@ form.wufoo {
           margin-right: 25px;
           width: 272.5px; }
           form.wufoo ul li.name span:nth-child(odd) {
+=======
+        width: 51.84%; }
+        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+          display: block;
+          float: left;
+          margin-right: 2.61%;
+          width: 23.31%; }
+          form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
+>>>>>>> Percentage grid
             margin-right: 0; }
           form.wufoo ul li.name span input[type="text"] {
             width: 100%; }
@@ -323,6 +388,7 @@ form.wufoo {
             float: none;
             margin: 0;
             width: auto; }
+<<<<<<< HEAD
       form.wufoo ul li.pitch div label {
         line-height: 0.8em; }
       form.wufoo ul li.services legend {
@@ -331,3 +397,42 @@ form.wufoo {
         margin-bottom: 8px; }
         form.wufoo ul li.services span label {
           margin-left: 5px; }
+=======
+          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
+            color: #aaa;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: normal; }
+          form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
+            max-width: 23.31%;
+            min-width: 23.31%;
+            width: 23.31%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box; }
+      form.wufoo ul li#fo7li3 {
+        clear: both;
+        width: 66.51%; }
+      form.wufoo ul li#fo5li136 div {
+        margin-left: 10px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li136 div span {
+          color: #666;
+          margin-right: 10px; }
+      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
+        display: block;
+        margin-left: 30px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
+          color: #666;
+          display: block;
+          margin-bottom: 10px; }
+          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
+            margin: -2px 3px 0 -20px;
+            top: 0; }
+          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
+            display: inline; }
+      form.wufoo ul li#fo5li130 h3#title130 {
+        margin-top: 0; }
+>>>>>>> Percentage grid

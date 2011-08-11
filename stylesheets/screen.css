@@ -694,13 +694,19 @@ body {
   text-align: center; }
   @media screen and (max-device-width: 480px) {
     body {
-      min-width: 1190px; } }
+      min-width: 119.56%; } }
 
 .wrapper, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
   margin: 0 auto;
   text-align: left;
-  width: 995px;
-  padding: 0 25px; }
+  width: 99.97%;
+  padding: 0 2.51%;
+  max-width: 1095px;
+  min-width: 600px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -749,8 +755,8 @@ blockquote {
   background: url("/images/quote.png") no-repeat;
   border: 0;
   font: 300 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0 25px 0 0;
-  padding-left: 25px; }
+  margin: 0 2.51% 0 0;
+  padding-left: 2.51%; }
   blockquote p {
     line-height: 30px; }
   blockquote p.author {
@@ -893,8 +899,13 @@ form.wufoo {
     margin-top: 20px;
     padding: 4px; }
     form.wufoo ul li {
+<<<<<<< HEAD
       margin-bottom: 30px;
       width: 655px;
+=======
+      margin-bottom: 20px;
+      width: 48.73%;
+>>>>>>> Percentage grid
       padding: 0;
       margin-right: 25px; }
       form.wufoo ul li.section {
@@ -939,10 +950,29 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
         margin: 0;
+<<<<<<< HEAD
         max-width: 595px;
         padding: 9px 10px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: 595px; }
+=======
+        max-width: 48.73%;
+        /*6 columns minus line-height for the padding and 2px for the border*/
+        min-width: 48.73%;
+        /*6 columns minus line-height for the padding and 2px for the border*/
+        padding: 9px 10px;
+        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        width: 48.73%;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+        -o-box-shadow: inset 0 1px 2px #aaaaaa;
+        box-shadow: inset 0 1px 2px #aaaaaa; }
+>>>>>>> Percentage grid
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
@@ -974,6 +1004,7 @@ form.wufoo {
           width: 272.5px; }
       form.wufoo ul li.name {
         float: none;
+<<<<<<< HEAD
         margin-bottom: 10px;
         width: 510px; }
         form.wufoo ul li.name span {
@@ -982,6 +1013,15 @@ form.wufoo {
           margin-right: 25px;
           width: 272.5px; }
           form.wufoo ul li.name span:nth-child(odd) {
+=======
+        width: 51.24%; }
+        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+          display: block;
+          float: left;
+          margin-right: 2.51%;
+          width: 23.11%; }
+          form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
+>>>>>>> Percentage grid
             margin-right: 0; }
           form.wufoo ul li.name span input[type="text"] {
             width: 100%; }
@@ -990,6 +1030,7 @@ form.wufoo {
             float: none;
             margin: 0;
             width: auto; }
+<<<<<<< HEAD
       form.wufoo ul li.pitch div label {
         line-height: 0.8em; }
       form.wufoo ul li.services legend {
@@ -998,6 +1039,45 @@ form.wufoo {
         margin-bottom: 8px; }
         form.wufoo ul li.services span label {
           margin-left: 5px; }
+=======
+          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
+            color: #aaa;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: normal; }
+          form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
+            max-width: 23.11%;
+            min-width: 23.11%;
+            width: 23.11%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box; }
+      form.wufoo ul li#fo7li3 {
+        clear: both;
+        width: 65.81%; }
+      form.wufoo ul li#fo5li136 div {
+        margin-left: 10px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li136 div span {
+          color: #666;
+          margin-right: 10px; }
+      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
+        display: block;
+        margin-left: 30px;
+        padding-top: 20px; }
+        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
+          color: #666;
+          display: block;
+          margin-bottom: 10px; }
+          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
+            margin: -2px 3px 0 -20px;
+            top: 0; }
+          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
+            display: inline; }
+      form.wufoo ul li#fo5li130 h3#title130 {
+        margin-top: 0; }
+>>>>>>> Percentage grid
 
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
@@ -1082,19 +1162,24 @@ footer#main-footer {
       color: #ad141e; }
   footer#main-footer nav section {
     float: left;
-    margin-right: 25px;
-    width: 145px; }
+    margin-right: 2.51%;
+    width: 14.57%; }
     footer#main-footer nav section#thoughtbot-footer {
-      width: 315px; }
+      width: 31.65%; }
       footer#main-footer nav section#thoughtbot-footer ul li {
         float: left;
+<<<<<<< HEAD
         display: block;
         margin-right: 25px;
         width: 145px; }
+=======
+        margin-right: 2.51%;
+        width: 14.57%; }
+>>>>>>> Percentage grid
         footer#main-footer nav section#thoughtbot-footer ul li:nth-child(2n) {
           margin-right: 0; }
     footer#main-footer nav section#blog-footer {
-      width: 315px; }
+      width: 31.65%; }
     footer#main-footer nav section:last-child {
       margin-right: 0; }
     footer#main-footer nav section ul {
@@ -1120,12 +1205,16 @@ footer#main-footer {
     /*line-height minus 2 for the border to maintain baseline grid*/
     list-style: none;
     position: relative;
-    width: 995px -2;
+    width: 99.97%;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15); }
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
     #portfolio-slider div ul.slider img {
       display: none;
       left: 0px;
@@ -1174,7 +1263,8 @@ section#portfolio {
     list-style: none; }
     section#portfolio ul li {
       float: left;
-      margin: 0 25px 20px 0; }
+      margin: 0 2.51% 20px 0;
+      width: 23.11%; }
       section#portfolio ul li a {
         border: 1px solid #BDBDBD;
         display: block;
@@ -1182,8 +1272,10 @@ section#portfolio {
         /*adding a 10px to account for the 1px border and 4px padding*/
         padding: 4px;
         text-indent: -9999px;
-        width: 220px;
-        /*minus the 10px from the 1px border and 4px padding*/ }
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box; }
         section#portfolio ul li a:hover {
           border-color: #999;
           -webkit-transform: scale(1.01);
@@ -1219,21 +1311,21 @@ section#services {
   margin-bottom: 40px; }
   section#services #about-services {
     float: left;
-    margin-right: 25px;
-    width: 315px; }
+    margin-right: 2.51%;
+    width: 31.65%; }
     section#services #about-services p {
       font-weight: 400; }
     section#services #about-services .learn-more {
       font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
   section#services blockquote {
     float: left;
-    width: 290px; }
+    width: 29.14%; }
   section#services section#clients {
     border-top: 5px solid #ad141e;
     float: left;
     padding-top: 35px;
     /*line-height x 2 minus the five 5px border*/
-    width: 315px; }
+    width: 31.65%; }
     section#services section#clients h3 {
       color: rgba(43, 43, 43, 0.8); }
     section#services section#clients ul {
@@ -1242,8 +1334,8 @@ section#services {
         color: #ABABAB;
         float: left;
         font-style: italic;
-        margin-right: 25px;
-        width: 145px; }
+        margin-right: 2.51%;
+        width: 48.73%; }
         section#services section#clients ul li:nth-child(2n) {
           margin-right: 0; }
     section#services section#clients p {
@@ -1302,8 +1394,14 @@ section#products {
     list-style: none; }
     section#products ul li {
       float: left;
+<<<<<<< HEAD
       margin-right: 25px;
       width: 315px; }
+=======
+      margin-right: 2.51%;
+      width: 23.11%;
+      /*change when radish is added*/ }
+>>>>>>> Percentage grid
       section#products ul li#airbrake a div.product-logo img {
         padding-top: 24px; }
       section#products ul li#copycopter a div.product-logo img {
@@ -1370,11 +1468,11 @@ section#workshops {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#workshops section#about-workshops {
     float: left;
-    margin-right: 25px;
-    width: 315px; }
+    margin-right: 2.51%;
+    width: 31.65%; }
   section#workshops blockquote {
     float: left;
-    width: 290px; }
+    width: 29.14%; }
     section#workshops blockquote .author {
       color: #999; }
   section#workshops section#current-workshops {
@@ -1384,8 +1482,12 @@ section#workshops {
     margin-top: 10px;
     padding: 25px 20px 20px;
     /*top padding makes up for 5px border and 10px margin*/
-    width: 275px;
-    /*4 units minus left and right padding*/ }
+    width: 31.65%;
+    /*4 units minus left and right padding*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
     section#workshops section#current-workshops ul {
       list-style: none; }
     section#workshops section#current-workshops p {
@@ -1397,7 +1499,7 @@ section.open-source ul {
   /*line hight to maintain baseline grid*/ }
   section.open-source ul li {
     float: left;
-    margin: 40px 25px 0 0;
+    margin: 40px 2.51% 0 0;
     /*line hight top bottom to maintain baseline grid*/ }
     section.open-source ul li.end-row {
       margin-right: 0; }
@@ -1405,7 +1507,7 @@ section.open-source ul {
       clear: both; }
     section.open-source ul li a {
       display: block;
-      width: 230px; }
+      width: 23.11%; }
       section.open-source ul li a:hover {
         background: #efefef;
         -webkit-transition-property: all, 0.3s;
@@ -1438,7 +1540,7 @@ section.open-source ul {
       padding-bottom: 20px;
       margin: 0;
       /*line hight top bottom to maintain baseline grid*/
-      padding-right: 25px; }
+      padding-right: 2.51%; }
       section.open-source ul li.highlighted:nth-child(4n+2) {
         padding-right: 0; }
       section.open-source ul li.highlighted.paperclip a {
@@ -1450,7 +1552,7 @@ section.open-source ul {
         section.open-source ul li.highlighted.factory-girl a:hover {
           background-color: #efefef; }
       section.open-source ul li.highlighted a {
-        padding-left: 230px;
+        padding-left: 23.11%;
         min-height: 170px; }
         section.open-source ul li.highlighted a h3 {
           color: #ad141e;
@@ -1461,8 +1563,8 @@ section#events {
   text-shadow: 0 1px 0 #fcfcfc; }
   section#events p.events-intro {
     float: left;
-    margin-right: 25px;
-    width: 230px; }
+    margin-right: 2.51%;
+    width: 23.11%; }
   section#events ul {
     list-style: none; }
     section#events ul li {
@@ -1470,25 +1572,38 @@ section#events {
       border-top: 5px solid #292929;
       display: block;
       float: left;
-      margin-right: 25px;
+      margin-right: 2.51%;
       overflow: hidden;
       padding: 35px 20px 20px;
       /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
-      width: 190px;
-      /*grid width minus padding*/ }
+      width: 23.11%;
+      /*grid width minus padding*/
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
       section#events ul li:last-child {
         margin-right: 0; }
 
 div#contact-content div#contact_form {
   float: left;
+<<<<<<< HEAD
   margin-right: 25px;
   width: 630px; }
+=======
+  margin-right: 2.51%;
+  width: 48.73%; }
+>>>>>>> Percentage grid
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: left;
+<<<<<<< HEAD
   width: 315px;
   margin-left: 25px; }
+=======
+  width: 48.73%; }
+>>>>>>> Percentage grid
   div#contact-content section#contact-info section#hire-thoughtbot a {
     margin: 20px 0 40px;
     padding: 30px; }
@@ -1504,13 +1619,18 @@ div#contact-content section#contact-info {
       background: #ad141e; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
+<<<<<<< HEAD
     width: 315px; }
+=======
+    margin-right: 2.51%;
+    width: 31.65%; }
+>>>>>>> Percentage grid
     div#contact-content section#contact-info section#contact-other ul {
-      margin-left: 25px; }
+      margin-left: 2.51%; }
   div#contact-content section#contact-info section.contact-address {
     float: left;
     margin-bottom: 20px;
-    width: 145px; }
+    width: 14.57%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {
@@ -1518,14 +1638,23 @@ div#contact-content section#contact-info {
 
 div#contact-content div#contact_form {
   float: left;
+<<<<<<< HEAD
   margin-right: 25px;
   width: 630px; }
+=======
+  margin-right: 2.51%;
+  width: 48.73%; }
+>>>>>>> Percentage grid
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: left;
+<<<<<<< HEAD
   width: 315px;
   margin-left: 25px; }
+=======
+  width: 48.73%; }
+>>>>>>> Percentage grid
   div#contact-content section#contact-info section#hire-thoughtbot a {
     margin: 20px 0 40px;
     padding: 30px; }
@@ -1541,13 +1670,18 @@ div#contact-content section#contact-info {
       background: #ad141e; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
+<<<<<<< HEAD
     width: 315px; }
+=======
+    margin-right: 2.51%;
+    width: 31.65%; }
+>>>>>>> Percentage grid
     div#contact-content section#contact-info section#contact-other ul {
-      margin-left: 25px; }
+      margin-left: 2.51%; }
   div#contact-content section#contact-info section.contact-address {
     float: left;
     margin-bottom: 20px;
-    width: 145px; }
+    width: 14.57%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {
@@ -1557,22 +1691,22 @@ section#people ul {
   list-style: none; }
   section#people ul li {
     float: left;
-    margin: 0 25px 40px 0;
+    margin: 0 2.51% 40px 0;
     /*line height on the bottom to maintain baseline grid*/
     min-height: 240px;
     /*specify line-height height so each perosn has a proper amount of space for their bio*/
-    width: 485px; }
+    width: 48.73%; }
     section#people ul li:nth-child(2n) {
       margin-right: 0; }
     section#people ul li:nth-child(2n+1) {
       clear: left; }
     section#people ul li div.person-photo {
       float: left;
-      margin-right: 25px;
-      width: 145px; }
+      margin-right: 2.51%;
+      width: 14.57%; }
     section#people ul li div.person-info {
       float: left;
-      width: 315px; }
+      width: 31.65%; }
       section#people ul li div.person-info h2 {
         font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
         line-height: 40px;
@@ -1586,10 +1720,10 @@ section#people ul {
 
 div#jobs-wrapper section#current-openings {
   float: left;
-  margin-right: 25px;
+  margin-right: 2.51%;
   padding: 0;
   /*top padding makes up for 5px border and 10px margin*/
-  width: 315px;
+  width: 31.65%;
   /*4 units minus left and right padding*/ }
   div#jobs-wrapper section#current-openings ul {
     border-top: 5px solid #ad141e;
@@ -1602,19 +1736,19 @@ div#jobs-wrapper section#current-openings {
         font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
 div#jobs-wrapper section#more-about-us {
   float: left;
-  width: 655px; }
+  width: 65.81%; }
   div#jobs-wrapper section#more-about-us > ul > li {
     list-style: none; }
 
 div#jobs-wrapper.job-description section#positions {
   float: left;
-  width: 570px;
-  margin-right: 25px; }
+  width: 57.27%;
+  margin-right: 2.51%; }
   div#jobs-wrapper.job-description section#positions ul {
     list-style: none; }
 div#jobs-wrapper.job-description section#more-about-us {
   float: left;
-  width: 400px; }
+  width: 40.19%; }
   div#jobs-wrapper.job-description section#more-about-us > h2, div#jobs-wrapper.job-description section#more-about-us h4 {
     color: #6f6f6f; }
   div#jobs-wrapper.job-description section#more-about-us p {

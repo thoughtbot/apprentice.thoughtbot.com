@@ -97,7 +97,8 @@ section#events {
       margin-right: $gutter;
       overflow: hidden;
       padding: ($lh*2)-(5px) $lh $lh; /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
-      width: grid-width(3)-($lh*2); /*grid width minus padding*/
+      width: grid-width(3); /*grid width minus padding*/
+      @include box-sizing(border-box);
 
 
       &:last-child {
