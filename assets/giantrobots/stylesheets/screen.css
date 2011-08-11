@@ -421,6 +421,8 @@ section#container {
           text-decoration: underline; }
       section#container section#posts .post em {
         font-style: italic; }
+      section#container section#posts .post strong {
+        font-weight: 700; }
       section#container section#posts .post table {
         font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-bottom: 12px;
