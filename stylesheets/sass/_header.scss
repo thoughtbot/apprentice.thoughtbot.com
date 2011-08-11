@@ -2,44 +2,46 @@ header#main-header {
   @extend .wrapper;
   @extend .clearfix;
 
-  border-bottom: 1px solid #DCDCDC;
-  padding-bottom: $lh;
-
-  h1 {
-    float: left;
-    margin: 42px 0 24px;
-
-    a {
-      background: url('/images/thoughtbot-logo.png') 0 0 no-repeat;
-      display: block;
-      height: 65px;
-      text-indent: -9999px;
-      width: 242px;
-    }
-  }
-
-  ul {
-    display: block;
-    float: right;
-    margin-top: 72px;
-
+  nav#main-nav {
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: $lh;
     @extend .clearfix;
-
-    li {
+    h1 {
       float: left;
+      margin: 42px 0 24px;
 
       a {
-        color: #2b2b2b;
+        background: url('/images/thoughtbot-logo.png') 0 0 no-repeat;
         display: block;
-        font: 500 16px $header;
-        line-height: $lh;
-        margin: 0 $lh;
+        height: 65px;
+        text-indent: -9999px;
+        width: 242px;
+      }
+    }
 
-        @include transition(color .2s);
+    ul {
+      display: block;
+      float: right;
+      margin-top: 72px;
 
-        &:hover {
-          color: $red;
-          text-decoration: none;
+      @extend .clearfix;
+
+      li {
+        float: left;
+
+        a {
+          color: #2b2b2b;
+          display: block;
+          font: 500 16px $header;
+          line-height: $lh;
+          margin: 0 $lh;
+
+          @include transition(color .2s);
+
+          &:hover {
+            color: $red;
+            text-decoration: none;
+          }
         }
       }
     }

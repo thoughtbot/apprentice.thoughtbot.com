@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* Mixins
 ---------------------------------------- */
 @mixin border-radius ($radii) {
@@ -56,7 +54,6 @@
   box-sizing: $type;
 }
 
->>>>>>> Percentage grid
 /* Variables
 ---------------------------------------- */
 $header: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -107,8 +104,8 @@ body {
   text-align: left;
   width: grid-width(12);
   padding: 0 $gutter;
-  max-width: 1095px;
-  min-width: 600px;
+  max-width: 1122px;
+  min-width: 650px;
   @include box-sizing(border-box);
 }
 
