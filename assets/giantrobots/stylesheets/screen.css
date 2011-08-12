@@ -218,13 +218,22 @@ section#container {
   padding: 20px 0 80px;
   width: 995px; }
   section#container header {
-    background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 40px 0;
-    padding: 0 0 60px 0; }
+    padding: 0 0 40px 0; }
+    section#container header h1.logo {
+      float: left;
+      width: 145px; }
+      section#container header h1.logo a {
+        background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") no-repeat;
+        display: block;
+        height: 85px;
+        margin: 15px 0 0 30px;
+        text-indent: -9999px;
+        width: 85px; }
     section#container header hgroup {
       float: left;
-      padding: 40px 0 0 170px;
+      padding: 40px 0 0 25px;
       width: 570px; }
       section#container header hgroup h1 {
         font: 700 12px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;

@@ -13,14 +13,27 @@ section#container {
 
   header {
     @extend .clearfix;
-    background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") 31px 16px no-repeat;
     border-bottom: 1px solid #ddd;
     margin: 0 0 $lh*2 0;
-    padding: 0 0 $lh*3 0;
+    padding: 0 0 $lh*2 0;
+
+    h1.logo {
+      float: left;
+      width: grid-width(2);
+
+      a {
+        background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") no-repeat;
+        display: block;
+        height: 85px;
+        margin: 15px 0 0 30px;
+        text-indent: -9999px;
+        width: 85px;
+      }
+    }
 
     hgroup {
       float: left;
-      padding: 40px 0 0 grid-width(2) + $gutter;
+      padding: 40px 0 0 $gutter;
       width: grid-width(7);
 
       h1 {
