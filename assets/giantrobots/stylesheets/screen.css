@@ -268,23 +268,23 @@ section#container {
           width: 42px; }
           section#container header nav ul li a {
             display: block;
-            height: 41px; }
+            height: 41px;
+            text-indent: -9999px;
+            -webkit-transition: 0.5s;
+            -moz-transitition: 0.5s;
+            transitition: 0.5s; }
           section#container header nav ul li#twitter a {
-            background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
-            text-indent: -9999px;
-            -webkit-transition: 0.5s;
-            -moz-transitition: 0.5s;
-            transitition: 0.5s; }
+            background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat; }
             section#container header nav ul li#twitter a:hover {
-              background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -48px no-repeat; }
+              background-position: -8px -48px; }
           section#container header nav ul li#contact a {
-            background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
-            text-indent: -9999px;
-            -webkit-transition: 0.5s;
-            -moz-transitition: 0.5s;
-            transitition: 0.5s; }
+            background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat; }
             section#container header nav ul li#contact a:hover {
-              background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -47px no-repeat; }
+              background-position: 0 -47px; }
+          section#container header nav ul li#rss a {
+            background: url("/assets/giantrobots/images/rss.png") 0px 0px no-repeat; }
+            section#container header nav ul li#rss a:hover {
+              background-position: 0px -47px; }
   section#container aside {
     float: left;
     margin: 10px 0 0 25px;

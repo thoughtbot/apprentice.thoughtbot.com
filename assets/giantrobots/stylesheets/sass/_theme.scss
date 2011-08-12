@@ -88,16 +88,16 @@ section#container {
           a {
             display: block;
             height: 41px;
+            text-indent: -9999px;
+            @include transition(0.5s);
           }
 
           &#twitter {
             a {
               background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
-              text-indent: -9999px;
-              @include transition(0.5s);
 
               &:hover {
-                background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -48px no-repeat;
+                background-position: -8px -48px;
               }
             }
           }
@@ -105,11 +105,19 @@ section#container {
           &#contact {
             a {
               background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
-              text-indent: -9999px;
-              @include transition(0.5s);
 
               &:hover {
-                background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -47px no-repeat;
+                background-position: 0 -47px;
+              }
+            }
+          }
+
+          &#rss {
+            a {
+              background: url("/assets/giantrobots/images/rss.png") 0px 0px no-repeat;
+
+              &:hover {
+                background-position: 0px -47px;
               }
             }
           }
