@@ -524,70 +524,70 @@ end
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
-  	<script>
-  	jQuery(document).ready(function() {
-  	authors = {
-    		dancroak: "Dan Croak",
-    		qrush: "Nick Quaranto",
-    		cpytel: "Chad Pytel",
-    		lolconomy: "Mike Burns",
-    		asimeoni: "Angelo Simeoni",
-    		emill: "Eric Mill",
-    		fyates: "Fred Yates",
-    		jankowski: "Matt Jankowski",
-    		jferris: "Joe Ferris",
-    		jyurek: "Jon Yurek",
-    		kevin: "Kevin Burg",
-    		possibilist: "Floyd Wright",
-    		tsaleh: "Tammer Saleh",
-    		thoughtbotjc: "Jared Carroll",
-    		thoughtbotet: "Eric Torrey",
-    		thoughtbotjm: "Jason Martinez",
-    		thoughtbotmmk: "Mike McKenna",
-    		thoughtbotmr: "Micah Rich",
-    		jasonmorrisontb: "Jason Morrison",
-    		jdclayton: "Josh Clayton",
-    		tristandunn: "Tristan Dunn",
-    		ubuwaits: "Chad Mazzola",
-    		kylehasmanypixels: "Kyle Fiedler",
-    		hgimenez: "Harold Giménez",
-    		elindsay: "Emma Lindsay",
+    <script>
+    jQuery(document).ready(function() {
+    authors = {
+        dancroak: "Dan Croak",
+        qrush: "Nick Quaranto",
+        cpytel: "Chad Pytel",
+        lolconomy: "Mike Burns",
+        asimeoni: "Angelo Simeoni",
+        emill: "Eric Mill",
+        fyates: "Fred Yates",
+        jankowski: "Matt Jankowski",
+        jferris: "Joe Ferris",
+        jyurek: "Jon Yurek",
+        kevin: "Kevin Burg",
+        possibilist: "Floyd Wright",
+        tsaleh: "Tammer Saleh",
+        thoughtbotjc: "Jared Carroll",
+        thoughtbotet: "Eric Torrey",
+        thoughtbotjm: "Jason Martinez",
+        thoughtbotmmk: "Mike McKenna",
+        thoughtbotmr: "Micah Rich",
+        jasonmorrisontb: "Jason Morrison",
+        jdclayton: "Josh Clayton",
+        tristandunn: "Tristan Dunn",
+        ubuwaits: "Chad Mazzola",
+        kylehasmanypixels: "Kyle Fiedler",
+        hgimenez: "Harold Giménez",
+        elindsay: "Emma Lindsay",
         mmongeau: "Matt Mongeau",
         plapier: "Phil LaPier"
-    	};
+      };
 
-    	jQuery(".author").each(function(i) {
-    		author = this.innerHTML;
-    		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
-    	});
+      jQuery(".author").each(function(i) {
+        author = this.innerHTML;
+        this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
+      });
 
-    	jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
+      jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
 
-    	jQuery(".page-top").each(function(i) {
-    		var post = jQuery(this);
-    		if(parseInt(post.attr('id')) <= 722112946) {
-    			post.addClass("old");
-    		}
-    	});
+      jQuery(".page-top").each(function(i) {
+        var post = jQuery(this);
+        if(parseInt(post.attr('id')) <= 722112946) {
+          post.addClass("old");
+        }
+      });
     });
     </script>
 
     <script type="text/javascript">
-(function() {
-  $(function() {
-    var commaKeywords, keywords;
-    keywords = encodeURIComponent($("meta[name='keywords']").attr("content"));
-    commaKeywords = keywords ? keywords.split(',') : "";
-    return $.getJSON("http://ads.thoughtbot.com/ad?keywords=" + commaKeywords, function(data) {
-      $('#addled a').attr("href", data.url + "?utm_source=robots.thoughtbot.com");
-      $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
-      $('.addled-name').html(data.name);
-      return $('.addled-creative').html(data.creative);
-    }).done(function() {
-      return $('#addled').fadeIn('slow');
-    });
-  });
-}).call(this);
+      (function() {
+        $(function() {
+          var commaKeywords, keywords;
+          keywords = encodeURIComponent($("meta[name='keywords']").attr("content"));
+          commaKeywords = keywords ? keywords.split(',') : "";
+          return $.getJSON("http://ads.thoughtbot.com/ad?keywords=" + commaKeywords, function(data) {
+            $('#addled a').attr("href", "http://ads.thoughtbot.com" + data.url + "?utm_source=robots.thoughtbot.com");
+            $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
+            $('.addled-name').html(data.name);
+            return $('.addled-creative').html(data.creative);
+          }).done(function() {
+            return $('#addled').fadeIn('slow');
+          });
+        });
+      }).call(this);
     </script>
   </body>
 </html>
