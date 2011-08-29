@@ -1239,8 +1239,7 @@ section#products {
         -moz-transitition: all 0.5s;
         transitition: all 0.5s; }
         section#products ul li a div.product-logo {
-          /*background: url('/images/products/products_bg.png') 0 0 no-repeat;*/
-          background: url("/images/products/products_bg_three.png") 0 0 no-repeat;
+          background: url("/images/products/products_bg.png") 0 0 no-repeat;
           height: 137px;
           margin-bottom: 43px; }
           section#products ul li a div.product-logo img {

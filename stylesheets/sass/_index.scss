@@ -307,8 +307,7 @@ section#products {
         @include transition(all .5s);
 
         div.product-logo {
-          /*background: url('/images/products/products_bg.png') 0 0 no-repeat;*/
-          background: url('/images/products/products_bg_three.png') 0 0 no-repeat;
+          background: url('/images/products/products_bg.png') 0 0 no-repeat;
           height: ($lh*7)-(3);
           margin-bottom:  ($lh*2)+(3);
 
