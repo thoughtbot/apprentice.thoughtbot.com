@@ -40,6 +40,7 @@ footer#main-footer {
         ul {
           li {
             float: left;
+            display: block;
             margin-right: $gutter;
             width: grid-width(2);
 

@@ -1030,6 +1030,7 @@ footer#main-footer {
       width: 315px; }
       footer#main-footer nav section#thoughtbot-footer ul li {
         float: left;
+        display: block;
         margin-right: 25px;
         width: 145px; }
         footer#main-footer nav section#thoughtbot-footer ul li:nth-child(2n) {
