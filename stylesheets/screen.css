@@ -1480,7 +1480,8 @@ div#jobs-wrapper section#current-openings {
   div#jobs-wrapper section#current-openings ul {
     border-top: 5px solid #ad141e;
     padding-top: 20px;
-    list-style: none; }
+    list-style: none;
+    margin-bottom: 40px; }
     div#jobs-wrapper section#current-openings ul li {
       margin: 5px 0; }
       div#jobs-wrapper section#current-openings ul li a {
