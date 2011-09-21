@@ -37,8 +37,8 @@
 
 @mixin transition ($transition) {
   -webkit-transition: $transition;
-  -moz-transitition: $transition;
-  transitition: $transition;
+  -moz-transition: $transition;
+  transition: $transition;
 }
 
 @mixin transform ($transform) {

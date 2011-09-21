@@ -788,8 +788,8 @@ a:hover {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: all 0.3s;
-  -moz-transitition: all 0.3s;
-  transitition: all 0.3s; }
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
   .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
     background: #c41722;
     border: 1px solid #7f0f16;
@@ -1000,8 +1000,8 @@ header#main-header {
         line-height: 20px;
         margin: 0 20px;
         -webkit-transition: color 0.2s;
-        -moz-transitition: color 0.2s;
-        transitition: color 0.2s; }
+        -moz-transition: color 0.2s;
+        transition: color 0.2s; }
         header#main-header ul li a:hover {
           color: #ad141e;
           text-decoration: none; }
@@ -1010,8 +1010,8 @@ footer#main-footer {
   opacity: .5;
   padding-top: 80px;
   -webkit-transition: opacity 0.5s;
-  -moz-transitition: opacity 0.5s;
-  transitition: opacity 0.5s; }
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
   footer#main-footer:hover {
     opacity: 1; }
   footer#main-footer h3 {
@@ -1193,8 +1193,8 @@ section#services {
           background: url("/images/film-strip.png") 0 1px no-repeat;
           padding-left: 20px;
           -webkit-transition: color 0.5s;
-          -moz-transitition: color 0.5s;
-          transitition: color 0.5s; }
+          -moz-transition: color 0.5s;
+          transition: color 0.5s; }
           section#services section#clients p.video a:hover {
             background-position: 0 -18px; }
 
@@ -1237,8 +1237,8 @@ section#products {
       section#products ul li a {
         display: block;
         -webkit-transition: all 0.5s;
-        -moz-transitition: all 0.5s;
-        transitition: all 0.5s; }
+        -moz-transition: all 0.5s;
+        transition: all 0.5s; }
         section#products ul li a div.product-logo {
           background: url("/images/products/products_bg.png") 0 0 no-repeat;
           height: 137px;
@@ -1313,8 +1313,8 @@ section.open-source ul {
       section.open-source ul li a:hover {
         background: #efefef;
         -webkit-transition: all 0.3s;
-        -moz-transitition: all 0.3s;
-        transitition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
         -webkit-box-shadow: 0 0 0 10px #efefef;
         -moz-box-shadow: 0 0 0 10px #efefef;
         -o-box-shadow: 0 0 0 10px #efefef;
