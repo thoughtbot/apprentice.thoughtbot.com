@@ -28,7 +28,8 @@ jQuery(document).ready(function() {
 		elindsay: "Emma Lindsay",
                 mmongeau: "Matt Mongeau",
                 plapier: "Phil LaPier",
-                gabebw: "Gabe Berke-Williams"
+                gabebw: "Gabe Berke-Williams",
+                codeulate: "Ben Orenstein"
 	};
 
 	jQuery(".author").each(function(i) {
