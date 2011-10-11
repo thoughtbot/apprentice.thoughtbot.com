@@ -1303,9 +1303,9 @@ section.open-source ul {
     float: left;
     margin: 40px 25px 0 0;
     /*line hight top bottom to maintain baseline grid*/ }
-    section.open-source ul li:nth-child(4n+2) {
+    section.open-source ul li.end-row {
       margin-right: 0; }
-    section.open-source ul li:nth-child(2+4n+1) {
+    section.open-source ul li.start-row {
       clear: both; }
     section.open-source ul li a {
       display: block;
