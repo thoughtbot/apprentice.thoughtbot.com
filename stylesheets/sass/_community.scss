@@ -9,6 +9,7 @@ section.open-source {
     li {
       float: left;
       margin: ($lh*2) $gutter 0 0; /*line hight top bottom to maintain baseline grid*/
+      width: grid-width(3);
 
       &.end-row {
         margin-right: 0;
@@ -20,7 +21,6 @@ section.open-source {
 
       a {
         display: block;
-        width: grid-width(3);
 
         &:hover {
           background: #efefef;
@@ -28,39 +28,20 @@ section.open-source {
           @include box-shadow(0 0 0 10px #efefef);
         }
       }
-      
+
       &.highlighted {
         border-bottom: 1px solid #dcdcdc;
         padding-bottom: $lh;
-        margin: 0; /*line hight top bottom to maintain baseline grid*/
+        margin: 0; /*line-hight top bottom to maintain baseline grid*/
         padding-right: $gutter;
+        width: grid-width(6);
 
         &:nth-child(4n+2) {
           padding-right: 0;
         }
-        
-        &.paperclip {
-          a {
-             background: transparent url('/images/oss/paperclip.png') 22px 2px no-repeat;
 
-             &:hover {
-               background-color: #efefef; 
-             }
-          }
-        }
-        
-        &.factory-girl {
-          a {
-             background: transparent url('/images/oss/factory-girl.png') 18px 2px no-repeat;
-
-             &:hover {
-               background-color: #efefef; 
-             }
-          }
-        }
-        
         a {
-          padding-left: grid-width(3);
+          padding-left: grid-width(6)+$gutter;
           min-height: 170px;
 
           h3 {
@@ -69,8 +50,28 @@ section.open-source {
             padding-top: $lh*2;
           }
         }
-      }
 
+        &.paperclip {
+          a {
+            background: transparent url('/images/oss/paperclip.png') 22px 2px no-repeat;
+
+            &:hover {
+              background-color: #efefef; 
+            }
+          }
+        }
+
+        &.factory-girl {
+          a {
+            background: transparent url('/images/oss/factory-girl.png') 18px 2px no-repeat;
+
+            &:hover {
+              background-color: #efefef; 
+            }
+          }
+        }
+
+      }
     }
   }
 }

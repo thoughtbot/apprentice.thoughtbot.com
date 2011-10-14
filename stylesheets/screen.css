@@ -1142,16 +1142,17 @@ header#main-header nav#main-nav {
         transition-delay: 0; }
 =======
         -webkit-transition: color 0.2s;
-<<<<<<< HEAD
         -moz-transition: color 0.2s;
         transition: color 0.2s; }
+<<<<<<< HEAD
 >>>>>>> Start fixing bugs with percentages
         header#main-header ul li a:hover {
 =======
         -moz-transitition: color 0.2s;
         transitition: color 0.2s; }
+=======
+>>>>>>> Fixed layout for the community page and contact page
         header#main-header nav#main-nav ul li a:hover {
->>>>>>> Start fixing bugs with percentages
           color: #ad141e;
           text-decoration: none; }
 
@@ -1196,14 +1197,9 @@ footer#main-footer {
       width: 31.65%; }
       footer#main-footer nav section#thoughtbot-footer ul li {
         float: left;
-<<<<<<< HEAD
         display: block;
-        margin-right: 25px;
-        width: 145px; }
-=======
         margin-right: 2.51%;
         width: 14.57%; }
->>>>>>> Percentage grid
         footer#main-footer nav section#thoughtbot-footer ul li:nth-child(2n) {
           margin-right: 0; }
     footer#main-footer nav section#blog-footer {
@@ -1528,14 +1524,14 @@ section.open-source ul {
   section.open-source ul li {
     float: left;
     margin: 40px 2.51% 0 0;
-    /*line hight top bottom to maintain baseline grid*/ }
+    /*line hight top bottom to maintain baseline grid*/
+    width: 23.11%; }
     section.open-source ul li.end-row {
       margin-right: 0; }
     section.open-source ul li.start-row {
       clear: both; }
     section.open-source ul li a {
-      display: block;
-      width: 23.11%; }
+      display: block; }
       section.open-source ul li a:hover {
         background: #efefef;
         -webkit-transition-property: all, 0.3s;
@@ -1567,10 +1563,18 @@ section.open-source ul {
       border-bottom: 1px solid #dcdcdc;
       padding-bottom: 20px;
       margin: 0;
-      /*line hight top bottom to maintain baseline grid*/
-      padding-right: 2.51%; }
+      /*line-hight top bottom to maintain baseline grid*/
+      padding-right: 2.51%;
+      width: 48.73%; }
       section.open-source ul li.highlighted:nth-child(4n+2) {
         padding-right: 0; }
+      section.open-source ul li.highlighted a {
+        padding-left: 51.24%;
+        min-height: 170px; }
+        section.open-source ul li.highlighted a h3 {
+          color: #ad141e;
+          font-size: 24px;
+          padding-top: 40px; }
       section.open-source ul li.highlighted.paperclip a {
         background: transparent url("/images/oss/paperclip.png") 22px 2px no-repeat; }
         section.open-source ul li.highlighted.paperclip a:hover {
@@ -1579,13 +1583,6 @@ section.open-source ul {
         background: transparent url("/images/oss/factory-girl.png") 18px 2px no-repeat; }
         section.open-source ul li.highlighted.factory-girl a:hover {
           background-color: #efefef; }
-      section.open-source ul li.highlighted a {
-        padding-left: 23.11%;
-        min-height: 170px; }
-        section.open-source ul li.highlighted a h3 {
-          color: #ad141e;
-          font-size: 24px;
-          padding-top: 40px; }
 
 section#events {
   text-shadow: 0 1px 0 #fcfcfc; }
@@ -1651,14 +1648,18 @@ div#contact-content section#contact-info {
     width: 315px; }
 =======
     margin-right: 2.51%;
+<<<<<<< HEAD
     width: 31.65%; }
 >>>>>>> Percentage grid
+=======
+    width: 65.81%; }
+>>>>>>> Fixed layout for the community page and contact page
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.51%; }
   div#contact-content section#contact-info section.contact-address {
     float: left;
     margin-bottom: 20px;
-    width: 14.57%; }
+    width: 31.65%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {
@@ -1702,14 +1703,18 @@ div#contact-content section#contact-info {
     width: 315px; }
 =======
     margin-right: 2.51%;
+<<<<<<< HEAD
     width: 31.65%; }
 >>>>>>> Percentage grid
+=======
+    width: 65.81%; }
+>>>>>>> Fixed layout for the community page and contact page
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.51%; }
   div#contact-content section#contact-info section.contact-address {
     float: left;
     margin-bottom: 20px;
-    width: 14.57%; }
+    width: 31.65%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {

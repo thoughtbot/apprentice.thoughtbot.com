@@ -44,7 +44,12 @@ div#contact-content {
 
     section#contact-other {
       float: left;
+<<<<<<< HEAD
       width: grid-width(4);
+=======
+      margin-right: $gutter;
+      width: grid-width(8);
+>>>>>>> Fixed layout for the community page and contact page
 
       ul {
         margin-left: $gutter;
@@ -54,7 +59,7 @@ div#contact-content {
     section.contact-address {
       float: left;
       margin-bottom: $lh;
-      width: grid-width(2);
+      width: grid-width(4);
 
       div {
         margin-bottom: $lh;
