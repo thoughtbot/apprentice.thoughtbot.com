@@ -29,12 +29,13 @@ footer#main-footer {
 
   nav {
     @extend .clearfix;
+
     section {
       float: left;
       margin-right: $gutter;
       width: grid-width(2);
 
-      &#thoughtbot-footer {
+      &#current-workshops-footer {
         width: grid-width(4);
 
         ul {
@@ -42,7 +43,7 @@ footer#main-footer {
             float: left;
             display: block;
             margin-right: $gutter;
-            width: grid-width(2);
+            width: grid-width(6);
 
             &:nth-child(2n) {
               margin-right: 0;
@@ -69,6 +70,10 @@ footer#main-footer {
 
       ul {
         list-style: none;
+
+        li {
+          margin-bottom: $lh/2;
+        }
       }
     }
   }

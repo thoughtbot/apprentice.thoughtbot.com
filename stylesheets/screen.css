@@ -702,27 +702,24 @@ ol ol, ol ul, ul ul, ul ol {
 /* basic site styles
 ---------------------------------------- */
 body {
-  background-color: #FCFCFC;
   /*background: url('/images/grid.png') 10px -4px;*/
+  background-color: #FCFCFC;
   border-top: 4px solid #ad141e;
   color: #2B2B2B;
   font: 400 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center; }
-  @media screen and (max-device-width: 480px) {
-    body {
-      min-width: 119.56%; } }
 
 .wrapper, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
-  margin: 0 auto;
-  text-align: left;
-  width: 99.97%;
-  padding: 0 2.51%;
-  max-width: 1122px;
-  min-width: 650px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1122px;
+  min-width: 650px;
+  padding: 0 2.51%;
+  text-align: left;
+  width: 99.97%; }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -751,8 +748,8 @@ h4 {
   margin: 0; }
 
 p {
-  font-weight: 400;
   color: #555;
+  font-weight: 400;
   line-height: 20px;
   margin-bottom: 20px;
   text-rendering: optimizeSpeed; }
@@ -791,20 +788,16 @@ a:hover {
   text-decoration: none; }
 
 .button, form.wufoo ul li input#saveForm, #get-started a, div#contact-content section#contact-info section#hire-thoughtbot a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
-  background: #ad141e;
-  border: 1px solid #52090e;
-  color: #fff;
-  display: block;
-  line-height: 20px;
-  padding: 30px;
-  font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  text-shadow: 0 -1px 0 #7f0f16;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 0 #e93e49;
   -moz-box-shadow: inset 0 1px 0 #e93e49;
   -ms-box-shadow: inset 0 1px 0 #e93e49;
   -o-box-shadow: inset 0 1px 0 #e93e49;
   box-shadow: inset 0 1px 0 #e93e49;
+<<<<<<< HEAD
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -830,23 +823,36 @@ a:hover {
   -ms-transition-delay: 0;
   -o-transition-delay: 0;
   transition-delay: 0; }
+=======
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #ad141e;
+  border: 1px solid #52090e;
+  color: #fff;
+  display: block;
+  font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 20px;
+  padding: 30px;
+  text-shadow: 0 -1px 0 #7f0f16; }
+>>>>>>> Fix footer and give it a new layout
   .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
-    background: #c41722;
-    border: 1px solid #7f0f16;
-    text-shadow: 0 -1px 0 #96111a;
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -ms-box-shadow: inset 0 1px 0 #ee6c74;
     -o-box-shadow: inset 0 1px 0 #ee6c74;
-    box-shadow: inset 0 1px 0 #ee6c74; }
+    box-shadow: inset 0 1px 0 #ee6c74;
+    background: #c41722;
+    border: 1px solid #7f0f16;
+    text-shadow: 0 -1px 0 #96111a; }
   .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active {
-    background: #96111a;
-    text-shadow: none;
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
     -ms-box-shadow: inset 0 -1px 3px #680c12;
     -o-box-shadow: inset 0 -1px 3px #680c12;
-    box-shadow: inset 0 -1px 3px #680c12; }
+    box-shadow: inset 0 -1px 3px #680c12;
+    background: #96111a;
+    text-shadow: none; }
 
 .external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a {
   padding-right: 13px; }
@@ -873,8 +879,8 @@ img {
 
 .secondary-wrapper, #portfolio-slider {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
-  border-top: 1px solid #DCDCDC;
   border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #DCDCDC;
   padding: 39px 0 39px; }
 
 /* Design page
@@ -882,11 +888,11 @@ img {
 #design-portfolio ul {
   list-style: none; }
   #design-portfolio ul li {
-    padding: 20px 0;
     border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    padding: 20px 0;
     text-align: center;
-    width: 830px;
-    margin: 0 auto; }
+    width: 830px; }
     #design-portfolio ul li img {
       -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -1193,14 +1199,14 @@ footer#main-footer {
     float: left;
     margin-right: 2.51%;
     width: 14.57%; }
-    footer#main-footer nav section#thoughtbot-footer {
+    footer#main-footer nav section#current-workshops-footer {
       width: 31.65%; }
-      footer#main-footer nav section#thoughtbot-footer ul li {
+      footer#main-footer nav section#current-workshops-footer ul li {
         float: left;
         display: block;
         margin-right: 2.51%;
-        width: 14.57%; }
-        footer#main-footer nav section#thoughtbot-footer ul li:nth-child(2n) {
+        width: 48.73%; }
+        footer#main-footer nav section#current-workshops-footer ul li:nth-child(2n) {
           margin-right: 0; }
     footer#main-footer nav section#blog-footer {
       width: 31.65%; }
@@ -1208,6 +1214,8 @@ footer#main-footer {
       margin-right: 0; }
     footer#main-footer nav section ul {
       list-style: none; }
+      footer#main-footer nav section ul li {
+        margin-bottom: 10px; }
   footer#main-footer p#copyright {
     color: #7a7a7a;
     margin-top: 40px;
