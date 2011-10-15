@@ -716,7 +716,7 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 1122px;
-  min-width: 650px;
+  min-width: 750px;
   padding: 0 2.51%;
   text-align: left;
   width: 99.97%; }
@@ -1247,6 +1247,10 @@ footer#main-footer {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box; }
+    @media screen and (max-width:1199px) {
+      #portfolio-slider div ul.slider {
+        overflow: hidden;
+        margin-top: 40px; } }
     #portfolio-slider div ul.slider img {
       display: none;
       left: 0px;
@@ -1259,13 +1263,16 @@ footer#main-footer {
       top: -52px;
       right: 1px;
       width: auto; }
+      @media screen and (max-width:1199px) {
+        #portfolio-slider div ul.slider div.nivo-controlNav {
+          top: -20px; } }
       #portfolio-slider div ul.slider div.nivo-controlNav a {
         text-indent: -9999px;
         display: block;
         width: 8px;
         height: 9px;
         background: url("/images/portfolio/slider-control.png") -11px 0 no-repeat;
-        float: left;
+        float: right;
         margin-right: 6px; }
         #portfolio-slider div ul.slider div.nivo-controlNav a.active {
           background: url("/images/portfolio/slider-control.png") 0 0 no-repeat; }
@@ -1278,16 +1285,21 @@ footer#main-footer {
       width: 21px; }
       #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-prevNav {
         background-position: 0 0;
-        left: -60px;
+        left: 10px;
         top: 44%; }
         #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-prevNav:hover {
           background-position: 0 -40px; }
       #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav {
         background-position: -21px 0;
-        right: -60px;
+        right: 10px;
         top: 44%; }
         #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav:hover {
           background-position: -21px -40px; }
+    @media screen and (min-width:1200px) {
+      #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-prevNav {
+        left: -60px; }
+      #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav {
+        right: -60px; } }
 
 section#portfolio {
   margin: 80px 0 40px; }
