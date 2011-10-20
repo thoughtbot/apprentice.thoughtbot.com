@@ -10,11 +10,11 @@ section.open-source {
       float: left;
       margin: ($lh*2) $gutter 0 0; /*line hight top bottom to maintain baseline grid*/
 
-      &:nth-child(4n+2) {
+      &.end-row {
         margin-right: 0;
       }
 
-      &:nth-child(2+4n+1) {
+      &.start-row {
         clear: both;
       }
 

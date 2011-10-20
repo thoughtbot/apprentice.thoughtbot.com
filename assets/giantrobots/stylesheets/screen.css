@@ -271,8 +271,8 @@ section#container {
             height: 41px;
             text-indent: -9999px;
             -webkit-transition: 0.5s;
-            -moz-transitition: 0.5s;
-            transitition: 0.5s; }
+            -moz-transition: 0.5s;
+            transition: 0.5s; }
           section#container header nav ul li#twitter a {
             background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat; }
             section#container header nav ul li#twitter a:hover {
@@ -300,8 +300,8 @@ section#container {
       padding: 15px;
       text-decoration: none;
       -webkit-transition: 0.5s;
-      -moz-transitition: 0.5s;
-      transitition: 0.5s; }
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
       section#container aside .message a img {
         float: left;
         margin: 0 15px 0 0; }
@@ -598,8 +598,8 @@ footer {
           padding: 15px 0;
           text-align: center;
           -webkit-transition: 0.4s;
-          -moz-transitition: 0.4s;
-          transitition: 0.4s; }
+          -moz-transition: 0.4s;
+          transition: 0.4s; }
           footer section#footer-container section#products section.product a.logo:hover {
             -moz-border-radius: 0;
             -webkit-border-radius: 0;
