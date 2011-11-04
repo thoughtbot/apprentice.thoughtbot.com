@@ -29,7 +29,8 @@ jQuery(document).ready(function() {
                 mmongeau: "Matt Mongeau",
                 plapier: "Phil LaPier",
                 gabebw: "Gabe Berke-Williams",
-                codeulate: "Ben Orenstein"
+                codeulate: "Ben Orenstein",
+                stevehickeydesign: "Steve Hickey"
 	};
 
 	jQuery(".author").each(function(i) {
