@@ -1074,6 +1074,10 @@ footer#main-footer {
     /*makes sure the slider maintains line-height grid*/ }
   #portfolio-slider div ul.slider {
     background: url(images/loading.gif) no-repeat 50% 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 418px;
     /*line-height minus 2 for the border to maintain baseline grid*/
@@ -1143,6 +1147,11 @@ footer#main-footer {
         left: -60px; }
       #portfolio-slider div ul.slider div.nivo-directionNav a.nivo-nextNav {
         right: -60px; } }
+    #portfolio-slider div ul.slider div.nivo-slice {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
 
 section#portfolio {
   width: 100.0%;
@@ -1175,7 +1184,11 @@ section#portfolio {
       section#portfolio ul li a {
         display: block;
         height: 170px;
-        text-indent: -9999px; }
+        text-indent: -9999px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
       section#portfolio ul li:nth-child(4n) {
         margin-right: 0; }
       section#portfolio ul li#pozit a {
@@ -1666,7 +1679,7 @@ div#jobs-wrapper section#job-form header.info {
     max-width: 420px; }
 
   #page-header h1 {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 40px; }
 
   header#main-header nav#main-nav h1 a {
@@ -1696,12 +1709,21 @@ div#jobs-wrapper section#job-form header.info {
       float: none;
       clear: both; }
 
+  div#portfolio-slider {
+    height: 340px; }
+    div#portfolio-slider ul.slider {
+      height: 278px !important;
+      /*line-height minus 2 for the border to maintain baseline grid*/
+      max-width: 100.0%; }
+
   section#portfolio ul li {
     float: left;
     margin: 0 2.513% 20px 0;
     width: 48.744%; }
     section#portfolio ul li:nth-child(2n) {
       margin-right: 0; }
+    section#portfolio ul li a {
+      height: 110px; }
 
   section#services #about-services {
     float: none;

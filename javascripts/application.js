@@ -38,7 +38,7 @@ $(document).ready(function() {
       }
 
       list.nivoSlider({
-        effect:'sliceDown',
+        effect:'fade',
         manualAdvance:true,
         directionNavHide:false
       });

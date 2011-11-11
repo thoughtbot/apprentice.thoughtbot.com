@@ -1,6 +1,13 @@
 @import "base-variables";
 @import "base-extends";
 
+@mixin background-size($length) {
+  -webkit-background-size: $length;
+  -moz-background-size: $length;
+  -o-background-size: $length;
+  background-size: $length;
+}
+
 /* basic site styles
 ---------------------------------------- */
 body {

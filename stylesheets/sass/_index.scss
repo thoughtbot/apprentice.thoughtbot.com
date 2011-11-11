@@ -17,6 +17,7 @@
 
     ul.slider {
       background:url(images/loading.gif) no-repeat 50% 50%;
+      @include background-size(cover);
       border: 1px solid rgba(#000, .2);
       height: ($lh*21)-(2); /*line-height minus 2 for the border to maintain baseline grid*/
       list-style: none;
@@ -108,6 +109,10 @@
           }
         }
       }
+
+      div.nivo-slice {
+        @include background-size(cover);
+      }
     }
   }
 }
@@ -139,6 +144,7 @@ section#portfolio {
         display: block;
         height: ($lh * 9) - 10px; // Subtracts 2 px for border on parent
         text-indent: -9999px;
+        @include background-size(cover);
       }
 
       &:nth-child(4n) {

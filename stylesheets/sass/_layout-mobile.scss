@@ -9,7 +9,7 @@
 
  h1 {
    #page-header & {
-     font-size: 40px;
+     font-size: 32px;
      line-height: $lh*2;
    }
  }
@@ -70,6 +70,15 @@
 
 
   // Index - portfolio
+  div#portfolio-slider {
+    height: $lh*17;
+
+    ul.slider {
+      height: ($lh * 14) - (2px)  !important; /*line-height minus 2 for the border to maintain baseline grid*/
+      max-width: grid-width(12);
+    }
+  }
+
   section#portfolio {
     ul {
       li {
@@ -79,6 +88,10 @@
 
         &:nth-child(2n) {
           margin-right: 0;
+        }
+
+        a {
+          height: ($lh * 6) - 10px;
         }
       }
     }
