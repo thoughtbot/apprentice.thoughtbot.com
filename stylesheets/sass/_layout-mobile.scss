@@ -1,6 +1,6 @@
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
  .wrapper {
-   max-width: 480px;
+   max-width: 420px;
  }
 
  h1 {
@@ -190,6 +190,19 @@
         width: grid-width(12);
         margin-bottom: $lh;
       }
+    }
+  }
+
+  // Contact
+  div#contact-content {
+    div#contact_form {
+      float: none;
+      width: grid-width(12);
+    }
+
+    section#contact-info {
+      float: none;
+      width: grid-width(12);
     }
   }
 }

@@ -1658,9 +1658,9 @@ div#jobs-wrapper section#job-form header.info {
     #design-portfolio ul li:last-child {
       border-bottom: 0; }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
-    max-width: 480px; }
+    max-width: 420px; }
 
   #page-header h1 {
     font-size: 40px;
@@ -1762,7 +1762,14 @@ div#jobs-wrapper section#job-form header.info {
   body#community section#events ul li {
     float: none;
     width: 100.0%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  div#contact-content div#contact_form {
+    float: none;
+    width: 100.0%; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: 100.0%; } }
 @media screen and (min-width: 741px) {
   .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
     max-width: 1122px;
