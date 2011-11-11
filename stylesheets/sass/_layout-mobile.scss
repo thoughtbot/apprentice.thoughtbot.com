@@ -1,4 +1,8 @@
 @media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+
  .wrapper {
    max-width: 420px;
  }

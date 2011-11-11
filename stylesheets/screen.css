@@ -1659,6 +1659,9 @@ div#jobs-wrapper section#job-form header.info {
       border-bottom: 0; }
 
 @media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    -webkit-text-size-adjust: none; }
+
   .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
     max-width: 420px; }
 
