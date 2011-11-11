@@ -1,311 +1,72 @@
-/* Mixins
----------------------------------------- */
-/* Variables
----------------------------------------- */
-/*thoughtbot red*/
-/*line-height of all the type on the site*/
-/*one grid column*/
-/*size of one gutter*/
-/* Clear Floated Elements
-------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, #design-portfolio:after, .secondary:after, form.wufoo ul li.name:after {
-  clear: both;
-  content: ' ';
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
+/*
+Syntax error: Invalid CSS after "...ustom Functions": expected selector or at-rule, was "<<<<<<< HEAD"
+        on line 2 of stylesheets/sass/bourbon/_bourbon.scss
+        from line 1 of stylesheets/sass/forms.scss
 
-/* basic site styles
----------------------------------------- */
-body {
-  /*background: url('/images/grid.png') 10px -4px;*/
-  background-color: #FCFCFC;
-  border-top: 4px solid #ad141e;
-  color: #2B2B2B;
-  font: 400 14px "skolar-1", "skolar-2", Georgia, serif;
-  text-align: center; }
+1: // Custom Functions
+2: <<<<<<< HEAD
+3: @import "functions/deprecated-webkit-gradient";
+4: @import "functions/golden-ratio";
+5: @import "functions/grid-width";
+6: @import "functions/tint-shade";
+7: 
 
-.wrapper, .primary, #design-portfolio, .secondary {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 2.51%;
-  text-align: left;
-  width: 99.97%; }
-
-h1, h2, h3, h4, h5, h5, h6 {
-  font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  text-rendering: optimizeLegibility; }
-
-h1 {
-  color: #2b2b2b;
-  font-size: 60px;
-  font-weight: 900;
-  margin-bottom: 20px; }
-
-h2 {
-  color: #2b2b2b;
-  font-size: 36px;
-  font-weight: 200;
-  line-height: 40px;
-  margin-bottom: 40px; }
-
-h3 {
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 20px; }
-
-h4 {
-  line-height: 20px;
-  margin: 0; }
-
-p {
-  color: #555;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
-  text-rendering: optimizeSpeed; }
-
-ul {
-  list-style-position: outside;
-  margin-bottom: 20px; }
-  ul li {
-    line-height: 20px; }
-
-img {
-  display: block;
-  vertical-align: bottom; }
-
-blockquote {
-  background: url("/images/quote.png") no-repeat;
-  border: 0;
-  font: 300 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0 2.51% 0 0;
-  padding-left: 2.51%; }
-  blockquote p {
-    line-height: 30px; }
-  blockquote p.author {
-    color: #bbb;
-    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
-    margin: 0; }
-
-a:link, a:active {
-  color: #ad141e;
-  text-decoration: none; }
-a:visited {
-  color: #96111a; }
-a:hover {
-  color: #db1926;
-  text-decoration: none; }
-
-.button, form.wufoo ul li input#saveForm {
-  -webkit-font-smoothing: antialiased;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 1px 0 #e93e49;
-  -moz-box-shadow: inset 0 1px 0 #e93e49;
-  -o-box-shadow: inset 0 1px 0 #e93e49;
-  box-shadow: inset 0 1px 0 #e93e49;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  background: #ad141e;
-  border: 1px solid #52090e;
-  color: #fff;
-  display: block;
-  font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 20px;
-  padding: 30px;
-  text-shadow: 0 -1px 0 #7f0f16; }
-  .button:hover, form.wufoo ul li input#saveForm:hover {
-    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
-    -moz-box-shadow: inset 0 1px 0 #ee6c74;
-    -o-box-shadow: inset 0 1px 0 #ee6c74;
-    box-shadow: inset 0 1px 0 #ee6c74;
-    background: #c41722;
-    border: 1px solid #7f0f16;
-    text-shadow: 0 -1px 0 #96111a; }
-  .button:active, form.wufoo ul li input#saveForm:active {
-    -webkit-box-shadow: inset 0 -1px 3px #680c12;
-    -moz-box-shadow: inset 0 -1px 3px #680c12;
-    -o-box-shadow: inset 0 -1px 3px #680c12;
-    box-shadow: inset 0 -1px 3px #680c12;
-    background: #96111a;
-    text-shadow: none; }
-
-.external {
-  padding-right: 13px; }
-  .external:hover {
-    background: url("/images/external.png") right 4px no-repeat; }
-
-img {
-  margin-bottom: 0; }
-
-#page-header {
-  background: url("/images/shadowing.png") center top no-repeat;
-  padding-top: 60px;
-  text-align: center; }
-  #page-header h1 {
-    line-height: 60px; }
-  #page-header h2 {
-    color: #736B6C;
-    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
-    margin-bottom: 0; }
-
-.secondary-header {
-  padding-top: 60px; }
-
-.secondary-wrapper {
-  background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
-  border-bottom: 1px solid #DCDCDC;
-  border-top: 1px solid #DCDCDC;
-  padding: 39px 0 39px; }
-
-/* Design page
----------------------------------------- */
-#design-portfolio ul {
-  list-style: none; }
-  #design-portfolio ul li {
-    border-bottom: 1px solid #ddd;
-    margin: 0 auto;
-    padding: 20px 0;
-    text-align: center;
-    width: 830px; }
-    #design-portfolio ul li img {
-      -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-      -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
-    #design-portfolio ul li:last-child {
-      border-bottom: 0; }
-
-/* Forms
----------------------------------------- */
-.subtle, form.wufoo ul li.name span label, form.wufoo ul li.pitch div label {
-  color: #aaa;
-  font-size: 11px;
-  font-style: italic;
-  font-weight: normal;
-  margin-bottom: 0; }
-
-form.wufoo {
-  margin-left: 0;
-  width: 630px; }
-  form.wufoo header#header {
-    display: none; }
-  form.wufoo ul {
-    list-style: none;
-    margin-top: 20px;
-    padding: 4px; }
-    form.wufoo ul li {
-      margin-bottom: 30px;
-      width: 65.81%;
-      padding: 0;
-      margin-right: 2.51%; }
-      form.wufoo ul li.section {
-        padding-top: 25px;
-        margin-bottom: 10px; }
-        form.wufoo ul li.section h3 {
-          color: #ad141e;
-          font-size: 24px;
-          padding: 0;
-          border-top: 0 !important; }
-      form.wufoo ul li fieldset {
-        background: none;
-        border: 0;
-        padding: 0; }
-      form.wufoo ul li label.desc, form.wufoo ul li legend.desc, form.wufoo ul li label, form.wufoo ul li legend {
-        -webkit-font-smoothing: antialiased;
-        font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        font-weight: bold;
-        line-height: 20px;
-        margin: 0 0 5px;
-        padding: 0; }
-        form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
-          display: inline;
-          font-weight: normal; }
-      form.wufoo ul li .req {
-        color: #ad141e; }
-      form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
-        display: inline-block; }
-      form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
-        border: 1px solid #999;
-        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
-        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
-        -o-box-shadow: inset 0 1px 2px #aaaaaa;
-        box-shadow: inset 0 1px 2px #aaaaaa;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        box-sizing: border-box;
-        font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        line-height: 20px;
-        margin: 0;
-        max-width: 59.78%;
-        padding: 9px 10px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 59.78%; }
-        form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
-          outline-color: #ad141e; }
-      form.wufoo ul li input#saveForm {
-        display: block;
-        margin: 0;
-        padding: 8px 40px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
-        form.wufoo ul li input#saveForm:hover {
-          cursor: pointer; }
-        form.wufoo ul li input#saveForm:active {
-          background: #96111a; }
-      form.wufoo ul li .instruct {
-        color: #aaa;
-        font-size: 14px;
-        font-style: italic;
-        font-weight: normal;
-        margin: 20px 20px 40px; }
-      form.wufoo ul li.focused {
-        background: none; }
-        form.wufoo ul li.focused label {
-          color: #000; }
-      form.wufoo ul li.phone {
-        margin-right: 0; }
-      form.wufoo ul li.email, form.wufoo ul li.phone {
-        width: 50%;
-        float: left;
-        clear: none; }
-        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
-          width: 27.38%; }
-      form.wufoo ul li.name {
-        float: none;
-        margin-bottom: 10px;
-        width: 51.24%; }
-        form.wufoo ul li.name span {
-          display: block;
-          float: left;
-          margin-right: 2.51%;
-          width: 27.38%; }
-          form.wufoo ul li.name span:nth-child(odd) {
-            margin-right: 0; }
-          form.wufoo ul li.name span input[type="text"] {
-            width: 100%; }
-          form.wufoo ul li.name span.req {
-            display: inline;
-            float: none;
-            margin: 0;
-            width: auto; }
-      form.wufoo ul li.pitch div label {
-        line-height: 0.8em; }
-      form.wufoo ul li.services legend {
-        padding-bottom: 10px; }
-      form.wufoo ul li.services span {
-        margin-bottom: 8px; }
-        form.wufoo ul li.services span label {
-          margin-left: 5px; }
+Backtrace:
+stylesheets/sass/bourbon/_bourbon.scss:2
+stylesheets/sass/forms.scss:1
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/scss/parser.rb:926:in `expected'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/scss/parser.rb:872:in `expected'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/scss/parser.rb:29:in `parse'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/engine.rb:327:in `_to_tree'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/engine.rb:259:in `to_tree'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:142:in `visit_import'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/tree/root_node.rb:20:in `render'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/engine.rb:300:in `_render'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/engine.rb:247:in `render'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:200:in `each'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:272:in `block (4 levels) in watch'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/path.rb:73:in `call'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/path.rb:73:in `run_callback'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/path.rb:55:in `callback_action'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/path.rb:35:in `update'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/state/directory.rb:37:in `each'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/state/directory.rb:37:in `modified'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/backends/polling.rb:17:in `each'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/backends/polling.rb:15:in `run'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm/monitor.rb:26:in `run'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/vendor/fssm/lib/fssm.rb:20:in `monitor'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin/compiler.rb:265:in `watch'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/plugin.rb:107:in `method_missing'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/exec.rb:421:in `watch_or_update'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/exec.rb:302:in `process_result'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/exec.rb:41:in `parse'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/lib/sass/exec.rb:21:in `parse!'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/gems/sass-3.1.11/bin/sass:8:in `<top (required)>'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/bin/sass:19:in `load'
+/Users/kfiedler/.rvm/gems/ruby-1.9.2-p180/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...ustom Functions\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 2 of stylesheets/sass/bourbon/_bourbon.scss\A         from line 1 of stylesheets/sass/forms.scss\A \A 1: // Custom Functions\A 2: <<<<<<< HEAD\A 3: @import \"functions/deprecated-webkit-gradient\";\A 4: @import \"functions/golden-ratio\";\A 5: @import \"functions/grid-width\";\A 6: @import \"functions/tint-shade\";\A 7: "; }

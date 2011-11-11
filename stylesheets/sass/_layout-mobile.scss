@@ -41,7 +41,7 @@
     ul {
       li {
         float: left;
-        margin: 0 $gutter $lh 0;
+        margin: 0 $gw-gutter $lh 0;
         width: grid-width(6);
 
         &:nth-child(2n) {
@@ -54,7 +54,7 @@
   section#services {
     #about-services {
       float: none;
-      margin-right: $gutter;
+      margin-right: $gw-gutter;
       width: auto;
       margin-bottom: $lh*2;
     }
@@ -62,7 +62,7 @@
     blockquote {
       float: none;
       width: auto;
-      padding-left: $gutter*3;
+      padding-left: $gw-gutter*3;
     }
 
     section#clients {
@@ -76,7 +76,7 @@
 
         li {
           float: left;
-          margin-right: $gutter;
+          margin-right: $gw-gutter;
           width: grid-width(6);
 
           &:nth-child(2n) {
@@ -114,7 +114,7 @@
     blockquote {
       float: none;
       width: auto;
-      padding-left: $gutter*3;
+      padding-left: $gw-gutter*3;
     }
 
     section#current-workshops {

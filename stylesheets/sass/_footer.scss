@@ -32,7 +32,7 @@ footer#main-footer {
 
     section {
       float: left;
-      margin-right: $gutter;
+      margin-right: $gw-gutter;
       width: grid-width(2);
 
       &#current-workshops-footer {
@@ -42,7 +42,7 @@ footer#main-footer {
           li {
             float: left;
             display: block;
-            margin-right: $gutter;
+            margin-right: $gw-gutter;
             width: grid-width(6);
 
             &:nth-child(2n) {

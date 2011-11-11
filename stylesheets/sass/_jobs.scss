@@ -4,7 +4,7 @@ div#jobs-wrapper {
 
   section#current-openings {
     float: left;
-    margin-right: $gutter;
+    margin-right: $gw-gutter;
     padding: 0; /*top padding makes up for 5px border and 10px margin*/
     width: grid-width(4); /*4 units minus left and right padding*/
 
@@ -46,7 +46,7 @@ div#jobs-wrapper.job-description {
   section#positions {
     float: left;
     width: grid-width(7);
-    margin-right: $gutter;
+    margin-right: $gw-gutter;
 
     ul {
       list-style: none;

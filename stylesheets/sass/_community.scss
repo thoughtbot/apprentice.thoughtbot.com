@@ -8,7 +8,7 @@ section.open-source {
 
     li {
       float: left;
-      margin: ($lh*2) $gutter 0 0; /*line hight top bottom to maintain baseline grid*/
+      margin: ($lh*2) $gw-gutter 0 0; /*line hight top bottom to maintain baseline grid*/
       width: grid-width(3);
 
       &.end-row {
@@ -33,7 +33,7 @@ section.open-source {
         border-bottom: 1px solid #dcdcdc;
         padding-bottom: $lh;
         margin: 0; /*line-hight top bottom to maintain baseline grid*/
-        padding-right: $gutter;
+        padding-right: $gw-gutter;
         width: grid-width(6);
 
         &:nth-child(4n+2) {
@@ -41,7 +41,7 @@ section.open-source {
         }
 
         a {
-          padding-left: grid-width(6)+$gutter;
+          padding-left: grid-width(6)+$gw-gutter;
           min-height: 170px;
 
           h3 {
@@ -82,7 +82,7 @@ section#events {
 
   p.events-intro {
     float: left;
-    margin-right: $gutter;
+    margin-right: $gw-gutter;
     width: grid-width(3);
   }
 
@@ -95,7 +95,7 @@ section#events {
       border-top: 5px solid #292929;
       display: block;
       float: left;
-      margin-right: $gutter;
+      margin-right: $gw-gutter;
       overflow: hidden;
       padding: ($lh*2)-(5px) $lh $lh; /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
       width: grid-width(3); /*grid width minus padding*/
