@@ -137,7 +137,7 @@ section#portfolio {
 
       a {
         display: block;
-        height: ($lh * 9) - 2px; // Subtracts 2 px for border on parent
+        height: ($lh * 9) - 10px; // Subtracts 2 px for border on parent
         text-indent: -9999px;
       }
 
@@ -316,24 +316,16 @@ section#products {
         }
       }
 
-      &#radish {
-        a {
-          div.product-logo {
-            img {
-              padding-top: 21px;
-            }
-          }
-        }
-      }
-
       a {
         display: block;
         @include transition(all .5s);
 
         div.product-logo {
-          background: url('/images/products/products_bg_three.png') 0 0 no-repeat;
-          height: ($lh*7)-(3);
-          margin-bottom:  ($lh*2)+(3);
+          height: ($lh*7) - (3);
+          margin-bottom:  ($lh*2) + (3);
+          background: #D9D9D9;
+          border: 1px solid #aaa;
+          @include box-shadow( inset 0 0 4px #bfbfbf );
 
           img {
             display: block;
@@ -353,7 +345,9 @@ section#products {
           @include box-shadow(0 0 0 8px rgba(#000, .04));
 
           div.product-logo {
-            background-position: 0 100%;
+            background: #C4C3C3;
+            border: 1px solid #8F8F8F;
+            @include box-shadow( inset 0 0 4px #B7B6B6 );
           }
 
           h3, p {

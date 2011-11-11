@@ -1,6 +1,5 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0 $gw-gutter;
   text-align: left;
   width: grid-width(12);
 }
@@ -51,7 +50,8 @@
   background: rgba(#E4E4E4, .7) url('/images/shadowing.png') center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
-  padding: ($lh*2)-(1) 0 ($lh*2)-(1);
+  padding: ($lh*2)-(1) 20px ($lh*2)-(1);
+  margin: 0 -20px;
 }
 
 .secondary-header {

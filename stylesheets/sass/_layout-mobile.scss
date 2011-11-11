@@ -5,7 +5,7 @@
 
  h1 {
    #page-header & {
-     font-size: 34px;
+     font-size: 40px;
      line-height: $lh*2;
    }
  }
@@ -30,6 +30,35 @@
             text-align: center;
             padding: $lh;
           }
+        }
+      }
+    }
+  }
+
+  // footer
+  footer#main-footer {
+    nav {
+      section {
+        float: none;
+        width: grid-width(12);
+        margin-right: 0;
+        margin-top: $lh * 2;
+
+        &#thoughtbot-footer, &#footer-products {
+          float: left;
+          width: grid-width(6);
+          margin-top: 0;
+        }
+
+        &#thoughtbot-footer {
+          margin-right: $gw-gutter;
+        }
+
+        &#current-workshops-footer, &#blog-footer {
+          width: grid-width(12);
+          float: none;
+          @extend .clearfix;
+          clear: both;
         }
       }
     }
@@ -93,7 +122,7 @@
     ul {
       li {
         float: left;
-        width: grid-width(6);
+        width: grid-width(12);
         margin-bottom: $lh*2;
 
         &:nth-child(2n) {
@@ -102,7 +131,6 @@
       }
     }
   }
-
 
   section#workshops {
     section#about-workshops {
@@ -115,11 +143,53 @@
       float: none;
       width: auto;
       padding-left: $gw-gutter*3;
+      margin-top: $lh * 2;
     }
 
     section#current-workshops {
       float: left;
-      width: auto; /*4 units minus left and right padding*/
+      width: grid-width(12);
+      margin-top: $lh * 2;
+    }
+  }
+
+
+  // Community
+  body#community {
+    section.open-source {
+      ul {
+        li {
+          width: grid-width(6);
+          margin-right: $gw-gutter;
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+
+          &.highlighted {
+            border: none;
+            padding: 0;
+
+            &.paperclip a, &.factory-girl a {
+              padding: 0;
+              background-image: none;
+            }
+          }
+        }
+      }
+    }
+
+    section#events {
+      p.events-intro {
+        float: none;
+        width: grid-width(12);
+      }
+
+      ul li {
+        float: none;
+        width: grid-width(12);
+        margin-bottom: $lh;
+      }
     }
   }
 }
