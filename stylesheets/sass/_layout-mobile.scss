@@ -1,0 +1,125 @@
+@media screen and (max-width: 740px) {
+ .wrapper {
+   max-width: 480px;
+ }
+
+ h1 {
+   #page-header & {
+     font-size: 34px;
+     line-height: $lh*2;
+   }
+ }
+
+ // header
+  header#main-header {
+    nav#main-nav {
+      h1 {
+        a {
+          background-position: center center;
+        }
+      }
+
+      ul {
+        margin-top: 0;
+
+        li {
+          width: grid-width(6);
+          float: left;
+
+          a {
+            text-align: center;
+            padding: $lh;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Index - portfolio
+  section#portfolio {
+    ul {
+      li {
+        float: left;
+        margin: 0 $gutter $lh 0;
+        width: grid-width(6);
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  section#services {
+    #about-services {
+      float: none;
+      margin-right: $gutter;
+      width: auto;
+      margin-bottom: $lh*2;
+    }
+
+    blockquote {
+      float: none;
+      width: auto;
+      padding-left: $gutter*3;
+    }
+
+    section#clients {
+      float: none;
+      width: auto;
+      margin-top: $lh*2;
+
+      ul {
+        list-style: none;
+        @extend .clearfix;
+
+        li {
+          float: left;
+          margin-right: $gutter;
+          width: grid-width(6);
+
+          &:nth-child(2n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  section#products {
+    margin-bottom: $lh*2;
+
+    ul {
+      li {
+        float: left;
+        width: grid-width(6);
+        margin-bottom: $lh*2;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+
+  section#workshops {
+    section#about-workshops {
+      float: none;
+      width: auto;
+      margin: 0;
+    }
+
+    blockquote {
+      float: none;
+      width: auto;
+      padding-left: $gutter*3;
+    }
+
+    section#current-workshops {
+      float: left;
+      width: auto; /*4 units minus left and right padding*/
+    }
+  }
+}

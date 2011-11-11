@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 741px) {
+
+  .wrapper {
+    max-width: 1122px;
+    min-width: 750px;
+  }
+
+  //header
+  nav#main-nav {
+    h1 {
+      float: left;
+    }
+
+    ul {
+      float: right;
+
+      li {
+        float: left;
+      }
+    }
+  }
+}

@@ -98,8 +98,6 @@ body {
 .wrapper {
   @include box-sizing(border-box);
   margin: 0 auto;
-  max-width: 1122px;
-  min-width: 750px;
   padding: 0 $gutter;
   text-align: left;
   width: grid-width(12);
