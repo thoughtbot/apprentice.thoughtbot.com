@@ -114,6 +114,7 @@
 
 section#portfolio {
   @extend .clearfix;
+  width: grid-width(12);
   margin: 80px 0 40px;
 
   ul {
@@ -124,20 +125,20 @@ section#portfolio {
       float: left;
       margin: 0 $gw-gutter $lh 0;
       width: grid-width(3);
+      padding: 4px;
+      border: 1px solid #BDBDBD;
+      @include box-sizing(border-box);
+
+      &:hover {
+        border-color: #999;
+        @include transform(scale(1.01));
+        @include box-shadow(0 0 3px #999);
+      }
 
       a {
-        border: 1px solid #BDBDBD;
         display: block;
-        height: ($lh*9)+10px; /*adding a 10px to account for the 1px border and 4px padding*/
-        padding: 4px;
+        height: ($lh * 9) - 2px; // Subtracts 2 px for border on parent
         text-indent: -9999px;
-        @include box-sizing(border-box);
-
-        &:hover {
-          border-color: #999;
-          @include transform(scale(1.01));
-          @include box-shadow(0 0 3px #999);
-        }
       }
 
       &:nth-child(4n) {

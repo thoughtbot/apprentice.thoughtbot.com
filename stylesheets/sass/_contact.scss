@@ -4,8 +4,8 @@ div#contact-content {
 
   div#contact_form {
     float: left;
-    margin-right: $gutter;
-    width: ($unit*8)+($gutter*6);
+    margin-right: $gw-gutter;
+    width: ($gw-column*8)+($gw-gutter*6);
 
     h1#logo, #bottom{
       display: none;
@@ -15,7 +15,7 @@ div#contact-content {
   section#contact-info {
     float: left;
     width: grid-width(4);
-    margin-left: $gutter;
+    margin-left: $gw-gutter;
 
     section#hire-thoughtbot {
 

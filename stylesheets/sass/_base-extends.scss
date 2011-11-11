@@ -1,0 +1,59 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 $gw-gutter;
+  text-align: left;
+  width: grid-width(12);
+}
+
+.button {
+  -webkit-font-smoothing: antialiased;
+  @include border-radius(3px);
+  @include box-shadow(inset 0 1px 0 lighten($red, 20%));
+  @include transition(all .3s);
+  background: $red;
+  border: 1px solid darken($red, 20%);
+  color: #fff;
+  display: block;
+  font:700 24px $header;
+  line-height: $lh;
+  padding: $lh*1.5;
+  text-shadow: 0 -1px 0 darken($red, 10%);
+
+  &:hover {
+    @include box-shadow(inset 0 1px 0 lighten($red, 30%));
+    background: lighten($red, 5%);
+    border: 1px solid darken($red, 10%);
+    text-shadow: 0 -1px 0 darken($red, 5%);
+  }
+
+  &:active {
+    @include box-shadow(inset 0 -1px 3px darken($red, 15%));
+    background: darken($red, 5%);
+    text-shadow: none;
+  }
+}
+
+// For external links
+.external {
+  padding-right:13px;
+
+  &:hover {
+    background: url('/images/external.png') right 4px no-repeat;
+  }
+}
+
+.primary, .secondary {
+  @extend .clearfix;
+  @extend .wrapper;
+}
+
+.secondary-wrapper {
+  background: rgba(#E4E4E4, .7) url('/images/shadowing.png') center 0 no-repeat;
+  border-bottom: 1px solid #DCDCDC;
+  border-top: 1px solid #DCDCDC;
+  padding: ($lh*2)-(1) 0 ($lh*2)-(1);
+}
+
+.secondary-header {
+  padding-top: ($lh*3);
+}
