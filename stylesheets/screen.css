@@ -855,11 +855,6 @@ img {
 
 /* Forms
 ---------------------------------------- */
-iframe {
-  border-top: 4px solid #ad141e; }
-  iframe > body {
-    border: none; }
-
 form.wufoo {
   margin-left: 0; }
   form.wufoo header#header {
