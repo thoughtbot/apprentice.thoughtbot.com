@@ -11,6 +11,7 @@ form.wufoo {
   ul {
     list-style: none;
     margin-top: $lh;
+    margin-left: 1px;
 
     li {
       margin-bottom: $lh;
@@ -83,7 +84,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: $lh 0 $lh*2;
+        margin: $lh $lh $lh*2;
       }
 
       &.focused {

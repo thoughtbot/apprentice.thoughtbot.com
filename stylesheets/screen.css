@@ -861,7 +861,8 @@ form.wufoo {
     display: none; }
   form.wufoo ul {
     list-style: none;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 1px; }
     form.wufoo ul li {
       margin-bottom: 20px;
       width: 485px;
@@ -918,7 +919,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: 20px 0 40px; }
+        margin: 20px 20px 40px; }
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
