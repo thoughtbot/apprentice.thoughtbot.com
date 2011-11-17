@@ -1,6 +1,14 @@
 /* Forms
 ---------------------------------------- */
 
+iframe  {
+  border-top: 4px solid $red;
+
+  & > body {
+    border: none;
+  }
+}
+
 form.wufoo {
   margin-left: 0;
 
