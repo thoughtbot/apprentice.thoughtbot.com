@@ -103,7 +103,7 @@ form.wufoo {
           display: block;
           float: left;
           margin-right: $gutter;
-          width: grid-width(3);
+          width: grid-width(3)-2;
 
           &:nth-child(odd) {
             margin-right: 0;

@@ -264,7 +264,7 @@ form.wufoo {
           display: block;
           float: left;
           margin-right: 25px;
-          width: 230px; }
+          width: 230px -2; }
           form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
             margin-right: 0; }
           form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
