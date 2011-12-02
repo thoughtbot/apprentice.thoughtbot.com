@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, #design-portfolio:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, form.wufoo ul li#fo8li31:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section.open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper section#current-openings ul:before, .clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
+.clearfix:before, .primary:before, #design-portfolio:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, header#main-header:before, header#main-header ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section.open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper section#current-openings ul:before, .clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
+.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, form.wufoo ul li#fo8li31, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-workshops ul, section.open-source ul, section#events ul, section#people ul, section#people ul li, div#jobs-wrapper section#current-openings ul {
+.clearfix, .primary, #design-portfolio, div#contact-content, section#people, div#jobs-wrapper, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, header#main-header, header#main-header ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-workshops ul, section.open-source ul, section#events ul, section#people ul, section#people ul li, div#jobs-wrapper section#current-openings ul {
   zoom: 1; }
 
 .ie7 img {
@@ -665,8 +665,6 @@ ol ol, ol ul, ul ul, ul ol {
 .nivo-controlNav a.active {
   font-weight: bold; }
 
-/* Mixins
----------------------------------------- */
 /* Variables
 ---------------------------------------- */
 /*thoughtbot red*/
@@ -675,7 +673,7 @@ ol ol, ol ul, ul ul, ul ol {
 /*size of one gutter*/
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
+.clearfix:after, .primary:after, #design-portfolio:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
   clear: both;
   content: ' ';
   display: block;
@@ -782,20 +780,41 @@ a:hover {
   text-shadow: 0 -1px 0 #7f0f16;
   -webkit-box-shadow: inset 0 1px 0 #e93e49;
   -moz-box-shadow: inset 0 1px 0 #e93e49;
+  -ms-box-shadow: inset 0 1px 0 #e93e49;
   -o-box-shadow: inset 0 1px 0 #e93e49;
   box-shadow: inset 0 1px 0 #e93e49;
-  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition-property: all, 0.3s;
+  -moz-transition-property: all, 0.3s;
+  -ms-transition-property: all, 0.3s;
+  -o-transition-property: all, 0.3s;
+  transition-property: all, 0.3s;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
   .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a;
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
+    -ms-box-shadow: inset 0 1px 0 #ee6c74;
     -o-box-shadow: inset 0 1px 0 #ee6c74;
     box-shadow: inset 0 1px 0 #ee6c74; }
   .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active {
@@ -803,6 +822,7 @@ a:hover {
     text-shadow: none;
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
+    -ms-box-shadow: inset 0 -1px 3px #680c12;
     -o-box-shadow: inset 0 -1px 3px #680c12;
     box-shadow: inset 0 -1px 3px #680c12; }
 
@@ -848,6 +868,7 @@ img {
     #design-portfolio ul li img {
       -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       -o-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
     #design-portfolio ul li:last-child {
@@ -855,6 +876,13 @@ img {
 
 /* Forms
 ---------------------------------------- */
+.subtle, form.wufoo ul li.name span label, form.wufoo ul li.pitch div label {
+  color: #aaa;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0; }
+
 form.wufoo {
   margin-left: 0; }
   form.wufoo header#header {
@@ -862,26 +890,34 @@ form.wufoo {
   form.wufoo ul {
     list-style: none;
     margin-top: 20px;
-    margin-left: 3px; }
+    padding: 4px; }
     form.wufoo ul li {
-      margin-bottom: 20px;
-      width: 485px;
+      margin-bottom: 30px;
+      width: 655px;
       padding: 0;
-      /*inputs for project planning form*/
-      /*margin on the first header on the planning form*/ }
-      form.wufoo ul li h3 {
-        color: #ad141e;
-        margin-top: 40px; }
+      margin-right: 25px; }
+      form.wufoo ul li.section {
+        padding-top: 25px;
+        margin-bottom: 10px; }
+        form.wufoo ul li.section h3 {
+          color: #ad141e;
+          font-size: 24px;
+          padding: 0;
+          border-top: 0 !important; }
       form.wufoo ul li fieldset {
         background: none;
         border: 0;
         padding: 0; }
       form.wufoo ul li label.desc, form.wufoo ul li legend.desc, form.wufoo ul li label, form.wufoo ul li legend {
+        -webkit-font-smoothing: antialiased;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
+        font-weight: bold;
         line-height: 20px;
-        margin: 0 0 10px; }
+        margin: 0 0 5px;
+        padding: 0; }
         form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
-          display: inline; }
+          display: inline;
+          font-weight: normal; }
       form.wufoo ul li .req {
         color: #ad141e; }
       form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
@@ -890,17 +926,19 @@ form.wufoo {
         border: 1px solid #999;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
         margin: 0;
-        max-width: 460px;
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
-        min-width: 460px;
+        width: 595px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/
         padding: 9px 10px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 460px;
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
         -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
         -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+        -ms-box-shadow: inset 0 1px 2px #aaaaaa;
         -o-box-shadow: inset 0 1px 2px #aaaaaa;
         box-shadow: inset 0 1px 2px #aaaaaa; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
@@ -924,57 +962,40 @@ form.wufoo {
         background: none; }
         form.wufoo ul li.focused label {
           color: #000; }
-      form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
+      form.wufoo ul li.phone {
+        margin-right: 0; }
+      form.wufoo ul li.email, form.wufoo ul li.phone {
+        width: 50%;
+        float: left;
+        clear: none; }
+        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
+          width: 272.5px; }
+      form.wufoo ul li.name {
         float: none;
+        margin-bottom: 10px;
         width: 510px; }
-        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+        form.wufoo ul li.name span {
           display: block;
           float: left;
           margin-right: 25px;
-          width: 230px -2; }
-          form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
+          width: 272.5px; }
+          form.wufoo ul li.name span:nth-child(odd) {
             margin-right: 0; }
-          form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
+          form.wufoo ul li.name span input[type="text"] {
+            width: 100%; }
+          form.wufoo ul li.name span.req {
             display: inline;
             float: none;
             margin: 0;
             width: auto; }
-          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
-            color: #aaa;
-            font-size: 14px;
-            font-style: italic;
-            font-weight: normal; }
-          form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
-            max-width: 208px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/
-            min-width: 205px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/
-            width: 205px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/ }
-      form.wufoo ul li#fo7li3 {
-        clear: both;
-        width: 655px; }
-      form.wufoo ul li#fo5li136 div {
-        margin-left: 10px;
-        padding-top: 20px; }
-        form.wufoo ul li#fo5li136 div span {
-          color: #666;
-          margin-right: 10px; }
-      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
-        display: block;
-        margin-left: 30px;
-        padding-top: 20px; }
-        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
-          color: #666;
-          display: block;
-          margin-bottom: 10px; }
-          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
-            margin: -2px 3px 0 -20px;
-            top: 0; }
-          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
-            display: inline; }
-      form.wufoo ul li#fo5li130 h3#title130 {
-        margin-top: 0; }
+      form.wufoo ul li.pitch div label {
+        line-height: 0.8em; }
+      form.wufoo ul li.services legend {
+        padding-bottom: 10px; }
+      form.wufoo ul li.services span {
+        margin-bottom: 8px; }
+        form.wufoo ul li.services span label {
+          margin-left: 5px; }
 
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
@@ -1000,9 +1021,26 @@ header#main-header {
         font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
         line-height: 20px;
         margin: 0 20px;
-        -webkit-transition: color 0.2s;
-        -moz-transition: color 0.2s;
-        transition: color 0.2s; }
+        -webkit-transition-property: color, 0.2s;
+        -moz-transition-property: color, 0.2s;
+        -ms-transition-property: color, 0.2s;
+        -o-transition-property: color, 0.2s;
+        transition-property: color, 0.2s;
+        -webkit-transition-duration: 0.15s;
+        -moz-transition-duration: 0.15s;
+        -ms-transition-duration: 0.15s;
+        -o-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        -o-transition-delay: 0;
+        transition-delay: 0; }
         header#main-header ul li a:hover {
           color: #ad141e;
           text-decoration: none; }
@@ -1010,9 +1048,26 @@ header#main-header {
 footer#main-footer {
   opacity: .5;
   padding-top: 80px;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
+  -webkit-transition-property: opacity, 0.5s;
+  -moz-transition-property: opacity, 0.5s;
+  -ms-transition-property: opacity, 0.5s;
+  -o-transition-property: opacity, 0.5s;
+  transition-property: opacity, 0.5s;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -ms-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
   footer#main-footer:hover {
     opacity: 1; }
   footer#main-footer h3 {
@@ -1066,6 +1121,7 @@ footer#main-footer {
     width: 995px -2;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15); }
     #portfolio-slider div ul.slider img {
@@ -1130,9 +1186,12 @@ section#portfolio {
           border-color: #999;
           -webkit-transform: scale(1.01);
           -moz-transform: scale(1.01);
+          -ms-transform: scale(1.01);
+          -o-transform: scale(1.01);
           transform: scale(1.01);
           -webkit-box-shadow: 0 0 3px #999999;
           -moz-box-shadow: 0 0 3px #999999;
+          -ms-box-shadow: 0 0 3px #999999;
           -o-box-shadow: 0 0 3px #999999;
           box-shadow: 0 0 3px #999999; }
       section#portfolio ul li:nth-child(4n) {
@@ -1193,9 +1252,26 @@ section#services {
         section#services section#clients p.video a {
           background: url("/images/film-strip.png") 0 1px no-repeat;
           padding-left: 20px;
-          -webkit-transition: color 0.5s;
-          -moz-transition: color 0.5s;
-          transition: color 0.5s; }
+          -webkit-transition-property: color, 0.5s;
+          -moz-transition-property: color, 0.5s;
+          -ms-transition-property: color, 0.5s;
+          -o-transition-property: color, 0.5s;
+          transition-property: color, 0.5s;
+          -webkit-transition-duration: 0.15s;
+          -moz-transition-duration: 0.15s;
+          -ms-transition-duration: 0.15s;
+          -o-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: ease-out;
+          -moz-transition-timing-function: ease-out;
+          -ms-transition-timing-function: ease-out;
+          -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+          -webkit-transition-delay: 0;
+          -moz-transition-delay: 0;
+          -ms-transition-delay: 0;
+          -o-transition-delay: 0;
+          transition-delay: 0; }
           section#services section#clients p.video a:hover {
             background-position: 0 -18px; }
 
@@ -1236,9 +1312,26 @@ section#products {
         padding-top: 21px; }
       section#products ul li a {
         display: block;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition-property: all, 0.5s;
+        -moz-transition-property: all, 0.5s;
+        -ms-transition-property: all, 0.5s;
+        -o-transition-property: all, 0.5s;
+        transition-property: all, 0.5s;
+        -webkit-transition-duration: 0.15s;
+        -moz-transition-duration: 0.15s;
+        -ms-transition-duration: 0.15s;
+        -o-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        -o-transition-delay: 0;
+        transition-delay: 0; }
         section#products ul li a div.product-logo {
           background: url("/images/products/products_bg_three.png") 0 0 no-repeat;
           height: 137px;
@@ -1254,6 +1347,7 @@ section#products {
           background: rgba(0, 0, 0, 0.04);
           -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
+          -ms-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
           section#products ul li a:hover div.product-logo {
@@ -1312,11 +1406,29 @@ section.open-source ul {
       width: 230px; }
       section.open-source ul li a:hover {
         background: #efefef;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
+        -webkit-transition-property: all, 0.3s;
+        -moz-transition-property: all, 0.3s;
+        -ms-transition-property: all, 0.3s;
+        -o-transition-property: all, 0.3s;
+        transition-property: all, 0.3s;
+        -webkit-transition-duration: 0.15s;
+        -moz-transition-duration: 0.15s;
+        -ms-transition-duration: 0.15s;
+        -o-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -ms-transition-delay: 0;
+        -o-transition-delay: 0;
+        transition-delay: 0;
         -webkit-box-shadow: 0 0 0 10px #efefef;
         -moz-box-shadow: 0 0 0 10px #efefef;
+        -ms-box-shadow: 0 0 0 10px #efefef;
         -o-box-shadow: 0 0 0 10px #efefef;
         box-shadow: 0 0 0 10px #efefef; }
     section.open-source ul li.highlighted {
@@ -1368,12 +1480,13 @@ section#events {
 div#contact-content div#contact_form {
   float: left;
   margin-right: 25px;
-  width: 485px; }
+  width: 630px; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: left;
-  width: 485px; }
+  width: 315px;
+  margin-left: 25px; }
   div#contact-content section#contact-info section#hire-thoughtbot a {
     margin: 20px 0 40px;
     padding: 30px; }
@@ -1389,7 +1502,6 @@ div#contact-content section#contact-info {
       background: #ad141e; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    margin-right: 25px;
     width: 315px; }
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 25px; }
@@ -1405,12 +1517,13 @@ div#contact-content section#contact-info {
 div#contact-content div#contact_form {
   float: left;
   margin-right: 25px;
-  width: 485px; }
+  width: 630px; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: left;
-  width: 485px; }
+  width: 315px;
+  margin-left: 25px; }
   div#contact-content section#contact-info section#hire-thoughtbot a {
     margin: 20px 0 40px;
     padding: 30px; }
@@ -1426,7 +1539,6 @@ div#contact-content section#contact-info {
       background: #ad141e; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    margin-right: 25px;
     width: 315px; }
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 25px; }

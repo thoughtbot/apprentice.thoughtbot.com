@@ -1,6 +1,19 @@
 /* Forms
 ---------------------------------------- */
 
+// Extends
+//************************************************************************//
+.subtle {
+  color: #aaa;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+//************************************************************************//
+// Base Form Styles
+//************************************************************************//
 form.wufoo {
   margin-left: 0;
 
@@ -8,19 +21,29 @@ form.wufoo {
     display: none;
   }
 
+  $half-width-input: grid-width(3.5);
+
   ul {
     list-style: none;
     margin-top: $lh;
-    margin-left: 3px;
+    padding: 4px;
 
     li {
-      margin-bottom: $lh;
-      width: grid-width(6);
+      margin-bottom: $lh + 10px;
+      width: grid-width(8);
       padding: 0;
+      margin-right: $gutter;
 
-      h3 {
-        color: $red;
-        margin-top: $lh*2;
+      &.section {
+        padding-top: 25px;
+        margin-bottom: 10px;
+
+        h3 {
+          color: $red;
+          font-size: 24px;
+          padding: 0;
+          border-top: 0 !important;
+        }
       }
 
       fieldset {
@@ -30,12 +53,16 @@ form.wufoo {
       }
 
       label.desc, legend.desc, label, legend {
+        -webkit-font-smoothing: antialiased;
         font: 14px $body;
+        font-weight: bold; // BECAUSE I SAID SO!!
         line-height: $lh;
-        margin: 0 0 ($lh/2);
+        margin: 0 0 5px;
+        padding: 0;
 
         &.choice {
           display: inline;
+          font-weight: normal;
         }
       }
 
@@ -47,21 +74,26 @@ form.wufoo {
         display: inline-block;
       }
 
+      // Default Input Styles
+      //************************************************************************//
       input[type="text"], input[type="email"], input.text, textarea {
+        $input-width: grid-width(7) + $gutter;
         border: 1px solid #999;
         font: 14px $body;
         line-height: $lh;
+        @include box-sizing(border-box);
         margin: 0;
-        max-width: grid-width(6)-($lh)-(5); /*6 columns minus line-heigh for the padding and 2px for the border*/
-        min-width: grid-width(6)-($lh)-(5); /*6 columns minus line-heigh for the padding and 2px for the border*/
+        width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
         padding: ($lh/2)-(1) ($lh/2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: grid-width(6)-($lh)-(5); /*6 columns minus line-heigh for the padding and 2px for the border*/
+        @include box-shadow( inset 0 1px 2px #aaa);
 
         &:focus {
           outline-color: $red;
         }
+      }
 
-        @include box-shadow( inset 0 1px 2px #aaa);
+      input[type="text"], input[type="email"], input.text {
+
       }
 
       input#saveForm {
@@ -94,19 +126,42 @@ form.wufoo {
         }
       }
 
-      &.name, &#fo8li31 {
-        float: none;
-        width: grid-width(6)+$gutter;
+      // Phone & Email
+      //************************************************************************//
+      &.phone {
+        margin-right: 0;
+      }
+
+      &.email, &.phone {
+        width: 50%;
+        float: left;
+        clear: none;
+
+        input[type="text"], input.text, input[type="email"] {
+          width: $half-width-input;
+        }
+      }
+
+      // Name Input
+      //************************************************************************//
+      &.name {
         @extend .clearfix;
+        float: none;
+        margin-bottom: 10px;
+        width: grid-width(6)+$gutter;
 
         span {
           display: block;
           float: left;
           margin-right: $gutter;
-          width: grid-width(3)-2;
+          width: $half-width-input;
 
           &:nth-child(odd) {
             margin-right: 0;
+          }
+
+          input[type="text"] {
+            width: 100%;
           }
 
           &.req {
@@ -117,66 +172,33 @@ form.wufoo {
           }
 
           label {
-            color: #aaa;
-            font-size: 14px;
-            font-style: italic;
-            font-weight: normal;
-          }
-
-          input[type="text"] {
-            max-width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
-            min-width: grid-width(3)-($lh)-(5); /*3 columns minus line-heigh for the padding and 2px for the border*/
-            width: grid-width(3)-($lh)-(5); /*3 columns minus line-heigh for the padding and 2px for the border*/
+            @extend .subtle;
           }
         }
       }
 
-      &#fo7li3 {
-        clear: both;
-        width: grid-width(8);
-      }
-
-      /*inputs for project planning form*/
-      &#fo5li136 {
-        div {
-          margin-left: 10px;
-          padding-top: $lh;
-
-          span {
-            color: #666;
-            margin-right: 10px;
-          }
+      // Elevator Pitch
+      //************************************************************************//
+      &.pitch {
+        div label {
+          @extend .subtle;
+          line-height: 0.8em;
         }
       }
 
-      &#fo5li12, &#fo5li123 {
-
-        div {
-          display: block;
-          margin-left: 30px;
-          padding-top: $lh;
-
-          span {
-            color: #666;
-            display: block;
-            margin-bottom: $lh/2;
-
-            input {
-              margin: -2px 3px 0 -20px;
-              top: 0;
-            }
-
-            &.req {
-              display: inline;
-            }
-          }
+      // Services list
+      //************************************************************************//
+      &.services {
+        legend {
+          padding-bottom: 10px;
         }
-      }
 
-      /*margin on the first header on the planning form*/
-      &#fo5li130 {
-        h3#title130 {
-          margin-top: 0;
+        span {
+          margin-bottom: 8px;
+
+          label {
+            margin-left: 5px;
+          }
         }
       }
     }
