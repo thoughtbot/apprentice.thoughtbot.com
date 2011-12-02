@@ -874,10 +874,15 @@ form.wufoo {
     margin-top: 20px; }
     form.wufoo ul li {
       margin-bottom: 20px;
-      width: 485px;
+      width: 655px;
       padding: 0;
       /*inputs for project planning form*/
       /*margin on the first header on the planning form*/ }
+      form.wufoo ul li.email, form.wufoo ul li.phone {
+        width: 50%;
+        float: left; }
+        form.wufoo ul li.email input, form.wufoo ul li.phone input {
+          width: 50%; }
       form.wufoo ul li h3 {
         color: #ad141e;
         margin-top: 40px; }

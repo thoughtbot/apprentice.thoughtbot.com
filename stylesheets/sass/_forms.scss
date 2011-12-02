@@ -14,8 +14,17 @@ form.wufoo {
 
     li {
       margin-bottom: $lh;
-      width: grid-width(6);
+      width: grid-width(8);
       padding: 0;
+
+      &.email, &.phone {
+        width: 50%;
+        float: left;
+
+        input {
+          width: 50%;
+        }
+      }
 
       h3 {
         color: $red;
