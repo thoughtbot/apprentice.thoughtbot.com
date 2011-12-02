@@ -928,6 +928,11 @@ form.wufoo {
         border: 1px solid #999;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
         margin: 0;
         max-width: 573px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/

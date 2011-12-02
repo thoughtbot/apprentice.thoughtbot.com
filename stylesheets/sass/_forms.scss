@@ -67,7 +67,7 @@ form.wufoo {
         border: 1px solid #999;
         font: 14px $body;
         line-height: $lh;
-        // @include box-sizing(border-box);
+        @include box-sizing(border-box);
         margin: 0;
         max-width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
         min-width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
