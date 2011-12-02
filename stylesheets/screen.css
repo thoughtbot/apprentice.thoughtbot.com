@@ -886,40 +886,48 @@ img {
 
 /* Forms
 ---------------------------------------- */
+.subtle, form.wufoo ul li.name span label, form.wufoo ul li.pitch div label {
+  color: #aaa;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0; }
+
 form.wufoo {
   margin-left: 0; }
   form.wufoo header#header {
     display: none; }
   form.wufoo ul {
     list-style: none;
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding: 4px; }
     form.wufoo ul li {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       width: 655px;
       padding: 0;
       margin-right: 25px; }
-      form.wufoo ul li.phone {
-        margin-right: 0; }
-      form.wufoo ul li.email, form.wufoo ul li.phone {
-        width: 50%;
-        float: left;
-        clear: none; }
-        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
-          width: 272.5px;
-          min-width: inherit; }
-      form.wufoo ul li h3 {
-        color: #ad141e;
-        margin-top: 40px; }
+      form.wufoo ul li.section {
+        padding-top: 25px;
+        margin-bottom: 10px; }
+        form.wufoo ul li.section h3 {
+          color: #ad141e;
+          font-size: 24px;
+          padding: 0;
+          border-top: 0 !important; }
       form.wufoo ul li fieldset {
         background: none;
         border: 0;
         padding: 0; }
       form.wufoo ul li label.desc, form.wufoo ul li legend.desc, form.wufoo ul li label, form.wufoo ul li legend {
+        -webkit-font-smoothing: antialiased;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
+        font-weight: bold;
         line-height: 20px;
-        margin: 0 0 10px; }
+        margin: 0 0 5px;
+        padding: 0; }
         form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
-          display: inline; }
+          display: inline;
+          font-weight: normal; }
       form.wufoo ul li .req {
         color: #ad141e; }
       form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
@@ -934,11 +942,7 @@ form.wufoo {
         -o-box-sizing: border-box;
         box-sizing: border-box;
         margin: 0;
-        max-width: 573px;
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
-        min-width: 573px;
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
-        width: 573px;
+        width: 595px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/
         padding: 9px 10px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
@@ -968,33 +972,40 @@ form.wufoo {
         background: none; }
         form.wufoo ul li.focused label {
           color: #000; }
+      form.wufoo ul li.phone {
+        margin-right: 0; }
+      form.wufoo ul li.email, form.wufoo ul li.phone {
+        width: 50%;
+        float: left;
+        clear: none; }
+        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
+          width: 272.5px; }
       form.wufoo ul li.name {
         float: none;
+        margin-bottom: 10px;
         width: 510px; }
         form.wufoo ul li.name span {
           display: block;
           float: left;
           margin-right: 25px;
-          width: 230px; }
+          width: 272.5px; }
           form.wufoo ul li.name span:nth-child(odd) {
             margin-right: 0; }
+          form.wufoo ul li.name span input[type="text"] {
+            width: 100%; }
           form.wufoo ul li.name span.req {
             display: inline;
             float: none;
             margin: 0;
             width: auto; }
-          form.wufoo ul li.name span label {
-            color: #aaa;
-            font-size: 14px;
-            font-style: italic;
-            font-weight: normal; }
-          form.wufoo ul li.name span input[type="text"] {
-            max-width: 208px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/
-            min-width: 208px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/
-            width: 208px;
-            /*3 columns minus line-heigh for the padding and 2px for the border*/ }
+      form.wufoo ul li.pitch div label {
+        line-height: 0.8em; }
+      form.wufoo ul li.services legend {
+        padding-bottom: 10px; }
+      form.wufoo ul li.services span {
+        margin-bottom: 8px; }
+        form.wufoo ul li.services span label {
+          margin-left: 5px; }
 
 header#main-header {
   border-bottom: 1px solid #DCDCDC;
