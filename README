@@ -4,6 +4,8 @@ To run locally:
 
   $ jekyll --server
 
+Note: the server will run on port 4000 by default.
+
 Files will be auto-regenerated.  You can run:
 
   $ jekyll --server --no-auto
