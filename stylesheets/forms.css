@@ -8,7 +8,7 @@
 /*size of one gutter*/
 /* Clear Floated Elements
 ------------------------------------------------------------------------------*/
-.clearfix:after, .primary:after, #design-portfolio:after, .secondary:after, form.wufoo ul li.name:after, form.wufoo ul li#fo8li31:after {
+.clearfix:after, .primary:after, #design-portfolio:after, .secondary:after, form.wufoo ul li.name:after {
   clear: both;
   content: ' ';
   display: block;
@@ -209,13 +209,16 @@ form.wufoo {
       margin-bottom: 20px;
       width: 655px;
       padding: 0;
-      /*inputs for project planning form*/
-      /*margin on the first header on the planning form*/ }
+      margin-right: 25px; }
+      form.wufoo ul li.phone {
+        margin-right: 0; }
       form.wufoo ul li.email, form.wufoo ul li.phone {
         width: 50%;
-        float: left; }
-        form.wufoo ul li.email input, form.wufoo ul li.phone input {
-          width: 50%; }
+        float: left;
+        clear: none; }
+        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
+          width: 272.5px;
+          min-width: inherit; }
       form.wufoo ul li h3 {
         color: #ad141e;
         margin-top: 40px; }
@@ -238,14 +241,14 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
         margin: 0;
-        max-width: 463px;
+        max-width: 573px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/
-        min-width: 463px;
+        min-width: 573px;
+        /*6 columns minus line-heigh for the padding and 2px for the border*/
+        width: 573px;
         /*6 columns minus line-heigh for the padding and 2px for the border*/
         padding: 9px 10px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 463px;
-        /*6 columns minus line-heigh for the padding and 2px for the border*/
         -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
         -moz-box-shadow: inset 0 1px 2px #aaaaaa;
         -o-box-shadow: inset 0 1px 2px #aaaaaa;
@@ -271,54 +274,30 @@ form.wufoo {
         background: none; }
         form.wufoo ul li.focused label {
           color: #000; }
-      form.wufoo ul li.name, form.wufoo ul li#fo8li31 {
+      form.wufoo ul li.name {
         float: none;
         width: 510px; }
-        form.wufoo ul li.name span, form.wufoo ul li#fo8li31 span {
+        form.wufoo ul li.name span {
           display: block;
           float: left;
           margin-right: 25px;
           width: 230px; }
-          form.wufoo ul li.name span:nth-child(odd), form.wufoo ul li#fo8li31 span:nth-child(odd) {
+          form.wufoo ul li.name span:nth-child(odd) {
             margin-right: 0; }
-          form.wufoo ul li.name span.req, form.wufoo ul li#fo8li31 span.req {
+          form.wufoo ul li.name span.req {
             display: inline;
             float: none;
             margin: 0;
             width: auto; }
-          form.wufoo ul li.name span label, form.wufoo ul li#fo8li31 span label {
+          form.wufoo ul li.name span label {
             color: #aaa;
             font-size: 14px;
             font-style: italic;
             font-weight: normal; }
-          form.wufoo ul li.name span input[type="text"], form.wufoo ul li#fo8li31 span input[type="text"] {
+          form.wufoo ul li.name span input[type="text"] {
             max-width: 208px;
             /*3 columns minus line-heigh for the padding and 2px for the border*/
             min-width: 208px;
             /*3 columns minus line-heigh for the padding and 2px for the border*/
             width: 208px;
             /*3 columns minus line-heigh for the padding and 2px for the border*/ }
-      form.wufoo ul li#fo7li3 {
-        clear: both;
-        width: 655px; }
-      form.wufoo ul li#fo5li136 div {
-        margin-left: 10px;
-        padding-top: 20px; }
-        form.wufoo ul li#fo5li136 div span {
-          color: #666;
-          margin-right: 10px; }
-      form.wufoo ul li#fo5li12 div, form.wufoo ul li#fo5li123 div {
-        display: block;
-        margin-left: 30px;
-        padding-top: 20px; }
-        form.wufoo ul li#fo5li12 div span, form.wufoo ul li#fo5li123 div span {
-          color: #666;
-          display: block;
-          margin-bottom: 10px; }
-          form.wufoo ul li#fo5li12 div span input, form.wufoo ul li#fo5li123 div span input {
-            margin: -2px 3px 0 -20px;
-            top: 0; }
-          form.wufoo ul li#fo5li12 div span.req, form.wufoo ul li#fo5li123 div span.req {
-            display: inline; }
-      form.wufoo ul li#fo5li130 h3#title130 {
-        margin-top: 0; }

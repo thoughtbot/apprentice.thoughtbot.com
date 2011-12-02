@@ -16,13 +16,20 @@ form.wufoo {
       margin-bottom: $lh;
       width: grid-width(8);
       padding: 0;
+      margin-right: $gutter;
+
+      &.phone {
+        margin-right: 0;
+      }
 
       &.email, &.phone {
         width: 50%;
         float: left;
+        clear: none;
 
-        input {
-          width: 50%;
+        input[type="text"], input.text, input[type="email"] {
+          width: grid-width(3.5);
+          min-width: inherit;
         }
       }
 
@@ -56,14 +63,16 @@ form.wufoo {
       }
 
       input[type="text"], input[type="email"], input.text, textarea {
+        $input-width: grid-width(7)-($lh)-(2)+ $gutter;
         border: 1px solid #999;
         font: 14px $body;
         line-height: $lh;
+        // @include box-sizing(border-box);
         margin: 0;
-        max-width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
-        min-width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
+        max-width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
+        min-width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
+        width: $input-width; /*6 columns minus line-heigh for the padding and 2px for the border*/
         padding: ($lh/2)-(1) ($lh/2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: grid-width(6)-($lh)-(2); /*6 columns minus line-heigh for the padding and 2px for the border*/
 
         &:focus {
           outline-color: $red;
@@ -102,7 +111,7 @@ form.wufoo {
         }
       }
 
-      &.name, &#fo8li31 {
+      &.name {
         float: none;
         width: grid-width(6)+$gutter;
         @extend .clearfix;
@@ -136,55 +145,6 @@ form.wufoo {
             min-width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
             width: grid-width(3)-($lh)-(2); /*3 columns minus line-heigh for the padding and 2px for the border*/
           }
-        }
-      }
-
-      &#fo7li3 {
-        clear: both;
-        width: grid-width(8);
-      }
-
-      /*inputs for project planning form*/
-      &#fo5li136 {
-        div {
-          margin-left: 10px;
-          padding-top: $lh;
-
-          span {
-            color: #666;
-            margin-right: 10px;
-          }
-        }
-      }
-
-      &#fo5li12, &#fo5li123 {
-
-        div {
-          display: block;
-          margin-left: 30px;
-          padding-top: $lh;
-
-          span {
-            color: #666;
-            display: block;
-            margin-bottom: $lh/2;
-
-            input {
-              margin: -2px 3px 0 -20px;
-              top: 0;
-            }
-
-            &.req {
-              display: inline;
-            }
-          }
-        }
-      }
-
-      /*margin on the first header on the planning form*/
-      &#fo5li130 {
-        h3#title130 {
-          margin-top: 0;
         }
       }
     }
