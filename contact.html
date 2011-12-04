@@ -7,8 +7,27 @@ meta_description: Contact us about web design and development consulting or trai
 ---
 
 <header id="page-header" class="primary">
-  <h1>Want to hire thoughtbot?</h1>
+  <h1 id="headline" style="display: none">Want to hire thoughtbot?</h1>
 </header>
+
+<script type="text/javascript">
+  _kmq.push(function(){
+    var headline_text = KM.ab("Contact page headline", ["want_to_hire_thoughtbot", "lets_talk_about_your_project"]);
+    var headline = document.getElementById("headline");
+
+    if(headline_text === "lets_talk_about_your_project") {
+      headline.textContent = "Let's talk about your project"
+    }
+
+    headline.style.display = '';
+  });
+
+  // If for some reason KISSmetrics doesn't load or there is an
+  // error, just show the default after 1.5s
+  setTimeout(function(){
+    document.getElementById("headline").style.display = '';
+  }, 1500);
+</script>
 
 <div id="contact-content">
 
