@@ -728,6 +728,9 @@ ol ol, ol ul, ul ul, ul ol {
     background: #96111a;
     text-shadow: none; }
 
+.row-end, footer#main-footer nav section#blog-footer, section#portfolio ul li#stattleship, section#portfolio ul li#umbrellatoday, section#products ul li#copycopter, section.open-source ul li.end-row, section.open-source ul li.highlighted.factory-girl {
+  margin-right: 0; }
+
 .external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a {
   padding-right: 13px; }
   .external:hover, footer#main-footer nav section#products li a:hover, section#products ul li a .check-out:hover, section#workshops section#current-workshops ul li a:hover {
@@ -815,7 +818,8 @@ a:link, a:active {
   color: #ad141e;
   text-decoration: none; }
 a:visited {
-  color: #96111a; }
+  color: #96111a;
+  text-decoration: none; }
 a:hover {
   color: #db1926;
   text-decoration: none; }
@@ -1052,8 +1056,6 @@ footer#main-footer {
           margin-right: 0; }
     footer#main-footer nav section#blog-footer {
       width: 31.658%; }
-    footer#main-footer nav section:last-child {
-      margin-right: 0; }
     footer#main-footer nav section ul {
       list-style: none; }
       footer#main-footer nav section ul li {
@@ -1192,8 +1194,6 @@ section#portfolio {
         -ms-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
-      section#portfolio ul li:nth-child(4n) {
-        margin-right: 0; }
       section#portfolio ul li#pozit a {
         background: url("/images/portfolio/thumb/pozit.png") center center no-repeat; }
       section#portfolio ul li#gulfcoast a {
@@ -1282,6 +1282,7 @@ section#services {
       float: left;
       margin-bottom: 0; }
     #get-started a p {
+      color: #fff;
       color: rgba(255, 255, 255, 0.8);
       float: right;
       font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -1290,6 +1291,11 @@ section#services {
       margin-top: 4px;
       margin-bottom: -4px; }
 
+@media screen and (max-width: 930px) {
+  #get-started a h3 {
+    float: none; }
+  #get-started a p {
+    float: none; } }
 section#products {
   margin-bottom: 80px; }
   section#products h2 {
@@ -1364,8 +1370,6 @@ section#products {
             color: #000; }
           section#products ul li a:hover .check-out {
             color: #7f0f16; }
-      section#products ul li:last-child {
-        margin-right: 0; }
 
 section#workshops {
   background: url("/images/shadowing-lite.png") center top no-repeat;
@@ -1411,8 +1415,6 @@ section.open-source ul {
     margin: 40px 2.513% 0 0;
     /*line hight top bottom to maintain baseline grid*/
     width: 23.116%; }
-    section.open-source ul li.end-row {
-      margin-right: 0; }
     section.open-source ul li.start-row {
       clear: both; }
     section.open-source ul li a {
@@ -1451,8 +1453,6 @@ section.open-source ul {
       /*line-hight top bottom to maintain baseline grid*/
       padding-right: 2.513%;
       width: 48.744%; }
-      section.open-source ul li.highlighted:nth-child(4n+2) {
-        padding-right: 0; }
       section.open-source ul li.highlighted a {
         padding-left: 51.256%;
         min-height: 170px; }
@@ -1468,14 +1468,16 @@ section.open-source ul {
           section.open-source ul li.highlighted.paperclip a {
             padding-left: 0;
             background: none; } }
-      section.open-source ul li.highlighted.factory-girl a {
-        background: transparent url("/images/oss/factory-girl.png") 18px 2px no-repeat; }
-        section.open-source ul li.highlighted.factory-girl a:hover {
-          background-color: #efefef; }
-        @media screen and (max-width: 850px) {
-          section.open-source ul li.highlighted.factory-girl a {
-            padding-left: 0;
-            background: none; } }
+      section.open-source ul li.highlighted.factory-girl {
+        padding-right: 0; }
+        section.open-source ul li.highlighted.factory-girl a {
+          background: transparent url("/images/oss/factory-girl.png") 18px 2px no-repeat; }
+          section.open-source ul li.highlighted.factory-girl a:hover {
+            background-color: #efefef; }
+          @media screen and (max-width: 850px) {
+            section.open-source ul li.highlighted.factory-girl a {
+              padding-left: 0;
+              background: none; } }
 
 section#events {
   text-shadow: 0 1px 0 #fcfcfc; }
@@ -1501,7 +1503,7 @@ section#events {
       -ms-box-sizing: border-box;
       -o-box-sizing: border-box;
       box-sizing: border-box; }
-      section#events ul li:last-child {
+      section#events ul li.boston-vim {
         margin-right: 0; }
 
 div#contact-content div#contact_form {

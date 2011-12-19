@@ -91,6 +91,7 @@ a {
 
   &:visited {
     color: darken($red, 5%);
+    text-decoration: none;
   }
 
   &:hover {

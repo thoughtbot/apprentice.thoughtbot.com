@@ -62,10 +62,7 @@ footer#main-footer {
 
       &#blog-footer {
         width: grid-width(4);
-      }
-
-      &:last-child {
-        margin-right: 0;
+        @extend .row-end;
       }
 
       ul {
@@ -77,6 +74,7 @@ footer#main-footer {
       }
     }
   }
+
   p#copyright {
     color: #7a7a7a;
     margin-top: $lh*2; /*line-height to maintain baseline grid*/

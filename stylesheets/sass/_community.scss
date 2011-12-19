@@ -12,7 +12,7 @@ section.open-source {
       width: grid-width(3);
 
       &.end-row {
-        margin-right: 0;
+        @extend .row-end;
       }
 
       &.start-row {
@@ -35,10 +35,6 @@ section.open-source {
         margin: 0; /*line-hight top bottom to maintain baseline grid*/
         padding-right: $gw-gutter;
         width: grid-width(6);
-
-        &:nth-child(4n+2) {
-          padding-right: 0;
-        }
 
         a {
           padding-left: grid-width(6)+$gw-gutter;
@@ -67,6 +63,9 @@ section.open-source {
         }
 
         &.factory-girl {
+          @extend .row-end;
+          padding-right: 0;
+
           a {
             background: transparent url('/images/oss/factory-girl.png') 18px 2px no-repeat;
 
@@ -111,7 +110,7 @@ section#events {
       @include box-sizing(border-box);
 
 
-      &:last-child {
+      &.boston-vim {
         margin-right: 0;
       }
     }

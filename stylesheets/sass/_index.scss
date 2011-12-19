@@ -147,9 +147,9 @@ section#portfolio {
         @include background-size(cover);
       }
 
-      &:nth-child(4n) {
-        margin-right: 0;
-      }
+      // &:nth-child(4n) {
+      //   @extend .row-end;
+      // }
 
       &#pozit a {
         background: url('/images/portfolio/thumb/pozit.png') center center no-repeat;
@@ -171,16 +171,24 @@ section#portfolio {
         background: url('/images/portfolio/thumb/iora.png') center center no-repeat;
       }
 
-      &#stattleship a {
-        background: url('/images/portfolio/thumb/stattleship.png') center center no-repeat;
+      &#stattleship {
+        @extend .row-end;
+
+        a {
+          background: url('/images/portfolio/thumb/stattleship.png') center center no-repeat;
+        }
       }
 
       &#tastedmenu a {
         background: url('/images/portfolio/thumb/tastedmenu.png') center center no-repeat;
       }
 
-      &#umbrellatoday a {
-        background: url('/images/portfolio/thumb/umbrellatoday.png') center center no-repeat;
+      &#umbrellatoday {
+        @extend .row-end;
+
+        a {
+          background: url('/images/portfolio/thumb/umbrellatoday.png') center center no-repeat;
+        }
       }
     }
   }
@@ -257,6 +265,7 @@ section#services {
   }
 }
 
+
 #get-started {
   padding: $lh 0 $lh*2;
 
@@ -272,6 +281,7 @@ section#services {
     }
 
     p {
+      color: #fff;
       color: rgba(#fff, .8);
       float: right;
       font: 16px $header;
@@ -279,6 +289,21 @@ section#services {
       margin-bottom: 0;
       margin-top: 4px;
       margin-bottom: -4px;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  #get-started {
+
+    a {
+    h3 {
+      float: none;
+    }
+
+    p {
+      float: none;
+    }
     }
   }
 }
@@ -299,6 +324,10 @@ section#products {
       margin-right: $gw-gutter;
       width: grid-width(4);
 
+      // &:last-child {
+      //   @extend .row-end;
+      // }
+
       &#airbrake {
 
         a {
@@ -311,6 +340,8 @@ section#products {
       }
 
       &#copycopter {
+        @extend .row-end;
+
         a {
           div.product-logo {
             img {
@@ -374,9 +405,6 @@ section#products {
         }
       }
 
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
 }
