@@ -8,14 +8,14 @@ $(document).ready(function() {
   $('#portfolio').localScroll();
 
   var images = {
-    "gulfcoast": 4,
+    "iora": 3,
+    "tastedmenu": 3,
+    "stattleship": 3,
+    "gulfcoast": 3,
     "pozit": 3,
     "coupondudes": 4,
     "gnite": 2,
     "umbrellatoday": 2,
-    "carbonrally": 2,
-    "safetystream": 4,
-    "shortboard": 4
   };
 
   $('#portfolio a').click(function(){
