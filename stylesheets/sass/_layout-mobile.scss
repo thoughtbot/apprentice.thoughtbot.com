@@ -1,4 +1,4 @@
-@media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   body {
     -webkit-text-size-adjust: none;
   }
@@ -10,7 +10,8 @@
  h1 {
    #page-header & {
      font-size: 32px;
-     line-height: $lh*2;
+     font-weight: 600;
+     line-height: $lh * 2;
    }
  }
 
@@ -20,6 +21,8 @@
       h1 {
         a {
           background-position: center center;
+          display: block;
+          width: auto;
         }
       }
 
@@ -68,7 +71,6 @@
     }
   }
 
-
   // Index - portfolio
   div#portfolio-slider {
     height: $lh*17;
@@ -80,6 +82,8 @@
   }
 
   section#portfolio {
+    margin-top: $lh * 3;
+
     ul {
       li {
         float: left;
@@ -91,7 +95,7 @@
         }
 
         a {
-          height: ($lh * 6) - 10px;
+          height: ($lh * 7) - 10px;
         }
       }
     }
@@ -102,13 +106,13 @@
       float: none;
       margin-right: $gw-gutter;
       width: auto;
-      margin-bottom: $lh*2;
+      margin-bottom: $lh * 2;
     }
 
     blockquote {
       float: none;
       width: auto;
-      padding-left: $gw-gutter*3;
+      padding-left: $gw-gutter * 3;
     }
 
     section#clients {
@@ -129,6 +133,19 @@
             margin-right: 0;
           }
         }
+      }
+    }
+  }
+
+  div.get-started {
+    a {
+      h3 {
+        float: none;
+      }
+
+      p {
+        margin-top: $lh;
+        float: none;
       }
     }
   }

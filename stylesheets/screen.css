@@ -670,7 +670,7 @@ ol ol, ol ul, ul ul, ul ol {
   text-align: left;
   width: 100.0%; }
 
-.button, form.wufoo ul li input#saveForm, #get-started a, div#contact-content section#contact-info section#hire-thoughtbot a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
+.button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
   -webkit-font-smoothing: antialiased;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -710,7 +710,7 @@ ol ol, ol ul, ul ul, ul ol {
   line-height: 20px;
   padding: 30px;
   text-shadow: 0 -1px 0 #7f0f16; }
-  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#contact-content section#contact-info section#hire-thoughtbot a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
+  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -ms-box-shadow: inset 0 1px 0 #ee6c74;
@@ -719,7 +719,7 @@ ol ol, ol ul, ul ul, ul ol {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a; }
-  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#contact-content section#contact-info section#hire-thoughtbot a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active {
+  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active {
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
     -ms-box-shadow: inset 0 -1px 3px #680c12;
@@ -1076,6 +1076,7 @@ footer#main-footer {
     background: url(images/loading.gif) no-repeat 50% 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1150,6 +1151,7 @@ footer#main-footer {
     #portfolio-slider div ul.slider div.nivo-slice {
       -webkit-background-size: cover;
       -moz-background-size: cover;
+      -ms-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
 
@@ -1187,6 +1189,7 @@ section#portfolio {
         text-indent: -9999px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
+        -ms-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
       section#portfolio ul li:nth-child(4n) {
@@ -1282,10 +1285,10 @@ section#services {
       color: rgba(255, 255, 255, 0.8);
       float: right;
       font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 20px -4;
-      /*line-height minus the 4px margin*/
+      line-height: 20px;
       margin-bottom: 0;
-      margin-top: 4px; }
+      margin-top: 4px;
+      margin-bottom: -4px; }
 
 section#products {
   margin-bottom: 80px; }
@@ -1461,10 +1464,18 @@ section.open-source ul {
         background: transparent url("/images/oss/paperclip.png") 22px 2px no-repeat; }
         section.open-source ul li.highlighted.paperclip a:hover {
           background-color: #efefef; }
+        @media screen and (max-width: 850px) {
+          section.open-source ul li.highlighted.paperclip a {
+            padding-left: 0;
+            background: none; } }
       section.open-source ul li.highlighted.factory-girl a {
         background: transparent url("/images/oss/factory-girl.png") 18px 2px no-repeat; }
         section.open-source ul li.highlighted.factory-girl a:hover {
           background-color: #efefef; }
+        @media screen and (max-width: 850px) {
+          section.open-source ul li.highlighted.factory-girl a {
+            padding-left: 0;
+            background: none; } }
 
 section#events {
   text-shadow: 0 1px 0 #fcfcfc; }
@@ -1500,25 +1511,12 @@ div#contact-content div#contact_form {
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
-  float: left;
-  width: 31.658%;
-  margin-left: 2.513%; }
-  div#contact-content section#contact-info section#hire-thoughtbot a {
-    margin: 20px 0 40px;
-    padding: 30px; }
-    div#contact-content section#contact-info section#hire-thoughtbot a h3 {
-      color: #fff;
-      margin-bottom: 0;
-      font-size: 18px; }
-    div#contact-content section#contact-info section#hire-thoughtbot a p {
-      color: rgba(255, 255, 255, 0.6);
-      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      margin-bottom: 0; }
-    div#contact-content section#contact-info section#hire-thoughtbot a:hover {
-      background: #ad141e; }
+  float: right;
+  width: 31.658%; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    width: 31.658%; }
+    width: 65.829%;
+    margin-right: 2.513%; }
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
@@ -1537,25 +1535,12 @@ div#contact-content div#contact_form {
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
-  float: left;
-  width: 31.658%;
-  margin-left: 2.513%; }
-  div#contact-content section#contact-info section#hire-thoughtbot a {
-    margin: 20px 0 40px;
-    padding: 30px; }
-    div#contact-content section#contact-info section#hire-thoughtbot a h3 {
-      color: #fff;
-      margin-bottom: 0;
-      font-size: 18px; }
-    div#contact-content section#contact-info section#hire-thoughtbot a p {
-      color: rgba(255, 255, 255, 0.6);
-      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      margin-bottom: 0; }
-    div#contact-content section#contact-info section#hire-thoughtbot a:hover {
-      background: #ad141e; }
+  float: right;
+  width: 31.658%; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    width: 31.658%; }
+    width: 65.829%;
+    margin-right: 2.513%; }
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
@@ -1671,7 +1656,7 @@ div#jobs-wrapper section#job-form header.info {
     #design-portfolio ul li:last-child {
       border-bottom: 0; }
 
-@media screen and (max-width: 740px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   body {
     -webkit-text-size-adjust: none; }
 
@@ -1680,10 +1665,13 @@ div#jobs-wrapper section#job-form header.info {
 
   #page-header h1 {
     font-size: 32px;
+    font-weight: 600;
     line-height: 40px; }
 
   header#main-header nav#main-nav h1 a {
-    background-position: center center; }
+    background-position: center center;
+    display: block;
+    width: auto; }
   header#main-header nav#main-nav ul {
     margin-top: 0; }
     header#main-header nav#main-nav ul li {
@@ -1716,14 +1704,16 @@ div#jobs-wrapper section#job-form header.info {
       /*line-height minus 2 for the border to maintain baseline grid*/
       max-width: 100.0%; }
 
-  section#portfolio ul li {
-    float: left;
-    margin: 0 2.513% 20px 0;
-    width: 48.744%; }
-    section#portfolio ul li:nth-child(2n) {
-      margin-right: 0; }
-    section#portfolio ul li a {
-      height: 110px; }
+  section#portfolio {
+    margin-top: 60px; }
+    section#portfolio ul li {
+      float: left;
+      margin: 0 2.513% 20px 0;
+      width: 48.744%; }
+      section#portfolio ul li:nth-child(2n) {
+        margin-right: 0; }
+      section#portfolio ul li a {
+        height: 130px; }
 
   section#services #about-services {
     float: none;
@@ -1746,6 +1736,12 @@ div#jobs-wrapper section#job-form header.info {
         width: 48.744%; }
         section#services section#clients ul li:nth-child(2n) {
           margin-right: 0; }
+
+  div.get-started a h3 {
+    float: none; }
+  div.get-started a p {
+    margin-top: 20px;
+    float: none; }
 
   section#products {
     margin-bottom: 40px; }
@@ -1795,10 +1791,10 @@ div#jobs-wrapper section#job-form header.info {
   div#contact-content section#contact-info {
     float: none;
     width: 100.0%; } }
-@media screen and (min-width: 741px) {
+@media screen and (min-width: 751px) {
   .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
     max-width: 1122px;
-    min-width: 750px; }
+    min-width: 720px; }
 
   nav#main-nav h1 {
     float: left; }

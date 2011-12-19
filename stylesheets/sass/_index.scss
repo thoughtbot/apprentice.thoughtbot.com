@@ -268,9 +268,10 @@ section#services {
       color: rgba(#fff, .8);
       float: right;
       font: 16px $header;
-      line-height: ($lh)-4; /*line-height minus the 4px margin*/
+      line-height: $lh;
       margin-bottom: 0;
       margin-top: 4px;
+      margin-bottom: -4px;
     }
   }
 }

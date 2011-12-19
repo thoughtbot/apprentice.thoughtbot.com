@@ -58,6 +58,11 @@ section.open-source {
             &:hover {
               background-color: #efefef; 
             }
+
+            @media screen and (max-width: 850px) {
+              padding-left: 0;
+              background: none;
+            }
           }
         }
 
@@ -68,9 +73,13 @@ section.open-source {
             &:hover {
               background-color: #efefef; 
             }
+
+            @media screen and (max-width: 850px) {
+              padding-left: 0;
+              background: none;
+            }
           }
         }
-
       }
     }
   }

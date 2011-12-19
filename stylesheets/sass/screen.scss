@@ -3,7 +3,7 @@
 @import "bourbon/bourbon";
 @import "nivo";
 
-@import "base";
+@import "base-variables", "base-extends", "base";
 @import "forms";
 @import "header";
 @import "footer";
