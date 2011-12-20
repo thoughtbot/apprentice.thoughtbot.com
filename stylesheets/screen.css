@@ -1506,10 +1506,27 @@ section#events {
       section#events ul li.boston-vim {
         margin-right: 0; }
 
+@media screen and (max-width: 880px) {
+  section.open-source ul li {
+    width: 48.744%; }
+    section.open-source ul li.end-row {
+      margin-right: 2.513%; }
+    section.open-source ul li.start-row {
+      clear: none; }
+    section.open-source ul li:nth-child(2n) {
+      margin-right: 0; }
+    section.open-source ul li:nth-child(2n+1) {
+      clear: both; }
+
+  section#events p.events-intro {
+    float: none;
+    width: auto; }
+  section#events ul li {
+    width: 31.658%; } }
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
-  width: 63.317%; }
+  width: 65.829%; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
@@ -1530,10 +1547,16 @@ div#contact-content section#contact-info {
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 
+@media screen and (max-width: 940px) {
+  div#contact-content div#contract_form {
+    width: auto; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: auto; } }
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
-  width: 63.317%; }
+  width: 65.829%; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
@@ -1554,6 +1577,12 @@ div#contact-content section#contact-info {
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 
+@media screen and (max-width: 940px) {
+  div#contact-content div#contract_form {
+    width: auto; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: auto; } }
 section#people ul {
   list-style: none; }
   section#people ul li {
@@ -1570,10 +1599,14 @@ section#people ul {
     section#people ul li div.person-photo {
       float: left;
       margin-right: 2.513%;
-      width: 14.573%; }
+      width: 31.658%;
+      text-align: center;
+      overflow: hidden; }
+      section#people ul li div.person-photo img {
+        max-width: 100%; }
     section#people ul li div.person-info {
       float: left;
-      width: 31.658%; }
+      width: 65.829%; }
       section#people ul li div.person-info h2 {
         font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
         line-height: 40px;

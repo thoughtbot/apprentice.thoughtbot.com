@@ -5,7 +5,7 @@ div#contact-content {
   div#contact_form {
     float: left;
     margin-right: $gw-gutter;
-    width: ($gw-column*8)+($gw-gutter*6);
+    width: grid-width(8);
 
     h1#logo, #bottom{
       display: none;
@@ -38,6 +38,19 @@ div#contact-content {
       p {
         margin-bottom: 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  div#contact-content {
+    div#contract_form {
+      width: auto;
+    }
+
+    section#contact-info {
+      float: none;
+      width: auto;
     }
   }
 }

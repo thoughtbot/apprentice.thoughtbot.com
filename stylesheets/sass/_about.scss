@@ -24,12 +24,18 @@ section#people {
       div.person-photo {
         float: left;
         margin-right: $gw-gutter;
-        width: grid-width(2);
+        width: grid-width(4);
+        text-align: center;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+        }
       }
 
       div.person-info {
         float: left;
-        width: grid-width(4);
+        width: grid-width(8);
 
         h2 {
           font: 700 24px $header;

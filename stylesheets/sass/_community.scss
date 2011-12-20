@@ -116,3 +116,40 @@ section#events {
     }
   }
 }
+
+@media screen and (max-width: 880px) {
+  section.open-source {
+    ul li {
+      width: grid-width(6);
+
+      &.end-row {
+        margin-right: $gw-gutter;
+      }
+
+      &.start-row {
+        clear: none;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n+1) {
+        clear: both;
+      }
+    }
+  }
+
+  section#events {
+    p.events-intro {
+      float: none;
+      width: auto;
+    }
+
+    ul {
+      li {
+        width: grid-width(4);
+      }
+    }
+  }
+}
