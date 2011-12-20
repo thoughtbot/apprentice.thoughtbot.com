@@ -176,12 +176,15 @@ section#portfolio {
         background: url('/images/portfolio/thumb/gnite.png') center center no-repeat;
       }
 
-      &#iora a {
-        background: url('/images/portfolio/thumb/iora.png') center center no-repeat;
+      &#iora {
+        @extend .row-end;
+
+        a {
+          background: url('/images/portfolio/thumb/iora.png') center center no-repeat;
+        }
       }
 
       &#stattleship {
-        @extend .row-end;
 
         a {
           background: url('/images/portfolio/thumb/stattleship.png') center center no-repeat;
