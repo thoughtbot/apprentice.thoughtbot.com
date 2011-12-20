@@ -1818,6 +1818,10 @@ section#people ul {
         font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 20px;
         margin-bottom: 20px; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      section#people ul li {
+        float: none;
+        width: 100.0%; } }
 
 div#jobs-wrapper section#current-openings {
   float: left;

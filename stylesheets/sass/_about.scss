@@ -50,6 +50,11 @@ section#people {
           margin-bottom: $lh; 
         }
       }
+
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        float: none;
+        width: grid-width(12);
+      }
     }
   }
 }
