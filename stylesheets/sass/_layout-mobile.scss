@@ -10,50 +10,11 @@
     section.open-source {
       ul {
         li {
-          width: grid-width(12);
-          margin-right: $gw-gutter;
-
-          &:nth-child(2n) {
-            margin-right: 0;
-          }
-
-          &.highlighted {
-            border: none;
-            padding: 0;
-
-            &.paperclip a, &.factory-girl a {
-              padding: 0;
-              background-image: none;
-            }
-          }
         }
       }
     }
 
     section#events {
-      p.events-intro {
-        float: none;
-        width: grid-width(12);
-      }
-
-      ul li {
-        float: none;
-        width: grid-width(12);
-        margin-bottom: $lh;
-      }
-    }
-  }
-
-  // Contact
-  div#contact-content {
-    div#contact_form {
-      float: none;
-      width: grid-width(12);
-    }
-
-    section#contact-info {
-      float: none;
-      width: grid-width(12);
     }
   }
 }

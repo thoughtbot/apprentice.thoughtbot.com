@@ -27,7 +27,7 @@ div#contact-content {
     }
 
     section.contact-address {
-      float: left;
+      float: right;
       margin-bottom: $lh;
       width: grid-width(4);
 
@@ -40,10 +40,33 @@ div#contact-content {
       }
     }
   }
-}
 
-@media screen and (max-width: 940px) {
-  div#contact-content {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    div#contact_form {
+      float: none;
+      width: grid-width(12);
+    }
+
+    section#contact-info {
+      float: none;
+      width: grid-width(12);
+
+      section#contact-other {
+        float: none;
+        width: auto;
+      }
+
+      section.contact-address {
+        float: none;
+        width: auto;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: $lh;
+        margin-bottom: $lh;
+      }
+    }
+  }
+
+  @media screen and (max-width: 940px) {
     div#contact_form {
       width: grid-width(12);
       margin-right: 0;

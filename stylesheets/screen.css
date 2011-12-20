@@ -1619,6 +1619,17 @@ section.open-source ul {
             section.open-source ul li.highlighted.factory-girl a {
               padding-left: 0;
               background: none; } }
+    @media screen and (max-width: 880px) {
+      section.open-source ul li ul li {
+        width: 48.744%; }
+        section.open-source ul li ul li.end-row {
+          margin-right: 2.513%; }
+        section.open-source ul li ul li.start-row {
+          clear: none; }
+        section.open-source ul li ul li:nth-child(2n) {
+          margin-right: 0; }
+        section.open-source ul li ul li:nth-child(2n+1) {
+          clear: both; } }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       section.open-source ul li {
         width: 100.0%;
@@ -1664,24 +1675,21 @@ section#events {
       box-sizing: border-box; }
       section#events ul li.boston-vim {
         margin-right: 0; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#events p.events-intro {
+      float: none;
+      width: 100.0%; }
+    section#events ul li {
+      float: none;
+      width: 100.0%;
+      margin-bottom: 20px; } }
+  @media screen and (max-width: 880px) {
+    section#events p.events-intro {
+      float: none;
+      width: auto; }
+    section#events ul li {
+      width: 31.658%; } }
 
-@media screen and (max-width: 880px) {
-  section.open-source ul li {
-    width: 48.744%; }
-    section.open-source ul li.end-row {
-      margin-right: 2.513%; }
-    section.open-source ul li.start-row {
-      clear: none; }
-    section.open-source ul li:nth-child(2n) {
-      margin-right: 0; }
-    section.open-source ul li:nth-child(2n+1) {
-      clear: both; }
-
-  section#events p.events-intro {
-    float: none;
-    width: auto; }
-  section#events ul li {
-    width: 31.658%; } }
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
@@ -1698,14 +1706,29 @@ div#contact-content section#contact-info {
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
-    float: left;
+    float: right;
     margin-bottom: 20px;
     width: 31.658%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
-
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  div#contact-content div#contact_form {
+    float: none;
+    width: 100.0%; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: 100.0%; }
+    div#contact-content section#contact-info section#contact-other {
+      float: none;
+      width: auto; }
+    div#contact-content section#contact-info section.contact-address {
+      float: none;
+      width: auto;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px;
+      margin-bottom: 20px; } }
 @media screen and (max-width: 940px) {
   div#contact-content div#contact_form {
     width: 100.0%;
@@ -1713,6 +1736,7 @@ div#contact-content section#contact-info {
   div#contact-content section#contact-info {
     float: none;
     width: auto; } }
+
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
@@ -1729,14 +1753,29 @@ div#contact-content section#contact-info {
     div#contact-content section#contact-info section#contact-other ul {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
-    float: left;
+    float: right;
     margin-bottom: 20px;
     width: 31.658%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 20px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
-
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  div#contact-content div#contact_form {
+    float: none;
+    width: 100.0%; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: 100.0%; }
+    div#contact-content section#contact-info section#contact-other {
+      float: none;
+      width: auto; }
+    div#contact-content section#contact-info section.contact-address {
+      float: none;
+      width: auto;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px;
+      margin-bottom: 20px; } }
 @media screen and (max-width: 940px) {
   div#contact-content div#contact_form {
     width: 100.0%;
@@ -1744,6 +1783,7 @@ div#contact-content section#contact-info {
   div#contact-content section#contact-info {
     float: none;
     width: auto; } }
+
 section#people ul {
   list-style: none; }
   section#people ul li {
@@ -1851,30 +1891,3 @@ div#jobs-wrapper section#job-form header.info {
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
     #design-portfolio ul li:last-child {
       border-bottom: 0; }
-
-@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-  body#community section.open-source ul li {
-    width: 100.0%;
-    margin-right: 2.513%; }
-    body#community section.open-source ul li:nth-child(2n) {
-      margin-right: 0; }
-    body#community section.open-source ul li.highlighted {
-      border: none;
-      padding: 0; }
-      body#community section.open-source ul li.highlighted.paperclip a, body#community section.open-source ul li.highlighted.factory-girl a {
-        padding: 0;
-        background-image: none; }
-  body#community section#events p.events-intro {
-    float: none;
-    width: 100.0%; }
-  body#community section#events ul li {
-    float: none;
-    width: 100.0%;
-    margin-bottom: 20px; }
-
-  div#contact-content div#contact_form {
-    float: none;
-    width: 100.0%; }
-  div#contact-content section#contact-info {
-    float: none;
-    width: 100.0%; } }
