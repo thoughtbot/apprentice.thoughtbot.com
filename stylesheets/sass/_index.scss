@@ -1,18 +1,6 @@
 #get-started {
   padding: $lh 0 $lh*2;
 
-  @media screen and (max-width: 930px) {
-    a {
-      h3 {
-        float: none;
-      }
-
-      p {
-        float: none;
-      }
-    }
-  }
-
   a {
     @extend .button;
     @extend .clearfix;
@@ -38,6 +26,16 @@
       margin-bottom: 0;
       margin-top: 4px;
       margin-bottom: -4px;
+    }
+
+    @media screen and (max-width: 930px) {
+      h3 {
+        float: none;
+      }
+
+      p {
+        float: none;
+      }
     }
   }
 }

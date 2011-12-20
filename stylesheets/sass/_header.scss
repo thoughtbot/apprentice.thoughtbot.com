@@ -27,6 +27,11 @@ header#main-header {
           display: block;
           width: auto;
         }
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+          background-image: url('/images/thoughtbot-logo-hirez.png');
+          @include background-size(100% 100%);
+        }
       }
     }
 

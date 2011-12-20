@@ -23,6 +23,11 @@ div#jobs-wrapper {
         }
       }
     }
+
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      float: none;
+      width: auto;
+    }
   }
 
   section#more-about-us {
@@ -33,6 +38,11 @@ div#jobs-wrapper {
       > li {
         list-style: none;
       }
+    }
+
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      float: none;
+      width: auto;
     }
   }
 }
@@ -51,6 +61,11 @@ div#jobs-wrapper.job-description {
     ul {
       list-style: none;
     }
+
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      float: none;
+      width: auto;
+    }
   }
 
   section#more-about-us {
@@ -62,6 +77,11 @@ div#jobs-wrapper.job-description {
     }
     p {
       color: #8f8f8f;
+    }
+
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      float: none;
+      width: auto;
     }
   }
 

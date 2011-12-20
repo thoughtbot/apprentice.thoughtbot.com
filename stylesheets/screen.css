@@ -997,6 +997,14 @@ header#main-header nav#main-nav {
           background-position: center center;
           display: block;
           width: auto; } }
+      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        header#main-header nav#main-nav h1 a {
+          background-image: url("/images/thoughtbot-logo-hirez.png");
+          -webkit-background-size: 100% 100%;
+          -moz-background-size: 100% 100%;
+          -ms-background-size: 100% 100%;
+          -o-background-size: 100% 100%;
+          background-size: 100% 100%; } }
   header#main-header nav#main-nav ul {
     display: block;
     margin-top: 72px; }
@@ -1518,11 +1526,6 @@ section#products {
 
 #get-started {
   padding: 20px 0 40px; }
-  @media screen and (max-width: 930px) {
-    #get-started a h3 {
-      float: none; }
-    #get-started a p {
-      float: none; } }
   #get-started a {
     font: 500 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
     #get-started a h3 {
@@ -1542,6 +1545,11 @@ section#products {
       margin-bottom: 0;
       margin-top: 4px;
       margin-bottom: -4px; }
+    @media screen and (max-width: 930px) {
+      #get-started a h3 {
+        float: none; }
+      #get-started a p {
+        float: none; } }
 
 section.open-source ul {
   list-style: none;
@@ -1641,6 +1649,8 @@ section.open-source ul {
         section.open-source ul li.highlighted {
           border: none;
           padding: 0;
+          float: none;
+          width: auto;
           margin: 0 0 20px 0; }
           section.open-source ul li.highlighted.paperclip a, section.open-source ul li.highlighted.factory-girl a {
             padding: 0;
@@ -1675,6 +1685,12 @@ section#events {
       box-sizing: border-box; }
       section#events ul li.boston-vim {
         margin-right: 0; }
+  @media screen and (max-width: 880px) {
+    section#events p.events-intro {
+      float: none;
+      width: auto; }
+    section#events ul li {
+      width: 31.658%; } }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#events p.events-intro {
       float: none;
@@ -1683,12 +1699,6 @@ section#events {
       float: none;
       width: 100.0%;
       margin-bottom: 20px; } }
-  @media screen and (max-width: 880px) {
-    section#events p.events-intro {
-      float: none;
-      width: auto; }
-    section#events ul li {
-      width: 31.658%; } }
 
 div#contact-content div#contact_form {
   float: left;
@@ -1839,11 +1849,19 @@ div#jobs-wrapper section#current-openings {
       margin: 5px 0; }
       div#jobs-wrapper section#current-openings ul li a {
         font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    div#jobs-wrapper section#current-openings {
+      float: none;
+      width: auto; } }
 div#jobs-wrapper section#more-about-us {
   float: left;
   width: 65.829%; }
   div#jobs-wrapper section#more-about-us > ul > li {
     list-style: none; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    div#jobs-wrapper section#more-about-us {
+      float: none;
+      width: auto; } }
 
 div#jobs-wrapper.job-description section#positions {
   float: left;
@@ -1851,6 +1869,10 @@ div#jobs-wrapper.job-description section#positions {
   margin-right: 2.513%; }
   div#jobs-wrapper.job-description section#positions ul {
     list-style: none; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    div#jobs-wrapper.job-description section#positions {
+      float: none;
+      width: auto; } }
 div#jobs-wrapper.job-description section#more-about-us {
   float: left;
   width: 40.201%; }
@@ -1858,6 +1880,10 @@ div#jobs-wrapper.job-description section#more-about-us {
     color: #6f6f6f; }
   div#jobs-wrapper.job-description section#more-about-us p {
     color: #8f8f8f; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    div#jobs-wrapper.job-description section#more-about-us {
+      float: none;
+      width: auto; } }
 div#jobs-wrapper.job-description section#apply-to-thoughtbot {
   margin-top: 30px; }
   div#jobs-wrapper.job-description section#apply-to-thoughtbot a {

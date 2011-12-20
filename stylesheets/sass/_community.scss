@@ -124,6 +124,8 @@ section.open-source {
         &.highlighted {
           border: none;
           padding: 0;
+          float: none;
+          width: auto;
           margin: 0 0 $lh 0;
 
           &.paperclip a, &.factory-girl a {
@@ -173,19 +175,6 @@ section#events {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    p.events-intro {
-      float: none;
-      width: grid-width(12);
-    }
-
-    ul li {
-      float: none;
-      width: grid-width(12);
-      margin-bottom: $lh;
-    }
-  }
-
   @media screen and (max-width: 880px) {
     p.events-intro {
       float: none;
@@ -196,6 +185,19 @@ section#events {
       li {
         width: grid-width(4);
       }
+    }
+  }
+
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    p.events-intro {
+      float: none;
+      width: grid-width(12);
+    }
+
+    ul li {
+      float: none;
+      width: grid-width(12);
+      margin-bottom: $lh;
     }
   }
 }
