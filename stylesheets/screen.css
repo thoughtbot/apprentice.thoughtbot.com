@@ -836,6 +836,13 @@ img {
   background: url("/images/shadowing.png") center top no-repeat;
   padding-top: 60px;
   text-align: center; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    #page-header {
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -ms-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; } }
   #page-header h1 {
     line-height: 60px; }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -1000,11 +1007,11 @@ header#main-header nav#main-nav {
       @media screen and (-webkit-min-device-pixel-ratio: 2) {
         header#main-header nav#main-nav h1 a {
           background-image: url("/images/thoughtbot-logo-hirez.png");
-          -webkit-background-size: 100% 100%;
-          -moz-background-size: 100% 100%;
-          -ms-background-size: 100% 100%;
-          -o-background-size: 100% 100%;
-          background-size: 100% 100%; } }
+          -webkit-background-size: contain;
+          -moz-background-size: contain;
+          -ms-background-size: contain;
+          -o-background-size: contain;
+          background-size: contain; } }
   header#main-header nav#main-nav ul {
     display: block;
     margin-top: 72px; }

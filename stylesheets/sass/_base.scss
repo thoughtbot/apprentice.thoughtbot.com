@@ -14,7 +14,6 @@ body {
   }
 }
 
-
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: $header;
   text-rendering: optimizeLegibility;
@@ -112,6 +111,10 @@ img {
   background: url('/images/shadowing.png') center top no-repeat;
   padding-top: $lh*3;
   text-align: center;
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      @include background-size(contain);
+
+    }
 
   h1 {
     line-height: $lh*3;
