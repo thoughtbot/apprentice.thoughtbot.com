@@ -14,15 +14,19 @@
 //************************************************************************//
 // Base Form Styles
 //************************************************************************//
+$half-width-input: grid-width(6);
+
+body#public {
+  padding: 0;
+}
+
 form.wufoo {
   margin-left: 0;
-  width: 630px;
+  width: grid-width(12);
 
   header#header {
     display: none;
   }
-
-  $half-width-input: grid-width(3.5);
 
   ul {
     list-style: none;
@@ -31,9 +35,7 @@ form.wufoo {
 
     li {
       margin-bottom: $lh + 10px;
-      width: grid-width(8);
       padding: 0;
-      margin-right: $gw-gutter;
 
       &.section {
         padding-top: 25px;
@@ -78,7 +80,7 @@ form.wufoo {
       // Default Input Styles
       //************************************************************************//
       input[type="text"], input[type="email"], input.text, textarea {
-        $input-width: grid-width(7) + $gw-gutter; /*6 columns minus line-heigh for the padding and 2px for the border*/
+        $input-width: grid-width(12);
         border: 1px solid #999;
         @include box-shadow( inset 0 1px 2px #aaa);
         @include box-sizing(border-box);
@@ -92,10 +94,6 @@ form.wufoo {
         &:focus {
           outline-color: $red;
         }
-      }
-
-      input[type="text"], input[type="email"], input.text {
-
       }
 
       input#saveForm {
@@ -130,17 +128,21 @@ form.wufoo {
 
       // Phone & Email
       //************************************************************************//
-      &.phone {
-        margin-right: 0;
+      &.email {
+        margin-right: $gw-gutter;
       }
 
       &.email, &.phone {
-        width: 50%;
+        max-width: grid-width(6);
+        min-width: grid-width(6);
+        width: grid-width(6);
         float: left;
+        // @include inline-block();
         clear: none;
 
         input[type="text"], input.text, input[type="email"] {
-          width: $half-width-input;
+          width: grid-width(12);
+          display: block;
         }
       }
 
@@ -149,8 +151,8 @@ form.wufoo {
       &.name {
         @extend .clearfix;
         float: none;
+        margin-right: 0;
         margin-bottom: 10px;
-        width: grid-width(6)+$gw-gutter;
 
         span {
           display: block;
