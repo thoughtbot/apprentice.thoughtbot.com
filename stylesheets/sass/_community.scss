@@ -6,6 +6,10 @@ section.open-source {
     list-style: none;
     margin-bottom: $lh*3; /*line hight to maintain baseline grid*/
 
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      margin-bottom: 0;
+    }
+
     li {
       float: left;
       margin: ($lh*2) $gw-gutter 0 0; /*line hight top bottom to maintain baseline grid*/
@@ -40,10 +44,12 @@ section.open-source {
           padding-left: grid-width(6)+$gw-gutter;
           min-height: 170px;
 
-          h3 {
-            color: $red;
-            font-size: 24px;
-            padding-top: $lh*2;
+          @media screen and (min-width: 750px) {
+            h3 {
+              color: $red;
+              font-size: 24px;
+              padding-top: $lh*2;
+            }
           }
         }
 
@@ -76,6 +82,35 @@ section.open-source {
             @media screen and (max-width: 850px) {
               padding-left: 0;
               background: none;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        width: grid-width(12);
+        margin: 0 0 $lh 0;
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        h3 {
+          color: $red;
+        }
+
+        &.highlighted {
+          border: none;
+          padding: 0;
+          margin: 0 0 $lh 0;
+
+          &.paperclip a, &.factory-girl a {
+            padding: 0;
+            background-image: none;
+            min-height: 1px;
+
+            h3 {
+              padding-top: 0;
             }
           }
         }

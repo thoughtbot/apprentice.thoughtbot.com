@@ -2,7 +2,17 @@
   margin: 0 auto;
   text-align: left;
   width: grid-width(12);
+
+  @media screen and (min-width: 751px) {
+    max-width: 1122px;
+    min-width: 720px;
+  }
+
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    max-width: 420px;
+  }
 }
+
 
 .button {
   -webkit-font-smoothing: antialiased;
@@ -34,14 +44,6 @@
 
 .row-end {
   margin-right: 0;
-}
-// For external links
-.external {
-  padding-right:13px;
-
-  &:hover {
-    background: url('/images/external.png') right 4px no-repeat;
-  }
 }
 
 .primary, .secondary {

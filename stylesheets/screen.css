@@ -176,17 +176,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, #design-portfolio:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, header#main-header:before, header#main-header nav#main-nav:before, header#main-header nav#main-nav ul:before, footer#main-footer:before, footer#main-footer nav:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, #get-started a:before, section#products ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section.open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper section#current-openings ul:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
+.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, #design-portfolio:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, header#main-header:before, header#main-header nav#main-nav:before, header#main-header nav#main-nav ul:before, footer#main-footer:before, footer#main-footer nav:before, footer#main-footer nav section#current-workshops-footer:before, footer#main-footer nav section#blog-footer:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section#products ul:before, #get-started a:before, section.open-source ul:before, section#events ul:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper section#current-openings ul:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, #get-started a:after, section#products ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
+.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, header#main-header, header#main-header nav#main-nav, header#main-header nav#main-nav ul, footer#main-footer, footer#main-footer nav, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, #get-started a, section#products ul, section#workshops, section#workshops section#current-workshops ul, section.open-source ul, section#events ul, section#people ul, section#people ul li, div#jobs-wrapper section#current-openings ul {
+.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, header#main-header, header#main-header nav#main-nav, header#main-header nav#main-nav ul, footer#main-footer, footer#main-footer nav, footer#main-footer nav section#current-workshops-footer, footer#main-footer nav section#blog-footer, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, section#workshops, section#workshops section#current-workshops ul, section#products ul, #get-started a, section.open-source ul, section#events ul, section#people ul, section#people ul li, div#jobs-wrapper section#current-openings ul {
   zoom: 1; }
 
 .ie7 img {
@@ -669,6 +669,13 @@ ol ol, ol ul, ul ul, ul ol {
   margin: 0 auto;
   text-align: left;
   width: 100.0%; }
+  @media screen and (min-width: 751px) {
+    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
+      max-width: 1122px;
+      min-width: 720px; } }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
+      max-width: 420px; } }
 
 .button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
   -webkit-font-smoothing: antialiased;
@@ -731,11 +738,6 @@ ol ol, ol ul, ul ul, ul ol {
 .row-end, footer#main-footer nav section#blog-footer, section#portfolio ul li#stattleship, section#portfolio ul li#umbrellatoday, section#products ul li#copycopter, section.open-source ul li.end-row, section.open-source ul li.highlighted.factory-girl {
   margin-right: 0; }
 
-.external, footer#main-footer nav section#products li a, section#products ul li a .check-out, section#workshops section#current-workshops ul li a {
-  padding-right: 13px; }
-  .external:hover, footer#main-footer nav section#products li a:hover, section#products ul li a .check-out:hover, section#workshops section#current-workshops ul li a:hover {
-    background: url("/images/external.png") right 4px no-repeat; }
-
 .secondary-wrapper, #portfolio-slider {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
@@ -756,6 +758,9 @@ body {
   font: 400 14px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center;
   padding: 0 20px; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      -webkit-text-size-adjust: none; } }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -833,6 +838,12 @@ img {
   text-align: center; }
   #page-header h1 {
     line-height: 60px; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      #page-header h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: left; } }
   #page-header h2 {
     color: #736B6C;
     font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
@@ -972,21 +983,39 @@ header#main-header nav#main-nav {
   padding-bottom: 20px; }
   header#main-header nav#main-nav h1 {
     margin: 42px 0 24px; }
+    @media screen and (min-width: 751px) {
+      header#main-header nav#main-nav h1 {
+        float: left; } }
     header#main-header nav#main-nav h1 a {
       background: url("/images/thoughtbot-logo.png") 0 0 no-repeat;
       display: block;
       height: 65px;
       width: 242px;
       text-indent: -9999px; }
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        header#main-header nav#main-nav h1 a {
+          background-position: center center;
+          display: block;
+          width: auto; } }
   header#main-header nav#main-nav ul {
     display: block;
     margin-top: 72px; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      header#main-header nav#main-nav ul {
+        border-top: 1px solid #dcdcdc;
+        margin: 0;
+        padding-top: 20px; } }
+    @media screen and (min-width: 751px) {
+      header#main-header nav#main-nav ul {
+        float: right; } }
+    @media screen and (min-width: 751px) {
+      header#main-header nav#main-nav ul li {
+        float: left; } }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      header#main-header nav#main-nav ul li {
+        width: 48.744%;
+        float: left; } }
     header#main-header nav#main-nav ul li a {
-      color: #2b2b2b;
-      display: block;
-      font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 20px;
-      margin: 0 20px;
       -webkit-transition-property: color, 0.2s;
       -moz-transition-property: color, 0.2s;
       -ms-transition-property: color, 0.2s;
@@ -1006,7 +1035,15 @@ header#main-header nav#main-nav {
       -moz-transition-delay: 0;
       -ms-transition-delay: 0;
       -o-transition-delay: 0;
-      transition-delay: 0; }
+      transition-delay: 0;
+      color: #2b2b2b;
+      display: block;
+      font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+      line-height: 20px;
+      margin: 0 20px; }
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        header#main-header nav#main-nav ul li a {
+          padding: 10px; } }
       header#main-header nav#main-nav ul li a:hover {
         color: #ad141e;
         text-decoration: none; }
@@ -1063,6 +1100,25 @@ footer#main-footer {
       list-style: none; }
       footer#main-footer nav section ul li {
         margin-bottom: 10px; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      footer#main-footer nav section {
+        float: none;
+        width: 100.0%;
+        margin-right: 0;
+        margin-top: 40px; }
+        footer#main-footer nav section#thoughtbot-footer, footer#main-footer nav section#footer-products {
+          float: left;
+          width: 48.744%;
+          margin-top: 0; }
+        footer#main-footer nav section#thoughtbot-footer {
+          margin-right: 2.513%; }
+        footer#main-footer nav section#current-workshops-footer, footer#main-footer nav section#blog-footer {
+          width: 100.0%;
+          float: none;
+          clear: both; }
+          footer#main-footer nav section#current-workshops-footer ul li, footer#main-footer nav section#blog-footer ul li {
+            width: auto;
+            float: none; } }
   footer#main-footer p#copyright {
     color: #7a7a7a;
     margin-top: 40px;
@@ -1159,6 +1215,13 @@ footer#main-footer {
       -ms-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    #portfolio-slider {
+      height: 340px; }
+      #portfolio-slider ul.slider {
+        height: 278px !important;
+        /*line-height minus 2 for the border to maintain baseline grid*/
+        max-width: 100.0%; } }
 
 section#portfolio {
   width: 100.0%;
@@ -1213,6 +1276,17 @@ section#portfolio {
         background: url("/images/portfolio/thumb/tastedmenu.png") center center no-repeat; }
       section#portfolio ul li#umbrellatoday a {
         background: url("/images/portfolio/thumb/umbrellatoday.png") center center no-repeat; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#portfolio {
+      margin-top: 60px; }
+      section#portfolio ul li {
+        float: left;
+        margin: 0 2.513% 20px 0;
+        width: 48.744%; }
+        section#portfolio ul li:nth-child(2n) {
+          margin-right: 0; }
+        section#portfolio ul li a {
+          height: 130px; } }
 
 section#services {
   margin-bottom: 40px; }
@@ -1275,30 +1349,80 @@ section#services {
           transition-delay: 0; }
           section#services section#clients p.video a:hover {
             background-position: 0 -18px; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#services #about-services {
+      float: none;
+      margin-right: 2.513%;
+      width: auto;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #dcdcdc;
+      padding-bottom: 20px; }
+    section#services blockquote {
+      float: none;
+      width: auto;
+      padding-left: 7.538%; }
+    section#services section#clients {
+      float: none;
+      width: auto;
+      margin-top: 40px; }
+      section#services section#clients ul {
+        list-style: none; }
+        section#services section#clients ul li {
+          float: left;
+          margin-right: 2.513%;
+          width: 48.744%; }
+          section#services section#clients ul li:nth-child(2n) {
+            margin-right: 0; } }
 
-#get-started {
-  padding: 20px 0 40px; }
-  #get-started a {
-    font: 500 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
-    #get-started a h3 {
-      color: #fff;
-      float: left;
+section#workshops {
+  background: url("/images/shadowing-lite.png") center top no-repeat;
+  border-top: 1px solid #DCDCDC;
+  padding-top: 59px;
+  /*line-height x 3 minus 1px for the border*/ }
+  section#workshops h2 {
+    text-shadow: 0 1px 0 #fcfcfc; }
+  section#workshops section#about-workshops {
+    float: left;
+    margin-right: 2.513%;
+    width: 31.658%; }
+  section#workshops blockquote {
+    float: left;
+    width: 29.146%; }
+    section#workshops blockquote .author {
+      color: #999; }
+  section#workshops section#current-workshops {
+    background: #F9F9F9;
+    border-top: 5px solid #292929;
+    float: left;
+    margin-top: 10px;
+    padding: 25px 20px 20px;
+    /*top padding makes up for 5px border and 10px margin*/
+    width: 31.658%;
+    /*4 units minus left and right padding*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    section#workshops section#current-workshops ul {
+      list-style: none; }
+    section#workshops section#current-workshops p {
       margin-bottom: 0; }
-    #get-started a p {
-      color: #fff;
-      color: rgba(255, 255, 255, 0.8);
-      float: right;
-      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 20px;
-      margin-bottom: 0;
-      margin-top: 4px;
-      margin-bottom: -4px; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#workshops section#about-workshops {
+      float: none;
+      width: auto;
+      margin: 0; }
+    section#workshops blockquote {
+      float: none;
+      width: auto;
+      padding-left: 7.538%;
+      margin-top: 40px; }
+    section#workshops section#current-workshops {
+      float: left;
+      width: 100.0%;
+      margin-top: 40px; } }
 
-@media screen and (max-width: 930px) {
-  #get-started a h3 {
-    float: none; }
-  #get-started a p {
-    float: none; } }
 section#products {
   margin-bottom: 80px; }
   section#products h2 {
@@ -1373,46 +1497,59 @@ section#products {
             color: #000; }
           section#products ul li a:hover .check-out {
             color: #7f0f16; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#products {
+      margin-bottom: 40px; }
+      section#products ul li {
+        float: left;
+        width: 100.0%;
+        margin-bottom: 40px; }
+        section#products ul li:nth-child(2n) {
+          margin-right: 0; } }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#products {
+      margin-bottom: 40px; }
+      section#products ul li {
+        float: left;
+        width: 100.0%;
+        margin-bottom: 40px; }
+        section#products ul li:nth-child(2n) {
+          margin-right: 0; } }
 
-section#workshops {
-  background: url("/images/shadowing-lite.png") center top no-repeat;
-  border-top: 1px solid #DCDCDC;
-  padding-top: 59px;
-  /*line-height x 3 minus 1px for the border*/ }
-  section#workshops h2 {
-    text-shadow: 0 1px 0 #fcfcfc; }
-  section#workshops section#about-workshops {
-    float: left;
-    margin-right: 2.513%;
-    width: 31.658%; }
-  section#workshops blockquote {
-    float: left;
-    width: 29.146%; }
-    section#workshops blockquote .author {
-      color: #999; }
-  section#workshops section#current-workshops {
-    background: #F9F9F9;
-    border-top: 5px solid #292929;
-    float: left;
-    margin-top: 10px;
-    padding: 25px 20px 20px;
-    /*top padding makes up for 5px border and 10px margin*/
-    width: 31.658%;
-    /*4 units minus left and right padding*/
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box; }
-    section#workshops section#current-workshops ul {
-      list-style: none; }
-    section#workshops section#current-workshops p {
+#get-started {
+  padding: 20px 0 40px; }
+  @media screen and (max-width: 930px) {
+    #get-started a h3 {
+      float: none; }
+    #get-started a p {
+      float: none; } }
+  #get-started a {
+    font: 500 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+    #get-started a h3 {
+      color: #fff;
+      float: left;
       margin-bottom: 0; }
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        #get-started a h3 {
+          margin-bottom: 20px;
+          float: none; } }
+    #get-started a p {
+      color: #fff;
+      color: rgba(255, 255, 255, 0.8);
+      float: right;
+      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+      line-height: 20px;
+      margin-bottom: 0;
+      margin-top: 4px;
+      margin-bottom: -4px; }
 
 section.open-source ul {
   list-style: none;
   margin-bottom: 60px;
   /*line hight to maintain baseline grid*/ }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section.open-source ul {
+      margin-bottom: 0; } }
   section.open-source ul li {
     float: left;
     margin: 40px 2.513% 0 0;
@@ -1459,10 +1596,11 @@ section.open-source ul {
       section.open-source ul li.highlighted a {
         padding-left: 51.256%;
         min-height: 170px; }
-        section.open-source ul li.highlighted a h3 {
-          color: #ad141e;
-          font-size: 24px;
-          padding-top: 40px; }
+        @media screen and (min-width: 750px) {
+          section.open-source ul li.highlighted a h3 {
+            color: #ad141e;
+            font-size: 24px;
+            padding-top: 40px; } }
       section.open-source ul li.highlighted.paperclip a {
         background: transparent url("/images/oss/paperclip.png") 22px 2px no-repeat; }
         section.open-source ul li.highlighted.paperclip a:hover {
@@ -1481,6 +1619,24 @@ section.open-source ul {
             section.open-source ul li.highlighted.factory-girl a {
               padding-left: 0;
               background: none; } }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      section.open-source ul li {
+        width: 100.0%;
+        margin: 0 0 20px 0; }
+        section.open-source ul li:nth-child(2n) {
+          margin-right: 0; }
+        section.open-source ul li h3 {
+          color: #ad141e; }
+        section.open-source ul li.highlighted {
+          border: none;
+          padding: 0;
+          margin: 0 0 20px 0; }
+          section.open-source ul li.highlighted.paperclip a, section.open-source ul li.highlighted.factory-girl a {
+            padding: 0;
+            background-image: none;
+            min-height: 1px; }
+            section.open-source ul li.highlighted.paperclip a h3, section.open-source ul li.highlighted.factory-girl a h3 {
+              padding-top: 0; } }
 
 section#events {
   text-shadow: 0 1px 0 #fcfcfc; }
@@ -1696,13 +1852,29 @@ div#jobs-wrapper section#job-form header.info {
     #design-portfolio ul li:last-child {
       border-bottom: 0; }
 
-.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
-  max-width: 1122px;
-  min-width: 720px; }
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  body#community section.open-source ul li {
+    width: 100.0%;
+    margin-right: 2.513%; }
+    body#community section.open-source ul li:nth-child(2n) {
+      margin-right: 0; }
+    body#community section.open-source ul li.highlighted {
+      border: none;
+      padding: 0; }
+      body#community section.open-source ul li.highlighted.paperclip a, body#community section.open-source ul li.highlighted.factory-girl a {
+        padding: 0;
+        background-image: none; }
+  body#community section#events p.events-intro {
+    float: none;
+    width: 100.0%; }
+  body#community section#events ul li {
+    float: none;
+    width: 100.0%;
+    margin-bottom: 20px; }
 
-nav#main-nav h1 {
-  float: left; }
-nav#main-nav ul {
-  float: right; }
-  nav#main-nav ul li {
-    float: left; }
+  div#contact-content div#contact_form {
+    float: none;
+    width: 100.0%; }
+  div#contact-content section#contact-info {
+    float: none;
+    width: 100.0%; } }

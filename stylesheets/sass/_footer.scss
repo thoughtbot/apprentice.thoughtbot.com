@@ -35,6 +35,7 @@ footer#main-footer {
       margin-right: $gw-gutter;
       width: grid-width(2);
 
+
       &#current-workshops-footer {
         width: grid-width(4);
 
@@ -70,6 +71,37 @@ footer#main-footer {
 
         li {
           margin-bottom: $lh/2;
+        }
+      }
+
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        float: none;
+        width: grid-width(12);
+        margin-right: 0;
+        margin-top: $lh * 2;
+
+        &#thoughtbot-footer, &#footer-products {
+          float: left;
+          width: grid-width(6);
+          margin-top: 0;
+        }
+
+        &#thoughtbot-footer {
+          margin-right: $gw-gutter;
+        }
+
+        &#current-workshops-footer, &#blog-footer {
+          width: grid-width(12);
+          float: none;
+          @extend .clearfix;
+          clear: both;
+
+          ul {
+            li {
+              width: auto;
+              float: none;
+            }
+          }
         }
       }
     }

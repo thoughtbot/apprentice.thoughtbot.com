@@ -7,7 +7,7 @@
 @import "forms";
 @import "header";
 @import "footer";
-@import "index";
+@import "index-portfolio", "index-services","index-workshops", "index-products", "index";
 @import "community";
 @import "contact";
 @import "contact";
@@ -15,5 +15,4 @@
 @import "jobs";
 @import "design";
 
-// @import "layout-mobile";
-@import "layout-desktop";
+@import "layout-mobile";

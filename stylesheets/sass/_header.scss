@@ -7,8 +7,13 @@ header#main-header {
     border-bottom: 1px solid #DCDCDC;
     padding-bottom: $lh;
 
+
     h1 {
       margin: 42px 0 24px;
+
+      @media screen and (min-width: 751px) {
+        float: left;
+      }
 
       a {
         background: url('/images/thoughtbot-logo.png') 0 0 no-repeat;
@@ -16,25 +21,51 @@ header#main-header {
         height: 65px;
         width: 242px;
         text-indent: -9999px;
+
+        @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+          background-position: center center;
+          display: block;
+          width: auto;
+        }
       }
     }
 
     ul {
       display: block;
       margin-top: 72px;
-
       @extend .clearfix;
 
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        border-top: 1px solid #dcdcdc;
+        margin: 0;
+        padding-top: $lh;
+      }
+
+      @media screen and (min-width: 751px) {
+        float: right;
+      }
+
       li {
+        @media screen and (min-width: 751px) {
+          float: left;
+        }
+
+        @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+          width: grid-width(6);
+          float: left;
+        }
 
         a {
+          @include transition(color .2s);
           color: #2b2b2b;
           display: block;
           font: 500 16px $header;
           line-height: $lh;
           margin: 0 $lh;
 
-          @include transition(color .2s);
+          @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+            padding: $lh / 2;
+          }
 
           &:hover {
             color: $red;

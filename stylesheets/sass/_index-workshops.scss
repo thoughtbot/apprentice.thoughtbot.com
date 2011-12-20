@@ -1,0 +1,71 @@
+section#workshops {
+  @extend .clearfix;
+  background: url('/images/shadowing-lite.png') center top no-repeat;
+  border-top: 1px solid #DCDCDC;
+  padding-top: ($lh*3)-(1); /*line-height x 3 minus 1px for the border*/
+
+  h2 {
+    text-shadow:  0 1px 0 #fcfcfc;
+  }
+
+  section#about-workshops {
+    float: left;
+    margin-right: $gw-gutter;
+    width: grid-width(4);
+  }
+
+  blockquote {
+    float: left;
+    width: grid-width(4)-$gw-gutter;
+
+    .author {
+      color: #999;
+    }
+  }
+
+  section#current-workshops {
+    background: #F9F9F9;
+    border-top: 5px solid #292929;
+    float: left;
+    margin-top: 10px;
+    padding: ($lh*2)-(15) $lh $lh; /*top padding makes up for 5px border and 10px margin*/
+    width: grid-width(4); /*4 units minus left and right padding*/
+    @include box-sizing(border-box);
+
+    ul {
+      @extend .clearfix;
+      list-style: none;
+
+      li {
+        a {
+          @extend .external;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#about-workshops {
+      float: none;
+      width: auto;
+      margin: 0;
+    }
+
+    blockquote {
+      float: none;
+      width: auto;
+      padding-left: $gw-gutter*3;
+      margin-top: $lh * 2;
+    }
+
+    section#current-workshops {
+      float: left;
+      width: grid-width(12);
+      margin-top: $lh * 2;
+    }
+  }
+}
