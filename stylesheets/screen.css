@@ -1149,18 +1149,11 @@ footer#main-footer {
     height: 420px;
     /*makes sure the slider maintains line-height grid*/ }
   #portfolio-slider div ul.slider {
-    background: url(images/loading.gif) no-repeat 50% 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 418px;
-    /*line-height minus 2 for the border to maintain baseline grid*/
-    list-style: none;
-    position: relative;
-    width: 100.0%;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 0 4px rgba(0, 0, 0, 0.15);
@@ -1170,7 +1163,14 @@ footer#main-footer {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    background: url(images/loading.gif) no-repeat 50% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 418px;
+    /*line-height minus 2 for the border to maintain baseline grid*/
+    list-style: none;
+    position: relative;
+    width: 100.0%; }
     @media screen and (max-width:1199px) {
       #portfolio-slider div ul.slider {
         overflow: hidden;
