@@ -19,7 +19,6 @@
       @include background-size(cover);
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
       @include box-sizing(border-box);
-      background:url(images/loading.gif) no-repeat 50% 50%;
       border: 1px solid rgba(#000, .2);
       height: ($lh*21)-(2); /*line-height minus 2 for the border to maintain baseline grid*/
       list-style: none;

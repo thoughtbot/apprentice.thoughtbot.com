@@ -1171,7 +1171,6 @@ footer#main-footer {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    background: url(images/loading.gif) no-repeat 50% 50%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 502px;
     /*line-height minus 2 for the border to maintain baseline grid*/
