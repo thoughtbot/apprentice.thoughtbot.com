@@ -41,31 +41,6 @@ div#contact-content {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    div#contact_form {
-      float: none;
-      width: grid-width(12);
-    }
-
-    section#contact-info {
-      float: none;
-      width: grid-width(12);
-
-      section#contact-other {
-        float: none;
-        width: auto;
-      }
-
-      section.contact-address {
-        float: none;
-        width: auto;
-        border-bottom: 1px solid #dcdcdc;
-        padding-bottom: $lh;
-        margin-bottom: $lh;
-      }
-    }
-  }
-
   @media screen and (max-width: 940px) {
     div#contact_form {
       width: grid-width(12);
@@ -77,6 +52,73 @@ div#contact-content {
       width: auto;
     }
   }
+
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    padding-top: $lh * 2;
+
+    div#contact_form {
+      float: none;
+      width: grid-width(12);
+
+    }
+
+    section#contact-info {
+      float: none;
+      width: grid-width(12);
+
+      &:before {
+        content: "Contact thoughtbot";
+        display: block;
+        color: #2b2b2b;
+        font: 600 32px $header;
+        margin-bottom: $lh;
+      }
+
+      section#contact-other {
+        float: none;
+        width: auto;
+
+        &:before {
+          content: "Let’s talk about your project";
+          display: block;
+          color: #2b2b2b;
+          font: 600 32px $header;
+          margin-bottom: $lh;
+        }
+      }
+
+      section.contact-address {
+        float: none;
+        width: auto;
+        border-bottom: 1px solid #dcdcdc;
+        padding-bottom: $lh;
+        margin-bottom: $lh;
+        @extend .clearfix;
+
+
+        div {
+          &.call {
+            float: left;
+            width: grid-width(6);
+            margin-right: $gw-gutter;
+          }
+
+          &.address {
+            float: left;
+            width: grid-width(6);
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  body#contact {
+    header#page-header {
+      display: none;
+    }
+  }
+}
