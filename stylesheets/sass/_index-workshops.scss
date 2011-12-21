@@ -27,14 +27,18 @@ section#workshops {
     background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
-    margin-top: 10px;
-    padding: ($lh*2)-(15) $lh $lh; /*top padding makes up for 5px border and 10px margin*/
+    padding: ($lh*1.5)-(15) $lh $lh; /*top padding makes up for 5px border and 10px margin*/
     width: grid-width(4); /*4 units minus left and right padding*/
     @include box-sizing(border-box);
+
+    h3 {
+      font: 18px $header;
+    }
 
     ul {
       @extend .clearfix;
       list-style: none;
+      margin-bottom: 0;
 
       li {
         a {

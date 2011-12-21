@@ -1,11 +1,11 @@
 /* basic site styles
 ---------------------------------------- */
 body {
-  /*background: url('/images/grid.png') 10px -4px;*/
+  //background: url('/images/grid.png') 10px -4px;
   background-color: #FCFCFC;
   border-top: 4px solid $red;
   color: #2B2B2B;
-  font: 400 14px $body;
+  font: 400 16px $body;
   text-align: center;
   padding: 0 20px;
 
@@ -35,6 +35,7 @@ h2 {
 }
 
 h3 {
+  font-size: $lh;
   font-weight: 500;
   line-height: $lh;
   margin-bottom: $lh;
@@ -75,12 +76,12 @@ blockquote {
   padding-left: $gw-gutter;
 
   p {
-    line-height: $lh*1.5;
+    line-height: $lh * 1.5;
   }
 
   p.author {
     color: #bbb;
-    font: italic 14px $body;
+    font: italic 16px $body;
     line-height: $lh;
     margin: 0;
   }

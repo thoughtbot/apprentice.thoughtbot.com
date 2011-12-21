@@ -715,8 +715,8 @@ ol ol, ol ul, ul ul, ul ol {
   color: #fff;
   display: block;
   font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 20px;
-  padding: 30px;
+  line-height: 24px;
+  padding: 36px;
   text-shadow: 0 -1px 0 #7f0f16; }
   .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover {
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
@@ -743,20 +743,25 @@ ol ol, ol ul, ul ul, ul ol {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
-  padding: 39px 20px 39px;
+  padding: 47px 20px 47px;
   margin: 0 -20px; }
 
 .secondary-header, section.open-source, div#contact-content, section#people, div#jobs-wrapper {
-  padding-top: 60px; }
+  padding-top: 72px; }
+
+.external-link, section#products ul li a .check-out {
+  background: url("/images/external-link.png") no-repeat right -8px;
+  padding-right: 16px; }
+  .external-link:hover, section#products ul li a .check-out:hover {
+    background-position: right 8px; }
 
 /* basic site styles
 ---------------------------------------- */
 body {
-  /*background: url('/images/grid.png') 10px -4px;*/
   background-color: #FCFCFC;
   border-top: 4px solid #ad141e;
   color: #2B2B2B;
-  font: 400 14px "skolar-1", "skolar-2", Georgia, serif;
+  font: 400 16px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center;
   padding: 0 20px; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -769,38 +774,39 @@ h1, h2, h3, h4, h5, h5, h6 {
 
 h1 {
   color: #2b2b2b;
-  font-size: 60px;
+  font-size: 72px;
   font-weight: 900;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
 
 h2 {
   color: #2b2b2b;
   font-size: 36px;
   font-weight: 200;
-  line-height: 40px;
-  margin-bottom: 40px; }
+  line-height: 48px;
+  margin-bottom: 48px; }
 
 h3 {
+  font-size: 24px;
   font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 20px; }
+  line-height: 24px;
+  margin-bottom: 24px; }
 
 h4 {
-  line-height: 20px;
+  line-height: 24px;
   margin: 0; }
 
 p {
   color: #555;
   font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
   text-rendering: optimizeSpeed; }
 
 ul {
   list-style-position: outside;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   ul li {
-    line-height: 20px; }
+    line-height: 24px; }
 
 img {
   display: block;
@@ -813,11 +819,11 @@ blockquote {
   margin: 0 2.513% 0 0;
   padding-left: 2.513%; }
   blockquote p {
-    line-height: 30px; }
+    line-height: 36px; }
   blockquote p.author {
     color: #bbb;
-    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
+    font: italic 16px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 24px;
     margin: 0; }
 
 a:link, a:active {
@@ -835,7 +841,7 @@ img {
 
 #page-header {
   background: url("/images/shadowing.png") center top no-repeat;
-  padding-top: 60px;
+  padding-top: 72px;
   text-align: center; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     #page-header {
@@ -845,17 +851,17 @@ img {
       -o-background-size: contain;
       background-size: contain; } }
   #page-header h1 {
-    line-height: 60px; }
+    line-height: 72px; }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       #page-header h1 {
         font-size: 32px;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 48px;
         text-align: left; } }
   #page-header h2 {
     color: #736B6C;
     font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 0; }
 
 /* Forms
@@ -877,10 +883,10 @@ form.wufoo {
     display: none; }
   form.wufoo ul {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 24px;
     padding: 4px; }
     form.wufoo ul li {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       padding: 0; }
       form.wufoo ul li.section {
         padding-top: 25px;
@@ -898,7 +904,7 @@ form.wufoo {
         -webkit-font-smoothing: antialiased;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         font-weight: bold;
-        line-height: 20px;
+        line-height: 24px;
         margin: 0 0 5px;
         padding: 0; }
         form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
@@ -921,10 +927,10 @@ form.wufoo {
         -o-box-sizing: border-box;
         box-sizing: border-box;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        line-height: 20px;
+        line-height: 24px;
         margin: 0;
         max-width: 100.0%;
-        padding: 9px 10px;
+        padding: 11px 12px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: 100.0%; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
@@ -932,7 +938,7 @@ form.wufoo {
       form.wufoo ul li input#saveForm {
         display: block;
         margin: 0;
-        padding: 8px 40px;
+        padding: 10px 48px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
         form.wufoo ul li input#saveForm:hover {
           cursor: pointer; }
@@ -943,7 +949,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: 20px 20px 40px; }
+        margin: 24px 24px 48px; }
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
@@ -988,7 +994,7 @@ form.wufoo {
 
 header#main-header nav#main-nav {
   border-bottom: 1px solid #DCDCDC;
-  padding-bottom: 20px; }
+  padding-bottom: 24px; }
   header#main-header nav#main-nav h1 {
     margin: 42px 0 24px; }
     @media screen and (min-width: 751px) {
@@ -1020,7 +1026,7 @@ header#main-header nav#main-nav {
       header#main-header nav#main-nav ul {
         border-top: 1px solid #dcdcdc;
         margin: 0;
-        padding-top: 20px; } }
+        padding-top: 24px; } }
     @media screen and (min-width: 751px) {
       header#main-header nav#main-nav ul {
         float: right; } }
@@ -1055,18 +1061,18 @@ header#main-header nav#main-nav {
       color: #2b2b2b;
       display: block;
       font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 20px;
-      margin: 0 20px; }
+      line-height: 24px;
+      margin: 0 24px; }
       @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
         header#main-header nav#main-nav ul li a {
-          padding: 10px; } }
+          padding: 12px; } }
       header#main-header nav#main-nav ul li a:hover {
         color: #ad141e;
         text-decoration: none; }
 
 footer#main-footer {
   opacity: .5;
-  padding-top: 80px;
+  padding-top: 96px;
   -webkit-transition-property: opacity, 0.5s;
   -moz-transition-property: opacity, 0.5s;
   -ms-transition-property: opacity, 0.5s;
@@ -1115,13 +1121,13 @@ footer#main-footer {
     footer#main-footer nav section ul {
       list-style: none; }
       footer#main-footer nav section ul li {
-        margin-bottom: 10px; }
+        margin-bottom: 12px; }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       footer#main-footer nav section {
         float: none;
         width: 100.0%;
         margin-right: 0;
-        margin-top: 40px; }
+        margin-top: 48px; }
         footer#main-footer nav section#thoughtbot-footer, footer#main-footer nav section#footer-products {
           float: left;
           width: 48.744%;
@@ -1137,17 +1143,17 @@ footer#main-footer {
             float: none; } }
   footer#main-footer p#copyright {
     color: #7a7a7a;
-    margin-top: 40px;
+    margin-top: 48px;
     /*line-height to maintain baseline grid*/ }
 
 #portfolio-slider {
-  height: 520px;
-  margin-top: 60px;
+  height: 624px;
+  margin-top: 72px;
   position: relative; }
   #portfolio-slider div h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   #portfolio-slider div #slider-wrapper {
-    height: 420px;
+    height: 504px;
     /*makes sure the slider maintains line-height grid*/ }
   #portfolio-slider div ul.slider {
     -webkit-background-size: cover;
@@ -1167,7 +1173,7 @@ footer#main-footer {
     box-sizing: border-box;
     background: url(images/loading.gif) no-repeat 50% 50%;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    height: 418px;
+    height: 502px;
     /*line-height minus 2 for the border to maintain baseline grid*/
     list-style: none;
     position: relative;
@@ -1175,7 +1181,7 @@ footer#main-footer {
     @media screen and (max-width:1199px) {
       #portfolio-slider div ul.slider {
         overflow: hidden;
-        margin-top: 40px; } }
+        margin-top: 48px; } }
     #portfolio-slider div ul.slider img {
       display: none;
       left: 0px;
@@ -1233,9 +1239,9 @@ footer#main-footer {
       background-size: cover; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     #portfolio-slider {
-      height: 340px; }
+      height: 408px; }
       #portfolio-slider ul.slider {
-        height: 278px !important;
+        height: 334px !important;
         /*line-height minus 2 for the border to maintain baseline grid*/
         max-width: 100.0%; } }
 
@@ -1246,7 +1252,7 @@ section#portfolio {
     list-style: none; }
     section#portfolio ul li {
       float: left;
-      margin: 0 2.513% 20px 0;
+      margin: 0 2.513% 24px 0;
       width: 23.116%;
       padding: 4px;
       border: 1px solid #BDBDBD;
@@ -1269,7 +1275,7 @@ section#portfolio {
         box-shadow: 0 0 3px #999999; }
       section#portfolio ul li a {
         display: block;
-        height: 170px;
+        height: 206px;
         text-indent: -9999px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -1294,37 +1300,36 @@ section#portfolio {
         background: url("/images/portfolio/thumb/umbrellatoday.png") center center no-repeat; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#portfolio {
-      margin-top: 60px; }
+      margin-top: 72px; }
       section#portfolio ul li {
         float: left;
-        margin: 0 2.513% 20px 0;
+        margin: 0 2.513% 24px 0;
         width: 48.744%; }
         section#portfolio ul li:nth-child(2n) {
           margin-right: 0; }
         section#portfolio ul li a {
-          height: 130px; } }
+          height: 158px; } }
 
 section#services {
-  margin-bottom: 40px; }
+  margin-bottom: 24px; }
   section#services #about-services {
     float: left;
     margin-right: 2.513%;
     width: 31.658%; }
     section#services #about-services p {
       font-weight: 400; }
-    section#services #about-services .learn-more {
-      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
   section#services blockquote {
     float: left;
-    width: 29.146%; }
+    width: 31.658%;
+    margin-right: 0;
+    margin-left: -2.513%; }
   section#services section#clients {
-    border-top: 5px solid #ad141e;
     float: left;
-    padding-top: 35px;
-    /*line-height x 2 minus the five 5px border*/
-    width: 31.658%; }
+    width: 31.658%;
+    margin-right: 2.513%; }
     section#services section#clients h3 {
-      color: rgba(43, 43, 43, 0.8); }
+      color: rgba(43, 43, 43, 0.8);
+      font: 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
     section#services section#clients ul {
       list-style: none; }
       section#services section#clients ul li {
@@ -1337,42 +1342,14 @@ section#services {
           margin-right: 0; }
     section#services section#clients p {
       margin-bottom: 0; }
-      section#services section#clients p.video {
-        font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-        margin-top: 40px; }
-        section#services section#clients p.video a {
-          background: url("/images/film-strip.png") 0 1px no-repeat;
-          padding-left: 20px;
-          -webkit-transition-property: color, 0.5s;
-          -moz-transition-property: color, 0.5s;
-          -ms-transition-property: color, 0.5s;
-          -o-transition-property: color, 0.5s;
-          transition-property: color, 0.5s;
-          -webkit-transition-duration: 0.15s;
-          -moz-transition-duration: 0.15s;
-          -ms-transition-duration: 0.15s;
-          -o-transition-duration: 0.15s;
-          transition-duration: 0.15s;
-          -webkit-transition-timing-function: ease-out;
-          -moz-transition-timing-function: ease-out;
-          -ms-transition-timing-function: ease-out;
-          -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-          -webkit-transition-delay: 0;
-          -moz-transition-delay: 0;
-          -ms-transition-delay: 0;
-          -o-transition-delay: 0;
-          transition-delay: 0; }
-          section#services section#clients p.video a:hover {
-            background-position: 0 -18px; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#services #about-services {
       float: none;
       margin-right: 2.513%;
       width: auto;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       border-bottom: 1px solid #dcdcdc;
-      padding-bottom: 20px; }
+      padding-bottom: 24px; }
     section#services blockquote {
       float: none;
       width: auto;
@@ -1380,7 +1357,7 @@ section#services {
     section#services section#clients {
       float: none;
       width: auto;
-      margin-top: 40px; }
+      margin-top: 48px; }
       section#services section#clients ul {
         list-style: none; }
         section#services section#clients ul li {
@@ -1393,7 +1370,7 @@ section#services {
 section#workshops {
   background: url("/images/shadowing-lite.png") center top no-repeat;
   border-top: 1px solid #DCDCDC;
-  padding-top: 59px;
+  padding-top: 71px;
   /*line-height x 3 minus 1px for the border*/ }
   section#workshops h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
@@ -1410,8 +1387,7 @@ section#workshops {
     background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
-    margin-top: 10px;
-    padding: 25px 20px 20px;
+    padding: 21px 24px 24px;
     /*top padding makes up for 5px border and 10px margin*/
     width: 31.658%;
     /*4 units minus left and right padding*/
@@ -1420,8 +1396,11 @@ section#workshops {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box; }
+    section#workshops section#current-workshops h3 {
+      font: 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
     section#workshops section#current-workshops ul {
-      list-style: none; }
+      list-style: none;
+      margin-bottom: 0; }
     section#workshops section#current-workshops p {
       margin-bottom: 0; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -1433,14 +1412,14 @@ section#workshops {
       float: none;
       width: auto;
       padding-left: 7.538%;
-      margin-top: 40px; }
+      margin-top: 48px; }
     section#workshops section#current-workshops {
       float: left;
       width: 100.0%;
-      margin-top: 40px; } }
+      margin-top: 48px; } }
 
 section#products {
-  margin-bottom: 80px; }
+  margin-bottom: 48px; }
   section#products h2 {
     text-shadow: 0 1px 0 #fcfcfc; }
   section#products ul {
@@ -1478,62 +1457,62 @@ section#products {
         -o-transition-delay: 0;
         transition-delay: 0; }
         section#products ul li a div.product-logo {
-          height: 137px;
-          margin-bottom: 43px;
-          background: #D9D9D9;
-          border: 1px solid #aaa;
           -webkit-box-shadow: inset 0 0 4px #bfbfbf;
           -moz-box-shadow: inset 0 0 4px #bfbfbf;
           -ms-box-shadow: inset 0 0 4px #bfbfbf;
           -o-box-shadow: inset 0 0 4px #bfbfbf;
-          box-shadow: inset 0 0 4px #bfbfbf; }
+          box-shadow: inset 0 0 4px #bfbfbf;
+          background: #D9D9D9;
+          border: 1px solid #aaa;
+          height: 165px;
+          margin-bottom: 51px; }
           section#products ul li a div.product-logo img {
             display: block;
             margin: 0 auto; }
         section#products ul li a .check-out {
           color: #ad141e;
-          display: inline-block;
-          font: 500 14px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+          display: inline-block; }
         section#products ul li a:hover {
-          background: rgba(0, 0, 0, 0.04);
-          -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
-          -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
-          -ms-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
-          -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.04); }
+          -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+          -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+          -ms-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+          -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.02);
+          background: rgba(0, 0, 0, 0.02); }
           section#products ul li a:hover div.product-logo {
-            background: #C4C3C3;
-            border: 1px solid #8F8F8F;
             -webkit-box-shadow: inset 0 0 4px #b7b6b6;
             -moz-box-shadow: inset 0 0 4px #b7b6b6;
             -ms-box-shadow: inset 0 0 4px #b7b6b6;
             -o-box-shadow: inset 0 0 4px #b7b6b6;
-            box-shadow: inset 0 0 4px #b7b6b6; }
+            box-shadow: inset 0 0 4px #b7b6b6;
+            background: #C4C3C3;
+            border: 1px solid #8F8F8F; }
           section#products ul li a:hover h3, section#products ul li a:hover p {
             color: #000; }
           section#products ul li a:hover .check-out {
+            background-position: right 8px;
             color: #7f0f16; }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#products {
-      margin-bottom: 40px; }
+      margin-bottom: 48px; }
       section#products ul li {
         float: left;
         width: 100.0%;
-        margin-bottom: 40px; }
+        margin-bottom: 48px; }
         section#products ul li:nth-child(2n) {
           margin-right: 0; } }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#products {
-      margin-bottom: 40px; }
+      margin-bottom: 48px; }
       section#products ul li {
         float: left;
         width: 100.0%;
-        margin-bottom: 40px; }
+        margin-bottom: 48px; }
         section#products ul li:nth-child(2n) {
           margin-right: 0; } }
 
 #get-started {
-  padding: 20px 0 40px; }
+  padding: 24px 0 48px; }
   #get-started a {
     font: 500 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
     #get-started a h3 {
@@ -1542,14 +1521,14 @@ section#products {
       margin-bottom: 0; }
       @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
         #get-started a h3 {
-          margin-bottom: 20px;
+          margin-bottom: 24px;
           float: none; } }
     #get-started a p {
       color: #fff;
       color: rgba(255, 255, 255, 0.8);
       float: right;
       font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      line-height: 20px;
+      line-height: 24px;
       margin-bottom: 0;
       margin-top: 4px;
       margin-bottom: -4px; }
@@ -1561,14 +1540,14 @@ section#products {
 
 section.open-source ul {
   list-style: none;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
   /*line hight to maintain baseline grid*/ }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section.open-source ul {
       margin-bottom: 0; } }
   section.open-source ul li {
     float: left;
-    margin: 40px 2.513% 0 0;
+    margin: 48px 2.513% 0 0;
     /*line hight top bottom to maintain baseline grid*/
     width: 23.116%; }
     section.open-source ul li.start-row {
@@ -1604,7 +1583,7 @@ section.open-source ul {
         box-shadow: 0 0 0 10px #efefef; }
     section.open-source ul li.highlighted {
       border-bottom: 1px solid #dcdcdc;
-      padding-bottom: 20px;
+      padding-bottom: 24px;
       margin: 0;
       /*line-hight top bottom to maintain baseline grid*/
       padding-right: 2.513%;
@@ -1616,7 +1595,7 @@ section.open-source ul {
           section.open-source ul li.highlighted a h3 {
             color: #ad141e;
             font-size: 24px;
-            padding-top: 40px; } }
+            padding-top: 48px; } }
       section.open-source ul li.highlighted.paperclip a {
         background: transparent url("/images/oss/paperclip.png") 22px 2px no-repeat; }
         section.open-source ul li.highlighted.paperclip a:hover {
@@ -1649,7 +1628,7 @@ section.open-source ul {
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       section.open-source ul li {
         width: 100.0%;
-        margin: 0 0 20px 0; }
+        margin: 0 0 24px 0; }
         section.open-source ul li:nth-child(2n) {
           margin-right: 0; }
         section.open-source ul li h3 {
@@ -1659,7 +1638,7 @@ section.open-source ul {
           padding: 0;
           float: none;
           width: auto;
-          margin: 0 0 20px 0; }
+          margin: 0 0 24px 0; }
           section.open-source ul li.highlighted.paperclip a, section.open-source ul li.highlighted.factory-girl a {
             padding: 0;
             background-image: none;
@@ -1682,7 +1661,7 @@ section#events {
       float: left;
       margin-right: 2.513%;
       overflow: hidden;
-      padding: 35px 20px 20px;
+      padding: 43px 24px 24px;
       /*line hight padding to maintain baseline grid minus 5 pixels for the top border*/
       width: 23.116%;
       /*grid width minus padding*/
@@ -1706,7 +1685,7 @@ section#events {
     section#events ul li {
       float: none;
       width: 100.0%;
-      margin-bottom: 20px; } }
+      margin-bottom: 24px; } }
 
 div#contact-content div#contact_form {
   float: left;
@@ -1725,10 +1704,10 @@ div#contact-content section#contact-info {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
     float: right;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     width: 31.658%; }
     div#contact-content section#contact-info section.contact-address div {
-      margin-bottom: 20px; }
+      margin-bottom: 24px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 @media screen and (max-width: 940px) {
@@ -1740,7 +1719,7 @@ div#contact-content section#contact-info {
     width: auto; } }
 @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   div#contact-content {
-    padding-top: 40px; }
+    padding-top: 48px; }
     div#contact-content div#contact_form {
       float: none;
       width: 100.0%; }
@@ -1752,7 +1731,7 @@ div#contact-content section#contact-info {
         display: block;
         color: #2b2b2b;
         font: 600 32px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-        margin-bottom: 20px; }
+        margin-bottom: 24px; }
       div#contact-content section#contact-info section#contact-other {
         float: none;
         width: auto; }
@@ -1761,13 +1740,13 @@ div#contact-content section#contact-info {
           display: block;
           color: #2b2b2b;
           font: 600 32px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-          margin-bottom: 20px; }
+          margin-bottom: 24px; }
       div#contact-content section#contact-info section.contact-address {
         float: none;
         width: auto;
         border-bottom: 1px solid #dcdcdc;
-        padding-bottom: 20px;
-        margin-bottom: 20px; }
+        padding-bottom: 24px;
+        margin-bottom: 24px; }
         div#contact-content section#contact-info section.contact-address div.call {
           float: left;
           width: 48.744%;
@@ -1796,10 +1775,10 @@ div#contact-content section#contact-info {
       margin-left: 2.513%; }
   div#contact-content section#contact-info section.contact-address {
     float: right;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     width: 31.658%; }
     div#contact-content section#contact-info section.contact-address div {
-      margin-bottom: 20px; }
+      margin-bottom: 24px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 @media screen and (max-width: 940px) {
@@ -1811,7 +1790,7 @@ div#contact-content section#contact-info {
     width: auto; } }
 @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
   div#contact-content {
-    padding-top: 40px; }
+    padding-top: 48px; }
     div#contact-content div#contact_form {
       float: none;
       width: 100.0%; }
@@ -1823,7 +1802,7 @@ div#contact-content section#contact-info {
         display: block;
         color: #2b2b2b;
         font: 600 32px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-        margin-bottom: 20px; }
+        margin-bottom: 24px; }
       div#contact-content section#contact-info section#contact-other {
         float: none;
         width: auto; }
@@ -1832,13 +1811,13 @@ div#contact-content section#contact-info {
           display: block;
           color: #2b2b2b;
           font: 600 32px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-          margin-bottom: 20px; }
+          margin-bottom: 24px; }
       div#contact-content section#contact-info section.contact-address {
         float: none;
         width: auto;
         border-bottom: 1px solid #dcdcdc;
-        padding-bottom: 20px;
-        margin-bottom: 20px; }
+        padding-bottom: 24px;
+        margin-bottom: 24px; }
         div#contact-content section#contact-info section.contact-address div.call {
           float: left;
           width: 48.744%;
@@ -1854,9 +1833,9 @@ section#people ul {
   list-style: none; }
   section#people ul li {
     float: left;
-    margin: 0 2.513% 40px 0;
+    margin: 0 2.513% 48px 0;
     /*line height on the bottom to maintain baseline grid*/
-    min-height: 240px;
+    min-height: 288px;
     /*specify line-height height so each perosn has a proper amount of space for their bio*/
     width: 48.744%; }
     section#people ul li:nth-child(2n) {
@@ -1876,14 +1855,14 @@ section#people ul {
       width: 65.829%; }
       section#people ul li div.person-info h2 {
         font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-        line-height: 40px;
+        line-height: 48px;
         /*double line-hieght for bigger type*/
         margin-bottom: 0; }
       section#people ul li div.person-info h3 {
         color: #aaa;
         font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
-        line-height: 20px;
-        margin-bottom: 20px; }
+        line-height: 24px;
+        margin-bottom: 24px; }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       section#people ul li {
         float: none;
@@ -1898,7 +1877,7 @@ div#jobs-wrapper section#current-openings {
   /*4 units minus left and right padding*/ }
   div#jobs-wrapper section#current-openings ul {
     border-top: 5px solid #ad141e;
-    padding-top: 20px;
+    padding-top: 24px;
     list-style: none;
     margin-bottom: 40px; }
     div#jobs-wrapper section#current-openings ul li {
@@ -1941,10 +1920,10 @@ div#jobs-wrapper.job-description section#more-about-us {
       float: none;
       width: auto; } }
 div#jobs-wrapper.job-description section#apply-to-thoughtbot {
-  margin-top: 30px; }
+  margin-top: 36px; }
   div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
-    margin: 20px 0 40px;
-    padding: 30px; }
+    margin: 24px 0 48px;
+    padding: 36px; }
     div#jobs-wrapper.job-description section#apply-to-thoughtbot a h3 {
       color: #fff;
       font-size: 18px;
@@ -1966,7 +1945,7 @@ div#jobs-wrapper section#job-form header.info {
   #design-portfolio ul li {
     border-bottom: 1px solid #ddd;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 24px 0;
     text-align: center;
     width: 830px; }
     #design-portfolio ul li img {

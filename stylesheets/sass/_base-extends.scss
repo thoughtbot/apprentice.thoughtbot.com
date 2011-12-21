@@ -62,3 +62,12 @@
 .secondary-header {
   padding-top: ($lh*3);
 }
+
+.external-link {
+  background: url('/images/external-link.png') no-repeat right -8px;
+  padding-right: 16px;
+
+  &:hover {
+    background-position: right 8px;
+  }
+}
