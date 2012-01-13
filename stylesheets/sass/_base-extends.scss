@@ -1,7 +1,7 @@
 .wrapper {
   margin: 0 auto;
   text-align: left;
-  width: grid-width(12);
+  width: flex-grid(12);
 
   @media screen and (min-width: 751px) {
     max-width: 1122px;
@@ -24,8 +24,8 @@
   color: #fff;
   display: block;
   font:700 24px $header;
-  line-height: $lh;
-  padding: $lh*1.5;
+  line-height: lh();
+  padding: lh(1.5);
   text-shadow: 0 -1px 0 darken($red, 10%);
 
   &:hover {
@@ -55,12 +55,12 @@
   background: rgba(#E4E4E4, .7) url('/images/shadowing.png') center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
-  padding: ($lh*2)-(1) 20px ($lh*2)-(1);
+  padding: (lh(2) - 1) 20px (lh(2) - 1);
   margin: 0 -20px;
 }
 
 .secondary-header {
-  padding-top: ($lh*3);
+  padding-top: lh(3);
 }
 
 .external-link {

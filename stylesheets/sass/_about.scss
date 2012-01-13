@@ -8,9 +8,9 @@ section#people {
 
     li {
       float: left;
-      margin: 0 $gw-gutter ($lh*2) 0; /*line height on the bottom to maintain baseline grid*/
-      min-height: $lh*12; /*specify line-height height so each perosn has a proper amount of space for their bio*/
-      width: grid-width(6);
+      margin: 0 flex-gutter() lh(2) 0; /*line height on the bottom to maintain baseline grid*/
+      min-height: lh(12); /*specify line-height height so each perosn has a proper amount of space for their bio*/
+      width: flex-grid(6);
       @extend .clearfix;
 
       &:nth-child(2n) {
@@ -23,8 +23,8 @@ section#people {
 
       div.person-photo {
         float: left;
-        margin-right: $gw-gutter;
-        width: grid-width(4);
+        margin-right: flex-gutter();
+        width: flex-grid(4);
         text-align: center;
         overflow: hidden;
 
@@ -35,25 +35,25 @@ section#people {
 
       div.person-info {
         float: left;
-        width: grid-width(8);
+        width: flex-grid(8);
 
         h2 {
           font: 700 24px $header;
-          line-height: $lh*2; /*double line-hieght for bigger type*/
+          line-height: lh(2); /*double line-hieght for bigger type*/
           margin-bottom: 0;
         }
 
         h3 {
           color: #aaa;
           font: italic 14px $body;
-          line-height: $lh;
-          margin-bottom: $lh; 
+          line-height: lh();
+          margin-bottom: lh();
         }
       }
 
       @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
         float: none;
-        width: grid-width(12);
+        width: flex-grid(12);
       }
     }
   }

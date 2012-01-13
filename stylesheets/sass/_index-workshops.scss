@@ -2,7 +2,7 @@ section#workshops {
   @extend .clearfix;
   background: url('/images/shadowing-lite.png') center top no-repeat;
   border-top: 1px solid #DCDCDC;
-  padding-top: ($lh*3)-(1); /*line-height x 3 minus 1px for the border*/
+  padding-top: (lh(3)- 1); /*line-height x 3 minus 1px for the border*/
 
   h2 {
     text-shadow:  0 1px 0 #fcfcfc;
@@ -10,13 +10,13 @@ section#workshops {
 
   section#about-workshops {
     float: left;
-    margin-right: $gw-gutter;
-    width: grid-width(4);
+    margin-right: flex-gutter();
+    width: flex-grid(4);
   }
 
   blockquote {
     float: left;
-    width: grid-width(4)-$gw-gutter;
+    width: flex-grid(4) - flex-gutter();
 
     .author {
       color: #999;
@@ -27,8 +27,8 @@ section#workshops {
     background: #F9F9F9;
     border-top: 5px solid #292929;
     float: left;
-    padding: ($lh*1.5)-(15) $lh $lh; /*top padding makes up for 5px border and 10px margin*/
-    width: grid-width(4); /*4 units minus left and right padding*/
+    padding: (lh(1.5) - 15) lh() lh(); /*top padding makes up for 5px border and 10px margin*/
+    width: flex-grid(4); /*4 units minus left and right padding*/
     @include box-sizing(border-box);
 
     h3 {
@@ -62,14 +62,14 @@ section#workshops {
     blockquote {
       float: none;
       width: auto;
-      padding-left: $gw-gutter*3;
-      margin-top: $lh * 2;
+      padding-left: flex-gutter()*3;
+      margin-top: lh(2);
     }
 
     section#current-workshops {
       float: left;
-      width: grid-width(12);
-      margin-top: $lh * 2;
+      width: flex-grid(12);
+      margin-top: lh(2);
     }
   }
 }

@@ -3,7 +3,7 @@ footer#main-footer {
   @extend .clearfix;
 
   opacity: .5;
-  padding-top: $lh*4;
+  padding-top: lh(4);
 
   @include transition(opacity .5s);
 
@@ -32,19 +32,19 @@ footer#main-footer {
 
     section {
       float: left;
-      margin-right: $gw-gutter;
-      width: grid-width(2);
+      margin-right: flex-gutter();
+      width: flex-grid(2);
 
 
       &#current-workshops-footer {
-        width: grid-width(4);
+        width: flex-grid(4);
 
         ul {
           li {
             float: left;
             display: block;
-            margin-right: $gw-gutter;
-            width: grid-width(6);
+            margin-right: flex-gutter(4);
+            width: flex-grid(2, 4);
 
             &:nth-child(2n) {
               margin-right: 0;
@@ -62,7 +62,7 @@ footer#main-footer {
       }
 
       &#blog-footer {
-        width: grid-width(4);
+        width: flex-grid(4);
         @extend .row-end;
       }
 
@@ -70,28 +70,28 @@ footer#main-footer {
         list-style: none;
 
         li {
-          margin-bottom: $lh/2;
+          margin-bottom: lh(.5);
         }
       }
 
       @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
         float: none;
-        width: grid-width(12);
+        width: flex-grid(12);
         margin-right: 0;
-        margin-top: $lh * 2;
+        margin-top: lh() * 2;
 
         &#thoughtbot-footer, &#footer-products {
           float: left;
-          width: grid-width(6);
+          width: flex-grid(6);
           margin-top: 0;
         }
 
         &#thoughtbot-footer {
-          margin-right: $gw-gutter;
+          margin-right: flex-gutter();
         }
 
         &#current-workshops-footer, &#blog-footer {
-          width: grid-width(12);
+          width: flex-grid(12);
           float: none;
           @extend .clearfix;
           clear: both;
@@ -109,6 +109,6 @@ footer#main-footer {
 
   p#copyright {
     color: #7a7a7a;
-    margin-top: $lh*2; /*line-height to maintain baseline grid*/
+    margin-top: lh(2); /*line-height to maintain baseline grid*/
   }
 }

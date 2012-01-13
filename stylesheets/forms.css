@@ -1,7 +1,14 @@
 .wrapper, .primary, .secondary {
   margin: 0 auto;
   text-align: left;
-  width: 100.0%; }
+  width: 100%; }
+  @media screen and (min-width: 751px) {
+    .wrapper, .primary, .secondary {
+      max-width: 1122px;
+      min-width: 720px; } }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    .wrapper, .primary, .secondary {
+      max-width: 420px; } }
 
 .button, form.wufoo ul li input#saveForm {
   -webkit-font-smoothing: antialiased;
@@ -40,8 +47,8 @@
   color: #fff;
   display: block;
   font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 20px;
-  padding: 30px;
+  line-height: 24px;
+  padding: 36px;
   text-shadow: 0 -1px 0 #7f0f16; }
   .button:hover, form.wufoo ul li input#saveForm:hover {
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
@@ -64,31 +71,34 @@
 .row-end {
   margin-right: 0; }
 
-.external {
-  padding-right: 13px; }
-  .external:hover {
-    background: url("/images/external.png") right 4px no-repeat; }
-
 .secondary-wrapper {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
-  padding: 39px 20px 39px;
+  padding: 47px 20px 47px;
   margin: 0 -20px; }
 
 .secondary-header {
-  padding-top: 60px; }
+  padding-top: 72px; }
+
+.external-link {
+  background: url("/images/external-link.png") no-repeat right -8px;
+  padding-right: 16px; }
+  .external-link:hover {
+    background-position: right 8px; }
 
 /* basic site styles
 ---------------------------------------- */
 body {
-  /*background: url('/images/grid.png') 10px -4px;*/
   background-color: #FCFCFC;
   border-top: 4px solid #ad141e;
   color: #2B2B2B;
-  font: 400 14px "skolar-1", "skolar-2", Georgia, serif;
+  font: 400 16px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center;
   padding: 0 20px; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      -webkit-text-size-adjust: none; } }
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
@@ -96,38 +106,39 @@ h1, h2, h3, h4, h5, h5, h6 {
 
 h1 {
   color: #2b2b2b;
-  font-size: 60px;
+  font-size: 72px;
   font-weight: 900;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
 
 h2 {
   color: #2b2b2b;
   font-size: 36px;
   font-weight: 200;
-  line-height: 40px;
-  margin-bottom: 40px; }
+  line-height: 48px;
+  margin-bottom: 48px; }
 
 h3 {
+  font-size: 24px;
   font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 20px; }
+  line-height: 24px;
+  margin-bottom: 24px; }
 
 h4 {
-  line-height: 20px;
+  line-height: 24px;
   margin: 0; }
 
 p {
   color: #555;
   font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
   text-rendering: optimizeSpeed; }
 
 ul {
   list-style-position: outside;
-  margin-bottom: 20px; }
+  margin-bottom: 24px; }
   ul li {
-    line-height: 20px; }
+    line-height: 24px; }
 
 img {
   display: block;
@@ -140,11 +151,11 @@ blockquote {
   margin: 0 2.513% 0 0;
   padding-left: 2.513%; }
   blockquote p {
-    line-height: 30px; }
+    line-height: 36px; }
   blockquote p.author {
     color: #bbb;
-    font: italic 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
+    font: italic 16px "skolar-1", "skolar-2", Georgia, serif;
+    line-height: 24px;
     margin: 0; }
 
 a:link, a:active {
@@ -162,14 +173,27 @@ img {
 
 #page-header {
   background: url("/images/shadowing.png") center top no-repeat;
-  padding-top: 60px;
+  padding-top: 72px;
   text-align: center; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    #page-header {
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -ms-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain; } }
   #page-header h1 {
-    line-height: 60px; }
+    line-height: 72px; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      #page-header h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        text-align: left; } }
   #page-header h2 {
     color: #736B6C;
     font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 0; }
 
 /* Forms
@@ -186,15 +210,15 @@ body#public {
 
 form.wufoo {
   margin-left: 0;
-  width: 100.0%; }
+  width: 100%; }
   form.wufoo header#header {
     display: none; }
   form.wufoo ul {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 24px;
     padding: 4px; }
     form.wufoo ul li {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       padding: 0; }
       form.wufoo ul li.section {
         padding-top: 25px;
@@ -212,7 +236,7 @@ form.wufoo {
         -webkit-font-smoothing: antialiased;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         font-weight: bold;
-        line-height: 20px;
+        line-height: 24px;
         margin: 0 0 5px;
         padding: 0; }
         form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
@@ -235,18 +259,18 @@ form.wufoo {
         -o-box-sizing: border-box;
         box-sizing: border-box;
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        line-height: 20px;
+        line-height: 24px;
         margin: 0;
-        max-width: 100.0%;
-        padding: 9px 10px;
+        max-width: 100%;
+        padding: 11px 12px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 100.0%; }
+        width: 100%; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
         display: block;
         margin: 0;
-        padding: 8px 40px;
+        padding: 10px 48px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
         form.wufoo ul li input#saveForm:hover {
           cursor: pointer; }
@@ -257,7 +281,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: 20px 20px 40px; }
+        margin: 24px 24px 24px; }
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
@@ -271,7 +295,7 @@ form.wufoo {
         float: left;
         clear: none; }
         form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
-          width: 100.0%;
+          width: 100%;
           display: block; }
       form.wufoo ul li.name {
         float: none;

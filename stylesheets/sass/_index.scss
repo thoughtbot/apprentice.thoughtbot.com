@@ -1,5 +1,5 @@
 #get-started {
-  padding: $lh 0 $lh*2;
+  padding: lh() 0 lh(2);
 
   a {
     @extend .button;
@@ -12,7 +12,7 @@
       margin-bottom: 0;
 
       @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-        margin-bottom: $lh;
+        margin-bottom: lh();
         float: none;
       }
     }
@@ -22,7 +22,7 @@
       color: rgba(#fff, .8);
       float: right;
       font: 16px $header;
-      line-height: $lh;
+      line-height: lh();
       margin-bottom: 0;
       margin-top: 4px;
       margin-bottom: -4px;

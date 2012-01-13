@@ -1,7 +1,7 @@
 #portfolio-slider {
   @extend .secondary-wrapper;
-  height: $lh*26;
-  margin-top: $lh*3;
+  height: lh(26);
+  margin-top: lh(3);
   position: relative;
 
   div {
@@ -12,7 +12,7 @@
     }
 
     #slider-wrapper {
-      height: $lh*21; /*makes sure the slider maintains line-height grid*/
+      height: lh(21); /*makes sure the slider maintains line-height grid*/
     }
 
     ul.slider {
@@ -20,14 +20,14 @@
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
       @include box-sizing(border-box);
       border: 1px solid rgba(#000, .2);
-      height: ($lh*21)-(2); /*line-height minus 2 for the border to maintain baseline grid*/
+      height: (lh(21) - 2); /*line-height minus 2 for the border to maintain baseline grid*/
       list-style: none;
       position: relative;
-      width: grid-width(12);
+      width: flex-grid(12);
 
       @media screen and (max-width:1199px) {
         overflow: hidden;
-        margin-top: ($lh*2);
+        margin-top: lh(2);
       }
 
       img {
@@ -116,18 +116,18 @@
   }
 
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    height: $lh*17;
+    height: lh(17);
 
     ul.slider {
-      height: ($lh * 14) - (2px)  !important; /*line-height minus 2 for the border to maintain baseline grid*/
-      max-width: grid-width(12);
+      height: lh(14) - (2px)  !important; /*line-height minus 2 for the border to maintain baseline grid*/
+      max-width: flex-grid(12);
     }
   }
 }
 
 section#portfolio {
   @extend .clearfix;
-  width: grid-width(12);
+  width: flex-grid(12);
   margin: 80px 0 40px;
 
   ul {
@@ -136,8 +136,8 @@ section#portfolio {
 
     li {
       float: left;
-      margin: 0 $gw-gutter $lh 0;
-      width: grid-width(3);
+      margin: 0 flex-gutter() lh() 0;
+      width: flex-grid(3, 12);
       padding: 4px;
       border: 1px solid #BDBDBD;
       @include box-sizing(border-box);
@@ -150,7 +150,7 @@ section#portfolio {
 
       a {
         display: block;
-        height: ($lh * 9) - 10px; // Subtracts 2 px for border on parent
+        height: lh(9) - 10px; // Subtracts 2 px for border on parent
         text-indent: -9999px;
         @include background-size(cover);
       }
@@ -205,20 +205,20 @@ section#portfolio {
   }
 
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    margin-top: $lh * 3;
+    margin-top: lh(3);
 
     ul {
       li {
         float: left;
-        margin: 0 $gw-gutter $lh 0;
-        width: grid-width(6);
+        margin: 0 flex-gutter() lh() 0;
+        width: flex-grid(6);
 
         &:nth-child(2n) {
           margin-right: 0;
         }
 
         a {
-          height: ($lh * 7) - 10px;
+          height: lh(7) - 10px;
         }
       }
     }

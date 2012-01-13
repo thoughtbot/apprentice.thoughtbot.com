@@ -1,11 +1,11 @@
 section#services {
   @extend .clearfix;
-  margin-bottom: $lh;
+  margin-bottom: lh();
 
   #about-services {
     float: left;
-    margin-right: $gw-gutter;
-    width: grid-width(4);
+    margin-right: flex-gutter();
+    width: flex-grid(4);
 
     p {
       font-weight: 400;
@@ -14,15 +14,15 @@ section#services {
 
   blockquote {
     float: left;
-    width: grid-width(4);
+    width: flex-grid(4);
     margin-right: 0;
-    margin-left: -($gw-gutter);
+    margin-left: -(flex-gutter());
   }
 
   section#clients {
     float: left;
-    width: grid-width(4);
-    margin-right: $gw-gutter;
+    width: flex-grid(4);
+    margin-right: flex-gutter();
 
     h3 {
       color: rgba(#2b2b2b, .8);
@@ -37,8 +37,8 @@ section#services {
         color: #ABABAB;
         float: left;
         font-style: italic;
-        margin-right: $gw-gutter;
-        width: grid-width(6);
+        margin-right: flex-gutter(4);
+        width: flex-grid(2, 4);
 
         &:nth-child(2n) {
           margin-right: 0;
@@ -54,23 +54,23 @@ section#services {
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     #about-services {
       float: none;
-      margin-right: $gw-gutter;
+      margin-right: flex-gutter();
       width: auto;
-      margin-bottom: $lh;
+      margin-bottom: lh();
       border-bottom: 1px solid #dcdcdc;
-      padding-bottom: $lh;
+      padding-bottom: lh();
     }
 
     blockquote {
       float: none;
       width: auto;
-      padding-left: $gw-gutter * 3;
+      padding-left: flex-gutter() * 3;
     }
 
     section#clients {
       float: none;
       width: auto;
-      margin-top: $lh*2;
+      margin-top: lh(2);
 
       ul {
         list-style: none;
@@ -78,8 +78,8 @@ section#services {
 
         li {
           float: left;
-          margin-right: $gw-gutter;
-          width: grid-width(6);
+          margin-right: flex-gutter();
+          width: flex-grid(6);
 
           &:nth-child(2n) {
             margin-right: 0;

@@ -4,8 +4,8 @@ div#contact-content {
 
   div#contact_form {
     float: left;
-    margin-right: $gw-gutter;
-    width: grid-width(8);
+    margin-right: flex-gutter();
+    width: flex-grid(7);
 
     h1#logo, #bottom{
       display: none;
@@ -14,25 +14,25 @@ div#contact-content {
 
   section#contact-info {
     float: right;
-    width: grid-width(4);
+    width: flex-grid(5);
 
     section#contact-other {
       float: left;
-      width: grid-width(8);
-      margin-right: $gw-gutter;
+      width: flex-grid(3, 5);
+      margin-right: flex-gutter(5);
 
       ul {
-        margin-left: $gw-gutter;
+        margin-left: flex-gutter(5);
       }
     }
 
     section.contact-address {
       float: right;
-      margin-bottom: $lh;
-      width: grid-width(4);
+      margin-bottom: lh();
+      width: flex-grid(2, 5);
 
       div {
-        margin-bottom: $lh;
+        margin-bottom: lh();
       }
 
       p {
@@ -43,7 +43,7 @@ div#contact-content {
 
   @media screen and (max-width: 940px) {
     div#contact_form {
-      width: grid-width(12);
+      width: flex-grid(12);
       margin-right: 0;
     }
 
@@ -54,24 +54,24 @@ div#contact-content {
   }
 
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    padding-top: $lh * 2;
+    padding-top: lh(2);
 
     div#contact_form {
       float: none;
-      width: grid-width(12);
+      width: flex-grid(12);
 
     }
 
     section#contact-info {
       float: none;
-      width: grid-width(12);
+      width: flex-grid(12);
 
       &:before {
         content: "Contact thoughtbot";
         display: block;
         color: #2b2b2b;
         font: 600 32px $header;
-        margin-bottom: $lh;
+        margin-bottom: lh();
       }
 
       section#contact-other {
@@ -83,7 +83,7 @@ div#contact-content {
           display: block;
           color: #2b2b2b;
           font: 600 32px $header;
-          margin-bottom: $lh;
+          margin-bottom: lh();
         }
       }
 
@@ -91,21 +91,21 @@ div#contact-content {
         float: none;
         width: auto;
         border-bottom: 1px solid #dcdcdc;
-        padding-bottom: $lh;
-        margin-bottom: $lh;
+        padding-bottom: lh();
+        margin-bottom: lh();
         @extend .clearfix;
 
 
         div {
           &.call {
             float: left;
-            width: grid-width(6);
-            margin-right: $gw-gutter;
+            width: flex-grid(6);
+            margin-right: flex-gutter();
           }
 
           &.address {
             float: left;
-            width: grid-width(6);
+            width: flex-grid(6);
           }
         }
       }

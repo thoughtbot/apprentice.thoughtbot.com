@@ -14,7 +14,7 @@
 //************************************************************************//
 // Base Form Styles
 //************************************************************************//
-$half-width-input: grid-width(6);
+$half-width-input: flex-grid(6);
 
 body#public {
   padding: 0;
@@ -22,7 +22,7 @@ body#public {
 
 form.wufoo {
   margin-left: 0;
-  width: grid-width(12);
+  width: flex-grid(12);
 
   header#header {
     display: none;
@@ -30,11 +30,11 @@ form.wufoo {
 
   ul {
     list-style: none;
-    margin-top: $lh;
+    margin-top: lh();
     padding: 4px;
 
     li {
-      margin-bottom: $lh + 10px;
+      margin-bottom: lh() + 10px;
       padding: 0;
 
       &.section {
@@ -59,7 +59,7 @@ form.wufoo {
         -webkit-font-smoothing: antialiased;
         font: 14px $body;
         font-weight: bold; // BECAUSE I SAID SO!!
-        line-height: $lh;
+        line-height: lh();
         margin: 0 0 5px;
         padding: 0;
 
@@ -80,15 +80,15 @@ form.wufoo {
       // Default Input Styles
       //************************************************************************//
       input[type="text"], input[type="email"], input.text, textarea {
-        $input-width: grid-width(12);
+        $input-width: flex-grid(12);
         border: 1px solid #999;
         @include box-shadow( inset 0 1px 2px #aaa);
         @include box-sizing(border-box);
         font: 14px $body;
-        line-height: $lh;
+        line-height: lh();
         margin: 0;
         max-width: $input-width;
-        padding: ($lh/2)-(1) ($lh/2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        padding: (lh(.5) - 1) lh(.5); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: $input-width;
 
         &:focus {
@@ -100,7 +100,7 @@ form.wufoo {
         @extend .button;
         display: block;
         margin: 0;
-        padding: ($lh/2)-(2) ($lh*2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        padding: (lh(.5) - 2) lh(2); /*line-height divided by two so that the bottom and top will align to the baseline grid*/
 
         &:hover {
           cursor: pointer;
@@ -116,7 +116,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: $lh $lh $lh*2;
+        margin: lh() lh() lh();
       }
 
       &.focused {
@@ -129,19 +129,19 @@ form.wufoo {
       // Phone & Email
       //************************************************************************//
       &.email {
-        margin-right: $gw-gutter;
+        margin-right: flex-gutter();
       }
 
       &.email, &.phone {
-        max-width: grid-width(6);
-        min-width: grid-width(6);
-        width: grid-width(6);
+        max-width: flex-grid(6);
+        min-width: flex-grid(6);
+        width: flex-grid(6);
         float: left;
         // @include inline-block();
         clear: none;
 
         input[type="text"], input.text, input[type="email"] {
-          width: grid-width(12);
+          width: flex-grid(12);
           display: block;
         }
       }
@@ -157,7 +157,7 @@ form.wufoo {
         span {
           display: block;
           float: left;
-          margin-right: $gw-gutter;
+          margin-right: flex-gutter();
           width: $half-width-input;
 
           &:nth-child(odd) {

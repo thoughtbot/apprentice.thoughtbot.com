@@ -668,7 +668,7 @@ ol ol, ol ul, ul ul, ul ol {
 .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
   margin: 0 auto;
   text-align: left;
-  width: 100.0%; }
+  width: 100%; }
   @media screen and (min-width: 751px) {
     .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
       max-width: 1122px;
@@ -877,7 +877,7 @@ body#public {
 
 form.wufoo {
   margin-left: 0;
-  width: 100.0%; }
+  width: 100%; }
   form.wufoo header#header {
     display: none; }
   form.wufoo ul {
@@ -928,10 +928,10 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 24px;
         margin: 0;
-        max-width: 100.0%;
+        max-width: 100%;
         padding: 11px 12px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 100.0%; }
+        width: 100%; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
       form.wufoo ul li input#saveForm {
@@ -948,7 +948,7 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-        margin: 24px 24px 48px; }
+        margin: 24px 24px 24px; }
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
@@ -962,7 +962,7 @@ form.wufoo {
         float: left;
         clear: none; }
         form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
-          width: 100.0%;
+          width: 100%;
           display: block; }
       form.wufoo ul li.name {
         float: none;
@@ -1111,8 +1111,8 @@ footer#main-footer {
       footer#main-footer nav section#current-workshops-footer ul li {
         float: left;
         display: block;
-        margin-right: 2.513%;
-        width: 48.744%; }
+        margin-right: 7.937%;
+        width: 46.032%; }
         footer#main-footer nav section#current-workshops-footer ul li:nth-child(2n) {
           margin-right: 0; }
     footer#main-footer nav section#blog-footer {
@@ -1124,7 +1124,7 @@ footer#main-footer {
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       footer#main-footer nav section {
         float: none;
-        width: 100.0%;
+        width: 100%;
         margin-right: 0;
         margin-top: 48px; }
         footer#main-footer nav section#thoughtbot-footer, footer#main-footer nav section#footer-products {
@@ -1134,7 +1134,7 @@ footer#main-footer {
         footer#main-footer nav section#thoughtbot-footer {
           margin-right: 2.513%; }
         footer#main-footer nav section#current-workshops-footer, footer#main-footer nav section#blog-footer {
-          width: 100.0%;
+          width: 100%;
           float: none;
           clear: both; }
           footer#main-footer nav section#current-workshops-footer ul li, footer#main-footer nav section#blog-footer ul li {
@@ -1175,7 +1175,7 @@ footer#main-footer {
     /*line-height minus 2 for the border to maintain baseline grid*/
     list-style: none;
     position: relative;
-    width: 100.0%; }
+    width: 100%; }
     @media screen and (max-width:1199px) {
       #portfolio-slider div ul.slider {
         overflow: hidden;
@@ -1241,10 +1241,10 @@ footer#main-footer {
       #portfolio-slider ul.slider {
         height: 334px !important;
         /*line-height minus 2 for the border to maintain baseline grid*/
-        max-width: 100.0%; } }
+        max-width: 100%; } }
 
 section#portfolio {
-  width: 100.0%;
+  width: 100%;
   margin: 80px 0 40px; }
   section#portfolio ul {
     list-style: none; }
@@ -1334,8 +1334,8 @@ section#services {
         color: #ABABAB;
         float: left;
         font-style: italic;
-        margin-right: 2.513%;
-        width: 48.744%; }
+        margin-right: 7.937%;
+        width: 46.032%; }
         section#services section#clients ul li:nth-child(2n) {
           margin-right: 0; }
     section#services section#clients p {
@@ -1413,7 +1413,7 @@ section#workshops {
       margin-top: 48px; }
     section#workshops section#current-workshops {
       float: left;
-      width: 100.0%;
+      width: 100%;
       margin-top: 48px; } }
 
 section#products {
@@ -1495,7 +1495,7 @@ section#products {
       margin-bottom: 48px; }
       section#products ul li {
         float: left;
-        width: 100.0%;
+        width: 100%;
         margin-bottom: 48px; }
         section#products ul li:nth-child(2n) {
           margin-right: 0; } }
@@ -1504,7 +1504,7 @@ section#products {
       margin-bottom: 48px; }
       section#products ul li {
         float: left;
-        width: 100.0%;
+        width: 100%;
         margin-bottom: 48px; }
         section#products ul li:nth-child(2n) {
           margin-right: 0; } }
@@ -1625,7 +1625,7 @@ section.open-source ul {
           clear: both; } }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       section.open-source ul li {
-        width: 100.0%;
+        width: 100%;
         margin: 0 0 24px 0; }
         section.open-source ul li:nth-child(2n) {
           margin-right: 0; }
@@ -1679,38 +1679,38 @@ section#events {
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
     section#events p.events-intro {
       float: none;
-      width: 100.0%; }
+      width: 100%; }
     section#events ul li {
       float: none;
-      width: 100.0%;
+      width: 100%;
       margin-bottom: 24px; } }
 
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
-  width: 65.829%; }
+  width: 57.286%; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: right;
-  width: 31.658%; }
+  width: 40.201%; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    width: 65.829%;
-    margin-right: 2.513%; }
+    width: 57.5%;
+    margin-right: 6.25%; }
     div#contact-content section#contact-info section#contact-other ul {
-      margin-left: 2.513%; }
+      margin-left: 6.25%; }
   div#contact-content section#contact-info section.contact-address {
     float: right;
     margin-bottom: 24px;
-    width: 31.658%; }
+    width: 36.25%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 24px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 @media screen and (max-width: 940px) {
   div#contact-content div#contact_form {
-    width: 100.0%;
+    width: 100%;
     margin-right: 0; }
   div#contact-content section#contact-info {
     float: none;
@@ -1720,10 +1720,10 @@ div#contact-content section#contact-info {
     padding-top: 48px; }
     div#contact-content div#contact_form {
       float: none;
-      width: 100.0%; }
+      width: 100%; }
     div#contact-content section#contact-info {
       float: none;
-      width: 100.0%; }
+      width: 100%; }
       div#contact-content section#contact-info:before {
         content: "Contact thoughtbot";
         display: block;
@@ -1759,29 +1759,29 @@ div#contact-content section#contact-info {
 div#contact-content div#contact_form {
   float: left;
   margin-right: 2.513%;
-  width: 65.829%; }
+  width: 57.286%; }
   div#contact-content div#contact_form h1#logo, div#contact-content div#contact_form #bottom {
     display: none; }
 div#contact-content section#contact-info {
   float: right;
-  width: 31.658%; }
+  width: 40.201%; }
   div#contact-content section#contact-info section#contact-other {
     float: left;
-    width: 65.829%;
-    margin-right: 2.513%; }
+    width: 57.5%;
+    margin-right: 6.25%; }
     div#contact-content section#contact-info section#contact-other ul {
-      margin-left: 2.513%; }
+      margin-left: 6.25%; }
   div#contact-content section#contact-info section.contact-address {
     float: right;
     margin-bottom: 24px;
-    width: 31.658%; }
+    width: 36.25%; }
     div#contact-content section#contact-info section.contact-address div {
       margin-bottom: 24px; }
     div#contact-content section#contact-info section.contact-address p {
       margin-bottom: 0; }
 @media screen and (max-width: 940px) {
   div#contact-content div#contact_form {
-    width: 100.0%;
+    width: 100%;
     margin-right: 0; }
   div#contact-content section#contact-info {
     float: none;
@@ -1791,10 +1791,10 @@ div#contact-content section#contact-info {
     padding-top: 48px; }
     div#contact-content div#contact_form {
       float: none;
-      width: 100.0%; }
+      width: 100%; }
     div#contact-content section#contact-info {
       float: none;
-      width: 100.0%; }
+      width: 100%; }
       div#contact-content section#contact-info:before {
         content: "Contact thoughtbot";
         display: block;
@@ -1864,7 +1864,7 @@ section#people ul {
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
       section#people ul li {
         float: none;
-        width: 100.0%; } }
+        width: 100%; } }
 
 div#jobs-wrapper section#current-openings {
   float: left;
