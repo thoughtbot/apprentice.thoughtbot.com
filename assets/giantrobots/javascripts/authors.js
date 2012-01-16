@@ -30,7 +30,8 @@ jQuery(document).ready(function() {
                 plapier: "Phil LaPier",
                 gabebw: "Gabe Berke-Williams",
                 codeulate: "Ben Orenstein",
-                stevehickeydesign: "Steve Hickey"
+                stevehickeydesign: "Steve Hickey",
+                theinterstellarmedium: "Galen Frechette"
 	};
 
 	jQuery(".author").each(function(i) {
