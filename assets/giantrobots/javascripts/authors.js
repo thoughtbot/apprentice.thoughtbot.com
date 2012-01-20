@@ -31,7 +31,8 @@ jQuery(document).ready(function() {
                 gabebw: "Gabe Berke-Williams",
                 codeulate: "Ben Orenstein",
                 stevehickeydesign: "Steve Hickey",
-                theinterstellarmedium: "Galen Frechette"
+                theinterstellarmedium: "Galen Frechette",
+                sikachu: "Prem Sichanurgist"
 	};
 
 	jQuery(".author").each(function(i) {
