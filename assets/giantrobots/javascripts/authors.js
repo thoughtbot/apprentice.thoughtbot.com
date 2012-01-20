@@ -32,7 +32,8 @@ jQuery(document).ready(function() {
                 codeulate: "Ben Orenstein",
                 stevehickeydesign: "Steve Hickey",
                 theinterstellarmedium: "Galen Frechette",
-                sikachu: "Prem Sichanugrist"
+                sikachu: "Prem Sichanugrist",
+                saucecodestoo: "Seana Quental"
 	};
 
 	jQuery(".author").each(function(i) {
