@@ -32,7 +32,7 @@ jQuery(document).ready(function() {
                 codeulate: "Ben Orenstein",
                 stevehickeydesign: "Steve Hickey",
                 theinterstellarmedium: "Galen Frechette",
-                sikachu: "Prem Sichanurgist"
+                sikachu: "Prem Sichanugrist"
 	};
 
 	jQuery(".author").each(function(i) {
