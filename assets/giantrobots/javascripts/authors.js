@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
     jferris: "Joe Ferris",
     jyurek: "Jon Yurek",
     lolconomy: "Mike Burns",
-    "lukegriffiths-apprentice" : "Luke Griffiths"
+    lukegriffithsapprentice: "Luke Griffiths"
     mmongeau: "Matt Mongeau",
     plapier: "Phil LaPier",
     possibilist: "Floyd Wright",
@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
   };
 
   jQuery(".author").each(function(i) {
-    author = this.innerHTML;
+    author = this.innerHTML.replace('-', '');
     this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
   });
 });
