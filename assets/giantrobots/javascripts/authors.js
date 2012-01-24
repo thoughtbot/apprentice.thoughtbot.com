@@ -37,8 +37,10 @@ jQuery(document).ready(function() {
     ubuwaits: 'Chad Mazzola'
   };
 
-  var userName = $('.author').text().replace('-', '');
-  var realName = authors[userName] || userName;
+  $(".author").each(function(index) {
+    var userName = $(this).replace('-', '');
+    var realName = authors[userName] || userName;
 
-  $('.author').text(realName);
+    $(this).text(realName);
+  });
 });
