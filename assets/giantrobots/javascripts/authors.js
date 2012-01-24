@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
     jferris: "Joe Ferris",
     jyurek: "Jon Yurek",
     lolconomy: "Mike Burns",
-    "lukegriffiths-apprentice": "Luke Griffiths"
+    "lukegriffiths-apprentice" : "Luke Griffiths"
     mmongeau: "Matt Mongeau",
     plapier: "Phil LaPier",
     possibilist: "Floyd Wright",
