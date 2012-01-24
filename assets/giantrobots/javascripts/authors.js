@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
   };
 
   $(".author").each(function(index) {
-    var userName = $(this).replace('-', '');
+    var userName = $(this).text().replace('-', '');
     var realName = authors[userName] || userName;
 
     $(this).text(realName);
