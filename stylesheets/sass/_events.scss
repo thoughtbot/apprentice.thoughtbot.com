@@ -1,0 +1,58 @@
+section#events {
+  @extend .primary;
+  @extend .secondary-header;
+
+  > ul {
+    list-style: none;
+    @extend .clearfix;
+
+    > li {
+      &:last-child {
+        border-bottom: none;
+      }
+
+      border-bottom: 3px solid #DDD;
+      float: left;
+      margin: 0 $gw-gutter $lh 0; /*line height on the bottom to maintain baseline grid*/
+      text-align: left;
+      padding-bottom: $lh;
+      width: grid-width(8);
+
+      h2 {
+        font: 700 24px $header;
+        line-height: $lh*2; /*double line-hieght for bigger type*/
+        margin-bottom: 0;
+      }
+
+      h3 {
+        color: #aaa;
+        font: italic 14px $body;
+        line-height: $lh/2;
+        margin-bottom: $lh/2; 
+
+        a {
+          display: inline-block;
+          margin-left: $gw-gutter;
+        }
+      }
+
+      div p {
+        margin-bottom: 0px;
+      }
+
+      ul {
+        margin: 12px 0;
+        list-style: none;
+
+        li {
+          float: left;
+
+          img {
+            width: 48px;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
