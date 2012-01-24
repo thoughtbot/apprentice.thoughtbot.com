@@ -1,40 +1,44 @@
 jQuery(document).ready(function() {
-	authors = {
-		dancroak: "Dan Croak",
-		qrush: "Nick Quaranto",
-		cpytel: "Chad Pytel",
-		lolconomy: "Mike Burns",
-		asimeoni: "Angelo Simeoni",
-		emill: "Eric Mill",
-		fyates: "Fred Yates",
-		jankowski: "Matt Jankowski",
-		jferris: "Joe Ferris",
-		jyurek: "Jon Yurek",
-		kevin: "Kevin Burg",
-		possibilist: "Floyd Wright",
-		tsaleh: "Tammer Saleh",
-		thoughtbotjc: "Jared Carroll",
-		thoughtbotet: "Eric Torrey",
-		thoughtbotjm: "Jason Martinez",
-		thoughtbotmmk: "Mike McKenna",
-		thoughtbotmr: "Micah Rich",
-		jasonmorrisontb: "Jason Morrison",
-		jdclayton: "Josh Clayton",
-		tristandunn: "Tristan Dunn",
-		ubuwaits: "Chad Mazzola",
-		kylehasmanypixels: "Kyle Fiedler",
-		hgimenez: "Harold Giménez",
-		hyperbuddha: "Alex Godin",
-		elindsay: "Emma Lindsay",
-                mmongeau: "Matt Mongeau",
-                plapier: "Phil LaPier",
-                gabebw: "Gabe Berke-Williams",
-                codeulate: "Ben Orenstein",
-                stevehickeydesign: "Steve Hickey"
-	};
+  authors = {
+    asimeoni: 'Angelo Simeoni',
+    codeulate: 'Ben Orenstein',
+    cpytel: 'Chad Pytel',
+    dancroak: 'Dan Croak',
+    elindsay: 'Emma Lindsay',
+    emill: 'Eric Mill',
+    fyates: 'Fred Yates',
+    gabebw: 'Gabe Berke-Williams',
+    hgimenez: 'Harold Giménez',
+    hyperbuddha: 'Alex Godin',
+    kevin: 'Kevin Burg',
+    kylehasmanypixels: 'Kyle Fiedler',
+    jankowski: 'Matt Jankowski',
+    jasonmorrisontb: 'Jason Morrison',
+    jdclayton: 'Josh Clayton',
+    jferris: 'Joe Ferris',
+    jyurek: 'Jon Yurek',
+    lolconomy: 'Mike Burns',
+    lukegriffithsapprentice: 'Luke Griffiths',
+    mmongeau: 'Matt Mongeau',
+    plapier: 'Phil LaPier',
+    possibilist: 'Floyd Wright',
+    qrush: 'Nick Quaranto',
+    saucecodestoo: 'Seana Quental',
+    sikachu: 'Prem Sichanugrist',
+    stevehickeydesign: 'Steve Hickey',
+    theinterstellarmedium: 'Galen Frechette',
+    thoughtbotet: 'Eric Torrey',
+    thoughtbotjc: 'Jared Carroll',
+    thoughtbotjm: 'Jason Martinez',
+    thoughtbotmmk: 'Mike McKenna',
+    thoughtbotmr: 'Micah Rich',
+    tristandunn: 'Tristan Dunn',
+    tsaleh: 'Tammer Saleh',
+    ubuwaits: 'Chad Mazzola'
+  };
 
-	jQuery(".author").each(function(i) {
-		author = this.innerHTML;
-		this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
-	});
+  var userName = $('.author').text().replace('-', '');
+  var realName = authors[userName] || userName;
+
+  $('.author').text(realName);
 });
