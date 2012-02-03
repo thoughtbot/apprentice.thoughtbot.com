@@ -6,15 +6,20 @@ div#jobs-wrapper {
   ul.job-openings {
     @extend .clearfix;
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: lh(3);
     text-align: center;
 
     li {
-      margin: 5px 0 5px (flex-gutter() * 2);
+      margin: 5px 0 5px (flex-gutter() * 3);
       @include inline-block();
 
+      &:first-child {
+        margin-left: 0;
+      }
+
       a {
-        font: bold 24px $header;
+        @extend .button;
+        padding: lh(.5) lh(1.5);
       }
     }
   }

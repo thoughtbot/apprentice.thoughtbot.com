@@ -678,7 +678,7 @@ ol ol, ol ul, ul ul, ul ol {
     .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer, div.more-about-us-wrapper section#more-about-us {
       max-width: 420px; } }
 
-.button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper.job-description a.apply, section#entries .events-wrapper a.ical-bottom {
+.button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper ul.job-openings li a, div#jobs-wrapper.job-description a.apply, section#entries .events-wrapper a.ical-bottom {
   -webkit-font-smoothing: antialiased;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -718,7 +718,7 @@ ol ol, ol ul, ul ul, ul ol {
   line-height: 24px;
   padding: 36px;
   text-shadow: 0 -1px 0 #7f0f16; }
-  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper.job-description a.apply:hover, section#entries .events-wrapper a.ical-bottom:hover {
+  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper ul.job-openings li a:hover, div#jobs-wrapper.job-description a.apply:hover, section#entries .events-wrapper a.ical-bottom:hover {
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -ms-box-shadow: inset 0 1px 0 #ee6c74;
@@ -727,7 +727,7 @@ ol ol, ol ul, ul ul, ul ol {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a; }
-  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#jobs-wrapper.job-description a.apply:active, section#entries .events-wrapper a.ical-bottom:active {
+  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#jobs-wrapper ul.job-openings li a:active, div#jobs-wrapper.job-description a.apply:active, section#entries .events-wrapper a.ical-bottom:active {
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
     -ms-box-shadow: inset 0 -1px 3px #680c12;
@@ -1871,10 +1871,10 @@ div#jobs-wrapper {
   padding-top: 48px; }
   div#jobs-wrapper ul.job-openings {
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
     text-align: center; }
     div#jobs-wrapper ul.job-openings li {
-      margin: 5px 0 5px 5.025%;
+      margin: 5px 0 5px 7.538%;
       display: -moz-inline-box;
       -moz-box-orient: vertical;
       display: inline-block;
@@ -1882,8 +1882,10 @@ div#jobs-wrapper {
       zoom: 1;
       *display: inline;
       *vertical-align: auto; }
+      div#jobs-wrapper ul.job-openings li:first-child {
+        margin-left: 0; }
       div#jobs-wrapper ul.job-openings li a {
-        font: bold 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+        padding: 12px 36px; }
   div#jobs-wrapper section#jobs-about {
     padding: 0;
     /*top padding makes up for 5px border and 10px margin*/ }
