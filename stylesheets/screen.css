@@ -1960,10 +1960,18 @@ section#entries article {
   border-bottom: 5px solid #ad141e;
   margin: 0px auto 48px auto;
   width: 65.829%; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#entries article {
+      width: 100%; } }
 section#entries > ul {
+  border-top: 5px solid #ad141e;
   list-style: none;
   margin: 0 auto;
+  padding-top: 48px;
   width: 65.829%; }
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    section#entries > ul {
+      width: 100%; } }
   section#entries > ul > li {
     border-bottom: 3px solid #DDD;
     float: left;
