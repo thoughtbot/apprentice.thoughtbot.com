@@ -177,17 +177,17 @@ hr.space {
   visibility: hidden; }
 
 /* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
-.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, #design-portfolio:before, section#entries:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, header#main-header:before, header#main-header nav#main-nav:before, header#main-header nav#main-nav ul:before, footer#main-footer:before, footer#main-footer nav:before, footer#main-footer nav section#current-workshops-footer:before, footer#main-footer nav section#blog-footer:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section#products ul:before, #get-started a:before, section.open-source ul:before, section#events ul:before, div#contact-content section#contact-info section.contact-address:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper section#current-openings ul:before, section#entries .events-wrapper > ul:before, section#entries .events-wrapper > ul > li:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, section#entries:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, div#contact-content section#contact-info section.contact-address:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after, section#entries .events-wrapper > ul:after, section#entries .events-wrapper > ul > li:after {
+.clearfix:before, .primary:before, div#contact-content:before, section#people:before, div#jobs-wrapper:before, #design-portfolio:before, section#entries:before, .secondary:before, #portfolio-slider div:before, section#events:before, form.wufoo ul li.name:before, header#main-header:before, header#main-header nav#main-nav:before, header#main-header nav#main-nav ul:before, footer#main-footer:before, footer#main-footer nav:before, footer#main-footer nav section#current-workshops-footer:before, footer#main-footer nav section#blog-footer:before, section#portfolio:before, section#portfolio ul:before, section#services:before, section#services section#clients ul:before, section#workshops:before, section#workshops section#current-workshops ul:before, section#products ul:before, #get-started a:before, section.open-source ul:before, section#events ul:before, div#contact-content section#contact-info section.contact-address:before, section#people ul:before, section#people ul li:before, div#jobs-wrapper ul.job-openings:before, div.more-about-us-wrapper section#more-about-us:before, section#entries .events-wrapper > ul:before, section#entries .events-wrapper > ul > li:before, .clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, section#entries:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, div#contact-content section#contact-info section.contact-address:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper ul.job-openings:after, div.more-about-us-wrapper section#more-about-us:after, section#entries .events-wrapper > ul:after, section#entries .events-wrapper > ul > li:after {
   content: "\0020";
   display: block;
   height: 0;
   visibility: hidden; }
 
-.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, section#entries:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, div#contact-content section#contact-info section.contact-address:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper section#current-openings ul:after, section#entries .events-wrapper > ul:after, section#entries .events-wrapper > ul > li:after {
+.clearfix:after, .primary:after, div#contact-content:after, section#people:after, div#jobs-wrapper:after, #design-portfolio:after, section#entries:after, .secondary:after, #portfolio-slider div:after, section#events:after, form.wufoo ul li.name:after, header#main-header:after, header#main-header nav#main-nav:after, header#main-header nav#main-nav ul:after, footer#main-footer:after, footer#main-footer nav:after, footer#main-footer nav section#current-workshops-footer:after, footer#main-footer nav section#blog-footer:after, section#portfolio:after, section#portfolio ul:after, section#services:after, section#services section#clients ul:after, section#workshops:after, section#workshops section#current-workshops ul:after, section#products ul:after, #get-started a:after, section.open-source ul:after, section#events ul:after, div#contact-content section#contact-info section.contact-address:after, section#people ul:after, section#people ul li:after, div#jobs-wrapper ul.job-openings:after, div.more-about-us-wrapper section#more-about-us:after, section#entries .events-wrapper > ul:after, section#entries .events-wrapper > ul > li:after {
   clear: both; }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, header#main-header, header#main-header nav#main-nav, header#main-header nav#main-nav ul, footer#main-footer, footer#main-footer nav, footer#main-footer nav section#current-workshops-footer, footer#main-footer nav section#blog-footer, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, section#workshops, section#workshops section#current-workshops ul, section#products ul, #get-started a, section.open-source ul, section#events ul, div#contact-content section#contact-info section.contact-address, section#people ul, section#people ul li, div#jobs-wrapper section#current-openings ul, section#entries .events-wrapper > ul, section#entries .events-wrapper > ul > li {
+.clearfix, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, form.wufoo ul li.name, header#main-header, header#main-header nav#main-nav, header#main-header nav#main-nav ul, footer#main-footer, footer#main-footer nav, footer#main-footer nav section#current-workshops-footer, footer#main-footer nav section#blog-footer, section#portfolio, section#portfolio ul, section#services, section#services section#clients ul, section#workshops, section#workshops section#current-workshops ul, section#products ul, #get-started a, section.open-source ul, section#events ul, div#contact-content section#contact-info section.contact-address, section#people ul, section#people ul li, div#jobs-wrapper ul.job-openings, div.more-about-us-wrapper section#more-about-us, section#entries .events-wrapper > ul, section#entries .events-wrapper > ul > li {
   zoom: 1; }
 
 .ie7 img {
@@ -666,19 +666,19 @@ ol ol, ol ul, ul ul, ul ol {
 .nivo-controlNav a.active {
   font-weight: bold; }
 
-.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
+.wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer, div.more-about-us-wrapper section#more-about-us {
   margin: 0 auto;
   text-align: left;
   width: 100%; }
   @media screen and (min-width: 751px) {
-    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
+    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer, div.more-about-us-wrapper section#more-about-us {
       max-width: 1122px;
       min-width: 720px; } }
   @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer {
+    .wrapper, .primary, div#contact-content, section#people, div#jobs-wrapper, #design-portfolio, section#entries, .secondary, #portfolio-slider div, section#events, header#main-header, footer#main-footer, div.more-about-us-wrapper section#more-about-us {
       max-width: 420px; } }
 
-.button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper.job-description section#apply-to-thoughtbot a, section#entries .events-wrapper a.ical-bottom {
+.button, form.wufoo ul li input#saveForm, #get-started a, div#jobs-wrapper.job-description a.apply, section#entries .events-wrapper a.ical-bottom {
   -webkit-font-smoothing: antialiased;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -718,7 +718,7 @@ ol ol, ol ul, ul ul, ul ol {
   line-height: 24px;
   padding: 36px;
   text-shadow: 0 -1px 0 #7f0f16; }
-  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:hover, section#entries .events-wrapper a.ical-bottom:hover {
+  .button:hover, form.wufoo ul li input#saveForm:hover, #get-started a:hover, div#jobs-wrapper.job-description a.apply:hover, section#entries .events-wrapper a.ical-bottom:hover {
     -webkit-box-shadow: inset 0 1px 0 #ee6c74;
     -moz-box-shadow: inset 0 1px 0 #ee6c74;
     -ms-box-shadow: inset 0 1px 0 #ee6c74;
@@ -727,7 +727,7 @@ ol ol, ol ul, ul ul, ul ol {
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a; }
-  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#jobs-wrapper.job-description section#apply-to-thoughtbot a:active, section#entries .events-wrapper a.ical-bottom:active {
+  .button:active, form.wufoo ul li input#saveForm:active, #get-started a:active, div#jobs-wrapper.job-description a.apply:active, section#entries .events-wrapper a.ical-bottom:active {
     -webkit-box-shadow: inset 0 -1px 3px #680c12;
     -moz-box-shadow: inset 0 -1px 3px #680c12;
     -ms-box-shadow: inset 0 -1px 3px #680c12;
@@ -739,7 +739,7 @@ ol ol, ol ul, ul ul, ul ol {
 .row-end, footer#main-footer nav section#blog-footer, section#portfolio ul li#iora, section#portfolio ul li#umbrellatoday, section#products ul li#copycopter, section.open-source ul li.end-row, section.open-source ul li.highlighted.factory-girl {
   margin-right: 0; }
 
-.secondary-wrapper, #portfolio-slider {
+.secondary-wrapper, #portfolio-slider, div.more-about-us-wrapper {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
@@ -1867,36 +1867,100 @@ section#people ul {
         float: none;
         width: 100%; } }
 
-div#jobs-wrapper section#current-openings {
-  float: left;
-  margin-right: 2.513%;
-  padding: 0;
-  /*top padding makes up for 5px border and 10px margin*/
-  width: 31.658%;
-  /*4 units minus left and right padding*/ }
-  div#jobs-wrapper section#current-openings ul {
-    border-top: 5px solid #ad141e;
-    padding-top: 24px;
+div#jobs-wrapper {
+  padding-top: 48px; }
+  div#jobs-wrapper ul.job-openings {
     list-style: none;
-    margin-bottom: 40px; }
-    div#jobs-wrapper section#current-openings ul li {
-      margin: 5px 0; }
-      div#jobs-wrapper section#current-openings ul li a {
-        font: 500 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    div#jobs-wrapper section#current-openings {
-      float: none;
-      width: auto; } }
-div#jobs-wrapper section#more-about-us {
+    margin-bottom: 40px;
+    text-align: center; }
+    div#jobs-wrapper ul.job-openings li {
+      margin: 5px 0 5px 5.025%;
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto; }
+      div#jobs-wrapper ul.job-openings li a {
+        font: bold 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+  div#jobs-wrapper section#jobs-about {
+    padding: 0;
+    /*top padding makes up for 5px border and 10px margin*/ }
+    div#jobs-wrapper section#jobs-about section.about-thoughtbot {
+      float: left;
+      width: 65.829%;
+      margin-right: 2.513%; }
+      div#jobs-wrapper section#jobs-about section.about-thoughtbot p.intro {
+        font: 300 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+        line-height: 36px;
+        margin-bottom: 48px; }
+      div#jobs-wrapper section#jobs-about section.about-thoughtbot div {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 3.817%;
+        -moz-column-gap: 3.817%;
+        column-gap: 3.817%; }
+    div#jobs-wrapper section#jobs-about section.client-jobs {
+      float: left;
+      width: 31.658%;
+      border-top: 5px solid #000;
+      margin-top: 19px;
+      padding-top: 24px; }
+      div#jobs-wrapper section#jobs-about section.client-jobs h3 {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 24px; }
+      div#jobs-wrapper section#jobs-about section.client-jobs ul {
+        list-style: none; }
+        div#jobs-wrapper section#jobs-about section.client-jobs ul li a {
+          font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      div#jobs-wrapper section#jobs-about {
+        float: none;
+        width: auto; } }
+
+div.more-about-us-wrapper {
+  margin-top: 48px; }
+  div.more-about-us-wrapper section#more-about-us ul {
+    list-style: none; }
+    div.more-about-us-wrapper section#more-about-us ul li {
+      float: left;
+      width: 31.658%;
+      margin-right: 2.513%; }
+      div.more-about-us-wrapper section#more-about-us ul li:nth-child(3n) {
+        margin-right: 0; }
+      div.more-about-us-wrapper section#more-about-us ul li h4 {
+        margin-bottom: 24px; }
+
+div#jobs-wrapper.job-description a.apply {
+  margin: 0 0 24px;
+  padding: 24px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+  div#jobs-wrapper.job-description a.apply h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0; }
+  div#jobs-wrapper.job-description a.apply p {
+    color: rgba(255, 255, 255, 0.6);
+    font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 0; }
+div#jobs-wrapper.job-description section#position-title {
+  float: left;
+  width: 31.658%;
+  margin-right: 2.513%; }
+  div#jobs-wrapper.job-description section#position-title h2 {
+    margin-bottom: 24px; }
+div#jobs-wrapper.job-description section.position-description {
   float: left;
   width: 65.829%; }
-  div#jobs-wrapper section#more-about-us > ul > li {
-    list-style: none; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    div#jobs-wrapper section#more-about-us {
-      float: none;
-      width: auto; } }
-
 div#jobs-wrapper.job-description section#positions {
   float: left;
   width: 57.286%;
@@ -1907,30 +1971,8 @@ div#jobs-wrapper.job-description section#positions {
     div#jobs-wrapper.job-description section#positions {
       float: none;
       width: auto; } }
-div#jobs-wrapper.job-description section#more-about-us {
-  float: left;
-  width: 40.201%; }
-  div#jobs-wrapper.job-description section#more-about-us > h2, div#jobs-wrapper.job-description section#more-about-us h4 {
-    color: #6f6f6f; }
-  div#jobs-wrapper.job-description section#more-about-us p {
-    color: #8f8f8f; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    div#jobs-wrapper.job-description section#more-about-us {
-      float: none;
-      width: auto; } }
 div#jobs-wrapper.job-description section#apply-to-thoughtbot {
   margin-top: 36px; }
-  div#jobs-wrapper.job-description section#apply-to-thoughtbot a {
-    margin: 24px 0 48px;
-    padding: 36px; }
-    div#jobs-wrapper.job-description section#apply-to-thoughtbot a h3 {
-      color: #fff;
-      font-size: 18px;
-      margin-bottom: 0; }
-    div#jobs-wrapper.job-description section#apply-to-thoughtbot a p {
-      color: rgba(255, 255, 255, 0.6);
-      font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-      margin-bottom: 0; }
 
 div#jobs-wrapper section#job-form h1#logo, div#jobs-wrapper section#job-form #bottom {
   display: none; }
