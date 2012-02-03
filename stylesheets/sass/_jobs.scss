@@ -33,7 +33,7 @@ div#jobs-wrapper {
       margin-right: flex-gutter();
 
       p.intro {
-        font: 300 24px $header;
+        font: 24px $header;
         line-height: lh(1.5);
         margin-bottom: lh(2);
       }
@@ -47,8 +47,8 @@ div#jobs-wrapper {
     section.client-jobs {
       float: left;
       width: flex-grid(4);
-      border-top: 5px solid #000;
-      margin-top: lh() - 5px;
+      border-top: 5px solid #333;
+      margin-top: 8px;
       padding-top: lh();
 
       h3 {

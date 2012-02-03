@@ -1894,7 +1894,7 @@ div#jobs-wrapper {
       width: 65.829%;
       margin-right: 2.513%; }
       div#jobs-wrapper section#jobs-about section.about-thoughtbot p.intro {
-        font: 300 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
+        font: 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
         line-height: 36px;
         margin-bottom: 48px; }
       div#jobs-wrapper section#jobs-about section.about-thoughtbot div {
@@ -1907,8 +1907,8 @@ div#jobs-wrapper {
     div#jobs-wrapper section#jobs-about section.client-jobs {
       float: left;
       width: 31.658%;
-      border-top: 5px solid #000;
-      margin-top: 19px;
+      border-top: 5px solid #333;
+      margin-top: 8px;
       padding-top: 24px; }
       div#jobs-wrapper section#jobs-about section.client-jobs h3 {
         font-weight: bold;
