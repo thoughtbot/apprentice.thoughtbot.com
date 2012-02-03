@@ -2,21 +2,26 @@ section#entries {
   @extend .primary;
   @extend .secondary-header;
 
+  article {
+    border-bottom: 5px solid $red;
+    margin: 0px auto $lh * 2 auto;
+    width: grid-width(8);
+  }
+
   > ul {
     list-style: none;
     @extend .clearfix;
+    margin: 0 auto;
+    width: grid-width(8);
 
     > li {
-      &:last-child {
-        border-bottom: none;
-      }
+      @extend .clearfix;
 
       border-bottom: 3px solid #DDD;
       float: left;
-      margin: 0 $gw-gutter $lh 0; /*line height on the bottom to maintain baseline grid*/
+      margin: 0 0 $lh*1.5 0; /*line height on the bottom to maintain baseline grid*/
       text-align: left;
-      padding-bottom: $lh;
-      width: grid-width(8);
+      padding-bottom: $lh*1.5;
 
       h2 {
         font: 700 24px $header;
@@ -27,7 +32,7 @@ section#entries {
       h3 {
         color: #aaa;
         font: italic 14px $body;
-        line-height: $lh/2;
+        line-height: $lh;
         margin-bottom: $lh/2; 
 
         a {
@@ -37,19 +42,29 @@ section#entries {
       }
 
       div p {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin: 0px;
+        }
+
       }
 
       ul {
-        margin: 12px 0;
+        margin: 20px 0 $lh 0;
         list-style: none;
 
         li {
+          background: rgba(228,228,228, 0.7);
           float: left;
+          padding: 10px 0px 10px 10px;
+
+          &:last-child {
+            padding: 10px;
+          }
 
           img {
             width: 48px;
-            margin-right: 12px;
           }
         }
       }
