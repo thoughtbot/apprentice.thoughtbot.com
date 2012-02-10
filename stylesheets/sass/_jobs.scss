@@ -67,8 +67,15 @@ div#jobs-wrapper {
     }
 
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-      float: none;
-      width: auto;
+      section.about-thoughtbot, section.client-jobs {
+        float: none;
+        width: 100%;
+        margin: 0;
+
+        div {
+          @include column-count(1);
+        }
+      }
     }
   }
 }
@@ -89,6 +96,11 @@ div.more-about-us-wrapper {
         width: flex-grid(4);
         margin-right: flex-gutter();
 
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
         &:nth-child(3n) {
           margin-right: 0;
         }

@@ -1919,9 +1919,14 @@ div#jobs-wrapper {
         div#jobs-wrapper section#jobs-about section.client-jobs ul li a {
           font: 16px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif; }
     @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-      div#jobs-wrapper section#jobs-about {
+      div#jobs-wrapper section#jobs-about section.about-thoughtbot, div#jobs-wrapper section#jobs-about section.client-jobs {
         float: none;
-        width: auto; } }
+        width: 100%;
+        margin: 0; }
+        div#jobs-wrapper section#jobs-about section.about-thoughtbot div, div#jobs-wrapper section#jobs-about section.client-jobs div {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1; } }
 
 div.more-about-us-wrapper {
   margin-top: 48px; }
@@ -1931,6 +1936,11 @@ div.more-about-us-wrapper {
       float: left;
       width: 31.658%;
       margin-right: 2.513%; }
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        div.more-about-us-wrapper section#more-about-us ul li {
+          width: 100%;
+          margin-right: 0;
+          float: none; } }
       div.more-about-us-wrapper section#more-about-us ul li:nth-child(3n) {
         margin-right: 0; }
       div.more-about-us-wrapper section#more-about-us ul li h4 {
