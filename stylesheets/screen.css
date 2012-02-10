@@ -1973,6 +1973,11 @@ div#jobs-wrapper.job-description section#position-title {
 div#jobs-wrapper.job-description section.position-description {
   float: left;
   width: 65.829%; }
+@media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  div#jobs-wrapper.job-description section#position-title, div#jobs-wrapper.job-description section.position-description {
+    float: none;
+    width: 100%;
+    margin-right: 0; } }
 div#jobs-wrapper.job-description section#positions {
   float: left;
   width: 57.286%;
