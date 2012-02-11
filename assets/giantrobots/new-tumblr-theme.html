@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{block:PostSummary}{PostSummary}{/block:PostSummary}</title>
+    <title>{block:PostSummary}{PostSummary}{/block:PostSummary}{block:IndexPage}{Title}{/block:IndexPage}</title>
     <!-- HOW TO UPDATE TUMBLR THEME: Please update this markup in source control, and then copy/paste into tumblr.  Do not edit directly in tumblr. -->
     {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
     <meta name="keywords" content="{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}" />
