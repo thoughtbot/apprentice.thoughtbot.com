@@ -14,6 +14,6 @@ Files will be auto-regenerated.  You can run:
 
 CSS files are generated using SASS. Run:
 
-  $ sass --watch stylesheets/sass:stylesheets/ -r ./stylesheets/sass/bourbon/lib/bourbon.rb
+  $ sass --watch stylesheets/sass:stylesheets/ --style compressed -r ./stylesheets/sass/bourbon/lib/bourbon.rb
 
 So that the css files will be generated automatically.
