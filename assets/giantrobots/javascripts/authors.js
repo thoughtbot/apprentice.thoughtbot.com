@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
   authors = {
     asimeoni: 'Angelo Simeoni',
+    apandit: 'Adarsh Pandit',
     codeulate: 'Ben Orenstein',
     cpytel: 'Chad Pytel',
     dancroak: 'Dan Croak',
