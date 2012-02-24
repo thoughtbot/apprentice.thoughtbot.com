@@ -108,6 +108,27 @@ describe MocksController do
 end
 </code></pre>
 
+<p>The following is a random diff example to make sure it highlights correctly.</p>
+
+<pre><code class="diff">
+--- a/app/models/account.rb
++++ b/app/models/account.rb
+@@ -77,7 +77,13 @@ class Account < ActiveRecord::Base
+   delegate :checking?, :to => :account_type, :allow_nil => true
+ 
+   def can_compute_performance?(start_date, end_date)
+-    !checking? && (balances.count(:select => 'distinct period', :conditions => { :period => (start_date..end_date)}) > 1)
++    has_at_least_one_period = balances.count(
++      :select => 'distinct period',
++      :conditions => {:period => (start_date..end_date)}
++    ) > 1
++    is_not_checking = !checking?
++
++    is_not_checking && has_at_least_one_period
+   end
+ 
+   def as_json(options = {})
+</code></pre>
             <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
 
 
