@@ -545,7 +545,7 @@ footer {
     nav {
       float: left;
       margin-right: $gutter;
-      width: grid-width(4);
+      width: grid-width(6);
 
       ul {
         float: left;
@@ -575,12 +575,19 @@ footer {
     section#products {
       @extend .clearfix;
       float: left;
-      width: grid-width(8);
+      width: grid-width(6);
 
       section.product {
         float: left;
         margin-right: $gutter;
         width: grid-width(2);
+
+        h6 {
+          a {
+            color: #333;
+            text-decoration: none;
+          }
+        }
 
         a.logo {
           background: #e9e9e9;
@@ -598,29 +605,31 @@ footer {
           }
         }
 
-        &#hoptoad a.logo {
+        &#airbrake a.logo {
           padding: 18px 0 14px 0;
         }
 
-        &#copycopter a.logo {
-          padding: 25px 0 5px 0;
-
-          img {
-            width: 110px;
-          }
-        }
-
-        &#trajectory a.logo {
-          height: 90px;
-          padding: 40px 0 0px 0;
-
-          img {
-            width: 110px;
-          }
-        }
-
-        &#radish {
+        &#copycopter {
           margin-right: 0;
+
+          a.logo {
+            padding: 25px 0 5px 0;
+
+            img {
+              width: 110px;
+            }
+          }
+        }
+
+        &#trajectory {
+          a.logo {
+            height: 90px;
+            padding: 40px 0 0px 0;
+
+            img {
+              width: 110px;
+            }
+          }
         }
       }
     }
