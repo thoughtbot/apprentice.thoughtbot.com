@@ -9,6 +9,7 @@ jQuery(document).ready(function() {
     emill: 'Eric Mill',
     fyates: 'Fred Yates',
     gabebw: 'Gabe Berke-Williams',
+    g3niu5: 'Paul Webb',
     hgimenez: 'Harold Giménez',
     hyperbuddha: 'Alex Godin',
     kevin: 'Kevin Burg',
