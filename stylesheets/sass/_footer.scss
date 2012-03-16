@@ -44,11 +44,6 @@ footer#main-footer {
             float: left;
             display: block;
             margin-right: flex-gutter(4);
-            width: flex-grid(2, 4);
-
-            &:nth-child(2n) {
-              margin-right: 0;
-            }
           }
         }
       }

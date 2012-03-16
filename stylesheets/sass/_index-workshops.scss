@@ -1,8 +1,5 @@
 section#workshops {
   @extend .clearfix;
-  background: url('/images/shadowing-lite.png') center top no-repeat;
-  border-top: 1px solid #DCDCDC;
-  padding-top: (lh(3)- 1); /*line-height x 3 minus 1px for the border*/
 
   h2 {
     text-shadow:  0 1px 0 #fcfcfc;
