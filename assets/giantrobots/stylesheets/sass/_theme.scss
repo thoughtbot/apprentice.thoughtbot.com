@@ -241,16 +241,16 @@ section#container {
         }
       }
 
-      h2, h3 {
+      h2 {
         color: #111;
         font: 700 14px/21px $sans-serif;
         margin: 20px 0 0px 0;
         text-transform: uppercase;
       }
 
-      h4 {
+      h3, h4 {
         color: #333;
-        font: 700 15px/24px $sans-serif;
+        font: 400 16px/26px $serif;
         margin: 20px 0 0px 0;
       }
 
