@@ -5,6 +5,7 @@ jQuery(document).ready(function() {
     codeulate: 'Ben Orenstein',
     cpytel: 'Chad Pytel',
     dancroak: 'Dan Croak',
+    drapergeek: 'Jason Draper',
     elindsay: 'Emma Lindsay',
     emill: 'Eric Mill',
     fyates: 'Fred Yates',
