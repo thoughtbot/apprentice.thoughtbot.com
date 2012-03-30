@@ -37,7 +37,8 @@ jQuery(document).ready(function() {
     thoughtbotmr: 'Micah Rich',
     tristandunn: 'Tristan Dunn',
     tsaleh: 'Tammer Saleh',
-    ubuwaits: 'Chad Mazzola'
+    ubuwaits: 'Chad Mazzola',
+    highwaybobbery: 'Alex Berry'
   };
 
   $(".author").each(function(index) {
