@@ -41,6 +41,7 @@ div#jobs-wrapper {
       div {
         @include column-count(2);
         @include column-gap(flex-gutter(8));
+        height: 100px;
       }
     }
 
