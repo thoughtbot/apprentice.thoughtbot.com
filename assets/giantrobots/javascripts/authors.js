@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
     plapier: 'Phil LaPier',
     possibilist: 'Floyd Wright',
     qrush: 'Nick Quaranto',
-    saucecodestoo: 'Seana Quental',
+    theladysauce: 'Seana Quental',
     sikachu: 'Prem Sichanugrist',
     stevehickeydesign: 'Steve Hickey',
     theinterstellarmedium: 'Galen Frechette',
