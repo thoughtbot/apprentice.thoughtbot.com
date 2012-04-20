@@ -38,7 +38,9 @@ jQuery(document).ready(function() {
     tristandunn: 'Tristan Dunn',
     tsaleh: 'Tammer Saleh',
     ubuwaits: 'Chad Mazzola',
-    highwaybobbery: 'Alex Berry'
+    highwaybobbery: 'Alex Berry',
+    jayroh: 'Joel Oliveira',
+    hrward: 'Harlow Ward'
   };
 
   $(".author").each(function(index) {
