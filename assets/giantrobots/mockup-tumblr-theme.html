@@ -484,10 +484,11 @@ end
       </section>
 
       <aside>
-        <section id="addled" class="message" style="display:none;">
-          <a href="#">
-            <span class="addled-name"></span>
-            <span class="addled-creative"></span>
+        <section id="promo" class="message">
+          <a href="http://workshops.thoughtbot.com/?utm_source=robots.thoughtbot.com">
+            <img src="http://thoughtbot.com/assets/giantrobots/images/sidebar-workshops.png" alt="workshops" width='35px'>
+            <span class="promo-name">Screencasts, e-books, &</span>
+            <span class="promo-creative">Workshops</span>
           </a>
         </section>
       </aside>
@@ -588,24 +589,6 @@ end
         }
       });
     });
-    </script>
-
-    <script type="text/javascript">
-      (function() {
-        $(function() {
-          var commaKeywords, keywords;
-          keywords = encodeURIComponent($("meta[name='keywords']").attr("content"));
-          commaKeywords = keywords ? keywords.split(',') : "";
-          return $.getJSON("http://ads.thoughtbot.com/ad?keywords=" + commaKeywords, function(data) {
-            $('#addled a').attr("href", "http://ads.thoughtbot.com" + data.url + "?utm_source=robots.thoughtbot.com");
-            $('#addled a').prepend("<img src='" + data.image + "' alt='" + data.name + "' width='35px'>");
-            $('.addled-name').html(data.name);
-            return $('.addled-creative').html(data.creative);
-          }).done(function() {
-            return $('#addled').fadeIn('slow');
-          });
-        });
-      }).call(this);
     </script>
   </body>
 </html>
