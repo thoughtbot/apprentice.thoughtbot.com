@@ -35,7 +35,38 @@ div#jobs-wrapper {
       p.intro {
         font: 24px $header;
         line-height: lh(1.5);
-        margin-bottom: lh(2);
+        margin-bottom: lh();
+      }
+
+      section.video {
+        width: 100%;
+        background: #000;
+        text-align: center;
+        max-height: 360px;
+        overflow: hidden;
+        margin-bottom: lh();
+
+        div.video-wrapper {
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          overflow: hidden;
+          max-width: 640px;
+          margin: 0 auto;
+
+          iframe,
+          object,
+          embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 640px;
+            max-height: 360px;
+          }
+        }
       }
 
       div {
