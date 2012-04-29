@@ -66,19 +66,19 @@ div#jobs-wrapper {
       padding-top: lh();
 
       section.benifits {
-      h3 {
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: lh();
-      }
-
-      ul {
-        list-style: none;
-
-        li a {
-          font: 16px $header;
+        h3 {
+          font-weight: bold;
+          font-size: 18px;
+          margin-bottom: lh();
         }
-      }
+
+        ul {
+          list-style: none;
+
+          li a {
+            font: 16px $header;
+          }
+        }
       }
     }
 
@@ -87,6 +87,7 @@ div#jobs-wrapper {
         float: none;
         width: 100%;
         margin: 0;
+        border-top: 0;
 
         div {
           @include column-count(1);
