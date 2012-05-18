@@ -40,7 +40,8 @@ jQuery(document).ready(function() {
     ubuwaits: 'Chad Mazzola',
     highwaybobbery: 'Alex Berry',
     jayroh: 'Joel Oliveira',
-    hrward: 'Harlow Ward'
+    hrward: 'Harlow Ward',
+    kaishinlab: 'Reda Lemeden'
   };
 
   $(".author").each(function(index) {
