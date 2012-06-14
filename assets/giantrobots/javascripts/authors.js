@@ -42,8 +42,9 @@ jQuery(document).ready(function() {
     jayroh: 'Joel Oliveira',
     hrward: 'Harlow Ward',
     kaishinlab: 'Reda Lemeden',
-    edwardloveall 'Edward Loveall',
-    benwhitla, 'Ben Whitla'
+    edwardloveall: 'Edward Loveall',
+    benwhitla: 'Ben Whitla',
+    joshsteiner: 'Josh Steiner'
   };
 
   $(".author").each(function(index) {
