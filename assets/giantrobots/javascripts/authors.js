@@ -41,7 +41,9 @@ jQuery(document).ready(function() {
     highwaybobbery: 'Alex Berry',
     jayroh: 'Joel Oliveira',
     hrward: 'Harlow Ward',
-    kaishinlab: 'Reda Lemeden'
+    kaishinlab: 'Reda Lemeden',
+    edwardloveall 'Edward Loveall',
+    benwhitla, 'Ben Whitla'
   };
 
   $(".author").each(function(index) {
