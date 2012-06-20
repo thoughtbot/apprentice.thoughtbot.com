@@ -30,6 +30,7 @@ jQuery(document).ready(function() {
     sikachu: 'Prem Sichanugrist',
     stevehickeydesign: 'Steve Hickey',
     theinterstellarmedium: 'Galen Frechette',
+    theinterstellarmedium2: 'Galen Frechette',
     thoughtbotet: 'Eric Torrey',
     thoughtbotjc: 'Jared Carroll',
     thoughtbotjm: 'Jason Martinez',
