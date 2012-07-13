@@ -9,7 +9,7 @@ body {
   text-align: center;
   padding: 0 20px;
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
     -webkit-text-size-adjust: none;
   }
 }
@@ -112,7 +112,7 @@ img {
   background: url('/images/shadowing.png') center top no-repeat;
   padding-top: lh(3);
   text-align: center;
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
       @include background-size(contain);
 
     }
@@ -120,7 +120,7 @@ img {
   h1 {
     line-height: lh(3);
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
       font-size: 32px;
       font-weight: 600;
       line-height: lh(2);

@@ -11,7 +11,7 @@
       float: left;
       margin-bottom: 0;
 
-      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
         margin-bottom: lh();
         float: none;
       }

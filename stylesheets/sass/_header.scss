@@ -22,7 +22,7 @@ header#main-header {
         width: 242px;
         text-indent: -9999px;
 
-        @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+        @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
           background-position: center center;
           display: block;
           width: auto;
@@ -40,7 +40,7 @@ header#main-header {
       margin-top: 72px;
       @extend .clearfix;
 
-      @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+      @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
         border-top: 1px solid #dcdcdc;
         margin: 0;
         padding-top: lh();
@@ -55,8 +55,8 @@ header#main-header {
           float: left;
         }
 
-        @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-          width: flex-grid(6);
+        @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+          width: flex-grid(8);
           float: left;
         }
 
@@ -68,7 +68,7 @@ header#main-header {
           line-height: lh();
           margin: 0 lh();
 
-          @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+          @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
             padding: lh(.5);
           }
 

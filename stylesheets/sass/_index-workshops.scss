@@ -49,7 +49,7 @@ section#workshops {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
     section#about-workshops {
       float: none;
       width: auto;
