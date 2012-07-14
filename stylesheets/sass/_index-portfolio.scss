@@ -145,7 +145,7 @@ section#portfolio {
       &:hover {
         border-color: #999;
         @include transform(scale(1.01));
-        @include box-shadow(0 0 3px #999);
+        @include box-shadow(0 0 5px #e3e3e3);
       }
 
       a {
@@ -155,50 +155,43 @@ section#portfolio {
         @include background-size(cover);
       }
 
-      // &:nth-child(4n) {
-      //   @extend .row-end;
-      // }
-
-      &#pozit a {
-        background: url('/images/portfolio/thumb/pozit.png') center center no-repeat;
+      &#vpp a {
+        background: url('/images/portfolio/thumb/vpp.jpg') center center no-repeat;
       }
 
       &#gulfcoast a {
-        background: url('/images/portfolio/thumb/gulfcoast.png') center center no-repeat;
+        background: url('/images/portfolio/thumb/gulfcoast.jpg') center center no-repeat;
       }
 
-      &#coupondudes a {
-        background: url('/images/portfolio/thumb/coupondudes.png') center center no-repeat;
+      &#awesome a {
+        background: url('/images/portfolio/thumb/awesome.jpg') center center no-repeat;
       }
 
-      &#gnite a {
-        background: url('/images/portfolio/thumb/gnite.png') center center no-repeat;
+      &#owneraide a {
+        background: url('/images/portfolio/thumb/owneraide.jpg') center center no-repeat;
       }
 
       &#iora {
         @extend .row-end;
-
         a {
-          background: url('/images/portfolio/thumb/iora.png') center center no-repeat;
+          background: url('/images/portfolio/thumb/iora.jpg') center center no-repeat;
         }
       }
 
       &#stattleship {
-
         a {
-          background: url('/images/portfolio/thumb/stattleship.png') center center no-repeat;
+          background: url('/images/portfolio/thumb/stattleship.jpg') center center no-repeat;
         }
       }
 
       &#tastedmenu a {
-        background: url('/images/portfolio/thumb/tastedmenu.png') center center no-repeat;
+        background: url('/images/portfolio/thumb/tastedmenu.jpg') center center no-repeat;
       }
 
       &#umbrellatoday {
         @extend .row-end;
-
         a {
-          background: url('/images/portfolio/thumb/umbrellatoday.png') center center no-repeat;
+          background: url('/images/portfolio/thumb/umbrellatoday.jpg') center center no-repeat;
         }
       }
     }
