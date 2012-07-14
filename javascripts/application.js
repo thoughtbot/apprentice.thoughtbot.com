@@ -8,13 +8,13 @@ $(document).ready(function() {
   $('#portfolio').localScroll();
 
   var images = {
+    "owneraide": 4,
+    "awesome": 3,
+    "vpp": 3,
     "iora": 3,
     "tastedmenu": 3,
     "stattleship": 3,
     "gulfcoast": 3,
-    "pozit": 3,
-    "coupondudes": 4,
-    "gnite": 2,
     "umbrellatoday": 2,
   };
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
       list.empty();
 
       for(var i = 1; i <= images[divname]; i++) {
-        list.append("<li><img src='/images/portfolio/large/" + divname + "-" + i + ".png' /></li>");
+        list.append("<li><img src='/images/portfolio/large/" + divname + "-" + i + ".jpg' /></li>");
       }
 
       list.nivoSlider({
