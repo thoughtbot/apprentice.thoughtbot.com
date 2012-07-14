@@ -7,6 +7,9 @@ header#main-header {
     border-bottom: 1px solid #DCDCDC;
     padding-bottom: lh();
 
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+      padding-bottom: 0;
+    }
 
     h1 {
       margin: 42px 0 24px;
@@ -43,7 +46,7 @@ header#main-header {
       @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
         border-top: 1px solid #dcdcdc;
         margin: 0;
-        padding-top: lh();
+        padding: lh(.5) 0;
       }
 
       @media screen and (min-width: 751px) {
@@ -52,11 +55,6 @@ header#main-header {
 
       li {
         @media screen and (min-width: 751px) {
-          float: left;
-        }
-
-        @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
-          width: flex-grid(8);
           float: left;
         }
 
