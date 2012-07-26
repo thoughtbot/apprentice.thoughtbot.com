@@ -146,6 +146,11 @@ nav {
   }
 }
 
+ul, ol {
+  list-style: none;
+  list-style-image: none;
+}
+
 // Removes border when inside 'a' element in IE8/9, FF3
 img {
   border: 0;

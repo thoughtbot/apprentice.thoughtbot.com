@@ -163,7 +163,6 @@
       width: 740px; }
       /* line 159, sass/_760-up.scss */
       section#container section#posts .post {
-        border-bottom: 3px solid #dddddd;
         margin: 0 0 60px 0;
         padding: 0 0 20px 170px;
         position: relative;
@@ -171,29 +170,31 @@
         /*photo and video posts */
         /* link posts */
         /* quote posts */ }
-        /* line 165, sass/_760-up.scss */
+        /* line 164, sass/_760-up.scss */
         section#container section#posts .post .meta-info {
           left: 10px;
+          text-align: left;
           position: absolute;
           top: 18px;
           width: 145px; }
           /* line 171, sass/_760-up.scss */
           section#container section#posts .post .meta-info p.post-date {
             font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-            margin: 0 0 44px 0; }
-            /* line 175, sass/_760-up.scss */
-            section#container section#posts .post .meta-info p.post-date a {
-              color: #333;
-              font-weight: 400; }
-          /* line 181, sass/_760-up.scss */
+            border-bottom: none;
+            margin: 0 0 44px 0;
+            padding: 0;
+            width: 100%; }
+          /* line 179, sass/_760-up.scss */
           section#container section#posts .post .meta-info p.tagged {
+            display: block;
             font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
             margin: 0 0 10px 0;
             text-transform: uppercase; }
-          /* line 187, sass/_760-up.scss */
+          /* line 186, sass/_760-up.scss */
           section#container section#posts .post .meta-info ul.tags {
             color: #777;
-            margin: 0 0 36px 0; }
+            margin: 0 0 36px 0;
+            display: block; }
             /* line 191, sass/_760-up.scss */
             section#container section#posts .post .meta-info ul.tags li {
               font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
@@ -275,80 +276,80 @@
             margin: 0 0 4px 0;
             position: relative; }
         /* line 288, sass/_760-up.scss */
-        section#container section#posts .post img {
-          max-width: 570px;
-          margin-bottom: 10px; }
-        /* line 293, sass/_760-up.scss */
         section#container section#posts .post a {
           color: #ad141e;
           font-weight: 700;
           text-decoration: none; }
-          /* line 298, sass/_760-up.scss */
+          /* line 293, sass/_760-up.scss */
           section#container section#posts .post a:hover {
             text-decoration: underline; }
-        /* line 303, sass/_760-up.scss */
+        /* line 298, sass/_760-up.scss */
         section#container section#posts .post em {
           font-style: italic; }
-        /* line 307, sass/_760-up.scss */
+        /* line 302, sass/_760-up.scss */
         section#container section#posts .post strong {
           font-weight: 700; }
-        /* line 311, sass/_760-up.scss */
+        /* line 306, sass/_760-up.scss */
         section#container section#posts .post table {
           font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           margin-bottom: 12px;
           width: 570px; }
-          /* line 316, sass/_760-up.scss */
+          /* line 311, sass/_760-up.scss */
           section#container section#posts .post table tr {
             border-bottom: 1px solid #ddd; }
-          /* line 321, sass/_760-up.scss */
+          /* line 316, sass/_760-up.scss */
           section#container section#posts .post table td,
           section#container section#posts .post table th {
             padding: 4px;
             width: 50%; }
-          /* line 326, sass/_760-up.scss */
+          /* line 321, sass/_760-up.scss */
           section#container section#posts .post table th {
             font-weight: 700;
             text-align: left; }
-        /* line 332, sass/_760-up.scss */
+        /* line 327, sass/_760-up.scss */
         section#container section#posts .post dl {
           font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           margin: 10px 0 20px; }
-          /* line 339, sass/_760-up.scss */
+          /* line 334, sass/_760-up.scss */
           section#container section#posts .post dl dd {
             margin: 0 0 8px 20px; }
-        /* line 344, sass/_760-up.scss */
+        /* line 339, sass/_760-up.scss */
         section#container section#posts .post section.post-footer {
           margin: 20px 0 0 0; }
-          /* line 347, sass/_760-up.scss */
+          /* line 342, sass/_760-up.scss */
           section#container section#posts .post section.post-footer p.author {
             font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
             left: -12px;
             position: relative; }
-            /* line 353, sass/_760-up.scss */
+            /* line 348, sass/_760-up.scss */
             section#container section#posts .post section.post-footer p.author:before {
               content: "\2014"; }
-        /* line 360, sass/_760-up.scss */
+        /* line 355, sass/_760-up.scss */
         section#container section#posts .post h1.title {
           font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           margin: 0 0 30px 0;
-          text-transform: none; }
-          /* line 365, sass/_760-up.scss */
+          text-transform: none;
+          text-align: left; }
+          /* line 361, sass/_760-up.scss */
           section#container section#posts .post h1.title a {
             color: #111;
             font-weight: 300;
             text-decoration: none; }
-        /* line 375, sass/_760-up.scss */
+        /* line 371, sass/_760-up.scss */
         section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
           top: 0px; }
-        /* line 379, sass/_760-up.scss */
+        /* line 375, sass/_760-up.scss */
         section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
           margin-top: 8px; }
-        /* line 384, sass/_760-up.scss */
+        /* line 380, sass/_760-up.scss */
         section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
           padding-bottom: 0px;
           position: relative;
           top: -30px; }
+        /* line 388, sass/_760-up.scss */
+        section#container section#posts .post iframe, section#container section#posts .post object {
+          min-height: 321px; }
         /* line 394, sass/_760-up.scss */
         section#container section#posts .post.link .meta-info {
           top: 10px; }

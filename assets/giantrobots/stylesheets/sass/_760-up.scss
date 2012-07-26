@@ -157,28 +157,27 @@ section#container {
     width: grid-width(9);
 
     .post {
-      border-bottom: 3px solid #dddddd;
       margin: 0 0 $lh*3 0;
       padding: 0 0 $lh*1 grid-width(2) +  $gutter;
       position: relative;
 
       .meta-info {
         left: 10px;
+        text-align: left;
         position: absolute;
         top: 18px;
         width: grid-width(2);
 
         p.post-date {
           font: 400 14px/14px $serif;
+          border-bottom: none;
           margin: 0 0 44px 0;
-
-          a {
-            color: #333;
-            font-weight: 400;
-          }
+          padding: 0;
+          width: 100%;
         }
 
         p.tagged {
+          display: block;
           font: 600 12px/12px $serif;
           margin: 0 0 10px 0;
           text-transform: uppercase;
@@ -187,6 +186,7 @@ section#container {
         ul.tags {
           color: #777;
           margin: 0 0 36px 0;
+          display: block;
 
           li {
             font: 400 13px/14px $serif;
@@ -285,11 +285,6 @@ section#container {
         }
       }
 
-      img {
-        max-width: grid-width(7);
-        margin-bottom: 10px;
-      }
-
       a {
         color: $red;
         font-weight: 700;
@@ -361,6 +356,7 @@ section#container {
         font: 300 36px/38px $sans-serif;
         margin: 0 0 30px 0;
         text-transform: none;
+        text-align: left;
 
         a {
           color: #111;
@@ -387,6 +383,10 @@ section#container {
             top: -30px;
           }
         }
+      }
+
+      iframe, object {
+        min-height: 321px;
       }
 
       /* link posts */

@@ -122,75 +122,80 @@ nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 150, sass/_reset.scss */
+/* line 149, sass/_reset.scss */
+ul, ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* line 155, sass/_reset.scss */
 img {
   border: 0;
   height: auto;
   max-width: 100%;
   -ms-interpolation-mode: bicubic; }
 
-/* line 158, sass/_reset.scss */
+/* line 163, sass/_reset.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 163, sass/_reset.scss */
+/* line 168, sass/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 169, sass/_reset.scss */
+/* line 174, sass/_reset.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal; }
 
-/* line 175, sass/_reset.scss */
+/* line 180, sass/_reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline; }
 
-/* line 182, sass/_reset.scss */
+/* line 187, sass/_reset.scss */
 button, input {
   line-height: normal; }
 
-/* line 186, sass/_reset.scss */
+/* line 191, sass/_reset.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; }
 
-/* line 192, sass/_reset.scss */
+/* line 197, sass/_reset.scss */
 button[disabled], input[disabled] {
   cursor: default; }
 
-/* line 196, sass/_reset.scss */
+/* line 201, sass/_reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
-/* line 201, sass/_reset.scss */
+/* line 206, sass/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 209, sass/_reset.scss */
+/* line 214, sass/_reset.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
-/* line 215, sass/_reset.scss */
+/* line 220, sass/_reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 220, sass/_reset.scss */
+/* line 225, sass/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 226, sass/_reset.scss */
+/* line 231, sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -212,25 +217,26 @@ pre {
 pre,
 code {
   font: 12px/18px monaco, monospace;
-  white-space: pre; }
-  /* line 18, sass/_code-highlight.scss */
+  white-space: pre;
+  word-wrap: normal; }
+  /* line 19, sass/_code-highlight.scss */
   pre a,
   code a {
     font-weight: 400; }
 
 /* Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net> */
-/* line 24, sass/_code-highlight.scss */
+/* line 25, sass/_code-highlight.scss */
 pre code {
   display: block;
   color: #333; }
 
-/* line 30, sass/_code-highlight.scss */
+/* line 31, sass/_code-highlight.scss */
 pre .subst,
 pre .title {
   font-weight: normal;
   color: #333; }
 
-/* line 38, sass/_code-highlight.scss */
+/* line 39, sass/_code-highlight.scss */
 pre .comment,
 pre .template_comment,
 pre .javadoc,
@@ -238,7 +244,7 @@ pre .diff .header {
   color: #808080;
   font-style: italic; }
 
-/* line 51, sass/_code-highlight.scss */
+/* line 52, sass/_code-highlight.scss */
 pre .annotation,
 pre .decorator,
 pre .preprocessor,
@@ -250,12 +256,12 @@ pre .apache .cbracket,
 pre .input_number {
   color: #808000; }
 
-/* line 56, sass/_code-highlight.scss */
+/* line 57, sass/_code-highlight.scss */
 pre .tag,
 pre .pi {
   background: #efefef; }
 
-/* line 71, sass/_code-highlight.scss */
+/* line 72, sass/_code-highlight.scss */
 pre .tag .title,
 pre .id,
 pre .attr_selector,
@@ -270,7 +276,7 @@ pre .list .title,
 pre .tex .command {
   color: #000080; }
 
-/* line 80, sass/_code-highlight.scss */
+/* line 81, sass/_code-highlight.scss */
 pre .attribute,
 pre .rules .keyword,
 pre .number,
@@ -279,12 +285,12 @@ pre .regexp,
 pre .tex .special {
   color: #0000ff; }
 
-/* line 85, sass/_code-highlight.scss */
+/* line 86, sass/_code-highlight.scss */
 pre .number,
 pre .regexp {
   font-weight: normal; }
 
-/* line 93, sass/_code-highlight.scss */
+/* line 94, sass/_code-highlight.scss */
 pre .string,
 pre .value,
 pre .filter .argument,
@@ -292,7 +298,7 @@ pre .css .function .params,
 pre .apache .tag {
   color: #008000; }
 
-/* line 102, sass/_code-highlight.scss */
+/* line 103, sass/_code-highlight.scss */
 pre .symbol,
 pre .ruby .symbol .string,
 pre .ruby .symbol .keyword,
@@ -301,28 +307,28 @@ pre .char,
 pre .tex .formula {
   color: #dc322f; }
 
-/* line 108, sass/_code-highlight.scss */
+/* line 109, sass/_code-highlight.scss */
 pre .phpdoc,
 pre .yardoctag,
 pre .javadoctag {
   text-decoration: underline; }
 
-/* line 115, sass/_code-highlight.scss */
+/* line 116, sass/_code-highlight.scss */
 pre .variable,
 pre .envvar,
 pre .apache .sqbracket,
 pre .nginx .built_in {
   color: #cb4b16; }
 
-/* line 119, sass/_code-highlight.scss */
+/* line 120, sass/_code-highlight.scss */
 pre .addition {
   background: #baeeba; }
 
-/* line 123, sass/_code-highlight.scss */
+/* line 124, sass/_code-highlight.scss */
 pre .deletion {
   background: #ffc8bd; }
 
-/* line 127, sass/_code-highlight.scss */
+/* line 128, sass/_code-highlight.scss */
 pre .diff .change {
   background: #bccff9; }
 
@@ -395,7 +401,8 @@ section#container {
   section#container header {
     zoom: 1;
     border-bottom: 1px solid #ddd;
-    padding: 0 0 40px 0; }
+    padding: 0 0 40px 0;
+    margin-bottom: 20px; }
     /* line 18, sass/bourbon/addons/_clearfix.scss */
     section#container header:before, section#container header:after {
       content: "";
@@ -403,7 +410,7 @@ section#container {
     /* line 23, sass/bourbon/addons/_clearfix.scss */
     section#container header:after {
       clear: both; }
-    /* line 18, sass/_theme.scss */
+    /* line 19, sass/_theme.scss */
     section#container header h2.logo {
       text-align: center;
       background-color: transparent;
@@ -411,36 +418,36 @@ section#container {
       color: transparent;
       font: 0/0 a;
       text-shadow: none; }
-    /* line 23, sass/_theme.scss */
+    /* line 24, sass/_theme.scss */
     section#container header hgroup {
       text-align: center; }
-      /* line 26, sass/_theme.scss */
+      /* line 27, sass/_theme.scss */
       section#container header hgroup h2 {
         font: 700 1em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 20px 0 6px 0;
         text-transform: uppercase; }
-        /* line 31, sass/_theme.scss */
+        /* line 32, sass/_theme.scss */
         section#container header hgroup h2 a {
           color: #333;
           font-weight: 700;
           text-decoration: none; }
-          /* line 36, sass/_theme.scss */
+          /* line 37, sass/_theme.scss */
           section#container header hgroup h2 a:hover {
             color: #ad141e; }
-      /* line 42, sass/_theme.scss */
+      /* line 43, sass/_theme.scss */
       section#container header hgroup h3 {
         color: #777;
-        font: 400 0.9em/1em "skolar-1", "skolar-2", Georgia, serif;
+        font: 400 0.8em/1em "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic; }
-        /* line 47, sass/_theme.scss */
+        /* line 48, sass/_theme.scss */
         section#container header hgroup h3 a {
           color: #777;
           font-weight: 400;
           text-decoration: none; }
-          /* line 52, sass/_theme.scss */
+          /* line 53, sass/_theme.scss */
           section#container header hgroup h3 a:hover {
             text-decoration: underline; }
-    /* line 59, sass/_theme.scss */
+    /* line 60, sass/_theme.scss */
     section#container header nav {
       zoom: 1;
       padding: 15px 0 0 0;
@@ -452,7 +459,7 @@ section#container {
       /* line 23, sass/bourbon/addons/_clearfix.scss */
       section#container header nav:after {
         clear: both; }
-      /* line 64, sass/_theme.scss */
+      /* line 65, sass/_theme.scss */
       section#container header nav ul {
         zoom: 1;
         text-align: center; }
@@ -463,11 +470,11 @@ section#container {
         /* line 23, sass/bourbon/addons/_clearfix.scss */
         section#container header nav ul:after {
           clear: both; }
-  /* line 112, sass/_theme.scss */
+  /* line 113, sass/_theme.scss */
   section#container aside {
     float: left;
     margin: 10px 0 0 25px; }
-    /* line 117, sass/_theme.scss */
+    /* line 118, sass/_theme.scss */
     section#container aside .message a {
       background: #f7f7f7;
       border: 1px solid #dedede;
@@ -482,11 +489,11 @@ section#container {
       -ms-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-      /* line 127, sass/_theme.scss */
+      /* line 128, sass/_theme.scss */
       section#container aside .message a img {
         float: left;
         margin: 0 15px 0 0; }
-      /* line 132, sass/_theme.scss */
+      /* line 133, sass/_theme.scss */
       section#container aside .message a span.promo-name {
         color: #777;
         display: block;
@@ -494,264 +501,276 @@ section#container {
         font-style: italic;
         margin: 0 0 4px 0;
         text-decoration: none; }
-      /* line 141, sass/_theme.scss */
+      /* line 142, sass/_theme.scss */
       section#container aside .message a span.promo-creative {
         color: #444;
         display: block;
         font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-decoration: none; }
-      /* line 148, sass/_theme.scss */
+      /* line 149, sass/_theme.scss */
       section#container aside .message a:hover {
         -webkit-border-radius: 0;
         border-radius: 0;
         -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
         box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); }
-  /* line 156, sass/_theme.scss */
-  section#container section#posts {
-    float: left; }
-    /* line 159, sass/_theme.scss */
-    section#container section#posts .post {
-      border-bottom: 3px solid #dddddd;
-      margin: 0 0 60px 0;
-      padding: 0 0 20px 170px;
-      position: relative;
-      /* text posts */
-      /*photo and video posts */
-      /* link posts */
-      /* quote posts */ }
-      /* line 165, sass/_theme.scss */
-      section#container section#posts .post .meta-info {
-        left: 10px;
-        position: absolute;
-        top: 18px; }
-        /* line 170, sass/_theme.scss */
-        section#container section#posts .post .meta-info p.post-date {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 44px 0; }
-          /* line 174, sass/_theme.scss */
-          section#container section#posts .post .meta-info p.post-date a {
-            color: #333;
-            font-weight: 400; }
-        /* line 180, sass/_theme.scss */
-        section#container section#posts .post .meta-info p.tagged {
-          font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 10px 0;
-          text-transform: uppercase; }
-        /* line 186, sass/_theme.scss */
-        section#container section#posts .post .meta-info ul.tags {
-          color: #777;
-          margin: 0 0 36px 0; }
-          /* line 190, sass/_theme.scss */
-          section#container section#posts .post .meta-info ul.tags li {
-            font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
-            font-style: italic;
-            margin: 0 0 10px 0;
-            position: relative; }
-            /* line 196, sass/_theme.scss */
-            section#container section#posts .post .meta-info ul.tags li a {
-              color: #777;
-              font-weight: normal;
-              text-decoration: none; }
-            /* line 202, sass/_theme.scss */
-            section#container section#posts .post .meta-info ul.tags li:after {
-              content: "\2014";
-              font-size: 13px;
-              left: -14px;
-              position: absolute;
-              top: 0; }
-        /* line 212, sass/_theme.scss */
-        section#container section#posts .post .meta-info p.comments {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          margin-top: -3px; }
-          /* line 216, sass/_theme.scss */
-          section#container section#posts .post .meta-info p.comments a {
-            color: #333;
-            font-weight: 400; }
-      /* line 223, sass/_theme.scss */
-      section#container section#posts .post h2 {
-        color: #111;
-        font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 20px 0 0px 0;
-        text-transform: uppercase; }
-      /* line 230, sass/_theme.scss */
-      section#container section#posts .post h3, section#container section#posts .post h4 {
-        color: #333;
-        font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
-        font-style: italic;
-        margin: 20px 0 0px 0; }
-      /* line 237, sass/_theme.scss */
-      section#container section#posts .post p {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 12px 0; }
-      /* line 242, sass/_theme.scss */
-      section#container section#posts .post blockquote {
-        color: #555;
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        font-style: italic;
-        margin: 0 0 12px 0;
-        padding: 0 30px 0 30px; }
-        /* line 249, sass/_theme.scss */
-        section#container section#posts .post blockquote p {
-          color: #555;
-          font-style: italic; }
-      /* line 255, sass/_theme.scss */
-      section#container section#posts .post ul {
-        margin: 0 0 16px 0; }
-        /* line 258, sass/_theme.scss */
-        section#container section#posts .post ul li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          margin: 0 0 4px 0;
-          position: relative; }
-          /* line 263, sass/_theme.scss */
-          section#container section#posts .post ul li:after {
-            content: "\2022";
-            font-size: 18px;
-            font-weight: 700;
-            left: -12px;
-            position: absolute;
-            top: -2px; }
-      /* line 274, sass/_theme.scss */
-      section#container section#posts .post ol {
-        margin: 0 0 16px 0; }
-        /* line 277, sass/_theme.scss */
-        section#container section#posts .post ol li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          list-style: outside;
-          list-style-type: decimal;
-          margin: 0 0 4px 0;
-          position: relative; }
-      /* line 286, sass/_theme.scss */
-      section#container section#posts .post img {
-        max-width: 570px;
-        margin-bottom: 10px; }
-      /* line 291, sass/_theme.scss */
-      section#container section#posts .post a {
-        color: #ad141e;
-        font-weight: 700;
-        text-decoration: none; }
-        /* line 296, sass/_theme.scss */
-        section#container section#posts .post a:hover {
-          text-decoration: underline; }
-      /* line 301, sass/_theme.scss */
-      section#container section#posts .post em {
-        font-style: italic; }
-      /* line 305, sass/_theme.scss */
-      section#container section#posts .post strong {
-        font-weight: 700; }
-      /* line 309, sass/_theme.scss */
-      section#container section#posts .post table {
-        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin-bottom: 12px;
-        width: 570px; }
-        /* line 314, sass/_theme.scss */
-        section#container section#posts .post table tr {
-          border-bottom: 1px solid #ddd; }
-        /* line 319, sass/_theme.scss */
-        section#container section#posts .post table td,
-        section#container section#posts .post table th {
-          padding: 4px;
-          width: 50%; }
-        /* line 324, sass/_theme.scss */
-        section#container section#posts .post table th {
-          font-weight: 700;
-          text-align: left; }
-      /* line 330, sass/_theme.scss */
-      section#container section#posts .post dl {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 10px 0 20px; }
-        /* line 337, sass/_theme.scss */
-        section#container section#posts .post dl dd {
-          margin: 0 0 8px 20px; }
-      /* line 342, sass/_theme.scss */
-      section#container section#posts .post section.post-footer {
-        margin: 20px 0 0 0; }
-        /* line 345, sass/_theme.scss */
-        section#container section#posts .post section.post-footer p.author {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          font-style: italic;
-          left: -12px;
-          position: relative; }
-          /* line 351, sass/_theme.scss */
-          section#container section#posts .post section.post-footer p.author:before {
-            content: "\2014"; }
-      /* line 358, sass/_theme.scss */
-      section#container section#posts .post h1.title {
-        font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 30px 0;
-        text-transform: none; }
-        /* line 363, sass/_theme.scss */
-        section#container section#posts .post h1.title a {
-          color: #111;
-          font-weight: 300;
-          text-decoration: none; }
-      /* line 373, sass/_theme.scss */
-      section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
-        top: 0px; }
-      /* line 377, sass/_theme.scss */
-      section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
-        margin-top: 8px; }
-      /* line 382, sass/_theme.scss */
-      section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
-        padding-bottom: 0px;
-        position: relative;
-        top: -30px; }
-      /* line 392, sass/_theme.scss */
-      section#container section#posts .post.link .meta-info {
-        top: 10px; }
-      /* line 396, sass/_theme.scss */
-      section#container section#posts .post.link h1.title {
-        font-size: 24px;
-        line-height: 30px; }
-        /* line 400, sass/_theme.scss */
-        section#container section#posts .post.link h1.title a {
+  /* line 158, sass/_theme.scss */
+  section#container section#posts .post {
+    border-bottom: 3px solid #dddddd;
+    margin: 0 0 40px 0;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* text posts */
+    /*photo and video posts */
+    /* link posts */
+    /* quote posts */ }
+    /* line 164, sass/_theme.scss */
+    section#container section#posts .post .meta-info {
+      text-align: center; }
+      /* line 167, sass/_theme.scss */
+      section#container section#posts .post .meta-info p.post-date {
+        border-bottom: 1px dashed #eee;
+        font: 400 16px/16px "skolar-1", "skolar-2", Georgia, serif;
+        margin: 0 auto 20px auto;
+        padding-bottom: 15px;
+        width: 50%; }
+        /* line 174, sass/_theme.scss */
+        section#container section#posts .post .meta-info p.post-date a {
+          color: #aaa;
           font-weight: 400; }
-      /* line 408, sass/_theme.scss */
-      section#container section#posts .post.quote .meta-info {
-        top: 8px; }
-      /* line 412, sass/_theme.scss */
-      section#container section#posts .post.quote q {
-        font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        position: relative; }
-        /* line 416, sass/_theme.scss */
-        section#container section#posts .post.quote q:before {
-          content: '\201C';
+      /* line 180, sass/_theme.scss */
+      section#container section#posts .post .meta-info p.tagged {
+        display: none; }
+      /* line 184, sass/_theme.scss */
+      section#container section#posts .post .meta-info ul.tags {
+        color: #777;
+        margin: 0 0 36px 0;
+        display: none; }
+        /* line 189, sass/_theme.scss */
+        section#container section#posts .post .meta-info ul.tags li {
+          font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
+          font-style: italic;
+          margin: 0 0 10px 0;
+          position: relative; }
+          /* line 195, sass/_theme.scss */
+          section#container section#posts .post .meta-info ul.tags li a {
+            color: #777;
+            font-weight: normal;
+            text-decoration: none; }
+          /* line 201, sass/_theme.scss */
+          section#container section#posts .post .meta-info ul.tags li:after {
+            content: "\2014";
+            font-size: 13px;
+            left: -14px;
+            position: absolute;
+            top: 0; }
+      /* line 211, sass/_theme.scss */
+      section#container section#posts .post .meta-info p.comments {
+        font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
+        margin-top: -3px;
+        display: none; }
+        /* line 216, sass/_theme.scss */
+        section#container section#posts .post .meta-info p.comments a {
           color: #333;
-          font-size: 36px;
-          position: absolute;
-          top: 4px;
-          left: -20px; }
-        /* line 425, sass/_theme.scss */
-        section#container section#posts .post.quote q q:before {
-          content: '\2018'; }
-        /* line 429, sass/_theme.scss */
-        section#container section#posts .post.quote q q:after {
-          content: '\2019'; }
-      /* line 434, sass/_theme.scss */
-      section#container section#posts .post.quote p.source {
-        left: -16px;
-        margin: 10px 0 0 0;
+          font-weight: 400; }
+    /* line 223, sass/_theme.scss */
+    section#container section#posts .post h2 {
+      color: #111;
+      font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 20px 0 0px 0;
+      text-transform: uppercase; }
+    /* line 230, sass/_theme.scss */
+    section#container section#posts .post h3, section#container section#posts .post h4 {
+      color: #333;
+      font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
+      font-style: italic;
+      margin: 20px 0 0px 0; }
+    /* line 237, sass/_theme.scss */
+    section#container section#posts .post p {
+      font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 0 0 12px 0; }
+    /* line 242, sass/_theme.scss */
+    section#container section#posts .post blockquote {
+      color: #555;
+      font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      font-style: italic;
+      margin: 0 0 12px 0;
+      padding: 0 30px 0 30px; }
+      /* line 249, sass/_theme.scss */
+      section#container section#posts .post blockquote p {
+        color: #555;
+        font-style: italic; }
+    /* line 255, sass/_theme.scss */
+    section#container section#posts .post ul {
+      margin: 0 0 16px 0; }
+      /* line 258, sass/_theme.scss */
+      section#container section#posts .post ul li {
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 0 0 4px 0;
         position: relative; }
-      /* line 442, sass/_theme.scss */
-      section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-      /* line 448, sass/_theme.scss */
-      section#container section#posts .post.quote .post-footer p.comments {
-        padding-bottom: 0px;
-        position: relative;
-        top: -18px; }
+        /* line 263, sass/_theme.scss */
+        section#container section#posts .post ul li:after {
+          content: "\2022";
+          font-size: 18px;
+          font-weight: 700;
+          left: -12px;
+          position: absolute;
+          top: -2px; }
+    /* line 274, sass/_theme.scss */
+    section#container section#posts .post ol {
+      margin: 0 0 16px 0; }
+      /* line 277, sass/_theme.scss */
+      section#container section#posts .post ol li {
+        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        list-style: outside;
+        list-style-type: decimal;
+        margin: 0 0 4px 0;
+        position: relative; }
+    /* line 286, sass/_theme.scss */
+    section#container section#posts .post img {
+      max-width: 100%;
+      margin-bottom: 10px; }
+    /* line 291, sass/_theme.scss */
+    section#container section#posts .post a {
+      color: #ad141e;
+      font-weight: 700;
+      text-decoration: none; }
+      /* line 296, sass/_theme.scss */
+      section#container section#posts .post a:hover {
+        text-decoration: underline; }
+    /* line 301, sass/_theme.scss */
+    section#container section#posts .post em {
+      font-style: italic; }
+    /* line 305, sass/_theme.scss */
+    section#container section#posts .post strong {
+      font-weight: 700; }
+    /* line 309, sass/_theme.scss */
+    section#container section#posts .post table {
+      font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin-bottom: 12px;
+      width: 100%; }
+      /* line 314, sass/_theme.scss */
+      section#container section#posts .post table tr {
+        border-bottom: 1px solid #ddd; }
+      /* line 319, sass/_theme.scss */
+      section#container section#posts .post table td,
+      section#container section#posts .post table th {
+        padding: 4px;
+        width: 50%; }
+      /* line 324, sass/_theme.scss */
+      section#container section#posts .post table th {
+        font-weight: 700;
+        text-align: left; }
+    /* line 330, sass/_theme.scss */
+    section#container section#posts .post dl {
+      font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 10px 0 20px; }
+      /* line 337, sass/_theme.scss */
+      section#container section#posts .post dl dd {
+        margin: 0 0 8px 20px; }
+    /* line 342, sass/_theme.scss */
+    section#container section#posts .post section.post-footer {
+      margin: 20px 0 0 0;
+      padding: 20px 0; }
+      /* line 346, sass/_theme.scss */
+      section#container section#posts .post section.post-footer p.author {
+        float: left;
+        font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
+        font-style: italic;
+        left: -12px;
+        position: relative; }
+        /* line 353, sass/_theme.scss */
+        section#container section#posts .post section.post-footer p.author:before {
+          content: "\2014"; }
+      /* line 358, sass/_theme.scss */
+      section#container section#posts .post section.post-footer p.comments {
+        float: right;
+        font: 400 14px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
+    /* line 365, sass/_theme.scss */
+    section#container section#posts .post h1.title {
+      font: 300 32px/36px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      margin: 0 0 30px 0;
+      text-align: center;
+      text-transform: none;
+      word-wrap: break-word; }
+      /* line 372, sass/_theme.scss */
+      section#container section#posts .post h1.title a {
+        color: #111;
+        font-weight: 300;
+        text-decoration: none; }
+    /* line 382, sass/_theme.scss */
+    section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
+      top: 0px; }
+    /* line 386, sass/_theme.scss */
+    section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
+      margin-top: 8px; }
+    /* line 391, sass/_theme.scss */
+    section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
+      padding-bottom: 0px;
+      position: relative;
+      top: -30px; }
+    /* line 399, sass/_theme.scss */
+    section#container section#posts .post iframe, section#container section#posts .post object {
+      width: 100%;
+      height: auto; }
+    /* line 406, sass/_theme.scss */
+    section#container section#posts .post.link .meta-info {
+      top: 10px; }
+    /* line 410, sass/_theme.scss */
+    section#container section#posts .post.link h1.title {
+      font-size: 24px;
+      line-height: 30px; }
+      /* line 414, sass/_theme.scss */
+      section#container section#posts .post.link h1.title a {
+        font-weight: 400; }
+    /* line 422, sass/_theme.scss */
+    section#container section#posts .post.quote .meta-info {
+      top: 8px; }
+    /* line 426, sass/_theme.scss */
+    section#container section#posts .post.quote q {
+      font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+      position: relative; }
+      /* line 430, sass/_theme.scss */
+      section#container section#posts .post.quote q:before {
+        content: '\201C';
+        color: #333;
+        font-size: 36px;
+        position: absolute;
+        top: 4px;
+        left: -20px; }
+      /* line 439, sass/_theme.scss */
+      section#container section#posts .post.quote q q:before {
+        content: '\2018'; }
+      /* line 443, sass/_theme.scss */
+      section#container section#posts .post.quote q q:after {
+        content: '\2019'; }
+    /* line 448, sass/_theme.scss */
+    section#container section#posts .post.quote p.source {
+      left: -16px;
+      margin: 10px 0 0 0;
+      position: relative; }
+    /* line 456, sass/_theme.scss */
+    section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
+      font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
+    /* line 462, sass/_theme.scss */
+    section#container section#posts .post.quote .post-footer p.comments {
+      padding-bottom: 0px;
+      position: relative;
+      top: -18px; }
 
-/* line 459, sass/_theme.scss */
+/* line 473, sass/_theme.scss */
 .old img {
   float: none !important; }
 
 /* Pagination
 ------------------------------------------------------------------------------*/
-/* line 465, sass/_theme.scss */
+/* line 479, sass/_theme.scss */
 #pagination {
-  padding: 0 0 20px 170px;
-  width: 570px; }
+  padding: 0 15px; }
 
-/* line 470, sass/_theme.scss */
+/* line 483, sass/_theme.scss */
 #pagination a {
   color: #444;
   font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -759,23 +778,23 @@ section#container {
   text-decoration: none;
   text-transform: uppercase; }
 
-/* line 478, sass/_theme.scss */
+/* line 491, sass/_theme.scss */
 #pagination a:hover {
   color: #000; }
 
-/* line 482, sass/_theme.scss */
+/* line 495, sass/_theme.scss */
 #pagination #older-link {
   float: left;
   margin: 0 0 0 0;
   padding: 15px 0 0 0;
   width: 145px; }
 
-/* line 489, sass/_theme.scss */
+/* line 502, sass/_theme.scss */
 #pagination #older-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px; }
 
-/* line 494, sass/_theme.scss */
+/* line 507, sass/_theme.scss */
 #pagination #newer-link {
   float: right;
   margin: 0 0 0 0;
@@ -783,19 +802,19 @@ section#container {
   text-align: right;
   width: 145px; }
 
-/* line 502, sass/_theme.scss */
+/* line 515, sass/_theme.scss */
 #pagination #newer-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
 /* Footer
 ------------------------------------------------------------------------------*/
-/* line 509, sass/_theme.scss */
+/* line 522, sass/_theme.scss */
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
   padding: 60px 0 120px; }
-  /* line 514, sass/_theme.scss */
+  /* line 527, sass/_theme.scss */
   footer section#footer-container {
     zoom: 1;
     margin: 0 auto;
@@ -807,36 +826,36 @@ footer {
     /* line 23, sass/bourbon/addons/_clearfix.scss */
     footer section#footer-container:after {
       clear: both; }
-    /* line 519, sass/_theme.scss */
+    /* line 532, sass/_theme.scss */
     footer section#footer-container h6 {
       color: #4a4a4a;
       font: 300 18px/18px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0 0 20px 0; }
-    /* line 525, sass/_theme.scss */
+    /* line 538, sass/_theme.scss */
     footer section#footer-container nav {
       float: left;
       margin-right: 25px;
       width: 485px; }
-      /* line 530, sass/_theme.scss */
+      /* line 543, sass/_theme.scss */
       footer section#footer-container nav ul {
         float: left;
         width: 145px; }
-        /* line 534, sass/_theme.scss */
+        /* line 547, sass/_theme.scss */
         footer section#footer-container nav ul#secondary-links {
           margin-left: 25px; }
-        /* line 538, sass/_theme.scss */
+        /* line 551, sass/_theme.scss */
         footer section#footer-container nav ul li {
           color: #7a7a7a;
           font: 400 14px/18px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 6px 0; }
-          /* line 543, sass/_theme.scss */
+          /* line 556, sass/_theme.scss */
           footer section#footer-container nav ul li a {
             color: #7a7a7a;
             text-decoration: none; }
-            /* line 547, sass/_theme.scss */
+            /* line 560, sass/_theme.scss */
             footer section#footer-container nav ul li a:hover {
               color: #3a3a3a; }
-    /* line 555, sass/_theme.scss */
+    /* line 568, sass/_theme.scss */
     footer section#footer-container section#products {
       zoom: 1;
       float: left;
@@ -848,16 +867,16 @@ footer {
       /* line 23, sass/bourbon/addons/_clearfix.scss */
       footer section#footer-container section#products:after {
         clear: both; }
-      /* line 560, sass/_theme.scss */
+      /* line 573, sass/_theme.scss */
       footer section#footer-container section#products section.product {
         float: left;
         margin-right: 25px;
         width: 145px; }
-        /* line 566, sass/_theme.scss */
+        /* line 579, sass/_theme.scss */
         footer section#footer-container section#products section.product h6 a {
           color: #333;
           text-decoration: none; }
-        /* line 572, sass/_theme.scss */
+        /* line 585, sass/_theme.scss */
         footer section#footer-container section#products section.product a.logo {
           background: #e9e9e9;
           border: 1px solid #dedede;
@@ -872,28 +891,28 @@ footer {
           -ms-transition: 0.4s;
           -o-transition: 0.4s;
           transition: 0.4s; }
-          /* line 582, sass/_theme.scss */
+          /* line 595, sass/_theme.scss */
           footer section#footer-container section#products section.product a.logo:hover {
             -webkit-border-radius: 0;
             border-radius: 0;
             -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
             box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
-        /* line 588, sass/_theme.scss */
+        /* line 601, sass/_theme.scss */
         footer section#footer-container section#products section.product#airbrake a.logo {
           padding: 18px 0 14px 0; }
-        /* line 592, sass/_theme.scss */
+        /* line 605, sass/_theme.scss */
         footer section#footer-container section#products section.product#copycopter {
           margin-right: 0; }
-          /* line 595, sass/_theme.scss */
+          /* line 608, sass/_theme.scss */
           footer section#footer-container section#products section.product#copycopter a.logo {
             padding: 25px 0 5px 0; }
-            /* line 598, sass/_theme.scss */
+            /* line 611, sass/_theme.scss */
             footer section#footer-container section#products section.product#copycopter a.logo img {
               width: 110px; }
-        /* line 605, sass/_theme.scss */
+        /* line 618, sass/_theme.scss */
         footer section#footer-container section#products section.product#trajectory a.logo {
           height: 90px;
           padding: 40px 0 0px 0; }
-          /* line 609, sass/_theme.scss */
+          /* line 622, sass/_theme.scss */
           footer section#footer-container section#products section.product#trajectory a.logo img {
             width: 110px; }

@@ -14,6 +14,7 @@ section#container {
     @include clearfix();
     border-bottom: 1px solid #ddd;
     padding: 0 0 $lh*2 0;
+    margin-bottom: $lh;
 
     h2.logo {
       text-align: center;
@@ -41,7 +42,7 @@ section#container {
 
       h3 {
         color: #777;
-        font: 400 0.9em/1em $serif;
+        font: 400 0.8em/1em $serif;
         font-style: italic;
 
         a {
@@ -154,38 +155,36 @@ section#container {
   }
 
   section#posts {
-    float: left;
-
     .post {
       border-bottom: 3px solid #dddddd;
-      margin: 0 0 $lh*3 0;
-      padding: 0 0 $lh*1 grid-width(2) +  $gutter;
-      position: relative;
+      margin: 0 0 $lh*2 0;
+      padding: 0 20px $lh*1 20px;
+      @include fill-parent();
 
       .meta-info {
-        left: 10px;
-        position: absolute;
-        top: 18px;
+        text-align: center;
 
         p.post-date {
-          font: 400 14px/14px $serif;
-          margin: 0 0 44px 0;
+          border-bottom: 1px dashed #eee;
+          font: 400 16px/16px $serif;
+          margin: 0 auto $lh auto;
+          padding-bottom: 15px;
+          width: 50%;
 
           a {
-            color: #333;
+            color: #aaa;
             font-weight: 400;
           }
         }
 
         p.tagged {
-          font: 600 12px/12px $serif;
-          margin: 0 0 10px 0;
-          text-transform: uppercase;
+          display: none;
         }
 
         ul.tags {
           color: #777;
           margin: 0 0 36px 0;
+          display: none;
 
           li {
             font: 400 13px/14px $serif;
@@ -212,6 +211,7 @@ section#container {
         p.comments {
           font: 400 14px/14px $serif;
           margin-top: -3px;
+          display: none;
 
           a {
             color: #333;
@@ -284,7 +284,7 @@ section#container {
       }
 
       img {
-        max-width: grid-width(7);
+        max-width: 100%;
         margin-bottom: 10px;
       }
 
@@ -309,7 +309,7 @@ section#container {
       table {
         font: 400 14px/22px $sans-serif;
         margin-bottom: 12px;
-        width: grid-width(7);
+        width: 100%;
 
         tr {
           border-bottom: 1px solid #ddd;
@@ -341,8 +341,10 @@ section#container {
 
       section.post-footer {
         margin: 20px 0 0 0;
+        padding: 20px 0;
 
         p.author {
+          float: left;
           font: 400 14px/14px $serif;
           font-style: italic;
           left: -12px;
@@ -352,13 +354,20 @@ section#container {
             content: "\2014";
           }
         }
+
+        p.comments {
+          float: right;
+          font: 400 14px/14px $sans-serif;
+        }
       }
 
       /* text posts */
       h1.title {
-        font: 300 36px/38px $sans-serif;
+        font: 300 32px/36px $sans-serif;
         margin: 0 0 30px 0;
+        text-align: center;
         text-transform: none;
+        word-wrap: break-word;
 
         a {
           color: #111;
@@ -385,6 +394,11 @@ section#container {
             top: -30px;
           }
         }
+      }
+
+      iframe, object {
+        width: 100%;
+        height: auto;
       }
 
       /* link posts */
@@ -463,8 +477,7 @@ section#container {
 /* Pagination
 ------------------------------------------------------------------------------*/
 #pagination {
-  padding: 0 0 $lh (grid-width(2) + $gutter);
-  width: grid-width(7);
+  padding: 0 15px;
 }
 
 #pagination a {
