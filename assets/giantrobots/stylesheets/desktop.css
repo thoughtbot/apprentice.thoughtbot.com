@@ -347,27 +347,24 @@
           padding-bottom: 0px;
           position: relative;
           top: -30px; }
-        /* line 388, sass/_760-up.scss */
-        section#container section#posts .post iframe, section#container section#posts .post object {
-          min-height: 321px; }
-        /* line 394, sass/_760-up.scss */
+        /* line 390, sass/_760-up.scss */
         section#container section#posts .post.link .meta-info {
           top: 10px; }
-        /* line 398, sass/_760-up.scss */
+        /* line 394, sass/_760-up.scss */
         section#container section#posts .post.link h1.title {
           font-size: 24px;
           line-height: 30px; }
-          /* line 402, sass/_760-up.scss */
+          /* line 398, sass/_760-up.scss */
           section#container section#posts .post.link h1.title a {
             font-weight: 400; }
-        /* line 410, sass/_760-up.scss */
+        /* line 406, sass/_760-up.scss */
         section#container section#posts .post.quote .meta-info {
           top: 8px; }
-        /* line 414, sass/_760-up.scss */
+        /* line 410, sass/_760-up.scss */
         section#container section#posts .post.quote q {
           font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           position: relative; }
-          /* line 418, sass/_760-up.scss */
+          /* line 414, sass/_760-up.scss */
           section#container section#posts .post.quote q:before {
             content: '\201C';
             color: #333;
@@ -375,38 +372,38 @@
             position: absolute;
             top: 4px;
             left: -20px; }
-          /* line 427, sass/_760-up.scss */
+          /* line 423, sass/_760-up.scss */
           section#container section#posts .post.quote q q:before {
             content: '\2018'; }
-          /* line 431, sass/_760-up.scss */
+          /* line 427, sass/_760-up.scss */
           section#container section#posts .post.quote q q:after {
             content: '\2019'; }
-        /* line 436, sass/_760-up.scss */
+        /* line 432, sass/_760-up.scss */
         section#container section#posts .post.quote p.source {
           left: -16px;
           margin: 10px 0 0 0;
           position: relative; }
-        /* line 444, sass/_760-up.scss */
+        /* line 440, sass/_760-up.scss */
         section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
           font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-        /* line 450, sass/_760-up.scss */
+        /* line 446, sass/_760-up.scss */
         section#container section#posts .post.quote .post-footer p.comments {
           padding-bottom: 0px;
           position: relative;
           top: -18px; }
 
-  /* line 461, sass/_760-up.scss */
+  /* line 457, sass/_760-up.scss */
   .old img {
     float: none !important; }
 
   /* Pagination
   ------------------------------------------------------------------------------*/
-  /* line 467, sass/_760-up.scss */
+  /* line 463, sass/_760-up.scss */
   #pagination {
     padding: 0 0 20px 170px;
     width: 570px; }
 
-  /* line 472, sass/_760-up.scss */
+  /* line 468, sass/_760-up.scss */
   #pagination a {
     color: #444;
     font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -414,23 +411,23 @@
     text-decoration: none;
     text-transform: uppercase; }
 
-  /* line 480, sass/_760-up.scss */
+  /* line 476, sass/_760-up.scss */
   #pagination a:hover {
     color: #000; }
 
-  /* line 484, sass/_760-up.scss */
+  /* line 480, sass/_760-up.scss */
   #pagination #older-link {
     float: left;
     margin: 0 0 0 0;
     padding: 15px 0 0 0;
     width: 145px; }
 
-  /* line 491, sass/_760-up.scss */
+  /* line 487, sass/_760-up.scss */
   #pagination #older-link a {
     background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
     margin: 0 0 0 -3px; }
 
-  /* line 496, sass/_760-up.scss */
+  /* line 492, sass/_760-up.scss */
   #pagination #newer-link {
     float: right;
     margin: 0 0 0 0;
@@ -438,19 +435,19 @@
     text-align: right;
     width: 145px; }
 
-  /* line 504, sass/_760-up.scss */
+  /* line 500, sass/_760-up.scss */
   #pagination #newer-link a {
     background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
     margin: 0 -3px 0 0; }
 
   /* Footer
   ------------------------------------------------------------------------------*/
-  /* line 511, sass/_760-up.scss */
+  /* line 507, sass/_760-up.scss */
   footer {
     background: #efefef;
     border-top: 1px solid #e0e0e0;
     padding: 60px 0 120px; }
-    /* line 516, sass/_760-up.scss */
+    /* line 512, sass/_760-up.scss */
     footer section#footer-container {
       zoom: 1;
       margin: 0 auto;
@@ -462,36 +459,36 @@
       /* line 23, sass/bourbon/addons/_clearfix.scss */
       footer section#footer-container:after {
         clear: both; }
-      /* line 521, sass/_760-up.scss */
+      /* line 517, sass/_760-up.scss */
       footer section#footer-container h6 {
         color: #4a4a4a;
         font: 300 18px/18px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 20px 0; }
-      /* line 527, sass/_760-up.scss */
+      /* line 523, sass/_760-up.scss */
       footer section#footer-container nav {
         float: left;
         margin-right: 25px;
         width: 485px; }
-        /* line 532, sass/_760-up.scss */
+        /* line 528, sass/_760-up.scss */
         footer section#footer-container nav ul {
           float: left;
           width: 145px; }
-          /* line 536, sass/_760-up.scss */
+          /* line 532, sass/_760-up.scss */
           footer section#footer-container nav ul#secondary-links {
             margin-left: 25px; }
-          /* line 540, sass/_760-up.scss */
+          /* line 536, sass/_760-up.scss */
           footer section#footer-container nav ul li {
             color: #7a7a7a;
             font: 400 14px/18px "skolar-1", "skolar-2", Georgia, serif;
             margin: 0 0 6px 0; }
-            /* line 545, sass/_760-up.scss */
+            /* line 541, sass/_760-up.scss */
             footer section#footer-container nav ul li a {
               color: #7a7a7a;
               text-decoration: none; }
-              /* line 549, sass/_760-up.scss */
+              /* line 545, sass/_760-up.scss */
               footer section#footer-container nav ul li a:hover {
                 color: #3a3a3a; }
-      /* line 557, sass/_760-up.scss */
+      /* line 553, sass/_760-up.scss */
       footer section#footer-container section#products {
         zoom: 1;
         float: left;
@@ -503,16 +500,16 @@
         /* line 23, sass/bourbon/addons/_clearfix.scss */
         footer section#footer-container section#products:after {
           clear: both; }
-        /* line 562, sass/_760-up.scss */
+        /* line 558, sass/_760-up.scss */
         footer section#footer-container section#products section.product {
           float: left;
           margin-right: 25px;
           width: 145px; }
-          /* line 568, sass/_760-up.scss */
+          /* line 564, sass/_760-up.scss */
           footer section#footer-container section#products section.product h6 a {
             color: #333;
             text-decoration: none; }
-          /* line 574, sass/_760-up.scss */
+          /* line 570, sass/_760-up.scss */
           footer section#footer-container section#products section.product a.logo {
             background: #e9e9e9;
             border: 1px solid #dedede;
@@ -527,29 +524,29 @@
             -ms-transition: 0.4s;
             -o-transition: 0.4s;
             transition: 0.4s; }
-            /* line 584, sass/_760-up.scss */
+            /* line 580, sass/_760-up.scss */
             footer section#footer-container section#products section.product a.logo:hover {
               -webkit-border-radius: 0;
               border-radius: 0;
               -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
               box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
-          /* line 590, sass/_760-up.scss */
+          /* line 586, sass/_760-up.scss */
           footer section#footer-container section#products section.product#airbrake a.logo {
             padding: 18px 0 14px 0; }
-          /* line 594, sass/_760-up.scss */
+          /* line 590, sass/_760-up.scss */
           footer section#footer-container section#products section.product#copycopter {
             margin-right: 0; }
-            /* line 597, sass/_760-up.scss */
+            /* line 593, sass/_760-up.scss */
             footer section#footer-container section#products section.product#copycopter a.logo {
               padding: 25px 0 5px 0; }
-              /* line 600, sass/_760-up.scss */
+              /* line 596, sass/_760-up.scss */
               footer section#footer-container section#products section.product#copycopter a.logo img {
                 width: 110px; }
-          /* line 607, sass/_760-up.scss */
+          /* line 603, sass/_760-up.scss */
           footer section#footer-container section#products section.product#trajectory a.logo {
             height: 90px;
             padding: 40px 0 0px 0; }
-            /* line 611, sass/_760-up.scss */
+            /* line 607, sass/_760-up.scss */
             footer section#footer-container section#products section.product#trajectory a.logo img {
               width: 110px; } }
 @media only screen and (min-width: 995px) {
