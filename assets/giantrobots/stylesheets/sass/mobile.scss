@@ -1,5 +1,7 @@
 @import "bourbon/bourbon";
-@import "base";
+@import "reset";
+@import "variables";
+@import "mixins";
 @import "code-highlight";
 @import "disqus";
 @import "theme";

@@ -6,6 +6,7 @@
     <!-- HOW TO UPDATE TUMBLR THEME: Please update this markup in source control, and then copy/paste into tumblr.  Do not edit directly in tumblr. -->
     {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
     <meta name="keywords" content="{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="NOODP">
 
     <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/mobile.css" media="screen">
@@ -35,7 +36,11 @@
   <body>
     <section id="container">
       <header>
-        <h2 class="logo"><a href="http://robots.thoughtbot.com">thoughtbot</a></h2>
+        <h2 class="logo">
+          <a href="http://robots.thoughtbot.com">
+            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" />thoughtbot
+          </a>
+        </h2>
 
         <hgroup>
           <h2><a href="http://robots.thoughtbot.com">{Title}</a></h2>
@@ -44,9 +49,9 @@
 
         <nav>
           <ul>
-            <li id="twitter"><a href="http://twitter.com/thoughtbot">twitter</a></li>
-            <li id="contact"><a href="http://tinyletter.com/thoughtbot">newsletter</a></li>
-            <li id="rss"><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots">rss feed</a></li>
+            <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
+            <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
+            <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
           </ul>
         </nav>
       </header>

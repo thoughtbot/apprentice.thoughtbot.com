@@ -1,31 +1,32 @@
-body {
-  background: #fff;
-  border-top: 4px solid #ad141e;
-  color: #333;
-}
-
 section#container {
-  @include clearfix();
-  padding: 25px 10px 80px;
-  @include fill-parent();
   margin: 0 auto;
+  padding: 20px 0 80px;
+  width: grid-width(12);
 
   header {
-    @include clearfix();
-    border-bottom: 1px solid #ddd;
-    padding: 0 0 $lh*2 0;
-
     h2.logo {
-      text-align: center;
-      @include hide-text();
+      float: left;
+      width: grid-width(2);
+
+      a {
+        background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") no-repeat;
+        display: block;
+        height: 85px;
+        margin: 15px 0 0 30px;
+        text-indent: -9999px;
+        width: 85px;
+      }
     }
 
     hgroup {
-      text-align: center;
+      float: left;
+      text-align: left;
+      padding: 40px 0 0 $gutter;
+      width: grid-width(7);
 
       h2 {
-        font: 700 1em/1.4em $sans-serif;
-        margin: 20px 0 6px 0;
+        font: 700 12px/14px $sans-serif;
+        margin: 0 0 6px 0;
         text-transform: uppercase;
 
         a {
@@ -34,14 +35,14 @@ section#container {
           text-decoration: none;
 
           &:hover {
-            color: $red;
+           color: $red;
           }
         }
       }
 
       h3 {
         color: #777;
-        font: 400 0.9em/1em $serif;
+        font: 400 13px/16px $serif;
         font-style: italic;
 
         a {
@@ -58,53 +59,51 @@ section#container {
 
     nav {
       @include clearfix();
-      padding: 15px 0 0 0;
-      display: none;
+      display: block;
+      float: left;
+      margin: 0 0 0 $gutter;
+      padding: 35px 0 0 0;
+      width: grid-width(3);
 
       ul {
         @include clearfix();
+        margin-top: 0;
         text-align: center;
 
-        // li {
-        //   margin-right: 15px;
-        //   display: inline-block;
+        li {
+          width: 42px;
 
-        //   &:last-child {
-        //    margin-right: 0;
-        //   }
+          a {
+            display: block;
+            height: 41px;
+            text-indent: -9999px;
+            @include transition(0.5s);
 
-        //   a {
-        //     height: 42px;
-        //     display: block;
-        //     @include hide-text;
-        //     width: 42px;
-        //     @include transition(0.5s);
+            &#twitter {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
 
-        //     &#twitter {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
+              &:hover {
+                background-position: -8px -48px;
+              }
+            }
 
-        //       &:hover {
-        //         background-position: -8px -48px;
-        //       }
-        //     }
+            &#contact {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
 
-        //     &#contact {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
+              &:hover {
+                background-position: 0 -47px;
+              }
+            }
 
-        //       &:hover {
-        //         background-position: 0 -47px;
-        //       }
-        //     }
+            &#rss {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/rss.png") 0px 0px no-repeat;
 
-        //     &#rss {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/rss.png") 0px 0px no-repeat;
-
-        //       &:hover {
-        //         background-position: 0px -47px;
-        //       }
-        //     }
-        //   }
-        // }
+              &:hover {
+                background-position: 0px -47px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -112,6 +111,7 @@ section#container {
   aside {
     float: left;
     margin: 10px 0 0 $gutter;
+    width: grid-width(3);
 
     .message {
       a {
@@ -155,6 +155,7 @@ section#container {
 
   section#posts {
     float: left;
+    width: grid-width(9);
 
     .post {
       border-bottom: 3px solid #dddddd;
@@ -166,6 +167,7 @@ section#container {
         left: 10px;
         position: absolute;
         top: 18px;
+        width: grid-width(2);
 
         p.post-date {
           font: 400 14px/14px $serif;
@@ -212,6 +214,7 @@ section#container {
         p.comments {
           font: 400 14px/14px $serif;
           margin-top: -3px;
+          width: grid-width(2);
 
           a {
             color: #333;
@@ -615,3 +618,5 @@ footer {
     }
   }
 }
+
+

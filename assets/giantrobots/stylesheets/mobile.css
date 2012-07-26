@@ -1,80 +1,204 @@
-/* Mixins
----------------------------------------- */
-/* Variables
----------------------------------------- */
-/*thoughtbot red*/
-/*line-height of all the type on the site*/
-/*one grid column*/
-/*size of one gutter*/
-/* Global Reset
-------------------------------------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* line 84, sass/_base.scss */
-html, body, div, span, applet, object, iframe,
+/* line 12, sass/_reset.scss */
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent; }
 
-/* HTML5 display-role reset for older browsers */
-/* line 94, sass/_base.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+/* line 21, sass/_reset.scss */
+html, body {
+  font-size: 100%; }
+
+/* line 26, sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
-/* line 97, sass/_base.scss */
-body {
-  line-height: 1; }
+/* line 31, sass/_reset.scss */
+audio, canvas, video {
+  display: inline-block; }
 
-/* line 100, sass/_base.scss */
-ol, ul {
-  list-style: none; }
+/* line 36, sass/_reset.scss */
+audio:not([controls]) {
+  display: none; }
 
-/* line 103, sass/_base.scss */
+/* line 41, sass/_reset.scss */
+[hidden] {
+  display: none; }
+
+/* line 47, sass/_reset.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 54, sass/_reset.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+/* line 60, sass/_reset.scss */
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+/* line 69, sass/_reset.scss */
+a:hover, a:active {
+  outline: 0; }
+
+/* line 75, sass/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 80, sass/_reset.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 84, sass/_reset.scss */
+blockquote {
+  margin: 1em 40px; }
+
+/* line 89, sass/_reset.scss */
+dfn {
+  font-style: italic; }
+
+/* line 94, sass/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 101, sass/_reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* line 108, sass/_reset.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 115, sass/_reset.scss */
 blockquote, q {
   quotes: none; }
+  /* line 117, sass/_reset.scss */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
 
-/* line 107, sass/_base.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+/* line 123, sass/_reset.scss */
+small {
+  font-size: 75%; }
 
-/* line 111, sass/_base.scss */
+/* line 127, sass/_reset.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 134, sass/_reset.scss */
+sup {
+  top: -0.5em; }
+
+/* line 138, sass/_reset.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 143, sass/_reset.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* line 150, sass/_reset.scss */
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic; }
+
+/* line 158, sass/_reset.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 163, sass/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 169, sass/_reset.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+/* line 175, sass/_reset.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+/* line 182, sass/_reset.scss */
+button, input {
+  line-height: normal; }
+
+/* line 186, sass/_reset.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+/* line 192, sass/_reset.scss */
+button[disabled], input[disabled] {
+  cursor: default; }
+
+/* line 196, sass/_reset.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 201, sass/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 209, sass/_reset.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/* line 215, sass/_reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 220, sass/_reset.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* line 226, sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Clear Floated Elements
-------------------------------------------------------------------------------*/
-/* line 118, sass/_base.scss */
-.clearfix:after, section#container:after, section#container header:after, section#container header nav:after, section#container header nav ul:after, footer section#footer-container:after, footer section#footer-container section#products:after {
-  clear: both;
-  content: ' ';
-  display: block;
-  font-size: 0;
-  line-height: 0;
-  visibility: hidden;
-  width: 0;
-  height: 0; }
-
+/*thoughtbot red*/
+/*line-height of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
 /* modifications */
 /* line 2, sass/_code-highlight.scss */
 pre {
@@ -253,108 +377,100 @@ body {
 
 /* line 7, sass/_theme.scss */
 section#container {
-  /*background: url(../images/995-grid.png) repeat-y;*/
-  margin: 0 auto;
-  padding: 20px 0 80px;
-  width: 995px; }
-  /* line 14, sass/_theme.scss */
+  zoom: 1;
+  padding: 25px 10px 80px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto; }
+  /* line 18, sass/bourbon/addons/_clearfix.scss */
+  section#container:before, section#container:after {
+    content: "";
+    display: table; }
+  /* line 23, sass/bourbon/addons/_clearfix.scss */
+  section#container:after {
+    clear: both; }
+  /* line 13, sass/_theme.scss */
   section#container header {
+    zoom: 1;
     border-bottom: 1px solid #ddd;
-    margin: 0 0 40px 0;
     padding: 0 0 40px 0; }
-    /* line 20, sass/_theme.scss */
+    /* line 18, sass/bourbon/addons/_clearfix.scss */
+    section#container header:before, section#container header:after {
+      content: "";
+      display: table; }
+    /* line 23, sass/bourbon/addons/_clearfix.scss */
+    section#container header:after {
+      clear: both; }
+    /* line 18, sass/_theme.scss */
     section#container header h2.logo {
-      float: left;
-      width: 145px; }
-      /* line 24, sass/_theme.scss */
-      section#container header h2.logo a {
-        background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") no-repeat;
-        display: block;
-        height: 85px;
-        margin: 15px 0 0 30px;
-        text-indent: -9999px;
-        width: 85px; }
-    /* line 34, sass/_theme.scss */
+      text-align: center;
+      background-color: transparent;
+      border: 0;
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none; }
+    /* line 23, sass/_theme.scss */
     section#container header hgroup {
-      float: left;
-      padding: 40px 0 0 25px;
-      width: 570px; }
-      /* line 39, sass/_theme.scss */
+      text-align: center; }
+      /* line 26, sass/_theme.scss */
       section#container header hgroup h2 {
-        font: 700 12px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 6px 0;
+        font: 700 1em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
+        margin: 20px 0 6px 0;
         text-transform: uppercase; }
-        /* line 44, sass/_theme.scss */
+        /* line 31, sass/_theme.scss */
         section#container header hgroup h2 a {
           color: #333;
           font-weight: 700;
           text-decoration: none; }
-          /* line 49, sass/_theme.scss */
+          /* line 36, sass/_theme.scss */
           section#container header hgroup h2 a:hover {
             color: #ad141e; }
-      /* line 55, sass/_theme.scss */
+      /* line 42, sass/_theme.scss */
       section#container header hgroup h3 {
         color: #777;
-        font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif;
+        font: 400 0.9em/1em "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic; }
-        /* line 60, sass/_theme.scss */
+        /* line 47, sass/_theme.scss */
         section#container header hgroup h3 a {
           color: #777;
           font-weight: 400;
           text-decoration: none; }
-          /* line 65, sass/_theme.scss */
+          /* line 52, sass/_theme.scss */
           section#container header hgroup h3 a:hover {
             text-decoration: underline; }
-    /* line 72, sass/_theme.scss */
+    /* line 59, sass/_theme.scss */
     section#container header nav {
-      float: left;
-      margin: 0 0 0 25px;
-      padding: 35px 0 0 0;
-      width: 230px; }
-      /* line 79, sass/_theme.scss */
+      zoom: 1;
+      padding: 15px 0 0 0;
+      display: none; }
+      /* line 18, sass/bourbon/addons/_clearfix.scss */
+      section#container header nav:before, section#container header nav:after {
+        content: "";
+        display: table; }
+      /* line 23, sass/bourbon/addons/_clearfix.scss */
+      section#container header nav:after {
+        clear: both; }
+      /* line 64, sass/_theme.scss */
       section#container header nav ul {
-        margin: 0 15px 0 0; }
-        /* line 83, sass/_theme.scss */
-        section#container header nav ul li {
-          float: right;
-          margin-left: 15px;
-          width: 42px; }
-          /* line 88, sass/_theme.scss */
-          section#container header nav ul li a {
-            display: block;
-            height: 41px;
-            text-indent: -9999px;
-            -webkit-transition: 0.5s;
-            -moz-transition: 0.5s;
-            transition: 0.5s; }
-          /* line 96, sass/_theme.scss */
-          section#container header nav ul li#twitter a {
-            background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat; }
-            /* line 99, sass/_theme.scss */
-            section#container header nav ul li#twitter a:hover {
-              background-position: -8px -48px; }
-          /* line 106, sass/_theme.scss */
-          section#container header nav ul li#contact a {
-            background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat; }
-            /* line 109, sass/_theme.scss */
-            section#container header nav ul li#contact a:hover {
-              background-position: 0 -47px; }
-          /* line 116, sass/_theme.scss */
-          section#container header nav ul li#rss a {
-            background: url("/assets/giantrobots/images/rss.png") 0px 0px no-repeat; }
-            /* line 119, sass/_theme.scss */
-            section#container header nav ul li#rss a:hover {
-              background-position: 0px -47px; }
-  /* line 129, sass/_theme.scss */
+        zoom: 1;
+        text-align: center; }
+        /* line 18, sass/bourbon/addons/_clearfix.scss */
+        section#container header nav ul:before, section#container header nav ul:after {
+          content: "";
+          display: table; }
+        /* line 23, sass/bourbon/addons/_clearfix.scss */
+        section#container header nav ul:after {
+          clear: both; }
+  /* line 112, sass/_theme.scss */
   section#container aside {
     float: left;
-    margin: 10px 0 0 25px;
-    width: 230px; }
-    /* line 135, sass/_theme.scss */
+    margin: 10px 0 0 25px; }
+    /* line 117, sass/_theme.scss */
     section#container aside .message a {
       background: #f7f7f7;
       border: 1px solid #dedede;
-      -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
       color: #333;
@@ -363,12 +479,14 @@ section#container {
       text-decoration: none;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
       transition: 0.5s; }
-      /* line 145, sass/_theme.scss */
+      /* line 127, sass/_theme.scss */
       section#container aside .message a img {
         float: left;
         margin: 0 15px 0 0; }
-      /* line 150, sass/_theme.scss */
+      /* line 132, sass/_theme.scss */
       section#container aside .message a span.promo-name {
         color: #777;
         display: block;
@@ -376,26 +494,22 @@ section#container {
         font-style: italic;
         margin: 0 0 4px 0;
         text-decoration: none; }
-      /* line 159, sass/_theme.scss */
+      /* line 141, sass/_theme.scss */
       section#container aside .message a span.promo-creative {
         color: #444;
         display: block;
         font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-decoration: none; }
-      /* line 166, sass/_theme.scss */
+      /* line 148, sass/_theme.scss */
       section#container aside .message a:hover {
-        -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0;
         -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
-        -moz-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
-        -o-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
         box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); }
-  /* line 174, sass/_theme.scss */
+  /* line 156, sass/_theme.scss */
   section#container section#posts {
-    float: left;
-    width: 740px; }
-    /* line 178, sass/_theme.scss */
+    float: left; }
+    /* line 159, sass/_theme.scss */
     section#container section#posts .post {
       border-bottom: 3px solid #dddddd;
       margin: 0 0 60px 0;
@@ -405,92 +519,90 @@ section#container {
       /*photo and video posts */
       /* link posts */
       /* quote posts */ }
-      /* line 184, sass/_theme.scss */
+      /* line 165, sass/_theme.scss */
       section#container section#posts .post .meta-info {
         left: 10px;
         position: absolute;
-        top: 18px;
-        width: 145px; }
-        /* line 190, sass/_theme.scss */
+        top: 18px; }
+        /* line 170, sass/_theme.scss */
         section#container section#posts .post .meta-info p.post-date {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 44px 0; }
-          /* line 194, sass/_theme.scss */
+          /* line 174, sass/_theme.scss */
           section#container section#posts .post .meta-info p.post-date a {
             color: #333;
             font-weight: 400; }
-        /* line 200, sass/_theme.scss */
+        /* line 180, sass/_theme.scss */
         section#container section#posts .post .meta-info p.tagged {
           font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 10px 0;
           text-transform: uppercase; }
-        /* line 206, sass/_theme.scss */
+        /* line 186, sass/_theme.scss */
         section#container section#posts .post .meta-info ul.tags {
           color: #777;
           margin: 0 0 36px 0; }
-          /* line 210, sass/_theme.scss */
+          /* line 190, sass/_theme.scss */
           section#container section#posts .post .meta-info ul.tags li {
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
             margin: 0 0 10px 0;
             position: relative; }
-            /* line 216, sass/_theme.scss */
+            /* line 196, sass/_theme.scss */
             section#container section#posts .post .meta-info ul.tags li a {
               color: #777;
               font-weight: normal;
               text-decoration: none; }
-            /* line 222, sass/_theme.scss */
+            /* line 202, sass/_theme.scss */
             section#container section#posts .post .meta-info ul.tags li:after {
               content: "\2014";
               font-size: 13px;
               left: -14px;
               position: absolute;
               top: 0; }
-        /* line 232, sass/_theme.scss */
+        /* line 212, sass/_theme.scss */
         section#container section#posts .post .meta-info p.comments {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          margin-top: -3px;
-          width: 145px; }
-          /* line 237, sass/_theme.scss */
+          margin-top: -3px; }
+          /* line 216, sass/_theme.scss */
           section#container section#posts .post .meta-info p.comments a {
             color: #333;
             font-weight: 400; }
-      /* line 244, sass/_theme.scss */
+      /* line 223, sass/_theme.scss */
       section#container section#posts .post h2 {
         color: #111;
         font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 20px 0 0px 0;
         text-transform: uppercase; }
-      /* line 251, sass/_theme.scss */
+      /* line 230, sass/_theme.scss */
       section#container section#posts .post h3, section#container section#posts .post h4 {
         color: #333;
         font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic;
         margin: 20px 0 0px 0; }
-      /* line 258, sass/_theme.scss */
+      /* line 237, sass/_theme.scss */
       section#container section#posts .post p {
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 12px 0; }
-      /* line 263, sass/_theme.scss */
+      /* line 242, sass/_theme.scss */
       section#container section#posts .post blockquote {
         color: #555;
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         font-style: italic;
         margin: 0 0 12px 0;
         padding: 0 30px 0 30px; }
-        /* line 270, sass/_theme.scss */
+        /* line 249, sass/_theme.scss */
         section#container section#posts .post blockquote p {
           color: #555;
           font-style: italic; }
-      /* line 276, sass/_theme.scss */
+      /* line 255, sass/_theme.scss */
       section#container section#posts .post ul {
         margin: 0 0 16px 0; }
-        /* line 279, sass/_theme.scss */
+        /* line 258, sass/_theme.scss */
         section#container section#posts .post ul li {
           font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           margin: 0 0 4px 0;
           position: relative; }
-          /* line 284, sass/_theme.scss */
+          /* line 263, sass/_theme.scss */
           section#container section#posts .post ul li:after {
             content: "\2022";
             font-size: 18px;
@@ -498,109 +610,109 @@ section#container {
             left: -12px;
             position: absolute;
             top: -2px; }
-      /* line 295, sass/_theme.scss */
+      /* line 274, sass/_theme.scss */
       section#container section#posts .post ol {
         margin: 0 0 16px 0; }
-        /* line 298, sass/_theme.scss */
+        /* line 277, sass/_theme.scss */
         section#container section#posts .post ol li {
           font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
           list-style: outside;
           list-style-type: decimal;
           margin: 0 0 4px 0;
           position: relative; }
-      /* line 307, sass/_theme.scss */
+      /* line 286, sass/_theme.scss */
       section#container section#posts .post img {
         max-width: 570px;
         margin-bottom: 10px; }
-      /* line 312, sass/_theme.scss */
+      /* line 291, sass/_theme.scss */
       section#container section#posts .post a {
         color: #ad141e;
         font-weight: 700;
         text-decoration: none; }
-        /* line 317, sass/_theme.scss */
+        /* line 296, sass/_theme.scss */
         section#container section#posts .post a:hover {
           text-decoration: underline; }
-      /* line 322, sass/_theme.scss */
+      /* line 301, sass/_theme.scss */
       section#container section#posts .post em {
         font-style: italic; }
-      /* line 326, sass/_theme.scss */
+      /* line 305, sass/_theme.scss */
       section#container section#posts .post strong {
         font-weight: 700; }
-      /* line 330, sass/_theme.scss */
+      /* line 309, sass/_theme.scss */
       section#container section#posts .post table {
         font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin-bottom: 12px;
         width: 570px; }
-        /* line 335, sass/_theme.scss */
+        /* line 314, sass/_theme.scss */
         section#container section#posts .post table tr {
           border-bottom: 1px solid #ddd; }
-        /* line 340, sass/_theme.scss */
+        /* line 319, sass/_theme.scss */
         section#container section#posts .post table td,
         section#container section#posts .post table th {
           padding: 4px;
           width: 50%; }
-        /* line 345, sass/_theme.scss */
+        /* line 324, sass/_theme.scss */
         section#container section#posts .post table th {
           font-weight: 700;
           text-align: left; }
-      /* line 351, sass/_theme.scss */
+      /* line 330, sass/_theme.scss */
       section#container section#posts .post dl {
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 10px 0 20px; }
-        /* line 358, sass/_theme.scss */
+        /* line 337, sass/_theme.scss */
         section#container section#posts .post dl dd {
           margin: 0 0 8px 20px; }
-      /* line 363, sass/_theme.scss */
+      /* line 342, sass/_theme.scss */
       section#container section#posts .post section.post-footer {
         margin: 20px 0 0 0; }
-        /* line 366, sass/_theme.scss */
+        /* line 345, sass/_theme.scss */
         section#container section#posts .post section.post-footer p.author {
           font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
           font-style: italic;
           left: -12px;
           position: relative; }
-          /* line 372, sass/_theme.scss */
+          /* line 351, sass/_theme.scss */
           section#container section#posts .post section.post-footer p.author:before {
             content: "\2014"; }
-      /* line 379, sass/_theme.scss */
+      /* line 358, sass/_theme.scss */
       section#container section#posts .post h1.title {
         font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 30px 0;
         text-transform: none; }
-        /* line 384, sass/_theme.scss */
+        /* line 363, sass/_theme.scss */
         section#container section#posts .post h1.title a {
           color: #111;
           font-weight: 300;
           text-decoration: none; }
-      /* line 394, sass/_theme.scss */
+      /* line 373, sass/_theme.scss */
       section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
         top: 0px; }
-      /* line 398, sass/_theme.scss */
+      /* line 377, sass/_theme.scss */
       section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
         margin-top: 8px; }
-      /* line 403, sass/_theme.scss */
+      /* line 382, sass/_theme.scss */
       section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
         padding-bottom: 0px;
         position: relative;
         top: -30px; }
-      /* line 413, sass/_theme.scss */
+      /* line 392, sass/_theme.scss */
       section#container section#posts .post.link .meta-info {
         top: 10px; }
-      /* line 417, sass/_theme.scss */
+      /* line 396, sass/_theme.scss */
       section#container section#posts .post.link h1.title {
         font-size: 24px;
         line-height: 30px; }
-        /* line 421, sass/_theme.scss */
+        /* line 400, sass/_theme.scss */
         section#container section#posts .post.link h1.title a {
           font-weight: 400; }
-      /* line 429, sass/_theme.scss */
+      /* line 408, sass/_theme.scss */
       section#container section#posts .post.quote .meta-info {
         top: 8px; }
-      /* line 433, sass/_theme.scss */
+      /* line 412, sass/_theme.scss */
       section#container section#posts .post.quote q {
         font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         position: relative; }
-        /* line 437, sass/_theme.scss */
+        /* line 416, sass/_theme.scss */
         section#container section#posts .post.quote q:before {
           content: '\201C';
           color: #333;
@@ -608,38 +720,38 @@ section#container {
           position: absolute;
           top: 4px;
           left: -20px; }
-        /* line 446, sass/_theme.scss */
+        /* line 425, sass/_theme.scss */
         section#container section#posts .post.quote q q:before {
           content: '\2018'; }
-        /* line 450, sass/_theme.scss */
+        /* line 429, sass/_theme.scss */
         section#container section#posts .post.quote q q:after {
           content: '\2019'; }
-      /* line 455, sass/_theme.scss */
+      /* line 434, sass/_theme.scss */
       section#container section#posts .post.quote p.source {
         left: -16px;
         margin: 10px 0 0 0;
         position: relative; }
-      /* line 463, sass/_theme.scss */
+      /* line 442, sass/_theme.scss */
       section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-      /* line 469, sass/_theme.scss */
+      /* line 448, sass/_theme.scss */
       section#container section#posts .post.quote .post-footer p.comments {
         padding-bottom: 0px;
         position: relative;
         top: -18px; }
 
-/* line 480, sass/_theme.scss */
+/* line 459, sass/_theme.scss */
 .old img {
   float: none !important; }
 
 /* Pagination
 ------------------------------------------------------------------------------*/
-/* line 486, sass/_theme.scss */
+/* line 465, sass/_theme.scss */
 #pagination {
   padding: 0 0 20px 170px;
   width: 570px; }
 
-/* line 491, sass/_theme.scss */
+/* line 470, sass/_theme.scss */
 #pagination a {
   color: #444;
   font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -647,23 +759,23 @@ section#container {
   text-decoration: none;
   text-transform: uppercase; }
 
-/* line 499, sass/_theme.scss */
+/* line 478, sass/_theme.scss */
 #pagination a:hover {
   color: #000; }
 
-/* line 503, sass/_theme.scss */
+/* line 482, sass/_theme.scss */
 #pagination #older-link {
   float: left;
   margin: 0 0 0 0;
   padding: 15px 0 0 0;
   width: 145px; }
 
-/* line 510, sass/_theme.scss */
+/* line 489, sass/_theme.scss */
 #pagination #older-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px; }
 
-/* line 515, sass/_theme.scss */
+/* line 494, sass/_theme.scss */
 #pagination #newer-link {
   float: right;
   margin: 0 0 0 0;
@@ -671,69 +783,84 @@ section#container {
   text-align: right;
   width: 145px; }
 
-/* line 523, sass/_theme.scss */
+/* line 502, sass/_theme.scss */
 #pagination #newer-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
 /* Footer
 ------------------------------------------------------------------------------*/
-/* line 530, sass/_theme.scss */
+/* line 509, sass/_theme.scss */
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
   padding: 60px 0 120px; }
-  /* line 535, sass/_theme.scss */
+  /* line 514, sass/_theme.scss */
   footer section#footer-container {
+    zoom: 1;
     margin: 0 auto;
     width: 995px; }
-    /* line 540, sass/_theme.scss */
+    /* line 18, sass/bourbon/addons/_clearfix.scss */
+    footer section#footer-container:before, footer section#footer-container:after {
+      content: "";
+      display: table; }
+    /* line 23, sass/bourbon/addons/_clearfix.scss */
+    footer section#footer-container:after {
+      clear: both; }
+    /* line 519, sass/_theme.scss */
     footer section#footer-container h6 {
       color: #4a4a4a;
       font: 300 18px/18px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0 0 20px 0; }
-    /* line 546, sass/_theme.scss */
+    /* line 525, sass/_theme.scss */
     footer section#footer-container nav {
       float: left;
       margin-right: 25px;
       width: 485px; }
-      /* line 551, sass/_theme.scss */
+      /* line 530, sass/_theme.scss */
       footer section#footer-container nav ul {
         float: left;
         width: 145px; }
-        /* line 555, sass/_theme.scss */
+        /* line 534, sass/_theme.scss */
         footer section#footer-container nav ul#secondary-links {
           margin-left: 25px; }
-        /* line 559, sass/_theme.scss */
+        /* line 538, sass/_theme.scss */
         footer section#footer-container nav ul li {
           color: #7a7a7a;
           font: 400 14px/18px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 6px 0; }
-          /* line 564, sass/_theme.scss */
+          /* line 543, sass/_theme.scss */
           footer section#footer-container nav ul li a {
             color: #7a7a7a;
             text-decoration: none; }
-            /* line 568, sass/_theme.scss */
+            /* line 547, sass/_theme.scss */
             footer section#footer-container nav ul li a:hover {
               color: #3a3a3a; }
-    /* line 576, sass/_theme.scss */
+    /* line 555, sass/_theme.scss */
     footer section#footer-container section#products {
+      zoom: 1;
       float: left;
       width: 485px; }
-      /* line 581, sass/_theme.scss */
+      /* line 18, sass/bourbon/addons/_clearfix.scss */
+      footer section#footer-container section#products:before, footer section#footer-container section#products:after {
+        content: "";
+        display: table; }
+      /* line 23, sass/bourbon/addons/_clearfix.scss */
+      footer section#footer-container section#products:after {
+        clear: both; }
+      /* line 560, sass/_theme.scss */
       footer section#footer-container section#products section.product {
         float: left;
         margin-right: 25px;
         width: 145px; }
-        /* line 587, sass/_theme.scss */
+        /* line 566, sass/_theme.scss */
         footer section#footer-container section#products section.product h6 a {
           color: #333;
           text-decoration: none; }
-        /* line 593, sass/_theme.scss */
+        /* line 572, sass/_theme.scss */
         footer section#footer-container section#products section.product a.logo {
           background: #e9e9e9;
           border: 1px solid #dedede;
-          -moz-border-radius: 3px;
           -webkit-border-radius: 3px;
           border-radius: 3px;
           display: block;
@@ -742,32 +869,31 @@ footer {
           text-align: center;
           -webkit-transition: 0.4s;
           -moz-transition: 0.4s;
+          -ms-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s; }
-          /* line 603, sass/_theme.scss */
+          /* line 582, sass/_theme.scss */
           footer section#footer-container section#products section.product a.logo:hover {
-            -moz-border-radius: 0;
             -webkit-border-radius: 0;
             border-radius: 0;
             -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
-            -moz-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
-            -o-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
             box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
-        /* line 609, sass/_theme.scss */
+        /* line 588, sass/_theme.scss */
         footer section#footer-container section#products section.product#airbrake a.logo {
           padding: 18px 0 14px 0; }
-        /* line 613, sass/_theme.scss */
+        /* line 592, sass/_theme.scss */
         footer section#footer-container section#products section.product#copycopter {
           margin-right: 0; }
-          /* line 616, sass/_theme.scss */
+          /* line 595, sass/_theme.scss */
           footer section#footer-container section#products section.product#copycopter a.logo {
             padding: 25px 0 5px 0; }
-            /* line 619, sass/_theme.scss */
+            /* line 598, sass/_theme.scss */
             footer section#footer-container section#products section.product#copycopter a.logo img {
               width: 110px; }
-        /* line 626, sass/_theme.scss */
+        /* line 605, sass/_theme.scss */
         footer section#footer-container section#products section.product#trajectory a.logo {
           height: 90px;
           padding: 40px 0 0px 0; }
-          /* line 630, sass/_theme.scss */
+          /* line 609, sass/_theme.scss */
           footer section#footer-container section#products section.product#trajectory a.logo img {
             width: 110px; }
