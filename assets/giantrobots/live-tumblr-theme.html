@@ -7,7 +7,14 @@
     {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
     <meta name="keywords" content="{block:Posts}{block:Tags}{Tag}, {/block:Tags}{/block:Posts}" />
     <meta name="robots" content="NOODP">
-    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/screen.css" media="screen">
+
+    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/mobile.css" media="screen">
+    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/desktop.css" media="screen and (min-width:700px)">
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/ie.css">
+    <![endif]-->
+
     <link rel="shortcut icon" href="http://thoughtbot.com/favicon.ico">
     <link rel="alternate" type="application/rss+xml" href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" >
     <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
