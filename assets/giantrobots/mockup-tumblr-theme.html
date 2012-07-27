@@ -23,7 +23,7 @@
   <body>
     <section id="container">
       <header>
-        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="/images/logo.svg" data-svgswap="/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
+        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="/images/logo.svg" data-png-fallback="/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
 
         <hgroup>
           <h2><a href="http://robots.thoughtbot.com">giant robots smashing into other giant robots</a></h2>
@@ -533,7 +533,7 @@ end
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascripts/svgswap.jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -585,8 +585,14 @@ end
       });
 
       jQuery('section#posts iframe').wrap('<div class="video-container" />');
-      jQuery("img[data-svgswap]").svgswap();
 
+      if(!Modernizr.svg) {
+        console.log("hurray");
+          var images = jQuery('img[data-png-fallback]');
+          images.each(function(i) {
+            jQuery(this).attr('src', jQuery(this).data('png-fallback'));
+          });
+        }
     });
     </script>
   </body>
