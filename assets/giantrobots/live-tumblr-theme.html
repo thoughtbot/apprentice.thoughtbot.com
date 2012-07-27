@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <title>{block:PostSummary}{PostSummary}{/block:PostSummary}{block:IndexPage}{Title}{/block:IndexPage}</title>
@@ -38,7 +41,7 @@
       <header>
         <h2 class="logo">
           <a href="http://robots.thoughtbot.com">
-            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" />
+            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.svg" data-svgswap="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" />
           </a>
         </h2>
 
@@ -240,7 +243,7 @@
       <aside>
         <section id="promo" class="message">
           <a href="http://workshops.thoughtbot.com/?utm_source=robots.thoughtbot.com">
-            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="workshops" width='35px'>
+            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.svg" data-svgswap="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="workshops" width='35px'>
             <span class="promo-name">Screencasts, e-books, &</span>
             <span class="promo-creative">Workshops</span>
           </a>
@@ -290,6 +293,7 @@
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/authors.js" charset="utf-8"></script>
+    <script src="http://thoughtbot.com/assets/giantrobots/javascripts/svgswap.jquery.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
       jQuery(document).ready(function() {
@@ -302,7 +306,8 @@
           }
         });
 
-        jQuery('section#posts iframe:not([data-disqus-uid])').wrap('<div class="video-container" />');
+        jQuery("section#posts iframe:not([data-disqus-uid])").wrap("<div class="video-container" />");
+        jQuery("img[data-svgswap]").svgswap();
       });
     </script>
   </body>
