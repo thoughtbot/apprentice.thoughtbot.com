@@ -1,4 +1,3 @@
-/* line 12, sass/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -18,184 +17,146 @@ time, mark, audio, video {
   vertical-align: baseline;
   background: transparent; }
 
-/* line 21, sass/_reset.scss */
 html, body {
   font-size: 100%; }
 
-/* line 26, sass/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
-/* line 31, sass/_reset.scss */
 audio, canvas, video {
   display: inline-block; }
 
-/* line 36, sass/_reset.scss */
 audio:not([controls]) {
   display: none; }
 
-/* line 41, sass/_reset.scss */
 [hidden] {
   display: none; }
 
-/* line 47, sass/_reset.scss */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* line 54, sass/_reset.scss */
 html, button, input, select, textarea {
   font-family: sans-serif; }
 
-/* line 60, sass/_reset.scss */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
-/* line 69, sass/_reset.scss */
 a:hover, a:active {
   outline: 0; }
 
-/* line 75, sass/_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
-/* line 80, sass/_reset.scss */
 b, strong {
   font-weight: bold; }
 
-/* line 84, sass/_reset.scss */
 blockquote {
   margin: 1em 40px; }
 
-/* line 89, sass/_reset.scss */
 dfn {
   font-style: italic; }
 
-/* line 94, sass/_reset.scss */
 mark {
   background: #ff0;
   color: #000; }
 
-/* line 101, sass/_reset.scss */
 pre, code, kbd, samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em; }
 
-/* line 108, sass/_reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
-/* line 115, sass/_reset.scss */
 blockquote, q {
   quotes: none; }
-  /* line 117, sass/_reset.scss */
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none; }
 
-/* line 123, sass/_reset.scss */
 small {
   font-size: 75%; }
 
-/* line 127, sass/_reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
 
-/* line 134, sass/_reset.scss */
 sup {
   top: -0.5em; }
 
-/* line 138, sass/_reset.scss */
 sub {
   bottom: -0.25em; }
 
-/* line 143, sass/_reset.scss */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 149, sass/_reset.scss */
 ul, ol {
   list-style: none;
   list-style-image: none; }
 
-/* line 155, sass/_reset.scss */
 img {
   border: 0;
   height: auto;
   max-width: 100%;
   -ms-interpolation-mode: bicubic; }
 
-/* line 163, sass/_reset.scss */
 svg:not(:root) {
   overflow: hidden; }
 
-/* line 168, sass/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
-/* line 174, sass/_reset.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal; }
 
-/* line 180, sass/_reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline; }
 
-/* line 187, sass/_reset.scss */
 button, input {
   line-height: normal; }
 
-/* line 191, sass/_reset.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button; }
 
-/* line 197, sass/_reset.scss */
 button[disabled], input[disabled] {
   cursor: default; }
 
-/* line 201, sass/_reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0; }
 
-/* line 206, sass/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 214, sass/_reset.scss */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none; }
 
-/* line 220, sass/_reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 225, sass/_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top; }
 
-/* line 231, sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -205,7 +166,6 @@ table {
 /*one grid column*/
 /*size of one gutter*/
 /* modifications */
-/* line 2, sass/_code-highlight.scss */
 pre {
   background: #f7f7f7;
   border: 1px solid #f0f0f0;
@@ -213,30 +173,25 @@ pre {
   overflow-x: auto;
   padding: 15px; }
 
-/* line 14, sass/_code-highlight.scss */
 pre,
 code {
   font: 12px/18px monaco, monospace;
   white-space: pre;
   word-wrap: normal; }
-  /* line 19, sass/_code-highlight.scss */
   pre a,
   code a {
     font-weight: 400; }
 
 /* Sunburst-like style (c) Vasily Polovnyov <vast@whiteants.net> */
-/* line 25, sass/_code-highlight.scss */
 pre code {
   display: block;
   color: #333; }
 
-/* line 31, sass/_code-highlight.scss */
 pre .subst,
 pre .title {
   font-weight: normal;
   color: #333; }
 
-/* line 39, sass/_code-highlight.scss */
 pre .comment,
 pre .template_comment,
 pre .javadoc,
@@ -244,7 +199,6 @@ pre .diff .header {
   color: #808080;
   font-style: italic; }
 
-/* line 52, sass/_code-highlight.scss */
 pre .annotation,
 pre .decorator,
 pre .preprocessor,
@@ -256,12 +210,10 @@ pre .apache .cbracket,
 pre .input_number {
   color: #808000; }
 
-/* line 57, sass/_code-highlight.scss */
 pre .tag,
 pre .pi {
   background: #efefef; }
 
-/* line 72, sass/_code-highlight.scss */
 pre .tag .title,
 pre .id,
 pre .attr_selector,
@@ -276,7 +228,6 @@ pre .list .title,
 pre .tex .command {
   color: #000080; }
 
-/* line 81, sass/_code-highlight.scss */
 pre .attribute,
 pre .rules .keyword,
 pre .number,
@@ -285,12 +236,10 @@ pre .regexp,
 pre .tex .special {
   color: #0000ff; }
 
-/* line 86, sass/_code-highlight.scss */
 pre .number,
 pre .regexp {
   font-weight: normal; }
 
-/* line 94, sass/_code-highlight.scss */
 pre .string,
 pre .value,
 pre .filter .argument,
@@ -298,7 +247,6 @@ pre .css .function .params,
 pre .apache .tag {
   color: #008000; }
 
-/* line 103, sass/_code-highlight.scss */
 pre .symbol,
 pre .ruby .symbol .string,
 pre .ruby .symbol .keyword,
@@ -307,82 +255,63 @@ pre .char,
 pre .tex .formula {
   color: #dc322f; }
 
-/* line 109, sass/_code-highlight.scss */
 pre .phpdoc,
 pre .yardoctag,
 pre .javadoctag {
   text-decoration: underline; }
 
-/* line 116, sass/_code-highlight.scss */
 pre .variable,
 pre .envvar,
 pre .apache .sqbracket,
 pre .nginx .built_in {
   color: #cb4b16; }
 
-/* line 120, sass/_code-highlight.scss */
 pre .addition {
   background: #baeeba; }
 
-/* line 124, sass/_code-highlight.scss */
 pre .deletion {
   background: #ffc8bd; }
 
-/* line 128, sass/_code-highlight.scss */
 pre .diff .change {
   background: #bccff9; }
 
-/* line 2, sass/_disqus.scss */
 section#container section#posts .post #disqus_thread {
   border-top: 1px solid #ddd;
   margin-top: 60px;
   padding-top: 20px; }
-  /* line 8, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread ul li.dsq-post-as {
     position: static; }
-  /* line 14, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread ul li {
     margin: 0 3px 5px 0; }
-    /* line 17, sass/_disqus.scss */
     section#container section#posts .post #disqus_thread ul li:after {
       content: ''; }
-  /* line 23, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread h3 {
     margin-bottom: 10px; }
-  /* line 28, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread #dsq-account-dropdown a {
     font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-  /* line 33, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread div.dsq-comment-text {
     font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-  /* line 38, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread .dsq-comment-footer a {
     color: #777;
     font-size: 13px;
     font-weight: 400; }
-  /* line 46, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread .dsq-comment-meta a,
   section#container section#posts .post #disqus_thread .dsq-comment-actions a {
     opacity: 1; }
-  /* line 51, sass/_disqus.scss */
   section#container section#posts .post #disqus_thread #dsq-footer li {
     margin-right: 12px; }
-    /* line 54, sass/_disqus.scss */
     section#container section#posts .post #disqus_thread #dsq-footer li a {
       color: #333;
       text-decoration: none;
       font-style: normal; }
-      /* line 59, sass/_disqus.scss */
       section#container section#posts .post #disqus_thread #dsq-footer li a em {
         font-style: normal; }
 
-/* line 1, sass/_theme.scss */
 body {
   background: #fff;
   border-top: 4px solid #ad141e;
   color: #333; }
 
-/* line 7, sass/_theme.scss */
 section#container {
   zoom: 1;
   padding: 25px 10px 15px;
@@ -391,77 +320,59 @@ section#container {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 auto; }
-  /* line 18, sass/bourbon/addons/_clearfix.scss */
   section#container:before, section#container:after {
     content: "";
     display: table; }
-  /* line 23, sass/bourbon/addons/_clearfix.scss */
   section#container:after {
     clear: both; }
-  /* line 13, sass/_theme.scss */
   section#container header {
     zoom: 1;
     border-bottom: 1px solid #ddd;
     padding: 0 0 40px 0;
     margin-bottom: 20px; }
-    /* line 18, sass/bourbon/addons/_clearfix.scss */
     section#container header:before, section#container header:after {
       content: "";
       display: table; }
-    /* line 23, sass/bourbon/addons/_clearfix.scss */
     section#container header:after {
       clear: both; }
-    /* line 19, sass/_theme.scss */
     section#container header h2.logo {
       text-align: center; }
-    /* line 23, sass/_theme.scss */
     section#container header hgroup {
       text-align: center; }
-      /* line 26, sass/_theme.scss */
       section#container header hgroup h2 {
         font: 700 1em/1.4em "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 20px 0 6px 0;
         text-transform: uppercase; }
-        /* line 31, sass/_theme.scss */
         section#container header hgroup h2 a {
           color: #333;
           font-weight: 700;
           text-decoration: none; }
-          /* line 36, sass/_theme.scss */
           section#container header hgroup h2 a:hover {
             color: #ad141e; }
-      /* line 42, sass/_theme.scss */
       section#container header hgroup h3 {
         color: #777;
         font: 400 0.8em/1em "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic; }
-        /* line 47, sass/_theme.scss */
         section#container header hgroup h3 a {
           color: #777;
           font-weight: 400;
           text-decoration: none; }
-          /* line 52, sass/_theme.scss */
           section#container header hgroup h3 a:hover {
             text-decoration: underline; }
-    /* line 59, sass/_theme.scss */
     section#container header nav {
       zoom: 1;
       padding: 15px 0 0 0;
       display: none; }
-      /* line 18, sass/bourbon/addons/_clearfix.scss */
       section#container header nav:before, section#container header nav:after {
         content: "";
         display: table; }
-      /* line 23, sass/bourbon/addons/_clearfix.scss */
       section#container header nav:after {
         clear: both; }
-  /* line 66, sass/_theme.scss */
   section#container aside {
     display: block;
     clear: both;
     width: 85%;
     margin: 10px auto 20px; }
-    /* line 73, sass/_theme.scss */
     section#container aside section.message a {
       background: #f7f7f7;
       border: 1px solid #dedede;
@@ -476,11 +387,9 @@ section#container {
       -ms-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-      /* line 83, sass/_theme.scss */
       section#container aside section.message a img {
         float: left;
         margin: 0 15px 0 0; }
-      /* line 88, sass/_theme.scss */
       section#container aside section.message a span.promo-name {
         color: #777;
         display: block;
@@ -488,38 +397,30 @@ section#container {
         font-style: italic;
         margin: 0 0 4px 0;
         text-decoration: none; }
-      /* line 97, sass/_theme.scss */
       section#container aside section.message a span.promo-creative {
         color: #444;
         display: block;
         font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         text-decoration: none; }
-      /* line 104, sass/_theme.scss */
       section#container aside section.message a:hover {
         -webkit-border-radius: 0;
         border-radius: 0;
         -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
         box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); }
-    /* line 111, sass/_theme.scss */
     section#container aside ul.social {
       zoom: 1;
       text-align: center;
       margin: 10px 0 20px; }
-      /* line 18, sass/bourbon/addons/_clearfix.scss */
       section#container aside ul.social:before, section#container aside ul.social:after {
         content: "";
         display: table; }
-      /* line 23, sass/bourbon/addons/_clearfix.scss */
       section#container aside ul.social:after {
         clear: both; }
-      /* line 116, sass/_theme.scss */
       section#container aside ul.social li {
         margin-right: 15px;
         display: inline-block; }
-        /* line 120, sass/_theme.scss */
         section#container aside ul.social li:last-child {
           margin-right: 0; }
-        /* line 124, sass/_theme.scss */
         section#container aside ul.social li a {
           height: 42px;
           display: block;
@@ -534,7 +435,6 @@ section#container {
           -ms-transition: 0.5s;
           -o-transition: 0.5s;
           transition: 0.5s; }
-  /* line 136, sass/_theme.scss */
   section#container section#posts .post {
     border-bottom: 3px solid #dddddd;
     margin: 0 0 40px 0;
@@ -545,85 +445,68 @@ section#container {
     box-sizing: border-box;
     /* link posts */
     /* quote posts */ }
-    /* line 142, sass/_theme.scss */
     section#container section#posts .post .meta-info {
       text-align: center; }
-      /* line 145, sass/_theme.scss */
       section#container section#posts .post .meta-info p.post-date {
         border-bottom: 1px dashed #eee;
         font: 400 16px/16px "skolar-1", "skolar-2", Georgia, serif;
         margin: 0 auto 20px auto;
         padding-bottom: 15px;
         width: 50%; }
-        /* line 152, sass/_theme.scss */
         section#container section#posts .post .meta-info p.post-date a {
           color: #aaa;
           font-weight: 400; }
-      /* line 158, sass/_theme.scss */
       section#container section#posts .post .meta-info p.tagged {
         display: none; }
-      /* line 162, sass/_theme.scss */
       section#container section#posts .post .meta-info ul.tags {
         color: #777;
         margin: 0 0 36px 0;
         display: none; }
-        /* line 167, sass/_theme.scss */
         section#container section#posts .post .meta-info ul.tags li {
           font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
           font-style: italic;
           margin: 0 0 10px 0;
           position: relative; }
-          /* line 173, sass/_theme.scss */
           section#container section#posts .post .meta-info ul.tags li a {
             color: #777;
             font-weight: normal;
             text-decoration: none; }
-          /* line 179, sass/_theme.scss */
           section#container section#posts .post .meta-info ul.tags li:after {
             content: "\2014";
             font-size: 13px;
             left: -14px;
             position: absolute;
             top: 0; }
-      /* line 189, sass/_theme.scss */
       section#container section#posts .post .meta-info p.comments {
         display: none; }
-    /* line 194, sass/_theme.scss */
     section#container section#posts .post h2 {
       color: #111;
       font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 20px 0 0px 0;
       text-transform: uppercase; }
-    /* line 201, sass/_theme.scss */
     section#container section#posts .post h3, section#container section#posts .post h4 {
       color: #333;
       font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
       font-style: italic;
       margin: 20px 0 0px 0; }
-    /* line 208, sass/_theme.scss */
     section#container section#posts .post p {
       font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0 0 12px 0; }
-    /* line 213, sass/_theme.scss */
     section#container section#posts .post blockquote {
       color: #555;
       font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       font-style: italic;
       margin: 0 0 12px 0;
       padding: 0 30px 0 30px; }
-      /* line 220, sass/_theme.scss */
       section#container section#posts .post blockquote p {
         color: #555;
         font-style: italic; }
-    /* line 226, sass/_theme.scss */
     section#container section#posts .post ul {
       margin: 0 0 16px 0; }
-      /* line 229, sass/_theme.scss */
       section#container section#posts .post ul li {
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         margin: 0 0 4px 0;
         position: relative; }
-        /* line 234, sass/_theme.scss */
         section#container section#posts .post ul li:after {
           content: "\2022";
           font-size: 18px;
@@ -631,90 +514,70 @@ section#container {
           left: -12px;
           position: absolute;
           top: -2px; }
-    /* line 245, sass/_theme.scss */
     section#container section#posts .post ol {
       margin: 0 0 16px 0; }
-      /* line 248, sass/_theme.scss */
       section#container section#posts .post ol li {
         font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
         list-style: outside;
         list-style-type: decimal;
         margin: 0 0 4px 0;
         position: relative; }
-    /* line 257, sass/_theme.scss */
     section#container section#posts .post img {
       display: block;
       margin-bottom: 10px;
       margin-left: auto;
       margin-right: auto;
       max-width: 100%; }
-    /* line 265, sass/_theme.scss */
     section#container section#posts .post a {
       color: #ad141e;
       font-weight: 700;
       text-decoration: none; }
-      /* line 270, sass/_theme.scss */
       section#container section#posts .post a:hover {
         text-decoration: underline; }
-    /* line 275, sass/_theme.scss */
     section#container section#posts .post em {
       font-style: italic; }
-    /* line 279, sass/_theme.scss */
     section#container section#posts .post strong {
       font-weight: 700; }
-    /* line 283, sass/_theme.scss */
     section#container section#posts .post table {
       font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin-bottom: 12px;
       width: 100%; }
-      /* line 288, sass/_theme.scss */
       section#container section#posts .post table tr {
         border-bottom: 1px solid #ddd; }
-      /* line 293, sass/_theme.scss */
       section#container section#posts .post table td,
       section#container section#posts .post table th {
         padding: 4px;
         width: 50%; }
-      /* line 298, sass/_theme.scss */
       section#container section#posts .post table th {
         font-weight: 700;
         text-align: left; }
-    /* line 304, sass/_theme.scss */
     section#container section#posts .post dl {
       font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 10px 0 20px; }
-      /* line 311, sass/_theme.scss */
       section#container section#posts .post dl dd {
         margin: 0 0 8px 20px; }
-    /* line 316, sass/_theme.scss */
     section#container section#posts .post section.post-footer {
       margin: 20px 0 0 0;
       padding: 20px 0; }
-      /* line 320, sass/_theme.scss */
       section#container section#posts .post section.post-footer p.author {
         float: left;
         font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
         font-style: italic;
         left: -12px;
         position: relative; }
-        /* line 327, sass/_theme.scss */
         section#container section#posts .post section.post-footer p.author:before {
           content: "\2014"; }
-      /* line 332, sass/_theme.scss */
       section#container section#posts .post section.post-footer p.comments {
         float: right;
         font: 400 14px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-      /* line 337, sass/_theme.scss */
       section#container section#posts .post section.post-footer div.tags {
         display: block;
         clear: both;
         font-size: 10px;
         padding-top: 5px;
         opacity: 0.7; }
-        /* line 344, sass/_theme.scss */
         section#container section#posts .post section.post-footer div.tags ul {
           display: inline-block; }
-          /* line 347, sass/_theme.scss */
           section#container section#posts .post section.post-footer div.tags ul li {
             display: inline-block;
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
@@ -723,7 +586,6 @@ section#container {
             position: relative;
             list-style: none;
             line-height: 1.5em; }
-            /* line 356, sass/_theme.scss */
             section#container section#posts .post section.post-footer div.tags ul li:before {
               content: ",";
               font-size: 12px;
@@ -731,53 +593,42 @@ section#container {
               top: 0;
               display: inline-block;
               position: absolute; }
-            /* line 365, sass/_theme.scss */
             section#container section#posts .post section.post-footer div.tags ul li:after {
               content: ''; }
-            /* line 370, sass/_theme.scss */
             section#container section#posts .post section.post-footer div.tags ul li:last-child:before {
               content: ''; }
-            /* line 375, sass/_theme.scss */
             section#container section#posts .post section.post-footer div.tags ul li:first-child {
               padding-left: 50px; }
-              /* line 377, sass/_theme.scss */
               section#container section#posts .post section.post-footer div.tags ul li:first-child:after {
                 content: 'Tagged:';
                 font-size: 13px;
                 font-weight: 400;
                 top: 0;
                 left: 0; }
-            /* line 386, sass/_theme.scss */
             section#container section#posts .post section.post-footer div.tags ul li a {
               color: #777;
               font-weight: normal;
               text-decoration: none; }
-    /* line 398, sass/_theme.scss */
     section#container section#posts .post h1.title {
       font: 300 32px/36px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0 0 30px 0;
       text-align: center;
       text-transform: none;
       word-wrap: break-word; }
-      /* line 405, sass/_theme.scss */
       section#container section#posts .post h1.title a {
         color: #111;
         font-weight: 300;
         text-decoration: none; }
-    /* line 416, sass/_theme.scss */
     section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
       top: 0px; }
-    /* line 420, sass/_theme.scss */
     section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
       margin-top: 8px; }
-    /* line 427, sass/_theme.scss */
     section#container section#posts .post .video-container {
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 30px;
       height: 0;
       overflow: hidden; }
-      /* line 436, sass/_theme.scss */
       section#container section#posts .post .video-container iframe,
       section#container section#posts .post .video-container object,
       section#container section#posts .post .video-container embed {
@@ -786,24 +637,18 @@ section#container {
         left: 0;
         width: 100%;
         height: 100%; }
-    /* line 447, sass/_theme.scss */
     section#container section#posts .post.link .meta-info {
       top: 10px; }
-    /* line 451, sass/_theme.scss */
     section#container section#posts .post.link h1.title {
       font-size: 24px;
       line-height: 30px; }
-      /* line 455, sass/_theme.scss */
       section#container section#posts .post.link h1.title a {
         font-weight: 400; }
-    /* line 463, sass/_theme.scss */
     section#container section#posts .post.quote .meta-info {
       top: 8px; }
-    /* line 467, sass/_theme.scss */
     section#container section#posts .post.quote q {
       font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       position: relative; }
-      /* line 471, sass/_theme.scss */
       section#container section#posts .post.quote q:before {
         content: '\201C';
         color: #333;
@@ -811,31 +656,24 @@ section#container {
         position: absolute;
         top: 4px;
         left: -20px; }
-      /* line 480, sass/_theme.scss */
       section#container section#posts .post.quote q q:before {
         content: '\2018'; }
-      /* line 484, sass/_theme.scss */
       section#container section#posts .post.quote q q:after {
         content: '\2019'; }
-    /* line 489, sass/_theme.scss */
     section#container section#posts .post.quote p.source {
       left: -16px;
       margin: 10px 0 0 0;
       position: relative; }
-    /* line 497, sass/_theme.scss */
     section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
       font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-    /* line 503, sass/_theme.scss */
     section#container section#posts .post.quote .post-footer p.comments {
       padding-bottom: 0px;
       position: relative;
       top: -18px; }
 
-/* line 514, sass/_theme.scss */
 .old img {
   float: none !important; }
 
-/* line 520, sass/_theme.scss */
 #pagination {
   padding: 0 15px;
   margin-top: -40px;
@@ -846,7 +684,6 @@ section#container {
   box-sizing: border-box;
   display: inline-block; }
 
-/* line 528, sass/_theme.scss */
 #pagination a {
   color: #444;
   font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
@@ -854,94 +691,74 @@ section#container {
   text-decoration: none;
   text-transform: uppercase; }
 
-/* line 536, sass/_theme.scss */
 #pagination a:hover {
   color: #000; }
 
-/* line 540, sass/_theme.scss */
 #pagination #older-link {
   float: left;
   margin: 0 0 0 0;
   padding: 15px 0 0 0; }
 
-/* line 546, sass/_theme.scss */
 #pagination #older-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px; }
 
-/* line 551, sass/_theme.scss */
 #pagination #newer-link {
   float: right;
   margin: 0 0 0 0;
   padding: 15px 0 0 0;
   text-align: right; }
 
-/* line 558, sass/_theme.scss */
 #pagination #newer-link a {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
 /* Footer
 ------------------------------------------------------------------------------*/
-/* line 565, sass/_theme.scss */
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
   padding: 25px; }
-  /* line 570, sass/_theme.scss */
   footer section#footer-container {
     zoom: 1;
     margin: 0 auto; }
-    /* line 18, sass/bourbon/addons/_clearfix.scss */
     footer section#footer-container:before, footer section#footer-container:after {
       content: "";
       display: table; }
-    /* line 23, sass/bourbon/addons/_clearfix.scss */
     footer section#footer-container:after {
       clear: both; }
-    /* line 574, sass/_theme.scss */
     footer section#footer-container h6 {
       color: #4a4a4a;
       font: 300 17px/18px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0 0 20px 0; }
-    /* line 580, sass/_theme.scss */
     footer section#footer-container nav {
       display: inline-block;
       float: left;
       margin: 0;
       width: 66%; }
-      /* line 586, sass/_theme.scss */
       footer section#footer-container nav ul {
         display: inline-block;
         width: 55%; }
-        /* line 590, sass/_theme.scss */
         footer section#footer-container nav ul#secondary-links {
           width: 35%; }
-        /* line 594, sass/_theme.scss */
         footer section#footer-container nav ul li {
           color: #7a7a7a;
           font: 400 13px/18px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 6px 0; }
-          /* line 599, sass/_theme.scss */
           footer section#footer-container nav ul li a {
             color: #7a7a7a;
             text-decoration: none; }
-            /* line 603, sass/_theme.scss */
             footer section#footer-container nav ul li a:hover {
               color: #3a3a3a; }
-    /* line 611, sass/_theme.scss */
     footer section#footer-container section#products {
       display: inline-block;
       float: right;
       width: 32%; }
-      /* line 617, sass/_theme.scss */
       footer section#footer-container section#products section.product h6 {
         font-size: 17px; }
-        /* line 620, sass/_theme.scss */
         footer section#footer-container section#products section.product h6 a {
           color: #333;
           text-decoration: none; }
-      /* line 626, sass/_theme.scss */
       footer section#footer-container section#products section.product a.logo {
         background: #e9e9e9;
         border: 1px solid #dedede;
@@ -959,28 +776,21 @@ footer {
         -ms-transition: box-shadow 0.4s;
         -o-transition: box-shadow 0.4s;
         transition: box-shadow 0.4s; }
-        /* line 637, sass/_theme.scss */
         footer section#footer-container section#products section.product a.logo:hover {
           -webkit-border-radius: 0;
           border-radius: 0;
           -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
 
-/* line 648, sass/_theme.scss */
 a#twitter {
   background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.svg") -8px -1px no-repeat; }
-  /* line 651, sass/_theme.scss */
   a#twitter:hover {
     background-position: -8px -48px; }
-/* line 656, sass/_theme.scss */
 a#contact {
   background: url("http://thoughtbot.com/assets/giantrobots/images/contact.svg") 0 -1px no-repeat; }
-  /* line 659, sass/_theme.scss */
   a#contact:hover {
     background-position: 0 -47px; }
-/* line 664, sass/_theme.scss */
 a#rss {
   background: url("http://thoughtbot.com/assets/giantrobots/images/rss.svg") 0px 0px no-repeat; }
-  /* line 667, sass/_theme.scss */
   a#rss:hover {
     background-position: 0px -47px; }
