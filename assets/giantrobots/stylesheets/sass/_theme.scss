@@ -279,8 +279,11 @@ section#container {
       }
 
       img {
-        max-width: 100%;
+        display: block;
         margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
       }
 
       a {
@@ -353,6 +356,64 @@ section#container {
         p.comments {
           float: right;
           font: 400 14px/14px $sans-serif;
+        }
+
+        div.tags {
+          display: block;
+          clear: both;
+          font-size: 10px;
+          padding-top: 5px;
+          opacity: 0.7;
+
+          ul {
+            display: inline-block;
+
+            li {
+              display: inline-block;
+              font: 400 13px/14px $serif;
+              font-style: italic;
+              margin: 0 10px 0 2px;
+              position: relative;
+              list-style: none;
+              line-height: 1.5em;
+
+              &:before {
+                content: ",";
+                font-size: 12px;
+                right: -5px;
+                top: 0;
+                display: inline-block;
+                position: absolute;
+              }
+
+              &:after {
+                content: '';
+              }
+
+              &:last-child {
+                &:before {
+                  content: '';
+                }
+              }
+
+              &:first-child {
+                padding-left: 50px;
+                &:after {
+                  content: 'Tagged:';
+                  font-size: 13px;
+                  font-weight: 400;
+                  top: 0;
+                  left: 0;
+                }
+              }
+
+              a {
+                color: #777;
+                font-weight: normal;
+                text-decoration: none;
+              }
+            }
+          }
         }
       }
 

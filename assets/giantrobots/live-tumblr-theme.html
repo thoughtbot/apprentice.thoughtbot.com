@@ -78,7 +78,20 @@
               {Body}
 
               <section class="post-footer">
-                <p class="author">{PostAuthorName}</p>
+              <p class="author">{PostAuthorName}</p>
+              <p class="comments"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></p>
+
+              {block:PermalinkPage}
+                {block:HasTags}
+                  <div class="tags">
+                    <ul>
+                      {block:Tags}
+                      <li><a href="{TagURL}">{Tag}</a></li>
+                      {/block:Tags}
+                    </ul>
+                  </div>
+                {/block:HasTags}
+              {/block:PermalinkPage}
               </section>
 
               {block:PermalinkPage}<section id="disqus_thread"></section>{/block:PermalinkPage}
@@ -289,7 +302,7 @@
           }
         });
 
-        jQuery('section#posts iframe').wrap('<div class="video-container" />');
+        jQuery('section#posts iframe:not([data-disqus-uid])').wrap('<div class="video-container" />');
       });
     </script>
   </body>

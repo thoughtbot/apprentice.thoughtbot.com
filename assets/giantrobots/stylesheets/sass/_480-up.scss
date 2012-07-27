@@ -1,4 +1,6 @@
 section#container {
+  margin-bottom: 20px;
+
   aside {
     width: 100%;
     display: inline-block;
@@ -38,9 +40,6 @@ footer {
     section#products {
       width: 53%;
       display: inline-block;
-      section.product {
-      
-      }
     }
   }
 }
