@@ -314,22 +314,22 @@ body {
 
 section#container {
   zoom: 1;
-  padding: 25px 10px 15px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 25px 10px 15px; }
   section#container:before, section#container:after {
     content: "";
     display: table; }
   section#container:after {
     clear: both; }
   section#container header {
-    zoom: 1;
     border-bottom: 1px solid #ddd;
-    padding: 0 0 40px 0;
-    margin-bottom: 20px; }
+    zoom: 1;
+    margin: 0 0 20px 0;
+    padding: 0 0 40px 0; }
     section#container header:before, section#container header:after {
       content: "";
       display: table; }
@@ -369,10 +369,10 @@ section#container {
       section#container header nav:after {
         clear: both; }
   section#container aside {
-    display: block;
     clear: both;
-    width: 85%;
-    margin: 10px auto 20px; }
+    display: block;
+    margin: 10px auto 20px;
+    width: 85%; }
     section#container aside section.message a {
       background: #f7f7f7;
       border: 1px solid #dedede;
@@ -437,14 +437,12 @@ section#container {
           transition: 0.5s; }
   section#container section#posts .post {
     border-bottom: 3px solid #dddddd;
-    margin: 0 0 40px 0;
-    padding: 0 20px 20px 20px;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* link posts */
-    /* quote posts */ }
+    margin: 0 0 40px 0;
+    padding: 0 20px 20px 20px; }
     section#container section#posts .post .meta-info {
       text-align: center; }
       section#container section#posts .post .meta-info p.post-date {
@@ -459,24 +457,7 @@ section#container {
       section#container section#posts .post .meta-info p.tagged {
         display: none; }
       section#container section#posts .post .meta-info ul.tags {
-        color: #777;
-        margin: 0 0 36px 0;
         display: none; }
-        section#container section#posts .post .meta-info ul.tags li {
-          font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
-          font-style: italic;
-          margin: 0 0 10px 0;
-          position: relative; }
-          section#container section#posts .post .meta-info ul.tags li a {
-            color: #777;
-            font-weight: normal;
-            text-decoration: none; }
-          section#container section#posts .post .meta-info ul.tags li:after {
-            content: "\2014";
-            font-size: 13px;
-            left: -14px;
-            position: absolute;
-            top: 0; }
       section#container section#posts .post .meta-info p.comments {
         display: none; }
     section#container section#posts .post h2 {
@@ -571,28 +552,28 @@ section#container {
         float: right;
         font: 400 14px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#container section#posts .post section.post-footer div.tags {
-        display: block;
         clear: both;
+        display: block;
         font-size: 10px;
-        padding-top: 5px;
-        opacity: 0.7; }
+        opacity: 0.7;
+        padding-top: 5px; }
         section#container section#posts .post section.post-footer div.tags ul {
           display: inline-block; }
           section#container section#posts .post section.post-footer div.tags ul li {
             display: inline-block;
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
-            margin: 0 10px 0 2px;
-            position: relative;
+            line-height: 1.5em;
             list-style: none;
-            line-height: 1.5em; }
+            margin: 0 10px 0 2px;
+            position: relative; }
             section#container section#posts .post section.post-footer div.tags ul li:before {
               content: ",";
-              font-size: 12px;
-              right: -5px;
-              top: 0;
               display: inline-block;
-              position: absolute; }
+              font-size: 12px;
+              position: absolute;
+              right: -5px;
+              top: 0; }
             section#container section#posts .post section.post-footer div.tags ul li:after {
               content: ''; }
             section#container section#posts .post section.post-footer div.tags ul li:last-child:before {
@@ -603,8 +584,8 @@ section#container {
                 content: 'Tagged:';
                 font-size: 13px;
                 font-weight: 400;
-                top: 0;
-                left: 0; }
+                left: 0;
+                top: 0; }
             section#container section#posts .post section.post-footer div.tags ul li a {
               color: #777;
               font-weight: normal;
@@ -624,11 +605,11 @@ section#container {
     section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
       margin-top: 8px; }
     section#container section#posts .post .video-container {
-      position: relative;
+      height: 0;
+      overflow: hidden;
       padding-bottom: 56.25%;
       padding-top: 30px;
-      height: 0;
-      overflow: hidden; }
+      position: relative; }
       section#container section#posts .post .video-container iframe,
       section#container section#posts .post .video-container object,
       section#container section#posts .post .video-container embed {
@@ -650,12 +631,12 @@ section#container {
       font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       position: relative; }
       section#container section#posts .post.quote q:before {
-        content: '\201C';
         color: #333;
+        content: '\201C';
         font-size: 36px;
+        left: -20px;
         position: absolute;
-        top: 4px;
-        left: -20px; }
+        top: 4px; }
       section#container section#posts .post.quote q q:before {
         content: '\2018'; }
       section#container section#posts .post.quote q q:after {
@@ -713,8 +694,6 @@ section#container {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
-/* Footer
-------------------------------------------------------------------------------*/
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
@@ -764,11 +743,11 @@ footer {
         border: 1px solid #dedede;
         -webkit-border-radius: 3px;
         border-radius: 3px;
-        display: block;
-        min-height: 60px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        display: block;
+        min-height: 60px;
         padding: 30px 15px;
         text-align: center;
         -webkit-transition: box-shadow 0.4s;

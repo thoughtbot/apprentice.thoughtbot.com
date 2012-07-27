@@ -314,22 +314,22 @@ body {
 
 section#container {
   zoom: 1;
-  padding: 25px 10px 15px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 25px 10px 15px; }
   section#container:before, section#container:after {
     content: "";
     display: table; }
   section#container:after {
     clear: both; }
   section#container header {
-    zoom: 1;
     border-bottom: 1px solid #ddd;
-    padding: 0 0 40px 0;
-    margin-bottom: 20px; }
+    zoom: 1;
+    margin: 0 0 20px 0;
+    padding: 0 0 40px 0; }
     section#container header:before, section#container header:after {
       content: "";
       display: table; }
@@ -369,10 +369,10 @@ section#container {
       section#container header nav:after {
         clear: both; }
   section#container aside {
-    display: block;
     clear: both;
-    width: 85%;
-    margin: 10px auto 20px; }
+    display: block;
+    margin: 10px auto 20px;
+    width: 85%; }
     section#container aside section.message a {
       background: #f7f7f7;
       border: 1px solid #dedede;
@@ -437,14 +437,12 @@ section#container {
           transition: 0.5s; }
   section#container section#posts .post {
     border-bottom: 3px solid #dddddd;
-    margin: 0 0 40px 0;
-    padding: 0 20px 20px 20px;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* link posts */
-    /* quote posts */ }
+    margin: 0 0 40px 0;
+    padding: 0 20px 20px 20px; }
     section#container section#posts .post .meta-info {
       text-align: center; }
       section#container section#posts .post .meta-info p.post-date {
@@ -459,24 +457,7 @@ section#container {
       section#container section#posts .post .meta-info p.tagged {
         display: none; }
       section#container section#posts .post .meta-info ul.tags {
-        color: #777;
-        margin: 0 0 36px 0;
         display: none; }
-        section#container section#posts .post .meta-info ul.tags li {
-          font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
-          font-style: italic;
-          margin: 0 0 10px 0;
-          position: relative; }
-          section#container section#posts .post .meta-info ul.tags li a {
-            color: #777;
-            font-weight: normal;
-            text-decoration: none; }
-          section#container section#posts .post .meta-info ul.tags li:after {
-            content: "\2014";
-            font-size: 13px;
-            left: -14px;
-            position: absolute;
-            top: 0; }
       section#container section#posts .post .meta-info p.comments {
         display: none; }
     section#container section#posts .post h2 {
@@ -571,28 +552,28 @@ section#container {
         float: right;
         font: 400 14px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
       section#container section#posts .post section.post-footer div.tags {
-        display: block;
         clear: both;
+        display: block;
         font-size: 10px;
-        padding-top: 5px;
-        opacity: 0.7; }
+        opacity: 0.7;
+        padding-top: 5px; }
         section#container section#posts .post section.post-footer div.tags ul {
           display: inline-block; }
           section#container section#posts .post section.post-footer div.tags ul li {
             display: inline-block;
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
             font-style: italic;
-            margin: 0 10px 0 2px;
-            position: relative;
+            line-height: 1.5em;
             list-style: none;
-            line-height: 1.5em; }
+            margin: 0 10px 0 2px;
+            position: relative; }
             section#container section#posts .post section.post-footer div.tags ul li:before {
               content: ",";
-              font-size: 12px;
-              right: -5px;
-              top: 0;
               display: inline-block;
-              position: absolute; }
+              font-size: 12px;
+              position: absolute;
+              right: -5px;
+              top: 0; }
             section#container section#posts .post section.post-footer div.tags ul li:after {
               content: ''; }
             section#container section#posts .post section.post-footer div.tags ul li:last-child:before {
@@ -603,8 +584,8 @@ section#container {
                 content: 'Tagged:';
                 font-size: 13px;
                 font-weight: 400;
-                top: 0;
-                left: 0; }
+                left: 0;
+                top: 0; }
             section#container section#posts .post section.post-footer div.tags ul li a {
               color: #777;
               font-weight: normal;
@@ -624,11 +605,11 @@ section#container {
     section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
       margin-top: 8px; }
     section#container section#posts .post .video-container {
-      position: relative;
+      height: 0;
+      overflow: hidden;
       padding-bottom: 56.25%;
       padding-top: 30px;
-      height: 0;
-      overflow: hidden; }
+      position: relative; }
       section#container section#posts .post .video-container iframe,
       section#container section#posts .post .video-container object,
       section#container section#posts .post .video-container embed {
@@ -650,12 +631,12 @@ section#container {
       font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
       position: relative; }
       section#container section#posts .post.quote q:before {
-        content: '\201C';
         color: #333;
+        content: '\201C';
         font-size: 36px;
+        left: -20px;
         position: absolute;
-        top: 4px;
-        left: -20px; }
+        top: 4px; }
       section#container section#posts .post.quote q q:before {
         content: '\2018'; }
       section#container section#posts .post.quote q q:after {
@@ -713,8 +694,6 @@ section#container {
   background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0; }
 
-/* Footer
-------------------------------------------------------------------------------*/
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
@@ -764,11 +743,11 @@ footer {
         border: 1px solid #dedede;
         -webkit-border-radius: 3px;
         border-radius: 3px;
-        display: block;
-        min-height: 60px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+        display: block;
+        min-height: 60px;
         padding: 30px 15px;
         text-align: center;
         -webkit-transition: box-shadow 0.4s;
@@ -826,8 +805,8 @@ footer section#footer-container section#products {
   display: inline-block; }
 
 section#container {
-  width: 740px;
-  margin-bottom: -20px; }
+  margin-bottom: -20px;
+  width: 740px; }
   section#container header {
     margin: 0 0 40px 0; }
     section#container header h2.logo {
@@ -843,34 +822,12 @@ section#container {
       padding: 40px 0 0 25px; }
       section#container header hgroup h2 {
         font: 700 12px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 6px 0;
-        text-transform: uppercase; }
-        section#container header hgroup h2 a {
-          color: #333;
-          font-weight: 700;
-          text-decoration: none; }
-          section#container header hgroup h2 a:hover {
-            color: #ad141e; }
+        margin: 0 0 6px 0; }
       section#container header hgroup h3 {
-        color: #777;
-        font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif;
-        font-style: italic; }
-        section#container header hgroup h3 a {
-          color: #777;
-          font-weight: 400;
-          text-decoration: none; }
-          section#container header hgroup h3 a:hover {
-            text-decoration: underline; }
+        font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif; }
     section#container header nav {
-      zoom: 1;
-      padding: 15px 0 0 0;
       display: block;
       float: right; }
-      section#container header nav:before, section#container header nav:after {
-        content: "";
-        display: table; }
-      section#container header nav:after {
-        clear: both; }
       section#container header nav ul {
         zoom: 1;
         margin-top: 10px;
@@ -881,28 +838,28 @@ section#container {
         section#container header nav ul:after {
           clear: both; }
         section#container header nav ul li {
-          margin-right: 10px;
-          display: inline-block; }
+          display: inline-block;
+          margin-right: 10px; }
           section#container header nav ul li:last-child {
             margin-right: 0; }
           section#container header nav ul li a {
-            height: 42px;
             display: block;
+            height: 42px;
             background-color: transparent;
             border: 0;
             color: transparent;
             font: 0/0 a;
             text-shadow: none;
-            width: 42px;
             -webkit-transition: 0.5s;
             -moz-transition: 0.5s;
             -ms-transition: 0.5s;
             -o-transition: 0.5s;
-            transition: 0.5s; }
+            transition: 0.5s;
+            width: 42px; }
   section#container aside {
+    display: none;
     margin: 0;
-    width: 100%;
-    display: none; }
+    width: 100%; }
     section#container aside section.message {
       width: 100%;
       margin: 0; }
@@ -914,11 +871,7 @@ section#container {
     section#container section#posts .post {
       margin: 0 0 60px 0;
       padding: 0 0 20px 170px;
-      position: relative;
-      /* text posts */
-      /*photo and video posts */
-      /* link posts */
-      /* quote posts */ }
+      position: relative; }
       section#container section#posts .post:only-of-type {
         border-bottom: 0; }
       section#container section#posts .post .meta-info {
@@ -928,13 +881,11 @@ section#container {
         top: 18px;
         width: 145px; }
         section#container section#posts .post .meta-info p.post-date {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
           border-bottom: none;
+          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
           margin: 0 0 44px 0;
           padding: 0;
           width: 100%; }
-          section#container section#posts .post .meta-info p.post-date a {
-            font-weight: 400; }
         section#container section#posts .post .meta-info p.tagged {
           display: block;
           font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
@@ -942,372 +893,7 @@ section#container {
           text-transform: uppercase; }
         section#container section#posts .post .meta-info ul.tags {
           color: #777;
-          margin: 0 0 36px 0;
-          display: block; }
-          section#container section#posts .post .meta-info ul.tags li {
-            font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
-            font-style: italic;
-            margin: 0 0 10px 0;
-            position: relative; }
-            section#container section#posts .post .meta-info ul.tags li a {
-              color: #777;
-              font-weight: normal;
-              text-decoration: none; }
-            section#container section#posts .post .meta-info ul.tags li:after {
-              content: "\2014";
-              font-size: 13px;
-              left: -14px;
-              position: absolute;
-              top: 0; }
-        section#container section#posts .post .meta-info p.comments {
-          width: 145px;
-          display: block; }
-          section#container section#posts .post .meta-info p.comments a {
-            font-size: 13px; }
-      section#container section#posts .post h2 {
-        color: #111;
-        font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 20px 0 0px 0;
-        text-transform: uppercase; }
-      section#container section#posts .post h3, section#container section#posts .post h4 {
-        color: #333;
-        font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
-        font-style: italic;
-        margin: 20px 0 0px 0; }
-      section#container section#posts .post p {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 12px 0; }
-      section#container section#posts .post blockquote {
-        color: #555;
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        font-style: italic;
-        margin: 0 0 12px 0;
-        padding: 0 30px 0 30px; }
-        section#container section#posts .post blockquote p {
-          color: #555;
-          font-style: italic; }
-      section#container section#posts .post ul {
-        margin: 0 0 16px 0; }
-        section#container section#posts .post ul li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          margin: 0 0 4px 0;
-          position: relative; }
-          section#container section#posts .post ul li:after {
-            content: "\2022";
-            font-size: 18px;
-            font-weight: 700;
-            left: -12px;
-            position: absolute;
-            top: -2px; }
-      section#container section#posts .post ol {
-        margin: 0 0 16px 0; }
-        section#container section#posts .post ol li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          list-style: outside;
-          list-style-type: decimal;
-          margin: 0 0 4px 0;
-          position: relative; }
-      section#container section#posts .post img {
-        display: inline-block; }
-      section#container section#posts .post a {
-        color: #ad141e;
-        font-weight: 700;
-        text-decoration: none; }
-        section#container section#posts .post a:hover {
-          text-decoration: underline; }
-      section#container section#posts .post em {
-        font-style: italic; }
-      section#container section#posts .post strong {
-        font-weight: 700; }
-      section#container section#posts .post table {
-        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin-bottom: 12px;
-        width: 570px; }
-        section#container section#posts .post table tr {
-          border-bottom: 1px solid #ddd; }
-        section#container section#posts .post table td,
-        section#container section#posts .post table th {
-          padding: 4px;
-          width: 50%; }
-        section#container section#posts .post table th {
-          font-weight: 700;
-          text-align: left; }
-      section#container section#posts .post dl {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 10px 0 20px; }
-        section#container section#posts .post dl dd {
-          margin: 0 0 8px 20px; }
-      section#container section#posts .post section.post-footer {
-        margin: 20px 0 0 0; }
-        section#container section#posts .post section.post-footer p.author {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          font-style: italic;
-          left: -12px;
-          position: relative; }
-          section#container section#posts .post section.post-footer p.author:before {
-            content: "\2014"; }
-        section#container section#posts .post section.post-footer p.comments {
-          display: none; }
-        section#container section#posts .post section.post-footer div.tags {
-          display: none; }
-      section#container section#posts .post h1.title {
-        font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 30px 0;
-        text-transform: none;
-        text-align: left; }
-        section#container section#posts .post h1.title a {
-          color: #111;
-          font-weight: 300;
-          text-decoration: none; }
-      section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
-        top: 0px; }
-      section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
-        margin-top: 8px; }
-      section#container section#posts .post.link .meta-info {
-        top: 10px; }
-      section#container section#posts .post.link h1.title {
-        font-size: 24px;
-        line-height: 30px; }
-        section#container section#posts .post.link h1.title a {
-          font-weight: 400; }
-      section#container section#posts .post.quote .meta-info {
-        top: 8px; }
-      section#container section#posts .post.quote q {
-        font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        position: relative; }
-        section#container section#posts .post.quote q:before {
-          content: '\201C';
-          color: #333;
-          font-size: 36px;
-          position: absolute;
-          top: 4px;
-          left: -20px; }
-        section#container section#posts .post.quote q q:before {
-          content: '\2018'; }
-        section#container section#posts .post.quote q q:after {
-          content: '\2019'; }
-      section#container section#posts .post.quote p.source {
-        left: -16px;
-        margin: 10px 0 0 0;
-        position: relative; }
-      section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-
-.old img {
-  float: none !important; }
-
-/* Pagination
-------------------------------------------------------------------------------*/
-#pagination {
-  padding: 0 0 20px 170px; }
-
-#pagination a {
-  color: #444;
-  font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-  padding: 6px 9px;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-#pagination a:hover {
-  color: #000; }
-
-#pagination #older-link {
-  float: left;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
-  width: 145px; }
-
-#pagination #older-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
-  margin: 0 0 0 -3px; }
-
-#pagination #newer-link {
-  float: right;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
-  text-align: right;
-  width: 145px; }
-
-#pagination #newer-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
-  margin: 0 -3px 0 0; }
-
-/* Footer
-------------------------------------------------------------------------------*/
-footer {
-  background: #efefef;
-  border-top: 1px solid #e0e0e0; }
-  footer section#footer-container {
-    zoom: 1;
-    margin: 0 auto;
-    width: 723px; }
-    footer section#footer-container:before, footer section#footer-container:after {
-      content: "";
-      display: table; }
-    footer section#footer-container:after {
-      clear: both; }
-    footer section#footer-container h6 {
-      color: #4a4a4a;
-      font: 300 18px/18px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-      margin: 0 0 20px 0; }
-    footer section#footer-container nav {
-      float: left;
-      margin-right: 25px;
-      width: 315px; }
-      footer section#footer-container nav ul {
-        float: left;
-        width: 145px; }
-        footer section#footer-container nav ul#secondary-links {
-          margin-left: 25px; }
-        footer section#footer-container nav ul li {
-          color: #7a7a7a;
-          font: 400 14px/18px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 6px 0; }
-          footer section#footer-container nav ul li a {
-            color: #7a7a7a;
-            text-decoration: none; }
-            footer section#footer-container nav ul li a:hover {
-              color: #3a3a3a; }
-    footer section#footer-container section#products {
-      zoom: 1;
-      float: left;
-      width: 383px; }
-      footer section#footer-container section#products:before, footer section#footer-container section#products:after {
-        content: "";
-        display: table; }
-      footer section#footer-container section#products:after {
-        clear: both; }
-      footer section#footer-container section#products section.product {
-        width: 100%; }
-        footer section#footer-container section#products section.product h6 a {
-          color: #333;
-          text-decoration: none; }
-        footer section#footer-container section#products section.product a.logo:hover {
-          -webkit-border-radius: 0;
-          border-radius: 0;
-          -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
-        footer section#footer-container section#products section.product#trajectory a.logo {
-          height: 90px; }
-          footer section#footer-container section#products section.product#trajectory a.logo img {
-            width: 110px; }
-
-section#container {
-  margin: 0 auto;
-  padding: 20px 0 0;
-  width: 995px; }
-  section#container header h2.logo a {
-    height: 85px;
-    width: 85px; }
-  section#container header hgroup {
-    float: left;
-    text-align: left;
-    padding: 40px 0 0 25px;
-    width: 570px; }
-    section#container header hgroup h2 {
-      font: 700 12px/14px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-      margin: 0 0 6px 0;
-      text-transform: uppercase; }
-      section#container header hgroup h2 a {
-        color: #333;
-        font-weight: 700;
-        text-decoration: none; }
-        section#container header hgroup h2 a:hover {
-          color: #ad141e; }
-    section#container header hgroup h3 {
-      color: #777;
-      font: 400 13px/16px "skolar-1", "skolar-2", Georgia, serif;
-      font-style: italic; }
-      section#container header hgroup h3 a {
-        color: #777;
-        font-weight: 400;
-        text-decoration: none; }
-        section#container header hgroup h3 a:hover {
-          text-decoration: underline; }
-  section#container header nav {
-    zoom: 1;
-    display: block;
-    float: left;
-    margin: 0 0 0 25px;
-    padding: 35px 0 0 0;
-    width: 230px; }
-    section#container header nav:before, section#container header nav:after {
-      content: "";
-      display: table; }
-    section#container header nav:after {
-      clear: both; }
-    section#container header nav ul {
-      zoom: 1;
-      margin-top: 0;
-      text-align: center; }
-      section#container header nav ul:before, section#container header nav ul:after {
-        content: "";
-        display: table; }
-      section#container header nav ul:after {
-        clear: both; }
-      section#container header nav ul li {
-        width: 42px; }
-        section#container header nav ul li a {
           display: block;
-          height: 41px;
-          text-indent: -9999px;
-          -webkit-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -ms-transition: 0.5s;
-          -o-transition: 0.5s;
-          transition: 0.5s; }
-  section#container aside {
-    clear: none;
-    display: inline-block;
-    float: left;
-    margin: 10px 0 0 25px;
-    width: 230px; }
-    section#container aside .message a img {
-      float: left;
-      margin: 0 15px 0 0; }
-    section#container aside .message a span.promo-name {
-      color: #777;
-      display: block;
-      font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-      font-style: italic;
-      margin: 0 0 4px 0;
-      text-decoration: none; }
-    section#container aside .message a span.promo-creative {
-      color: #444;
-      display: block;
-      font: 700 16px/16px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-      text-decoration: none; }
-    section#container aside .message a:hover {
-      -webkit-border-radius: 0;
-      border-radius: 0;
-      -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.05); }
-  section#container section#posts {
-    float: left;
-    width: 740px; }
-    section#container section#posts .post {
-      border-bottom: 3px solid #dddddd;
-      margin: 0 0 60px 0;
-      padding: 0 0 20px 170px;
-      position: relative;
-      /* text posts */
-      /*photo and video posts */
-      /* link posts */
-      /* quote posts */ }
-      section#container section#posts .post .meta-info {
-        left: 10px;
-        position: absolute;
-        top: 18px;
-        width: 145px; }
-        section#container section#posts .post .meta-info p.post-date {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 44px 0; }
-        section#container section#posts .post .meta-info p.tagged {
-          font: 600 12px/12px "skolar-1", "skolar-2", Georgia, serif;
-          margin: 0 0 10px 0;
-          text-transform: uppercase; }
-        section#container section#posts .post .meta-info ul.tags {
-          color: #777;
           margin: 0 0 36px 0; }
           section#container section#posts .post .meta-info ul.tags li {
             font: 400 13px/14px "skolar-1", "skolar-2", Georgia, serif;
@@ -1324,207 +910,103 @@ section#container {
               left: -14px;
               position: absolute;
               top: 0; }
-      section#container section#posts .post h2 {
-        color: #111;
-        font: 700 14px/21px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 20px 0 0px 0;
-        text-transform: uppercase; }
-      section#container section#posts .post h3, section#container section#posts .post h4 {
-        color: #333;
-        font: 400 16px/26px "skolar-1", "skolar-2", Georgia, serif;
-        font-style: italic;
-        margin: 20px 0 0px 0; }
-      section#container section#posts .post p {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 12px 0; }
-      section#container section#posts .post blockquote {
-        color: #555;
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        font-style: italic;
-        margin: 0 0 12px 0;
-        padding: 0 30px 0 30px; }
-        section#container section#posts .post blockquote p {
-          color: #555;
-          font-style: italic; }
-      section#container section#posts .post ul {
-        margin: 0 0 16px 0; }
-        section#container section#posts .post ul li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          margin: 0 0 4px 0;
-          position: relative; }
-          section#container section#posts .post ul li:after {
-            content: "\2022";
-            font-size: 18px;
-            font-weight: 700;
-            left: -12px;
-            position: absolute;
-            top: -2px; }
-      section#container section#posts .post ol {
-        margin: 0 0 16px 0; }
-        section#container section#posts .post ol li {
-          font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-          list-style: outside;
-          list-style-type: decimal;
-          margin: 0 0 4px 0;
-          position: relative; }
+        section#container section#posts .post .meta-info p.comments {
+          display: block;
+          width: 145px; }
+          section#container section#posts .post .meta-info p.comments a {
+            font-size: 13px; }
       section#container section#posts .post img {
-        max-width: 570px;
-        margin-bottom: 10px; }
-      section#container section#posts .post a {
-        color: #ad141e;
-        font-weight: 700;
-        text-decoration: none; }
-        section#container section#posts .post a:hover {
-          text-decoration: underline; }
-      section#container section#posts .post em {
-        font-style: italic; }
-      section#container section#posts .post strong {
-        font-weight: 700; }
+        display: inline-block; }
       section#container section#posts .post table {
-        font: 400 14px/22px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin-bottom: 12px;
         width: 570px; }
-        section#container section#posts .post table tr {
-          border-bottom: 1px solid #ddd; }
-        section#container section#posts .post table td,
-        section#container section#posts .post table th {
-          padding: 4px;
-          width: 50%; }
-        section#container section#posts .post table th {
-          font-weight: 700;
-          text-align: left; }
-      section#container section#posts .post dl {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 10px 0 20px; }
-        section#container section#posts .post dl dd {
-          margin: 0 0 8px 20px; }
-      section#container section#posts .post section.post-footer {
-        margin: 20px 0 0 0; }
-        section#container section#posts .post section.post-footer p.author {
-          font: 400 14px/14px "skolar-1", "skolar-2", Georgia, serif;
-          font-style: italic;
-          left: -12px;
-          position: relative; }
-          section#container section#posts .post section.post-footer p.author:before {
-            content: "\2014"; }
+      section#container section#posts .post section.post-footer p.comments {
+        display: none; }
+      section#container section#posts .post section.post-footer div.tags {
+        display: none; }
       section#container section#posts .post h1.title {
         font: 300 36px/38px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        margin: 0 0 30px 0;
-        text-transform: none; }
-        section#container section#posts .post h1.title a {
-          color: #111;
-          font-weight: 300;
-          text-decoration: none; }
-      section#container section#posts .post.photo .meta-info, section#container section#posts .post.video .meta-info {
-        top: 0px; }
-      section#container section#posts .post.photo .caption, section#container section#posts .post.video .caption {
-        margin-top: 8px; }
-      section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
-        padding-bottom: 0px;
-        position: relative;
-        top: -30px; }
-      section#container section#posts .post.link .meta-info {
-        top: 10px; }
-      section#container section#posts .post.link h1.title {
-        font-size: 24px;
-        line-height: 30px; }
-        section#container section#posts .post.link h1.title a {
-          font-weight: 400; }
-      section#container section#posts .post.quote .meta-info {
-        top: 8px; }
-      section#container section#posts .post.quote q {
-        font: 400 18px/26px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-        position: relative; }
-        section#container section#posts .post.quote q:before {
-          content: '\201C';
-          color: #333;
-          font-size: 36px;
-          position: absolute;
-          top: 4px;
-          left: -20px; }
-        section#container section#posts .post.quote q q:before {
-          content: '\2018'; }
-        section#container section#posts .post.quote q q:after {
-          content: '\2019'; }
-      section#container section#posts .post.quote p.source {
-        left: -16px;
-        margin: 10px 0 0 0;
-        position: relative; }
-      section#container section#posts .post.quote.medium q, section#container section#posts .post.quote.long q {
-        font: 400 15px/24px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif; }
-      section#container section#posts .post.quote .post-footer p.comments {
-        padding-bottom: 0px;
-        position: relative;
-        top: -18px; }
+        text-align: left; }
 
-.old img {
-  float: none !important; }
-
-/* Pagination
-------------------------------------------------------------------------------*/
 #pagination {
   padding: 0 0 20px 170px; }
 
-#pagination a {
-  color: #444;
-  font: 700 13px/13px "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-  padding: 6px 9px;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-#pagination a:hover {
-  color: #000; }
-
 #pagination #older-link {
-  float: left;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
   width: 145px; }
-
-#pagination #older-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
-  margin: 0 0 0 -3px; }
 
 #pagination #newer-link {
-  float: right;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
-  text-align: right;
   width: 145px; }
 
-#pagination #newer-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
-  margin: 0 -3px 0 0; }
+footer section#footer-container {
+  width: 723px; }
+  footer section#footer-container nav {
+    margin-right: 25px;
+    width: 315px; }
+    footer section#footer-container nav ul {
+      float: left;
+      width: 145px; }
+      footer section#footer-container nav ul#secondary-links {
+        margin-left: 25px; }
+  footer section#footer-container section#products {
+    zoom: 1;
+    float: left;
+    width: 383px; }
+    footer section#footer-container section#products:before, footer section#footer-container section#products:after {
+      content: "";
+      display: table; }
+    footer section#footer-container section#products:after {
+      clear: both; }
+    footer section#footer-container section#products section.product {
+      width: 100%; }
+      footer section#footer-container section#products section.product a.logo:hover {
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
+      footer section#footer-container section#products section.product#trajectory a.logo {
+        height: 90px; }
+        footer section#footer-container section#products section.product#trajectory a.logo img {
+          width: 110px; }
 
-/* Footer
-------------------------------------------------------------------------------*/
+section#container {
+  padding: 20px 0 0;
+  width: 995px; }
+  section#container header h2.logo a {
+    height: 85px;
+    width: 85px; }
+  section#container header hgroup {
+    width: 570px; }
+  section#container header nav {
+    margin: 0 0 0 25px;
+    padding: 35px 0 0 0;
+    width: 230px; }
+    section#container header nav ul {
+      margin-top: 0; }
+      section#container header nav ul li {
+        width: 42px; }
+  section#container aside {
+    clear: none;
+    display: inline-block;
+    float: left;
+    margin: 10px 0 0 25px;
+    width: 230px; }
+  section#container section#posts {
+    width: 740px; }
+    section#container section#posts .post img {
+      max-width: 570px;
+      margin-bottom: 10px; }
+    section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
+      padding-bottom: 0px;
+      position: relative;
+      top: -30px; }
+
+#pagination {
+  padding-bottom: 30px; }
+
 footer {
   padding: 40px 20px 60px; }
   footer section#footer-container {
     width: 995px; }
-    footer section#footer-container nav ul#secondary-links {
-      margin-left: 25px; }
-    footer section#footer-container nav ul li {
-      color: #7a7a7a;
-      font: 400 14px/18px "skolar-1", "skolar-2", Georgia, serif;
-      margin: 0 0 6px 0; }
-      footer section#footer-container nav ul li a {
-        color: #7a7a7a;
-        text-decoration: none; }
-        footer section#footer-container nav ul li a:hover {
-          color: #3a3a3a; }
     footer section#footer-container section#products {
       width: 400px; }
-      footer section#footer-container section#products section.product h6 a {
-        color: #333;
-        text-decoration: none; }
-      footer section#footer-container section#products section.product#airbrake a.logo {
-        padding: 18px 0 14px 0; }
-      footer section#footer-container section#products section.product#copycopter {
-        margin-right: 0; }
-        footer section#footer-container section#products section.product#copycopter a.logo {
-          padding: 25px 0 5px 0; }
-          footer section#footer-container section#products section.product#copycopter a.logo img {
-            width: 110px; }
       footer section#footer-container section#products section.product#trajectory a.logo {
         height: 100px; }

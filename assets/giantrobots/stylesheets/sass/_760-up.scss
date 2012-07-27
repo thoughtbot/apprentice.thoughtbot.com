@@ -1,6 +1,6 @@
 section#container {
-  width: grid-width(9);
   margin-bottom: -20px;
+  width: grid-width(9);
 
   header {
     margin: 0 0 $lh*2 0;
@@ -24,39 +24,14 @@ section#container {
       h2 {
         font: 700 12px/14px $sans-serif;
         margin: 0 0 6px 0;
-        text-transform: uppercase;
-
-        a {
-          color: #333;
-          font-weight: 700;
-          text-decoration: none;
-
-          &:hover {
-           color: $red;
-          }
-        }
       }
 
       h3 {
-        color: #777;
         font: 400 13px/16px $serif;
-        font-style: italic;
-
-        a {
-          color: #777;
-          font-weight: 400;
-          text-decoration: none;
-
-          &:hover {
-           text-decoration: underline;
-          }
-        }
       }
     }
 
     nav {
-      @include clearfix();
-      padding: 15px 0 0 0;
       display: block;
       float: right;
 
@@ -66,19 +41,19 @@ section#container {
         text-align: center;
 
         li {
-          margin-right: 10px;
           display: inline-block;
+          margin-right: 10px;
 
           &:last-child {
            margin-right: 0;
           }
 
           a {
-            height: 42px;
             display: block;
+            height: 42px;
             @include hide-text;
-            width: 42px;
             @include transition(0.5s);
+            width: 42px;
           }
         }
       }
@@ -86,9 +61,9 @@ section#container {
   }
 
   aside {
+    display: none;
     margin: 0;
     width: 100%;
-    display: none;
 
     section.message {
       width: 100%;
@@ -121,15 +96,11 @@ section#container {
         width: grid-width(2);
 
         p.post-date {
-          font: 400 14px/14px $serif;
           border-bottom: none;
+          font: 400 14px/14px $serif;
           margin: 0 0 44px 0;
           padding: 0;
           width: 100%;
-
-          a {
-            font-weight: 400;
-          }
         }
 
         p.tagged {
@@ -141,8 +112,8 @@ section#container {
 
         ul.tags {
           color: #777;
-          margin: 0 0 36px 0;
           display: block;
+          margin: 0 0 36px 0;
 
           li {
             font: 400 13px/14px $serif;
@@ -167,8 +138,8 @@ section#container {
         }
 
         p.comments {
-          width: grid-width(2);
           display: block;
+          width: grid-width(2);
 
           a {
             font-size: 13px;
@@ -177,138 +148,15 @@ section#container {
 
       }
 
-      h2 {
-        color: #111;
-        font: 700 14px/21px $sans-serif;
-        margin: 20px 0 0px 0;
-        text-transform: uppercase;
-      }
-
-      h3, h4 {
-        color: #333;
-        font: 400 16px/26px $serif;
-        font-style: italic;
-        margin: 20px 0 0px 0;
-      }
-
-      p {
-        font: 400 15px/24px $sans-serif;
-        margin: 0 0 12px 0;
-      }
-
-      blockquote {
-        color: #555;
-        font: 400 15px/24px $sans-serif;
-        font-style: italic;
-        margin: 0 0 12px 0;
-        padding: 0 30px 0 30px;
-
-        p {
-          color: #555;
-          font-style: italic;
-        }
-      }
-
-      ul {
-        margin: 0 0 ($lh - 4) 0;
-
-        li {
-          font: 400 15px/24px $sans-serif;
-          margin: 0 0 4px 0;
-          position: relative;
-
-          &:after {
-            content: "\2022";
-            font-size: 18px;
-            font-weight: 700;
-            left: -12px;
-            position: absolute;
-            top: -2px;
-          }
-        }
-      }
-
-      ol {
-        margin: 0 0 ($lh - 4) 0;
-
-        li {
-          font: 400 15px/24px $sans-serif;
-          list-style: outside;
-          list-style-type: decimal;
-          margin: 0 0 4px 0;
-          position: relative;
-        }
-      }
-
       img {
         display: inline-block;
       }
 
-      a {
-        color: $red;
-        font-weight: 700;
-        text-decoration: none;
-
-        &:hover {
-         text-decoration: underline
-        }
-      }
-
-      em {
-        font-style: italic;
-      }
-
-      strong {
-        font-weight: 700;
-      }
-
       table {
-        font: 400 14px/22px $sans-serif;
-        margin-bottom: 12px;
         width: grid-width(7);
-
-        tr {
-          border-bottom: 1px solid #ddd;
-        }
-
-        td,
-        th {
-          padding: 4px;
-          width: 50%;
-        }
-
-        th {
-          font-weight: 700;
-          text-align: left;
-        }
-      }
-
-      dl {
-        font: 400 15px/24px $sans-serif;
-        margin: 10px 0 20px;
-
-        dt {
-        }
-
-        dd {
-          margin: 0 0 8px 20px;
-        }
       }
 
       section.post-footer {
-        margin: 20px 0 0 0;
-
-        p.author {
-          font: 400 14px/14px $serif;
-          font-style: italic;
-          left: -12px;
-          position: relative;
-
-          &:before {
-            content: "\2014";
-          }
-        }
-
         p.comments {
           display: none;
         }
@@ -318,159 +166,34 @@ section#container {
         }
       }
 
-      /* text posts */
+      // Text posts
       h1.title {
         font: 300 36px/38px $sans-serif;
-        margin: 0 0 30px 0;
-        text-transform: none;
         text-align: left;
-
-        a {
-          color: #111;
-          font-weight: 300;
-          text-decoration: none;
-        }
-      }
-
-      /*photo and video posts */
-      &.photo,
-      &.video {
-        .meta-info {
-          top: 0px;
-        }
-
-        .caption {
-          margin-top: 8px;
-        }
-      }
-
-      /* link posts */
-      &.link {
-        .meta-info {
-          top: 10px;
-        }
-
-        h1.title {
-          font-size: 24px;
-          line-height: 30px;
-
-          a {
-            font-weight: 400;
-          }
-        }
-      }
-
-      /* quote posts */
-      &.quote {
-        .meta-info {
-          top: 8px;
-        }
-
-        q {
-          font: 400 18px/26px $sans-serif;
-          position: relative;
-
-          &:before {
-            content: '\201C';
-            color: #333;
-            font-size: 36px;
-            position: absolute;
-            top: 4px;
-            left: -20px;
-          }
-
-          & q:before {
-            content: '\2018';
-          }
-
-          & q:after {
-            content: '\2019';
-          }
-        }
-
-        p.source {
-          left: -16px;
-          margin: 10px 0 0 0;
-          position: relative;
-        }
-
-        &.medium,
-        &.long {
-          q {
-            font: 400 15px/24px $sans-serif;
-          }
-        }
       }
     }
   }
 }
 
-.old img {
-  float: none !important;
-}
-
-/* Pagination
-------------------------------------------------------------------------------*/
+// Pagination
 #pagination {
   padding: 0 0 $lh (grid-width(2) + $gutter);
 }
 
-#pagination a {
-  color: #444;
-  font: 700 13px/13px $sans-serif;
-  padding: 6px 9px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-#pagination a:hover {
-  color: #000;
-}
-
 #pagination #older-link {
-  float: left;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
   width: grid-width(2);
-}
-
-#pagination #older-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
-  margin: 0 0 0 -3px;
 }
 
 #pagination #newer-link {
-  float: right;
-  margin: 0 0 0 0;
-  padding: 15px 0 0 0;
-  text-align: right;
   width: grid-width(2);
 }
 
-#pagination #newer-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
-  margin: 0 -3px 0 0;
-}
-
-/* Footer
-------------------------------------------------------------------------------*/
+// footer
 footer {
-  background: #efefef;
-  border-top: 1px solid #e0e0e0;
-
   section#footer-container {
-    @include clearfix();
-    margin: 0 auto;
     width: grid-width(8.8);
 
-    h6 {
-      color: #4a4a4a;
-      font: 300 18px/18px $sans-serif;
-      margin: 0 0 $lh 0;
-    }
-
     nav {
-      float: left;
       margin-right: $gutter;
       width: grid-width(4);
 
@@ -480,21 +203,6 @@ footer {
 
         &#secondary-links {
           margin-left: $gutter;
-        }
-
-        li {
-          color: #7a7a7a;
-          font: 400 14px/18px $serif;
-          margin: 0 0 6px 0;
-
-          a {
-            color: #7a7a7a;
-            text-decoration: none;
-
-            &:hover {
-             color: #3a3a3a;
-            }
-          }
         }
       }
     }
@@ -506,13 +214,6 @@ footer {
 
       section.product {
         width: 100%;
-
-        h6 {
-          a {
-            color: #333;
-            text-decoration: none;
-          }
-        }
 
         a.logo {
           &:hover {
@@ -534,6 +235,3 @@ footer {
     }
   }
 }
-
-
-
