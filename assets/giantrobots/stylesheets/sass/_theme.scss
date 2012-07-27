@@ -61,60 +61,16 @@ section#container {
       @include clearfix();
       padding: 15px 0 0 0;
       display: none;
-
-      ul {
-        @include clearfix();
-        text-align: center;
-
-        // li {
-        //   margin-right: 15px;
-        //   display: inline-block;
-
-        //   &:last-child {
-        //    margin-right: 0;
-        //   }
-
-        //   a {
-        //     height: 42px;
-        //     display: block;
-        //     @include hide-text;
-        //     width: 42px;
-        //     @include transition(0.5s);
-
-        //     &#twitter {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
-
-        //       &:hover {
-        //         background-position: -8px -48px;
-        //       }
-        //     }
-
-        //     &#contact {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
-
-        //       &:hover {
-        //         background-position: 0 -47px;
-        //       }
-        //     }
-
-        //     &#rss {
-        //       background: url("http://thoughtbot.com/assets/giantrobots/images/rss.png") 0px 0px no-repeat;
-
-        //       &:hover {
-        //         background-position: 0px -47px;
-        //       }
-        //     }
-        //   }
-        // }
-      }
     }
   }
 
   aside {
-    float: left;
-    margin: 10px 0 0 $gutter;
+    display: block;
+    clear: both;
+    width: 85%;
+    margin: 10px auto 0;
 
-    .message {
+    section.message {
       a {
         background: #f7f7f7;
         border: 1px solid #dedede;
@@ -151,6 +107,53 @@ section#container {
           @include box-shadow(0 0 0 8px rgba(0, 0, 0, 0.05));
         }
       }
+    }
+
+    ul.social {
+      @include clearfix();
+      text-align: center;
+      margin: 10px 0 20px;
+
+        li {
+          margin-right: 15px;
+          display: inline-block;
+
+          &:last-child {
+           margin-right: 0;
+          }
+
+          a {
+            height: 42px;
+            display: block;
+            @include hide-text;
+            width: 42px;
+            @include transition(0.5s);
+
+            &#twitter {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.png") -8px -1px no-repeat;
+
+              &:hover {
+                background-position: -8px -48px;
+              }
+            }
+
+            &#contact {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/contact.png") 0 -1px no-repeat;
+
+              &:hover {
+                background-position: 0 -47px;
+              }
+            }
+
+            &#rss {
+              background: url("http://thoughtbot.com/assets/giantrobots/images/rss.png") 0px 0px no-repeat;
+
+              &:hover {
+                background-position: 0px -47px;
+              }
+            }
+          }
+        }
     }
   }
 
@@ -209,14 +212,7 @@ section#container {
         }
 
         p.comments {
-          font: 400 14px/14px $serif;
-          margin-top: -3px;
           display: none;
-
-          a {
-            color: #333;
-            font-weight: 400;
-          }
         }
       }
 
@@ -388,14 +384,6 @@ section#container {
         .caption {
           margin-top: 8px;
         }
-
-        .post-footer {
-          p.comments {
-            padding-bottom: 0px;
-            position: relative;
-            top: -30px;
-          }
-        }
       }
 
       // Video container
@@ -491,10 +479,14 @@ section#container {
   float: none !important;
 }
 
-/* Pagination
-------------------------------------------------------------------------------*/
+// Pagination
+
 #pagination {
   padding: 0 15px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  @include fill-parent();
+  display: inline-block;
 }
 
 #pagination a {
@@ -513,7 +505,6 @@ section#container {
   float: left;
   margin: 0 0 0 0;
   padding: 15px 0 0 0;
-  width: grid-width(2);
 }
 
 #pagination #older-link a {
@@ -526,7 +517,6 @@ section#container {
   margin: 0 0 0 0;
   padding: 15px 0 0 0;
   text-align: right;
-  width: grid-width(2);
 }
 
 #pagination #newer-link a {

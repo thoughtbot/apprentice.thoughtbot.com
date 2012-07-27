@@ -105,50 +105,19 @@ section#container {
         }
       }
     }
-      }
+  }
 
   aside {
-    float: left;
-    margin: 10px 0 0 $gutter;
-    width: grid-width(3);
+    margin: 0;
+    width: 100%;
 
-    .message {
-      a {
-        background: #f7f7f7;
-        border: 1px solid #dedede;
-        @include border-radius(3px);
-        color: #333;
-        display: block;
-        padding: 15px;
-        text-decoration: none;
-        @include transition(0.5s);
+    section.message {
+      width: 100%;
+      margin: 0;
+    }
 
-        img {
-          float: left;
-          margin: 0 15px 0 0;
-        }
-
-        span.promo-name {
-          color: #777;
-          display: block;
-          font: 400 14px/14px $serif;
-          font-style: italic;
-          margin: 0 0 4px 0;
-          text-decoration: none;
-        }
-
-        span.promo-creative {
-          color: #444;
-          display: block;
-          font: 700 16px/16px $sans-serif;
-          text-decoration: none;
-        }
-
-        &:hover {
-          @include border-radius(0);
-          @include box-shadow(0 0 0 8px rgba(0, 0, 0, 0.05));
-        }
-      }
+    ul.social {
+      display: none;
     }
   }
 
@@ -174,6 +143,10 @@ section#container {
           margin: 0 0 44px 0;
           padding: 0;
           width: 100%;
+
+          a {
+            font-weight: 400;
+          }
         }
 
         p.tagged {
@@ -211,13 +184,11 @@ section#container {
         }
 
         p.comments {
-          font: 400 14px/14px $serif;
-          margin-top: -3px;
           width: grid-width(2);
+          display: block;
 
           a {
-            color: #333;
-            font-weight: 400;
+            font-size: 13px;
           }
         }
       }
@@ -349,6 +320,10 @@ section#container {
             content: "\2014";
           }
         }
+
+        p.comments {
+          display: none;
+        }
       }
 
       /* text posts */
@@ -374,14 +349,6 @@ section#container {
 
         .caption {
           margin-top: 8px;
-        }
-
-        .post-footer {
-          p.comments {
-            padding-bottom: 0px;
-            position: relative;
-            top: -30px;
-          }
         }
       }
 
@@ -441,14 +408,6 @@ section#container {
             font: 400 15px/24px $sans-serif;
           }
         }
-
-        .post-footer {
-          p.comments {
-            padding-bottom: 0px;
-            position: relative;
-            top: -18px;
-          }
-        }
       }
     }
   }
@@ -462,7 +421,6 @@ section#container {
 ------------------------------------------------------------------------------*/
 #pagination {
   padding: 0 0 $lh (grid-width(2) + $gutter);
-  width: grid-width(7);
 }
 
 #pagination a {

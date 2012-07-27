@@ -1,0 +1,21 @@
+section#container {
+  aside {
+    width: 100%;
+
+    section.message {
+      width: 48%;
+      margin-left: 2%;
+      display: inline-block;
+      float: left;
+    }
+
+    ul.social {
+      width: 46%;
+      text-align: right;
+      padding-right: 4%;
+      margin: 0;
+      float: right;
+      display: inline-block;
+    }
+  }
+}

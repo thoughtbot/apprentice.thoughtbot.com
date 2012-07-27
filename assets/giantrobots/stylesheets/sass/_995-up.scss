@@ -109,20 +109,13 @@ section#container {
   }
 
   aside {
+    clear: none;
     float: left;
     margin: 10px 0 0 $gutter;
     width: grid-width(3);
 
     .message {
       a {
-        background: #f7f7f7;
-        border: 1px solid #dedede;
-        @include border-radius(3px);
-        color: #333;
-        display: block;
-        padding: 15px;
-        text-decoration: none;
-        @include transition(0.5s);
 
         img {
           float: left;
@@ -172,11 +165,6 @@ section#container {
         p.post-date {
           font: 400 14px/14px $serif;
           margin: 0 0 44px 0;
-
-          a {
-            color: #333;
-            font-weight: 400;
-          }
         }
 
         p.tagged {
@@ -208,17 +196,6 @@ section#container {
               position: absolute;
               top: 0;
             }
-          }
-        }
-
-        p.comments {
-          font: 400 14px/14px $serif;
-          margin-top: -3px;
-          width: grid-width(2);
-
-          a {
-            color: #333;
-            font-weight: 400;
           }
         }
       }
@@ -467,7 +444,6 @@ section#container {
 ------------------------------------------------------------------------------*/
 #pagination {
   padding: 0 0 $lh (grid-width(2) + $gutter);
-  width: grid-width(7);
 }
 
 #pagination a {
