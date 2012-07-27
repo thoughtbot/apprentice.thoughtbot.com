@@ -118,7 +118,7 @@
         display: none; }
     section#container section#posts {
       float: left;
-      width: 740px; }
+      width: 723px; }
       section#container section#posts .post {
         margin: 0 0 60px 0;
         padding: 0 0 20px 170px;
@@ -348,7 +348,7 @@
     footer section#footer-container {
       zoom: 1;
       margin: 0 auto;
-      width: 740px; }
+      width: 723px; }
       footer section#footer-container:before, footer section#footer-container:after {
         content: "";
         display: table; }
@@ -379,7 +379,7 @@
       footer section#footer-container section#products {
         zoom: 1;
         float: left;
-        width: 400px; }
+        width: 383px; }
         footer section#footer-container section#products:before, footer section#footer-container section#products:after {
           content: "";
           display: table; }
@@ -707,7 +707,7 @@
   /* Footer
   ------------------------------------------------------------------------------*/
   footer {
-    padding: 60px 0 120px; }
+    padding: 40px 20px 60px; }
     footer section#footer-container {
       width: 995px; }
       footer section#footer-container nav ul#secondary-links {
