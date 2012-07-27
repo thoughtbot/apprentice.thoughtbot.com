@@ -1,6 +1,7 @@
 section#container {
   aside {
     width: 100%;
+    display: inline-block;
 
     section.message {
       width: 48%;
@@ -16,6 +17,30 @@ section#container {
       margin: 0;
       float: right;
       display: inline-block;
+    }
+  }
+}
+
+footer {
+  section#footer-container {
+    nav {
+      margin: 0;
+      width: 46%;
+      display: inline-block;
+      ul {
+        width: 55%;
+        &#secondary-links {
+          width: 35%;
+        }
+      }
+    }
+
+    section#products {
+      width: 53%;
+      display: inline-block;
+      section.product {
+      
+      }
     }
   }
 }

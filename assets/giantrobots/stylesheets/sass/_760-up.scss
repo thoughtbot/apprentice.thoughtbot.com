@@ -6,6 +6,7 @@ section#container {
 
     h2.logo {
       float: left;
+      text-align: left;
       width: grid-width(2);
 
       a {
@@ -110,6 +111,7 @@ section#container {
   aside {
     margin: 0;
     width: 100%;
+    display: none;
 
     section.message {
       width: 100%;
@@ -465,12 +467,11 @@ section#container {
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
-  padding: $lh*3 0 $lh*6;
 
   section#footer-container {
     @include clearfix();
     margin: 0 auto;
-    width: grid-width(12);
+    width: grid-width(9);
 
     h6 {
       color: #4a4a4a;
@@ -481,7 +482,7 @@ footer {
     nav {
       float: left;
       margin-right: $gutter;
-      width: grid-width(6);
+      width: grid-width(4);
 
       ul {
         float: left;
@@ -511,12 +512,10 @@ footer {
     section#products {
       @include clearfix();
       float: left;
-      width: grid-width(6);
+      width: grid-width(5);
 
       section.product {
-        float: left;
-        margin-right: $gutter;
-        width: grid-width(2);
+        width: 100%;
 
         h6 {
           a {
@@ -526,41 +525,15 @@ footer {
         }
 
         a.logo {
-          background: #e9e9e9;
-          border: 1px solid #dedede;
-          @include border-radius(3px);
-          display: block;
-          height: 100px;
-          padding: 15px 0;
-          text-align: center;
-          @include transition(0.4s);
-
           &:hover {
             @include border-radius(0);
             @include box-shadow(0 0 0 6px rgba(0, 0, 0, 0.04));
           }
         }
 
-        &#airbrake a.logo {
-          padding: 18px 0 14px 0;
-        }
-
-        &#copycopter {
-          margin-right: 0;
-
-          a.logo {
-            padding: 25px 0 5px 0;
-
-            img {
-              width: 110px;
-            }
-          }
-        }
-
         &#trajectory {
           a.logo {
             height: 90px;
-            padding: 40px 0 0px 0;
 
             img {
               width: 110px;

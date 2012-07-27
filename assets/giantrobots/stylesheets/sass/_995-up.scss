@@ -1,19 +1,12 @@
 section#container {
   margin: 0 auto;
-  padding: 20px 0 80px;
+  padding: 20px 0 0;
   width: grid-width(12);
 
   header {
     h2.logo {
-      float: left;
-      width: grid-width(2);
-
       a {
-        background: url("http://thoughtbot.com/assets/giantrobots/images/logo.png") no-repeat;
-        display: block;
         height: 85px;
-        margin: 15px 0 0 30px;
-        text-indent: -9999px;
         width: 85px;
       }
     }
@@ -110,6 +103,7 @@ section#container {
 
   aside {
     clear: none;
+    display: inline-block;
     float: left;
     margin: 10px 0 0 $gutter;
     width: grid-width(3);
@@ -486,30 +480,13 @@ section#container {
 /* Footer
 ------------------------------------------------------------------------------*/
 footer {
-  background: #efefef;
-  border-top: 1px solid #e0e0e0;
   padding: $lh*3 0 $lh*6;
 
   section#footer-container {
-    @include clearfix();
-    margin: 0 auto;
     width: grid-width(12);
 
-    h6 {
-      color: #4a4a4a;
-      font: 300 18px/18px $sans-serif;
-      margin: 0 0 $lh 0;
-    }
-
     nav {
-      float: left;
-      margin-right: $gutter;
-      width: grid-width(6);
-
       ul {
-        float: left;
-        width: grid-width(2);
-
         &#secondary-links {
           margin-left: $gutter;
         }
@@ -532,35 +509,13 @@ footer {
     }
 
     section#products {
-      @include clearfix();
-      float: left;
-      width: grid-width(6);
+      width: grid-width(5);
 
       section.product {
-        float: left;
-        margin-right: $gutter;
-        width: grid-width(2);
-
         h6 {
           a {
             color: #333;
             text-decoration: none;
-          }
-        }
-
-        a.logo {
-          background: #e9e9e9;
-          border: 1px solid #dedede;
-          @include border-radius(3px);
-          display: block;
-          height: 100px;
-          padding: 15px 0;
-          text-align: center;
-          @include transition(0.4s);
-
-          &:hover {
-            @include border-radius(0);
-            @include box-shadow(0 0 0 6px rgba(0, 0, 0, 0.04));
           }
         }
 
@@ -582,12 +537,7 @@ footer {
 
         &#trajectory {
           a.logo {
-            height: 90px;
-            padding: 40px 0 0px 0;
-
-            img {
-              width: 110px;
-            }
+            height: 100px;
           }
         }
       }

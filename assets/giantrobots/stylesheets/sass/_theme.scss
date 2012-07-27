@@ -6,7 +6,7 @@ body {
 
 section#container {
   @include clearfix();
-  padding: 25px 10px 80px;
+  padding: 25px 10px 15px;
   @include fill-parent();
   margin: 0 auto;
 
@@ -18,7 +18,6 @@ section#container {
 
     h2.logo {
       text-align: center;
-      @include hide-text();
     }
 
     hgroup {
@@ -68,7 +67,7 @@ section#container {
     display: block;
     clear: both;
     width: 85%;
-    margin: 10px auto 0;
+    margin: 10px auto 20px;
 
     section.message {
       a {
@@ -529,35 +528,35 @@ section#container {
 footer {
   background: #efefef;
   border-top: 1px solid #e0e0e0;
-  padding: $lh*3 0 $lh*6;
+  padding: 25px;
 
   section#footer-container {
     @include clearfix();
     margin: 0 auto;
-    width: grid-width(12);
 
     h6 {
       color: #4a4a4a;
-      font: 300 18px/18px $sans-serif;
+      font: 300 17px/18px $sans-serif;
       margin: 0 0 $lh 0;
     }
 
     nav {
+      display: inline-block;
       float: left;
-      margin-right: $gutter;
-      width: grid-width(6);
+      margin: 0;
+      width: 66%;
 
       ul {
-        float: left;
-        width: grid-width(2);
+        display: inline-block;
+        width: 55%;
 
         &#secondary-links {
-          margin-left: $gutter;
+          width: 35%;
         }
 
         li {
           color: #7a7a7a;
-          font: 400 14px/18px $serif;
+          font: 400 13px/18px $serif;
           margin: 0 0 6px 0;
 
           a {
@@ -573,16 +572,14 @@ footer {
     }
 
     section#products {
-      @include clearfix();
-      float: left;
-      width: grid-width(6);
+      display: inline-block;
+      float: right;
+      width: 32%;
 
       section.product {
-        float: left;
-        margin-right: $gutter;
-        width: grid-width(2);
-
         h6 {
+          font-size: 17px;
+
           a {
             color: #333;
             text-decoration: none;
@@ -594,41 +591,15 @@ footer {
           border: 1px solid #dedede;
           @include border-radius(3px);
           display: block;
-          height: 100px;
-          padding: 15px 0;
+          min-height: 60px;
+          @include box-sizing(border-box);
+          padding: 30px 15px;
           text-align: center;
-          @include transition(0.4s);
+          @include transition(box-shadow 0.4s);
 
           &:hover {
             @include border-radius(0);
             @include box-shadow(0 0 0 6px rgba(0, 0, 0, 0.04));
-          }
-        }
-
-        &#airbrake a.logo {
-          padding: 18px 0 14px 0;
-        }
-
-        &#copycopter {
-          margin-right: 0;
-
-          a.logo {
-            padding: 25px 0 5px 0;
-
-            img {
-              width: 110px;
-            }
-          }
-        }
-
-        &#trajectory {
-          a.logo {
-            height: 90px;
-            padding: 40px 0 0px 0;
-
-            img {
-              width: 110px;
-            }
           }
         }
       }
