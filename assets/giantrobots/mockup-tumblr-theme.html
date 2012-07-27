@@ -4,8 +4,18 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="copycopter, open source, github, redis, pubsub, nosql, json, radish, key-value store, object-oriented programming, rails, rails recipe, rails tutorial, tdd, test-driven development, ">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>giant robots smashing into other giant robots</title>
-    <link rel="stylesheet" href="stylesheets/screen.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/desktop.css" media="screen and (min-width:500px)">
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+
     <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
@@ -13,7 +23,7 @@
   <body>
     <section id="container">
       <header>
-        <h2 class="logo"><a href="http://robots.thoughtbot.com">thoughtbot</a></h2>
+        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="/images/logo.svg" data-svgswap="/images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
 
         <hgroup>
           <h2><a href="http://robots.thoughtbot.com">giant robots smashing into other giant robots</a></h2>
@@ -22,9 +32,9 @@
 
         <nav>
           <ul>
-            <li id="twitter"><a href="http://twitter.com/thoughtbot">twitter</a></li>
-            <li id="contact"><a href="http://tinyletter.com/thoughtbot">newsletter</a></li>
-            <li id="rss"><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots">rss feed</a></li>
+            <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
+            <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
+            <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
           </ul>
         </nav>
       </header>
@@ -34,19 +44,17 @@
          <section class="post text">
             <section class="meta-info">
               <p class="post-date"><a href="#">June 14, 2011</a></p>
-              <!--<p class="tagged">Tagged:</p>-->
-              <!--<ul class="tags">-->
-                <!--<li><a href="#">open source</a></li>-->
-                <!--<li><a href="#">open source</a></li>-->
-                <!--<li><a href="#">open source</a></li>-->
-                <!--<li><a href="#">open source</a></li>-->
-              <!--</ul>-->
+              <p class="tagged">Tagged:</p>
+              <ul class="tags">
+                <li><a href="#">open source</a></li>
+                <li><a href="#">github</a></li>
+              </ul>
               <p class="comments"><a href="#">25 comments</a></p>
             </section>
 
             <h1 class="title"><a href="#">github.com/thoughtbot cleanup</a></h1>
 
-            <p>Like many of you, we&#8217;ve had a <strong>lot of code pass through</strong> our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects. We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+            <p>Like many of <a href="#footer-container">you</a>, we&#8217;ve had a <strong>lot of code pass through</strong> our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects. We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
 
 <pre><code>require 'rubygems'
 require 'redis'
@@ -200,6 +208,12 @@ end
             <p>Friendly Identifier adds a human-readable identifier to ActiveRecord objects so they can be used in URLs. The original still exists on <a href="http://code.google.com/p/friendly-identifier/">Google Code</a>. We added a minor feature to it but now recommend <a href="http://github.com/norman/friendly_id">norman/friendly_id</a> instead.</p>
 
             <p><a href="https://github.com/tra/spawn">Spawn</a> provides a &#8216;spawn&#8217; method to easily fork or thread long-running sections of code. This plugin works by creating new database connections in ActiveRecord::Base for the spawned block. We forked it to make it Rails 2.2 compatible. It is still an active project at tra/spawn, however we now typically use DelayedJob or Resque for background processing (DJ by default, Resque if we need multiple queues).</p>
+
+            <section class="post-footer">
+              <p class="author">kaishin</p>
+              <p class="comments"><a href="#">25 comments</a></p>
+            </section>
+
           </section>
 
         <section class="post photo">
@@ -218,10 +232,7 @@ end
           <img src="http://ui.thoughtbot.com/assets/2011LamborghiniAventador.jpg">
 
           <section class="caption">
-            <p>This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. This is the text that goes below the photo. </p>
-          </section>
-
-          <section class="post-footer">
+            <p>This is the text that goes below the photo. And even more text that goes below the photo.</p>
           </section>
         </section>
 
@@ -237,22 +248,16 @@ end
             </ul>
           </section>
 
-          <iframe width="570" height="457" src="http://www.youtube.com/embed/kkT7A3jegBc" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://fast.wistia.com/embed/iframe/4c13317c91" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="570" height="321"></iframe>
 
           <section class="caption">
-            <p>This is the text that goes below the photo.</p>
-          </section>
-
-          <section class="post-footer">
-            <p class="comments"><a href="#">25 comments</a></p>
+            <p>This is the text that goes below the video. And even more text that goes below the video.</p>
           </section>
         </section>
 
 
 
         <section class="post text">
-          <h2 class="title">Title of this post</h2>
-
           <section class="meta-info">
             <p class="post-date">June 14, 2011</p>
             <p class="tagged">Tagged:</p>
@@ -262,6 +267,7 @@ end
               <li><a href="#">capybara-webkit</a></li>
             </ul>
           </section>
+          <h1 class="title">Title of this post</h2>
 
           <p>This is the first paragraph of this entry.</p>
 
@@ -305,6 +311,10 @@ end
 
           </blockquote>
 
+          <section class="post-footer">
+            <p class="author">cpytel</p>
+          </section>
+
         </section>
 
         <section class="post quote short">
@@ -323,9 +333,6 @@ end
 
           <p class="source">&#8212; Nietzsche, <em>The Gay Science</em></p>
 
-          <section class="post-footer">
-            <p class="comments"><a href="#">25 comments</a></p>
-          </section>
         </section>
 
         <section class="post quote medium">
@@ -342,10 +349,6 @@ end
           <q>&#8230;to do something and do it again, from morning till evening, and then to dream of it at night, and to think of nothing except doing this <em>well</em>, as well as <em>I</em> alone can do it. When one lives like that, one thing after another that simply does not belong to such a life drops off. Without hatred or aversion one sees this take its leave today and that tomorrow, like yellow leaves that any slight stirring of the air takes off a tree.</q>
 
           <p class="source">&#8212; Nietzsche, <em>The Gay Science</em></p>
-
-          <section class="post-footer">
-
-          </section>
         </section>
 
         <section class="post quote long">
@@ -393,7 +396,6 @@ end
 
 
         <section class="post text">
-          <h2 class="title">Copycopter: introducing a simpler way to edit copy</h2>
 
           <section class="meta-info">
             <p class="post-date">June 14, 2011</p>
@@ -404,6 +406,8 @@ end
               <li><a href="#">capybara-webkit</a></li>
             </ul>
           </section>
+
+          <h1 class="title">Copycopter: introducing a simpler way to edit copy</h1>
 
           <p>Around four months ago we <a href="http://robots.thoughtbot.com/post/3201164937/introducing-copycopter">launched</a> our service for managing copy text in web applications: <a href="https://copycopter.com">Copycopter</a>. If you&#8217;re already riding the choppa, you&#8217;ve probably noticed steady improvements in the user interface. Today, we rolled out another change to make things nicer for non-technical users that want to edit copy text: a simpler editor.</p>
 
@@ -483,18 +487,24 @@ end
       <aside>
         <section id="promo" class="message">
           <a href="http://workshops.thoughtbot.com/?utm_source=robots.thoughtbot.com">
-            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="workshops" width='35px'>
+            <img src="/images/logo.svg" alt="workshops" width='35px'>
             <span class="promo-name">Screencasts, e-books, &</span>
             <span class="promo-creative">Workshops</span>
           </a>
         </section>
+
+        <ul class="social">
+          <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
+          <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
+          <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
+        </ul>
       </aside>
     </section>
 
     <footer>
       <section id="footer-container">
         <nav>
-          <h6>more from thoughtbot</h6>
+          <h6>More from thoughtbot</h6>
 
           <ul id="main-links">
             <li><a href="http://thoughtbot.com/">thoughtbot.com</a></li>
@@ -518,25 +528,12 @@ end
               <img src="http://thoughtbot.com/images/products/trajectory.png" alt="Hoptoad logo">
             </a>
           </section>
-
-          <section id="airbrake" class="product">
-            <h6><a href="http://airbrake.io">Airbrake</a></h6>
-            <a href="http://airbrake.io/" class="logo">
-              <img src="http://thoughtbot.com/images/products/airbrake.png" alt="Airbrake logo">
-            </a>
-          </section>
-
-          <section id="copycopter" class="product">
-            <h6><a href="http://copycopter.com">Copycopter</a></h6>
-            <a href="http://copycopter.com/" class="logo">
-              <img src="http://thoughtbot.com/images/products/copycopter.png" alt="Hoptoad logo">
-            </a>
-          </section>
         </section>
       </section>
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/svgswap.jquery.js"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -569,7 +566,8 @@ end
         hgimenez: "Harold Giménez",
         elindsay: "Emma Lindsay",
         mmongeau: "Matt Mongeau",
-        plapier: "Phil LaPier"
+        plapier: "Phil LaPier",
+        kaishin: "Reda Lemeden"
       };
 
       jQuery(".author").each(function(i) {
@@ -585,6 +583,10 @@ end
           post.addClass("old");
         }
       });
+
+      jQuery('section#posts iframe').wrap('<div class="video-container" />');
+      jQuery("img[data-svgswap]").svgswap();
+
     });
     </script>
   </body>
