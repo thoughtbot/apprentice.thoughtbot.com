@@ -2,7 +2,3 @@
   width: 100%;
   @include box-sizing(border-box);
 }
-
-@function grid-width($n) {
-  @return $n * $unit + ($n - 1) * $gutter;
-}

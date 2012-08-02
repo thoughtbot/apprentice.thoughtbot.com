@@ -19,7 +19,7 @@ section#container {
     hgroup {
       float: left;
       text-align: left;
-      padding: 40px 0 0 $gutter;
+      padding: 40px 0 0 $gw-gutter;
 
       h2 {
         font: 700 12px/14px $sans-serif;
@@ -81,7 +81,7 @@ section#container {
 
     .post {
       margin: 0 0 $lh*3 0;
-      padding: 0 0 $lh*1 grid-width(2) +  $gutter;
+      padding: 0 0 $lh*1 grid-width(2) +  $gw-gutter;
       position: relative;
 
       &:only-of-type {
@@ -177,7 +177,7 @@ section#container {
 
 // Pagination
 #pagination {
-  padding: 0 0 $lh (grid-width(2) + $gutter);
+  padding: 0 0 $lh (grid-width(2) + $gw-gutter);
 }
 
 #pagination #older-link {
@@ -194,7 +194,7 @@ footer {
     width: grid-width(8.8);
 
     nav {
-      margin-right: $gutter;
+      margin-right: $gw-gutter;
       width: grid-width(4);
 
       ul {
@@ -202,7 +202,7 @@ footer {
         width: grid-width(2);
 
         &#secondary-links {
-          margin-left: $gutter;
+          margin-left: $gw-gutter;
         }
       }
     }

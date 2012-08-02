@@ -15,7 +15,7 @@ section#container {
     }
 
     nav {
-      margin: 0 0 0 $gutter;
+      margin: 0 0 0 $gw-gutter;
       padding: 35px 0 0 0;
       width: grid-width(3);
 
@@ -33,7 +33,7 @@ section#container {
     clear: none;
     display: inline-block;
     float: left;
-    margin: 10px 0 0 $gutter;
+    margin: 10px 0 0 $gw-gutter;
     width: grid-width(3);
   }
 
