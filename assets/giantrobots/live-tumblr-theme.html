@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="NOODP">
 
-    <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/mobile.css" media="screen">
+        <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/mobile.css" media="screen">
     <link rel="stylesheet" href="http://thoughtbot.com/assets/giantrobots/stylesheets/desktop.css" media="screen and (min-width:480px)">
 
     <!--[if (lt IE 9) & (!IEMobile)]>
@@ -251,8 +251,8 @@
           <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
           <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
         </ul>
-      </aside>
 
+      </aside>
     </section>
 
     <footer>
@@ -290,7 +290,6 @@
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" charset="utf-8"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/authors.js" charset="utf-8"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
       jQuery(document).ready(function() {
@@ -303,14 +302,9 @@
           }
         });
 
-        jQuery("section#posts iframe:not([data-disqus-uid])").wrap("<div class="video-container" />");
-          if(!Modernizr.svg) {
-            var images = jQuery('img[data-png-fallback]');
-            images.each(function(i) {
-              jQuery(this).attr('src', jQuery(this).data('png-fallback'));
-            });
-          }
+        jQuery('section#posts iframe:not([data-disqus-uid])').wrap('<div class="video-container" />');
         });
     </script>
   </body>
 </html>
+

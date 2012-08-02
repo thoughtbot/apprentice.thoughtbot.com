@@ -533,7 +533,6 @@ end
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.5.3/modernizr.min.js"></script>
     <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
@@ -586,12 +585,6 @@ end
 
       jQuery('section#posts iframe').wrap('<div class="video-container" />');
 
-      if(!Modernizr.svg) {
-          var images = jQuery('img[data-png-fallback]');
-          images.each(function(i) {
-            jQuery(this).attr('src', jQuery(this).data('png-fallback'));
-          });
-        }
     });
     </script>
   </body>
