@@ -305,7 +305,6 @@
 
         jQuery("section#posts iframe:not([data-disqus-uid])").wrap("<div class="video-container" />");
           if(!Modernizr.svg) {
-            console.log("hurray");
             var images = jQuery('img[data-png-fallback]');
             images.each(function(i) {
               jQuery(this).attr('src', jQuery(this).data('png-fallback'));
