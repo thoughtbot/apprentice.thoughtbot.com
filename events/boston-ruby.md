@@ -1,6 +1,6 @@
 ---
 layout: event-coupon
-title: Event Name
+title: Boston Ruby
 coupon: BOSTONRUBY
 ---
 
