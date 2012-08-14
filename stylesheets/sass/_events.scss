@@ -90,4 +90,9 @@ section#entries {
       }
     }
   }
+
+  .event-coupon-wrapper {
+    @extend .events-wrapper;
+    margin-top: -1.5em;
+  }
 }
