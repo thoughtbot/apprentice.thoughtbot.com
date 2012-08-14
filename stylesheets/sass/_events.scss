@@ -94,5 +94,39 @@ section#entries {
   .event-coupon-wrapper {
     @extend .events-wrapper;
     margin-top: -1.5em;
+
+    ul {
+      padding: 0;
+
+      li {
+        padding: 20px 0;
+        margin: 0;
+        font-family: $header;
+
+        strong {
+          font-family: $header;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          &.webcast {
+            color: #006b83;
+            background: url(https://learn.thoughtbot.com/assets/icons/video-small.png) no-repeat;
+            padding-left: 26px;
+          }
+
+          &.workshop {
+            color: #6c1764;
+            background: url(https://learn.thoughtbot.com/assets/icons/gear-small.png) no-repeat;
+            padding-left: 26px;
+          }
+
+          &.book {
+            color: #286d15;
+            background: url(https://learn.thoughtbot.com/assets/icons/book-small.png) no-repeat;
+            padding-left: 26px;
+          }
+        }
+      }
+    }
   }
 }

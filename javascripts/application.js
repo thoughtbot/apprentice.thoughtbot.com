@@ -46,4 +46,8 @@ $(document).ready(function() {
 
     return false;
   });
+
+  $(".event-coupon-wrapper strong:contains('Webcast')").addClass("webcast");
+  $(".event-coupon-wrapper strong:contains('Workshop')").addClass("workshop");
+  $(".event-coupon-wrapper strong:contains('Book')").addClass("book");
 });
