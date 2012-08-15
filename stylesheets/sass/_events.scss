@@ -94,14 +94,41 @@ section#entries {
   .event-coupon-wrapper {
     @extend .events-wrapper;
     margin-top: -1.5em;
+    font-family: $header;
 
-    ul {
-      padding: 0;
+    h3, h2 {
+      margin-bottom: 0;
+    }
 
-      li {
-        padding: 20px 0;
-        margin: 0;
-        font-family: $header;
+    p {
+      margin-top: $lh;
+      padding-top: $lh;
+      border-top: 5px solid #aaa;
+      display: inline-block;
+      width: 100%;
+
+      &:first-child {
+        border-color: $red;
+      }
+
+      > a {
+        @extend .clearfix;
+        border-bottom: 3px solid #DDD;
+        @include box-sizing(border-box);
+        color: #000;
+        float: left;
+        padding: $lh 20px;
+        text-align: left;
+        @include transition(all 2s ease-in);
+        width: 100%;
+
+        &:hover {
+          background-color: #eee;
+        }
+
+        &:first-child {
+          margin-top: -$lh;
+        }
 
         strong {
           font-family: $header;
