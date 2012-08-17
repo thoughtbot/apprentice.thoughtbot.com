@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
     kaishinlab: 'Reda Lemeden',
     edwardloveall: 'Edward Loveall',
     benwhitla: 'Ben Whitla',
-    joshsteiner: 'Josh Steiner'
+    joshsteiner: 'Josh Steiner',
     griffindy: 'Dylan Griffin'
   };
 
