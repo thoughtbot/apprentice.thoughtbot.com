@@ -94,6 +94,17 @@
     <script src="/javascripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
     <script type="text/javascript">
+      function workshop_details(course) {
+        var details = [];
+        for (var s=0; s<course.active_sections.length; s++) {
+          details.push(course.active_sections[s].section.city);
+        }
+        if(details.length > 0) {
+          return " in " + details.join(" and ");
+        } else {
+          return "";
+        }
+      }
       function workshops(resp) {
         var courses = resp;
         $('#current-workshops .loading').replaceWith('<ul/>');
@@ -105,16 +116,16 @@
           var name = c['name'] || null;
 
           if (name) {
-            $ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
+            $ul.append('<li><a href="'+c['url']+'">'+name+workshop_details(c)+'</a></li>');
 
             if (i<3) {
-              $footer_ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
+              $footer_ul.append('<li><a href="'+c['url']+'">'+name+workshop_details(c)+'</a></li>');
             }
           }
         }
       }
     </script>
-    <script src="http://workshops.thoughtbot.com/courses.json?callback=workshops" type="text/javascript"></script>
+    <script src="http://learn.thoughtbot.com/courses.json?callback=workshops" type="text/javascript"></script>
     <script type="text/javascript" src="/javascripts/application.js"></script>
     <script type="text/javascript">
       function tumblr(resp) {
