@@ -46,7 +46,8 @@ jQuery(document).ready(function() {
     edwardloveall: 'Edward Loveall',
     benwhitla: 'Ben Whitla',
     joshsteiner: 'Josh Steiner',
-    griffindy: 'Dylan Griffin'
+    griffindy: 'Dylan Griffin',
+    readeharris: 'Reade Harris'
   };
 
   $(".author").each(function(index) {
