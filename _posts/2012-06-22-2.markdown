@@ -1,0 +1,23 @@
+---
+layout: podcast
+episodetitle: Design with a sip of Bourbon
+tags: bourbon design fireworks podcast sass
+permalink: /podcast/2
+size: 16.3MB
+length: 35 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-002.mp3
+description: "Ben Orenstein is joined this week by Phil LaPier, the creator of Bourbon and a designer at thoughtbot. Ben and Phil discuss the design process, fundamentals of visual design, common design errors, and how to be a better designer (even if you're a developer), and how to work with designers as a developer. They also answer some audience questions about design: How to handle feedback from clients, and HAML vs. HTML."
+---
+
+* [Bourbon](http://thoughtbot.com/bourbon)
+* [Dribbble](http://dribbble.com)
+* [Dan Cederholm - Dribbble](http://dribbble.com/simplebits)
+* [Lea Verou - Twitter](http://twitter.com/LeaVerou)
+* [Benjamin De Cock - Twitter](http://twitter.com/bdc)
+* [Jason Santa Maria - Twitter](http://twitter.com/jasonsantamaria)
+* [Trent Walton](http://twitter.com/TrentWalton)
+* [Adobe Fireworks](http://www.adobe.com/products/fireworks.html)
+* [Bourbon](http://thoughtbot.com/bourbon)
+* [Sass](http://sass-lang.com/)
+* [Bourbon Grid-Width](http://thoughtbot.com/bourbon/#grid-width)
+* [Bourbon Font Stacks](http://thoughtbot.com/bourbon/#font-family)

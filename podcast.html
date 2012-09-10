@@ -1,0 +1,13 @@
+---
+layout: podcast-index
+---
+
+{% for post in site.posts %}
+  <div class="episode">
+    <h3><a href="{{ post.url }}">Episode #{{ post.title }}: {{ post.episodetitle }}</a></h3>
+    <div class="info">
+      {{ post.date | date: '%x' }} • {{ post.length }}
+    </div>
+    <p>{{ post.description }}</p>
+  </div>
+{% endfor %}

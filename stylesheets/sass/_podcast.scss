@@ -1,0 +1,88 @@
+body#podcast {
+  .podcast-intro {
+    margin-top: lh(2);
+    margin-bottom: lh(2);
+
+    .cover {
+      float: left;
+      margin-right: flex-gutter();
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin-right: flex-gutter();
+      }
+    }
+  }
+
+  .primary {
+    h1 {
+      font-size: lh();
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: lh();
+    }
+
+    .listen {
+      margin-top: lh();
+    }
+  }
+
+  .secondary-wrapper {
+    margin-top: lh();
+    padding: lh() 20px lh();
+  }
+
+  .secondary {
+    h3 {
+      margin-bottom: lh();
+    }
+  }
+
+  audio {
+    display: block;
+    width: 50%;
+  }
+
+  .episode {
+    h3 {
+      margin-bottom: 0;
+    }
+
+    .info {
+      font-weight: bold;
+      margin-bottom: lh(.5);
+    }
+  }
+
+  section.notes {
+    float: left;
+    width: flex-grid(8);
+  }
+
+  section#podcast-questions {
+    background: #F9F9F9;
+    border-top: 5px solid #292929;
+    float: left;
+    padding: (lh(1.5) - 15) lh() lh(); /*top padding makes up for 5px border and 10px margin*/
+    width: flex-grid(4); /*4 units minus left and right padding*/
+    @include box-sizing(border-box);
+  }
+
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    audio {
+      width: 100%;
+    }
+
+    section#podcast-questions {
+      float: left;
+      width: flex-grid(12);
+      margin-top: lh(2);
+    }
+  }
+}

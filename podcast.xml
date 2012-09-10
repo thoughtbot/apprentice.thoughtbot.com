@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Giant Robots Smashing into other Giant Robots</title>
+  <link href="http://thoughtbot.com/podcast"/>
+  <link type="application/atom+xml" rel="self" href="http://thoughtbot.com/podcast.atom"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://thoughtbot.com/podcast</id>
+  <author>
+    <name>thoughtbot</name>
+    <email>info@thoughtbot.com</email>
+  </author>
+  {% for post in site.posts %}
+  <entry>
+    <id>http://thoughtbot.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://thoughtbot.com{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>thoughtbot</name>
+      <uri>http://thoughtbot.com/podcast</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>
