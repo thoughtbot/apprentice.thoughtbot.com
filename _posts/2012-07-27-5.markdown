@@ -1,0 +1,31 @@
+---
+layout: podcast
+episodetitle: My wife is getting really into whiskey
+tags: coffeescript javascript whiskey
+permalink: /podcast/5
+size: 23.3MB
+length: 48 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-005.mp3
+description: "Ben Orenstein is joined by David Thyresson, the founder of Stattleship and a past client of thoughtbot. Ben and David discuss how he got started with Stattleship, how he came to work with thoughtbot, and what it was like to work with us. Also, how the idea of what he would initially build changed, and how through agile software development he discovered how it was wrong. How he learned Ruby on Rails from thoughtbot during his project. Finally, what has worked for driving visitors to the site, and important lessons learned about starting up, building an app, and running a business."
+---
+
+* ["Cowboy" Ben Alman](http://benalman.com/)
+* [Bocoup](http://bocoup.com/)
+* [Ben Alman's enormous project listing](http://benalman.com/projects/)
+* [Bocoup](http://bocoup.com/)
+* [Sublime Text 2](http://www.sublimetext.com/2)
+* [M+ monospace font](http://en.wikipedia.org/wiki/M%2B_Fonts)
+* [Ben Alman's dotfiles](https://github.com/cowboy/dotfiles) and [gpr](https://github.com/cowboy/dotfiles/blob/master/bin/gpr)
+* [Grunt](https://github.com/cowboy/grunt) on github, [Grunt introduction](http://weblog.bocoup.com/introducing-grunt/)
+* [jake](https://github.com/mde/jake/)
+* [JSHint](http://www.jshint.com/)
+* [npm](http://npmjs.org/)
+* [CoffeeScript](http://coffeescript.org/)
+* [ES.next](http://www.slideshare.net/BrendanEich/esnext)
+* [Variadic function](http://en.wikipedia.org/wiki/Variadic_function)
+* [YUI Compressor](http://developer.yahoo.com/yui/compressor/)
+* [Bulleit Bourbon](http://en.wikipedia.org/wiki/Bulleit_Bourbon)
+* [The Macallan](http://en.wikipedia.org/wiki/The_Macallan)
+* [Big Ben Hillman @ The Big Easy](http://benalman.com/music/big-ben-hillman-the-big-easy/)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@cowboy](http://twitter.com/cowboy), and [@r00k](http://twitter.com/r00k) on twitter.

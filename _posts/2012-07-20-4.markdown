@@ -1,0 +1,18 @@
+---
+layout: podcast
+episodetitle: I've got a little thoughtbot angel or devil on my shoulder
+tags: business rails
+permalink: /podcast/4
+size: 18.1MB
+length: 37 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-004.mp3
+description: "Ben Orenstein is joined by David Thyresson, the founder of Stattleship and a past client of thoughtbot. Ben and David discuss how he got started with Stattleship, how he came to work with thoughtbot, and what it was like to work with us. Also, how the idea of what he would initially build changed, and how through agile software development he discovered how it was wrong. How he learned Ruby on Rails from thoughtbot during his project. Finally, what has worked for driving visitors to the site, and important lessons learned about starting up, building an app, and running a business."
+---
+
+* [Stattleship](http://stattleship.com)
+* [Ruby Performance in the Cloud](http://rubyperformanceinthecloud.eventbrite.com/)
+* [Lone Star Ruby Conference](http://www.lonestarrubyconf.com/)
+* [eurucamp](http://2012.eurucamp.org/)
+* [Madison Ruby Conference](http://madisonruby.org/)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@stattleship](http://twitter.com/stattleship), and [@r00k](http://twitter.com/r00k) on twitter.

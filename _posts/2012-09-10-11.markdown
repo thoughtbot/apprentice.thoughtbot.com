@@ -1,0 +1,40 @@
+---
+layout: podcast
+episodetitle: You want your system to bend, not to break
+tags: erlang music riak
+permalink: /podcast/11
+size: 26.1MB
+length: 54 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-011.mp3
+description: "Ben Orenstein is joined by Sean Cribbs, Software Engineer at Basho, the makers of Riak. Ben and Sean start off discussing the interesting overlap of programmers and musicians and why it seems to happen so much. They then discuss Sean's role at Basho, what Riak is, how it works, and how it differs from other NoSQL databases. Sean works remotely for Basho, which has several offices, so Ben and Sean discuss remote workers and remote offices, and the ins and outs of navigating that set up, and how he got paid to work on open source. Finally, they discuss Erlang, which most of Riak is written in. These topics, plus much more."
+---
+
+* [Corpus callosum](http://en.wikipedia.org/wiki/Corpus_callosum)
+* [Riak Overview](http://basho.com/products/riak-overview/)
+* [Basho](http://basho.com/)
+* [Ruby client for Riak](https://github.com/basho/riak-ruby-client)
+* [Dynamo: Amazon’s Highly Available Key-value Store](http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf) - PDF
+* [Eventual consistency](http://en.wikipedia.org/wiki/Eventual_consistency)
+* [Riak: Read Repair](http://wiki.basho.com/Riak-Glossary.html#Read-Repair)
+* [BitTorrent Swarms](http://en.wikipedia.org/wiki/Glossary_of_BitTorrent_terms#Swarm)
+* [Distributed hash table](http://en.wikipedia.org/wiki/Distributed_hash_table)
+* [Riak: Ring](http://wiki.basho.com/Riak-Glossary.html#Ring)
+* [Riak: Gossiping](http://wiki.basho.com/Riak-Glossary.html#Gossiping)
+* [Cassandra](http://cassandra.apache.org/)
+* [Project Voldemort](http://www.project-voldemort.com/voldemort/)
+* [Strangeloop, Sept 23-25, 2012](https://thestrangeloop.com/)
+* [RICON, Oct 10-11, 2012](http://basho.com/community/ricon2012/)
+* [Why Riak](http://seancribbs.com/tech/2010/02/06/why-riak-should-power-your-next-rails-app/)
+* [Erlang Programming Language](http://www.erlang.org/)
+* [Pragmatic Programmers: Erlang in Practice screencast](http://pragprog.com/screencasts/v-kserl/erlang-in-practice)
+* [Erlang: dialyzer](http://www.erlang.org/doc/man/dialyzer.html)
+* [Ruby laser](http://rubygems.org/gems/laser)
+* [Programming Erlang: Software for a Concurrent World](http://pragprog.com/book/jaerlang/programming-erlang)
+
+#### Upcoming Events
+
+* [Rocky Mountain Ruby, September 19-22, "Refactoring from Good to Great"](http://rockymtnruby.com/)
+* [Frozen Rails in Helsinki Finland, September 20-21,  "When Not to Use Object-Oriented Techniques"](http://2012.frozenrails.eu)
+* [View all events we'll be at&hellip;](http://thoughtbot.com/events)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@r00k](http://twitter.com/r00k), and [@seancribbs](https://twitter.com/seancribbs) on twitter.

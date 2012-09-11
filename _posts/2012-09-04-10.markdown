@@ -1,0 +1,28 @@
+---
+layout: podcast
+episodetitle: Isn't the last stage of grieving acceptance? 
+tags: code smalltalk oop
+permalink: /podcast/10
+size: 20.7MB
+length: 43 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-010.mp3
+description: "Ben Orenstein is joined by Joe Ferris and Mike Burns. They start off with some recommendations for awesome programming books and then dive right in to questions about not following \"Tell don't ask\" in the view, how MVC and the Single Responsibility Principle may be at odds with \"Tell don't ask\" in the view, and what a more object oriented approach may look like. They also discuss \"Class-oriented programming\", what it is, why it is bad, how Rails does it, and how to avoid it. They take a quick trip through Mike's experiments in Ruby and Smalltalk in creating his own programming language. The three codecateers then take on the really important topic of method order and code organization, and finally they reflect on how their code has changed over the years, how no solution is foolproof, and how to move to the next level as a programmer. These topics and more, in this installment of the GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS podcast!"
+---
+
+* [Structure and Interpretation of Computer Programs](http://mitpress.mit.edu/sicp/)
+* [MIT course that everyone failed](http://mitpress.mit.edu/sicp/course.html)
+* [Growing Object-Oriented Software, Guided by Tests](http://www.amazon.com/Growing-Object-Oriented-Software-Guided-Tests/dp/0321503627)
+* [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+* [Tell Don't Ask](http://c2.com/cgi/wiki?TellDontAsk)
+* [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+* [Shotgun Surgery](http://en.wikipedia.org/wiki/Shotgun_surgery)
+* [Smalltalk, Squeak](http://www.squeak.org/)
+* [Scala, Play framework](http://www.playframework.org/)
+
+#### Upcoming Events
+
+* [Rocky Mountain Ruby, September 19-22, "Refactoring from Good to Great"](http://rockymtnruby.com/)
+* [Frozen Rails in Helsinki Finland, September 20-21,  "When Not to Use Object-Oriented Techniques"](http://2012.frozenrails.eu)
+* [View all events we'll be at&hellip;](http://thoughtbot.com/events)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@r00k](http://twitter.com/r00k), [@joeferris](http://twitter.com/joeferris), [@mikeburns](https://twitter.com/mikeburns) on twitter.

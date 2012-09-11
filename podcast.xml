@@ -22,7 +22,9 @@ layout: nil
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
     </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">{{ post.content | xml_escape }}
+      &lt;a href="{{ post.file }}"&gt;Download&lt;/a&gt;
+    </content>
   </entry>
   {% endfor %}
 </feed>
