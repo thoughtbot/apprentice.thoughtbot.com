@@ -17,12 +17,11 @@ $(document).ready(function() {
     "umbrellatoday": 2,
   };
 
-  $('document').ready(function(){
-    var divname = $('body').attr('id');
-    console.log(divname)
-    var slider  = $("#" + divname + "-project")
-    console.log(divname)
+  $('body#portfolio').ready(function(){
+    var divname = (document.title);
+    divname = divname.substring(0, divname.indexOf(' :'));
 
+    var slider  = $("#" + divname + "-project")
 
     if (slider.find("li").size() == 0) {
       var list = slider.find("ul");
@@ -35,7 +34,8 @@ $(document).ready(function() {
       list.nivoSlider({
         effect:'fade',
         manualAdvance:true,
-        directionNavHide:false
+        directionNavHide:false,
+        animSpeed: 100
       });
     }
 
