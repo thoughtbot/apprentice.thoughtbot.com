@@ -1,8 +1,8 @@
 #portfolio-slider {
   @extend .secondary-wrapper;
-  height: lh(26);
-  margin-top: lh(3);
-  position: relative;
+    margin-top: lh(3);
+    margin-bottom: lh(2);
+    position: relative;
 
   div {
     @extend .secondary;
@@ -20,7 +20,7 @@
       @include box-shadow(inset 0 1px 0 rgba(#fff, .4), 0 0 4px rgba(#000, .15));
       @include box-sizing(border-box);
       border: 1px solid rgba(#000, .2);
-      height: (lh(21) - 2); /*line-height minus 2 for the border to maintain baseline grid*/
+      height: 420px;
       list-style: none;
       position: relative;
       width: flex-grid(12);
@@ -43,7 +43,7 @@
 
       div.nivo-controlNav {
         position: absolute;
-        top: -52px;
+        top: 440px;
         right: 1px;
         width: auto;
 

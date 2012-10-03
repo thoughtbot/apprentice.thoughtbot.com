@@ -4,7 +4,6 @@ $.jqwidont.auto(false);       // disable it
 $(document).ready(function() {
   $('p').widont();
 
-  $('#portfolio-slider, #portfolio-slider div').hide();
   $('#portfolio').localScroll();
 
   var images = {
@@ -18,16 +17,12 @@ $(document).ready(function() {
     "umbrellatoday": 2,
   };
 
-  $('#portfolio a').click(function(){
-    var divname = this.title;
+  $('document').ready(function(){
+    var divname = $('body').attr('id');
+    console.log(divname)
     var slider  = $("#" + divname + "-project")
+    console.log(divname)
 
-    if ($('#portfolio-slider:hidden').size() == 1) {
-      $('#portfolio-slider').slideDown();
-      slider.slideDown();
-    } else {
-      slider.slideDown().siblings().slideUp();
-    }
 
     if (slider.find("li").size() == 0) {
       var list = slider.find("ul");
