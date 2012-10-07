@@ -1,0 +1,37 @@
+---
+layout: podcast
+episodetitle: Moving money should be free
+tags: rails
+permalink: /podcast/15
+size: 20MB
+length: 43 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-015.mp3
+description: "Ben Orenstein is joined by Seth Priebatsch, creator of SCVNGR and LevelUp. Ben and Seth talk about LevelUp, how it got started, how they make money, and what the future holds. They also discuss his daily schedule, maintaining focus, what he worries about, how your motives can limit your success, how to change the world by choosing the right thing to change, why he stopped hiding doubt and started being more transparent, and much, much more, including the most interesting question he's never been asked."
+---
+
+Moving money should be free
+Mostly from tweets
+If it was just me I'd probably give up and go home right now
+That's what really gets me going
+I've given up on the idea of a week
+I'll be the guy tangled in barbed wire crying for mercy
+You look well rested
+Running into walls until we run through them
+
+* [SCVNGR](http://www.scvngr.com/)
+* [LevelUp](https://www.thelevelup.com/)
+* [TEDX Talks, "Seth Priebatsch: The game layer on top of the world"](http://www.ted.com/talks/seth_priebatsch_the_game_layer_on_top_of_the_world.html)
+* [TED Talks, "Iain Hutchison: Saving faces"](http://www.ted.com/talks/iain_hutchison_saving_faces.html)
+* [Isis mobile wallet](http://www.paywithisis.com/)
+* [Reach the Beach Relay](http://www.rtbrelay.com/)
+* [Killington Spartan Race](http://www.spartanrace.com/vermont-obstacle-racing-super-spartan.html)
+
+### Upcoming Events We'll Be At
+
+* [Stockholm Google Technology User Group, October 09 "Scala on Android"](https://sites.google.com/site/stockholmgtug/)
+* ["The expression problem", October 30 at the Riga Ruby Group in Latvia](http://www.meetup.com/ruby-on-rails-latvia/events/82020412/)
+* [RubyConf, November 1-3, Denver](http://rubyconf.org/)
+* ["Apprentice.io", Software Craftmanship North America, Nov 9-10](http://scna.softwarecraftsmanship.org/)
+* [View all events we'll be at&hellip;](http://thoughtbot.com/events)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@r00k](http://twitter.com/r00k), and [@sethpriebatsch](http://twitter.com/sethpriebatsch) on twitter.
