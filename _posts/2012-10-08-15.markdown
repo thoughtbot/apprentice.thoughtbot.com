@@ -9,15 +9,6 @@ file: http://gr-podcast.s3.amazonaws.com/thoughtbot-015.mp3
 description: "Ben Orenstein is joined by Seth Priebatsch, creator of SCVNGR and LevelUp. Ben and Seth talk about LevelUp, how it got started, how they make money, and what the future holds. They also discuss his daily schedule, maintaining focus, what he worries about, how your motives can limit your success, how to change the world by choosing the right thing to change, why he stopped hiding doubt and started being more transparent, and much, much more, including the most interesting question he's never been asked."
 ---
 
-Moving money should be free
-Mostly from tweets
-If it was just me I'd probably give up and go home right now
-That's what really gets me going
-I've given up on the idea of a week
-I'll be the guy tangled in barbed wire crying for mercy
-You look well rested
-Running into walls until we run through them
-
 * [SCVNGR](http://www.scvngr.com/)
 * [LevelUp](https://www.thelevelup.com/)
 * [TEDX Talks, "Seth Priebatsch: The game layer on top of the world"](http://www.ted.com/talks/seth_priebatsch_the_game_layer_on_top_of_the_world.html)
