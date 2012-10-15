@@ -6,7 +6,7 @@ permalink: /podcast/16
 size: 17MB
 length: 35 minutes
 file: http://gr-podcast.s3.amazonaws.com/thoughtbot-016.mp3
-description: "Ben Orenstein is joined by William Josephson and Jay Moorthi from Solano Labs, the makers of tddium, the hosted, scalable continuous integration service. They discuss the architecture of the service, including how they're using Go to speed up parts of it, the surprises they've had in getting started, how they've gotten involved in the Ruby community, and how they validated their idea and get feedback from customers. Also, they're experience working with thoughtbot, what has worked and not worked for driving public customers to the site and converting them, dealing with privacy, customer support, their goals and their growth plans, and much more."
+description: "Ben Orenstein is joined by William Josephson and Jay Moorthi from Solano Labs, the makers of tddium, the hosted, scalable continuous integration service. They discuss the architecture of the service, including how they're using Go to speed up parts of it, the surprises they've had in getting started, how they've gotten involved in the Ruby community, and how they validated their idea and get feedback from customers. Also, their experience working with thoughtbot, what has worked and not worked for driving public customers to the site and converting them, dealing with privacy, customer support, their goals and their growth plans, and much more."
 ---
 
 * [tddium](https://www.tddium.com/) (Solano Labs)
