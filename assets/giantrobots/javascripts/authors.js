@@ -44,6 +44,7 @@ jQuery(document).ready(function() {
     thoughtbotet: 'Eric Torrey',
     thoughtbotjc: 'Jared Carroll',
     thoughtbotjm: 'Jason Martinez',
+    thoughtbotmark: 'Mark Adams',
     thoughtbotmmk: 'Mike McKenna',
     thoughtbotmr: 'Micah Rich',
     tristandunn: 'Tristan Dunn',
