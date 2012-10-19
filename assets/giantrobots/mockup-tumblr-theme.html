@@ -27,7 +27,7 @@
 
         <hgroup>
           <h2><a href="http://robots.thoughtbot.com">giant robots smashing into other giant robots</a></h2>
-          <h3>We are <a href="http://thoughtbot.com">thoughtbot</a>. We make web &amp; mobile apps.</h3>
+          <h3>Written by <a href="http://thoughtbot.com">thoughtbot</a>. We make web &amp; mobile apps.</h3>
         </hgroup>
 
         <nav>
@@ -211,6 +211,11 @@ end
 
             <section class="post-footer">
               <p class="author">kaishin</p>
+
+              <div class="plus-one">
+                <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+              </div>
+
               <p class="comments"><a href="#">25 comments</a></p>
             </section>
 
@@ -586,6 +591,14 @@ end
       jQuery('section#posts iframe').wrap('<div class="video-container" />');
 
     });
+    </script>
+
+     <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
     </script>
   </body>
 </html>

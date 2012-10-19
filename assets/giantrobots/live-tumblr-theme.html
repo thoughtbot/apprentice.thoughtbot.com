@@ -79,6 +79,13 @@
 
               <section class="post-footer">
               <p class="author">{PostAuthorName}</p>
+
+              {block:PermalinkPage}
+                <div class="plus-one">
+                  <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+                </div>
+              {/block:PermalinkPage}
+
               <p class="comments"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a></p>
 
               {block:PermalinkPage}
@@ -304,6 +311,14 @@
 
         jQuery('section#posts iframe:not([data-disqus-uid])').wrap('<div class="video-container" />');
         });
+    </script>
+
+     <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
     </script>
   </body>
 </html>

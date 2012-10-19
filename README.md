@@ -24,6 +24,12 @@ Files will be auto-regenerated.  You can run:
 
 CSS files are generated using SASS. Run:
 
-    $ sass --watch stylesheets/sass:stylesheets/ --style compressed -r ./stylesheets/sass/bourbon/lib/bourbon.rb
+    cd stylesheets
+    sass --watch sass:stylesheets --style compressed -r ./sass/bourbon/lib/bourbon.rb
+
+Or, when styling the blog:
+
+    cd assets/giantrobots/stylesheets
+    sass --watch sass:. --style compressed -r ./sass/bourbon/lib/bourbon.rb
 
 So that the css files will be generated automatically.
