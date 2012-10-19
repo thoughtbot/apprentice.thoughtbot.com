@@ -3,6 +3,7 @@ body#portfolio {
 
   header {
     @extend .primary;
+
     h2 {
       font-size: 60px;
       font-family: $header;
@@ -13,7 +14,6 @@ body#portfolio {
   }
 
   section.nav {
-
     margin-bottom: lh(2);
     clear: both;
 
