@@ -1,35 +1,51 @@
-# thoughtbot.com
+thoughtbot.com
+==============
 
-This is the source of thoughtbot.com, which is a jekyll site.
+This is the source of thoughtbot.com, which is a hybrid Rails/jekyll site.
 
-### Editing
+We use jekyll to generate files to `public/`, which then gets served by Rails.
 
-Jekyll compiles files into the `_site/` directory, so don't edit anything in
-there. Instead, edit the HTML files in the top-level directory or other
-subdirectories. Jekyll will compile your changes into the `_site/` directory.
+We also use Rails to get real 301 redirects instead of the `<meta>` redirects in
+jekyll.
 
-### Run locally
+Editing
+-------
+
+* Edit files in the `jekyll/` directory
+* Run `bundle exec jekyll` to generate files to the `public/` directory
+* `git commit` the additions and push
+
+Deploying
+---------
+
+Heroku remote:
+
+    git remote add heroku git@heroku.com:thoughtbotdotcom.git
+
+If you need to add yourself as a collaborator to the Heroku app, sign in as
+support@thoughtbot.com (credentials are in backpack) and add your main email.
+
+Run locally
+-----------
 
 To run locally:
 
-    $ jekyll --server
+    # in one terminal
+    $ jekyll --auto
+    # in another terminal
+    $ rails s
 
-Then go to [http://localhost:4000](http://localhost:4000)
+Then go to [http://localhost:3000](http://localhost:3000)
 
-Files will be auto-regenerated.  You can run:
+Files will be auto-regenerated.  If your changes aren't showing up correctly,
+check for parse errors by running:
 
-    $ jekyll --server --no-auto
+    $ jekyll --no-auto
 
-...if your changes aren't showing up correctly.  This will flag parse errors.
+The blog
+--------
 
-CSS files are generated using SASS. Run:
+Assets for the blog (images, CSS, etc) can be found in `jekyll/assets`.
 
-    cd stylesheets
-    sass --watch sass:stylesheets --style compressed -r ./sass/bourbon/lib/bourbon.rb
-
-Or, when styling the blog:
-
-    cd assets/giantrobots/stylesheets
-    sass --watch sass:. --style compressed -r ./sass/bourbon/lib/bourbon.rb
-
-So that the css files will be generated automatically.
+Deploying
+---------

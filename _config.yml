@@ -1,4 +1,5 @@
-auto: true
-permalink: "pretty"
-exclude:
-- README
+auto: false
+permalink: pretty
+destination: ./public
+source: ./jekyll
+exclude: README.md

@@ -1,2 +1,0 @@
-Sitemap: http://thoughtbot.com/sitemap.xml
-Sitemap: http://app.wistia.com/sitemaps/698.xml
