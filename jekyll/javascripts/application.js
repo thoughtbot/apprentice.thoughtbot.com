@@ -1,7 +1,7 @@
 var auto = $.jqwidont.auto(); // is automatic initialisation enabled?
 $.jqwidont.auto(false);       // disable it
 
-ga_track_portfolio = function(event_name) {
+var ga_track_portfolio = function(event_name) {
   _gaq.push(['_trackEvent', 'Portfolio', 'Navigation', event_name]);
 }
 
