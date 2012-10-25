@@ -6,7 +6,7 @@
     .wrapper, .primary, .secondary {
       max-width: 1122px;
       min-width: 720px; } }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
     .wrapper, .primary, .secondary {
       max-width: 420px; } }
 
@@ -17,31 +17,31 @@
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: inset 0 1px 0 #e93e49;
-  -moz-box-shadow: inset 0 1px 0 #e93e49;
-  -ms-box-shadow: inset 0 1px 0 #e93e49;
-  -o-box-shadow: inset 0 1px 0 #e93e49;
-  box-shadow: inset 0 1px 0 #e93e49;
-  -webkit-transition-property: all, 0.3s;
-  -moz-transition-property: all, 0.3s;
-  -ms-transition-property: all, 0.3s;
-  -o-transition-property: all, 0.3s;
-  transition-property: all, 0.3s;
-  -webkit-transition-duration: 0.15s;
-  -moz-transition-duration: 0.15s;
-  -ms-transition-duration: 0.15s;
-  -o-transition-duration: 0.15s;
-  transition-duration: 0.15s;
-  -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: ease-out;
-  -ms-transition-timing-function: ease-out;
-  -o-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0;
-  transition-delay: 0;
+  -webkit-box-shadow: compact(inset 0 1px 0 #e93e49, false, false, false, false, false, false, false, false);
+  -moz-box-shadow: compact(inset 0 1px 0 #e93e49, false, false, false, false, false, false, false, false);
+  -ms-box-shadow: compact(inset 0 1px 0 #e93e49, false, false, false, false, false, false, false, false);
+  -o-box-shadow: compact(inset 0 1px 0 #e93e49, false, false, false, false, false, false, false, false);
+  box-shadow: compact(inset 0 1px 0 #e93e49, false, false, false, false, false, false, false, false);
+  -webkit-transition-property: compact(all, 0.3s, false, false, false, false, false, false, false, false);
+  -moz-transition-property: compact(all, 0.3s, false, false, false, false, false, false, false, false);
+  -ms-transition-property: compact(all, 0.3s, false, false, false, false, false, false, false, false);
+  -o-transition-property: compact(all, 0.3s, false, false, false, false, false, false, false, false);
+  transition-property: compact(all, 0.3s, false, false, false, false, false, false, false, false);
+  -webkit-transition-duration: compact(0.15s, false, false, false, false, false, false, false, false);
+  -moz-transition-duration: compact(0.15s, false, false, false, false, false, false, false, false);
+  -ms-transition-duration: compact(0.15s, false, false, false, false, false, false, false, false);
+  -o-transition-duration: compact(0.15s, false, false, false, false, false, false, false, false);
+  transition-duration: compact(0.15s, false, false, false, false, false, false, false, false);
+  -webkit-transition-timing-function: compact(ease-out, false, false, false, false, false, false, false, false);
+  -moz-transition-timing-function: compact(ease-out, false, false, false, false, false, false, false, false);
+  -ms-transition-timing-function: compact(ease-out, false, false, false, false, false, false, false, false);
+  -o-transition-timing-function: compact(ease-out, false, false, false, false, false, false, false, false);
+  transition-timing-function: compact(ease-out, false, false, false, false, false, false, false, false);
+  -webkit-transition-delay: compact(0, false, false, false, false, false, false, false, false);
+  -moz-transition-delay: compact(0, false, false, false, false, false, false, false, false);
+  -ms-transition-delay: compact(0, false, false, false, false, false, false, false, false);
+  -o-transition-delay: compact(0, false, false, false, false, false, false, false, false);
+  transition-delay: compact(0, false, false, false, false, false, false, false, false);
   background: #ad141e;
   border: 1px solid #52090e;
   color: #fff;
@@ -51,20 +51,20 @@
   padding: 36px;
   text-shadow: 0 -1px 0 #7f0f16; }
   .button:hover, form.wufoo ul li input#saveForm:hover {
-    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
-    -moz-box-shadow: inset 0 1px 0 #ee6c74;
-    -ms-box-shadow: inset 0 1px 0 #ee6c74;
-    -o-box-shadow: inset 0 1px 0 #ee6c74;
-    box-shadow: inset 0 1px 0 #ee6c74;
+    -webkit-box-shadow: compact(inset 0 1px 0 #ee6c74, false, false, false, false, false, false, false, false);
+    -moz-box-shadow: compact(inset 0 1px 0 #ee6c74, false, false, false, false, false, false, false, false);
+    -ms-box-shadow: compact(inset 0 1px 0 #ee6c74, false, false, false, false, false, false, false, false);
+    -o-box-shadow: compact(inset 0 1px 0 #ee6c74, false, false, false, false, false, false, false, false);
+    box-shadow: compact(inset 0 1px 0 #ee6c74, false, false, false, false, false, false, false, false);
     background: #c41722;
     border: 1px solid #7f0f16;
     text-shadow: 0 -1px 0 #96111a; }
   .button:active, form.wufoo ul li input#saveForm:active {
-    -webkit-box-shadow: inset 0 -1px 3px #680c12;
-    -moz-box-shadow: inset 0 -1px 3px #680c12;
-    -ms-box-shadow: inset 0 -1px 3px #680c12;
-    -o-box-shadow: inset 0 -1px 3px #680c12;
-    box-shadow: inset 0 -1px 3px #680c12;
+    -webkit-box-shadow: compact(inset 0 -1px 3px #680c12, false, false, false, false, false, false, false, false);
+    -moz-box-shadow: compact(inset 0 -1px 3px #680c12, false, false, false, false, false, false, false, false);
+    -ms-box-shadow: compact(inset 0 -1px 3px #680c12, false, false, false, false, false, false, false, false);
+    -o-box-shadow: compact(inset 0 -1px 3px #680c12, false, false, false, false, false, false, false, false);
+    box-shadow: compact(inset 0 -1px 3px #680c12, false, false, false, false, false, false, false, false);
     background: #96111a;
     text-shadow: none; }
 
@@ -96,7 +96,7 @@ body {
   font: 400 16px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center;
   padding: 0 20px; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
     body {
       -webkit-text-size-adjust: none; } }
 
@@ -108,6 +108,7 @@ h1 {
   color: #2b2b2b;
   font-size: 72px;
   font-weight: 900;
+  letter-spacing: -1px;
   margin-bottom: 24px; }
 
 h2 {
@@ -148,8 +149,8 @@ blockquote {
   background: url("/images/quote.png") no-repeat;
   border: 0;
   font: 300 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0 2.513% 0 0;
-  padding-left: 2.513%; }
+  margin: 0 2.51256% 0 0;
+  padding-left: 2.51256%; }
   blockquote p {
     line-height: 36px; }
   blockquote p.author {
@@ -175,21 +176,25 @@ img {
   background: url("/images/shadowing.png") center top no-repeat;
   padding-top: 72px;
   text-align: center; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
     #page-header {
-      -webkit-background-size: contain;
-      -moz-background-size: contain;
-      -ms-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain; } }
+      -webkit-background-size: compact(contain, false, false, false, false, false, false, false, false);
+      -moz-background-size: compact(contain, false, false, false, false, false, false, false, false);
+      -ms-background-size: compact(contain, false, false, false, false, false, false, false, false);
+      -o-background-size: compact(contain, false, false, false, false, false, false, false, false);
+      background-size: compact(contain, false, false, false, false, false, false, false, false); } }
   #page-header h1 {
     line-height: 72px; }
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
       #page-header h1 {
         font-size: 32px;
         font-weight: 600;
         line-height: 48px;
         text-align: left; } }
+    #page-header h1 span.coupon {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 400; }
   #page-header h2 {
     color: #736B6C;
     font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
@@ -248,11 +253,11 @@ form.wufoo {
         display: inline-block; }
       form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
         border: 1px solid #999;
-        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
-        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
-        -ms-box-shadow: inset 0 1px 2px #aaaaaa;
-        -o-box-shadow: inset 0 1px 2px #aaaaaa;
-        box-shadow: inset 0 1px 2px #aaaaaa;
+        -webkit-box-shadow: compact(inset 0 1px 2px #aaaaaa, false, false, false, false, false, false, false, false);
+        -moz-box-shadow: compact(inset 0 1px 2px #aaaaaa, false, false, false, false, false, false, false, false);
+        -ms-box-shadow: compact(inset 0 1px 2px #aaaaaa, false, false, false, false, false, false, false, false);
+        -o-box-shadow: compact(inset 0 1px 2px #aaaaaa, false, false, false, false, false, false, false, false);
+        box-shadow: compact(inset 0 1px 2px #aaaaaa, false, false, false, false, false, false, false, false);
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
@@ -261,11 +266,7 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 24px;
         margin: 0;
-<<<<<<< HEAD
         max-width: 100%;
-=======
-        max-width: 100.0%;
->>>>>>> updates stle on events page
         padding: 11px 12px;
         /*line-height divided by two so that the bottom and top will align to the baseline grid*/
         width: 100%; }
@@ -285,21 +286,17 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-<<<<<<< HEAD
         margin: 24px 24px 24px; }
-=======
-        margin: 24px 24px 48px; }
->>>>>>> updates stle on events page
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
           color: #000; }
       form.wufoo ul li.email {
-        margin-right: 2.513%; }
+        margin-right: 2.51256%; }
       form.wufoo ul li.email, form.wufoo ul li.phone {
-        max-width: 48.744%;
-        min-width: 48.744%;
-        width: 48.744%;
+        max-width: 48.74372%;
+        min-width: 48.74372%;
+        width: 48.74372%;
         float: left;
         clear: none; }
         form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
@@ -312,8 +309,8 @@ form.wufoo {
         form.wufoo ul li.name span {
           display: block;
           float: left;
-          margin-right: 2.513%;
-          width: 48.744%; }
+          margin-right: 2.51256%;
+          width: 48.74372%; }
           form.wufoo ul li.name span:nth-child(odd) {
             margin-right: 0; }
           form.wufoo ul li.name span input[type="text"] {
