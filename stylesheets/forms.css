@@ -1,11 +1,7 @@
-.wrapper, .primary, .secondary {
+
   margin: 0 auto;
   text-align: left;
-<<<<<<< HEAD
   width: 100%; }
-=======
-  width: 100.0%; }
->>>>>>> updates stle on events page
   @media screen and (min-width: 751px) {
     .wrapper, .primary, .secondary {
       max-width: 1122px;
