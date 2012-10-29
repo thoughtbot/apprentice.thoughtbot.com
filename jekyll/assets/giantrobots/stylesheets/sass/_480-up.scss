@@ -1,45 +1,18 @@
 section#container {
-  margin-bottom: 20px;
-
-  aside {
-    width: 100%;
-    display: inline-block;
-
-    section.message {
-      width: 48%;
-      margin-left: 2%;
-      display: inline-block;
-      float: left;
-    }
-
-    ul.social {
-      width: 46%;
-      text-align: right;
-      padding-right: 4%;
-      margin: 0;
-      float: right;
-      display: inline-block;
-    }
-  }
+  margin-bottom: lh();
 }
 
 footer {
   section#footer-container {
     nav {
       margin: 0;
-      width: 46%;
       display: inline-block;
-      ul {
-        width: 55%;
-        &#secondary-links {
-          width: 35%;
-        }
-      }
+      float: left;
     }
 
-    section#products {
-      width: 53%;
-      display: inline-block;
+    section#promo {
+      float: right;
+      width: 200px;
     }
   }
 }

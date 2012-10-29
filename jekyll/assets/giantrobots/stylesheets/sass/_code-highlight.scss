@@ -12,7 +12,8 @@ code {
 
 pre,
 code {
-  font: 12px/18px $monospace;
+  font-size: .9em;
+  font-family: $monospace;
   white-space: pre;
   word-wrap: normal;
 

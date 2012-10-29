@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="copycopter, open source, github, redis, pubsub, nosql, json, radish, key-value store, object-oriented programming, rails, rails recipe, rails tutorial, tdd, test-driven development, ">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>giant robots smashing into other giant robots</title>
+
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/desktop.css" media="screen and (min-width:480px)">
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+
+    <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+    <section id="container">
+      <header>
+        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="images/logo.svg" data-png-fallback="images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
+
+        <hgroup>
+          <h2><a href="http://robots.thoughtbot.com">giant robots smashing into other giant robots</a></h2>
+          <h3>Written by <a href="http://thoughtbot.com">thoughtbot</a>. We make web &amp; mobile apps.</h3>
+        </hgroup>
+
+      </header>
+
+      <section id="posts">
+
+         <section class="post text">
+            <section class="meta-info">
+              <p class="post-date"><a href="#">June 14, 2011</a></p>
+              <p class="tagged">more at learn</p>
+              <ul class="tags">
+                <li><a href="#">open source</a></li>
+                <li><a href="#">github</a></li>
+              </ul>
+              <p class="comments"><a href="#">25 comments</a></p>
+            </section>
+
+            <h1 class="title"><a href="#">github.com/thoughtbot cleanup</a></h1>
+
+            <p>Like many of <a href="#footer-container">you</a>, we&#8217;ve had a <strong>lot of code pass through</strong> our <a href="http://github.com/thoughtbot">github.com/thoughtbot</a> account and we&#8217;re in need of a little cleanup our projects. We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+
+<pre><code>require 'rubygems'
+require 'redis'
+require 'json'
+
+$redis = Redis.new(:timeout =&gt; 0)
+
+$redis.subscribe('rubyonrails', 'ruby-lang') do |on|
+  on.message do |channel, msg|
+    data = JSON.parse(msg)
+    puts "##{channel} - [#{data['user']}]: #{data['msg']}"
+  end
+end</code></pre>
+
+<pre><code>When /^I select "([^"]+)" from the editor$/ do |text|
+  within_editor do
+    page.execute_script(&lt;&lt;-JS)
+      var xpath = "//*/child::text()[contains(., '#{text}')]";
+      var node = document.evaluate(xpath, document, null, XPathResult. ANY_UNORDERED_NODE_TYPE, null).singleNodeValue;
+      if (!node)
+        throw("Couldn't find text to select");
+      var start = node.data.indexOf('#{text}');
+      var end = start + #{text.size};
+      var selection = window.getSelection();
+      var range = window.document.createRange();
+      range.setStart(node, start);
+      range.setEnd(node, end);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    JS
+  end
+end
+</code></pre>
+
+
+<pre><code>class MocksController &lt; AuthorizedController
+  def show
+  end
+end
+
+describe MocksController do
+  before do
+    MyApp::Application.routes.draw do
+      resource :mock, :only =&gt; [:show]
+      match 'sign_in' =&gt; 'sessions#new', :as =&gt; :sign_in
+    end
+  end
+
+  after do
+    Rails.application.reload_routes!
+  end
+
+  context "a visitor" do
+    it "is denied access to blank slate" do
+      get :show
+      should redirect_to(sign_in_url)
+    end
+  end
+end
+</code></pre>
+
+<p>The following is a random diff example to make sure it highlights correctly.</p>
+
+<pre><code class="diff">
+--- a/app/models/account.rb
++++ b/app/models/account.rb
+@@ -77,7 +77,13 @@ class Account < ActiveRecord::Base
+   delegate :checking?, :to => :account_type, :allow_nil => true
+ 
+   def can_compute_performance?(start_date, end_date)
+-    !checking? && (balances.count(:select => 'distinct period', :conditions => { :period => (start_date..end_date)}) > 1)
++    has_at_least_one_period = balances.count(
++      :select => 'distinct period',
++      :conditions => {:period => (start_date..end_date)}
++    ) > 1
++    is_not_checking = !checking?
++
++    is_not_checking && has_at_least_one_period
+   end
+ 
+   def as_json(options = {})
+</code></pre>
+            <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+
+
+            <ol>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+              <li>We have not used some projects in a year or more and also do not know of any alternatives to point people</li>
+            </ol>
+
+
+            <h2>Looking for a new home</h2>
+
+            <dl><dt><code>tmux new -s session_name</code></dt>
+              <dd>creates a new tmux session named session_name</dd>
+              <dt><code>tmux attach -t session_name</code></dt>
+              <dd>attaches to an existing tmux session named session_name</dd>
+              <dt><code>tmux switch -t session_name</code></dt>
+              <dd>switches to an existing session named session_name</dd>
+              <dt><code>tmux list-sessions</code></dt>
+              <dd>lists existing tmux sessions</dd>
+              <dt><code>tmux detach (prefix + d)</code></dt>
+              <dd>detach the currently attached session</dd>
+            </dl>
+
+            <p>We have not used some projects in a year or more and also do not know of any alternatives to point people toward. We&#8217;d like to find them good homes. If you&#8217;re interested in managing one of them, please email dan@thoughtbot.com.</p>
+
+            <h4>This is an h4 title right here</h4>
+
+            <p><a href="http://github.com/thoughtbot/sortable_table">thoughtbot/sortable_table</a> allows you to click the header rows of HTML tables to sort the contents. We were never quite happy with the implementation and we typically question the need for the feature when a client requests it. We tend to find there&#8217;s a better UI we can provide to solve the need they&#8217;re trying to solve with sortable tables. We haven&#8217;t made a substantial commit to it in about 2.5 years. People may be using it: there are 160 watchers.</p>
+
+<table><tr><th>Egg (Free plan)</th><th>   5 days</th></tr><tr><td>Tadpole</td><td>          14 days</td></tr><tr><td>Heroku Basic</td><td>     14 days</td></tr><tr><td>Toad</td><td>             21 days</td></tr><tr><td>Heroku Plus</td><td>      21 days</td></tr><tr><td>Bullfrog</td><td>         30 days</td></tr><tr><td>Bossfrog</td><td>         60 days</td></tr></table>
+
+            <h2>New home</h2>
+
+            <p><a href="http://github.com/tsaleh/ldap-activerecord-gateway">tsaleh/ldap-activerecord-gateway</a> is an implementation of an LDAP server which uses ActiveRecord as a data store. Tammer &#8220;Shoulda&#8221; Saleh is the new maintainer.</p>
+
+            <h2>Deprecations</h2>
+
+            <p>Some of our <code>projects have been replaced by better</code> libraries or their functionality was added by Rails. We&#8217;re deprecating them, which entails this announcement, updating the READMEs, and turning off Github Issues and Wikis for these projects.</p>
+
+            <blockquote>Instead of capybara-envjs-fixes, we now use <a href="http://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> on almost all our projects. It&#8217;s receiving a lot of interest from the community, with lots of good patches coming in. We&#8217;re actively maintaining it and recommend you give it a try for your integration testing stack.</blockquote>
+
+            <p><a href="http://github.com/thoughtbot/what">thoughtbot/what</a> provided boolean query methods on Mime::Type instances for the native Rails mime-types. We now use the #respond_to method or the mobile_fu plugin and we recommend you do, too.</p>
+
+<img src="http://ui.thoughtbot.com/assets/2011LamborghiniAventador.jpg">
+
+            <p><a href="http://github.com/thoughtbot/when">thoughtbot/when</a> added :if and :unless conditions to ActiveRecord callbacks and validations and ActionController filters. It can still be used on Rails apps pre-2.1, but it has been built into Rails since the 2.1 release.</p>
+
+            <p><a href="http://github.com/thoughtbot/capybara-envjs-fixes">thoughtbot/capybara-envjs-fixes</a> was a set of fixes to the capybara-envjs library during one of our earlier attempts at integration testing Javascript (the search for the Holy Grail). It was always intended as a temporary library. The Cucumber-Capybara-Env.js stack was full of code that was hacks piled on hacks piled on hacks.</p>
+
+            <p>Instead of capybara-envjs-fixes, we now use <a href="http://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> on almost all our projects. It&#8217;s receiving a lot of interest from the community, with lots of good patches coming in. We&#8217;re actively maintaining it and recommend you give it a try for your integration testing stack.</p>
+
+            <p><a href="http://github.com/thoughtbot/mile_marker">thoughtbot/mile_marker</a> was a project for visually setting expectations to clients during development, particularly for the staging environment. We haven&#8217;t used it since Rails 2.x and now simply use a &#8220;wip&#8221; CSS class when we need to accomplish the same goal.</p>
+
+            <p><a href="http://github.com/thoughtbot/squirrel">thoughtbot/squirrel</a> was a a Ruby-esque way of querying SQL. ActiveRelation, named scopes, and projects like Searchlogic have since been released and are much nicer and more powerful.</p>
+
+            <p><a href="http://github.com/thoughtbot/report_card">thoughtbot/report_card</a> generated a CI metrics report using metric_fu and notified Campfire. It was deeply tied to Integrity, which we no longer use. We must not have cared too much about the metrics, either, because we haven&#8217;t bothered to set up metric_fu again with Hudson. If you&#8217;d like to, check out the Hudson metric_fu plugin.</p>
+
+            <p><a href="http://github.com/thoughtbot/quietbacktrace">thoughtbot/quietbacktrace</a> was a filtering mechanism for deleting extra line noise in Test::Unit backtraces. It was added to Rails 2.3.</p>
+
+            <p><a href="http://github.com/thoughtbot/clearance-twitter">thoughtbot/clearance-twitter</a> was a Twitter OAuth library that played nicely with Clearance. Omniauth is the bomb and should be used instead.</p>
+
+            <h2>Deleting forks</h2>
+
+            <p>Some projects were forks where we needed to add additional functionality or fix bugs. We&#8217;re deleting those repos and mentioning them here with alternatives in case you were ever using one of our forks.</p>
+
+            <p><a href="https://github.com/stefankroes/ancestry">Ancestry</a> allows the records of a Ruby on Rails ActiveRecord model to be organised as a tree structure (or hierarchy). It uses a single, intuitively formatted database column, using a variation on the materialised path pattern. We forked it to add Rails 3 functionality, which is now included in Ancestry. We still turn to this library when we need this functionality and recommend to others.</p>
+
+            <p>Friendly Identifier adds a human-readable identifier to ActiveRecord objects so they can be used in URLs. The original still exists on <a href="http://code.google.com/p/friendly-identifier/">Google Code</a>. We added a minor feature to it but now recommend <a href="http://github.com/norman/friendly_id">norman/friendly_id</a> instead.</p>
+
+            <p><a href="https://github.com/tra/spawn">Spawn</a> provides a &#8216;spawn&#8217; method to easily fork or thread long-running sections of code. This plugin works by creating new database connections in ActiveRecord::Base for the spawned block. We forked it to make it Rails 2.2 compatible. It is still an active project at tra/spawn, however we now typically use DelayedJob or Resque for background processing (DJ by default, Resque if we need multiple queues).</p>
+
+            <section class="post-footer">
+              <p class="author">kaishin</p>
+
+              <div class="plus-one">
+                <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+              </div>
+
+              <p class="comments"><a href="#">25 comments</a></p>
+            </section>
+
+          </section>
+
+        <section class="post photo">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+
+            <p class="comments"><a href="#">25 comments</a></p>
+          </section>
+
+          <img src="http://ui.thoughtbot.com/assets/2011LamborghiniAventador.jpg">
+
+          <section class="caption">
+            <p>This is the text that goes below the photo. And even more text that goes below the photo.</p>
+          </section>
+        </section>
+
+
+        <section class="post video">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+          </section>
+
+            <iframe src="http://fast.wistia.com/embed/iframe/4c13317c91" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="570" height="321"></iframe>
+
+          <section class="caption">
+            <p>This is the text that goes below the video. And even more text that goes below the video.</p>
+          </section>
+        </section>
+
+
+
+        <section class="post text">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+          </section>
+          <h1 class="title">Title of this post</h2>
+
+          <p>This is the first paragraph of this entry.</p>
+
+          <h2>User experience</h2>
+
+          <p>Early on, our goal was mostly a great experience for developers, seen in things like:</p>
+
+          <ul><li>Generated Cucumber features</li>
+          <li>Shoulda test helpers</li>
+          <li>Consistent sign_{up,in,out} naming</li>
+          </ul><p>Lately, our goal is a great experience for users, seen in things like:</p>
+
+          <ul><li>No email confirmation</li>
+          <li>No password confirmation</li>
+          <li>No 403 Forbidden status code (while technically correct, Chrome and other browsers display a scary screen for 403s)</li>
+          <li>HTML5 email fields (so iPhone users and others get the @ sign on their keyboard)</li>
+          <li>Lowercasing all emails (so iPhone users whose keyboard defaults the first letter to uppercase can still sign in without confusion)</li>
+          </ul><p>See the <a href="https://github.com/thoughtbot/clearance/blob/master/CHANGELOG.md">CHANGELOG</a> for more. The most unusual decisions were the confirmation decisions.</p>
+
+          <p>We&#8217;re packing up our gems, our test suites, and our GIFs, and heading down to Baltimore for the week.</p>
+
+          <p>Got a burning question about one of our <a href="http://thoughtbot.com/community/">open source tools</a>?  Want to chat about <a href="https://copycopter.com/">managing application copy and content with Copycopter</a>, <a href="http://hoptoadapp.com">tracking and mananging app errors with Hoptoad</a>, or <a href="https://www.apptrajectory.com">planning and building your apps with Trajectory</a>&#160;?  We&#8217;d love to chat.</p>
+
+          <p>You can also catch Joe Ferris and Nick Quaranto at their talks on Wednesday and Thursday:</p>
+
+          <p>Thursday at 1:50pm: <a href="http://en.oreilly.com/rails2011/public/schedule/detail/19572">Cutting your own RubyGems</a> with Nick Quaranto:</p>
+
+          <blockquote>
+          <p>Diving head-first into RubyGems is rough: there’s a myriad of documentation sites, blog posts, screencasts, and manpages to read, and it’s tough to find “the” guide on how to publish your first RubyGem. In this session you’ll learn why making them is important for your Rails application’s maintainability and how distributing your code in gems even internally is helpful.</p>
+          </blockquote>
+
+          <p>Wednesday at 2:50pm: <a href="http://en.oreilly.com/rails2011/public/schedule/detail/19434">Testing The Impossible</a> with Joe Ferris:</p>
+
+          <blockquote>
+
+          <p>Dive into the internals of thoughtbot’s copycopter_client and discover how we test grizzly components such as: HTTP, SSL, Threads, Mutexes, Polling, Forking, Logging, Caching, and Rails Engines.</p>
+
+          <p>Also learn common strategies for testing applications that contain difficult-to-test components, as well as tools for regression testing, such as ensuring that your library will work across several versions of Rails.</p>
+
+          <p>Testing is a staple in the Ruby community, but there are certain small pieces of behavior that seem to be simply untestable. Trying to create complicated tests for only a few lines of code seems to be a waste of time, but introducing gaps in coverage leaves the entire application or library suspect. This talk will help you close those gaps and keep your coverage at 100% regardless of what ugly monsters rear their heads.</p>
+
+          </blockquote>
+
+          <section class="post-footer">
+            <p class="author">cpytel</p>
+          </section>
+
+        </section>
+
+        <section class="post quote short">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+              <li><a href="#">Copycopter</a></li>
+            </ul>
+          </section>
+
+          <q>&#8230;to do something and do it again, from morning till evening, and then to dream of it at night, and to think of nothing except doing this <em>well</em>, as well as <em>I</em> alone can do it. When one lives like that, one thing after another that simply does not belong to such a life drops off. Without hatred or aversion one sees this take its leave today and that tomorrow, like yellow leaves that any slight stirring of the air takes off a tree. &#8230;to do something and do it again, from morning till evening, and then to dream of it at night, and to think of nothing except doing this <em>well</em>, as well as <em>I</em> alone can do it. When one lives like that, one thing after another that simply does not belong to such a life drops off. Without hatred or aversion one sees this take its leave today and that tomorrow, like yellow leaves that any slight stirring of the air takes off a tree.</q>
+
+          <p class="source">&#8212; Nietzsche, <em>The Gay Science</em></p>
+
+        </section>
+
+        <section class="post quote medium">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+          </section>
+
+          <q>&#8230;to do something and do it again, from morning till evening, and then to dream of it at night, and to think of nothing except doing this <em>well</em>, as well as <em>I</em> alone can do it. When one lives like that, one thing after another that simply does not belong to such a life drops off. Without hatred or aversion one sees this take its leave today and that tomorrow, like yellow leaves that any slight stirring of the air takes off a tree.</q>
+
+          <p class="source">&#8212; Nietzsche, <em>The Gay Science</em></p>
+        </section>
+
+        <section class="post quote long">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+            <p class="comments"><a href="#">25 comments</a></p>
+          </section>
+
+          <q>&#8230;to do something and do it again, from morning till evening, and then to dream of it at night, and to think of nothing except doing this <em>well</em>, as well as <em>I</em> alone can do it. When one lives like that, one thing after another that simply does not belong to such a life drops off. Without hatred or aversion one sees this take its leave today and that tomorrow, like yellow leaves that any slight stirring of the air takes off a tree.</q>
+
+          <p class="source">&#8212; Nietzsche, <em>The Gay Science</em></p>
+
+        </section>
+
+
+        <section class="post link">
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+            <p class="comments"><a href="#">25 comments</a></p>
+          </section>
+
+          <h2 class="title"><a href="http://phandroid.com/2011/06/06/samsung-delivers-galaxy-s-ii-to-cyanogenmod-dev-says-get-to-work/" class="link" >Samsung Delivers Galaxy S II to CyanogenMod Dev, Says Get to Work</a></h2>
+
+          <section class="caption">
+            <p>The handset manufacturer just delivered a brand new Samsung Galaxy S II to CyanogenMod developer AtinM with the express purpose of getting a version of their latest CM7 software up and running on Sammy’s latest flagship device.</p>
+          </section>
+
+        </section>
+
+
+
+
+
+
+        <section class="post text">
+
+          <section class="meta-info">
+            <p class="post-date">June 14, 2011</p>
+            <p class="tagged">Tagged:</p>
+            <ul class="tags">
+              <li><a href="#">Copycopter</a></li>
+              <li><a href="#">cucumber</a></li>
+              <li><a href="#">capybara-webkit</a></li>
+            </ul>
+          </section>
+
+          <h1 class="title">Copycopter: introducing a simpler way to edit copy</h1>
+
+          <p>Around four months ago we <a href="http://robots.thoughtbot.com/post/3201164937/introducing-copycopter">launched</a> our service for managing copy text in web applications: <a href="https://copycopter.com">Copycopter</a>. If you&#8217;re already riding the choppa, you&#8217;ve probably noticed steady improvements in the user interface. Today, we rolled out another change to make things nicer for non-technical users that want to edit copy text: a simpler editor.</p>
+
+          <h2>What you see is what you get</h2>
+
+          <p>We&#8217;ve done a lot to keep Copycopter simple to use. However, we also didn&#8217;t want to limit developers and designers by enforcing a limited language like textile, so we stuck to good old HTML. The draw back of this approach is that nontechnical users were occasionally confused by the markup in the copy text they wanted to edit. Worse, it was easy for such a user to break the page by accidentally changing the HTML to be invalid. We didn&#8217;t think it was acceptable for every user to be one &#8220;&lt;&#8221; away from a broken page, so we changed this:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/edit_html.png" alt="HTML editor"/></p>
+
+          <p>To this:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/edit_simple.png" alt="Simple editor"/></p>
+
+          <p>If you&#8217;d rather see HTML, don&#8217;t worry - we&#8217;re not leaving anyone out in the cold. One click will bring you back to the HTML editor you know and love:</p>
+
+          <p><img src="http://ui.thoughtbot.com/assets/switch_editor.png" alt="Switch editor mode"/></p>
+
+          <div style="clear:both"></div>
+
+          <p>We used the excellent <a href="https://github.com/akzhan/jwysiwyg/wiki">jwysiwyg</a> library to create our simple editor. Getting the editor up and running was easy, but making our integration tests work with the editor to ensure that it continued to work was a bit of a challenge.</p>
+
+          <h2>TDDWYSIWYG</h2>
+
+          <p>We used Cucumber to make sure that users could apply formatting to blurbs:</p>
+
+<pre><code>require 'rubygems'
+require 'redis'
+require 'json'
+
+$redis = Redis.new(:timeout =&gt; 0)
+
+$redis.subscribe('rubyonrails', 'ruby-lang') do |on|
+  on.message do |channel, msg|
+    data = JSON.parse(msg)
+    puts "##{channel} - [#{data['user']}]: #{data['msg']}"
+  end
+end</code></pre>
+
+          <p>The secret sauce there is being able to select text. We used <a href="https://github.com/thoughtbot/capybara-webkit">capybara-webkit</a> to run Javascript scenarios in Copycopter, so we can use the DOM range and selection API:</p>
+
+<pre><code>When /^I select "([^"]+)" from the editor$/ do |text|
+  within_editor do
+    page.execute_script(&lt;&lt;-JS)
+      var xpath = "//*/child::text()[contains(., '#{text}')]";
+      var node = document.evaluate(xpath, document, null, XPathResult. ANY_UNORDERED_NODE_TYPE, null).singleNodeValue;
+      if (!node)
+        throw("Couldn't find text to select");
+      var start = node.data.indexOf('#{text}');
+      var end = start + #{text.size};
+      var selection = window.getSelection();
+      var range = window.document.createRange();
+      range.setStart(node, start);
+      range.setEnd(node, end);
+      selection.removeAllRanges();
+      selection.addRange(range);
+    JS
+  end
+end
+</code></pre>
+
+          <p>The &#8220;within_editor&#8221; method selects the iframe created by jwysiwyg, which is possible because of Aaron Gibralter&#8217;s contributions to capybara-webkit. We have several other scenarios for switching modes, handling newlines, and so on.</p>
+
+          <p>If you want to see our new editor in action, you should <a href="https://copycopter.com">check out Copycopter</a>!</p>
+
+          <section class="post-footer">
+            <p class="author">ubuwaits</p>
+          </section>
+        </section>
+
+        <section id="pagination">
+          <div id="older-link"><a href="/page/2">Older</a></div>
+          <div id="newer-link"><a href="/page/2">Newer</a></div>
+        </section>
+
+      </section>
+    </section>
+
+    <footer>
+      <section id="footer-container">
+        <nav>
+          <ul>
+            <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
+            <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
+            <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
+          </ul>
+        </nav>
+
+        <section id="promo" class="message">
+          <a href="http://workshops.thoughtbot.com/?utm_source=robots.thoughtbot.com">
+            <img src="images/logo.svg" alt="workshops" width='35px'>
+            <span class="promo-name">Don't just sit there</span>
+            <span class="promo-creative">Learn something</span>
+          </a>
+        </section>
+
+        <!-- <section id="products"> -->
+        <!--   <section id="trajectory" class="product"> -->
+        <!--     <h6><a href="http://apptrajectory.com">Trajectory</a></h6> -->
+        <!--     <a href="http://apptrajectory.com/" class="logo"> -->
+        <!--       <img src="http://thoughtbot.com/images/products/trajectory.png" alt="Hoptoad logo"> -->
+        <!--     </a> -->
+        <!--   </section> -->
+        <!-- </section> -->
+      </section>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+    jQuery(document).ready(function() {
+    authors = {
+        dancroak: "Dan Croak",
+        qrush: "Nick Quaranto",
+        cpytel: "Chad Pytel",
+        lolconomy: "Mike Burns",
+        asimeoni: "Angelo Simeoni",
+        emill: "Eric Mill",
+        fyates: "Fred Yates",
+        jankowski: "Matt Jankowski",
+        jferris: "Joe Ferris",
+        jyurek: "Jon Yurek",
+        kevin: "Kevin Burg",
+        possibilist: "Floyd Wright",
+        tsaleh: "Tammer Saleh",
+        thoughtbotjc: "Jared Carroll",
+        thoughtbotet: "Eric Torrey",
+        thoughtbotjm: "Jason Martinez",
+        thoughtbotmmk: "Mike McKenna",
+        thoughtbotmr: "Micah Rich",
+        jasonmorrisontb: "Jason Morrison",
+        jdclayton: "Josh Clayton",
+        tristandunn: "Tristan Dunn",
+        ubuwaits: "Chad Mazzola",
+        kylehasmanypixels: "Kyle Fiedler",
+        hgimenez: "Harold Giménez",
+        elindsay: "Emma Lindsay",
+        mmongeau: "Matt Mongeau",
+        plapier: "Phil LaPier",
+        kaishin: "Reda Lemeden"
+      };
+
+      jQuery(".author").each(function(i) {
+        author = this.innerHTML;
+        this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
+      });
+
+      jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
+
+      jQuery(".page-top").each(function(i) {
+        var post = jQuery(this);
+        if(parseInt(post.attr('id')) <= 722112946) {
+          post.addClass("old");
+        }
+      });
+
+      jQuery('section#posts iframe').wrap('<div class="video-container" />');
+
+    });
+    </script>
+
+     <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+  </body>
+</html>

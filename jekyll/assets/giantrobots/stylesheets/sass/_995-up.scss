@@ -1,3 +1,8 @@
+body {
+  font-size: em(18, 16);
+  line-height: lh(1.2);
+}
+
 section#container {
   padding: 20px 0 0;
   width: grid-width(12);
@@ -29,17 +34,7 @@ section#container {
     }
   }
 
-  aside {
-    clear: none;
-    display: inline-block;
-    float: left;
-    margin: 10px 0 0 $gw-gutter;
-    width: grid-width(3);
-  }
-
   section#posts {
-    width: grid-width(9);
-
     .post {
       img {
         max-width: grid-width(7);
@@ -73,17 +68,21 @@ footer {
   section#footer-container {
     width: grid-width(12);
 
-    section#products {
-      width: grid-width(5);
-
-      section.product {
-
-        &#trajectory {
-          a.logo {
-            height: 100px;
-          }
-        }
-      }
+    nav {
+      margin-left: 170px;
     }
+
+    // section#products {
+    //   width: grid-width(5);
+
+    //   section.product {
+
+    //     &#trajectory {
+    //       a.logo {
+    //         height: 100px;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

@@ -1,3 +1,7 @@
+body {
+  font-size: 1em;
+}
+
 section#container {
   margin-bottom: -20px;
   width: grid-width(9);
@@ -20,65 +24,11 @@ section#container {
       float: left;
       text-align: left;
       padding: 40px 0 0 $gw-gutter;
-
-      h2 {
-        font: 700 12px/14px $sans-serif;
-        margin: 0 0 6px 0;
-      }
-
-      h3 {
-        font: 400 13px/16px $serif;
-      }
     }
 
-    nav {
-      display: block;
-      float: right;
-
-      ul {
-        @include clearfix();
-        margin-top: 10px;
-        text-align: center;
-
-        li {
-          display: inline-block;
-          margin-right: 10px;
-
-          &:last-child {
-           margin-right: 0;
-          }
-
-          a {
-            display: block;
-            height: 42px;
-            @include hide-text;
-            @include transition(0.5s);
-            width: 42px;
-          }
-        }
-      }
-    }
-  }
-
-  aside {
-    display: none;
-    margin: 0;
-    width: 100%;
-
-    section.message {
-      width: 100%;
-      margin: 0;
-    }
-
-    ul.social {
-      display: none;
-    }
   }
 
   section#posts {
-    float: left;
-    width: grid-width(8.8);
-
     .post {
       margin: 0 0 $lh*3 0;
       padding: 0 0 $lh*1 grid-width(2) +  $gw-gutter;
@@ -94,38 +44,38 @@ section#container {
         position: absolute;
         top: 18px;
         width: grid-width(2);
+        opacity: .5;
+        @include transition;
+
+        &:hover {
+          opacity: 1;
+        }
 
         p.post-date {
           border-bottom: none;
-          font: 400 14px/14px $serif;
-          margin: 0 0 44px 0;
+          margin: 0 0 lh(1.5) 0;
           padding: 0;
           width: 100%;
+
+          &:before, &:after {
+            content: normal;
+          }
+
+          a {
+            color: #333;
+          }
         }
 
         p.tagged {
           display: block;
-          font: 600 12px/12px $serif;
-          margin: 0 0 10px 0;
-          text-transform: uppercase;
         }
 
         ul.tags {
-          color: #777;
           display: block;
-          margin: 0 0 36px 0;
 
           li {
-            font: 400 13px/14px $serif;
-            font-style: italic;
-            margin: 0 0 10px 0;
+            margin: 0 0 lh(.25) 0;
             position: relative;
-
-            a {
-              color: #777;
-              font-weight: normal;
-              text-decoration: none;
-            }
 
             &:after {
               content: "\2014";
@@ -139,13 +89,7 @@ section#container {
 
         p.comments {
           display: block;
-          width: grid-width(2);
-
-          a {
-            font-size: 13px;
-          }
         }
-
       }
 
       img {
@@ -168,7 +112,6 @@ section#container {
 
       // Text posts
       h1.title {
-        font: 300 36px/38px $sans-serif;
         text-align: left;
       }
     }
@@ -182,10 +125,12 @@ section#container {
 
 #pagination #older-link {
   width: grid-width(2);
+  background-position: 0 13px;
 }
 
 #pagination #newer-link {
   width: grid-width(2);
+  background-position: right -15px;
 }
 
 // footer
@@ -193,45 +138,8 @@ footer {
   section#footer-container {
     width: grid-width(8.8);
 
-    nav {
-      margin-right: $gw-gutter;
-      width: grid-width(4);
-
-      ul {
-        float: left;
-        width: grid-width(2);
-
-        &#secondary-links {
-          margin-left: $gw-gutter;
-        }
-      }
-    }
-
-    section#products {
-      @include clearfix();
-      float: left;
-      width: grid-width(4.8);
-
-      section.product {
-        width: 100%;
-
-        a.logo {
-          &:hover {
-            @include border-radius(0);
-            @include box-shadow(0 0 0 6px rgba(0, 0, 0, 0.04));
-          }
-        }
-
-        &#trajectory {
-          a.logo {
-            height: 90px;
-
-            img {
-              width: 110px;
-            }
-          }
-        }
-      }
+    section#promo {
+      width: 270px;
     }
   }
 }
