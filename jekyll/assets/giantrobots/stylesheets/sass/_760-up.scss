@@ -7,7 +7,7 @@ section#container {
   width: grid-width(9);
 
   header {
-    margin: 0 0 $lh*2 0;
+    margin: lh(2) 0 ;
 
     h2.logo {
       float: left;
@@ -23,15 +23,15 @@ section#container {
     hgroup {
       float: left;
       text-align: left;
-      padding: 40px 0 0 $gw-gutter;
+      padding: lh(1.5) 0 0 $gw-gutter;
     }
 
   }
 
   section#posts {
     .post {
-      margin: 0 0 $lh*3 0;
-      padding: 0 0 $lh*1 grid-width(2) +  $gw-gutter;
+      margin: 0 0 lh(3) 0;
+      padding: 0 0 lh(3) grid-width(2) +  $gw-gutter;
       position: relative;
 
       &:only-of-type {
@@ -138,8 +138,15 @@ footer {
   section#footer-container {
     width: grid-width(8.8);
 
+    section.etc {
+      margin: 0;
+      float: left;
+      width: 65%;
+    }
+
     section#promo {
-      width: 270px;
+      float: right;
+      width: 30%;
     }
   }
 }

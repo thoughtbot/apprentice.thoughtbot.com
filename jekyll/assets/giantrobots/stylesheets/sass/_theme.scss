@@ -19,8 +19,8 @@ section#container {
 
   header {
     @include clearfix();
-    border-bottom: 1px solid #ddd;
-    margin: 0 0 lh() 0;
+    // border-bottom: 1px solid #ddd;
+    margin: lh(2) 0 lh() 0;
     padding: 0 0 lh(2) 0;
 
     h2.logo {
@@ -32,7 +32,7 @@ section#container {
 
       h2 {
         font: 700 1em/1.4em $sans-serif;
-        margin: lh() 0 6px 0;
+        margin: 0 0 6px 0;
         text-transform: uppercase;
         letter-spacing: 1px;
 
@@ -70,7 +70,7 @@ section#container {
       border-bottom: 1px solid #eee;
       @include fill-parent();
       margin: 0 0 lh(2) 0;
-      padding: 0 20px lh() 20px;
+      padding: 0 20px lh(2) 20px;
 
       .meta-info {
         text-align: center;
@@ -134,12 +134,20 @@ section#container {
         font-size: em(16, 14);
         font-weight: 700;
         font-family: $sans-serif;
-        margin: lh() 0 0px 0;
+        margin: lh(2) 0 0 0;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
 
-      h3, h4 {
+      h3 {
+        font-size: em(16, 14);
+        font-family: $sans-serif;
+        margin: lh(2) 0 0 0;
+        color: #333;
+        margin: lh() 0 0 0;
+      }
+
+      h4 {
         color: #333;
         font-style: italic;
         margin: lh() 0 0px 0;
@@ -513,36 +521,54 @@ footer {
     @include clearfix();
     margin: 0 auto;
 
-    nav {
-      display: inline-block;
-      margin: 0;
+    section.etc {
+      display: block;
+      margin-bottom: lh();
 
-      ul {
-        @include clearfix();
-        text-align: center;
+      p {
+        color: #777;
+
+        a {
+          color: $red;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      nav {
+        display: inline-block;
         margin: 0;
 
-        li {
-          display: inline-block;
-          margin-right: 10px;
+        ul {
+          @include clearfix();
+          text-align: center;
+          margin: 0;
 
-          &:last-child {
-            margin-right: 0;
-          }
+          li {
+            display: inline-block;
+            margin-right: 10px;
 
-          a {
-            display: block;
-            height: 42px;
-            @include hide-text;
-            @include transition(0.5s);
-            width: 42px;
+            &:last-child {
+              margin-right: 0;
+            }
+
+            a {
+              display: block;
+              height: 42px;
+              @include hide-text;
+              @include transition(0.5s);
+              width: 42px;
+            }
           }
         }
       }
     }
 
     section#promo {
-      display: inline-block;
+      display: block;
       border: 1px solid #DEDEDE;
       @include border-radius(3px);
       @include clearfix();

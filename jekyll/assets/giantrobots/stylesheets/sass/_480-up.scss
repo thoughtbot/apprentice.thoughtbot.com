@@ -2,17 +2,3 @@ section#container {
   margin-bottom: lh();
 }
 
-footer {
-  section#footer-container {
-    nav {
-      margin: 0;
-      display: inline-block;
-      float: left;
-    }
-
-    section#promo {
-      float: right;
-      width: 200px;
-    }
-  }
-}
