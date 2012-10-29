@@ -1,0 +1,42 @@
+body#portfolio {
+  text-align: left;
+
+  header {
+    @extend .primary;
+
+    h2 {
+      font-size: 60px;
+      font-family: $header;
+      color: #2b2b2b;
+      font-weight: 100;
+      margin-bottom: lh(3);
+    }
+  }
+
+  section.nav {
+    margin-bottom: lh(2);
+    clear: both;
+
+    a {
+      font-style: italic;
+      margin-bottom: lh(2);
+
+      &.right {
+        float: right;
+      }
+
+      &.left {
+        float: left;
+      }
+    }
+  }
+
+  #get-started {
+    clear: both;
+
+    a {
+      margin-top: lh();
+    }
+  }
+}
+

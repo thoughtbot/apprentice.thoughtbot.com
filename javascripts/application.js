@@ -4,7 +4,6 @@ $.jqwidont.auto(false);       // disable it
 $(document).ready(function() {
   $('p').widont();
 
-  $('#portfolio-slider, #portfolio-slider div').hide();
   $('#portfolio').localScroll();
 
   var images = {
@@ -18,16 +17,11 @@ $(document).ready(function() {
     "umbrellatoday": 2,
   };
 
-  $('#portfolio a').click(function(){
-    var divname = this.title;
-    var slider  = $("#" + divname + "-project")
+  $('body#portfolio').ready(function(){
+    var divname = (document.title);
+    divname = divname.substring(0, divname.indexOf(' :'));
 
-    if ($('#portfolio-slider:hidden').size() == 1) {
-      $('#portfolio-slider').slideDown();
-      slider.slideDown();
-    } else {
-      slider.slideDown().siblings().slideUp();
-    }
+    var slider  = $("#" + divname + "-project")
 
     if (slider.find("li").size() == 0) {
       var list = slider.find("ul");
@@ -40,7 +34,8 @@ $(document).ready(function() {
       list.nivoSlider({
         effect:'fade',
         manualAdvance:true,
-        directionNavHide:false
+        directionNavHide:false,
+        animSpeed: 100
       });
     }
 

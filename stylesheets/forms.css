@@ -1,18 +1,19 @@
 .wrapper, .primary, .secondary {
   margin: 0 auto;
   text-align: left;
-<<<<<<< HEAD
-  width: 100%; }
-=======
-  width: 100.0%; }
->>>>>>> updates stle on events page
-  @media screen and (min-width: 751px) {
-    .wrapper, .primary, .secondary {
-      max-width: 1122px;
-      min-width: 720px; } }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    .wrapper, .primary, .secondary {
-      max-width: 420px; } }
+  width: 100%;
+}
+@media screen and (min-width: 751px) {
+  .wrapper, .primary, .secondary {
+    max-width: 1122px;
+    min-width: 720px;
+  }
+}
+@media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  .wrapper, .primary, .secondary {
+    max-width: 420px;
+  }
+}
 
 .button, form.wufoo ul li input#saveForm {
   -webkit-font-smoothing: antialiased;
@@ -53,43 +54,51 @@
   font: 700 24px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 24px;
   padding: 36px;
-  text-shadow: 0 -1px 0 #7f0f16; }
-  .button:hover, form.wufoo ul li input#saveForm:hover {
-    -webkit-box-shadow: inset 0 1px 0 #ee6c74;
-    -moz-box-shadow: inset 0 1px 0 #ee6c74;
-    -ms-box-shadow: inset 0 1px 0 #ee6c74;
-    -o-box-shadow: inset 0 1px 0 #ee6c74;
-    box-shadow: inset 0 1px 0 #ee6c74;
-    background: #c41722;
-    border: 1px solid #7f0f16;
-    text-shadow: 0 -1px 0 #96111a; }
-  .button:active, form.wufoo ul li input#saveForm:active {
-    -webkit-box-shadow: inset 0 -1px 3px #680c12;
-    -moz-box-shadow: inset 0 -1px 3px #680c12;
-    -ms-box-shadow: inset 0 -1px 3px #680c12;
-    -o-box-shadow: inset 0 -1px 3px #680c12;
-    box-shadow: inset 0 -1px 3px #680c12;
-    background: #96111a;
-    text-shadow: none; }
+  text-shadow: 0 -1px 0 #7f0f16;
+}
+.button:hover, form.wufoo ul li input#saveForm:hover {
+  -webkit-box-shadow: inset 0 1px 0 #ee6c74;
+  -moz-box-shadow: inset 0 1px 0 #ee6c74;
+  -ms-box-shadow: inset 0 1px 0 #ee6c74;
+  -o-box-shadow: inset 0 1px 0 #ee6c74;
+  box-shadow: inset 0 1px 0 #ee6c74;
+  background: #c41722;
+  border: 1px solid #7f0f16;
+  text-shadow: 0 -1px 0 #96111a;
+}
+.button:active, form.wufoo ul li input#saveForm:active {
+  -webkit-box-shadow: inset 0 -1px 3px #680c12;
+  -moz-box-shadow: inset 0 -1px 3px #680c12;
+  -ms-box-shadow: inset 0 -1px 3px #680c12;
+  -o-box-shadow: inset 0 -1px 3px #680c12;
+  box-shadow: inset 0 -1px 3px #680c12;
+  background: #96111a;
+  text-shadow: none;
+}
 
 .row-end {
-  margin-right: 0; }
+  margin-right: 0;
+}
 
 .secondary-wrapper {
   background: rgba(228, 228, 228, 0.7) url("/images/shadowing.png") center 0 no-repeat;
   border-bottom: 1px solid #DCDCDC;
   border-top: 1px solid #DCDCDC;
   padding: 47px 20px 47px;
-  margin: 0 -20px; }
+  margin: 0 -20px;
+}
 
 .secondary-header {
-  padding-top: 72px; }
+  padding-top: 72px;
+}
 
 .external-link {
   background: url("/images/external-link.png") no-repeat right -8px;
-  padding-right: 16px; }
-  .external-link:hover {
-    background-position: right 8px; }
+  padding-right: 16px;
+}
+.external-link:hover {
+  background-position: right 8px;
+}
 
 /* basic site styles
 ---------------------------------------- */
@@ -99,106 +108,138 @@ body {
   color: #2B2B2B;
   font: 400 16px "skolar-1", "skolar-2", Georgia, serif;
   text-align: center;
-  padding: 0 20px; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      -webkit-text-size-adjust: none; } }
+  padding: 0 20px;
+}
+@media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
 
 h1, h2, h3, h4, h5, h5, h6 {
   font-family: proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 h1 {
   color: #2b2b2b;
   font-size: 72px;
   font-weight: 900;
-  margin-bottom: 24px; }
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
 
 h2 {
   color: #2b2b2b;
   font-size: 36px;
   font-weight: 200;
   line-height: 48px;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+}
 
 h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+}
 
 h4 {
   line-height: 24px;
-  margin: 0; }
+  margin: 0;
+}
 
 p {
   color: #555;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 24px;
-  text-rendering: optimizeSpeed; }
+  text-rendering: optimizeSpeed;
+}
 
 ul {
   list-style-position: outside;
-  margin-bottom: 24px; }
-  ul li {
-    line-height: 24px; }
+  margin-bottom: 24px;
+}
+ul li {
+  line-height: 24px;
+}
 
 img {
   display: block;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 blockquote {
   background: url("/images/quote.png") no-repeat;
   border: 0;
   font: 300 18px proxima-nova-1, proxima-nova-2, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0 2.513% 0 0;
-  padding-left: 2.513%; }
-  blockquote p {
-    line-height: 36px; }
-  blockquote p.author {
-    color: #bbb;
-    font: italic 16px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 24px;
-    margin: 0; }
+  margin: 0 2.51256% 0 0;
+  padding-left: 2.51256%;
+}
+blockquote p {
+  line-height: 36px;
+}
+blockquote p.author {
+  color: #bbb;
+  font: italic 16px "skolar-1", "skolar-2", Georgia, serif;
+  line-height: 24px;
+  margin: 0;
+}
 
 a:link, a:active {
   color: #ad141e;
-  text-decoration: none; }
+  text-decoration: none;
+}
 a:visited {
   color: #96111a;
-  text-decoration: none; }
+  text-decoration: none;
+}
 a:hover {
   color: #db1926;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 img {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 #page-header {
   background: url("/images/shadowing.png") center top no-repeat;
   padding-top: 72px;
-  text-align: center; }
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-    #page-header {
-      -webkit-background-size: contain;
-      -moz-background-size: contain;
-      -ms-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain; } }
+  text-align: center;
+}
+@media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  #page-header {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+#page-header h1 {
+  line-height: 72px;
+}
+@media screen and (max-width: 750px), screen and (max-device-width: 480px) {
   #page-header h1 {
-    line-height: 72px; }
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
-      #page-header h1 {
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 48px;
-        text-align: left; } }
-  #page-header h2 {
-    color: #736B6C;
-    font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
-    line-height: 24px;
-    margin-bottom: 0; }
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+#page-header h1 span.coupon {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+#page-header h2 {
+  color: #736B6C;
+  font: normal 14px "skolar-1", "skolar-2", Georgia, serif;
+  line-height: 24px;
+  margin-bottom: 0;
+}
 
 /* Forms
 ---------------------------------------- */
@@ -207,131 +248,156 @@ img {
   font-size: 11px;
   font-style: italic;
   font-weight: normal;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 body#public {
-  padding: 0; }
+  padding: 0;
+}
 
 form.wufoo {
   margin-left: 0;
-  width: 100%; }
-  form.wufoo header#header {
-    display: none; }
-  form.wufoo ul {
-    list-style: none;
-    margin-top: 24px;
-    padding: 4px; }
-    form.wufoo ul li {
-      margin-bottom: 34px;
-      padding: 0; }
-      form.wufoo ul li.section {
-        padding-top: 25px;
-        margin-bottom: 10px; }
-        form.wufoo ul li.section h3 {
-          color: #ad141e;
-          font-size: 24px;
-          padding: 0;
-          border-top: 0 !important; }
-      form.wufoo ul li fieldset {
-        background: none;
-        border: 0;
-        padding: 0; }
-      form.wufoo ul li label.desc, form.wufoo ul li legend.desc, form.wufoo ul li label, form.wufoo ul li legend {
-        -webkit-font-smoothing: antialiased;
-        font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        font-weight: bold;
-        line-height: 24px;
-        margin: 0 0 5px;
-        padding: 0; }
-        form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
-          display: inline;
-          font-weight: normal; }
-      form.wufoo ul li .req {
-        color: #ad141e; }
-      form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
-        display: inline-block; }
-      form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
-        border: 1px solid #999;
-        -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
-        -moz-box-shadow: inset 0 1px 2px #aaaaaa;
-        -ms-box-shadow: inset 0 1px 2px #aaaaaa;
-        -o-box-shadow: inset 0 1px 2px #aaaaaa;
-        box-shadow: inset 0 1px 2px #aaaaaa;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        box-sizing: border-box;
-        font: 14px "skolar-1", "skolar-2", Georgia, serif;
-        line-height: 24px;
-        margin: 0;
-<<<<<<< HEAD
-        max-width: 100%;
-=======
-        max-width: 100.0%;
->>>>>>> updates stle on events page
-        padding: 11px 12px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
-        width: 100%; }
-        form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
-          outline-color: #ad141e; }
-      form.wufoo ul li input#saveForm {
-        display: block;
-        margin: 0;
-        padding: 10px 48px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
-        form.wufoo ul li input#saveForm:hover {
-          cursor: pointer; }
-        form.wufoo ul li input#saveForm:active {
-          background: #96111a; }
-      form.wufoo ul li .instruct {
-        color: #aaa;
-        font-size: 14px;
-        font-style: italic;
-        font-weight: normal;
-<<<<<<< HEAD
-        margin: 24px 24px 24px; }
-=======
-        margin: 24px 24px 48px; }
->>>>>>> updates stle on events page
-      form.wufoo ul li.focused {
-        background: none; }
-        form.wufoo ul li.focused label {
-          color: #000; }
-      form.wufoo ul li.email {
-        margin-right: 2.513%; }
-      form.wufoo ul li.email, form.wufoo ul li.phone {
-        max-width: 48.744%;
-        min-width: 48.744%;
-        width: 48.744%;
-        float: left;
-        clear: none; }
-        form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
-          width: 100%;
-          display: block; }
-      form.wufoo ul li.name {
-        float: none;
-        margin-right: 0;
-        margin-bottom: 10px; }
-        form.wufoo ul li.name span {
-          display: block;
-          float: left;
-          margin-right: 2.513%;
-          width: 48.744%; }
-          form.wufoo ul li.name span:nth-child(odd) {
-            margin-right: 0; }
-          form.wufoo ul li.name span input[type="text"] {
-            width: 100%; }
-          form.wufoo ul li.name span.req {
-            display: inline;
-            float: none;
-            margin: 0;
-            width: auto; }
-      form.wufoo ul li.pitch div label {
-        line-height: 0.8em; }
-      form.wufoo ul li.services legend {
-        padding-bottom: 10px; }
-      form.wufoo ul li.services span {
-        margin-bottom: 8px; }
-        form.wufoo ul li.services span label {
-          margin-left: 5px; }
+  width: 100%;
+}
+form.wufoo header#header {
+  display: none;
+}
+form.wufoo ul {
+  list-style: none;
+  margin-top: 24px;
+  padding: 4px;
+}
+form.wufoo ul li {
+  margin-bottom: 34px;
+  padding: 0;
+}
+form.wufoo ul li.section {
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+form.wufoo ul li.section h3 {
+  color: #ad141e;
+  font-size: 24px;
+  padding: 0;
+  border-top: 0 !important;
+}
+form.wufoo ul li fieldset {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+form.wufoo ul li label.desc, form.wufoo ul li legend.desc, form.wufoo ul li label, form.wufoo ul li legend {
+  -webkit-font-smoothing: antialiased;
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0 0 5px;
+  padding: 0;
+}
+form.wufoo ul li label.desc.choice, form.wufoo ul li legend.desc.choice, form.wufoo ul li label.choice, form.wufoo ul li legend.choice {
+  display: inline;
+  font-weight: normal;
+}
+form.wufoo ul li .req {
+  color: #ad141e;
+}
+form.wufoo ul li input.checkbox, form.wufoo ul li input.radio {
+  display: inline-block;
+}
+form.wufoo ul li input[type="text"], form.wufoo ul li input[type="email"], form.wufoo ul li input.text, form.wufoo ul li textarea {
+  border: 1px solid #999;
+  -webkit-box-shadow: inset 0 1px 2px #aaaaaa;
+  -moz-box-shadow: inset 0 1px 2px #aaaaaa;
+  -ms-box-shadow: inset 0 1px 2px #aaaaaa;
+  -o-box-shadow: inset 0 1px 2px #aaaaaa;
+  box-shadow: inset 0 1px 2px #aaaaaa;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
+  line-height: 24px;
+  margin: 0;
+  max-width: 100%;
+  padding: 11px 12px;
+  /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+  width: 100%;
+}
+form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
+  outline-color: #ad141e;
+}
+form.wufoo ul li input#saveForm {
+  display: block;
+  margin: 0;
+  padding: 10px 48px;
+  /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+}
+form.wufoo ul li input#saveForm:hover {
+  cursor: pointer;
+}
+form.wufoo ul li input#saveForm:active {
+  background: #96111a;
+}
+form.wufoo ul li .instruct {
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 24px 24px 24px;
+}
+form.wufoo ul li.focused {
+  background: none;
+}
+form.wufoo ul li.focused label {
+  color: #000;
+}
+form.wufoo ul li.email {
+  margin-right: 2.51256%;
+}
+form.wufoo ul li.email, form.wufoo ul li.phone {
+  max-width: 48.74372%;
+  min-width: 48.74372%;
+  width: 48.74372%;
+  float: left;
+  clear: none;
+}
+form.wufoo ul li.email input[type="text"], form.wufoo ul li.email input.text, form.wufoo ul li.email input[type="email"], form.wufoo ul li.phone input[type="text"], form.wufoo ul li.phone input.text, form.wufoo ul li.phone input[type="email"] {
+  width: 100%;
+  display: block;
+}
+form.wufoo ul li.name {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+form.wufoo ul li.name span {
+  display: block;
+  float: left;
+  margin-right: 2.51256%;
+  width: 48.74372%;
+}
+form.wufoo ul li.name span:nth-child(odd) {
+  margin-right: 0;
+}
+form.wufoo ul li.name span input[type="text"] {
+  width: 100%;
+}
+form.wufoo ul li.name span.req {
+  display: inline;
+  float: none;
+  margin: 0;
+  width: auto;
+}
+form.wufoo ul li.pitch div label {
+  line-height: 0.8em;
+}
+form.wufoo ul li.services legend {
+  padding-bottom: 10px;
+}
+form.wufoo ul li.services span {
+  margin-bottom: 8px;
+}
+form.wufoo ul li.services span label {
+  margin-left: 5px;
+}
