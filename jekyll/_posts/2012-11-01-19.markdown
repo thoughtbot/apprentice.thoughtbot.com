@@ -1,0 +1,20 @@
+---
+layout: podcast
+episodetitle: I have tons of guns and knives
+tags: rails ruby oss
+permalink: /podcast/19
+size: 18MB
+length: 38 minutes
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-019.mp3
+description: "Ben Orenstein is joined by Aaron Patterson, Ruby Core team member, Rails Core team member, and a Señior Software Engineer at AT&T Interactive. Aaron and Ben discuss the upcoming features and excitement for Ruby 2.0 and some things Aaron would like to see in Ruby in the future that didn't quite make it into Ruby 2.0. They also discuss how the Rails Core team differs from the Ruby Core team, how much effort it takes to write a detailed blog post and how many mistakes are involved, how he likes being a ruby celebrity, his involvement in Seattle.rb and what it teaches him. Finally, how awesome his job is and how he could do it forever, how he worries about Ruby or Rails becoming irrelevant and wants to stop that from happening, how he is happy all the time, and if he could wave a magic wand and change one thing about Rails, what it would be. This and so much more in this entertaining episode recorded at RubyConf 2012."
+---
+
+* [Tender Lovemaking](http://tenderlovemaking.com/)
+* [Seattle.rb](http://www.seattlerb.org/)
+
+### Upcoming Events We'll Be At
+
+* ["Apprentice.io", Software Craftmanship North America, Nov 9-10](http://scna.softwarecraftsmanship.org/)
+* [View all events we'll be at&hellip;](http://thoughtbot.com/events)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@tenderlove](http://twitter.com/tenderlove), and [@r00k](http://twitter.com/r00k) on twitter.

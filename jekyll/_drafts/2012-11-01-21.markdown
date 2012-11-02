@@ -1,0 +1,17 @@
+---
+layout: podcast
+episodetitle: 
+tags: business products
+permalink: /podcast/21
+size: 
+length: 
+file: http://gr-podcast.s3.amazonaws.com/thoughtbot-021.mp3
+description: "Ben Orenstein is joined by Jim Gay, author of Clean Ruby. Ben, Joe, and Jim discuss Data, Context and Interaction (DCI), what it is, whether it is at odds with Object-Oriented Programming, and how to be applied to your applications."
+---
+
+* [Clean Ruby](http://www.clean-ruby.com/)
+* [DCI](http://en.wikipedia.org/wiki/Data,_context_and_interaction)
+* [DTO](http://en.wikipedia.org/wiki/Data_transfer_object)
+* [Radiant CMS](http://radiantcms.org/)
+
+Follow [@thoughtbot](http://twitter.com/thoughtbot), [@saturnflyer](http://twitter.com/saturnflyer), [@r00k](http://twitter.com/r00k), and [@joeferris](http://twitter.com/joeferris) on twitter.
