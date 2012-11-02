@@ -1,6 +1,10 @@
 var auto = $.jqwidont.auto(); // is automatic initialisation enabled?
 $.jqwidont.auto(false);       // disable it
 
+var ga_track_portfolio = function(event_name) {
+  _gaq.push(['_trackEvent', 'Portfolio', 'Navigation', event_name]);
+}
+
 $(document).ready(function() {
   $('p').widont();
 
@@ -21,6 +25,15 @@ $(document).ready(function() {
     var divname = (document.title);
     divname = divname.substring(0, divname.indexOf(' :'));
 
+    ga_track_portfolio('View Details');
+
+    if ($('#portfolio-slider:hidden').size() == 1) {
+      $('#portfolio-slider').slideDown();
+      slider.slideDown();
+    } else {
+      slider.slideDown().siblings().slideUp();
+    }
+
     var slider  = $("#" + divname + "-project")
 
     if (slider.find("li").size() == 0) {
@@ -36,6 +49,18 @@ $(document).ready(function() {
         manualAdvance:true,
         directionNavHide:false,
         animSpeed: 100
+      });
+
+      $('a.nivo-prevNav').click(function(){
+        ga_track_portfolio('Previous');
+      });
+
+      $('a.nivo-nextNav').click(function(){
+        ga_track_portfolio('Next');
+      });
+
+      $('.nivo-control').click(function(){
+        ga_track_portfolio('Paging');
       });
     }
 
