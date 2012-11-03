@@ -3,7 +3,7 @@
   <title>Giant Robots Smashing into other Giant Robots</title>
   <link href="http://thoughtbot.com/podcast"/>
   <link type="application/atom+xml" rel="self" href="http://thoughtbot.com/podcast.atom"/>
-  <updated>2012-10-31T17:16:41-04:00</updated>
+  <updated>2012-11-03T15:22:40-06:00</updated>
   <id>http://thoughtbot.com/podcast</id>
   <author>
     <name>thoughtbot</name>
@@ -11,10 +11,84 @@
   </author>
   
   <entry>
+    <id>http://thoughtbot.com/podcast/20</id>
+    <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/20"/>
+    <title>Episode 20: Ruby Lightening</title>
+    <updated>2012-11-03T00:00:00-06:00</updated>
+    <author>
+      <name>thoughtbot</name>
+      <uri>http://thoughtbot.com/podcast</uri>
+    </author>
+    <content type="html">
+      In this special episode from RubyConf 2012 we pulled aside some of the attendees and found out what they're working on. We also include a selection of the great lightening talks at the conference. Enjoy!
+      &lt;ul&gt;
+&lt;li&gt;&lt;a href='http://blog.robmack.com/'&gt;Rob Mack&lt;/a&gt; from &lt;a href='http://spiceworks.com'&gt;Spiceworks&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://drnicwilliams.com/'&gt;Dr. Nic Williams&lt;/a&gt; from &lt;a href='http://engineyard.com'&gt;Engine Yard&lt;/a&gt; talks about &lt;a href='https://github.com/cloudfoundry/bosh'&gt;BOSH&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://rayhightower.com/'&gt;Ray Hightower&lt;/a&gt; from &lt;a href='http://wisdomgroup.com/'&gt;WisdomGroup&lt;/a&gt;, &lt;a href='http://windycityrails.org/'&gt;WindyCityRails&lt;/a&gt;, and &lt;a href='http://chicagoruby.org/'&gt;ChicagoRuby&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.noelrappin.com/'&gt;Noel Rapin&lt;/a&gt; from &lt;a href='http://groupon.com'&gt;Groupon&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://jfoley.github.com/'&gt;John Foley&lt;/a&gt; and &lt;a href='http://blog.baroquebobcat.com/'&gt;Nick Howard&lt;/a&gt; talk about &lt;a href='http://www.projectgrok.com/'&gt;Project Grok&lt;/a&gt;, an Open Source Code Reader Club (like a book club, but for code)&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://brixen.io/'&gt;Brian Ford&lt;/a&gt; from &lt;a href='http://engineyard.com'&gt;Engine Yard&lt;/a&gt; talks about &lt;a href='http://rubini.us/'&gt;Rubinious&lt;/a&gt; 2.0-rc1.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://twitter.com/j3'&gt;Jeff Casimir&lt;/a&gt; from &lt;a href='http://jumpstartlab.com/'&gt;JumpstartLab&lt;/a&gt; talks about &lt;a href='http://www.gschool.it/'&gt;gSchool&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://verboselogging.com/'&gt;Daniel Huckstep&lt;/a&gt; from &lt;a href='http://getyardstick.com/'&gt;Yardstick Software&lt;/a&gt; talks about rc files and &lt;a href='https://github.com/37signals/sub'&gt;sub&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://haven.loki.ws/'&gt;Joshua Szmajda&lt;/a&gt; talks about the &lt;a href='http://www.therubyhangout.com/'&gt;Ruby Hangout&lt;/a&gt;, an online Ruby meetup.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://deadprogrammersociety.com/'&gt;Ron Evans&lt;/a&gt; from &lt;a href='http://hybridgroup.com/'&gt;The Hybrid Group&lt;/a&gt; talks about &lt;a href='https://github.com/hybridgroup/gitnesse'&gt;gitnesse&lt;/a&gt; and wields a mean ukulele.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/xn'&gt;Christian Trosclair&lt;/a&gt; from &lt;a href='http://hybridgroup.com/'&gt;The Hybrid Group&lt;/a&gt; talks about &lt;a href=''&gt;Kids Code Camp&lt;/a&gt; and &lt;a href='http://featurecreep.io'&gt;FeatureCreep&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://schneems.com/'&gt;Richard Schneeman&lt;/a&gt; from &lt;a href='http://heroku.com'&gt;Heroku&lt;/a&gt; talks about &lt;a href='http://issuetriage.heroku.com'&gt;Issue Triage&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/tyre'&gt;Chris Maddox&lt;/a&gt; from &lt;a href='http://livingsocial.com'&gt;LivingSocial&lt;/a&gt; talks about happiness.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Follow &lt;a href='http://twitter.com/thoughtbot'&gt;@thoughtbot&lt;/a&gt; and &lt;a href='http://twitter.com/rubyconf'&gt;@rubyconf&lt;/a&gt; on twitter.&lt;/p&gt;
+      &lt;a href="http://gr-podcast.s3.amazonaws.com/thoughtbot-020.mp3"&gt;Download&lt;/a&gt;
+    </content>
+  </entry>
+  
+  <entry>
+    <id>http://thoughtbot.com/podcast/19</id>
+    <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/19"/>
+    <title>Episode 19: I have tons of guns and knives</title>
+    <updated>2012-11-01T00:00:00-06:00</updated>
+    <author>
+      <name>thoughtbot</name>
+      <uri>http://thoughtbot.com/podcast</uri>
+    </author>
+    <content type="html">
+      Ben Orenstein is joined by Aaron Patterson, Ruby Core team member, Rails Core team member, and a Señior Software Engineer at AT&amp;T Interactive. Aaron and Ben discuss the upcoming features and excitement for Ruby 2.0 and some things Aaron would like to see in Ruby in the future that didn't quite make it into Ruby 2.0. They also discuss how the Rails Core team differs from the Ruby Core team, how much effort it takes to write a detailed blog post and how many mistakes are involved, how he likes being a ruby celebrity, his involvement in Seattle.rb and what it teaches him. Finally, how awesome his job is and how he could do it forever, how he worries about Ruby or Rails becoming irrelevant and wants to stop that from happening, how he is happy all the time, and if he could wave a magic wand and change one thing about Rails, what it would be. This and so much more in this entertaining episode recorded at RubyConf 2012.
+      &lt;ul&gt;
+&lt;li&gt;&lt;a href='http://tenderlovemaking.com/'&gt;Tender Lovemaking&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.seattlerb.org/'&gt;Seattle.rb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='upcoming_events_well_be_at'&gt;Upcoming Events We&amp;#8217;ll Be At&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://scna.softwarecraftsmanship.org/'&gt;&amp;#8220;Apprentice.io&amp;#8221;, Software Craftmanship North America, Nov 9-10&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://thoughtbot.com/events'&gt;View all events we&amp;#8217;ll be at&amp;#8230;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Follow &lt;a href='http://twitter.com/thoughtbot'&gt;@thoughtbot&lt;/a&gt;, &lt;a href='http://twitter.com/tenderlove'&gt;@tenderlove&lt;/a&gt;, and &lt;a href='http://twitter.com/r00k'&gt;@r00k&lt;/a&gt; on twitter.&lt;/p&gt;
+      &lt;a href="http://gr-podcast.s3.amazonaws.com/thoughtbot-019.mp3"&gt;Download&lt;/a&gt;
+    </content>
+  </entry>
+  
+  <entry>
     <id>http://thoughtbot.com/podcast/18</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/18"/>
     <title>Episode 18: Trading Hours for Money</title>
-    <updated>2012-10-29T00:00:00-04:00</updated>
+    <updated>2012-10-29T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -62,7 +136,7 @@
     <id>http://thoughtbot.com/podcast/17</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/17"/>
     <title>Episode 17: I'm feeling full and Sassy</title>
-    <updated>2012-10-22T00:00:00-04:00</updated>
+    <updated>2012-10-22T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -102,7 +176,7 @@
     <id>http://thoughtbot.com/podcast/16</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/16"/>
     <title>Episode 16: Making it fast</title>
-    <updated>2012-10-15T00:00:00-04:00</updated>
+    <updated>2012-10-15T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -138,7 +212,7 @@
     <id>http://thoughtbot.com/podcast/15</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/15"/>
     <title>Episode 15: Moving money should be free</title>
-    <updated>2012-10-08T00:00:00-04:00</updated>
+    <updated>2012-10-08T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -184,7 +258,7 @@
     <id>http://thoughtbot.com/podcast/14</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/14"/>
     <title>Episode 14: Say goodbye to that big guy</title>
-    <updated>2012-10-01T00:00:00-04:00</updated>
+    <updated>2012-10-01T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -246,7 +320,7 @@
     <id>http://thoughtbot.com/podcast/13</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/13"/>
     <title>Episode 13: I'll disagree in just a little bit</title>
-    <updated>2012-09-21T00:00:00-04:00</updated>
+    <updated>2012-09-21T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -296,7 +370,7 @@
     <id>http://thoughtbot.com/podcast/12</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/12"/>
     <title>Episode 12: I think I'll be on a yacht</title>
-    <updated>2012-09-14T00:00:00-04:00</updated>
+    <updated>2012-09-14T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -322,7 +396,7 @@
     <id>http://thoughtbot.com/podcast/11</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/11"/>
     <title>Episode 11: You want your system to bend, not to break</title>
-    <updated>2012-09-10T00:00:00-04:00</updated>
+    <updated>2012-09-10T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -392,7 +466,7 @@
     <id>http://thoughtbot.com/podcast/10</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/10"/>
     <title>Episode 10: Isn't the last stage of grieving acceptance?</title>
-    <updated>2012-09-04T00:00:00-04:00</updated>
+    <updated>2012-09-04T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -438,7 +512,7 @@
     <id>http://thoughtbot.com/podcast/9</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/9"/>
     <title>Episode 9: TDD for Business!!</title>
-    <updated>2012-08-24T00:00:00-04:00</updated>
+    <updated>2012-08-24T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -468,7 +542,7 @@
     <id>http://thoughtbot.com/podcast/8</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/8"/>
     <title>Episode 8: Wax on, Wax off</title>
-    <updated>2012-08-17T00:00:00-04:00</updated>
+    <updated>2012-08-17T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -512,7 +586,7 @@
     <id>http://thoughtbot.com/podcast/7</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/7"/>
     <title>Episode 7: Something Else Was Smellier</title>
-    <updated>2012-08-10T00:00:00-04:00</updated>
+    <updated>2012-08-10T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -572,7 +646,7 @@
     <id>http://thoughtbot.com/podcast/6</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/6"/>
     <title>Episode 6: MVP of Personal Hygiene</title>
-    <updated>2012-08-03T00:00:00-04:00</updated>
+    <updated>2012-08-03T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -598,7 +672,7 @@
     <id>http://thoughtbot.com/podcast/5</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/5"/>
     <title>Episode 5: My wife is getting really into whiskey</title>
-    <updated>2012-07-27T00:00:00-04:00</updated>
+    <updated>2012-07-27T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -652,7 +726,7 @@
     <id>http://thoughtbot.com/podcast/4</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/4"/>
     <title>Episode 4: I've got a little thoughtbot angel or devil on my shoulder</title>
-    <updated>2012-07-20T00:00:00-04:00</updated>
+    <updated>2012-07-20T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -680,7 +754,7 @@
     <id>http://thoughtbot.com/podcast/3</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/3"/>
     <title>Episode 3: The FactoryGirl Representation of a Factory</title>
-    <updated>2012-07-13T00:00:00-04:00</updated>
+    <updated>2012-07-13T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -712,7 +786,7 @@
     <id>http://thoughtbot.com/podcast/2</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/2"/>
     <title>Episode 2: Design with a sip of Bourbon</title>
-    <updated>2012-06-22T00:00:00-04:00</updated>
+    <updated>2012-06-22T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
@@ -752,7 +826,7 @@
     <id>http://thoughtbot.com/podcast/1</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/1"/>
     <title>Episode 1: Polymorphism vs. Conditionals</title>
-    <updated>2012-06-11T00:00:00-04:00</updated>
+    <updated>2012-06-11T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>

@@ -2,49 +2,49 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  
   <url>
     <loc>http://thoughtbot.com</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/services</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/products</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/about</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/community</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/about</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>http://thoughtbot.com/contact</loc>
-    <lastmod>2012-10-31T17:16:41-04:00</lastmod>
+    <lastmod>2012-11-03T15:22:40-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

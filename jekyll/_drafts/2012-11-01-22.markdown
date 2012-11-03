@@ -10,6 +10,6 @@ description: "Ben Orenstein is joined by Bryan Helmkamp, founder of Code Climate
 ---
 
 * [Code Climate](https://codeclimate.com/)
-* [Steve Berry]()
+* [Steve Berry, Thought Merchants](http://thoughtmerchants.com/)
 
 Follow [@thoughtbot](http://twitter.com/thoughtbot), [@r00k](http://twitter.com/r00k), [@brynary](http://twitter.com/brynary) and [@codeclimate](http://twitter.com/codeclimate) on twitter.

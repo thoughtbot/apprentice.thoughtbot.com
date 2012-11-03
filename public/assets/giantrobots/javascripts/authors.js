@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
     fyates: 'Fred Yates',
     g3niu5: 'Paul Webb',
     gabebw: 'Gabe Berke-Williams',
+    gfontenot: 'Gordon Fontenot',
     griffindy: 'Dylan Griffin',
     hgimenez: 'Harold Giménez',
     highwaybobbery: 'Alex Berry',
