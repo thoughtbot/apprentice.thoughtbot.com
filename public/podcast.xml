@@ -3,7 +3,7 @@
   <title>Giant Robots Smashing into other Giant Robots</title>
   <link href="http://thoughtbot.com/podcast"/>
   <link type="application/atom+xml" rel="self" href="http://thoughtbot.com/podcast.atom"/>
-  <updated>2012-11-03T15:25:44-06:00</updated>
+  <updated>2012-11-03T15:28:30-06:00</updated>
   <id>http://thoughtbot.com/podcast</id>
   <author>
     <name>thoughtbot</name>
@@ -13,14 +13,14 @@
   <entry>
     <id>http://thoughtbot.com/podcast/20</id>
     <link type="text/html" rel="alternate" href="http://thoughtbot.com/podcast/20"/>
-    <title>Episode 20: Ruby Lightening</title>
+    <title>Episode 20: Ruby Lightning</title>
     <updated>2012-11-03T00:00:00-06:00</updated>
     <author>
       <name>thoughtbot</name>
       <uri>http://thoughtbot.com/podcast</uri>
     </author>
     <content type="html">
-      In this special episode from RubyConf 2012 we pulled aside some of the attendees and found out what they're working on. We also include a selection of the great lightening talks at the conference. Enjoy!
+      In this special episode from RubyConf 2012 we pulled aside some of the attendees and found out what they're working on. We also include a selection of the great lightning talks at the conference. Enjoy!
       &lt;ul&gt;
 &lt;li&gt;&lt;a href='http://blog.robmack.com/'&gt;Rob Mack&lt;/a&gt; from &lt;a href='http://spiceworks.com'&gt;Spiceworks&lt;/a&gt;&lt;/li&gt;
 

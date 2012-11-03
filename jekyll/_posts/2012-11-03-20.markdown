@@ -1,12 +1,12 @@
 ---
 layout: podcast
-episodetitle: Ruby Lightening
+episodetitle: Ruby Lightning
 tags: ruby
 permalink: /podcast/20
 size: 15MB
 length: 34 minutes
 file: http://gr-podcast.s3.amazonaws.com/thoughtbot-020.mp3
-description: "In this special episode from RubyConf 2012 we pulled aside some of the attendees and found out what they're working on. We also include a selection of the great lightening talks at the conference. Enjoy!"
+description: "In this special episode from RubyConf 2012 we pulled aside some of the attendees and found out what they're working on. We also include a selection of the great lightning talks at the conference. Enjoy!"
 ---
 
 * [Rob Mack](http://blog.robmack.com/) from [Spiceworks](http://spiceworks.com)
