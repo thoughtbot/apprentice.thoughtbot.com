@@ -81,13 +81,13 @@ section#container {
           width: 50%;
 
           &:before {
-            content: "—";
+            content: "\2014";
             @include inline-block;
             padding-right: 8px;
           }
 
           &:after {
-            content: "—";
+            content: "\2014";
             @include inline-block;
             padding-left: 8px;
           }
@@ -104,6 +104,10 @@ section#container {
           font-family: $sans-serif;
           text-transform: uppercase;
           margin-bottom: lh(.5);
+
+          a {
+            font-style: normal;
+          }
         }
 
         a {

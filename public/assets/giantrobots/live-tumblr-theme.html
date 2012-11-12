@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="NOODP">
 
-    <link rel="stylesheet" href="http://www.thoughtbot.com/assets/giantrobots/stylesheets/mobile.css" media="screen">
-    <link rel="stylesheet" href="http://www.thoughtbot.com/assets/giantrobots/stylesheets/desktop.css" media="screen and (min-width:480px)">
+    <link rel="stylesheet" href="http://www.thoughtbot.com/assets/robots/mobile.css" media="screen">
+    <link rel="stylesheet" href="http://www.thoughtbot.com/assets/robots/desktop.css" media="screen and (min-width:480px)">
 
     <!--[if (lt IE 9) & (!IEMobile)]>
     <link rel="stylesheet" href="http://www.thoughtbot.com/assets/giantrobots/stylesheets/ie.css">
@@ -47,13 +47,6 @@
           <h3>Written by <a href="http://www.thoughtbot.com/">thoughtbot</a>. We make web &amp; mobile apps for startups.</h3>
         </hgroup>
 
-        <nav>
-          <ul>
-            <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
-            <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
-            <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
-          </ul>
-        </nav>
       </header>
 
       <section id="posts">
@@ -64,7 +57,7 @@
               <section class="meta-info">
                 <p class="post-date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></p>
                 {block:HasTags}
-                  <p class="tagged">Tagged:</p>
+                  <p class="tagged"><a href="https://learn.thoughtbot.com">Learn More</a></p>
                   <ul class="tags">
                     {block:Tags}
                       <li><a href="https://learn.thoughtbot.com/{URLSafeTag}">{Tag}</a></li>
@@ -111,7 +104,7 @@
               <section class="meta-info">
                 <p class="post-date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></p>
                 {block:HasTags}
-                  <p class="tagged">Tagged:</p>
+                  <p class="tagged"><a href="https://learn.thoughtbot.com">Learn More</a></p>
                   <ul class="tags">
                     {block:Tags}
                       <li><a href="https://learn.thoughtbot.com/{URLSafeTag}">{Tag}</a></li>
@@ -138,7 +131,7 @@
               <section class="meta-info">
                 <p class="post-date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></p>
                 {block:HasTags}
-                  <p class="tagged">Tagged:</p>
+                  <p class="tagged"><a href="https://learn.thoughtbot.com">Learn More</a></p>
                   <ul class="tags">
                     {block:Tags}
                       <li><a href="https://learn.thoughtbot.com/{URLSafeTag}">{Tag}</a></li>
@@ -165,7 +158,7 @@
               <section class="meta-info">
                 <p class="post-date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></p>
                 {block:HasTags}
-                  <p class="tagged">Tagged:</p>
+                  <p class="tagged"><a href="https://learn.thoughtbot.com">Learn More</a></p>
                   <ul class="tags">
                     {block:Tags}
                       <li><a href="https://learn.thoughtbot.com/{URLSafeTag}">{Tag}</a></li>
@@ -190,7 +183,7 @@
               <section class="meta-info">
                 <p class="post-date"><a href="{Permalink}">{Month} {DayOfMonth}, {Year}</a></p>
                 {block:HasTags}
-                  <p class="tagged">Tagged:</p>
+                  <p class="tagged"><a href="https://learn.thoughtbot.com">Learn More</a></p>
                   <ul class="tags">
                     {block:Tags}
                       <li><a href="https://learn.thoughtbot.com/{URLSafeTag}">{Tag}</a></li>
@@ -244,52 +237,26 @@
         {/block:Pagination}
       </section>
 
-      <aside>
+    <footer>
+      <section id="footer-container">
+        <section class="etc">
+          <p>Written by <a href="http://thoughtbot.com">thoughtbot</a>. We make web &amp; mobile apps for startups.</p>
+
+          <nav>
+            <ul>
+              <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
+              <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
+              <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
+            </ul>
+          </nav>
+        </section>
+
         <section id="promo" class="message">
           <a href="https://learn.thoughtbot.com/?utm_source=robots.thoughtbot.com">
-            <img src="http://www.thoughtbot.com/assets/giantrobots/images/logo.svg" data-png-fallback="http://www.thoughtbot.com/assets/giantrobots/images/logo.png" alt="workshops" width='35px'>
+            <img src="http://thoughtbot.com/assets/giantrobots/images/logo.svg" data-png-fallback="http://thoughtbot.com/assets/giantrobots/images/logo.png" alt="workshops" width='35px'>
             <span class="promo-name">Don't just sit there</span>
             <span class="promo-creative">Learn something</span>
           </a>
-        </section>
-
-        <ul class="social">
-          <li><a href="http://twitter.com/thoughtbot" id="twitter">twitter</a></li>
-          <li><a href="http://tinyletter.com/thoughtbot" id="contact">newsletter</a></li>
-          <li><a href="feed://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" id="rss">rss feed</a></li>
-        </ul>
-
-      </aside>
-    </section>
-
-    <footer>
-      <section id="footer-container">
-        <nav>
-          <h6>More from thoughtbot</h6>
-
-          <ul id="main-links">
-            <li><a href="http://www.thoughtbot.com/">thoughtbot.com</a></li>
-            <li><a href="https://learn.thoughtbot.com/">Workshops</a></li>
-            <li><a href="http://www.thoughtbot.com/community/">Community</a></li>
-            <li><a href="http://playbook.thoughtbot.com/">Playbook</a></li>
-          </ul>
-
-          <ul id="secondary-links">
-            <li><a href="http://www.thoughtbot.com/jobs/">Jobs</a></li>
-            <li><a href="http://www.thoughtbot.com/about/">About</a></li>
-            <li><a href="http://www.thoughtbot.com/contact/">Contact</a></li>
-            <li><a href="http://twitter.com/thoughtbot">Twitter</a></li>
-          </ul>
-        </nav>
-
-        <section id="products">
-          <section id="trajectory" class="product">
-            <h6><a href="http://apptrajectory.com">Trajectory</a></h6>
-            <a href="http://apptrajectory.com/" class="logo">
-              <img src="http://www.thoughtbot.com/images/products/trajectory.png" alt="Hoptoad logo">
-            </a>
-          </section>
-
         </section>
       </section>
     </footer>

@@ -123,12 +123,12 @@ section#container {
   padding: 0 0 $lh (grid-width(2) + $gw-gutter);
 }
 
-#pagination #older-link {
+#pagination #older-link a {
   width: grid-width(2);
   background-position: 0 13px;
 }
 
-#pagination #newer-link {
+#pagination #newer-link a {
   width: grid-width(2);
   background-position: right -15px;
 }
