@@ -4,8 +4,14 @@ $monospace: monaco, monospace;
 
 $red: #AD141E; /*thoughtbot red*/
 
-$lh: 20px; /*line-height of all the type on the site*/
+@function em($pxval, $base: 16) {
+  @return #{$pxval / $base}em;
+}
+
+$lh: 1.6rem; /*line-height of all the type on the site*/
 $gw-column: 60px; /*one grid column*/
 $gw-gutter: 25px; /*size of one gutter*/
 
-
+@function lh($multiple: 1){
+  @return $lh*$multiple;
+}

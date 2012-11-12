@@ -1,0 +1,152 @@
+body {
+  font-size: 1em;
+}
+
+section#container {
+  margin-bottom: -20px;
+  width: grid-width(9);
+
+  header {
+    margin: lh(2) 0 ;
+
+    h2.logo {
+      float: left;
+      text-align: left;
+      width: grid-width(2);
+
+      a {
+        margin: 15px 0 0 30px;
+        display: block;
+      }
+    }
+
+    hgroup {
+      float: left;
+      text-align: left;
+      padding: lh(1.5) 0 0 $gw-gutter;
+    }
+
+  }
+
+  section#posts {
+    .post {
+      margin: 0 0 lh(3) 0;
+      padding: 0 0 lh(3) grid-width(2) +  $gw-gutter;
+      position: relative;
+
+      &:only-of-type {
+        border-bottom: 0;
+      }
+
+      .meta-info {
+        left: 10px;
+        text-align: left;
+        position: absolute;
+        top: 18px;
+        width: grid-width(2);
+        opacity: .5;
+        @include transition;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        p.post-date {
+          border-bottom: none;
+          margin: 0 0 lh(1.5) 0;
+          padding: 0;
+          width: 100%;
+
+          &:before, &:after {
+            content: normal;
+          }
+
+          a {
+            color: #333;
+          }
+        }
+
+        p.tagged {
+          display: block;
+        }
+
+        ul.tags {
+          display: block;
+
+          li {
+            margin: 0 0 lh(.25) 0;
+            position: relative;
+
+            &:after {
+              content: "\2014";
+              font-size: 13px;
+              left: -14px;
+              position: absolute;
+              top: 0;
+            }
+          }
+        }
+
+        p.comments {
+          display: block;
+        }
+      }
+
+      img {
+        display: inline-block;
+      }
+
+      table {
+        width: grid-width(7);
+      }
+
+      section.post-footer {
+        p.comments {
+          display: none;
+        }
+
+        div.tags {
+          display: none;
+        }
+      }
+
+      // Text posts
+      h1.title {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Pagination
+#pagination {
+  padding: 0 0 $lh (grid-width(2) + $gw-gutter);
+}
+
+#pagination #older-link a {
+  width: grid-width(2);
+  background-position: 0 13px;
+}
+
+#pagination #newer-link a {
+  width: grid-width(2);
+  background-position: right -15px;
+}
+
+// footer
+footer {
+  section#footer-container {
+    width: grid-width(8.8);
+
+    section.etc {
+      margin: 0;
+      float: left;
+      width: 65%;
+    }
+
+    section#promo {
+      float: right;
+      width: 30%;
+    }
+  }
+}
