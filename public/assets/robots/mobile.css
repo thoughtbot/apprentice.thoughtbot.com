@@ -593,9 +593,6 @@ section#container {
         height: 100%; }
     section#container section#posts .post.link .meta-info {
       top: 10px; }
-    section#container section#posts .post.link h1.title {
-      font-size: 24px;
-      line-height: 30px; }
       section#container section#posts .post.link h1.title a {
         font-weight: 400; }
     section#container section#posts .post.quote .meta-info {
