@@ -7,7 +7,8 @@
     margin-bottom: 1.6rem; } }
 @media only screen and (min-width: 760px) {
   body {
-    font-size: 1em; }
+    font-size: 1.125em;
+    line-height: 1.92rem; }
 
   section#container {
     margin-bottom: -20px;
@@ -38,11 +39,11 @@
         top: 18px;
         width: 145px;
         opacity: .5;
-        -webkit-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -moz-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -ms-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -o-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false); }
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+        -ms-transition: all 0.15s ease-out 0;
+        -o-transition: all 0.15s ease-out 0;
+        transition: all 0.15s ease-out 0; }
         section#container section#posts .post .meta-info:hover {
           opacity: 1; }
         section#container section#posts .post .meta-info p.post-date {
@@ -102,8 +103,8 @@
       width: 30%; } }
 @media only screen and (min-width: 1025px) {
   body {
-    font-size: 1.125em;
-    line-height: 1.92rem; }
+    font-size: 1.25em;
+    line-height: 2.24rem; }
 
   section#container {
     padding: 20px 0 0;
@@ -111,8 +112,6 @@
     section#container header h2.logo a {
       height: 85px;
       width: 85px; }
-    section#container header hgroup {
-      width: 570px; }
     section#container header nav {
       margin: 0 0 0 25px;
       padding: 35px 0 0 0;

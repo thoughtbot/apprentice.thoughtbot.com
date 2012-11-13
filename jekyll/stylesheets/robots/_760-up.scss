@@ -1,5 +1,6 @@
 body {
-  font-size: 1em;
+  font-size: em(18, 16);
+  line-height: lh(1.2);
 }
 
 section#container {

@@ -47,5 +47,9 @@ The blog
 
 Assets for the blog (images, CSS, etc) can be found in `jekyll/assets`.
 
+To generate the Sass for the blog run sass watch from the root directory:
+    $ sass --watch jekyll/stylesheets/robots:public/assets/robots -r ./jekyll/stylesheets/robots/bourbon/lib/bourbon.rb
+
+
 Deploying
 ---------

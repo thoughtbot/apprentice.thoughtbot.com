@@ -1,8 +1,8 @@
 body {
   background: #fff;
   border-top: 4px solid #ad141e;
-  color: #444;
-  font-size: em(14);
+  color: #555;
+  font-size: 1em;
   font-family: $serif;
   line-height: lh();
 }
@@ -348,7 +348,7 @@ section#container {
       // Text posts
       h1.title {
         font-family: $sans-serif;
-        font-size: em(42);
+        font-size: em(36);
         font-weight: 300;
         line-height: lh(2);
         margin: 0 0 30px 0;
@@ -396,12 +396,6 @@ section#container {
       }
 
       // Link posts
-      &.link {
-        .meta-info {
-          top: 10px;
-        }
-      }
-
       // Quote posts
       &.quote {
         .meta-info {

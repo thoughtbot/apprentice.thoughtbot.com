@@ -1,6 +1,6 @@
 body {
-  font-size: em(18, 16);
-  line-height: lh(1.2);
+  font-size: em(20, 16);
+  line-height: lh(1.4);
 }
 
 section#container {
@@ -13,10 +13,6 @@ section#container {
         height: 85px;
         width: 85px;
       }
-    }
-
-    hgroup {
-      width: grid-width(7);
     }
 
     nav {

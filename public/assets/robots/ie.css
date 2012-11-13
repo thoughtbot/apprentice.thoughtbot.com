@@ -314,8 +314,8 @@ section#container section#posts .post #disqus_thread {
 body {
   background: #fff;
   border-top: 4px solid #ad141e;
-  color: #444;
-  font-size: 0.875em;
+  color: #555;
+  font-size: 1em;
   font-family: "skolar-1", "skolar-2", Georgia, serif;
   line-height: 1.6rem; }
 
@@ -561,7 +561,7 @@ section#container {
               text-decoration: none; }
     section#container section#posts .post h1.title {
       font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 2.625em;
+      font-size: 2.25em;
       font-weight: 300;
       line-height: 3.2rem;
       margin: 0 0 30px 0;
@@ -591,13 +591,6 @@ section#container {
         left: 0;
         width: 100%;
         height: 100%; }
-    section#container section#posts .post.link .meta-info {
-      top: 10px; }
-    section#container section#posts .post.link h1.title {
-      font-size: 24px;
-      line-height: 30px; }
-      section#container section#posts .post.link h1.title a {
-        font-weight: 400; }
     section#container section#posts .post.quote .meta-info {
       top: 8px; }
     section#container section#posts .post.quote q {
@@ -717,11 +710,11 @@ footer {
               color: transparent;
               font: 0/0 a;
               text-shadow: none;
-              -webkit-transition: compact(0.5s, false, false, false, false, false, false, false, false);
-              -moz-transition: compact(0.5s, false, false, false, false, false, false, false, false);
-              -ms-transition: compact(0.5s, false, false, false, false, false, false, false, false);
-              -o-transition: compact(0.5s, false, false, false, false, false, false, false, false);
-              transition: compact(0.5s, false, false, false, false, false, false, false, false);
+              -webkit-transition: 0.5s;
+              -moz-transition: 0.5s;
+              -ms-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s;
               width: 42px; }
     footer section#footer-container section#promo {
       display: block;
@@ -737,14 +730,14 @@ footer {
         clear: both; }
       footer section#footer-container section#promo a {
         text-decoration: none;
-        -webkit-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -moz-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -ms-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        -o-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-        transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false); }
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+        -ms-transition: all 0.15s ease-out 0;
+        -o-transition: all 0.15s ease-out 0;
+        transition: all 0.15s ease-out 0; }
         footer section#footer-container section#promo a:hover {
-          -webkit-box-shadow: compact(0 0 0 6px rgba(0, 0, 0, 0.04), false, false, false, false, false, false, false, false);
-          box-shadow: compact(0 0 0 6px rgba(0, 0, 0, 0.04), false, false, false, false, false, false, false, false); }
+          -webkit-box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.04); }
         footer section#footer-container section#promo a img {
           float: left;
           margin-right: 1.6rem; }
@@ -775,7 +768,8 @@ section#container {
   margin-bottom: 1.6rem; }
 
 body {
-  font-size: 1em; }
+  font-size: 1.125em;
+  line-height: 1.92rem; }
 
 section#container {
   margin-bottom: -20px;
@@ -806,11 +800,11 @@ section#container {
       top: 18px;
       width: 145px;
       opacity: .5;
-      -webkit-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-      -moz-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-      -ms-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-      -o-transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false);
-      transition: compact(all 0.15s ease-out 0, false, false, false, false, false, false, false, false); }
+      -webkit-transition: all 0.15s ease-out 0;
+      -moz-transition: all 0.15s ease-out 0;
+      -ms-transition: all 0.15s ease-out 0;
+      -o-transition: all 0.15s ease-out 0;
+      transition: all 0.15s ease-out 0; }
       section#container section#posts .post .meta-info:hover {
         opacity: 1; }
       section#container section#posts .post .meta-info p.post-date {
@@ -870,8 +864,8 @@ footer section#footer-container {
     width: 30%; }
 
 body {
-  font-size: 1.125em;
-  line-height: 1.92rem; }
+  font-size: 1.25em;
+  line-height: 2.24rem; }
 
 section#container {
   padding: 20px 0 0;
@@ -879,8 +873,6 @@ section#container {
   section#container header h2.logo a {
     height: 85px;
     width: 85px; }
-  section#container header hgroup {
-    width: 570px; }
   section#container header nav {
     margin: 0 0 0 25px;
     padding: 35px 0 0 0;
