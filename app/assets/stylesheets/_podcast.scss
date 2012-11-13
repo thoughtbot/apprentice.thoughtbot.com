@@ -85,7 +85,7 @@ body#podcast {
     @include box-sizing(border-box);
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     audio {
       width: 100%;
     }

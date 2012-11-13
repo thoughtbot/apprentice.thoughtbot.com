@@ -97,7 +97,7 @@ section#products {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     margin-bottom: lh(2);
 
     ul {
@@ -113,7 +113,7 @@ section#products {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     margin-bottom: lh(2);
 
     ul {

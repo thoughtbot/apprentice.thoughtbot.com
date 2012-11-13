@@ -6,7 +6,7 @@ section.open-source {
     list-style: none;
     margin-bottom: lh(3); /*line hight to maintain baseline grid*/
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       margin-bottom: 0;
     }
 
@@ -109,7 +109,7 @@ section.open-source {
         }
       }
 
-      @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+      @include media($small) {
         width: flex-grid(12);
         margin: 0 0 lh() 0;
 
@@ -188,7 +188,7 @@ section#events {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     p.events-intro {
       float: none;
       width: flex-grid(12);

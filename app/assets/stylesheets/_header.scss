@@ -7,15 +7,19 @@ header#main-header {
     border-bottom: 1px solid #DCDCDC;
     padding-bottom: lh();
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       padding-bottom: 0;
     }
 
     h1 {
       margin: 42px 0 24px;
 
-      @media screen and (min-width: 751px) {
+      @include media($medium) {
         float: left;
+      }
+
+      @include media($small) {
+        margin: lh(.75) 0;
       }
 
       a {
@@ -25,7 +29,7 @@ header#main-header {
         width: 242px;
         text-indent: -9999px;
 
-        @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+        @include media($small) {
           background-position: center center;
           display: block;
           width: auto;
@@ -43,18 +47,18 @@ header#main-header {
       margin-top: 72px;
       @extend .clearfix;
 
-      @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+      @include media($small) {
         border-top: 1px solid #dcdcdc;
         margin: 0;
-        padding: lh(.5) 0;
+        padding: 0;
       }
 
-      @media screen and (min-width: 751px) {
+      @include media($medium) {
         float: right;
       }
 
       li {
-        @media screen and (min-width: 751px) {
+        @include media($medium) {
           float: left;
         }
 
@@ -66,8 +70,9 @@ header#main-header {
           line-height: lh();
           margin: 0 lh();
 
-          @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
-            padding: lh(.5);
+          @include media($small) {
+            padding: lh(.5) 0;
+            text-align: center;
           }
 
           &:hover {

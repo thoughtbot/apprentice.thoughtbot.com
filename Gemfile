@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'thin'
 gem 'bourbon', '~> 2.1.1'
+gem 'neat'
 
 group :development do
   gem 'foreman'

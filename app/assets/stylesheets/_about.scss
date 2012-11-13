@@ -51,7 +51,7 @@ section#people {
         }
       }
 
-      @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+      @include media($small) {
         float: none;
         width: flex-grid(12);
       }

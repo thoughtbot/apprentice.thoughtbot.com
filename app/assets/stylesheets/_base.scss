@@ -8,7 +8,7 @@ body {
   text-align: center;
   padding: 0 20px;
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     -webkit-text-size-adjust: none;
   }
 }
@@ -32,6 +32,12 @@ h2 {
   font-weight: 200;
   line-height: lh(2);
   margin-bottom: lh(2);
+
+  @include media($small) {
+    font-size: 24px;
+    line-height: lh(1.4);
+    margin-bottom: lh(1.33);
+  }
 }
 
 h3 {
@@ -85,6 +91,18 @@ blockquote {
     line-height: lh();
     margin: 0;
   }
+
+  @include media($small) {
+    float: none;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 18px;
+    width: auto;
+
+    p.author {
+      margin: - lh(.5) 0 0;
+    }
+  }
 }
 
 a {
@@ -112,18 +130,20 @@ img {
   background: url('/images/shadowing.png') center top no-repeat;
   padding-top: lh(3);
   text-align: center;
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
-      @include background-size(contain);
-    }
+
+  @include media($small) {
+    @include background-size(contain);
+    padding-top: lh(1.5);
+  }
 
   h1 {
     line-height: lh(3);
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       font-size: 32px;
       font-weight: 600;
-      line-height: lh(2);
-      text-align: left;
+      line-height: lh(1.5);
+      text-align: center;
     }
 
     span.coupon {
@@ -131,7 +151,7 @@ img {
       font-size: 0.8em;
       font-weight: 400;
     }
-}
+  }
 
   h2 {
     color: #736B6C;

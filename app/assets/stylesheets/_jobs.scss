@@ -3,6 +3,10 @@ div#jobs-wrapper {
   @extend .primary;
   padding-top: lh(2);
 
+  @include media($small) {
+    padding-top: 0;
+  }
+
   ul.job-openings {
     @extend .clearfix;
     list-style: none;
@@ -81,7 +85,7 @@ div#jobs-wrapper {
       }
     }
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       section.about-thoughtbot, section.extra-info {
         float: none;
         width: 100%;
@@ -112,7 +116,7 @@ div.more-about-us-wrapper {
         width: flex-grid(4);
         margin-right: flex-gutter();
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       width: 100%;
       margin-right: 0;
       float: none;
@@ -169,7 +173,7 @@ div#jobs-wrapper.job-description {
     width: flex-grid(8);
   }
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       section#position-title, section.position-description {
         float: none;
         width: 100%;
@@ -187,7 +191,7 @@ div#jobs-wrapper.job-description {
       list-style: none;
     }
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       float: none;
       width: auto;
     }

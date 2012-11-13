@@ -3,12 +3,12 @@
   text-align: left;
   width: flex-grid(12);
 
-  @media screen and (min-width: 751px) {
+  @include media($medium) {
     max-width: 1122px;
     min-width: 720px;
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     max-width: 420px;
   }
 }
@@ -57,10 +57,19 @@
   border-top: 1px solid #DCDCDC;
   padding: (lh(2) - 1) 20px (lh(2) - 1);
   margin: 0 -20px;
+
+  @include media($small) {
+    padding: lh(1.5) 20px lh(2);
+  }
 }
 
 .secondary-header {
   padding-top: lh(3);
+
+  @include media($small) {
+    margin-top: lh(1.5);
+    padding-top: 0;
+  }
 }
 
 .external-link {

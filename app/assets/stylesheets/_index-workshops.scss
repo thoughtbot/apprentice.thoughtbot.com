@@ -49,7 +49,7 @@ section#workshops {
     }
   }
 
-  @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+  @include media($small) {
     section#about-workshops {
       float: none;
       width: auto;
@@ -57,16 +57,13 @@ section#workshops {
     }
 
     blockquote {
-      float: none;
       width: auto;
-      padding-left: flex-gutter()*3;
-      margin-top: lh(2);
     }
 
     section#current-workshops {
       float: left;
       width: flex-grid(12);
-      margin-top: lh(2);
+      margin-top: lh(1.5);
     }
   }
 }

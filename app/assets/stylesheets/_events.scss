@@ -6,7 +6,7 @@ section#entries {
     margin: 0 auto;
     width: grid-width(8);
 
-    @media screen and (max-width: 750px), screen and (max-device-width: 480px) {
+    @include media($small) {
       width: 100%;
     }
 
