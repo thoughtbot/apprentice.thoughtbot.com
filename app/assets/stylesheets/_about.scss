@@ -54,6 +54,39 @@ section#people {
       @include media($small) {
         float: none;
         width: flex-grid(12);
+
+        div.person-photo {
+          float: none;
+          text-align: center;
+          width: 100%;
+
+          img {
+            display: inline;
+            height: 150px;
+          }
+        }
+
+        div.person-info {
+          margin-bottom: 0;
+          width: 100%;
+
+          p:last-child {
+            margin-bottom: 0;
+          }
+
+          h2, h3 {
+            text-align: center;
+          }
+
+          h2 {
+            line-height: lh();
+            margin-top: lh(.75);
+          }
+
+          h3 {
+            margin-bottom: lh(.5);
+          }
+        }
       }
     }
   }
