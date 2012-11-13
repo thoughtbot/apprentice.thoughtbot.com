@@ -61,8 +61,8 @@
     <div class="position">
       <div class="input select required">
         <label class="select required" for="applicant_position">
+          Which position are you applying for?
           <abbr title="required">*</abbr>
-          Position
         </label>
         <select class="select required" id="applicant_position" name="applicant[position]" required="required">
           <option value=""></option>
@@ -95,28 +95,32 @@
       </span>
       <input name="applicant[location_ids][]" type="hidden" value="">
     </div>
+
     <div class="input string required">
       <label class="string required" for="applicant_name">
-        <abbr title="required">*</abbr>
         Name
+        <abbr title="required">*</abbr>
       </label>
       <input class="string required" id="applicant_name" maxlength="255" name="applicant[name]" required="required" size="50" type="text">
     </div>
+
     <div class="input email required">
       <label class="email required" for="applicant_email">
-        <abbr title="required">*</abbr>
         Email
+        <abbr title="required">*</abbr>
       </label>
       <input class="string email required" id="applicant_email" maxlength="255" name="applicant[email]" required="required" size="50" type="email">
     </div>
+
     <div class="input text required">
       <label class="text required" for="applicant_cover_letter">
-        <abbr title="required">*</abbr>
         Cover letter
+        <abbr title="required">*</abbr>
       </label>
       <textarea class="text required" cols="40" id="applicant_cover_letter" name="applicant[cover_letter]" required="required" rows="20">
       </textarea>
     </div>
+
     <div class="input string optional">
       <label class="string optional" for="applicant_resume_link">
         Resume link

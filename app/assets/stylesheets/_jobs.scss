@@ -263,8 +263,80 @@ div#jobs-wrapper.job-description {
 // Job Form
 //************************************************************************//
 
+@mixin input-style {
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  @include box-shadow(inset 0 1px 2px #aaaaaa);
+  @include box-sizing(border-box);
+  font: 14px "skolar-1", "skolar-2", Georgia, serif;
+  line-height: 24px;
+  margin: 0;
+}
+
 div#jobs-wrapper {
   section#job-form {
+    form {
+      border-top: 4px solid #ad141e;
+      .required {
+        font-weight: normal;
+      }
+
+      abbr {
+        color: red;
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      .position {
+        margin-top: 24px;
+        font-weight: bold;
+        line-height: 24px;
+      }
+
+      div.check_boxes {
+        margin-bottom: 54px;
+        > label {
+          display: block;
+        }
+        label {
+          margin-right: 10px;
+        }
+        input {
+          margin-top: 4px;
+          margin-right: 5px;
+        }
+      }
+
+      select {
+        width: 30%;
+      }
+
+      #applicant_resume_link, #applicant_name {
+        @include input-style;
+      }
+
+      select, div.email, div.text, #applicant_resume_link, #applicant_name {
+       margin-bottom: 34px;
+
+        textarea {
+          @include input-style;
+        }
+        input {
+          @include input-style;
+          box-sizing: border-box;
+        }
+      }
+      .new-controls {
+        input {
+          @extend .button;
+          padding: lh(.5) lh(1.5);
+        }
+      }
+    }
+
     h1#logo, #bottom{
       display: none;
     }

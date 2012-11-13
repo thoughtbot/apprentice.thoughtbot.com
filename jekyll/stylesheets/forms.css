@@ -1,11 +1,8 @@
 .wrapper, .primary, .secondary {
   margin: 0 auto;
   text-align: left;
-<<<<<<< HEAD
   width: 100%; }
-=======
-  width: 100.0%; }
->>>>>>> updates stle on events page
+
   @media screen and (min-width: 751px) {
     .wrapper, .primary, .secondary {
       max-width: 1122px;
@@ -91,8 +88,9 @@
   .external-link:hover {
     background-position: right 8px; }
 
-/* basic site styles
----------------------------------------- */
+/*basic site styles
+----------------------------------------*/
+
 body {
   background-color: #FCFCFC;
   border-top: 4px solid #ad141e;
@@ -200,8 +198,9 @@ img {
     line-height: 24px;
     margin-bottom: 0; }
 
-/* Forms
----------------------------------------- */
+/*Forms
+----------------------------------------*/
+
 .subtle, form.wufoo ul li.name span label, form.wufoo ul li.pitch div label {
   color: #aaa;
   font-size: 11px;
@@ -265,13 +264,9 @@ form.wufoo {
         font: 14px "skolar-1", "skolar-2", Georgia, serif;
         line-height: 24px;
         margin: 0;
-<<<<<<< HEAD
         max-width: 100%;
-=======
-        max-width: 100.0%;
->>>>>>> updates stle on events page
         padding: 11px 12px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/
+        line-height divided by two so that the bottom and top will align to the baseline grid
         width: 100%; }
         form.wufoo ul li input[type="text"]:focus, form.wufoo ul li input[type="email"]:focus, form.wufoo ul li input.text:focus, form.wufoo ul li textarea:focus {
           outline-color: #ad141e; }
@@ -279,7 +274,7 @@ form.wufoo {
         display: block;
         margin: 0;
         padding: 10px 48px;
-        /*line-height divided by two so that the bottom and top will align to the baseline grid*/ }
+        line-height divided by two so that the bottom and top will align to the baseline grid }
         form.wufoo ul li input#saveForm:hover {
           cursor: pointer; }
         form.wufoo ul li input#saveForm:active {
@@ -289,11 +284,9 @@ form.wufoo {
         font-size: 14px;
         font-style: italic;
         font-weight: normal;
-<<<<<<< HEAD
+
         margin: 24px 24px 24px; }
-=======
-        margin: 24px 24px 48px; }
->>>>>>> updates stle on events page
+
       form.wufoo ul li.focused {
         background: none; }
         form.wufoo ul li.focused label {
