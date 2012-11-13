@@ -153,45 +153,47 @@ section#portfolio {
         height: lh(9) - 10px; // Subtracts 2 px for border on parent
         text-indent: -9999px;
         @include background-size(cover);
+        background-position: center center;
+        background-repeat: no-repeat;
       }
 
       &#vpp a {
-        background: url('/images/portfolio/thumb/vpp.jpg') center center no-repeat;
+        background-image: url('/images/portfolio/thumb/vpp.jpg');
       }
 
       &#gulfcoast a {
-        background: url('/images/portfolio/thumb/gulfcoast.jpg') center center no-repeat;
+        background-image: url('/images/portfolio/thumb/gulfcoast.jpg');
       }
 
       &#awesome a {
-        background: url('/images/portfolio/thumb/awesome.jpg') center center no-repeat;
+        background-image: url('/images/portfolio/thumb/awesome.jpg');
       }
 
       &#owneraide a {
-        background: url('/images/portfolio/thumb/owneraide.jpg') center center no-repeat;
+        background-image: url('/images/portfolio/thumb/owneraide.jpg');
       }
 
       &#iora {
         @extend .row-end;
+
         a {
-          background: url('/images/portfolio/thumb/iora.jpg') center center no-repeat;
+          background-image: url('/images/portfolio/thumb/iora.jpg');
         }
       }
 
-      &#stattleship {
-        a {
-          background: url('/images/portfolio/thumb/stattleship.jpg') center center no-repeat;
-        }
+      &#stattleship a {
+        background-image: url('/images/portfolio/thumb/stattleship.jpg');
       }
 
       &#tastedmenu a {
-        background: url('/images/portfolio/thumb/tastedmenu.jpg') center center no-repeat;
+        background-image: url('/images/portfolio/thumb/tastedmenu.jpg');
       }
 
       &#umbrellatoday {
         @extend .row-end;
+
         a {
-          background: url('/images/portfolio/thumb/umbrellatoday.jpg') center center no-repeat;
+          background-image: url('/images/portfolio/thumb/umbrellatoday.jpg');
         }
       }
     }
@@ -201,27 +203,25 @@ section#portfolio {
     margin: lh(1.5) 0;
 
     ul {
+      height: 726px; // height of 3 portfolio items
       margin: 0;
+      overflow: hidden;
 
       li {
         float: left;
-        margin: lh() flex-gutter() 0 0;
-        width: flex-grid(6);
+        margin: lh() 0 0 0;
+        width: 100%;
+
+        &:hover {
+          @include transform(scale(1));
+        }
 
         &:first-child {
           margin-top: 0;
         }
 
-        &:nth-child(2) {
-          margin-top: 0;
-        }
-
-        &:nth-child(2n) {
-          margin-right: 0;
-        }
-
         a {
-          height: lh(7) - 10px;
+          height: lh(9);
         }
       }
     }
