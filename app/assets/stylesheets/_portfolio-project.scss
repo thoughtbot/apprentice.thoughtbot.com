@@ -38,5 +38,50 @@ body#portfolio {
       margin-top: lh();
     }
   }
+
+  @include media($small) {
+    header {
+      h2 {
+        font-size: 24px;
+        line-height: lh(1.4);
+        text-align: center;
+        margin-bottom: lh(1.33);
+      }
+    }
+
+    #portfolio-slider {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      ul {
+        margin: 0;
+      }
+    }
+
+    .primary {
+      .nav {
+        margin: lh(1.5) 0;
+        overflow: auto;
+
+        a {
+          margin-bottom: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 48%;
+
+          &.right {
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    #get-started {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0;
+      padding-bottom: lh(1.5);
+    }
+  }
 }
 
