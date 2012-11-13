@@ -59,7 +59,7 @@
   margin: 0 -20px;
 
   @include media($small) {
-    padding: lh(1.5) 20px lh(2);
+    padding: lh(1.5) 20px;
   }
 }
 

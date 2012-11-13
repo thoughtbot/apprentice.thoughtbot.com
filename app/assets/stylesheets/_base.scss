@@ -160,3 +160,9 @@ img {
     margin-bottom: 0;
   }
 }
+
+@include media($small) {
+  br {
+    display: none;
+  }
+}

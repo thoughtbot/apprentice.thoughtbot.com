@@ -26,6 +26,21 @@ div#jobs-wrapper {
         padding: lh(.5) lh(1.5);
       }
     }
+
+    @include media($small) {
+      margin-bottom: lh(1.5);
+
+      li {
+        margin: 5px 0;
+        width: 100%;
+
+        a {
+          font-size: 120%;
+          padding: lh(.33) 0;
+        }
+      }
+    }
+
   }
 
   section#jobs-about {
@@ -40,6 +55,11 @@ div#jobs-wrapper {
         font: 24px $header;
         line-height: lh(1.5);
         margin-bottom: lh();
+
+        @include media($small) {
+          font: 100% $header;
+          line-height: lh();
+        }
       }
 
       section.video {
@@ -104,6 +124,10 @@ div.more-about-us-wrapper {
   @extend .secondary-wrapper;
   margin-top: lh(2);
 
+  @include media($small) {
+    margin-top: 0;
+  }
+
   section#more-about-us {
     @extend .wrapper;
     @extend .clearfix;
@@ -116,17 +140,28 @@ div.more-about-us-wrapper {
         width: flex-grid(4);
         margin-right: flex-gutter();
 
-    @include media($small) {
-      width: 100%;
-      margin-right: 0;
-      float: none;
-    }
         &:nth-child(3n) {
           margin-right: 0;
         }
 
         h4 {
           margin-bottom: lh();
+        }
+      }
+    }
+
+    @include media($small) {
+      ul {
+        margin-bottom: 0;
+
+        li {
+          width: 100%;
+          margin-right: 0;
+          float: none;
+
+          &:last-child p:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -143,6 +178,15 @@ div#jobs-wrapper.job-description {
     margin: 0 0 lh();
     padding: lh(1);
     @include inline-block();
+
+    @include media($small) {
+      padding: lh(.6);
+      width: 100%;
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
 
     h3 {
       color: #fff;
