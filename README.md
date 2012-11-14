@@ -17,16 +17,6 @@ Editing
 * Run `bundle exec jekyll` to generate files to the `public/` directory
 * `git commit` the additions and push
 
-Deploying
----------
-
-Heroku remote:
-
-    git remote add heroku git@heroku.com:thoughtbotdotcom.git
-
-If you need to add yourself as a collaborator to the Heroku app, sign in as
-support@thoughtbot.com (credentials are in backpack) and add your main email.
-
 Run locally
 -----------
 
@@ -58,8 +48,13 @@ Assets for the blog other than CSS can be found in `jekyll/assets`.
 To generate the Sass for the blog run sass watch from the root directory:
     $ sass --watch jekyll/stylesheets/robots:public/assets/robots -r ./jekyll/stylesheets/robots/bourbon/lib/bourbon.rb
 
-
 Deploying
 ---------
 
+Add a `heroku` remote:
 
+    git remote add heroku git@heroku.com:thoughtbotdotcom.git
+
+Push:
+
+    git push heroku master
