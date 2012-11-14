@@ -1,0 +1,137 @@
+/*thoughtbot red*/
+/*line-height of all the type on the site*/
+/*one grid column*/
+/*size of one gutter*/
+@media only screen and (min-width: 480px) {
+  section#container {
+    margin-bottom: 1.6rem; } }
+@media only screen and (min-width: 760px) {
+  body {
+    font-size: 1.125em;
+    line-height: 1.92rem; }
+
+  section#container {
+    margin-bottom: -20px;
+    width: 740px; }
+    section#container header {
+      margin: 3.2rem 0; }
+      section#container header h2.logo {
+        float: left;
+        text-align: left;
+        width: 145px; }
+        section#container header h2.logo a {
+          margin: 15px 0 0 30px;
+          display: block; }
+      section#container header hgroup {
+        float: left;
+        text-align: left;
+        padding: 2.4rem 0 0 25px; }
+    section#container section#posts .post {
+      margin: 0 0 4.8rem 0;
+      padding: 0 0 4.8rem 170px;
+      position: relative; }
+      section#container section#posts .post:only-of-type {
+        border-bottom: 0; }
+      section#container section#posts .post .meta-info {
+        left: 10px;
+        text-align: left;
+        position: absolute;
+        top: 18px;
+        width: 145px;
+        opacity: .5;
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+        -ms-transition: all 0.15s ease-out 0;
+        -o-transition: all 0.15s ease-out 0;
+        transition: all 0.15s ease-out 0; }
+        section#container section#posts .post .meta-info:hover {
+          opacity: 1; }
+        section#container section#posts .post .meta-info p.post-date {
+          border-bottom: none;
+          margin: 0 0 2.4rem 0;
+          padding: 0;
+          width: 100%; }
+          section#container section#posts .post .meta-info p.post-date:before, section#container section#posts .post .meta-info p.post-date:after {
+            content: normal; }
+          section#container section#posts .post .meta-info p.post-date a {
+            color: #333; }
+        section#container section#posts .post .meta-info p.tagged {
+          display: block; }
+        section#container section#posts .post .meta-info ul.tags {
+          display: block; }
+          section#container section#posts .post .meta-info ul.tags li {
+            margin: 0 0 0.4rem 0;
+            position: relative; }
+            section#container section#posts .post .meta-info ul.tags li:after {
+              content: "\2014";
+              font-size: 13px;
+              left: -14px;
+              position: absolute;
+              top: 0; }
+        section#container section#posts .post .meta-info p.comments {
+          display: block; }
+      section#container section#posts .post img {
+        display: inline-block; }
+      section#container section#posts .post table {
+        width: 570px; }
+      section#container section#posts .post section.post-footer p.comments {
+        display: none; }
+      section#container section#posts .post section.post-footer div.tags {
+        display: none; }
+      section#container section#posts .post h1.title {
+        text-align: left; }
+
+  #pagination {
+    padding: 0 0 1.6rem 170px; }
+
+  #pagination #older-link a {
+    width: 145px;
+    background-position: 0 13px; }
+
+  #pagination #newer-link a {
+    width: 145px;
+    background-position: right -15px; }
+
+  footer section#footer-container {
+    width: 723px; }
+    footer section#footer-container section.etc {
+      margin: 0;
+      float: left;
+      width: 65%; }
+    footer section#footer-container section#promo {
+      float: right;
+      width: 30%; } }
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 1.25em;
+    line-height: 2.24rem; }
+
+  section#container {
+    padding: 20px 0 0;
+    width: 995px; }
+    section#container header h2.logo a {
+      height: 85px;
+      width: 85px; }
+    section#container header nav {
+      margin: 0 0 0 25px;
+      padding: 35px 0 0 0;
+      width: 230px; }
+      section#container header nav ul {
+        margin-top: 0; }
+        section#container header nav ul li {
+          width: 42px; }
+    section#container section#posts .post img {
+      max-width: 570px;
+      margin-bottom: 10px; }
+    section#container section#posts .post.photo .post-footer p.comments, section#container section#posts .post.video .post-footer p.comments {
+      padding-bottom: 0px;
+      position: relative;
+      top: -30px; }
+
+  #pagination {
+    padding-bottom: 30px; }
+
+  footer {
+    padding: 40px 20px 60px; }
+    footer section#footer-container {
+      width: 995px; } }
