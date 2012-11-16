@@ -28,6 +28,10 @@
   padding: lh(1.5);
   text-shadow: 0 -1px 0 darken($red, 10%);
 
+  @include media($small) {
+    text-align: center;
+  }
+
   &:hover {
     @include box-shadow(inset 0 1px 0 lighten($red, 30%));
     background: lighten($red, 5%);

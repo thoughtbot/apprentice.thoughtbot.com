@@ -209,7 +209,6 @@ div#jobs-wrapper.job-description {
     h2 {
       margin-bottom: lh();
     }
-
   }
 
   section.position-description {
@@ -217,13 +216,26 @@ div#jobs-wrapper.job-description {
     width: flex-grid(8);
   }
 
-    @include media($small) {
-      section#position-title, section.position-description {
-        float: none;
-        width: 100%;
-        margin-right: 0;
+  @include media($small) {
+    section#position-title {
+      text-align: center;
+
+      h2 {
+        line-height: 1em;
+        margin-bottom: lh(1);
+      }
+
+      > a {
+        margin-bottom: lh(1);
       }
     }
+
+    section#position-title, section.position-description {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
   // Style for client jobs
   //---------------------------------------- //
   section#positions {
