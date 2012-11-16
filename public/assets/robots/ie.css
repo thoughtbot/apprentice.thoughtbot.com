@@ -549,7 +549,7 @@ section#container {
             section#container section#posts .post section.post-footer div.tags ul li:first-child {
               padding-left: 50px; }
               section#container section#posts .post section.post-footer div.tags ul li:first-child:after {
-                content: 'Tagged:';
+                content: 'Learn more:';
                 font-size: 0.85714em;
                 font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Helvetica, sans-serif;
                 font-weight: 400;
