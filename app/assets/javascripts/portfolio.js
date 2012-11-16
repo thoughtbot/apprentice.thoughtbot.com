@@ -46,7 +46,7 @@ $('body#portfolio').ready(function(){
     list.empty();
 
     for(var i = 1; i <= images[divname]; i++) {
-      list.append("<li><img src='/images/portfolio/large/" + divname + "-" + i + ".jpg' /></li>");
+      list.append("<li><img src='/assets/portfolio/large/" + divname + "-" + i + ".jpg' /></li>");
     }
 
     list.nivoSlider({

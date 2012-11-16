@@ -23,7 +23,7 @@ header#main-header {
       }
 
       a {
-        background: url('/images/thoughtbot-logo.png') 0 0 no-repeat;
+        background: image-url('thoughtbot-logo.png') 0 0 no-repeat;
         display: block;
         height: 65px;
         width: 242px;
@@ -36,7 +36,7 @@ header#main-header {
         }
 
         @media screen and (-webkit-min-device-pixel-ratio: 2) {
-          background-image: url('/images/thoughtbot-logo-hirez.png');
+          background-image: image-url('thoughtbot-logo-hirez.png');
           @include background-size(contain);
         }
       }

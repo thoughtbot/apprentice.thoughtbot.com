@@ -56,19 +56,19 @@
           display:block;
           width: 8px;
           height: 9px;
-          background: url('/images/portfolio/slider-control.png') -11px 0 no-repeat;
+          background: image-url('portfolio/slider-control.png') -11px 0 no-repeat;
           float: right;
           margin-right: 6px;
 
           &.active {
-            background: url('/images/portfolio/slider-control.png') 0 0 no-repeat;
+            background: image-url('portfolio/slider-control.png') 0 0 no-repeat;
           }
         }
       }
 
       div.nivo-directionNav  {
         a {
-          background: url('/images/portfolio/arrows.png') 0 0 no-repeat;
+          background: image-url('portfolio/arrows.png') 0 0 no-repeat;
           display: block;
           height: 40px;
           position: absolute;
@@ -158,42 +158,42 @@ section#portfolio {
       }
 
       &#vpp a {
-        background-image: url('/images/portfolio/thumb/vpp.jpg');
+        background-image: image-url('portfolio/thumb/vpp.jpg');
       }
 
       &#gulfcoast a {
-        background-image: url('/images/portfolio/thumb/gulfcoast.jpg');
+        background-image: image-url('portfolio/thumb/gulfcoast.jpg');
       }
 
       &#awesome a {
-        background-image: url('/images/portfolio/thumb/awesome.jpg');
+        background-image: image-url('portfolio/thumb/awesome.jpg');
       }
 
       &#owneraide a {
-        background-image: url('/images/portfolio/thumb/owneraide.jpg');
+        background-image: image-url('portfolio/thumb/owneraide.jpg');
       }
 
       &#iora {
         @extend .row-end;
 
         a {
-          background-image: url('/images/portfolio/thumb/iora.jpg');
+          background-image: image-url('portfolio/thumb/iora.jpg');
         }
       }
 
       &#stattleship a {
-        background-image: url('/images/portfolio/thumb/stattleship.jpg');
+        background-image: image-url('portfolio/thumb/stattleship.jpg');
       }
 
       &#tastedmenu a {
-        background-image: url('/images/portfolio/thumb/tastedmenu.jpg');
+        background-image: image-url('portfolio/thumb/tastedmenu.jpg');
       }
 
       &#umbrellatoday {
         @extend .row-end;
 
         a {
-          background-image: url('/images/portfolio/thumb/umbrellatoday.jpg');
+          background-image: image-url('portfolio/thumb/umbrellatoday.jpg');
         }
       }
     }

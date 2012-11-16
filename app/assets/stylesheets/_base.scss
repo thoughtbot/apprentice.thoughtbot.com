@@ -75,7 +75,7 @@ img {
 }
 
 blockquote {
-  background: url('/images/quote.png') no-repeat;
+  background: image-url('quote.png') no-repeat;
   border: 0;
   font: 300 18px $header;
   margin: 0 flex-gutter() 0 0;
@@ -127,7 +127,7 @@ img {
 }
 
 #page-header {
-  background: url('/images/shadowing.png') center top no-repeat;
+  background: image-url('shadowing.png') center top no-repeat;
   padding-top: lh(3);
   text-align: center;
 

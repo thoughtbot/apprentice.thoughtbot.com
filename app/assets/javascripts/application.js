@@ -9,7 +9,9 @@
 //
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
-//= require portfolio
+//
+//= require jquery-1.4.3.min
+//= require_tree .
 
 // disable automatic initialization
 $.jqwidont.auto(false);
