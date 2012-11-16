@@ -540,18 +540,18 @@ end
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script>
-      jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
+      jQuery(document).ready(function() {
+        jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
 
-      jQuery(".page-top").each(function(i) {
-        var post = jQuery(this);
-        if(parseInt(post.attr('id')) <= 722112946) {
-          post.addClass("old");
-        }
+        jQuery(".page-top").each(function(i) {
+          var post = jQuery(this);
+          if(parseInt(post.attr('id')) <= 722112946) {
+            post.addClass("old");
+          }
+        });
+
+        jQuery('section#posts iframe').wrap('<div class="video-container" />');
       });
-
-      jQuery('section#posts iframe').wrap('<div class="video-container" />');
-
-    });
     </script>
 
      <script type="text/javascript">
