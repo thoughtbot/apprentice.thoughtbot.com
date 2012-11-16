@@ -484,7 +484,7 @@ section#container {
 }
 
 #pagination #older-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") 0 10px no-repeat;
+  background: image-url("robots/arrows.png") 0 10px no-repeat;
   margin: 0 0 0 -3px;
 }
 
@@ -496,7 +496,7 @@ section#container {
 }
 
 #pagination #newer-link a {
-  background: url("http://thoughtbot.com/assets/giantrobots/images/arrows.png") right -18px no-repeat;
+  background: image-url("robots/arrows.png") right -18px no-repeat;
   margin: 0 -3px 0 0;
 }
 
@@ -595,7 +595,7 @@ footer {
 
 a {
   &#twitter {
-    background: url("http://thoughtbot.com/assets/giantrobots/images/twitter.svg") -8px -1px no-repeat;
+    background: image-url("/robots/twitter.svg") -8px -1px no-repeat;
 
     &:hover {
       background-position: -8px -48px;
@@ -603,7 +603,7 @@ a {
   }
 
   &#contact {
-    background: url("http://thoughtbot.com/assets/giantrobots/images/contact.svg") 0 -1px no-repeat;
+    background: image-url("/robots/contact.svg") 0 -1px no-repeat;
 
     &:hover {
       background-position: 0 -47px;
@@ -611,7 +611,7 @@ a {
   }
 
   &#rss {
-    background: url("http://thoughtbot.com/assets/giantrobots/images/rss.svg") 0px 0px no-repeat;
+    background: image-url("/robots/rss.svg") 0px 0px no-repeat;
 
     &:hover {
       background-position: 0px -47px;
