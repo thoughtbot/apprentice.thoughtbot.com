@@ -38,6 +38,8 @@ section#workshops {
       margin-bottom: 0;
 
       li {
+        margin-bottom: lh(.5);
+
         a {
           @extend .external;
         }
