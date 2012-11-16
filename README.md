@@ -56,8 +56,9 @@ Deploying
 
 Add a `heroku` remote:
 
-    git remote add heroku git@heroku.com:thoughtbotdotcom.git
+    git remote add production git@heroku.com:thoughtbotdotcom.git
+    git remote add staging git@heroku.com:thoughtbot-staging.git
 
 Push:
 
-    git push heroku master
+    git push staging master
