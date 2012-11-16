@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+  <itunes:new-feed-url>http://learn.thoughtbot.com/podcast.xml</itunes:new-feed-url>
   <title>Giant Robots Smashing into other Giant Robots</title>
   <link href="http://thoughtbot.com/podcast"/>
   <link type="application/atom+xml" rel="self" href="http://thoughtbot.com/podcast.atom"/>
-  <updated>2012-11-16T14:56:52-05:00</updated>
+  <updated>2012-11-16T16:43:16-05:00</updated>
   <id>http://thoughtbot.com/podcast</id>
   <author>
     <name>thoughtbot</name>
@@ -903,5 +904,4 @@
       &lt;a href="http://gr-podcast.s3.amazonaws.com/thoughtbot-001.mp3"&gt;Download&lt;/a&gt;
     </content>
   </entry>
-  
 </feed>

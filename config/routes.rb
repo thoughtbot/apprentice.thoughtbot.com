@@ -11,6 +11,8 @@ ThoughtbotDotCom::Application.routes.draw do
   get 'services/training' => redirect('http://learn.thoughtbot.com')
   get 'training' => redirect('http://learn.thoughtbot.com')
   get 'd4d-resources' => redirect('http://learn.thoughtbot.com/d4d-resources')
+  get 'podcast' => redirect('http://learn.thoughtbot.com/podcast')
+  get 'podcast/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
 
   # Bourbon and Neat redirects
   get 'bourbon' => redirect('http://bourbon.io/')
