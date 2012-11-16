@@ -35,7 +35,7 @@ Run the server:
     # in another terminal
     $ rails s
 
-Then go to [http://localhost:3000](http://localhost:3000)
+Then go to [http://localhost:3000](http://localhost:3000).
 
 Files will be auto-regenerated.  If your changes aren't showing up correctly,
 check for parse errors by running:
@@ -56,9 +56,17 @@ Deploying
 
 Add a `heroku` remote:
 
-    git remote add production git@heroku.com:thoughtbotdotcom.git
+    git remote add production git@heroku.com:thoughtbot-production.git
     git remote add staging git@heroku.com:thoughtbot-staging.git
 
-Push:
+Deploy to staging:
 
     git push staging master
+
+See http://staging.thoughtbot.com.
+
+Deploy to production:
+
+    git push production master
+
+See http://thoughtbot.com.
