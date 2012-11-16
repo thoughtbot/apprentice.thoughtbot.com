@@ -8,13 +8,14 @@ We use jekyll to generate files to `public/`, which then gets served by Rails.
 We also use Rails to get real 301 redirects instead of the `<meta>` redirects in
 jekyll.
 
+We are using the Rails asset pipeline.
+
 Editing
 -------
 
 * Edit files in the `jekyll/` directory. Don't edit files in "public/" because
   those are generated from the "jekyll/" directory by running "jekyll".
 * Styles for the main site are in `app/assets/stylesheets`
-* Styles for the blog are in `jekyll/stylesheets/robots`
 * Run `bundle exec jekyll` to generate files to the `public/` directory
 * `git commit` the additions and push
 
@@ -44,10 +45,11 @@ check for parse errors by running:
 The Blog
 --------
 
-Assets for the blog other than CSS can be found in `jekyll/assets`.
+Styles are in `app/assets/stylesheets/robots`.
 
-To generate the Sass for the blog run sass watch from the root directory:
-    $ sass --watch jekyll/stylesheets/robots:public/assets/robots -r ./jekyll/stylesheets/robots/bourbon/lib/bourbon.rb
+Images are in `app/assets/images/robots`.
+
+It will auto-regenerate because it's using the asset pipeline.
 
 Deploying
 ---------
