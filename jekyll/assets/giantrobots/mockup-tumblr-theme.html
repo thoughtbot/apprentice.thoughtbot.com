@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/assets/robots/desktop.css" media="screen and (min-width:480px)">
 
     <!--[if (lt IE 9) & (!IEMobile)]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
+    <link rel="stylesheet" href="/assets/robots/ie.css">
     <![endif]-->
 
     <script type="text/javascript" src="http://use.typekit.com/qwc8nlx.js"></script>
@@ -23,7 +23,7 @@
   <body>
     <section id="container">
       <header>
-        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="http://thoughtbot.com/assets/giantrobots/images/logo.svg" data-png-fallback="images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
+        <h2 class="logo"><a href="http://robots.thoughtbot.com"> <img src="/assets/robots/logo.svg" data-png-fallback="images/logo.png" alt="thoughtbot logo" title="Giant Robots Smashing Into Other Giant Robots" /></a></h2>
 
         <hgroup>
           <h2><a href="http://robots.thoughtbot.com">giant robots smashing into other giant robots</a></h2>
@@ -535,47 +535,11 @@ end
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://thoughtbot.com/assets/giantrobots/javascripts/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/robots/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://www.thoughtbot.com/assets/robots/authors.js" charset="utf-8"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
     <script>
-    jQuery(document).ready(function() {
-    authors = {
-        dancroak: "Dan Croak",
-        qrush: "Nick Quaranto",
-        cpytel: "Chad Pytel",
-        lolconomy: "Mike Burns",
-        asimeoni: "Angelo Simeoni",
-        emill: "Eric Mill",
-        fyates: "Fred Yates",
-        jankowski: "Matt Jankowski",
-        jferris: "Joe Ferris",
-        jyurek: "Jon Yurek",
-        kevin: "Kevin Burg",
-        possibilist: "Floyd Wright",
-        tsaleh: "Tammer Saleh",
-        thoughtbotjc: "Jared Carroll",
-        thoughtbotet: "Eric Torrey",
-        thoughtbotjm: "Jason Martinez",
-        thoughtbotmmk: "Mike McKenna",
-        thoughtbotmr: "Micah Rich",
-        jasonmorrisontb: "Jason Morrison",
-        jdclayton: "Josh Clayton",
-        tristandunn: "Tristan Dunn",
-        ubuwaits: "Chad Mazzola",
-        kylehasmanypixels: "Kyle Fiedler",
-        hgimenez: "Harold Giménez",
-        elindsay: "Emma Lindsay",
-        mmongeau: "Matt Mongeau",
-        plapier: "Phil LaPier",
-        kaishin: "Reda Lemeden"
-      };
-
-      jQuery(".author").each(function(i) {
-        author = this.innerHTML;
-        this.innerHTML = this.innerHTML.replace(author, authors[author]||author);
-      });
-
       jQuery("#dsq-comments code").each(function() { jQuery(this).wrap("<pre></pre>"); });
 
       jQuery(".page-top").each(function(i) {
