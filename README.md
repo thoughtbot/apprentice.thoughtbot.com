@@ -11,7 +11,8 @@ jekyll.
 Editing
 -------
 
-* Edit files in the `jekyll/` directory
+* Edit files in the `jekyll/` directory. Don't edit files in "public/" because
+  those are generated from the "jekyll/" directory by running "jekyll".
 * Styles for the main site are in `app/assets/stylesheets`
 * Styles for the blog are in `jekyll/stylesheets/robots`
 * Run `bundle exec jekyll` to generate files to the `public/` directory
