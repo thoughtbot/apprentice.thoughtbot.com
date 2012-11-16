@@ -595,7 +595,7 @@ footer {
 
 a {
   &#twitter {
-    background: image-url("/robots/twitter.svg") -8px -1px no-repeat;
+    background: image-url("robots/twitter.svg") -8px -1px no-repeat;
 
     &:hover {
       background-position: -8px -48px;
@@ -603,7 +603,7 @@ a {
   }
 
   &#contact {
-    background: image-url("/robots/contact.svg") 0 -1px no-repeat;
+    background: image-url("robots/contact.svg") 0 -1px no-repeat;
 
     &:hover {
       background-position: 0 -47px;
@@ -611,7 +611,7 @@ a {
   }
 
   &#rss {
-    background: image-url("/robots/rss.svg") 0px 0px no-repeat;
+    background: image-url("robots/rss.svg") 0px 0px no-repeat;
 
     &:hover {
       background-position: 0px -47px;

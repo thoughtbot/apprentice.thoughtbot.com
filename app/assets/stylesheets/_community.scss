@@ -55,7 +55,7 @@ section.open-source {
 
         &.paperclip {
           a {
-            background: transparent url('/images/oss/paperclip.png') 22px 2px no-repeat;
+            background: transparent image-url('oss/paperclip.png') 22px 2px no-repeat;
 
             &:hover {
               background-color: #efefef; 
@@ -73,7 +73,7 @@ section.open-source {
           padding-right: 0;
 
           a {
-            background: transparent url('/images/oss/factory-girl.png') 18px 2px no-repeat;
+            background: transparent image-url('oss/factory-girl.png') 18px 2px no-repeat;
 
             &:hover {
               background-color: #efefef; 
