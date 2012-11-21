@@ -6,81 +6,29 @@
 
   <p><a href="/jobs">View our other current openings</a></p>
 
-  <form accept-charset="UTF-8" action="http://hireling-staging.thoughtbot.com/applicants" class="simple_form new_applicant" id="new_applicant" method="post">
-    <div style="margin:0;padding:0;display:inline">
-      <input name="utf8" type="hidden" value="✓">
-    </div>
-    <div class="position">
-      <div class="input select required">
-        <label class="select required" for="applicant_position">
-          Which position are you applying for?
-          <abbr title="required">*</abbr>
-        </label>
-        <select class="select required" id="applicant_position" name="applicant[position]" required="required">
-          <option value=""></option>
-          <option value="Developer">Developer</option>
-          <option value="Designer">Designer</option>
-        </select>
-      </div>
-    </div>
-    <div class="input check_boxes optional">
-      <label class="check_boxes optional">
-        Which of our locations are you interested in?
-      </label>
-      <span class="checkbox">
-        <input class="check_boxes optional" id="applicant_location_ids_1" name="applicant[location_ids][]" type="checkbox" value="1">
-        <label class="collection_check_boxes" for="applicant_location_ids_1">
-          Boston
-        </label>
-      </span>
-      <span class="checkbox">
-        <input class="check_boxes optional" id="applicant_location_ids_2" name="applicant[location_ids][]" type="checkbox" value="2">
-        <label class="collection_check_boxes" for="applicant_location_ids_2">
-          San Francisco
-        </label>
-      </span>
-      <span class="checkbox">
-        <input class="check_boxes optional" id="applicant_location_ids_3" name="applicant[location_ids][]" type="checkbox" value="3">
-        <label class="collection_check_boxes" for="applicant_location_ids_3">
-          Stockholm
-        </label>
-      </span>
-      <input name="applicant[location_ids][]" type="hidden" value="">
-    </div>
+  <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
 
-    <div class="input string required">
-      <label class="string required" for="applicant_name">
-        Name
-        <abbr title="required">*</abbr>
-      </label>
-      <input class="string required" id="applicant_name" maxlength="255" name="applicant[name]" required="required" size="50" type="text">
-    </div>
+  <script type="text/javascript">
+    function getUrlVars() {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for(var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+      }
+      return vars;
+    }
 
-    <div class="input email required">
-      <label class="email required" for="applicant_email">
-        Email
-        <abbr title="required">*</abbr>
-      </label>
-      <input class="string email required" id="applicant_email" maxlength="255" name="applicant[email]" required="required" size="50" type="email">
-    </div>
-
-    <div class="input text required">
-      <label class="text required" for="applicant_cover_letter">
-        Cover letter
-        <abbr title="required">*</abbr>
-      </label>
-      <textarea class="text required" cols="40" id="applicant_cover_letter" name="applicant[cover_letter]" required="required" rows="20">
-      </textarea>
-    </div>
-
-    <div class="input string optional">
-      <label class="string optional" for="applicant_resume_link">
-        Resume link
-      </label>
-      <input class="string optional" id="applicant_resume_link" maxlength="255" name="applicant[resume_link]" size="50" type="text">
-    </div>
-    <div class="new-controls">
-      <input class="button l-full-width" name="commit" type="submit" value="Submit">
-    </div>
-  </form>
+    var x7x1x7 = new WufooForm();
+    x7x1x7.initialize({
+      'userName':'thoughtbot',
+      'formHash':'x7x1x7',
+      'autoResize':true,
+      'height':'1020',
+      'defaultValues':'field17='+ getUrlVars()["position"],
+      'ssl':false
+    });
+    x7x1x7.display();
+  </script>
 </section>
