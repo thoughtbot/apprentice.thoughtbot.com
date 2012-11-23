@@ -42,15 +42,6 @@ check for parse errors by running:
 
     $ jekyll --no-auto
 
-The Blog
---------
-
-Styles are in `app/assets/stylesheets/robots`.
-
-Images are in `app/assets/images/robots`.
-
-It will auto-regenerate because it's using the asset pipeline.
-
 Deploying
 ---------
 
