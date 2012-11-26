@@ -32,6 +32,7 @@ jQuery(document).ready(function() {
     lolconomy: 'Mike Burns',
     lukegriffithsapprentice: 'Luke Griffiths',
     mmongeau: 'Matt Mongeau',
+    oneofthesenames: 'Magnus Gyllenswärd',
     plapier: 'Phil LaPier',
     possibilist: 'Floyd Wright',
     qrush: 'Nick Quaranto',
