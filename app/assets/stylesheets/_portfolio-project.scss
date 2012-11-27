@@ -5,60 +5,79 @@ body#portfolio {
     @extend .primary;
 
     h2 {
-      font-size: 60px;
-      font-family: $header;
       color: #2b2b2b;
-      font-weight: 100;
-      margin-bottom: lh(3);
-    }
-  }
-
-  img.imac {
-    width: flex-grid(10);
-    margin-left: flex-grid(1);
-    max-width: 100%;
-    margin-top: lh(4);
-  }
-
-  section.case {
-    display: inline-block;
-    margin-bottom: lh(2);
-
-    h3 {
-      width: flex-grid(12);
-    }
-
-    section {
-      width: flex-grid(4);
       float: left;
-      margin: 0 flex-gutter() 0 0;
+      font-family: $header;
+      font-size: 60px;
+      font-weight: 100;
+      line-height: 60px;
+      margin: 0 flex-gutter() lh(3) 0;
+      width: flex-grid(6);
     }
 
-    section.summary {
-      margin: 0;
+    section.nav {
+      float: right;
+      margin-top: 20px;
+      text-align: right;
+      width: flex-grid(6);
+
+      a {
+        color: #555;
+        font-style: italic;
+        margin-left: 1em;
+        margin-top: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          color: $red;
+        }
+
+        &.visit {
+          font-style: normal;
+          color: $red;
+          border-bottom: 2px solid $red;
+        }
+      }
     }
   }
 
-  section.quote {
+  > blockquote {
     @extend .secondary-wrapper;
     padding-bottom: lh(4);
     z-index: -1;
 
-    div {
+    > div {
       @extend .secondary;
+      overflow: visible;
+      position: relative;
+
+      &:before {
+        color: #c0c0c0;
+        content: '\201c';
+        font-size: 72px;
+        font-weight: 700;
+        left: - lh(1.66);
+        line-height: 1em;
+        position: absolute;
+        top: - lh(.5);
+        visibility: visible;
+      }
     }
 
     p {
-      font-size: 2em;
+      font-family: $body;
+      font-size: lh(1.5);
       font-style: italic;
+      font-weight: 400;
       line-height: lh(2);
-      font-weight: 100;
     }
 
-    span.author-wrap {
+    cite {
       display: block;
-      float: right;
       margin-right: flex-gutter();
+      position: absolute;
 
       p {
         font-size: 1rem;
@@ -66,8 +85,9 @@ body#portfolio {
         line-height: lh();
 
         &.author {
-          margin-bottom: 0;
+          color: #555;
           font-weight: 800;
+          margin-bottom: 0;
         }
 
         &.title {
@@ -77,34 +97,30 @@ body#portfolio {
     }
   }
 
-  section.screenshots {
+  section.case {
+    display: inline-block;
+    float: left;
+    margin: lh(3) flex-gutter() lh(2) 0;
+    padding-top: lh(2);
+    width: flex-grid(4);
 
-    img.screenshot {
-      width: flex-grid(12);
-      border: 1px solid white;
-      margin-bottom: lh(3); 
-      @include box-shadow(0px 0px 0px 1px #ddd);
-
-      &:first-child {
-        margin-top: lh(3) * -1;
-      }
+    section {
+      width: 100%;;
     }
   }
 
-  section.nav {
-    margin-bottom: lh(2);
-    clear: both;
+  section.screenshots {
+    margin-top: - lh(3);
 
-    a {
-      font-style: italic;
-      margin-bottom: lh(2);
+    img.screenshot {
+      border: 1px solid white;
+      @include box-shadow(0px 0px 0px 1px #ddd);
+      float: right;
+      margin-bottom: lh(3); 
+      width: flex-grid(8);
 
-      &.right {
-        float: right;
-      }
-
-      &.left {
-        float: left;
+      &:first-child {
+        margin-top: lh(3) * -1;
       }
     }
   }
@@ -143,9 +159,6 @@ body#portfolio {
 
         a {
           margin-bottom: 0;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
           width: 48%;
 
           &.right {
