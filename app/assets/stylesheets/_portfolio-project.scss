@@ -12,14 +12,32 @@ body#portfolio {
       font-weight: 100;
       line-height: 60px;
       margin: 0 flex-gutter() lh(3) 0;
-      width: flex-grid(6);
+      width: flex-grid(7);
+
+      .visit {
+        background: image-url('portfolio/offsite.png') no-repeat;
+        display: inline-block;
+        height: 32px;
+        opacity: .75;
+        text-indent: -9999px;
+        width: 32px;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+          background-image: image-url('portfolio/offsite-hirez.png');
+          @include background-size(contain);
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
 
-    section.nav {
+    .nav {
       float: right;
-      margin-top: 20px;
+      margin-top: 23px;
       text-align: right;
-      width: flex-grid(6);
+      width: flex-grid(5);
 
       a {
         color: #555;
@@ -33,12 +51,6 @@ body#portfolio {
         &:hover {
           color: $red;
         }
-
-        &.visit {
-          font-style: normal;
-          color: $red;
-          border-bottom: 2px solid $red;
-        }
       }
     }
   }
@@ -47,6 +59,16 @@ body#portfolio {
     @extend .secondary-wrapper;
     padding-bottom: lh(4);
     z-index: -1;
+
+    &.summary {
+      > div:before {
+        content: none;
+      }
+
+      p {
+        font-style: normal;
+      }
+    }
 
     > div {
       @extend .secondary;
@@ -100,9 +122,9 @@ body#portfolio {
   section.case {
     display: inline-block;
     float: left;
-    margin: lh(3) flex-gutter() lh(2) 0;
+    margin: lh(3) flex-gutter()*2 lh(2) 0;
     padding-top: lh(2);
-    width: flex-grid(4);
+    width: flex-grid(4) - flex-gutter();
 
     section {
       width: 100%;;
@@ -133,13 +155,33 @@ body#portfolio {
     }
   }
 
+  .primary {
+    .nav a {
+      display: block;
+      float: left;
+      margin-bottom: 0;
+      width: 48%;
+
+      &.right {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+
   @include media($small) {
     header {
       h2 {
         font-size: 24px;
         line-height: lh(1.4);
-        text-align: center;
         margin-bottom: lh(1.33);
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+      }
+
+      .nav {
+        width: 100%;
       }
     }
 
@@ -156,15 +198,6 @@ body#portfolio {
       .nav {
         margin: lh(1.5) 0;
         overflow: auto;
-
-        a {
-          margin-bottom: 0;
-          width: 48%;
-
-          &.right {
-            text-align: right;
-          }
-        }
       }
     }
 
