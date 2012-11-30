@@ -5,7 +5,6 @@ body#portfolio {
     @extend .primary;
 
     h2 {
-      color: #2b2b2b;
       float: left;
       font-family: $header;
       font-size: 60px;
@@ -14,22 +13,8 @@ body#portfolio {
       margin: 0 flex-gutter() lh(3) 0;
       width: flex-grid(7);
 
-      .visit {
-        background: image-url('portfolio/offsite.png') no-repeat;
-        display: inline-block;
-        height: 32px;
-        opacity: .75;
-        text-indent: -9999px;
-        width: 32px;
-
-        @media screen and (-webkit-min-device-pixel-ratio: 2) {
-          background-image: image-url('portfolio/offsite-hirez.png');
-          @include background-size(contain);
-        }
-
-        &:hover {
-          opacity: 1;
-        }
+      a {
+        border-bottom: 1px solid $red;
       }
     }
 
@@ -42,11 +27,14 @@ body#portfolio {
       a {
         color: #555;
         font-style: italic;
-        margin-left: 1em;
-        margin-top: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+
+        &.left {
+          text-align: right;
+        }
+
+        &.right {
+          margin-left: 2%;
+        }
 
         &:hover {
           color: $red;
@@ -119,19 +107,24 @@ body#portfolio {
     }
   }
 
-  section.case {
+  .case {
     display: inline-block;
     float: left;
     margin: lh(3) flex-gutter()*2 lh(2) 0;
     padding-top: lh(2);
     width: flex-grid(4) - flex-gutter();
 
+    .jump {
+      display: none;
+      padding: lh() 0;
+    }
+
     section {
       width: 100%;;
     }
   }
 
-  section.screenshots {
+  .screenshots {
     margin-top: - lh(3);
 
     img.screenshot {
@@ -140,10 +133,11 @@ body#portfolio {
       float: right;
       margin-bottom: lh(3); 
       width: flex-grid(8);
+    }
 
-      &:first-child {
-        margin-top: lh(3) * -1;
-      }
+    img.triptych {
+      border: 0;
+      @include box-shadow(none);
     }
   }
 
@@ -155,17 +149,20 @@ body#portfolio {
     }
   }
 
-  .primary {
-    .nav a {
-      display: block;
-      float: left;
-      margin-bottom: 0;
-      width: 48%;
+  // old portfolio item nav styles
+  .nav a {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    width: 48%;
 
-      &.right {
-        float: right;
-        text-align: right;
-      }
+    &.left {
+      text-align: left;
+    }
+
+    &.right {
+      float: right;
+      text-align: right;
     }
   }
 
@@ -173,18 +170,87 @@ body#portfolio {
     header {
       h2 {
         font-size: 24px;
+        font-weight: 400;
         line-height: lh(1.4);
-        margin-bottom: lh(1.33);
-        margin-right: 0;
+        margin: 0 0 lh(1.33) 0;
         text-align: center;
         width: 100%;
       }
 
       .nav {
+        margin: 0 0 lh(1.33) 0;
+        width: 100%;
+
+        a {
+          margin: 0;
+          width: 48%;
+
+          &.right {
+            float: right;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    > blockquote {
+      padding-top: lh();
+      padding-bottom: lh();
+
+      &.summary > div {
+        padding-top: 0;
+      }
+
+      > div {
+        padding-top: lh();
+
+        &:before {
+          left: 0;
+
+        }
+      }
+
+      p {
+        font-size: 100%;
+        line-height: lh();
+        margin-bottom: 0;
+      }
+
+      cite {
+        margin-top: 24px;
+        position: static;
+      }
+    }
+
+    .case {
+      display: block;
+      float: none;
+      margin: 0 0 lh(1.5) 0;
+      padding: 0;
+      width: 100%;
+
+      .jump {
+        display: block;
+      }
+    }
+
+    .screenshots {
+      margin-top: 0;
+
+      img.screenshot {
+        float: none;
+        margin-bottom: lh();
         width: 100%;
       }
     }
 
+    #get-started {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 0;
+      padding-bottom: lh(1.5);
+    }
+
+    // old portfolio item nav styles
     #portfolio-slider {
       margin-top: 0;
       margin-bottom: 0;
@@ -194,17 +260,9 @@ body#portfolio {
       }
     }
 
-    .primary {
-      .nav {
-        margin: lh(1.5) 0;
-        overflow: auto;
-      }
-    }
-
-    #get-started {
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 0;
-      padding-bottom: lh(1.5);
+    .nav {
+      margin: lh(1.5) 0;
+      overflow: auto;
     }
   }
 }
