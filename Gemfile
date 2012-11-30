@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 gem 'pg'
 gem 'thin'
 gem 'bourbon', '~> 2.1.1'
