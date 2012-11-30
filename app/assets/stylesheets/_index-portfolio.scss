@@ -157,43 +157,43 @@ section#portfolio {
         background-repeat: no-repeat;
       }
 
+      &#fanboat a {
+        background-image: image-url('portfolio/thumb/fanboat.png');
+      }
+
       &#vpp a {
         background-image: image-url('portfolio/thumb/vpp.jpg');
-      }
-
-      &#gulfcoast a {
-        background-image: image-url('portfolio/thumb/gulfcoast.jpg');
-      }
-
-      &#awesome a {
-        background-image: image-url('portfolio/thumb/awesome.jpg');
       }
 
       &#owneraide a {
         background-image: image-url('portfolio/thumb/owneraide.jpg');
       }
 
-      &#iora {
+      &#awesome {
         @extend .row-end;
 
         a {
-          background-image: image-url('portfolio/thumb/iora.jpg');
+          background-image: image-url('portfolio/thumb/awesome.jpg');
         }
+      }
+
+      &#iora a {
+        background-image: image-url('portfolio/thumb/iora.jpg');
       }
 
       &#stattleship a {
         background-image: image-url('portfolio/thumb/stattleship.jpg');
       }
 
-      &#tastedmenu a {
-        background-image: image-url('portfolio/thumb/tastedmenu.jpg');
+      &#gulfcoast a {
+        background-image: image-url('portfolio/thumb/gulfcoast.jpg');
       }
 
-      &#umbrellatoday {
+      &#tastedmenu {
         @extend .row-end;
 
         a {
-          background-image: image-url('portfolio/thumb/umbrellatoday.jpg');
+          background-image: image-url('portfolio/thumb/tastedmenu.jpg');
         }
       }
     }

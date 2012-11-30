@@ -127,17 +127,38 @@ body#portfolio {
   .screenshots {
     margin-top: - lh(3);
 
+    #screenshots {
+      width: flex-grid(8);
+      float: right;
+    }
+
     img.screenshot {
       border: 1px solid white;
       @include box-shadow(0px 0px 0px 1px #ddd);
-      float: right;
+      float: left;
       margin-bottom: lh(3); 
-      width: flex-grid(8);
+      width: 100%;
     }
 
     img.triptych {
       border: 0;
       @include box-shadow(none);
+    }
+
+    a.iphone {
+      float: left;
+      margin-right: flex-gutter();
+      width: flex-grid(6);
+      margin-bottom: flex-gutter();
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+
+      img {
+        margin-bottom: 0;
+        width: 100%;
+      }
     }
   }
 
@@ -237,9 +258,21 @@ body#portfolio {
     .screenshots {
       margin-top: 0;
 
+      #screenshots {
+        width: 100%;
+      }
+
       img.screenshot {
         float: none;
         margin-bottom: lh();
+        width: 100%;
+      }
+
+      a.iphone {
+        display: block;
+        float: none;
+        margin-bottom: lh();
+        margin-right: 0;
         width: 100%;
       }
     }
