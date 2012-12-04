@@ -209,7 +209,7 @@ function listEvents(feedRoot) {
     if(match && match[1]) {
       li.append("<ul></ul>");
       $.each(match[1].split(","), function(index, person) {
-        li.find("ul").append($("<li><a href='/about#" + person + "'><img src='/images/people/" + person + ".jpg'/></a></li>"))
+        li.find("ul").append($("<li><a href='/about#" + person + "'><img src='/assets/people/" + person + ".jpg'/></a></li>"))
       });
     }
 
