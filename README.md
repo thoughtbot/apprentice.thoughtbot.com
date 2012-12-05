@@ -1,14 +1,7 @@
 thoughtbot.com
 ==============
 
-This is the source of thoughtbot.com, which is a hybrid Rails/jekyll site.
-
-We use jekyll to generate files to `public/`, which then gets served by Rails.
-
-We also use Rails to get real 301 redirects instead of the `<meta>` redirects in
-jekyll.
-
-We are using the Rails asset pipeline.
+This is the source of thoughtbot.com, which is a Rails app.
 
 Editing
 -------

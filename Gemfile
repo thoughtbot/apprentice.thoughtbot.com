@@ -11,8 +11,6 @@ gem 'high_voltage'
 
 group :development do
   gem 'foreman'
-  gem 'jekyll', '~> 0.11.2'
-  gem 'liquid', '~> 2.4.1'
 end
 
 # Gems used only for assets and not required
