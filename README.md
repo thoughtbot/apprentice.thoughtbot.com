@@ -13,10 +13,9 @@ We are using the Rails asset pipeline.
 Editing
 -------
 
-* Edit files in the `jekyll/` directory. Don't edit files in "public/" because
-  those are generated from the "jekyll/" directory by running "jekyll".
+* Edit files in the `app/views/pages/` directory.
 * Styles for the main site are in `app/assets/stylesheets`
-* Run `bundle exec jekyll` to generate files to the `public/` directory
+* You can also place raw files in "public/"
 * `git commit` the additions and push
 
 Run locally
@@ -30,17 +29,9 @@ Run the regular rails commands:
 
 Run the server:
 
-    # in one terminal
-    $ jekyll --auto
-    # in another terminal
     $ rails s
 
 Then go to [http://localhost:3000](http://localhost:3000).
-
-Files will be auto-regenerated.  If your changes aren't showing up correctly,
-check for parse errors by running:
-
-    $ jekyll --no-auto
 
 Deploying
 ---------

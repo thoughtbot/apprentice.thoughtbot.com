@@ -7,6 +7,7 @@ gem 'pg'
 gem 'thin'
 gem 'bourbon', '~> 2.1.1'
 gem 'neat'
+gem 'high_voltage'
 
 group :development do
   gem 'foreman'

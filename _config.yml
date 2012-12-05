@@ -1,5 +1,0 @@
-auto: false
-permalink: pretty
-destination: ./public
-source: ./jekyll
-exclude: README.md

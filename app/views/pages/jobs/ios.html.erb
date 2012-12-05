@@ -1,0 +1,27 @@
+<% content_for :title, 'Jobs' %>
+<% content_for :keyword, :jobs %>
+<% content_for :meta_keywords, jobs_meta_keywords %>
+<% content_for :meta_keywords, jobs_meta_description %>
+
+<header id="page-header" class="primary">
+  <h1>Happy developers make more successful products</h1>
+</header>
+
+<div id="jobs-wrapper" class="job-description">
+  <section id="position-title">
+    <h2>iOS Developer</h2>
+    <%= render 'jobs_apply_button', position: 'Developer' %>
+  </section>
+
+  <section class="position-description">
+    <p>We are looking for iOS developers to join our team full-time in Boston, San Francisco, Stockholm, and Boulder. Very well-qualified candidates will have built and deployed several application to the App store. Knowledge of Ruby on Rails or some server-side programming is a plus, but is not necessary for this position.</p>
+    <p>Just like we don't have sales people or project managers, we do not have different levels of programmers at thoughtbot. We stay small and effective by having developers of the highest quality, able to communicate well and work directly with customers.</p>
+    <p>We practice agile development and work in weekly iterations. We promote pair programming as a great way to work but leave it up to the individual teams to come up with a pairing strategy that works for them, not enforcing pairing all the time.</p>
+    <p>We believe that all members of the product team are responsible for design. As a developer you will participate in conceptualization and wireframing of projects, provide design feedback, and be responsible for the user experience and usability of the applications we build.</p>
+    <p>While most developers here use Macs and vim, we believe that each person chooses the tools that work best for them. We ask you what you want and we get that for you.</p>
+    <p>If all this is interesting to you, you might be interested in reading more about our <a href="http://playbook.thoughtbot.com">philosophy in our playbook</a>.</p>
+    <%= render 'jobs_benefits', position: 'Developer' %>
+  </section>
+</div>
+
+<%= render 'jobs_about_us' %>

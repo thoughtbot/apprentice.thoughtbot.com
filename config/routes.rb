@@ -1,4 +1,6 @@
 ThoughtbotDotCom::Application.routes.draw do
+  root :to => 'high_voltage/pages#show', :id => 'home'
+
   # Redirects
   get '_portfolio' => redirect('/')
   get 'about/people' => redirect('/about')

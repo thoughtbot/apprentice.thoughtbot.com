@@ -1,0 +1,39 @@
+<% content_for :title, 'Jobs' %>
+<% content_for :keyword, :jobs %>
+<% content_for :meta_keywords, jobs_meta_keywords %>
+<% content_for :meta_keywords, jobs_meta_description %>
+
+<header id="page-header" class="primary">
+  <h1>Design is how it works.</h1>
+</header>
+
+<div id="jobs-wrapper" class="job-description">
+
+  <section id="position-title">
+    <h2>Designer</h2>
+    <%= render 'jobs_apply_button', position: 'Designer' %>
+  </section>
+
+  <section class="position-description">
+    <p>We are looking for an expert designer to join our San Francisco team full-time. We're looking for the following skills in candidates in order of importance:</p>
+
+    <ul>
+      <li>Product design</li>
+      <li>Interaction design</li>
+      <li>Visual design</li>
+      <li>Coding (HTML, CSS, iOS)</li>
+    </ul>
+
+    <p>Our designers make web and mobile products for our clients. They are responsible for making sure the team builds the right product. They simplify and ship often. They work directly with users to gather feedback. They make decisions about how (or whether) to integrate that feedback.</p>
+
+    <p>We prioritize how the product works but also expect a high level of visual refinement. Our designers must have excellent understanding of grids, typography, color, and design principles in order to build high-quality, compelling products.</p>
+
+    <p>Our designers code. See <a href="http://github.com/thoughtbot/bourbon">Bourbon</a> and <a href="https://github.com/thoughtbot/neat">Bourbon Neat</a> for examples showing the level of their HTML/CSS expertise. They stay up-to-date with Apple's Human Interface Guidelines (HIG). We believe coding is critical in order to tighten feedback loops and iterate more often.</p>
+
+    <p>We have a strong teaching and learning culture. Our designers' coding skills improve every day. We welcome applicants with some combination of HTML/CSS/iOS skills, but believe we can teach these on the job moreso than product, interaction, or user experience design.</p>
+
+    <%= render 'jobs_benefits', position: 'Designer' %>
+  </section>
+</div>
+
+<%= render 'jobs_about_us' %>
