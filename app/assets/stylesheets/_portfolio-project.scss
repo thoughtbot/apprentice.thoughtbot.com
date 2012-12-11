@@ -206,6 +206,10 @@ body#portfolio {
           margin: 0;
           width: 48%;
 
+          &.left {
+            text-align: left;
+          }
+
           &.right {
             float: right;
             text-align: right;
