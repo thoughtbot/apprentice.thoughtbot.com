@@ -1,25 +1,34 @@
 <% content_for :title, 'Friends' %>
 
-<div class="primary">
-  <header id="page-header" class="primary">
-    <h1 id="headline">Friends of thoughtbot</h1>
-    <p>Thanks for being awesome. Enter your address here and we'll send you something.</p>
-  </header>
+<header id="page-header" class="primary">
+  <h1 id="headline">Friends of thoughtbot</h1>
+  <p>Thanks for being awesome. Enter your address here and we'll send you something.</p>
+</header>
 
-  <section>
-    <div id="wufoo-w7w5a7">
-      <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<div id="contact-content">
+  <section id="contact-info">
+    <%= render 'application/addresses' %>
 
-      <script type="text/javascript">
-        var s7x2p7 = new WufooForm();
-        s7x2p7.initialize({
-          'userName':'thoughtbot',
-          'formHash':'w7w5a7',
-          'autoResize':true,
-          'ssl':false
-        });
-        s7x2p7.display();
-      </script>
-    </div>
+    <section id="contact-other">
+      <h4>Want to hire us?</h4>
+      <p><%= link_to 'Contact us here.', page_path('contact') %></p>
+
+      <%= render 'application/emails' %>
+    </section>
   </section>
+
+  <div id="contact_form">
+    <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+    <script type="text/javascript">
+      var s7x2p7 = new WufooForm();
+      s7x2p7.initialize({
+        'userName':'thoughtbot',
+        'formHash':'w7w5a7',
+        'autoResize':true,
+        'ssl':false
+      });
+      s7x2p7.display();
+    </script>
+  </div>
 </div>

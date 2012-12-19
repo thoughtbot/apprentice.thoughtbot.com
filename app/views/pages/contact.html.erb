@@ -7,42 +7,7 @@
 
 <div id="contact-content">
   <section id="contact-info">
-    <section class="contact-address">
-      <div class="call">
-        <div>
-          <h4>Phone</h4>
-          <p>(877) 976-2687</p>
-          <p>+46 81 211 11 52</p>
-        </div>
-
-        <div>
-          <h4>Fax</h4>
-          <p>(866) 217-5992</p>
-        </div>
-      </div>
-
-      <div class="address">
-        <h4>Locations</h4>
-        <section>
-          <address>
-            <p>41 Winter Street</p>
-            <p>7th Floor</p>
-            <p>Boston, MA 02108</p>
-            <p><a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=41+Winter+St,+Boston,+MA+02108">Google Maps</a></p>
-          </address>
-          <address>
-            <p>156 2nd St</p>
-            <p>San Francisco, CA 94105</p>
-            <p><a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=156+2ND+STREET+san+francisco+ca+94105">Google Maps</a></p>
-          </address>
-          <address>
-            <p>Döbelnsgatan 24 5 tr</p>
-            <p>113 52 Stockholm, Sweden</p>
-            <p><a href="https://maps.google.se/maps?q=D%C3%B6belnsgatan+24+5+tr+113+52+Stockholm,+Sweden">Google Maps</a></p>
-          </address>
-        </section>
-      </div>
-    </section>
+    <%= render 'application/addresses' %>
 
     <section id="contact-other">
       <h4>Want to hire us?</h4>
@@ -64,20 +29,7 @@
         <li>group buying sites</li>
       </ul>
 
-      <h4>Open source questions?</h4>
-      <p>Use Github Issues for our <a href="/community">open source projects</a>.</p>
-
-      <h4>Workshops questions?</h4>
-      <p>Email <a href="mailto:learn@thoughtbot.com">learn@thoughtbot.com</a>.</p>
-
-      <h4>apprentice.io questions?</h4>
-      <p>Email <a href="mailto:apply@apprentice.io">apply@apprentice.io</a>.</p>
-
-      <h4>Technical co-founder?</h4>
-      <p>To be the first designer or developer at a startup we've worked with, email <a href="mailto:cofounders@thoughtbot.com">cofounders@thoughtbot.com</a>.</p>
-
-      <h4>Something else on your mind?</h4>
-      <p>Email <a href="mailto:info@thoughtbot.com">info@thoughtbot.com</a>.</p>
+      <%= render 'application/emails' %>
     </section>
   </section>
 
