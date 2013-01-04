@@ -10,7 +10,7 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery-1.4.3.min
+//= require jquery-1.8.3.min
 //= require_tree .
 
 // disable automatic initialization
@@ -18,8 +18,6 @@ $.jqwidont.auto(false);
 
 $(document).ready(function() {
   $('p').widont();
-
-  $('#portfolio').localScroll();
 
   $(".event-coupon-wrapper strong:contains('Webcast')").addClass("webcast");
   $(".event-coupon-wrapper strong:contains('Workshop')").addClass("workshop");

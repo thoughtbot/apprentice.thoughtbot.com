@@ -110,9 +110,40 @@ body#portfolio {
   .case {
     display: inline-block;
     float: left;
-    margin: lh(3) flex-gutter()*2 lh(2) 0;
-    padding-top: lh(2);
+    margin: 0 flex-gutter()*2 0 0;
     width: flex-grid(4) - flex-gutter();
+
+    &:before {
+      content: '';
+      display: block;
+      height: lh(5);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: lh(2);
+    }
+
+    &.stickit {
+      top: 0;
+      position: fixed;
+    }
+
+    &.stickit-tall {
+      bottom: 0;
+      position: fixed;
+    }
+
+    &.stickit-end {
+      bottom: 0;
+      position: absolute;
+      width: flex-grid(4) - flex-gutter();
+    }
+
+    ul {
+      margin-left: 1.5em;
+    }
 
     .jump {
       display: none;
@@ -120,12 +151,14 @@ body#portfolio {
     }
 
     section {
-      width: 100%;;
+      width: 100%;
     }
   }
 
   .screenshots {
     margin-top: - lh(3);
+    overflow: hidden;
+    position: relative;
 
     #screenshots {
       width: flex-grid(8);
@@ -252,10 +285,12 @@ body#portfolio {
       float: none;
       margin: 0 0 lh(1.5) 0;
       padding: 0;
-      width: 100%;
+      position: static !important;
+      width: 100% !important; // override stickit styles
 
-      ul {
-        margin-left: 1em;
+      &:before, &:after {
+        content: none;
+        height: 0;
       }
 
       .jump {
@@ -307,4 +342,3 @@ body#portfolio {
     }
   }
 }
-
