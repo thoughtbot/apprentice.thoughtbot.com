@@ -17,6 +17,10 @@ ThoughtbotDotCom::Application.routes.draw do
   get 'podcast' => redirect('http://learn.thoughtbot.com/podcast')
   get 'podcast/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
 
+  # Temporary redirect for existing open-sourced repositories.
+  # Remove once all repo links are updated
+  get 'assets/tm/logo.png' => redirect('/logo.png')
+
   # Bourbon and Neat redirects
   get 'bourbon' => redirect('http://bourbon.io/')
   get 'neat' => redirect('http://neat.bourbon.io/')
