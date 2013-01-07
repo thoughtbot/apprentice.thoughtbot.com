@@ -20,6 +20,7 @@ ThoughtbotDotCom::Application.routes.draw do
   # Temporary redirect for existing open-sourced repositories.
   # Remove once all repo links are updated
   get 'assets/tm/logo.png' => redirect('/logo.png')
+  get 'images/tm/logo.png' => redirect('/logo.png')
 
   # Bourbon and Neat redirects
   get 'bourbon' => redirect('http://bourbon.io/')
