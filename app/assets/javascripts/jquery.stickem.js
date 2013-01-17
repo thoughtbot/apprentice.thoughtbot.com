@@ -51,7 +51,7 @@
 
     bindEvents: function() {
       var _self = this;
-
+      
       _self.$win.on('scroll.stickem', $.proxy(_self.handleScroll, _self));
       _self.$win.on('resize.stickem', $.proxy(_self.handleResize, _self));
     },
@@ -73,23 +73,31 @@
         isStuck: false
       };
 
-      item.containerHeight = item.$container.outerHeight();
-      item.containerInner = {
-        border: {
-          bottom: parseInt(item.$container.css('border-bottom'), 10) || 0,
-          top: parseInt(item.$container.css('border-top'), 10) || 0
-        },
-        padding: {
-          bottom: parseInt(item.$container.css('padding-bottom'), 10) || 0,
-          top: parseInt(item.$container.css('padding-top'), 10) || 0
+      //If the element is smaller than the window
+      if(_self.windowHeight > item.elemHeight) {
+        item.containerHeight = item.$container.outerHeight();
+        item.containerInner = {
+          border: {
+            bottom: parseInt(item.$container.css('border-bottom'), 10) || 0,
+            top: parseInt(item.$container.css('border-top'), 10) || 0
+          },
+          padding: {
+            bottom: parseInt(item.$container.css('padding-bottom'), 10) || 0,
+            top: parseInt(item.$container.css('padding-top'), 10) || 0
+          }
+        };
+
+        item.containerInnerHeight = item.$container.height();
+        item.containerStart = item.$container.offset().top - _self.config.offset + _self.config.start + item.containerInner.padding.top + item.containerInner.border.top;
+        item.scrollFinish = item.containerStart - _self.config.start + (item.containerInnerHeight - item.elemHeight);
+
+        //If the element is smaller than the container
+        if(item.containerInnerHeight > item.elemHeight) {
+          _self.items.push(item);
         }
-      };
-
-      item.containerInnerHeight = item.$container.height();
-      item.containerStart = item.$container.offset().top - _self.config.offset + _self.config.start + item.containerInner.padding.top + item.containerInner.border.top;
-      item.scrollFinish = item.containerStart - _self.config.start + (item.containerInnerHeight - item.elemHeight);
-
-      _self.items.push(item);
+      } else {
+        item.$elem.removeClass(_self.config.stickClass + ' ' + _self.config.endStickClass);
+      }
     },
 
     getItems: function() {
@@ -110,7 +118,7 @@
     handleScroll: function() {
       var _self = this;
 
-      if(_self.items.length >= 0) {
+      if(_self.items.length > 0) {
         var pos = _self.$win.scrollTop();
 
         for(var i = 0, len = _self.items.length; i < len; i++) {
