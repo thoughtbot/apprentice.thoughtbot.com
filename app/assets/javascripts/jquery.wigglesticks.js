@@ -15,6 +15,11 @@
   var original_width = ($(item).outerWidth() / $(container).outerWidth()) * 100;
   var true_relative_width = ($(item).outerWidth() / $(document).outerWidth()) * 100;
 
+  $(window).resize(function() {
+    original_width = ($(item).outerWidth() / $(container).outerWidth()) * 100;
+    true_relative_width = ($(item).outerWidth() / $(document).outerWidth()) * 100;
+  });
+
   function item_height() {
     if ($(item).outerHeight() > $(window).height()) {
       return - ($(item).outerHeight() - $(window).height());
