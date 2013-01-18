@@ -1,2 +1,2 @@
-$medium: new-breakpoint(751px);
+$medium: new-breakpoint(min-width 768px max-width 1024px);
 $small: new-breakpoint(max-width 750px);
