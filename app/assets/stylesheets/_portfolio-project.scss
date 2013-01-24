@@ -203,6 +203,14 @@ body#portfolio {
     }
   }
 
+  @include media($tablet) {
+    .case {
+      display: block;
+      position: static !important;
+      width: flex-grid(4) - flex-gutter() !important;
+    }
+  }
+
   @include media($small) {
     header {
       h2 {

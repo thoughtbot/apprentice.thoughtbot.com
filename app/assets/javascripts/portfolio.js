@@ -1,5 +1,5 @@
-$('body#portfolio').ready(function() {
-  $('.case').wigglesticks({
+$(window).load(function() {
+  $('body#portfolio .case').wigglesticks({
     'container': '.primary'
   });
 });
