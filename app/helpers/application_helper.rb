@@ -3,7 +3,7 @@ module ApplicationHelper
     if content_for?(:meta_keywords)
       content_for(:meta_keywords)
     else
-      'web design, web development, training, ruby, rails, boston, new york, san francisco, stockholm, boulder, denver'
+      'web design, web development, training, ruby, rails, ios, python, django, javascript, boston, new york, san francisco, stockholm, boulder, denver'
     end
   end
 
@@ -12,7 +12,7 @@ module ApplicationHelper
   end
 
   def jobs_meta_keywords
-    'web designer, web developer, ruby, rails, javascript, html, css, boston, san francisco, stockholm, denver, boulder'
+    'web designer, web developer, ruby, rails, javascript, python, django, html, css, boston, san francisco, stockholm, denver, boulder'
   end
 
   def jobs_meta_description
