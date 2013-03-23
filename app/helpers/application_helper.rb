@@ -26,4 +26,12 @@ module ApplicationHelper
   def portfolio_meta_description
     'A selection of our work.'
   end
+
+  def learn_prime_url
+    "https://learn.thoughtbot.com/products/14-prime#{utm_parameters}"
+  end
+
+  def utm_parameters
+    '?utm_source=apprenticeio&utm_medium=tracks&utm_campaign=apprenticeio'
+  end
 end

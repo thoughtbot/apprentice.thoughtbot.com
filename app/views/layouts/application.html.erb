@@ -33,7 +33,7 @@
   <body id="<%= body_id %>">
     <header id="main-header">
       <nav id="main-nav">
-        <h1 id="nav-ralph"><a href="/">thoughtbot</a></h1>
+      <h1 id="nav-ralph"><a href="/"><% if content_for?(:site_title) %><%= yield(:site_title) %><% else %>thoughtbot<% end %></a></h1>
         <ul>
           <li><a href="/contact" id="contact-btn">Contact us</a></li>
         </ul>

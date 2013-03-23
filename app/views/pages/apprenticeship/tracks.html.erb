@@ -1,0 +1,67 @@
+<% content_for :site_title, 'apprentice.io' %>
+<% content_for :keyword, :apprentice %>
+
+<header id="page-header" class="primary">
+  <h1>We are looking for intermediate<br/>developers and designers</h1>
+</header>
+
+<div id="jobs-wrapper" class="job-description">
+  <section class="tracks">
+    <div class="beginner">
+      <h2>Beginner</h2>
+
+      <section class="description">
+        <p>
+          <strong>Developer</strong>.
+          You haven't been programming in Ruby or Rails for very long, though you
+          might have significant experience with other languages or frameworks.
+          Try <%= link_to "Learn", learn_prime_url %>, where you can
+          study thoughtbot's collective knowledge about
+          <%= link_to "Ruby", "https://learn.thoughtbot.com/ruby#{utm_parameters}" %>,
+          <%= link_to "Ruby on Rails", "https://learn.thoughtbot.com/rails#{utm_parameters}" %>, and
+          all of the other topics that we think are important for Developers to
+          know.
+        </p>
+
+        <p>
+          <strong>Designer</strong>.
+          Not very comfortable with visual design or front-end development yet?
+          Try <%= link_to "Learn", learn_prime_url %>,
+          where you can study thoughtbot's collective knowledge about
+          <%= link_to "Design", "https://learn.thoughtbot.com/design#{utm_parameters}" %>,
+          <%= link_to "Typography", "https://learn.thoughtbot.com/typography#{utm_parameters}" %>,
+          and all of the other topics that we think are important for Designers to know.
+        </p>
+      </section>
+
+      <%= link_to learn_prime_url, class: "apply" do %>
+        <h3>Start learning</h3>
+      <% end %>
+    </div>
+
+    <div class="advanced">
+      <h2>Intermediate</h2>
+
+      <section class="description">
+        <p>
+          <strong>Developer.</strong>
+          You've built at least one Rails app, and have gone through the Rails
+          Tutorial. You feel comfortable in Ruby, but may have less experience with
+          Rails. Or, you have extensive experience with Ruby on Rails but have
+          little experience with test-driven development or Rails best practices.
+        </p>
+
+        <p>
+          <strong>Designer.</strong>
+          You've got a solid visual design portfolio, but you may not be comfortable
+          with designing for the web, or front-end development with HTML and CSS.
+          You're exactly who we want!
+        </p>
+      </section>
+
+      <%= link_to page_path("apprenticeship/apply"), class: "apply" do %>
+        <h3>Apply to apprentice.io</h3>
+      <% end %>
+    </div>
+  </section>
+</div>

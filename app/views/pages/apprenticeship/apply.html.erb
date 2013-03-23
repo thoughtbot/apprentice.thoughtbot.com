@@ -1,0 +1,31 @@
+<% content_for :site_title, 'apprentice.io' %>
+<% content_for :title, 'Apply to apprentice.io' %>
+<% content_for :keyword, :apprentice %>
+<% content_for :meta_keywords, jobs_meta_keywords %>
+<% content_for :meta_description, jobs_meta_description %>
+
+<header id="page-header" class="primary">
+  <h1>Apply to be an apprentice</h1>
+</header>
+
+<div id="jobs-wrapper">
+  <section id="job-form">
+    <p>We will review your application and we'll get back to you with any questions we have. If you are accepted, you will receive an acceptance packet containing employment forms and more information at the email address you enter below.</p>
+    <p><strong>All developer apprentice slots through June 2013 have been awarded. Please only apply if you can commit to starting on or after June 1, 2013.</strong></p>
+    <p><strong>Non US Citizen?</strong> <%= link_to "Read more here", page_path("apprenticeship/more") %>.</p>
+  </section>
+
+  <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+  <script type="text/javascript">
+  var r7p0z7 = new WufooForm();
+  r7p0z7.initialize({
+  'userName':'thoughtbot',
+  'formHash':'r7p0z7',
+  'autoResize':true,
+  'height':'884',
+  'header':'show',
+  'ssl':true});
+  r7p0z7.display();
+  </script>
+</div>
