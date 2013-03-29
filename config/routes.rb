@@ -19,6 +19,8 @@ ThoughtbotDotCom::Application.routes.draw do
   get 'podcast.xml' => redirect('http://learn.thoughtbot.com/podcast.xml')
   get 'podcast' => redirect('http://learn.thoughtbot.com/podcast')
   get 'podcast/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
+  get 'podcasts' => redirect('http://learn.thoughtbot.com/podcast')
+  get 'podcasts/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
 
   # Temporary redirect for existing open-sourced repositories.
   # Remove once all repo links are updated
