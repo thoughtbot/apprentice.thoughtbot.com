@@ -3,45 +3,50 @@ thoughtbot.com
 
 This is the source of thoughtbot.com, which is a Rails app.
 
-Editing
+Set up
+------
+
+    git clone git@github.com:thoughtbot/thoughtbot.com.git
+    cd thoughtbot.com
+    ./bin/setup
+
+Develop
 -------
-
-* Edit files in the `app/views/pages/` directory.
-* Styles for the main site are in `app/assets/stylesheets`
-* You can also place raw files in "public/"
-* `git commit` the additions and push
-
-Run locally
------------
-
-Run the regular rails commands:
-
-    $ rake db:create
-    $ rake db:migrate
-    $ bundle
 
 Run the server:
 
-    $ rails s
+    foreman start
 
-Then go to [http://localhost:3000](http://localhost:3000).
+Then go to [http://localhost:6500][1].
 
-Deploying
----------
+* Edit files in the `app/views/pages/` directory.
+* Styles for the main site are in `app/assets/stylesheets`.
+* You can also place raw files in 'public/'.
+* `git commit` the additions and push.
 
-Add a `heroku` remote:
+Develop
+-------
 
-    git remote add production git@heroku.com:thoughtbot-production.git
-    git remote add staging git@heroku.com:thoughtbot-staging.git
+Use the following guides for getting things done, programming well, and
+programming in style.
 
-Deploy to staging:
+* [Protocol][2]
+* [Best Practices][3]
+* [Style][4]
 
-    git push staging master
+Deploy
+------
 
-See http://staging.thoughtbot.com.
+Refer to the [deploy guide][5] guide.
 
-Deploy to production:
+Deploy to staging, then acceptance test on [staging][6].
 
-    git push production master
+Deploy to production, then acceptance test on [production][7].
 
-See http://thoughtbot.com.
+[1]: http://localhost:6500
+[2]: http://github.com/thoughtbot/guides/blob/master/protocol
+[3]: http://github.com/thoughtbot/guides/blob/master/best-practices
+[4]: http://github.com/thoughtbot/guides/blob/master/style
+[5]: https://github.com/thoughtbot/guides/tree/master/protocol#deploy
+[6]: http://staging.thoughtbot.com
+[7]: http://thoughtbot.com
