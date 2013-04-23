@@ -37,6 +37,11 @@ programming in style.
 Deploy
 ------
 
+Heroku apps:
+
+  git remote add staging git@heroku.com:thoughtbot-staging.git
+  git remote add production git@heroku.com:thoughtbot-production.git
+
 Refer to the [deploy guide][5] guide.
 
 Deploy to staging, then acceptance test on [staging][6].
