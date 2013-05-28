@@ -28,7 +28,7 @@ module ApplicationHelper
   end
 
   def learn_prime_url
-    "https://learn.thoughtbot.com/products/14-prime#{utm_parameters}"
+    "https://learn.thoughtbot.com/prime#{utm_parameters}"
   end
 
   def utm_parameters
