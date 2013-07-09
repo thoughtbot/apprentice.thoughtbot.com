@@ -1,0 +1,43 @@
+<% content_for :title, 'Mag+' %>
+<% content_for :keyword, 'portfolio' %>
+<% content_for :meta_keywords, portfolio_meta_keywords %>
+<% content_for :meta_description, portfolio_meta_description %>
+
+<header id="page-header">
+  <h2>Mag+</h2>
+  <section class="nav">
+    <a class="left" href="/portfolio/owneraide" title="Owneraide">&larr; Owneraide</a>
+    <a class="right" href="/portfolio/iora" title="Iora">Iora &rarr;</a>
+  </section>
+</header>
+
+<blockquote class="summary">
+  <div>
+    <p>A massively scalable mobile publication system with minimal downtime.</p>
+  </div>
+</blockquote>
+
+<section class="primary">
+  <section class="screenshots">
+    <section class="case">
+      <a class="jump" href="#screenshots">Jump to screenshots</a>
+      <section class="problem">
+        <h4>The Problem</h4>
+        <p>Mag+ provides a mobile publishing ecosystem, targeting catalogs, magazines, and other content creators. Their system was running and functional but they wanted to be ready to handle the traffic and feature requests from their biggest client yet.</p>
+      </section>
+      <section class="solution">
+        <h4>The Solution</h4>
+        <p>We worked with their existing team to extend their API, develop a performance and load test suite, split the Web app to decrease overall downtime, extract <a href="https://github.com/magplus/">some open source tools</a>, and instill some of the thoughtbot process along the way. This left them with a solid direction forward on a more scalable base.</p>
+        <p>It was important to ensure both understanding and complete support from their existing team of six developers, and pair programming was the answer here. By pairing all day we helped teach each other about the system, the scaling problem, the proposed solutions, and various object-oriented techniques.</p>
+        <p>Throughout we not only helped fix bugs but we added new features to the running system. We did this by choosing to refactor in place on an always-green test suite instead of performing a massive re-write.</p>
+      </section>
+      <p class="visit"><a href="http://magplus.com/">Visit their website</a></p>
+    </section>
+    <section id="screenshots">
+      <a href="/assets/portfolio/magplus/publishing-performance-notated.png"><img class="screenshot" src="/assets/portfolio/magplus/publishing-performance-notated.png" alt="Performance graph of publishing a new issue using Mag+" /></a>
+      <a href="/assets/portfolio/magplus/api-performance-notated.png"><img class="screenshot" src="/assets/portfolio/magplus/api-performance-notated.png" alt="Performance graph of serving an issue via the Mag+ API" /></a>
+    </section>
+  </section>
+
+  <%= render 'pages/portfolio/get_started' %>
+</section>
