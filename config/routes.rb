@@ -1,8 +1,8 @@
 ThoughtbotDotCom::Application.routes.draw do
-  constraints :domain => 'apprentice.io' do
-    root :to => 'high_voltage/pages#show', :id => 'apprenticeship/index'
+  constraints domain: 'apprentice.io' do
+    get '/', to: 'high_voltage/pages#show', id: 'apprenticeship/index'
   end
-  root :to => 'high_voltage/pages#show', :id => 'home'
+  root to: 'high_voltage/pages#show', id: 'home'
 
   # Redirects
   get '_portfolio' => redirect('/')
