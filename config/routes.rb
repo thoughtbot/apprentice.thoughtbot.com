@@ -21,6 +21,10 @@ ThoughtbotDotCom::Application.routes.draw do
   get 'podcast/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
   get 'podcasts' => redirect('http://learn.thoughtbot.com/podcast')
   get 'podcasts/:id' => redirect('http://learn.thoughtbot.com/podcast/%{id}')
+  get 'buildphase' => redirect('http://learn.thoughtbot.com/buildphase')
+  get 'buildphase/:id' => redirect('http://learn.thoughtbot.com/buildphase/%{id}')
+  get 'giantrobots' => redirect('http://learn.thoughtbot.com/giantrobots')
+  get 'giantrobots/:id' => redirect('http://learn.thoughtbot.com/giantrobots/%{id}')
 
   # Temporary redirect for existing open-sourced repositories.
   # Remove once all repo links are updated
