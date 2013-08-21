@@ -34,8 +34,12 @@
       <p class="visit"><a href="http://magplus.com/">Visit their website</a></p>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/magplus/publishing-performance-notated.png"><img class="screenshot" src="/assets/portfolio/magplus/publishing-performance-notated.png" alt="Performance graph of publishing a new issue using Mag+" /></a>
-      <a href="/assets/portfolio/magplus/api-performance-notated.png"><img class="screenshot" src="/assets/portfolio/magplus/api-performance-notated.png" alt="Performance graph of serving an issue via the Mag+ API" /></a>
+      <%= link_to image_path('portfolio/magplus/publishing-performance-notated.png') do %>
+        <%= image_tag 'portfolio/magplus/publishing-performance-notated.png', class: :screenshot, alt: 'Performance graph of publishing a new issue using Mag+' %>
+      <% end %>
+      <%= link_to image_path('portfolio/magplus/api-performance-notated.png') do %>
+        <%= image_tag 'portfolio/magplus/api-performance-notated.png', class: :screenshot, alt: 'Performance graph of serving an issue via the Mag+ API' %>
+      <% end %>
     </section>
   </section>
 

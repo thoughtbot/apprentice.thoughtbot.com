@@ -48,9 +48,15 @@
       <p class="visit"><a href="http://www.gofdn.com/">Visit their website</a></p>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/fdn/profile.png"><img class="screenshot" src="/assets/portfolio/fdn/profile.png" alt="FDN profile" /></a>
-      <a href="/assets/portfolio/fdn/dashboard.png"><img class="screenshot" src="/assets/portfolio/fdn/dashboard.png" alt="FDN dashboard" /></a>
-      <a href="/assets/portfolio/fdn/public-profile.png"><img class="screenshot" src="/assets/portfolio/fdn/public-profile.png" alt="FDN public profile" /></a>
+      <%= link_to image_path('portfolio/fdn/profile.png') do %>
+        <%= image_tag 'portfolio/fdn/profile.png', class: :screenshot, alt: 'FDN Profile' %>
+      <% end %>
+      <%= link_to image_path('portfolio/fdn/dashboard.png') do %>
+        <%= image_tag 'portfolio/fdn/dashboard.png', class: :screenshot, alt: 'FDN Profile' %>
+      <% end %>
+      <%= link_to image_path('portfolio/fdn/public-profile.png') do %>
+        <%= image_tag 'portfolio/fdn/public-profile.png', class: :screenshot, alt: 'FDN Profile' %>
+      <% end %>
     </section>
   </section>
 

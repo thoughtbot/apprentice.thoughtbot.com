@@ -34,12 +34,24 @@
       <p class="visit"><a href="http://www.iorahealth.com/">Visit their website</a></p>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/iora/task-list.png"><img class="screenshot" src="/assets/portfolio/iora/task-list.png" alt="Iora task list" /></a>
-      <a href="/assets/portfolio/iora/popover.png"><img class="screenshot" src="/assets/portfolio/iora/popover.png" alt="Iora new task" /></a>
-      <a href="/assets/portfolio/iora/patient1.png"><img class="screenshot" src="/assets/portfolio/iora/patient1.png" alt="Iora task detail page" /></a>
-      <a href="/assets/portfolio/iora/patient2.png"><img class="screenshot" src="/assets/portfolio/iora/patient2.png" alt="Iora completed task detail page" /></a>
-      <a href="/assets/portfolio/iora/patient-facesheet.png"><img class="screenshot" src="/assets/portfolio/iora/patient-facesheet.png" alt="Iora patient page" /></a>
-      <a href="/assets/portfolio/iora/overlay.png"><img class="screenshot" src="/assets/portfolio/iora/overlay.png" alt="Iora patient vitals" /></a>
+      <%= link_to image_path('portfolio/iora/task-list.png') do %>
+        <%= image_tag 'portfolio/iora/task-list.png', class: :screenshot, alt: 'Iora task list' %>
+      <% end %>
+      <%= link_to image_path('portfolio/iora/popover') do %>
+        <%= image_tag 'portfolio/iora/popover.png', class: :screenshot, alt: 'Iora new task' %>
+      <% end %>
+      <%= link_to image_path('portfolio/iora/patient1.png') do %>
+        <%= image_tag 'portfolio/iora/patient1.png', class: :screenshot, alt: 'Iora task detail page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/iora/patient2.png') do %>
+        <%= image_tag 'portfolio/iora/patient2.png', class: :screenshot, alt: 'Iora completed task detail page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/iora/patient-facesheet.png') do %>
+        <%= image_tag 'portfolio/iora/patient-facesheet.png', class: :screenshot, alt: 'Iora patient page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/iora/overlay.png') do %>
+        <%= image_tag 'portfolio/iora/overlay.png', class: :screenshot, alt: 'Iora patient vitals' %>
+      <% end %>
     </section>
   </section>
 

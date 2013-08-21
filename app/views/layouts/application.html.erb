@@ -15,7 +15,7 @@
 
     <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/application.css" media="all" rel="Stylesheet" type="text/css" />
+    <%= stylesheet_link_tag :application %>
     <meta name="description" content="<%= yield :meta_description %>" />
     <meta name="keywords" content="<%= meta_keywords %>" />
     <title><%= yield :title %> : thoughtbot</title>
@@ -45,7 +45,7 @@
     <%= render 'pages/footer' %>
 
     <script type="text/javascript" src="//d1nu2rn22elx8m.cloudfront.net/performable/pax/3tbRq2.js"></script>
-    <script type="text/javascript" src="/assets/application.js"></script>
+    <%= javascript_include_tag :application %>
 
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

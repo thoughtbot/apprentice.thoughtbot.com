@@ -37,11 +37,21 @@
       <p class="visit"><a href="http://owneraide.com">Visit their website</a></p>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/owneraide/owneraide-1.png"><img class="screenshot" src="/assets/portfolio/owneraide/owneraide-1.png" alt="Owneraide homepage screenshot" /></a>
-      <a href="/assets/portfolio/owneraide/mobile.png"><img class="triptych screenshot" src="/assets/portfolio/owneraide/mobile.png" alt="Owneraide mobile screenshots" /></a>
-      <a href="/assets/portfolio/owneraide/owneraide-2.png"><img class="screenshot" src="/assets/portfolio/owneraide/owneraide-2.png" alt="Owneraide search page screenshot" /></a>
-      <a href="/assets/portfolio/owneraide/owneraide-3.png"><img class="screenshot" src="/assets/portfolio/owneraide/owneraide-3.png" alt="Owneraide job page screenshot" /></a>
-      <a href="/assets/portfolio/owneraide/owneraide-4.png"><img class="screenshot" src="/assets/portfolio/owneraide/owneraide-4.png" alt="Owneraide job page screenshot" /></a>
+      <%= link_to image_path('portfolio/owneraide/owneraide-1.png') do %>
+        <%= image_tag 'portfolio/owneraide/owneraide-1.png', class: :screenshot, alt: 'Owneraide home page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/owneraide/mobile.png') do %>
+        <%= image_tag 'portfolio/owneraide/mobile.png', class: :screenshot, alt: 'Owneraide mobile' %>
+      <% end %>
+      <%= link_to image_path('portfolio/owneraide/owneraide-2.png') do %>
+        <%= image_tag 'portfolio/owneraide/owneraide-2.png', class: :screenshot, alt: 'Owneraide search page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/owneraide/owneraide-3.png') do %>
+        <%= image_tag 'portfolio/owneraide/owneraide-3.png', class: :screenshot, alt: 'Owneraide job page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/owneraide/owneraide-4.png') do %>
+        <%= image_tag 'portfolio/owneraide/owneraide-4.png', class: :screenshot, alt: 'Owneraide job page' %>
+      <% end %>
     </section>
   </section>
 

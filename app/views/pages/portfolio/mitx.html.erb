@@ -32,12 +32,24 @@
       </section>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/mitx/course-index.png"><img class="screenshot" src="/assets/portfolio/mitx/course-index.png" alt="MITx home page" /></a>
-      <a href="/assets/portfolio/mitx/course-show.png"><img class="screenshot" src="/assets/portfolio/mitx/course-show.png" alt="MITx course page" /></a>
-      <a href="/assets/portfolio/mitx/course-video.png"><img class="screenshot" src="/assets/portfolio/mitx/course-video.png" alt="MITx course lesson page" /></a>
-      <a href="/assets/portfolio/mitx/discussion-index.png"><img class="screenshot" src="/assets/portfolio/mitx/discussion-index.png" alt="MITx discussions page" /></a>
-      <a href="/assets/portfolio/mitx/discussion-show.png"><img class="screenshot" src="/assets/portfolio/mitx/discussion-show.png" alt="MITx discussion page" /></a>
-      <a href="/assets/portfolio/mitx/info.png"><img class="screenshot" src="/assets/portfolio/mitx/info.png" alt="MITx info page" /></a>
+      <%= link_to image_path('portfolio/mitx/course-index.png') do %>
+        <%= image_tag 'portfolio/mitx/course-index.png', class: :screenshot, alt: 'MITx home page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/mitx/course-show.png') do %>
+        <%= image_tag 'portfolio/mitx/course-show.png', class: :screenshot, alt: 'MITx course page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/mitx/course-video.png') do %>
+        <%= image_tag 'portfolio/mitx/course-video.png', class: :screenshot, alt: 'MITx course lesson page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/mitx/discussion-index.png') do %>
+        <%= image_tag 'portfolio/mitx/discussion-index.png', class: :screenshot, alt: 'MITx discussions page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/mitx/discussion-show.png') do %>
+        <%= image_tag 'portfolio/mitx/discussion-show.png', class: :screenshot, alt: 'MITx discussion page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/mitx/info.png') do %>
+        <%= image_tag 'portfolio/mitx/info.png', class: :screenshot, alt: 'MITx info page' %>
+      <% end %>
     </section>
   </section>
 

@@ -32,8 +32,12 @@
       <p class="visit"><a href="http://awesomefoundation.org/">Visit their website</a></p>
     </section>
     <section id="screenshots">
-      <a href="/assets/portfolio/awesome/home.png"><img class="screenshot" src="/assets/portfolio/awesome/home.png" alt="Awesome Foundation home page" /></a>
-      <a href="/assets/portfolio/awesome/chapter.png"><img class="screenshot" src="/assets/portfolio/awesome/chapter.png" alt="Awesome Foundation chapter page" /></a>
+      <%= link_to image_path('portfolio/awesome/home.png') do %>
+        <%= image_tag 'portfolio/awesome/home.png', class: :screenshot, alt: 'Awesome Foundation Home Page' %>
+      <% end %>
+      <%= link_to image_path('portfolio/awesome/chapter.png') do %>
+        <%= image_tag 'portfolio/awesome/chapter.png', class: :screenshot, alt: 'Awesome Foundation Chapter Page' %>
+      <% end %>
     </section>
   </section>
 
