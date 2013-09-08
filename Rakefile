@@ -4,6 +4,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ThoughtbotDotCom::Application.load_tasks
+Apprenticeio::Application.load_tasks
 
 task(:default).clear
