@@ -1,7 +1,7 @@
-ThoughtbotDotCom::Application.configure do
+Apprenticeio::Application.configure do
   config.action_controller.perform_caching = true
   config.action_mailer.default_url_options = {
-    host: 'thoughtbot.com'
+    host: 'apprenticeio.com'
   }
   config.active_support.deprecation = :notify
   config.assets.compile = false

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ThoughtbotDotCom::Application.config.secret_key_base = '6ad309ecdeafd6dc2a1b28fa9125dd7fdee8bf325ca7baf039924540b5d4c2451baea673cf38ba22853487cded7df7cfcfbbc6b7236dbd4b93f726affbc8e6fc'
+Apprenticeio::Application.config.secret_key_base = '6ad309ecdeafd6dc2a1b28fa9125dd7fdee8bf325ca7baf039924540b5d4c2451baea673cf38ba22853487cded7df7cfcfbbc6b7236dbd4b93f726affbc8e6fc'
