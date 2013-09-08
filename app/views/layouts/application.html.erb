@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript">
-      var _kmq = _kmq || [];
-        function _kms(u){
-          setTimeout(function(){
-          var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
-          s.src = u; f.parentNode.insertBefore(s, f);
-          }, 1);
-        }
-        _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/8babdeab4c2aa2f0a1d50bf78b1d501f994d6bdf.1.js');
-    </script>
-    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-
     <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag :application %>
     <meta name="description" content="<%= yield :meta_description %>" />
     <meta name="keywords" content="<%= meta_keywords %>" />
-    <title><%= yield :title %> : thoughtbot</title>
+    <title><%= yield :title %> from thoughtbot</title>
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/GiantRobotsSmashingIntoOtherGiantRobots" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <script type="text/javascript" src="http://use.typekit.com/goi6gvo.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -57,59 +44,6 @@
       pageTracker._trackPageview();
     </script>
 
-    <script type="text/javascript">
-      function workshop_details(workshop) {
-        if(workshop.online) {
-          return " Online";
-        }
-
-        var details = [];
-        for (var s=0; s<workshop.active_sections.length; s++) {
-          details.push(workshop.active_sections[s].section.city);
-        }
-        if(details.length > 0) {
-          return " in-person in " + details.join(" and ");
-        } else {
-          return "";
-        }
-      }
-      function workshops(resp) {
-        var courses = resp;
-        $('#current-workshops .loading').replaceWith('<ul/>');
-        $('#current-workshops-footer .loading').replaceWith('<ul/>');
-        $ul = $('#current-workshops ul');
-        $footer_ul = $('#current-workshops-footer ul');
-        for (var i=0; i<courses.length; i++) {
-          var c = courses[i]['workshop'];
-          var name = c['name'] || null;
-
-          if (name) {
-            $ul.append('<li><a href="'+c['url']+'">'+name+workshop_details(c)+'</a></li>');
-
-            if (i<3) {
-              $footer_ul.append('<li><a href="'+c['url']+'">'+name+workshop_details(c)+'</a></li>');
-            }
-          }
-        }
-      }
-    </script>
-
-    <script src="https://learn.thoughtbot.com/workshops.json?callback=workshops" type="text/javascript"></script>
-    <script type="text/javascript">
-      function tumblr(resp) {
-        var posts = resp.posts;
-        $('#blog-footer .loading').replaceWith('<ul/>');
-        $ul = $('#blog-footer ul');
-        for (var i=0; i<3; i++) {
-          var p = posts[i];
-                      var title = p['regular-title'] || p['link-text'] || null;
-          if (title)
-            $ul.append('<li><a href="'+p['url']+'">'+title+'</a></li>');
-        }
-      }
-    </script>
-
-    <script src="http://robots.thoughtbot.com/api/read/json?callback=tumblr&amp;num=6" type="text/javascript"></script>
     <script type="text/javascript">
       var _sf_async_config={uid:29168,domain:"thoughtbot.com"};
       (function(){
