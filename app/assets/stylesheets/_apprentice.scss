@@ -59,10 +59,6 @@
   }
 
   #page-header {
-    h1 {
-      font-size: 60px;
-    }
-
     h3 {
       color: #636363;
       font: 600 18px/24px proxima-nova,"helvetica neue",arial,sans-serif
@@ -79,6 +75,10 @@
     float: left;
     width: grid-width(6);
 
+    @include media($small) {
+      width: grid-width(12);
+    }
+
     img {
       float: left;
       margin: 0 $gw-gutter 0 0;
@@ -91,6 +91,11 @@
     .bio {
       float: left;
       width: grid-width(7);
+
+      @include media($small) {
+        float: none;
+        width: grid-width(12);
+      }
     }
   }
 }
@@ -106,7 +111,15 @@ section.tracks {
     width: grid-width(6) - $gw-gutter;
 
     .description {
-      height: 310px;
+      height: 330px;
+
+      @include media($small) {
+        height: auto;
+      }
+    }
+
+    @include media($small) {
+      width: grid-width(12);
     }
   }
 
@@ -116,10 +129,20 @@ section.tracks {
     margin-left: $spacing;
     padding-right: $spacing;
     border-right: 1px solid $light-gray;
+
+    @include media($small) {
+      margin-left: 0;
+      padding-right: 0;
+      border: none;
+    }
   }
 
   .advanced {
     padding-left: $spacing;
+
+    @include media($small) {
+      padding-left: 0;
+    }
   }
 }
 
