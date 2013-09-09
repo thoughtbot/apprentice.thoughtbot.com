@@ -1,13 +1,13 @@
 thoughtbot.com
 ==============
 
-This is the source of thoughtbot.com, which is a Rails app.
+This is the source of http://apprentice.io, which is a Rails app.
 
 Set up
 ------
 
-    git clone git@github.com:thoughtbot/thoughtbot.com.git
-    cd thoughtbot.com
+    git clone git@github.com:thoughtbot/apprenticeio.git
+    cd apprenticeio
     ./bin/setup
 
 Develop
@@ -39,8 +39,8 @@ Deploy
 
 Heroku apps:
 
-    git remote add staging git@heroku.com:thoughtbot-staging.git
-    git remote add production git@heroku.com:thoughtbot-production.git
+    git remote add staging git@heroku.com:apprenticeio-staging.git
+    git remote add production git@heroku.com:apprenticeio-production.git
 
 Refer to the [deploy guide][5] guide.
 
