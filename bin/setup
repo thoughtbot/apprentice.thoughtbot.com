@@ -7,8 +7,8 @@
 bundle install --binstubs=bin/stubs
 
 # Set up staging and production git remotes
-git remote add staging git@heroku.com:thoughtbot-staging.git
-git remote add production git@heroku.com:thoughtbot-production.git
+git remote add staging git@heroku.com:apprenticeio-staging.git
+git remote add production git@heroku.com:apprenticeio-production.git
 
 # Set up database
 bundle exec rake db:setup
