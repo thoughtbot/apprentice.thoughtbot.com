@@ -1,5 +1,5 @@
-thoughtbot.com
-==============
+apprentice.io
+=============
 
 This is the source of http://apprentice.io, which is a Rails app.
 
