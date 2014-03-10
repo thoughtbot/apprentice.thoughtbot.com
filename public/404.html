@@ -54,16 +54,6 @@
           <li><a href="https://www.apptrajectory.com">Trajectory</a></li>
         </ul>
       </section>
-
-      <section id="current-workshops-footer">
-        <h3>Workshops</h3>
-        <span class="loading">Loading...</span>
-      </section>
-
-      <section id="blog-footer">
-        <h3>Blog</h3>
-        <span class="loading">Loading...</span>
-      </section>
     </nav>
 
     <p id="copyright">&copy; 2012 thoughtbot, inc. The <em>design of a robot</em> and <em>thoughtbot</em> are trademarks of thoughtbot, inc.</p>
@@ -79,39 +69,5 @@
   </script>
   <script type="text/javascript" src="//d1nu2rn22elx8m.cloudfront.net/performable/pax/3tbRq2.js"></script>
   <script type="text/javascript" src="/assets/application.js"></script>
-
-  <script type="text/javascript">
-    function workshops(resp) {
-      var courses = resp;
-      $('#current-workshops .loading').replaceWith('<ul/>');
-      $('#current-workshops-footer .loading').replaceWith('<ul/>');
-      $ul = $('#current-workshops ul');
-      $footer_ul = $('#current-workshops-footer ul');
-      for (var i=0; i<courses.length; i++) {
-        var c = courses[i]['course'];
-        var name = c['name'] || null;
-        if (name) {
-          $ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
-          $footer_ul.append('<li><a href="'+c['url']+'">'+name+'</a></li>');
-        }
-      }
-    }
-  </script>
-  <script src="https://learn.thoughtbot.com/courses.json?callback=workshops" type="text/javascript"></script>
-  <script type="text/javascript" src="/assets/application.js"></script>
-  <script type="text/javascript">
-    function tumblr(resp) {
-      var posts = resp.posts;
-      $('#blog-footer .loading').replaceWith('<ul/>');
-      $ul = $('#blog-footer ul');
-      for (var i=0; i<posts.length; i++) {
-        var p = posts[i];
-        var title = p['regular-title'] || p['link-text'] || null;
-        if (title)
-        $ul.append('<li><a href="'+p['url']+'">'+title+'</a></li>');
-      }
-    }
-  </script>
-  <script src="http://robots.thoughtbot.com/api/read/json?callback=tumblr&amp;num=4" type="text/javascript"></script>
-</body>
+  </body>
 </html>
