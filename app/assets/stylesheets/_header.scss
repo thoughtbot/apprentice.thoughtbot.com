@@ -37,7 +37,7 @@ header#main-header {
 
         @media screen and (-webkit-min-device-pixel-ratio: 2) {
           background-image: image-url('thoughtbot-logo-hirez.png');
-          @include background-size(contain);
+          background-size: contain;
         }
       }
     }

@@ -91,8 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 div.error, div.notice, div.success,
 #flash_failure, #flash_success, #flash_notice {
   border: 1px solid #ddd;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
+  border-radius: 8px;
   margin-bottom: 1em;
   padding: 0.8em; }
 

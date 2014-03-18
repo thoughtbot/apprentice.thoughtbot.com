@@ -132,7 +132,7 @@ img {
   text-align: center;
 
   @include media($small) {
-    @include background-size(contain);
+    background-size: contain;
     padding-top: lh(1.5);
   }
 
