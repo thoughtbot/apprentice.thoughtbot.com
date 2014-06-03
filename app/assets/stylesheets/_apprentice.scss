@@ -70,6 +70,7 @@
 #apprentice .alumni {
   @extend .clearfix;
   width: grid-width(12);
+  margin-bottom: 20px;
 
   .alumnus {
     float: left;
@@ -96,6 +97,22 @@
         float: none;
         width: grid-width(12);
       }
+    }
+  }
+
+}
+
+div#jobs-wrapper.job-description .alumni {
+  a.apply {
+    margin-left: grid-width(1.5);
+    margin-top: $gw-gutter * 2;
+    text-align: center;
+    width: grid-width(9);
+
+    @include media($small) {
+      margin-left: 0;
+      margin-right: 0;
+      width: grid-width(12);
     }
   }
 }
@@ -146,3 +163,6 @@ section.tracks {
   }
 }
 
+section#faqs {
+  margin-top: 20px;
+}

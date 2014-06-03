@@ -12,13 +12,17 @@
 <div id="jobs-wrapper" class="job-description">
    <section class="alumni">
      <h3 class="title"><span>Featured Alumni</span></h3>
-     <section class="alumnus nick">
+     <section class="alumnus lydia">
        <%= image_tag "apprenticeship/lydia.jpg" %>
        <h4>Lydia Damon, Designer</h4>
        <section class="bio">
          <p>Before her thoughtbot apprenticeship, Lydia was a Senior Visual Designer at the global digital marketing agency, Isobar. She also studied Art History at Trinity College. She then realized that coding is fun and she wanted to implement her own designs.</p>
          <p>Upon completing her apprenticeship, Lydia joined thoughtbot in Boston as a full product designer, where she remains today.</p>
        </section>
+
+       <%= link_to page_path('designer'), class: 'apply' do %>
+         <h3>Apply for a design apprenticeship</h3>
+       <% end %>
      </section>
 
      <section class="alumnus jessie">
@@ -28,16 +32,14 @@
          <p>Before her apprenticeship Jessie graduated from <%= link_to 'Dev Bootcamp', 'http://devbootcamp.com/' %> and <%= link_to 'RailsBridge', 'http://workshops.railsbridge.org' %>. Before moving into web development, Jessie was doing marketing for start-ups. She double majored in Philosophy and Government at Colby College.</p>
          <p>Upon completing her apprenticeship, Jessie joined thoughtbot in San Francisco as a full developer, where she remains today.</p>
        </section>
+
+       <%= link_to page_path('developer'), class: "apply" do %>
+         <h3>Apply for a development apprenticeship</h3>
+       <% end %>
      </section>
-  </section>
+   </section>
 
-  <div id="get-started">
-    <%= link_to page_path('tracks') do %>
-      <h3>Designer or developer looking for a great apprenticeship?</h3>
-      <p>Become an apprentice</p>
-    <% end %>
-  </div>
-
+  <section id="faqs">
     <h3>Frequently Asked Questions</h3>
 
     <h4>What happens during the apprenticeship?</h4>
