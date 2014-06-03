@@ -1,0 +1,49 @@
+<% content_for :site_title, 'apprentice.io' %>
+<% content_for :keyword, :apprentice %>
+
+<header id="page-header" class="primary">
+  <h1>We are looking for intermediate product designers</h1>
+</header>
+
+<div id="jobs-wrapper" class="job-description">
+  <section class="tracks">
+    <div class="beginner">
+      <h2>Beginner</h2>
+
+      <section class="description">
+        <p>
+          Not very comfortable with design for the web or front-end development yet?
+          Try our intensive 12-week <%= link_to "Product Design Bootcamp", metis_design_url %>.
+          For graphic and web designers looking to get into the full-stack of
+          product design and development, the Metis bootcamp provides the
+          opportunity to get hands on experience at every level of digital
+          products.
+        </p>
+      </section>
+
+      <%= link_to metis_design_url, class: "apply" do %>
+        <h3>Learn more</h3>
+      <% end %>
+    </div>
+
+    <div class="intermediate">
+      <h2>Intermediate</h2>
+
+      <section class="description">
+        <p>
+          You have solid visual design skills, and your self-hosted web
+          portfolio showcases your knowledge of HTML and CSS. You have strong
+          opinions and perspectives about product design. In other words, you
+          have the raw materials and trainability to do <%= link_to 'this job',
+            'http://www.thoughtbot.com/jobs/designer' %> phenomenally well given
+            the right mentorship. If these all apply to you, you're exactly who
+            we want!  
+        </p>
+      </section>
+
+      <%= link_to page_path('apply', role: 'Designer'), class: 'apply' do %>
+        <h3>Apply to apprentice.io</h3>
+      <% end %>
+    </div>
+  </section>
+</div>

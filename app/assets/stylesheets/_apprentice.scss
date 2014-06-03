@@ -104,14 +104,14 @@ section.tracks {
   @include clearfix;
   width: grid-width(12);
 
-  .beginner, .advanced {
+  .beginner, .intermediate, .designer, .developer {
     @include box-sizing(border-box);
     float: left;
     text-align: center;
     width: grid-width(6) - $gw-gutter;
 
     .description {
-      height: 330px;
+      height: 200px;
 
       @include media($small) {
         height: auto;
@@ -137,7 +137,7 @@ section.tracks {
     }
   }
 
-  .advanced {
+  .intermediate, .designer {
     padding-left: $spacing;
 
     @include media($small) {

@@ -31,6 +31,14 @@ module ApplicationHelper
     "https://learn.thoughtbot.com/prime#{utm_parameters}"
   end
 
+  def metis_rails_url
+    "http://thisismetis.com/ruby-on-rails-bootcamp#{utm_parameters}"
+  end
+
+  def metis_design_url
+    "http://thisismetis.com/new-bootcamps#{utm_parameters}"
+  end
+
   def utm_parameters
     '?utm_source=apprenticeio&utm_medium=tracks&utm_campaign=apprenticeio'
   end

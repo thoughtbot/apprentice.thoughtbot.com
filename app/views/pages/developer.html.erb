@@ -1,0 +1,38 @@
+<% content_for :site_title, 'apprentice.io' %>
+<% content_for :keyword, :apprentice %>
+
+<header id="page-header" class="primary">
+  <h1>We are looking for intermediate developers</h1>
+</header>
+
+<div id="jobs-wrapper" class="job-description">
+  <section class="tracks">
+    <div class="beginner">
+      <h2>Beginner</h2>
+
+      <section class="description">
+        <p>
+          You have no programming experience, or you haven't been programming in Ruby or Rails for very long. Try our 12-week intensive <%= link_to "Ruby on Rails Bootcamp", metis_rails_url %>.
+        </p>
+      </section>
+
+      <%= link_to metis_rails_url, class: "apply" do %>
+        <h3>Learn more</h3>
+      <% end %>
+    </div>
+
+    <div class="intermediate">
+      <h2>Intermediate</h2>
+
+      <section class="description">
+        <p>
+          You've built and deployed at least one Rails app, and you are able to work effectively in Rails, including performing TDD, but have more to learn. Or, you have extensive experience with Ruby on Rails, but have little experience with test-driven development or Rails best practices.
+        </p>
+      </section>
+
+      <%= link_to page_path('apply', role: 'Rails Developer'), class: 'apply' do %>
+        <h3>Apply to apprentice.io</h3>
+      <% end %>
+    </div>
+  </section>
+</div>
