@@ -32,11 +32,11 @@ module ApplicationHelper
   end
 
   def metis_rails_url
-    "http://thisismetis.com/ruby-on-rails-bootcamp#{utm_parameters}"
+    "http://www.thisismetis.com/ruby-on-rails#{utm_parameters}"
   end
 
   def metis_design_url
-    "http://thisismetis.com/new-bootcamps#{utm_parameters}"
+    "http://www.thisismetis.com/product-design#{utm_parameters}"
   end
 
   def utm_parameters
