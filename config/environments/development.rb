@@ -1,4 +1,4 @@
-Apprenticeio::Application.configure do
+Rails.application.configure do
   config.action_controller.perform_caching = false
   config.action_mailer.default_url_options = {
     host: 'apprenticeio.local'

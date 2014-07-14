@@ -1,14 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.2'
 
 gem 'bourbon'
 gem 'coffee-rails'
 gem 'high_voltage'
 gem 'neat'
 gem 'pg'
-gem 'rails', '4.0.4'
-gem 'sass-rails'
+gem 'rails', '4.1.4'
 gem 'thin'
 gem 'uglifier'
 

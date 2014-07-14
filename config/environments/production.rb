@@ -1,4 +1,4 @@
-Apprenticeio::Application.configure do
+Rails.application.configure do
   config.action_controller.perform_caching = true
   config.action_mailer.default_url_options = {
     host: 'apprenticeio.com'
@@ -7,7 +7,6 @@ Apprenticeio::Application.configure do
   config.assets.compile = false
   config.assets.digest = true
   config.assets.js_compressor = :uglifier
-  config.assets.version = '1.0'
   config.cache_classes = true
   config.consider_all_requests_local = false
   config.eager_load = true
