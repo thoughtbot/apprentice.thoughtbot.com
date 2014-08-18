@@ -7,7 +7,7 @@ gem 'coffee-rails'
 gem 'high_voltage'
 gem 'neat'
 gem 'pg'
-gem 'rails', '4.1.4'
+gem 'rails', '4.1.5'
 gem 'thin'
 gem 'uglifier'
 
