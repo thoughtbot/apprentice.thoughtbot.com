@@ -36,7 +36,7 @@ module ApplicationHelper
   end
 
   def metis_design_url
-    "http://www.thisismetis.com/product-design#{utm_parameters}"
+    "http://www.thisismetis.com/ux-front-end-development#{utm_parameters}"
   end
 
   def utm_parameters
