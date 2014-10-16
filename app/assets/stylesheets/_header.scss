@@ -1,9 +1,9 @@
 header#main-header {
   @extend .wrapper;
-  @extend .clearfix;
+  @include clearfix;
 
   nav#main-nav {
-    @extend .clearfix;
+    @include clearfix;
     border-bottom: 1px solid #DCDCDC;
     padding-bottom: lh();
 
@@ -45,7 +45,7 @@ header#main-header {
     ul {
       display: block;
       margin-top: 72px;
-      @extend .clearfix;
+      @include clearfix;
 
       @include media($small) {
         border-top: 1px solid #dcdcdc;

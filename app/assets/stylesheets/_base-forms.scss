@@ -137,7 +137,6 @@ form.wufoo {
         min-width: flex-grid(6);
         width: flex-grid(6);
         float: left;
-        // @include inline-block();
         clear: none;
 
         input[type="text"], input.text, input[type="email"] {
@@ -149,7 +148,7 @@ form.wufoo {
       // Name Input
       //************************************************************************//
       &.name {
-        @extend .clearfix;
+        @include clearfix;
         float: none;
         margin-right: 0;
         margin-bottom: 10px;

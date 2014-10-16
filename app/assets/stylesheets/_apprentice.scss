@@ -68,7 +68,7 @@
 
 // Apprentice alumni
 #apprentice .alumni {
-  @extend .clearfix;
+  @include clearfix;
   width: grid-width(12);
   margin-bottom: 20px;
 

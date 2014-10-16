@@ -51,7 +51,7 @@
 }
 
 .primary, .secondary {
-  @extend .clearfix;
+  @include clearfix;
   @extend .wrapper;
 }
 

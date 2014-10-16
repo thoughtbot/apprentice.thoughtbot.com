@@ -3,7 +3,7 @@
 
   a {
     @extend .button;
-    @extend .clearfix;
+    @include clearfix;
     font: 500 18px $header;
 
     h3 {

@@ -8,14 +8,14 @@ div#jobs-wrapper {
   }
 
   ul.job-openings {
-    @extend .clearfix;
+    @include clearfix;
     list-style: none;
     margin-bottom: lh(3);
     text-align: center;
 
     li {
       margin: 5px 0 5px (flex-gutter() * 3);
-      @include inline-block();
+      display: inline-block;
 
       &:first-child {
         margin-left: 0;
@@ -130,7 +130,7 @@ div.more-about-us-wrapper {
 
   section#more-about-us {
     @extend .wrapper;
-    @extend .clearfix;
+    @include clearfix;
 
     ul {
       list-style: none;
@@ -177,7 +177,7 @@ div#jobs-wrapper.job-description {
     @extend .button;
     margin: 0 0 lh();
     padding: lh(1);
-    @include inline-block();
+    display: inline-block;
 
     @include media($small) {
       padding: lh(.6);
