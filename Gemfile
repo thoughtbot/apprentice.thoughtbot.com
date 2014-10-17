@@ -1,20 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '2.1.3'
-
-gem 'bourbon'
-gem 'coffee-rails'
-gem 'high_voltage'
-gem 'neat'
-gem 'pg'
-gem 'rails', '4.1.6'
-gem 'thin'
-gem 'uglifier'
+gem "bitters"
+gem "bourbon"
+gem "neat"
+gem "middleman", "~> 3.3.6"
+gem "rack-contrib"
 
 group :development do
-  gem 'foreman'
-end
-
-group :production, :staging do
-  gem 'rails_12factor'
+  gem "middleman-livereload"
 end

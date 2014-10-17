@@ -1,14 +1,14 @@
 apprentice.io
 =============
 
-This is the source of http://apprentice.io, which is a Rails app.
+This is the source of http://apprentice.io, which is a Middleman app.
 
 Set up
 ------
 
     git clone git@github.com:thoughtbot/apprenticeio.git
     cd apprenticeio
-    ./bin/setup
+    bundle
 
 Develop
 -------
@@ -17,11 +17,10 @@ Run the server:
 
     foreman start
 
-Then go to [http://localhost:6500][1].
+Then go to [http://localhost:4567][1].
 
-* Edit files in the `app/views/pages/` directory.
-* Styles for the main site are in `app/assets/stylesheets`.
-* You can also place raw files in 'public/'.
+* Edit files in the `source/` directory.
+* Styles for the main site are in `source/stylesheets/`.
 * `git commit` the additions and push.
 
 Develop
@@ -48,7 +47,7 @@ Deploy to staging, then acceptance test on [staging][6].
 
 Deploy to production, then acceptance test on [production][7].
 
-[1]: http://localhost:6500
+[1]: http://localhost:4567
 [2]: http://github.com/thoughtbot/guides/blob/master/protocol
 [3]: http://github.com/thoughtbot/guides/blob/master/best-practices
 [4]: http://github.com/thoughtbot/guides/blob/master/style
