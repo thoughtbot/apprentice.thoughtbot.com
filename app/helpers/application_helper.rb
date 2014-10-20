@@ -19,18 +19,6 @@ module ApplicationHelper
     'Work at thoughtbot.'
   end
 
-  def portfolio_meta_keywords
-    'web design, web development, portfolio'
-  end
-
-  def portfolio_meta_description
-    'A selection of our work.'
-  end
-
-  def learn_prime_url
-    "https://learn.thoughtbot.com/prime#{utm_parameters}"
-  end
-
   def metis_rails_url
     "http://www.thisismetis.com/ruby-on-rails#{utm_parameters}"
   end
