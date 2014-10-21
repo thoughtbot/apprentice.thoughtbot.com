@@ -1,0 +1,30 @@
+span.divider {
+  display: block;
+  position: relative;
+  margin-bottom: 2em;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+
+  @include media($medium-screen-up) {
+    margin-bottom: 4em;
+  }
+
+  &:after {
+    @include position(absolute, null 0px 0.75em 0px);
+    border-bottom: 1px solid $base-border-color;
+    content: "";
+    z-index: -1;
+  }
+
+  .text {
+    background: white;
+    color: #aaa;
+    display: inline;
+    font-family: $serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 1em;
+    text-transform: none;
+  }
+}

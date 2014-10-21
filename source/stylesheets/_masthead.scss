@@ -1,0 +1,40 @@
+.masthead {
+  @include clearfix();
+  padding: 2em 0;
+  text-align: center;
+
+  @include media($medium-screen-up) {
+    padding: 4em 0;
+  }
+
+  .section-title,
+  .section-subtitle {
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.75em;
+
+    @include media($medium-screen-up) {
+      font-size: 3em;
+      margin-bottom: 0.25em;
+      width: 75%;
+    }
+  }
+
+  .section-subtitle {
+    @include media($medium-screen-up) {
+      width: 50%;
+    }
+  }
+}
+
+.masthead.apply {
+  .section-title {
+    margin-bottom: 1em;
+  }
+
+  p {
+    text-align: left;
+  }
+}

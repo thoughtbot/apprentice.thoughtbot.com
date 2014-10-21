@@ -1,0 +1,63 @@
+.alumni {
+  @include fill-parent();
+  float: left;
+
+  @include media($medium-screen-up) {
+    margin-bottom: 4em;
+  }
+
+  .row {
+    margin-bottom: 2em;
+
+    @include media($medium-screen-up) {
+      margin-bottom: 0;
+    }
+  }
+
+  .image-wrapper {
+    @include size(96px);
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include media($medium-screen-up) {
+      @include size(auto);
+      @include span-columns(4 of 12);
+      border-radius: 0;
+      padding-top: 2em;
+    }
+
+    img {
+      @include size(96px auto);
+
+      @include media($medium-screen-up) {
+        @include size(auto);
+      }
+    }
+  }
+
+  .description-wrapper {
+    @include fill-parent();
+
+    @include media($medium-screen-up) {
+      @include span-columns(8 of 12);
+    }
+
+    .title {
+      text-align: center;
+
+      @include media($medium-screen-up) {
+        text-align: left;
+      }
+    }
+  }
+
+  .text-wrapper {
+    min-height: auto;
+
+    @include media($medium-screen-up) {
+      min-height: em(250);
+    }
+  }
+}
+

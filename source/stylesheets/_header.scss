@@ -1,0 +1,13 @@
+header.site-header {
+  border-bottom: 1px solid $base-border-color;
+  padding: 2em 0;
+  text-align: center;
+
+  .brand-logo a{
+    color: $base-font-color;
+
+    &:hover {
+      color: $base-accent-color;
+    }
+  }
+}

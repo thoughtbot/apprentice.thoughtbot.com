@@ -1,0 +1,22 @@
+.cta-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+  a {
+    @extend %button;
+    padding: 1.5em 1em;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    padding: 1.5em 1em;
+  }
+}
+
+.faq {
+  .title {
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,54 @@
+.path {
+  padding-bottom: 2em;
+
+  .title {
+    text-align: center;
+  }
+
+  .row {
+    margin-bottom: 2em;
+    text-align: center;
+
+    @include media($medium-screen-up) {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  .column {
+    &:first-child {
+      padding-right: 0;
+      margin-bottom: 2em;
+
+      @include media($medium-screen-up) {
+        border-right: 1px solid $base-border-color;
+        padding-right: 2em;
+        margin-bottom: 0;
+      }
+    }
+
+    &:last-child {
+      padding-left: 0;
+
+      @include media($medium-screen-up) {
+        padding-left: 1em;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  .text-wrapper {
+    min-height: auto;
+
+    @include media($medium-screen-up) {
+      min-height: em(200);
+    }
+  }
+}
