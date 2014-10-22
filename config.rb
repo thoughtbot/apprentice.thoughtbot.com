@@ -1,3 +1,5 @@
+Bundler.require(Middleman::Application.config.environment)
+
 activate :directory_indexes
 
 set :css_dir, "stylesheets"
