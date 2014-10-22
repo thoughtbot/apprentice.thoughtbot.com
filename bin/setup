@@ -1,0 +1,43 @@
+#!/usr/bin/env sh
+
+# Set up Middleman app.
+# Run this script immediately after cloning the codebase.
+
+# Check Ruby install
+if ! ruby --version | grep -Fq "$(< .ruby-version)"; then
+  printf 'You do not have the correct version of Ruby installed.\n'
+
+  if command -v rbenv > /dev/null; then
+    if [ -d "$HOME/.plugins/ruby-build" ]; then
+      printf 'Updating to latest ruby-build...\n'
+      cd $HOME/.rbenv/plugins/ruby-build
+      git pull
+      cd -
+    else
+      printf 'Installing ruby-build...\n'
+      git clone https://github.com/sstephenson/ruby-build.git \
+        ~/.rbenv/plugins/ruby-build
+    fi
+
+    printf 'Installing the version of Ruby for this project...\n'
+    rbenv install
+  fi
+fi
+
+# Set up Ruby dependencies
+bundle install
+
+# Add binstubs to PATH. Your ~/.zshenv should include this line:
+# export PATH=".git/safe/../../bin:$PATH"
+mkdir -p .git/safe
+
+# Set up deploys
+if heroku join --app apprenticeio-staging &> /dev/null; then
+  git remote add staging git@heroku.com:apprenticeio-staging.git &> /dev/null
+  printf 'You are a collaborator on the "apprenticeio-staging" Heroku app\n'
+fi
+
+if heroku join --app apprenticeio-production &> /dev/null; then
+  git remote add production git@heroku.com:apprenticeio-production.git &> /dev/null
+  printf 'You are a collaborator on the "apprenticeio-production" Heroku app\n'
+fi

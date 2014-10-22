@@ -1,23 +1,33 @@
 apprentice.io
 =============
 
-This is the source of http://apprentice.io, which is a Middleman app.
+This is the source of [apprentice.io], which is a Middleman app.
+
+[apprentice.io]: http://apprentice.io
 
 Set up
 ------
 
-    git clone git@github.com:thoughtbot/apprenticeio.git
-    cd apprenticeio
-    bundle
+```bash
+git clone git@github.com:thoughtbot/apprenticeio.git
+cd apprenticeio
+./bin/setup
+```
 
 Develop
 -------
 
-Run the server:
+Run the server, perhaps in a tmux session:
 
-    foreman start
+```bash
+middleman
+```
 
-Then go to [http://localhost:4567][1].
+Open a browser:
+
+```bash
+open http://localhost:4567
+```
 
 * Edit files in the `source/` directory.
 * Styles for the main site are in `source/stylesheets/`.
@@ -29,28 +39,32 @@ Develop
 Use the following guides for getting things done, programming well, and
 programming in style.
 
-* [Protocol][2]
-* [Best Practices][3]
-* [Style][4]
+* [Protocol]
+* [Best Practices]
+* [Style]
+
+[Protocol]: http://github.com/thoughtbot/guides/blob/master/protocol
+[Best Practices]: http://github.com/thoughtbot/guides/blob/master/best-practices
+[Style]: http://github.com/thoughtbot/guides/blob/master/style
 
 Deploy
 ------
 
-Heroku apps:
+`./bin/setup` will automatically add you as a collaborator
+and set up `staging` and `production` remotes for the Heroku apps.
 
-    git remote add staging git@heroku.com:apprenticeio-staging.git
-    git remote add production git@heroku.com:apprenticeio-production.git
+Refer to the [deploy guide].
 
-Refer to the [deploy guide][5] guide.
+[deploy guide]: https://github.com/thoughtbot/guides/tree/master/protocol#deploy
 
-Deploy to staging, then acceptance test on [staging][6].
+Deploy to, and acceptance test on, staging:
 
-Deploy to production, then acceptance test on [production][7].
+```bash
+./bin/deploy staging
+```
 
-[1]: http://localhost:4567
-[2]: http://github.com/thoughtbot/guides/blob/master/protocol
-[3]: http://github.com/thoughtbot/guides/blob/master/best-practices
-[4]: http://github.com/thoughtbot/guides/blob/master/style
-[5]: https://github.com/thoughtbot/guides/tree/master/protocol#deploy
-[6]: http://staging.thoughtbot.com
-[7]: http://thoughtbot.com
+Deploy to, and acceptance test on, production:
+
+```
+./bin/deploy production
+```
