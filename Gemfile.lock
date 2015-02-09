@@ -11,8 +11,8 @@ GEM
       bourbon (>= 3.2)
       sass (>= 3.2)
       thor
-    bourbon (4.1.1)
-      sass (~> 3.3)
+    bourbon (4.2.0)
+      sass (~> 3.4)
       thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
