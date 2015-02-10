@@ -1,8 +1,108 @@
-footer.site-footer {
-  color: $medium-gray;
+$desktop-small: new-breakpoint(max-width 1024px);
+$mobile: new-breakpoint(max-width 480px);
+$iPhone5-min-breakpoint: 320px;
+$iPhone5-max-breakpoint: 568px;
 
-  .content-wrapper {
-    border-top: 1px solid $base-border-color;
-    padding: 3em 0;
+#universal-footer {
+  background-color: $thoughtbot-gray;
+  color: white;
+  margin-top: 3em;
+  position: relative;
+
+  .wrap {
+    overflow: hidden;
+    padding: em(120) 0;
+
+    @include media($desktop-small) {
+      padding: em(30) 0;
+    }
+
+    @include media($mobile) {
+      padding: em(40) 0;
+    }
+
+    @media only screen
+    and (min-width : $iPhone5-min-breakpoint)
+    and (max-device-width : $iPhone5-max-breakpoint)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      padding: em(100) 0;
+    }
+  }
+
+  .footer-nav {
+    font-family: $sans-serif;
+    text-align: center;
+    width: 100%;
+
+    ul {
+      display: inline-block;
+      padding: 0 em(30);
+      text-align: left;
+      vertical-align: text-top;
+
+      li {
+        line-height: $base-line-height + em(2);
+      }
+
+      .title {
+        font-weight: bold;
+        padding-bottom: em(10);
+        text-transform: uppercase;
+      }
+
+      a {
+        color: white;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        &:active,
+        &:focus {
+          color: darken($hover-link-color, 50);
+          outline: none; 
+        }
+      }
+    }
+
+    @include media($desktop-small) {
+      @include span-columns(12);
+      @include shift(1);
+      padding: 0;
+
+      ul {
+        @include span-columns(4 of 12);
+        float: left;
+        margin: em(20) 0 0 0;
+        padding: em(10);
+      }
+
+      &:nth-child(3n),
+      &:nth-child(6n) {
+        @include omega;
+      }
+    }
+
+    @include media($mobile) {
+      @include shift(0.5);
+
+      ul {
+        font-size: em(14);
+      }
+    }
+  }
+}
+
+.site-footer {
+  background-color: $thoughtbot-gray;
+  padding: 3em 0;
+  text-align: center;
+
+  p {
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
   }
 }

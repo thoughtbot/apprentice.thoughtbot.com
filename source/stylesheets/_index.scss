@@ -1,22 +1,42 @@
-.cta-wrapper {
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-
-  a {
-    @extend %button;
-    padding: 1.5em 1em;
-    width: 100%;
+.alumni {
+  .image-wrapper {
+    @include size(96px);
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
   }
 
-  input[type="submit"] {
-    padding: 1.5em 1em;
+  .text-wrapper {
+    margin-bottom: 2em;
+    margin-left: em(130);
   }
 }
 
-.faq {
-  .title {
-    font-weight: 400;
-    margin-bottom: 1em;
+.more {
+  border-bottom: 1px solid $base-border-color;
+  padding-bottom: 3em;
+}
+
+.apply-links {
+  @include outer-container;
+  @include row;
+  max-width: em(850);
+  padding: 3em 0;
+  text-align: center;
+
+  h2 {
+    font-size: em(20);
+    font-weight: normal;
+    margin: 0 auto 2rem;
+    max-width: rem(650);
+    opacity: 0.5;
+  }
+
+  div {
+    padding: 1em;
+
+    @include media(em(725)) {
+      @include span-columns(6);
+    }
   }
 }

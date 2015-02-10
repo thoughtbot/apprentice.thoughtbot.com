@@ -1,64 +1,52 @@
 <form action="https://formkeep.com/f/f85ae88a06c7" method="POST">
   <%= partial "partials/forms/base" %>
 
-  <article class="col-3">
-    <div class="column">
-      <label for="portfolio-url">Portfolio URL</label>
-      <input type="text" id="portfolio-url" name="portfolioUrl" required />
-    </div>
-    <div class="column optional">
-      <label for="portfolio-url">
-        Dribbble URL
-        <span>(optional)</span>
-      </label>
-      <input type="text" id="dribbble-url" name="dribbbleUrl" />
-    </div>
-    <div class="column optional">
-      <label for="portfolio-url">
-        Github URL
-        <span>(optional)</span>
-      </label>
-      <input type="text" id="github-url" name="githubUrl" />
-    </div>
-  </article>
+  <div>
+    <label for="portfolio-url">Portfolio URL</label>
+    <input type="text" id="portfolio-url" name="portfolioUrl" required />
+  </div>
 
-  <article>
-    <div>
-      <label for="design-interest">How did you become interested in design?</label>
-      <textarea id="design-interest" name="designInterest" required></textarea>
-    </div>
-  </article>
+  <div>
+    <label for="portfolio-url">
+      Dribbble URL
+      <span>(optional)</span>
+    </label>
+    <input type="text" id="dribbble-url" name="dribbbleUrl" />
+  </div>
 
-  <article>
-    <div>
-      <label for="design-resources">What resources did you use to learn design when you first got started?</label>
-      <textarea id="design-resources" name="designResources" required></textarea>
-    </div>
-  </article>
+  <div>
+    <label for="portfolio-url">
+      GitHub URL
+      <span>(optional)</span>
+    </label>
+    <input type="text" id="github-url" name="githubUrl" />
+  </div>
 
-  <article>
-    <div>
-      <label for="design-grow">How do you want to grow as a designer?</label>
-      <textarea id="design-grow" name="designGrowth" required></textarea>
-    </div>
-  </article>
+  <div>
+    <label for="design-interest">How did you become interested in design?</label>
+    <textarea id="design-interest" name="designInterest" required></textarea>
+  </div>
 
-  <article>
-    <div>
-      <label for="design-code">Why is it important for you, as a designer, to know how to code HTML/CSS/JS?</label>
-      <textarea id="design-code" name="designCode" required></textarea>
-    </div>
-  </article>
+  <div>
+    <label for="design-resources">What resources did you use to learn design when you first got started?</label>
+    <textarea id="design-resources" name="designResources" required></textarea>
+  </div>
 
-  <article>
-    <div>
-      <label for="project-example">Give us a link to something you worked on and are proud of. Tell us what you did on the project and why you are proud of your work. </label>
-      <textarea id="project-example" name="projectExample" required></textarea>
-    </div>
-  </article>
+  <div>
+    <label for="design-grow">How do you want to grow as a designer?</label>
+    <textarea id="design-grow" name="designGrowth" required></textarea>
+  </div>
 
-  <article class="cta-wrapper">
-    <input type="submit" value="Submit application form" />
-  </article>
+  <div>
+    <label for="design-code">Why is it important for you, as a designer, to know how to code HTML/CSS/JS?</label>
+    <textarea id="design-code" name="designCode" required></textarea>
+  </div>
+
+  <div>
+    <label for="project-example">Give us a link to something you worked on and are proud of. Tell us what you did on the project and why you are proud of your work. </label>
+    <textarea id="project-example" name="projectExample" required></textarea>
+  </div>
+
+  <input type="submit" value="Submit application form" />
 </form>
 

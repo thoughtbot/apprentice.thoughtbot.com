@@ -21,12 +21,15 @@ dl {
   margin-bottom: $base-spacing * 2;
 
   dt {
-    font-size: 1.25em;
+    font-size: $h4-font-size;
+    font-family: $header-font-family;
     font-weight: bold;
     margin: ($base-spacing / 2) auto ($base-spacing / 4);
   }
 
   dd {
+    color: lighten($base-font-color, 20%);
+    font-size: em(18);
     margin: 0 auto $base-spacing;
   }
 }

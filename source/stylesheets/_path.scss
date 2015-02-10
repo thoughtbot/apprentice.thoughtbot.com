@@ -1,54 +1,57 @@
-.path {
-  padding-bottom: 2em;
+.beginner {
+  @include padding(4em null);
+  background-color: $thoughtbot-gray;
+  color: #fff;
+  text-align: center;
 
-  .title {
-    text-align: center;
-  }
-
-  .row {
-    margin-bottom: 2em;
-    text-align: center;
-
-    @include media($medium-screen-up) {
-      margin-bottom: 0;
-      text-align: left;
-    }
-  }
-
-  .column {
-    &:first-child {
-      padding-right: 0;
-      margin-bottom: 2em;
-
-      @include media($medium-screen-up) {
-        border-right: 1px solid $base-border-color;
-        padding-right: 2em;
-        margin-bottom: 0;
-      }
-    }
-
-    &:last-child {
-      padding-left: 0;
-
-      @include media($medium-screen-up) {
-        padding-left: 1em;
-      }
-    }
-  }
-
-  .title {
+  h2 {
     margin-bottom: 1em;
   }
 
   p {
+    color: rgba(#fff, 0.7);
     margin-bottom: 2em;
+    text-align: left;
   }
+}
 
-  .text-wrapper {
-    min-height: auto;
+.intermediate {
+  padding-top: 6em;
 
-    @include media($medium-screen-up) {
-      min-height: em(200);
+  h2 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
+
+.checklist {
+  font-family: $header-font-family;
+  font-size: em(20);
+  font-weight: bold;
+  padding: 2em 4em;
+
+  li {
+    padding-left: 2em;
+    position: relative;
+
+    &:before {
+      @include position(absolute, 0.3em null null 0);
+      @include size(1em);
+      background-image: url("/images/checkmark.svg");
+      background-position: center center;
+      background-size: contain;
+      content: "";
+      display: block;
+      opacity: 0.2;
     }
+  }
+}
+
+.apply {
+  padding-top: 3em;
+
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }

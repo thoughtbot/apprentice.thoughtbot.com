@@ -1,0 +1,6 @@
+.content-wrapper {
+  @include outer-container();
+  @include padding(null 2em);
+  max-width: em(650);
+}
+

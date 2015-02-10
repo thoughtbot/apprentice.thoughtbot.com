@@ -1,13 +1,22 @@
-header.site-header {
-  border-bottom: 1px solid $base-border-color;
-  padding: 2em 0;
+.site-header {
+  padding: 3rem 0;
   text-align: center;
+}
 
-  .brand-logo a{
-    color: $base-font-color;
+.brand-logo a {
+  color: $base-font-color;
+  display: inline-block;
 
-    &:hover {
-      color: $base-accent-color;
-    }
+  &:hover {
+    color: $base-accent-color;
   }
+}
+
+.from {
+  color: lighten($base-font-color, 55%);
+  font-family: $base-font-family;
+  font-size: em(18);
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 0.25rem;
 }

@@ -1,3 +1,12 @@
+form {
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+  div {
+    margin-bottom: 1em;
+  }
+}
+
 fieldset {
   background: lighten($base-border-color, 10);
   border: $base-border;
@@ -14,6 +23,7 @@ select {
 }
 
 label {
+  font-family: $header-font-family;
   font-weight: bold;
   margin-bottom: $base-spacing / 4;
 
@@ -29,12 +39,12 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
-  box-sizing: border-box;
   @include transition(border-color);
-  background-color: white;
+  background-color: #fff;
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
+  box-sizing: border-box;
   font-family: $form-font-family;
   font-size: $form-font-size;
   margin-bottom: $base-spacing / 2;
@@ -75,4 +85,28 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+
+  &:after {
+    @include position(absolute, 12px 12px null null);
+    content: "\25bc";
+    display: block;
+    font-size: 10px;
+  }
+
+  select {
+    @include appearance(none);
+    border-color: $base-border-color;
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
