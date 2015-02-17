@@ -12,11 +12,6 @@
   }
 }
 
-.more {
-  border-bottom: 1px solid $base-border-color;
-  padding-bottom: 3em;
-}
-
 .apply-links {
   @include outer-container;
   @include row;
@@ -37,6 +32,11 @@
 
     @include media(em(725)) {
       @include span-columns(6);
+      margin-right: 0;
+
+      &#ios {
+        @include shift(3);
+      }
     }
   }
 }
