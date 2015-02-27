@@ -10,5 +10,6 @@ gem "rack-contrib"
 gem "rake"
 
 group :development do
+  gem "html-proofer"
   gem "middleman-livereload"
 end

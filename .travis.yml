@@ -1,0 +1,11 @@
+language:
+  - ruby
+rvm:
+  - 2.2.0
+notifications:
+  email: false
+sudo: false
+before_script:
+  - bundle exec middleman build
+script:
+  - bundle exec htmlproof ./tmp --check-html --check-favicon --disable-external --verbose
