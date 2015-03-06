@@ -1,5 +1,5 @@
 .masthead {
-  @include padding(6em null);
+  @include padding(6em null 3em);
   text-align: center;
 
   h2 {

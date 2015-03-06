@@ -13,10 +13,6 @@
 }
 
 .apply-links {
-  @include outer-container;
-  @include row;
-  max-width: em(850);
-  padding: 3em 0;
   text-align: center;
 
   h2 {
@@ -27,7 +23,12 @@
     opacity: 0.5;
   }
 
-  div {
+}
+
+.apprentice-types {
+  margin: 0 -100px;
+
+  .apprentice-type {
     padding: 1em;
 
     @include media(em(725)) {
@@ -36,6 +37,7 @@
 
       &#ios {
         @include shift(3);
+        margin-top: 2em;
       }
     }
   }
