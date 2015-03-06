@@ -114,6 +114,8 @@ GEM
     padrino-support (0.12.5)
       activesupport (>= 3.1)
     parallel (1.4.1)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -161,5 +163,6 @@ DEPENDENCIES
   middleman
   middleman-livereload
   neat
+  puma
   rack-contrib
   rake

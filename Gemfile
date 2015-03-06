@@ -6,6 +6,7 @@ gem "bitters"
 gem "bourbon"
 gem "neat"
 gem "middleman"
+gem "puma"
 gem "rack-contrib"
 gem "rake"
 
