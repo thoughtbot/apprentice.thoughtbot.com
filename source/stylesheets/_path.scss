@@ -64,3 +64,12 @@
     margin-top: 3em;
   }
 }
+
+#disabled_explanation {
+  margin-top: 1em;
+}
+
+.button.disabled {
+  background-color: #c6c6c6;
+  cursor: not-allowed;
+}
