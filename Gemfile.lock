@@ -12,7 +12,7 @@ GEM
       bourbon (>= 3.2)
       sass (>= 3.2)
       thor
-    bourbon (4.2.1)
+    bourbon (4.2.2)
       sass (~> 3.4)
       thor
     celluloid (0.16.0)
