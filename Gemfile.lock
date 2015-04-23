@@ -50,7 +50,7 @@ GEM
     hitimes (1.2.2)
     hooks (0.4.0)
       uber (~> 0.0.4)
-    html-proofer (2.1.0)
+    html-proofer (2.2.0)
       addressable (~> 2.3)
       colored (~> 1.2)
       mercenary (~> 0.3.2)
