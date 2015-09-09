@@ -1,0 +1,4 @@
+test:
+  override:
+    - bundle exec middleman build
+    - bundle exec htmlproof ./tmp --check-html --check-favicon --disable-external --verbose
