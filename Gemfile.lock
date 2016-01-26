@@ -103,14 +103,14 @@ GEM
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.3.0)
     mime-types (2.6.2)
-    mini_portile (0.6.2)
+    mini_portile2 (2.0.0)
     minitest (5.8.2)
     multi_json (1.11.2)
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
-    nokogiri (1.6.6.2)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     padrino-helpers (0.12.5)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.5)
@@ -172,4 +172,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
