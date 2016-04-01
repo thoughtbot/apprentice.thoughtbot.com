@@ -49,7 +49,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.4.3)
-    html-proofer (3.0.4)
+    html-proofer (3.0.5)
       activesupport (~> 4.2)
       addressable (~> 2.3)
       colored (~> 1.2)
