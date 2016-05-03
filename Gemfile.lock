@@ -48,7 +48,7 @@ GEM
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
-    hashie (3.4.3)
+    hashie (3.4.4)
     html-proofer (3.0.5)
       activesupport (~> 4.2)
       addressable (~> 2.3)
