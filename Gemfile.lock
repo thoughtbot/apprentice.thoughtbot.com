@@ -37,7 +37,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.0.0)
       addressable (~> 2)
-    ffi (1.9.13)
+    ffi (1.9.14)
     git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
