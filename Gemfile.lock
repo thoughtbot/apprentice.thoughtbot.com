@@ -135,7 +135,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
-    yell (2.0.6)
+    yell (2.0.7)
 
 PLATFORMS
   ruby
