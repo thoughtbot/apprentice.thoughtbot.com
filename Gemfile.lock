@@ -23,7 +23,7 @@ GEM
     colored (1.2)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     contracts (0.13.0)
     dotenv (2.1.1)
     em-websocket (0.5.1)
@@ -61,17 +61,17 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     memoist (0.15.0)
     mercenary (0.3.6)
-    middleman (4.1.14)
+    middleman (4.2.0)
       coffee-script (~> 2.2)
       compass-import-once (= 1.0.5)
       haml (>= 4.0.5)
       kramdown (~> 1.2)
-      middleman-cli (= 4.1.14)
-      middleman-core (= 4.1.14)
+      middleman-cli (= 4.2.0)
+      middleman-core (= 4.2.0)
       sass (>= 3.4.0, < 4.0)
-    middleman-cli (4.1.14)
+    middleman-cli (4.2.0)
       thor (>= 0.17.0, < 2.0)
-    middleman-core (4.1.14)
+    middleman-core (4.2.0)
       activesupport (>= 4.2, < 5.1)
       addressable (~> 2.3)
       backports (~> 3.6)
@@ -112,7 +112,7 @@ GEM
     padrino-support (0.13.3.3)
       activesupport (>= 3.1)
     parallel (1.10.0)
-    public_suffix (2.0.4)
+    public_suffix (2.0.5)
     puma (3.6.2)
     rack (1.6.5)
     rack-contrib (1.4.0)
@@ -155,4 +155,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
