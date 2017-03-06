@@ -36,7 +36,7 @@ GEM
     execjs (2.7.0)
     fast_blank (1.0.0)
     fastimage (2.1.0)
-    ffi (1.9.17)
+    ffi (1.9.18)
     git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
