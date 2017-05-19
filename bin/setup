@@ -30,14 +30,3 @@ bundle install
 # Add binstubs to PATH. Your ~/.zshenv should include this line:
 # export PATH=".git/safe/../../bin:$PATH"
 mkdir -p .git/safe
-
-# Set up deploys
-if heroku join --app apprenticeio-staging &> /dev/null; then
-  git remote add staging git@heroku.com:apprenticeio-staging.git &> /dev/null
-  printf 'You are a collaborator on the "apprenticeio-staging" Heroku app\n'
-fi
-
-if heroku join --app apprenticeio-production &> /dev/null; then
-  git remote add production git@heroku.com:apprenticeio-production.git &> /dev/null
-  printf 'You are a collaborator on the "apprenticeio-production" Heroku app\n'
-fi

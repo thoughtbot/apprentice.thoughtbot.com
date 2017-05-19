@@ -7,7 +7,6 @@ gem "bourbon", "~> 4.2.6"
 gem "middleman-livereload"
 gem "middleman"
 gem "neat"
-gem "puma"
 gem "rack-contrib"
 gem "rake"
 
