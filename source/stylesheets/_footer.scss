@@ -1,8 +1,3 @@
-$desktop-small: new-breakpoint(max-width 1024px);
-$mobile: new-breakpoint(max-width 480px);
-$iPhone5-min-breakpoint: 320px;
-$iPhone5-max-breakpoint: 568px;
-
 .site-footer {
   background-color: $thoughtbot-gray;
   padding: 3em 0;
