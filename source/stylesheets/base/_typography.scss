@@ -46,14 +46,14 @@ h6 {
 
 p {
   color: lighten($base-font-color, 20%);
-  font-size: em(18);
+  font-size: 1.125em;
   margin: 0 0 ($base-spacing / 2);
 }
 
 a {
-  @include transition(color 0.1s linear);
   color: $base-link-color;
   text-decoration-skip: ink;
+  transition: color 0.1s linear;
 
   &:hover {
     color: $hover-link-color;

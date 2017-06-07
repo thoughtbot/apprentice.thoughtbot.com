@@ -39,7 +39,6 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
-  @include transition(border-color);
   background-color: #fff;
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
@@ -49,6 +48,7 @@ select[multiple=multiple] {
   font-size: $form-font-size;
   margin-bottom: $base-spacing / 2;
   padding: ($base-spacing / 3) ($base-spacing / 3);
+  transition: border-color;
   width: 100%;
 
   &:hover {
@@ -67,7 +67,7 @@ textarea {
 }
 
 input[type="search"] {
-  @include appearance(none);
+  appearance: none;
 }
 
 input[type="checkbox"],
@@ -99,7 +99,7 @@ select {
   }
 
   select {
-    @include appearance(none);
+    appearance: none;
     border-color: $base-border-color;
     display: block;
     padding: 0.5em;
