@@ -2,8 +2,17 @@
 
 @import "bourbon";
 
+@import "library/variables";
+
 @import "normalize";
-@import "base/base";
+
+@import "base/buttons";
+@import "base/forms";
+@import "base/layout";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/typography";
 
 @import "components/content-wrapper";
 @import "components/footer";

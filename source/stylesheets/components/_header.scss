@@ -4,17 +4,17 @@
 }
 
 .brand-logo a {
-  color: $base-font-color;
+  color: $heading-font-color;
   display: inline-block;
+  font-size: modular-scale(1);
 
   &:hover {
-    color: $base-accent-color;
+    color: $action-color;
   }
 }
 
 .from {
   font-family: $base-font-family;
-  font-size: modular-scale(1);
   font-style: italic;
   font-weight: normal;
   margin-top: 0.25rem;
