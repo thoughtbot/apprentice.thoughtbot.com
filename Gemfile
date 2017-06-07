@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 ruby "2.4.0"
 
-gem "bitters"
 gem "bourbon", "~> 4.2.6"
 gem "middleman-livereload"
 gem "middleman"
