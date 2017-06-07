@@ -146,7 +146,7 @@ DEPENDENCIES
   html-proofer
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.8)
-  middleman-livereload
+  middleman-livereload (~> 3.4)
   neat
   rack-contrib
   rake
