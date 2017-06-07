@@ -139,7 +139,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon (~> 4.2.6)
   html-proofer
-  middleman
+  middleman (~> 4.2)
   middleman-livereload
   neat
   rack-contrib
