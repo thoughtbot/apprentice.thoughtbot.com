@@ -3,16 +3,6 @@
   text-align: center;
 }
 
-.brand-logo a {
-  color: $heading-font-color;
-  display: inline-block;
-  font-size: modular-scale(1);
-
-  &:hover {
-    color: $action-color;
-  }
-}
-
 .from {
   font-family: $base-font-family;
   font-style: italic;
