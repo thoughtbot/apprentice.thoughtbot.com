@@ -1,6 +1,6 @@
 // Typography
-$base-font-family: "freight-text-pro", $font-stack-georgia;
-$heading-font-family: "calluna-sans", $font-stack-system;
+$base-font-family: $font-stack-system;
+$heading-font-family: $base-font-family;
 
 // Line height
 $base-line-height: 1.5;
@@ -20,7 +20,7 @@ $thoughtbot-gray: #353740;
 $thoughtbot-red: #c52d2f;
 
 // Font Colors
-$base-font-color: tint($thoughtbot-gray, 30%);
+$base-font-color: tint($thoughtbot-gray, 20%);
 $heading-font-color: $thoughtbot-gray;
 $action-color: $thoughtbot-red;
 
