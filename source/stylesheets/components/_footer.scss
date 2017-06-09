@@ -1,18 +1,7 @@
 .site-footer {
-  background-color: $thoughtbot-gray;
-  margin-top: $base-spacing * 2;
-  padding: 3em 0;
+  @include padding($base-spacing null);
+  border-top: $base-border;
+  font-size: modular-scale(-1);
+  margin-top: $large-spacing;
   text-align: center;
-
-  p {
-    color: #fff;
-  }
-
-  a {
-    color: #fff;
-  }
-
-  a:hover {
-    color: $thoughtbot-red;
-  }
 }

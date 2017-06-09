@@ -1,5 +1,5 @@
 .site-header {
-  padding: 3rem 0;
+  @include padding($base-spacing null);
   text-align: center;
 }
 
