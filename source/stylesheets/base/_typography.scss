@@ -13,7 +13,11 @@ html {
   }
 
   @media (min-width: 100em) {
-    font-size: 118.75%;
+    font-size: 125%;
+  }
+
+  @media (min-width: 120em) {
+    font-size: 137.5%;
   }
 }
 
@@ -27,6 +31,7 @@ h6 {
   font-family: $heading-font-family;
   font-weight: 700;
   line-height: $heading-line-height;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -49,12 +54,17 @@ ol {
   padding-left: 0;
 }
 
+li {
+  margin-bottom: 0.25em;
+}
+
 dt {
   color: $heading-font-color;
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   font-weight: 700;
   line-height: $heading-line-height;
+  margin-top: 2em;
 }
 
 dd {
