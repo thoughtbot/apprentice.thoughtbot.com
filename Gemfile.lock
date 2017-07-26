@@ -35,7 +35,6 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.0)
     ffi (1.9.18)
-    git-version-bump (0.15.1)
     haml (5.0.1)
       temple (>= 0.8.0)
       tilt
@@ -112,8 +111,7 @@ GEM
     parallel (1.12.0)
     public_suffix (2.0.5)
     rack (1.6.8)
-    rack-contrib (1.4.0)
-      git-version-bump (~> 0.15)
+    rack-contrib (1.5.0)
       rack (~> 1.4)
     rack-livereload (0.3.16)
       rack
