@@ -1,5 +1,5 @@
 .site-footer {
-  @include padding($base-spacing null);
+  @include padding($base-spacing 0);
   border-top: $base-border;
   font-size: modular-scale(-1);
   margin-top: $large-spacing;

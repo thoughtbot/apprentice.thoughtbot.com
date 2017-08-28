@@ -36,3 +36,13 @@ Push to master.
 [Netlify] will automatically deploy the site to <http://apprentice.thoughtbot.com/>.
 
 [Netlify]: https://www.netlify.com/
+
+## License
+
+The content of this project
+is licensed under the [Creative Commons Attribution 4.0 license][CC].
+The underlying source code used to format and display that content
+is licensed under the [MIT license][MIT].
+
+[CC]: https://creativecommons.org/licenses/by/4.0/
+[MIT]: http://opensource.org/licenses/mit-license.php
