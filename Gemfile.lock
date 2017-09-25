@@ -8,7 +8,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (7.1.4)
+    autoprefixer-rails (7.1.4.1)
       execjs
     backports (3.8.0)
     bourbon (5.0.0.beta.8)
