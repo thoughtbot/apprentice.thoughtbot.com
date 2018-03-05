@@ -2,7 +2,7 @@
 
 This is the source of [apprentice.io], which is a Middleman app.
 
-[apprentice.io]: https://www.apprentice.io
+[apprentice.io]: http://apprentice.thoughtbot.com/
 
 ## Set up
 
@@ -33,6 +33,6 @@ open http://localhost:4567
 ## Deploy
 
 Push to master.
-[Netlify] will automatically deploy the site to <https://www.apprentice.io>.
+[Netlify] will automatically deploy the site to <http://apprentice.thoughtbot.com/>.
 
 [Netlify]: https://www.netlify.com/
