@@ -111,8 +111,8 @@ GEM
     parallel (1.12.1)
     public_suffix (3.0.2)
     rack (2.0.4)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
+    rack-contrib (2.0.1)
+      rack (~> 2.0)
     rack-livereload (0.3.16)
       rack
     rake (12.2.1)
