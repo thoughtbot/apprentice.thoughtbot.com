@@ -4,7 +4,7 @@ ruby "2.4.3"
 
 gem "bourbon", "~> 5.0"
 gem "middleman", "~> 4.2"
-gem "middleman-autoprefixer", "~> 2.8"
+gem "middleman-autoprefixer", "~> 2.9"
 gem "middleman-livereload", "~> 3.4"
 gem "rack-contrib"
 gem "rake"
