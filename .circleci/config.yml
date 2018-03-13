@@ -1,0 +1,29 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.3-node
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: apprenticeio-{{ arch }}-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Install Ruby dependencies
+          command: bundle install --path vendor/bundle
+
+      - save_cache:
+          key: apprenticeio-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - run:
+          name: Build Middleman site
+          command: bundle exec middleman build --verbose
+
+      - run:
+          name: Run HTMLProofer
+          command: bundle exec htmlproofer ./tmp --check-html --check-favicon --disable-external
