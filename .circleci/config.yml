@@ -22,8 +22,8 @@ jobs:
 
       - run:
           name: Build Middleman site
-          command: bundle exec middleman build --verbose
+          command: bin/build
 
       - run:
           name: Run HTMLProofer
-          command: bundle exec htmlproofer ./tmp --check-html --check-favicon --disable-external
+          command: bin/test
