@@ -1,8 +1,8 @@
-# apprentice.io
+# apprentice.thoughtbot.com
 
-This is the source of [apprentice.io], which is a Middleman app.
+This is the source of [apprentice.thoughtbot.com], which is a Middleman app.
 
-[apprentice.io]: https://apprentice.thoughtbot.com/
+[apprentice.thoughtbot.com]: https://apprentice.thoughtbot.com/
 
 ## Set up
 
