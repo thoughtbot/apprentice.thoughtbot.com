@@ -4,7 +4,6 @@ activate :autoprefixer
 activate :directory_indexes
 
 set :css_dir, "stylesheets"
-set :build_dir, "tmp"
 
 configure :build do
   activate :minify_css
