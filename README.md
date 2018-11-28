@@ -7,8 +7,8 @@ This is the source of [apprentice.thoughtbot.com], which is a Middleman app.
 ## Set up
 
 ```bash
-git clone git@github.com:thoughtbot/apprenticeio.git
-cd apprenticeio
+git clone git@github.com:thoughtbot/apprentice.thoughtbot.com.git
+cd apprentice.thoughtbot.com
 ./bin/setup
 ```
 
