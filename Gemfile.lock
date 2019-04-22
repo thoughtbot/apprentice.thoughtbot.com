@@ -134,7 +134,7 @@ DEPENDENCIES
   middleman-autoprefixer
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.6.3p62
 
 BUNDLED WITH
    1.17.3
