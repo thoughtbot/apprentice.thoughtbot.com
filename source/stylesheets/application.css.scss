@@ -1,11 +1,10 @@
 @import "bourbon";
 
-@import "library/variables";
-
 @import "normalize";
 
-@import "base/layout";
-@import "base/typography";
+@import "../../node_modules/@thoughtbot/design-system/src/index";
+
+@import "elements/typography";
 
 @import "components/content-wrapper";
 @import "components/footer";

@@ -27,6 +27,8 @@ fi
 # Set up Ruby dependencies
 bundle install
 
+npm install
+
 # Add binstubs to PATH. Your ~/.zshenv should include this line:
 # export PATH=".git/safe/../../bin:$PATH"
 mkdir -p .git/safe

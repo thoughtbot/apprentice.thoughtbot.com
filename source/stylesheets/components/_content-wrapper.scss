@@ -1,5 +1,5 @@
 .content-wrapper {
   @include margin(null auto);
-  @include padding(null 2rem);
+  @include padding(null $tbds-space-5);
   max-width: 36rem;
 }

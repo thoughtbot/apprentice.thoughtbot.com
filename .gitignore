@@ -1,11 +1,4 @@
-!.keep
-*.DS_Store
-*.swp
-.env
-.foreman
-.sass-cache/
-/.bundle
-tags
-vendor/bundler_gems
-/bin/stubs
+.DS_Store
+.sass-cache
 build/
+node_modules/
