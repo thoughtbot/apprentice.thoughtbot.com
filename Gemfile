@@ -6,6 +6,6 @@ gem "middleman"
 gem "middleman-autoprefixer"
 gem "middleman-minify-html"
 
-group :development do
+group :development, :test do
   gem "html-proofer"
 end
