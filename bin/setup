@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # Run this script to setup the app
 
@@ -6,9 +6,13 @@
 set -e
 
 # Install dependencies
-bundle install
+gem install bundler --conservative
+bundle check || bundle install
 npm install
 
-# Add binstubs to PATH. Your ~/.zshenv should include this line:
-# export PATH=".git/safe/../../bin:$PATH"
-mkdir -p .git/safe
+if [ ! -d .git/safe ] && echo $PATH | grep .git/safe > /dev/null; then
+  echo "-----------------------------------------------------------------------"
+  echo
+  echo "-> When you trust this repo, remember to run: mkdir -p .git/safe"
+  echo
+fi
