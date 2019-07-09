@@ -1,6 +1,6 @@
 activate :autoprefixer
 
-config[:css_dir] = "stylesheets"
+config[:css_dir] = "assets/stylesheets"
 config[:sass_assets_paths] = ["node_modules"]
 
 configure :production do
