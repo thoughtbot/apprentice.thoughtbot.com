@@ -9,14 +9,16 @@ jobs:
       - checkout
 
       - restore_cache:
-          key: apprenticeio-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          keys:
+            - apprenticeio-bundle-v2-{{ checksum "Gemfile.lock" }}
+            - apprenticeio-bundle-v2-
 
       - run:
-          name: Install Ruby dependencies
+          name: Install gem dependencies
           command: bundle install --path vendor/bundle
 
       - save_cache:
-          key: apprenticeio-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          key: apprenticeio-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
 
@@ -26,7 +28,7 @@ jobs:
             - apprenticeio-npm-v2-
 
       - run:
-          name: Install Node.js dependencies
+          name: Install npm dependencies
           command: npm install
 
       - save_cache:
@@ -35,7 +37,7 @@ jobs:
             - ~/usr/local/lib/node_modules
 
       - run:
-          name: Build Middleman site
+          name: Build the Middleman site
           command: bin/build
 
       - run:
