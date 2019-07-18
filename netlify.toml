@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://apprentice-thoughtbot.netlify.com/*"
+  to = "https://apprentice.thoughtbot.com/:splat"
+  status = 301
+  force = true
