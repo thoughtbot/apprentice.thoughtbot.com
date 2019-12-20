@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://apprentice-thoughtbot.netlify.com/*"
-  to = "https://apprentice.thoughtbot.com/:splat"
+  from = "/*"
+  to = "https://thoughtbot.com/playbook/our-company/apprenticeship"
   status = 301
   force = true
